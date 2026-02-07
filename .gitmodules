@@ -1,0 +1,4 @@
+[submodule "BEVFormer"]
+	path = BEVFormer
+	url = https://github.com/RepnikovPavel/BEVFormer.git
+	branch = master
