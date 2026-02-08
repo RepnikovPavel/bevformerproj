@@ -5,11 +5,11 @@
 
 import torch
 from diffusers import DDIMScheduler, DDPMScheduler, PNDMScheduler
+from modules.encoder.condition_encoder import ConditionEncoder
 
 from models.svc.base import SVCInference
 from models.svc.diffusion.diffusion_inference_pipeline import DiffusionInferencePipeline
 from models.svc.diffusion.diffusion_wrapper import DiffusionWrapper
-from modules.encoder.condition_encoder import ConditionEncoder
 
 
 class DiffusionInference(SVCInference):

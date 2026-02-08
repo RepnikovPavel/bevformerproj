@@ -2,11 +2,11 @@
 from typing import Any, Optional, Sequence, Tuple
 
 import numpy as np
-from mmengine import load
 from mmengine.evaluator import BaseMetric
 
 from mmaction.evaluation import frameAP, link_tubes, videoAP, videoAP_all
 from mmaction.registry import METRICS
+from mmengine import load
 
 
 @METRICS.register_module()

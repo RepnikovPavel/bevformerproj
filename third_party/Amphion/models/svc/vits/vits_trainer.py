@@ -3,21 +3,21 @@
 # This source code is licensed under the MIT license found in the
 # LICENSE file in the root directory of this source tree.
 
+import json
+import shutil
+from pathlib import Path
+
+import accelerate
 import torch
 from torch.optim.lr_scheduler import ExponentialLR
 from tqdm import tqdm
-from pathlib import Path
-import shutil
-import accelerate
+from utils.mel import mel_spectrogram_torch
+
+from models.svc.base import SVCTrainer
 
 # from models.svc.base import SVCTrainer
 from models.svc.base.svc_dataset import SVCOfflineCollator, SVCOfflineDataset
 from models.svc.vits.vits import *
-from models.svc.base import SVCTrainer
-
-from utils.mel import mel_spectrogram_torch
-import json
-
 from models.vocoders.gan.discriminator.mpd import (
     MultiPeriodDiscriminator_vits as MultiPeriodDiscriminator,
 )

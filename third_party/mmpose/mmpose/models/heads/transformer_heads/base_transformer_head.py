@@ -6,8 +6,14 @@ import torch
 from torch import Tensor
 
 from mmpose.registry import MODELS
-from mmpose.utils.typing import (Features, OptConfigType, OptMultiConfig,
-                                 OptSampleList, Predictions)
+from mmpose.utils.typing import (
+    Features,
+    OptConfigType,
+    OptMultiConfig,
+    OptSampleList,
+    Predictions,
+)
+
 from ..base_head import BaseHead
 
 

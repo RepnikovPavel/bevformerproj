@@ -7,6 +7,7 @@ import torch.nn.functional as F
 from mmengine.dist import all_gather, get_world_size
 
 from mmagic.registry import METRICS
+
 from .base_gen_metric import GenMetric
 
 

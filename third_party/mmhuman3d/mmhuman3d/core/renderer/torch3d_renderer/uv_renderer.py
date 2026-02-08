@@ -20,6 +20,7 @@ from mmhuman3d.core.cameras.cameras import (
     MMCamerasBase,
 )
 from mmhuman3d.utils.path_utils import check_path_suffix
+
 from .utils import array2tensor, rgb2bgr
 
 

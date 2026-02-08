@@ -5,10 +5,10 @@ import tempfile
 import pytest
 import torch
 import torch.nn as nn
-from mmengine import Config
-
 from mmdeploy.utils import Backend
 from mmdeploy.utils.test import backend_checker
+
+from mmengine import Config
 
 onnx_file = tempfile.NamedTemporaryFile(suffix='.onnx').name
 engine_file = tempfile.NamedTemporaryFile(suffix='.engine').name

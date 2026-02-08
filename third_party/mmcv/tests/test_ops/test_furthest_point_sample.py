@@ -1,7 +1,6 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import pytest
 import torch
-
 from mmcv.ops import furthest_point_sample, furthest_point_sample_with_dist
 from mmcv.utils import IS_CUDA_AVAILABLE, IS_MUSA_AVAILABLE, IS_NPU_AVAILABLE
 

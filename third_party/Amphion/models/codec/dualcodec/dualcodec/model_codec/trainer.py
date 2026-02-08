@@ -4,22 +4,14 @@
 #
 ################################################################################
 
-import json
 import os
-import shutil
+
 import torch
-import time
-from pathlib import Path
-import torch
-from tqdm import tqdm
 import torch.nn as nn
-from dualcodec import BaseTrainer
-import safetensors
-import numpy as np
-from .discriminator import Discriminator
 import torch.nn.functional as F
-from einops import rearrange
 from easydict import EasyDict as edict
+
+from dualcodec import BaseTrainer
 
 USE_HINGE_LOSS = False
 from audiotools import AudioSignal
@@ -319,7 +311,7 @@ class Trainer(BaseTrainer):
                 )
                 checkpoint_path = ls[0]
                 self.logger.info("Resume from {}".format(checkpoint_path))
-            except Exception as e:
+            except Exception:
                 print(
                     "Failed to load checkpoint from {}, starting FROM SCRATCH...".format(
                         checkpoint_dir

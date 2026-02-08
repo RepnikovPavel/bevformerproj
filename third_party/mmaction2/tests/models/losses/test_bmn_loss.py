@@ -1,9 +1,8 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import numpy as np
 import torch
-from numpy.testing import assert_array_almost_equal
-
 from mmaction.models import BMNLoss
+from numpy.testing import assert_array_almost_equal
 
 
 def test_bmn_loss():

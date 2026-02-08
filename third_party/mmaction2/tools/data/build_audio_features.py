@@ -6,9 +6,10 @@ import os.path as osp
 import sys
 from multiprocessing import Pool
 
-import mmengine
 import numpy as np
 from scipy.io import wavfile
+
+import mmengine
 
 try:
     import librosa

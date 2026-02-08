@@ -4,6 +4,7 @@ from mmcv.cnn import ConvModule
 from mmengine.utils.dl_utils.parrots_wrapper import _BatchNorm
 
 from mmpose.registry import MODELS
+
 from .base_backbone import BaseBackbone
 
 

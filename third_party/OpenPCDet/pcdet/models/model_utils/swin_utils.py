@@ -4,18 +4,19 @@ Mostly copy-paste from
     
 """
 
+import collections.abc
 import copy
 import math
 import warnings
-import collections.abc
 from collections import OrderedDict
 from itertools import repeat
 from typing import Sequence
 
 import torch
-from torch import Tensor
 import torch.nn as nn
 import torch.nn.functional as F
+from torch import Tensor
+
 
 # From PyTorch internals
 def _ntuple(n):

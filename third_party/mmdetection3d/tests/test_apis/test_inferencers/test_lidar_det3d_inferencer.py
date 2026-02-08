@@ -3,13 +3,13 @@ import os.path as osp
 import tempfile
 from unittest import TestCase
 
-import mmengine
 import numpy as np
 import torch
-from mmengine.utils import is_list_of
-
 from mmdet3d.apis import LidarDet3DInferencer
 from mmdet3d.structures import Det3DDataSample
+from mmengine.utils import is_list_of
+
+import mmengine
 
 
 class TestLidarDet3DInferencer(TestCase):

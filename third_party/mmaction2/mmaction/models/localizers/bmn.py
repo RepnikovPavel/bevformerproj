@@ -7,6 +7,7 @@ import torch.nn as nn
 from mmengine.model import BaseModel
 
 from mmaction.registry import MODELS
+
 from .utils import post_processing, temporal_iop, temporal_iou
 
 

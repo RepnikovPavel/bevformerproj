@@ -2,11 +2,9 @@
 from unittest.mock import MagicMock
 
 import pytest
-from mmengine.evaluator import Evaluator as BaseEvaluator
-
-from mmagic.engine.runner.loop_utils import (is_evaluator,
-                                             update_and_check_evaluator)
+from mmagic.engine.runner.loop_utils import is_evaluator, update_and_check_evaluator
 from mmagic.evaluation import Evaluator
+from mmengine.evaluator import Evaluator as BaseEvaluator
 
 
 def test_is_evaluator():

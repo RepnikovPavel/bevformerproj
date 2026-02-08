@@ -1,8 +1,8 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import numpy as np
 import pytest
-
 from mmaction.datasets import PoseDataset
+
 from .base import BaseTestDataset
 
 

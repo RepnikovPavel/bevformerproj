@@ -3,11 +3,9 @@ from unittest import TestCase
 
 import torch
 import torch.nn.functional as F
-from torch import nn
-
-from mmengine.runner.activation_checkpointing import \
-    turn_on_activation_checkpointing
+from mmengine.runner.activation_checkpointing import turn_on_activation_checkpointing
 from mmengine.testing import assert_allclose
+from torch import nn
 
 
 class Model(nn.Module):

@@ -1,8 +1,8 @@
 # Copyright (c) OpenMMLab. All rights reserved.
-import mmcv
 import numpy as np
 from mmcv.transforms import BaseTransform
 
+import mmcv
 from mmagic.registry import TRANSFORMS
 
 

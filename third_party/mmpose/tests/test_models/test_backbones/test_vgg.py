@@ -3,7 +3,6 @@ from unittest import TestCase
 
 import torch
 from mmengine.utils.dl_utils.parrots_wrapper import _BatchNorm
-
 from mmpose.models.backbones import VGG
 
 

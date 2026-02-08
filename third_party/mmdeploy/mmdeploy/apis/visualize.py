@@ -1,10 +1,10 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 from typing import Optional, Sequence, Union
 
-import mmengine
 import numpy as np
 import torch
 
+import mmengine
 from mmdeploy.utils import Backend, get_backend, get_input_shape, load_config
 
 

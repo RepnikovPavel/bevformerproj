@@ -4,18 +4,18 @@ import tempfile
 from os import path as osp
 from typing import Dict, List, Optional, Sequence, Tuple, Union
 
-import mmengine
 import numpy as np
 import pandas as pd
 from lyft_dataset_sdk.lyftdataset import LyftDataset as Lyft
 from lyft_dataset_sdk.utils.data_classes import Box as LyftBox
-from mmengine import load
 from mmengine.evaluator import BaseMetric
 from mmengine.logging import MMLogger
 from pyquaternion import Quaternion
 
+import mmengine
 from mmdet3d.evaluation import lyft_eval
 from mmdet3d.registry import METRICS
+from mmengine import load
 
 
 @METRICS.register_module()

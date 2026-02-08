@@ -3,11 +3,11 @@ import os.path as osp
 from unittest import TestCase
 
 import numpy as np
-from mmengine import ConfigDict, init_default_scope
-from utils import *  # noqa: F401, F403
-
 from mmseg.apis import RSImage, RSInferencer
 from mmseg.registry import MODELS
+from utils import *  # noqa: F401, F403
+
+from mmengine import ConfigDict, init_default_scope
 
 
 class TestRSImage(TestCase):

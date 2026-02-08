@@ -5,8 +5,8 @@
 
 import argparse
 import os
-import torch
 
+import torch
 from models.tta.autoencoder.autoencoder_trainer import AutoencoderKLTrainer
 from models.tta.ldm.audioldm_trainer import AudioLDMTrainer
 from utils.util import load_config

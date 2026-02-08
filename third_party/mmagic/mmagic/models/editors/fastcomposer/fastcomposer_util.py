@@ -9,8 +9,13 @@ import torch.nn.functional as F
 import torchvision.transforms as T
 from torch import nn
 from torch.nn import Linear
-from transformers import (CLIPModel, CLIPPreTrainedModel, CLIPTextModel,
-                          CLIPVisionConfig, CLIPVisionModel)
+from transformers import (
+    CLIPModel,
+    CLIPPreTrainedModel,
+    CLIPTextModel,
+    CLIPVisionConfig,
+    CLIPVisionModel,
+)
 from transformers.modeling_outputs import BaseModelOutputWithPooling
 
 from mmagic.utils import try_import
@@ -485,8 +490,11 @@ class FastComposerPostfuseModule(nn.Module):
 
 def unet_store_cross_attention_scores(unet, attention_scores, layers=5):
     """Unet store cross attention scores."""
-    from diffusers.models.attention_processor import (Attention, AttnProcessor,
-                                                      AttnProcessor2_0)
+    from diffusers.models.attention_processor import (
+        Attention,
+        AttnProcessor,
+        AttnProcessor2_0,
+    )
 
     UNET_LAYER_NAMES = [
         'down_blocks.0',

@@ -1,7 +1,6 @@
 # Copyright (c) OpenMMLab. All rights reserved.
-from mmengine import Registry
-
 from mmdeploy.utils.config_utils import Backend
+from mmengine import Registry
 
 
 def __build_backend_wrapper_class(backend: Backend, registry: Registry):

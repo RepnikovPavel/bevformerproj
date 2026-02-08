@@ -5,17 +5,17 @@ import warnings
 from copy import deepcopy
 
 import cv2
-import mmcv
 import numpy as np
+from mmaction.registry import DATASETS
+from mmaction.visualization import ActionVisualizer
+from mmaction.visualization.action_visualizer import _get_adaptive_scale
 from mmengine.config import Config, DictAction
 from mmengine.dataset import Compose
 from mmengine.registry import init_default_scope
 from mmengine.utils import ProgressBar
 from mmengine.visualization import Visualizer
 
-from mmaction.registry import DATASETS
-from mmaction.visualization import ActionVisualizer
-from mmaction.visualization.action_visualizer import _get_adaptive_scale
+import mmcv
 
 
 def parse_args():

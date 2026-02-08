@@ -2,11 +2,8 @@
 import os.path as osp
 from functools import partial
 from itertools import chain
-from os.path import basename
+from os.path import basename, splitext
 from os.path import exists as ex
-from os.path import splitext
-
-import numpy as np
 
 path = osp.join('a', 'b')
 name, suffix = splitext('a/b.py')

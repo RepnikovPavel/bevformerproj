@@ -5,18 +5,16 @@
 
 import torch
 import torch.nn as nn
-from torch.optim.lr_scheduler import ExponentialLR
-
-from tqdm import tqdm
-
-from utils.util import *
-from utils.mel import mel_spectrogram_torch
 from models.tts.base import TTSTrainer
 from models.tts.vits.vits import SynthesizerTrn
-from models.tts.vits.vits_dataset import VITSDataset, VITSCollator
+from models.tts.vits.vits_dataset import VITSCollator, VITSDataset
 from models.vocoders.gan.discriminator.mpd import (
     MultiPeriodDiscriminator_vits as MultiPeriodDiscriminator,
 )
+from torch.optim.lr_scheduler import ExponentialLR
+from tqdm import tqdm
+from utils.mel import mel_spectrogram_torch
+from utils.util import *
 
 
 class VITSTrainer(TTSTrainer):

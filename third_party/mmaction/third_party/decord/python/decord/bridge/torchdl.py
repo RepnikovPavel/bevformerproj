@@ -3,6 +3,7 @@ from __future__ import absolute_import
 
 from .._ffi._ctypes.ndarray import _from_dlpack
 
+
 def try_import_torch():
     """Try import torch at runtime.
 

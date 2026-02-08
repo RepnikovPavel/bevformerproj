@@ -2,9 +2,8 @@
 from typing import Any
 
 from mmengine.dataset import force_full_init
-from mmyolo.registry import DATASETS
-
 from mmpose.datasets import CocoDataset as MMPoseCocoDataset
+from mmyolo.registry import DATASETS
 
 
 @DATASETS.register_module()

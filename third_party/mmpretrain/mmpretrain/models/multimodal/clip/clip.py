@@ -8,13 +8,19 @@ import torch.nn.functional as F
 from mmengine.model import BaseModel
 from torch import nn
 
-from mmpretrain.datasets.categories import (CIFAR100_CATEGORIES,
-                                            IMAGENET_SIMPLE_CATEGORIES)
+from mmpretrain.datasets.categories import (
+    CIFAR100_CATEGORIES,
+    IMAGENET_SIMPLE_CATEGORIES,
+)
 from mmpretrain.registry import MODELS, TOKENIZER
 from mmpretrain.structures import DataSample
 from mmpretrain.utils import track_on_main_process
-from .utils import (OPENAI_CIFAR100_PROMPT, OPENAI_IMAGENET_PROMPT,
-                    OPENAI_IMAGENET_PROMPT_SUB)
+
+from .utils import (
+    OPENAI_CIFAR100_PROMPT,
+    OPENAI_IMAGENET_PROMPT,
+    OPENAI_IMAGENET_PROMPT_SUB,
+)
 
 CIFAR100_CATEGORIES = [' '.join(c.split('_')) for c in CIFAR100_CATEGORIES]
 PROTOTYPE_MAP = {

@@ -4,8 +4,9 @@ import os.path as osp
 from abc import ABCMeta, abstractmethod
 from typing import Optional, Sequence, Union
 
-import mmcv
 from torch.utils.data import Dataset
+
+import mmcv
 
 from .pipelines import Compose
 

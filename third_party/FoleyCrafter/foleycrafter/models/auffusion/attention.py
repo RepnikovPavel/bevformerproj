@@ -15,15 +15,19 @@ from typing import Any, Dict, Optional
 
 import torch
 import torch.nn.functional as F
-from torch import nn
-
 from diffusers.models.activations import GEGLU, GELU, ApproximateGELU
 from diffusers.models.embeddings import SinusoidalPositionalEmbedding
 from diffusers.models.lora import LoRACompatibleLinear
-from diffusers.models.normalization import AdaLayerNorm, AdaLayerNormContinuous, AdaLayerNormZero, RMSNorm
+from diffusers.models.normalization import (
+    AdaLayerNorm,
+    AdaLayerNormContinuous,
+    AdaLayerNormZero,
+    RMSNorm,
+)
 from diffusers.utils import USE_PEFT_BACKEND
 from diffusers.utils.torch_utils import maybe_allow_in_graph
 from foleycrafter.models.auffusion.attention_processor import Attention
+from torch import nn
 
 
 def _chunked_feed_forward(

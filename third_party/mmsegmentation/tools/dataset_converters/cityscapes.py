@@ -3,8 +3,12 @@ import argparse
 import os.path as osp
 
 from cityscapesscripts.preparation.json2labelImg import json2labelImg
-from mmengine.utils import (mkdir_or_exist, scandir, track_parallel_progress,
-                            track_progress)
+from mmengine.utils import (
+    mkdir_or_exist,
+    scandir,
+    track_parallel_progress,
+    track_progress,
+)
 
 
 def convert_json_to_label(json_file):

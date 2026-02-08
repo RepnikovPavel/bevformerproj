@@ -1,6 +1,8 @@
 import logging
 from abc import ABCMeta, abstractmethod
+
 import torch.nn as nn
+
 
 class BaseEstimator(nn.Module):
     """Base class for pose estimation"""

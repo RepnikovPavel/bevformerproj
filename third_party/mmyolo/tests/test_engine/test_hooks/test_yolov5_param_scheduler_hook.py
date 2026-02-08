@@ -6,11 +6,10 @@ import torch
 from mmengine.config import Config
 from mmengine.optim import build_optim_wrapper
 from mmengine.runner import Runner
-from torch import nn
-from torch.utils.data import Dataset
-
 from mmyolo.engine.hooks import YOLOv5ParamSchedulerHook
 from mmyolo.utils import register_all_modules
+from torch import nn
+from torch.utils.data import Dataset
 
 
 class ToyModel(nn.Module):

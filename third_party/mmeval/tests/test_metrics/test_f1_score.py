@@ -1,10 +1,10 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 
-import numpy as np
-import pytest
 import unittest
 from distutils.version import LooseVersion
 
+import numpy as np
+import pytest
 from mmeval.metrics import F1Score
 from mmeval.utils import try_import
 

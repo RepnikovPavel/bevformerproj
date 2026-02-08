@@ -5,16 +5,20 @@ from typing import Dict, List, Optional, Sequence, Tuple, Union
 
 import numpy as np
 import torch
-from mmengine import Config
 from mmengine.device import get_device
 from mmengine.evaluator import BaseMetric
 from mmengine.logging import MMLogger, print_log
 
 from mmdet3d.models.layers import box3d_multiclass_nms
 from mmdet3d.registry import METRICS
-from mmdet3d.structures import (Box3DMode, CameraInstance3DBoxes,
-                                LiDARInstance3DBoxes, points_cam2img,
-                                xywhr2xyxyr)
+from mmdet3d.structures import (
+    Box3DMode,
+    CameraInstance3DBoxes,
+    LiDARInstance3DBoxes,
+    points_cam2img,
+    xywhr2xyxyr,
+)
+from mmengine import Config
 
 
 @METRICS.register_module()
@@ -308,8 +312,7 @@ class WaymoMetric(BaseMetric):
         """
         waymo_results_final_path = f'{result_prefix}.bin'
 
-        from ..functional.waymo_utils.prediction_to_waymo import \
-            Prediction2Waymo
+        from ..functional.waymo_utils.prediction_to_waymo import Prediction2Waymo
         converter = Prediction2Waymo(results, waymo_results_final_path,
                                      self.classes)
         converter.convert()

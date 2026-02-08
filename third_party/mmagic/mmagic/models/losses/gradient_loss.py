@@ -6,6 +6,7 @@ import torch.nn as nn
 import torch.nn.functional as F
 
 from mmagic.registry import MODELS
+
 from .pixelwise_loss import l1_loss
 
 _reduction_modes = ['none', 'mean', 'sum']

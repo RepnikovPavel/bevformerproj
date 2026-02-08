@@ -4,6 +4,7 @@ import warnings
 from mmdet.models import build_detector
 
 from mmtrack.core import outs2results
+
 from ..builder import MODELS, build_motion, build_reid, build_tracker
 from ..motion import CameraMotionCompensation, LinearMotion
 from .base import BaseMultiObjectTracker

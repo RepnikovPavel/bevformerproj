@@ -10,10 +10,9 @@ except ImportError:
     ME = SparseTensor = None
     pass
 
+from mmdet3d.registry import MODELS
 from mmengine.model import BaseModule
 from torch import nn
-
-from mmdet3d.registry import MODELS
 
 
 @MODELS.register_module()

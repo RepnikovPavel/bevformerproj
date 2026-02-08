@@ -2,13 +2,20 @@
 """Runtime NDArray api"""
 from __future__ import absolute_import
 
-import sys
 import ctypes
-import numpy as np
-from .base import _LIB, check_call, c_array, string_types, _FFI_MODE, c_str
-from .runtime_ctypes import DECORDType, DECORDContext, DECORDArray, DECORDArrayHandle
-from .runtime_ctypes import TypeCode, decord_shape_index_t
+import sys
 
+import numpy as np
+
+from .base import _FFI_MODE, _LIB, c_array, check_call, string_types
+from .runtime_ctypes import (
+    DECORDArray,
+    DECORDArrayHandle,
+    DECORDContext,
+    DECORDType,
+    TypeCode,
+    decord_shape_index_t,
+)
 
 IMPORT_EXCEPT = RuntimeError if _FFI_MODE == "cython" else ImportError
 
@@ -17,15 +24,15 @@ try:
     if _FFI_MODE == "ctypes":
         raise ImportError()
     if sys.version_info >= (3, 0):
-        from ._cy3.core import _set_class_ndarray, _reg_extension, _make_array, _from_dlpack
         from ._cy3.core import NDArrayBase as _NDArrayBase
+        from ._cy3.core import _from_dlpack, _make_array, _reg_extension
     else:
-        from ._cy2.core import _set_class_ndarray, _reg_extension, _make_array, _from_dlpack
         from ._cy2.core import NDArrayBase as _NDArrayBase
+        from ._cy2.core import _from_dlpack, _make_array, _reg_extension
 except IMPORT_EXCEPT:
     # pylint: disable=wrong-import-position
-    from ._ctypes.ndarray import _set_class_ndarray, _reg_extension, _make_array, _from_dlpack
     from ._ctypes.ndarray import NDArrayBase as _NDArrayBase
+    from ._ctypes.ndarray import _from_dlpack, _make_array, _reg_extension
 
 def context(dev_type, dev_id=0):
     """Construct a DECORD context with given device type and id.

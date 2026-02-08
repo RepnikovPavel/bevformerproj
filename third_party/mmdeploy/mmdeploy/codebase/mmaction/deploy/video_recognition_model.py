@@ -2,18 +2,23 @@
 
 from typing import Any, List, Optional, Sequence, Union
 
-import mmengine
 import torch
 from mmaction.utils import LabelList
-from mmengine import Config
 from mmengine.model import BaseDataPreprocessor
 from mmengine.registry import Registry
 from mmengine.structures import BaseDataElement, LabelData
 from torch import nn
 
+import mmengine
 from mmdeploy.codebase.base import BaseBackendModel
-from mmdeploy.utils import (Backend, get_backend, get_codebase_config,
-                            get_root_logger, load_config)
+from mmdeploy.utils import (
+    Backend,
+    get_backend,
+    get_codebase_config,
+    get_root_logger,
+    load_config,
+)
+from mmengine import Config
 
 __BACKEND_MODEL = Registry('backend_video_recognizer')
 

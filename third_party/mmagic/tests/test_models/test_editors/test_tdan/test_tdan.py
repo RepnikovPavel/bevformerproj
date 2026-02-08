@@ -1,12 +1,11 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import torch
-from mmengine.optim import OptimWrapper
-from torch.optim import Adam
-
 from mmagic.models.data_preprocessors import DataPreprocessor
 from mmagic.models.editors import TDAN, TDANNet
 from mmagic.models.losses import MSELoss
 from mmagic.structures import DataSample
+from mmengine.optim import OptimWrapper
+from torch.optim import Adam
 
 
 def test_tdan():

@@ -1,6 +1,7 @@
 """https://github.com/bootphon/phonemizer"""
 
 import re
+
 from phonemizer import phonemize
 from phonemizer.separator import Separator
 

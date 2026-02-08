@@ -4,10 +4,12 @@ import warnings
 import torch
 import torch.nn as nn
 from mmengine.model import BaseModule
-
-from mmseg.models.backbones.mscan import (MSCAN, MSCABlock,
-                                          MSCASpatialAttention,
-                                          OverlapPatchEmbed)
+from mmseg.models.backbones.mscan import (
+    MSCAN,
+    MSCABlock,
+    MSCASpatialAttention,
+    OverlapPatchEmbed,
+)
 from mmseg.registry import MODELS
 
 

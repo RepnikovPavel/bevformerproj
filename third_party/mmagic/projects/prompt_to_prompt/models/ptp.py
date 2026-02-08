@@ -4,12 +4,11 @@ import abc
 from typing import Dict, List, Optional, Tuple, Union
 
 import numpy as np
+import projects.prompt_to_prompt.models.ptp_utils as ptp_utils
+import projects.prompt_to_prompt.models.seq_aligner as seq_aligner
 import torch
 import torch.nn.functional as nnf
 from PIL import Image
-
-import projects.prompt_to_prompt.models.ptp_utils as ptp_utils
-import projects.prompt_to_prompt.models.seq_aligner as seq_aligner
 
 LOW_RESOURCE = False
 MAX_NUM_WORDS = 77

@@ -4,8 +4,7 @@ import os.path as osp
 import tempfile
 import unittest
 
-from mmocr.datasets.preparers.dumpers import (JsonDumper,
-                                              WildreceiptOpensetDumper)
+from mmocr.datasets.preparers.dumpers import JsonDumper, WildreceiptOpensetDumper
 
 
 class TestDumpers(unittest.TestCase):

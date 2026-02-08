@@ -1,11 +1,10 @@
 import torch
-from pytorch3d.renderer.mesh.textures import TexturesVertex
-from pytorch3d.utils import ico_sphere
-
 from mmhuman3d.core.cameras import compute_orbit_cameras
 from mmhuman3d.core.cameras.builder import build_cameras
 from mmhuman3d.core.renderer.torch3d_renderer import render_runner
 from mmhuman3d.core.renderer.torch3d_renderer.builder import build_renderer
+from pytorch3d.renderer.mesh.textures import TexturesVertex
+from pytorch3d.utils import ico_sphere
 
 
 def test_render_runner():

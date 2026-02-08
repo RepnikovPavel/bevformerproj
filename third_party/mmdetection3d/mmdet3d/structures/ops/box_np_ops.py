@@ -7,8 +7,7 @@
 import numba
 import numpy as np
 
-from mmdet3d.structures.bbox_3d import (limit_period, points_cam2img,
-                                        rotation_3d_in_axis)
+from mmdet3d.structures.bbox_3d import limit_period, points_cam2img, rotation_3d_in_axis
 
 
 def camera_to_lidar(points, r_rect, velo2cam):

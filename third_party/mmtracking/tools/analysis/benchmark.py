@@ -3,14 +3,14 @@ import argparse
 import time
 
 import torch
-from mmcv import Config
 from mmcv.cnn import fuse_conv_bn
 from mmcv.parallel import MMDataParallel
 from mmcv.runner import load_checkpoint, wrap_fp16_model
 from mmdet.datasets import replace_ImageToTensor
-
 from mmtrack.datasets import build_dataloader, build_dataset
 from mmtrack.models import build_model
+
+from mmcv import Config
 
 
 def parse_args():

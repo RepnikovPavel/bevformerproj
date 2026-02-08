@@ -2,12 +2,11 @@
 from typing import List, Tuple
 
 import torch
-from torch import Tensor, nn
-
 from mmdet3d.models import Base3DDecodeHead
 from mmdet3d.registry import MODELS
 from mmdet3d.structures.det3d_data_sample import SampleList
 from mmdet3d.utils import ConfigType, OptConfigType
+from torch import Tensor, nn
 
 
 @MODELS.register_module()

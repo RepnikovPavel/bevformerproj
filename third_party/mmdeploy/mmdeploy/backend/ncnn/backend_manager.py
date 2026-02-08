@@ -5,6 +5,7 @@ import sys
 from typing import Any, Callable, Optional, Sequence
 
 from mmdeploy.utils import get_backend_config, get_root_logger
+
 from ..base import BACKEND_MANAGERS, BaseBackendManager
 
 
@@ -131,6 +132,7 @@ class NCNNManager(BaseBackendManager):
             sys.exit(1)
 
         from mmdeploy.apis.ncnn import get_output_model_file
+
         from .onnx2ncnn import from_onnx
 
         backend_files = []

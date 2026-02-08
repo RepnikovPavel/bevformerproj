@@ -3,9 +3,8 @@ import collections
 import copy
 from typing import List, Sequence, Union
 
-from mmengine.dataset import BaseDataset
+from mmengine.dataset import BaseDataset, force_full_init
 from mmengine.dataset import ConcatDataset as MMENGINE_ConcatDataset
-from mmengine.dataset import force_full_init
 
 from mmdet.registry import DATASETS, TRANSFORMS
 

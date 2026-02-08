@@ -1,7 +1,6 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import numpy as np
 import pytest
-
 from mmengine.logging import HistoryBuffer
 
 array_method = [np.array, lambda x: x]

@@ -4,7 +4,6 @@ import platform
 
 import pytest
 import torch
-
 from mmselfsup.models.algorithms.simclr import SimCLR
 from mmselfsup.structures import SelfSupDataSample
 

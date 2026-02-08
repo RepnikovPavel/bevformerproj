@@ -5,8 +5,9 @@ import os.path as osp
 import tempfile
 import zipfile
 
-import mmcv
 from mmengine.utils import mkdir_or_exist
+
+import mmcv
 
 HRF_LEN = 15
 TRAINING_LEN = 5

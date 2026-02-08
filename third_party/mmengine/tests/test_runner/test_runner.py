@@ -12,32 +12,60 @@ from unittest import TestCase, skipIf
 import numpy as np
 import torch
 import torch.nn as nn
-from torch.nn.parallel import DistributedDataParallel
-from torch.optim import SGD, Adam
-from torch.utils.data import DataLoader, Dataset
-
 from mmengine.config import Config
 from mmengine.dataset import DefaultSampler, pseudo_collate
 from mmengine.evaluator import BaseMetric, Evaluator
-from mmengine.hooks import (CheckpointHook, DistSamplerSeedHook, Hook,
-                            IterTimerHook, LoggerHook, ParamSchedulerHook,
-                            RuntimeInfoHook)
+from mmengine.hooks import (
+    CheckpointHook,
+    DistSamplerSeedHook,
+    Hook,
+    IterTimerHook,
+    LoggerHook,
+    ParamSchedulerHook,
+    RuntimeInfoHook,
+)
 from mmengine.logging import HistoryBuffer, MessageHub, MMLogger
 from mmengine.model import BaseDataPreprocessor, BaseModel, ImgDataPreprocessor
-from mmengine.optim import (DefaultOptimWrapperConstructor, MultiStepLR,
-                            OptimWrapper, OptimWrapperDict, StepLR)
-from mmengine.registry import (DATASETS, EVALUATOR, FUNCTIONS, HOOKS,
-                               LOG_PROCESSORS, LOOPS, METRICS, MODEL_WRAPPERS,
-                               MODELS, OPTIM_WRAPPER_CONSTRUCTORS,
-                               OPTIM_WRAPPERS, PARAM_SCHEDULERS, RUNNERS,
-                               Registry)
-from mmengine.runner import (BaseLoop, EpochBasedTrainLoop, IterBasedTrainLoop,
-                             LogProcessor, Runner, TestLoop, ValLoop)
+from mmengine.optim import (
+    DefaultOptimWrapperConstructor,
+    MultiStepLR,
+    OptimWrapper,
+    OptimWrapperDict,
+    StepLR,
+)
+from mmengine.registry import (
+    DATASETS,
+    EVALUATOR,
+    FUNCTIONS,
+    HOOKS,
+    LOG_PROCESSORS,
+    LOOPS,
+    METRICS,
+    MODEL_WRAPPERS,
+    MODELS,
+    OPTIM_WRAPPER_CONSTRUCTORS,
+    OPTIM_WRAPPERS,
+    PARAM_SCHEDULERS,
+    RUNNERS,
+    Registry,
+)
+from mmengine.runner import (
+    BaseLoop,
+    EpochBasedTrainLoop,
+    IterBasedTrainLoop,
+    LogProcessor,
+    Runner,
+    TestLoop,
+    ValLoop,
+)
 from mmengine.runner.loops import _InfiniteDataloaderIterator
 from mmengine.runner.priority import Priority, get_priority
 from mmengine.utils import digit_version, is_list_of
 from mmengine.utils.dl_utils import TORCH_VERSION
 from mmengine.visualization import Visualizer
+from torch.nn.parallel import DistributedDataParallel
+from torch.optim import SGD, Adam
+from torch.utils.data import DataLoader, Dataset
 
 
 def skip_test_comile():

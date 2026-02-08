@@ -1,8 +1,7 @@
 # Copyright (c) OpenMMLab. All rights reserved.
-from mmengine.config import read_base
-
 from mmagic.engine import VisualizationHook
 from mmagic.evaluation.metrics import FrechetInceptionDistance
+from mmengine.config import read_base
 
 with read_base():
     from .._base_.datasets.imagenet_noaug_128 import *

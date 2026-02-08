@@ -7,6 +7,7 @@ from mmengine.model import BaseModule, ModuleList, Sequential
 from torch.nn.modules.batchnorm import _BatchNorm
 
 from mmdet.registry import MODELS
+
 from .resnet import BasicBlock, Bottleneck
 
 

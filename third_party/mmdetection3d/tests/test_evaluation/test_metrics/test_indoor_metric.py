@@ -4,7 +4,6 @@ from unittest.mock import patch
 
 import numpy as np
 import torch
-
 from mmdet3d.evaluation.metrics import IndoorMetric
 from mmdet3d.structures import DepthInstance3DBoxes
 

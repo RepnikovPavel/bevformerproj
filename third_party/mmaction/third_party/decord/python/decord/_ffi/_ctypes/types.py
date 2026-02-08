@@ -3,8 +3,10 @@
 from __future__ import absolute_import as _abs
 
 import ctypes
-from ..base import py_str, check_call, _LIB
+
+from ..base import _LIB, check_call, py_str
 from ..runtime_ctypes import DECORDByteArray, TypeCode
+
 
 class DECORDValue(ctypes.Union):
     """DECORDValue in C API"""

@@ -3,7 +3,6 @@ from unittest import TestCase
 
 import pytest
 import torch
-
 from mmyolo.models.task_modules.assigners import BatchDynamicSoftLabelAssigner
 
 

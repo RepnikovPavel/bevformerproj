@@ -4,16 +4,16 @@ import copy as cp
 import tempfile
 
 import cv2
-import mmcv
-import mmengine
 import numpy as np
 import onnxruntime
 import torch
-from mmdet.structures.bbox import bbox2roi
-from mmengine import DictAction
-
 from mmaction.apis import detection_inference
 from mmaction.utils import frame_extract, get_str_type
+from mmdet.structures.bbox import bbox2roi
+
+import mmcv
+import mmengine
+from mmengine import DictAction
 
 try:
     import moviepy.editor as mpy

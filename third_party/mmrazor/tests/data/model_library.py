@@ -1,23 +1,37 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import copy
-from typing import List
-from typing import Dict, Callable
-from mmrazor.registry import MODELS
-from mmengine.config import Config
+import json
 import os
-from mmengine.utils import get_installed_path
-from mmrazor.registry import MODELS
+import string
+from typing import Callable, Dict, List
+
 import torch
 import torch.nn as nn
-from .models import (AddCatModel, ConcatModel, ConvAttnModel, DwConvModel,
-                     ExpandLineModel, GroupWiseConvModel, SingleLineModel,
-                     MultiBindModel, MultiConcatModel, MultiConcatModel2,
-                     ResBlock, Xmodel, MultipleUseModel, Icep, SelfAttention)
-import json
+
 # model generator
 from mmdet.testing._utils import demo_mm_inputs
-import string
-import copy
+from mmengine.config import Config
+from mmengine.utils import get_installed_path
+from mmrazor.registry import MODELS
+
+from .models import (
+    AddCatModel,
+    ConcatModel,
+    ConvAttnModel,
+    DwConvModel,
+    ExpandLineModel,
+    GroupWiseConvModel,
+    Icep,
+    MultiBindModel,
+    MultiConcatModel,
+    MultiConcatModel2,
+    MultipleUseModel,
+    ResBlock,
+    SelfAttention,
+    SingleLineModel,
+    Xmodel,
+)
+
 # helper functions
 
 

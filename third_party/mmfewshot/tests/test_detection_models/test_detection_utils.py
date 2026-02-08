@@ -1,11 +1,13 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import torch
-from mmcv import ConfigDict
+from mmfewshot.detection.models.utils import (
+    AggregationLayer,
+    DepthWiseCorrelationAggregator,
+    DifferenceAggregator,
+    DotProductAggregator,
+)
 
-from mmfewshot.detection.models.utils import (AggregationLayer,
-                                              DepthWiseCorrelationAggregator,
-                                              DifferenceAggregator,
-                                              DotProductAggregator)
+from mmcv import ConfigDict
 
 
 def test_depth_wise_aggregator():

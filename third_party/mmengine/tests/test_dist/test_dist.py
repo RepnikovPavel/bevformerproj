@@ -7,10 +7,9 @@ from itertools import product
 from unittest import TestCase
 from unittest.mock import patch
 
+import mmengine.dist as dist
 import torch
 import torch.distributed as torch_dist
-
-import mmengine.dist as dist
 from mmengine.device import is_musa_available
 from mmengine.dist.dist import sync_random_seed
 from mmengine.testing._internal import MultiProcessTestCase

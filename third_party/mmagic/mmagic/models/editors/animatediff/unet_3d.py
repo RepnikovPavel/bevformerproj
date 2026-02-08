@@ -20,10 +20,17 @@ from mmengine.model import constant_init
 from safetensors import safe_open
 
 from mmagic.registry import MODELS
+
 from .resnet_3d import InflatedConv3d, InflatedGroupNorm
-from .unet_block import (CrossAttnDownBlock3D, CrossAttnUpBlock3D, DownBlock3D,
-                         UNetMidBlock3DCrossAttn, UpBlock3D, get_down_block,
-                         get_up_block)
+from .unet_block import (
+    CrossAttnDownBlock3D,
+    CrossAttnUpBlock3D,
+    DownBlock3D,
+    UNetMidBlock3DCrossAttn,
+    UpBlock3D,
+    get_down_block,
+    get_up_block,
+)
 
 logger = MMLogger.get_current_instance()
 

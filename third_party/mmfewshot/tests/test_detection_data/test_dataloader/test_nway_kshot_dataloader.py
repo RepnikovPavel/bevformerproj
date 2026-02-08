@@ -1,9 +1,7 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import torch
 from mmdet.apis import set_random_seed
-
-from mmfewshot.detection.datasets.builder import (build_dataloader,
-                                                  build_dataset)
+from mmfewshot.detection.datasets.builder import build_dataloader, build_dataset
 
 
 def test_nway_kshot_dataloader():

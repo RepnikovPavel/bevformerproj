@@ -2,9 +2,9 @@
 from unittest import TestCase
 
 import torch
+from mmrazor.models import LSQObserver, LSQPerChannelObserver
 
 from mmrazor import digit_version
-from mmrazor.models import LSQObserver, LSQPerChannelObserver
 
 
 class TestLSQObserver(TestCase):

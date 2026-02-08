@@ -3,11 +3,12 @@ import platform
 
 import pytest
 import torch
-
-from mmagic.models.editors.swinir.swinir_modules import (PatchEmbed,
-                                                         PatchUnEmbed,
-                                                         Upsample,
-                                                         UpsampleOneStep)
+from mmagic.models.editors.swinir.swinir_modules import (
+    PatchEmbed,
+    PatchUnEmbed,
+    Upsample,
+    UpsampleOneStep,
+)
 
 
 @pytest.mark.skipif(

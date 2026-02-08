@@ -32,8 +32,14 @@ import numpy as np
 import torch
 import torch.nn as nn
 
-from mmcv.cnn.bricks import (Conv2d, Conv3d, ConvTranspose2d, Linear,
-                             MaxPool2d, MaxPool3d)
+from mmcv.cnn.bricks import (
+    Conv2d,
+    Conv3d,
+    ConvTranspose2d,
+    Linear,
+    MaxPool2d,
+    MaxPool3d,
+)
 
 
 def get_model_complexity_info(model: nn.Module,

@@ -4,8 +4,10 @@ import sys
 sys.path.append('build/')
 
 import os
-from libpydenseflow import TVL1FlowExtractor, TVL1WarpFlowExtractor
+
 import numpy as np
+from libpydenseflow import TVL1FlowExtractor
+
 
 class FlowExtractor(object):
 

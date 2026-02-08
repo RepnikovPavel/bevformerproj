@@ -3,11 +3,11 @@ from copy import deepcopy
 
 import torch
 import torch.nn as nn
-from mmengine.model import (BaseModule, normal_init, update_init_info,
-                            xavier_init)
+from mmengine.model import BaseModule, normal_init, update_init_info, xavier_init
 from torch.nn.utils import spectral_norm
 
 from mmagic.registry import MODELS
+
 from ...utils import get_module_device
 from .biggan_modules import SelfAttentionBlock, SNConvModule
 from .biggan_snmodule import SNLinear

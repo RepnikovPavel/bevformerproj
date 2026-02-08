@@ -3,9 +3,9 @@ import argparse
 import json
 from functools import partial
 
-import mmengine
-
 from mmocr.utils import list_from_file, list_to_file
+
+import mmengine
 
 
 def convert(closeset_line, merge_bg_others=False, ignore_idx=0, others_idx=25):

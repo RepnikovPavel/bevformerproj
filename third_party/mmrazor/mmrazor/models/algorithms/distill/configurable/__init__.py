@@ -1,6 +1,5 @@
 # Copyright (c) OpenMMLab. All rights reserved.
-from .datafree_distillation import (DAFLDataFreeDistillation,
-                                    DataFreeDistillation)
+from .datafree_distillation import DAFLDataFreeDistillation, DataFreeDistillation
 from .fpn_teacher_distill import FpnTeacherDistill
 from .overhaul_feature_distillation import OverhaulFeatureDistillation
 from .self_distill import SelfDistill

@@ -9,8 +9,13 @@ from torch import Tensor
 
 from mmrazor.models.mutables.base_mutable import BaseMutable
 from mmrazor.registry import MODELS
-from ..mixins.dynamic_conv_mixins import (BigNasConvMixin, DynamicConvMixin,
-                                          FuseConvMixin, OFAConvMixin)
+
+from ..mixins.dynamic_conv_mixins import (
+    BigNasConvMixin,
+    DynamicConvMixin,
+    FuseConvMixin,
+    OFAConvMixin,
+)
 
 GroupWiseConvWarned = False
 

@@ -9,6 +9,7 @@ from mmengine.runner.base_loop import BaseLoop
 from torch.utils.data import DataLoader
 
 from mmagic.registry import LOOPS
+
 from .loop_utils import is_evaluator, update_and_check_evaluator
 
 DATALOADER_TYPE = Union[DataLoader, Dict, List]

@@ -5,6 +5,7 @@ import torch
 
 from mmagic.registry import MODELS
 from mmagic.utils import tensor2img
+
 from .base_edit_model import BaseEditModel
 
 # TODO tensor2img will be move

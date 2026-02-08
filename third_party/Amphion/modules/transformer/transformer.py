@@ -5,15 +5,15 @@
 
 import copy
 from functools import partial
-from typing import Any, Callable, List, Optional, Union
+from typing import Callable, Optional, Union
 
 import torch
 from torch import Tensor, nn
 from torch.nn import functional as F
 
-from modules.norms import AdaptiveLayerNorm, LayerNorm, BalancedBasicNorm, IdentityNorm
-from modules.transformer import MultiheadAttention
 from modules.general.scaling import BalancedDoubleSwish
+from modules.norms import AdaptiveLayerNorm, BalancedBasicNorm, IdentityNorm, LayerNorm
+from modules.transformer import MultiheadAttention
 
 
 class TransformerEncoderLayer(nn.Module):

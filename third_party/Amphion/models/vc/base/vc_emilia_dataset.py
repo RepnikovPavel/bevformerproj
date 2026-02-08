@@ -4,13 +4,12 @@
 # LICENSE file in the root directory of this source tree.
 
 import logging
-import numpy as np
+
 import librosa
+import numpy as np
 import torch
-from torch.nn.utils.rnn import pad_sequence
-
 from models.base.emilia_dataset import EmiliaDataset, WarningFilter
-
+from torch.nn.utils.rnn import pad_sequence
 
 filter = WarningFilter()
 logging.getLogger("phonemizer").addFilter(filter)
@@ -46,7 +45,7 @@ class VCEmiliaDataset(EmiliaDataset):
             )
 
     def g2p(self, text, language):
-        from models.tts.maskgct.g2p.g2p_generation import g2p, chn_eng_g2p
+        from models.tts.maskgct.g2p.g2p_generation import chn_eng_g2p, g2p
 
         if language in ["zh", "en"]:
             return chn_eng_g2p(text)

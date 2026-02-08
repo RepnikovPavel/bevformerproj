@@ -1,30 +1,29 @@
-from diffusers import StableDiffusionPipeline
-import torch
-import torch.nn as nn
-import matplotlib.pyplot as plt
-import numpy as np
-from typing import Any, Callable, Dict, List, Optional, Union
-from diffusers.models.unet_2d_condition import UNet2DConditionModel, UNet2DConditionOutput
-from diffusers import DDIMScheduler, DDIMInverseScheduler
 import gc
 import os
+from typing import Any, Callable, Dict, List, Optional, Union
+
+import numpy as np
+import torch
+from diffusers import DDIMInverseScheduler, StableDiffusionPipeline
+from diffusers.models.unet_2d_condition import (
+    UNet2DConditionModel,
+    UNet2DConditionOutput,
+)
 from PIL import Image
+from src.ip_adapter.ip_adapter import ImageProjModel
+from src.ip_adapter.utils import is_torch2_available
 from torchvision.transforms import PILToTensor
 from transformers import CLIPImageProcessor, CLIPVisionModelWithProjection
-from src.ip_adapter.utils import is_torch2_available, get_generator
-from src.ip_adapter.ip_adapter import ImageProjModel
+
 if is_torch2_available():
     from src.ip_adapter.attention_processor import (
         AttnProcessor2_0 as AttnProcessor,
     )
     from src.ip_adapter.attention_processor import (
-        CNAttnProcessor2_0 as CNAttnProcessor,
-    )
-    from src.ip_adapter.attention_processor import (
         IPAttnProcessor2_0 as IPAttnProcessor,
     )
 else:
-    from src.ip_adapter.attention_processor import AttnProcessor, CNAttnProcessor, IPAttnProcessor
+    from src.ip_adapter.attention_processor import AttnProcessor, IPAttnProcessor
 
 
 

@@ -20,10 +20,10 @@ import torch.nn as nn
 import mmengine
 from mmengine.dist import init_dist, is_main_process
 from mmengine.optim import BaseOptimWrapper, _ParamScheduler
-from mmengine.registry import (MODEL_WRAPPERS, OPTIM_WRAPPERS, OPTIMIZERS,
-                               STRATEGIES)
+from mmengine.registry import MODEL_WRAPPERS, OPTIM_WRAPPERS, OPTIMIZERS, STRATEGIES
 from mmengine.runner.checkpoint import save_checkpoint, weights_to_cpu
 from mmengine.utils import apply_to, digit_version, get_git_hash
+
 from .base import BaseStrategy
 
 
@@ -41,8 +41,7 @@ def register_deepspeed_optimizers() -> List[str]:
     else:
         from deepspeed.ops.adam import DeepSpeedCPUAdam, FusedAdam
         from deepspeed.ops.lamb import FusedLamb
-        from deepspeed.runtime.fp16.onebit import (OnebitAdam, OnebitLamb,
-                                                   ZeroOneAdam)
+        from deepspeed.runtime.fp16.onebit import OnebitAdam, OnebitLamb, ZeroOneAdam
 
         OPTIMIZERS.register_module(module=DeepSpeedCPUAdam)
         deepspeed_optimizers.append('DeepSpeedCPUAdam')

@@ -2,9 +2,8 @@ import os
 
 import gradio as gr
 import torch
-from PIL import Image
-
 from mmgpt.models.builder import create_model_and_transforms
+from PIL import Image
 
 TEMPLATE = "Below is an instruction that describes a task. Write a response that appropriately completes the request."
 response_split = "### Response:"

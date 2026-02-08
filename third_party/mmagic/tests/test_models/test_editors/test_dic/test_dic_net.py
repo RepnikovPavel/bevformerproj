@@ -4,9 +4,11 @@ import platform
 import pytest
 import torch
 import torch.nn as nn
-
-from mmagic.models.editors import (FeedbackBlock, FeedbackBlockCustom,
-                                   FeedbackBlockHeatmapAttention)
+from mmagic.models.editors import (
+    FeedbackBlock,
+    FeedbackBlockCustom,
+    FeedbackBlockHeatmapAttention,
+)
 from mmagic.registry import MODELS
 
 

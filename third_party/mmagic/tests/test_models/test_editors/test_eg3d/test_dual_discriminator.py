@@ -5,7 +5,6 @@ from unittest import TestCase
 
 import pytest
 import torch
-
 from mmagic.models.editors.eg3d.dual_discriminator import DualDiscriminator
 
 

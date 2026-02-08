@@ -2,10 +2,10 @@
 
 # yapf: disable
 
-import numpy as np
-import pytest
 import random
 
+import numpy as np
+import pytest
 from mmeval.core.base_metric import BaseMetric
 from mmeval.metrics.oid_map import OIDMeanAP, get_relation_matrix
 

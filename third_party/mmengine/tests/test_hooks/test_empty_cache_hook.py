@@ -3,7 +3,6 @@ from copy import deepcopy
 from unittest.mock import patch
 
 import pytest
-
 from mmengine.device import is_cuda_available
 from mmengine.testing import RunnerTestCase
 

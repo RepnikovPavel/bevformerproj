@@ -1,12 +1,12 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import sys
 
-import mmcv
 import numpy as np
 import torch
 import torch.nn.functional as F
 from mmcv.parallel import is_module_wrapper
 
+import mmcv
 from mmgen.models.architectures.common import get_module_device
 
 

@@ -5,6 +5,7 @@ from torch import Tensor
 
 from mmdet3d.registry import MODELS
 from mmdet3d.utils import ConfigType, OptConfigType, OptMultiConfig
+
 from ...structures.det3d_data_sample import SampleList
 from .encoder_decoder import EncoderDecoder3D
 

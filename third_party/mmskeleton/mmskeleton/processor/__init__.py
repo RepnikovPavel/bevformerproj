@@ -1,1 +1,1 @@
-from . import recognition, pose_demo
+from . import pose_demo, recognition

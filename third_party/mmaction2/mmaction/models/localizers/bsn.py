@@ -7,6 +7,7 @@ from mmengine.model import BaseModel
 from mmengine.model.weight_init import constant_init, kaiming_init
 
 from mmaction.registry import MODELS
+
 from .utils import post_processing, temporal_iop
 
 

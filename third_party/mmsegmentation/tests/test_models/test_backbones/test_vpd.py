@@ -2,11 +2,11 @@
 from os.path import dirname, join
 from unittest import TestCase
 
-import torch
-from mmengine import Config
-
 import mmseg
+import torch
 from mmseg.models.backbones import VPD
+
+from mmengine import Config
 
 
 class TestVPD(TestCase):

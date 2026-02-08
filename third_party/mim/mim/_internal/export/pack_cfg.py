@@ -10,7 +10,7 @@ import traceback
 from datetime import datetime
 from typing import Optional, Union
 
-from mmengine import MMLogger
+from mim.utils import echo_error
 from mmengine.config import Config, ConfigDict
 from mmengine.hub import get_config
 from mmengine.logging import print_log
@@ -18,7 +18,8 @@ from mmengine.registry import init_default_scope
 from mmengine.runner import Runner
 from mmengine.utils import get_installed_path, mkdir_or_exist
 
-from mim.utils import echo_error
+from mmengine import MMLogger
+
 from .common import _import_pack_str, _init_str
 from .utils import (
     _get_all_files,

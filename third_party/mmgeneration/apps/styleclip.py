@@ -6,15 +6,15 @@ try:
     import clip
 except ImportError:
     raise 'To use styleclip, openai clip need to be installed first'
-import mmcv
 import torch
 import torchvision
-from mmcv import Config, DictAction
+from mmgen.apis import init_model
+from mmgen.models.losses import CLIPLoss, FaceIdLoss
 from torch import optim
 from tqdm import tqdm
 
-from mmgen.apis import init_model
-from mmgen.models.losses import CLIPLoss, FaceIdLoss
+import mmcv
+from mmcv import Config, DictAction
 
 from mmgen.apis import set_random_seed  # isort:skip  # noqa
 

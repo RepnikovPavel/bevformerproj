@@ -5,10 +5,10 @@
 
 
 import re
-from g2p_en import G2p
 from string import punctuation
-from typing import Any, Dict, List, Optional, Pattern, Union
+from typing import List, Pattern, Union
 
+from g2p_en import G2p
 from phonemizer.backend import EspeakBackend
 from phonemizer.backend.espeak.language_switch import LanguageSwitch
 from phonemizer.backend.espeak.words_mismatch import WordMismatch

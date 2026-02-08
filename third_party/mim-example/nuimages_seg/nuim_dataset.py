@@ -1,10 +1,11 @@
 import os.path as osp
 
-import mmcv
 from mmcv.utils import print_log
 from mmseg.datasets import CustomDataset
 from mmseg.datasets.builder import DATASETS
 from mmseg.utils import get_root_logger
+
+import mmcv
 
 
 @DATASETS.register_module()

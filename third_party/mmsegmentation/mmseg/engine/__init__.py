@@ -1,8 +1,10 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 from .hooks import SegVisualizationHook
-from .optimizers import (ForceDefaultOptimWrapperConstructor,
+from .optimizers import (
+                         ForceDefaultOptimWrapperConstructor,
                          LayerDecayOptimizerConstructor,
-                         LearningRateDecayOptimizerConstructor)
+                         LearningRateDecayOptimizerConstructor,
+)
 from .schedulers import PolyLRRatio
 
 __all__ = [

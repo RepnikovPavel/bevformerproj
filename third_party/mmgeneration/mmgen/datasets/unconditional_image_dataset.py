@@ -1,8 +1,9 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import os.path as osp
 
-import mmcv
 from torch.utils.data import Dataset
+
+import mmcv
 
 from .builder import DATASETS
 from .pipelines import Compose

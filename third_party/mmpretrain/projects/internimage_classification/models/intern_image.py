@@ -8,11 +8,10 @@ import torch.utils.checkpoint as cp
 from mmcv.cnn.bricks import DropPath, build_activation_layer
 from mmcv.cnn.bricks.transformer import FFN
 from mmengine.model.weight_init import trunc_normal_
-from ops_dcnv3 import modules as opsm
-
 from mmpretrain.models.backbones.base_backbone import BaseBackbone
 from mmpretrain.models.utils import CrossMultiheadAttention
 from mmpretrain.registry import MODELS
+from ops_dcnv3 import modules as opsm
 
 
 class to_channels_first(nn.Module):

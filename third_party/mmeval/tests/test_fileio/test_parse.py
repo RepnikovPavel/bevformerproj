@@ -3,8 +3,7 @@ import os.path as osp
 import sys
 from unittest.mock import MagicMock, patch
 
-from mmeval.fileio import (HTTPBackend, PetrelBackend, dict_from_file,
-                           list_from_file)
+from mmeval.fileio import HTTPBackend, PetrelBackend, dict_from_file, list_from_file
 
 sys.modules['petrel_client'] = MagicMock()
 sys.modules['petrel_client.client'] = MagicMock()

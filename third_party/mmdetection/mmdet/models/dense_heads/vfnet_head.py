@@ -10,8 +10,15 @@ from torch import Tensor
 
 from mmdet.registry import MODELS, TASK_UTILS
 from mmdet.structures.bbox import bbox_overlaps
-from mmdet.utils import (ConfigType, InstanceList, MultiConfig,
-                         OptInstanceList, RangeType, reduce_mean)
+from mmdet.utils import (
+    ConfigType,
+    InstanceList,
+    MultiConfig,
+    OptInstanceList,
+    RangeType,
+    reduce_mean,
+)
+
 from ..task_modules.prior_generators import MlvlPointGenerator
 from ..task_modules.samplers import PseudoSampler
 from ..utils import multi_apply

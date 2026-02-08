@@ -4,8 +4,17 @@
 import re
 from collections import Counter
 from difflib import SequenceMatcher
-from typing import (TYPE_CHECKING, Any, Callable, Dict, List, Optional,
-                    Sequence, Tuple, Union)
+from typing import (
+    TYPE_CHECKING,
+    Any,
+    Callable,
+    Dict,
+    List,
+    Optional,
+    Sequence,
+    Tuple,
+    Union,
+)
 
 from mmeval import BaseMetric
 from mmeval.metrics.utils import get_tokenizer, infer_language

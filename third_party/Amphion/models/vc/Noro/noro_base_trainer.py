@@ -5,11 +5,11 @@
 
 import json
 import os
-import torch
 import time
 from pathlib import Path
-import torch
+
 import accelerate
+import torch
 from accelerate.logging import get_logger
 from models.base.new_trainer import BaseTrainer
 

@@ -5,7 +5,6 @@ from typing import List, Optional, Sequence, Tuple, Union
 
 import torch
 import torch.nn.functional as F
-from mmengine import print_log
 from mmengine.model import ImgDataPreprocessor
 from mmengine.utils import is_seq_of
 from torch import Tensor
@@ -13,6 +12,7 @@ from torch import Tensor
 from mmagic.registry import MODELS
 from mmagic.structures import DataSample
 from mmagic.utils.typing import SampleList
+from mmengine import print_log
 
 CastData = Union[tuple, dict, DataSample, Tensor, list]
 

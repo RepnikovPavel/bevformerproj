@@ -1,13 +1,12 @@
+import argparse
 import os
-from types import MethodType
 
 import torch
-from diffusers import StableDiffusionControlNetPipeline, ControlNetModel
-from transformers import CLIPVisionModelWithProjection
-from PIL import Image
+from diffusers import ControlNetModel, StableDiffusionControlNetPipeline
 from huggingface_hub import snapshot_download
 from ip_adapter import StyleShot
-import argparse
+from PIL import Image
+
 
 def main(args):
     base_model_path = "runwayml/stable-diffusion-v1-5"

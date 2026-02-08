@@ -3,8 +3,9 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 
-from . import box_utils
 from pcdet.ops.iou3d_nms import iou3d_nms_utils
+
+from . import box_utils
 
 
 class SigmoidFocalClassificationLoss(nn.Module):

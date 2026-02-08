@@ -2,10 +2,10 @@
 import os.path as osp
 from argparse import ArgumentParser
 
-import mmcv
-
 from mmflow.apis import inference_model, init_model
 from mmflow.datasets import visualize_flow, write_flow
+
+import mmcv
 
 
 def parse_args():

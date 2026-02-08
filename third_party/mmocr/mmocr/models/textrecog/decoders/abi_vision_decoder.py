@@ -9,6 +9,7 @@ from mmocr.models.common.dictionary import Dictionary
 from mmocr.models.common.modules import PositionalEncoding
 from mmocr.registry import MODELS
 from mmocr.structures import TextRecogDataSample
+
 from .base import BaseDecoder
 
 

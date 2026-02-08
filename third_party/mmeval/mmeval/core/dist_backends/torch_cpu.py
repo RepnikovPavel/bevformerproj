@@ -4,6 +4,7 @@ import pickle
 from typing import TYPE_CHECKING, Any, List, Tuple, TypeVar, Union
 
 from mmeval.utils import try_import
+
 from .base_backend import TensorBaseDistBackend
 
 if TYPE_CHECKING:

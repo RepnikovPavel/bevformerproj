@@ -5,7 +5,6 @@ from unittest import TestCase
 from unittest.mock import ANY, patch
 
 import numpy as np
-
 from mmpretrain.registry import TRANSFORMS
 
 

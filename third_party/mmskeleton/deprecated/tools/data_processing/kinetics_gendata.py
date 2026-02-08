@@ -1,14 +1,14 @@
-import os
-import sys
-import pickle
 import argparse
+import os
+import pickle
+import sys
 
-import numpy as np
 from numpy.lib.format import open_memmap
 
 sys.path.append(
     os.path.abspath(os.path.join(os.path.dirname(__file__), os.path.pardir)))
 from mmskeleton.deprecated.datasets.kinetics_feeder import KineticsFeeder
+
 toolbar_width = 30
 
 

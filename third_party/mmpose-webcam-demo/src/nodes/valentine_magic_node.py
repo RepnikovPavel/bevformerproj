@@ -6,10 +6,13 @@ from typing import Dict, List, Optional, Tuple, Union
 import cv2
 import numpy as np
 from mmpose.apis.webcam.nodes import NODES, BaseVisualizerNode
-from mmpose.apis.webcam.utils import (FrameMessage, get_eye_keypoint_ids,
-                                      get_hand_keypoint_ids,
-                                      get_mouth_keypoint_ids,
-                                      load_image_from_disk_or_url)
+from mmpose.apis.webcam.utils import (
+    FrameMessage,
+    get_eye_keypoint_ids,
+    get_hand_keypoint_ids,
+    get_mouth_keypoint_ids,
+    load_image_from_disk_or_url,
+)
 
 
 @dataclass

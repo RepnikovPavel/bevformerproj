@@ -3,7 +3,6 @@
 import pytest
 import torch
 import torch.nn as nn
-
 from mmengine.analysis.complexity_analysis import FlopAnalyzer, parameter_count
 from mmengine.analysis.print_helper import get_model_complexity_info
 from mmengine.utils import digit_version

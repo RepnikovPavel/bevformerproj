@@ -2,13 +2,13 @@
 import copy
 from typing import Optional, Union
 
-import mmcv
 import numpy as np
 from mmcv.transforms.base import BaseTransform
-from mmengine.fileio import get
-
 from mmdet3d.datasets.transforms import LoadMultiViewImageFromFiles
 from mmdet3d.registry import TRANSFORMS
+from mmengine.fileio import get
+
+import mmcv
 
 Number = Union[int, float]
 

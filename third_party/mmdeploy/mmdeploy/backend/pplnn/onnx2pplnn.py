@@ -2,6 +2,7 @@
 from typing import Optional, Sequence
 
 from mmdeploy.utils.device import parse_cuda_device_id
+
 from .utils import create_runtime, register_engines
 
 

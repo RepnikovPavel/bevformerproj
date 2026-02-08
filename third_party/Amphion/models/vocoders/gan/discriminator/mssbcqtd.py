@@ -4,15 +4,12 @@
 # LICENSE file in the root directory of this source tree.
 
 import torch
-import torch.nn.functional as F
 import torch.nn as nn
-from torch import nn
-from modules.vocoder_blocks import *
-
-from einops import rearrange
 import torchaudio.transforms as T
-
+from einops import rearrange
+from modules.vocoder_blocks import *
 from nnAudio import features
+from torch import nn
 
 LRELU_SLOPE = 0.1
 

@@ -6,14 +6,14 @@ from argparse import ArgumentParser
 from itertools import product
 
 import cv2
-import mmcv
 import numpy as np
 from mmengine.registry import init_default_scope
-
 from mmpose.apis import inference_topdown
 from mmpose.apis import init_model as init_pose_estimator
 from mmpose.evaluation.functional import nms
 from mmpose.structures import merge_data_samples
+
+import mmcv
 
 try:
     from mmdet.apis import inference_detector, init_detector

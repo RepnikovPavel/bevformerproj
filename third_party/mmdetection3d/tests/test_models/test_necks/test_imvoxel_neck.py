@@ -1,6 +1,5 @@
 import pytest
 import torch
-
 from mmdet3d.registry import MODELS
 
 

@@ -3,7 +3,6 @@ from typing import Dict
 
 import numpy as np
 from mmcv.transforms.base import BaseTransform
-
 from mmocr.datasets.transforms import LoadOCRAnnotations
 from mmocr.registry import TASK_UTILS, TRANSFORMS
 from mmocr.utils import bezier2poly, poly2bezier

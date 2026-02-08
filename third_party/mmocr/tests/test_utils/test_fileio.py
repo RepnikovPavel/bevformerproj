@@ -4,8 +4,14 @@ import os
 import tempfile
 import unittest
 
-from mmocr.utils import (check_integrity, get_md5, is_archive, list_files,
-                         list_from_file, list_to_file)
+from mmocr.utils import (
+    check_integrity,
+    get_md5,
+    is_archive,
+    list_files,
+    list_from_file,
+    list_to_file,
+)
 
 lists = [
     [],

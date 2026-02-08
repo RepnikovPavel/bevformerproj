@@ -6,7 +6,6 @@ from typing import Dict, List, Optional, Sequence, Tuple, Union
 
 import numpy as np
 import torch.nn as nn
-from mmengine import dump, print_log
 from mmengine.infer.infer import BaseInferencer, ModelType
 from mmengine.model.utils import revert_sync_batchnorm
 from mmengine.registry import init_default_scope
@@ -18,6 +17,7 @@ from rich.progress import track
 from mmdet3d.registry import DATASETS, MODELS
 from mmdet3d.structures import Box3DMode, Det3DDataSample
 from mmdet3d.utils import ConfigType
+from mmengine import dump, print_log
 
 InstanceList = List[InstanceData]
 InputType = Union[str, np.ndarray]

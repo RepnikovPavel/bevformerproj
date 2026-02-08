@@ -2,9 +2,8 @@
 from unittest import TestCase
 
 import torch
-from mmengine.config import ConfigDict
-
 from mmdet.models.dense_heads import GARetinaHead
+from mmengine.config import ConfigDict
 
 ga_retina_head_config = ConfigDict(
     dict(

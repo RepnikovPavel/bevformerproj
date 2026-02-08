@@ -15,8 +15,7 @@ try:
     import groundingdino.datasets.transforms as T
     from groundingdino.models import build_model
     from groundingdino.util import get_tokenlizer
-    from groundingdino.util.utils import (clean_state_dict,
-                                          get_phrases_from_posmap)
+    from groundingdino.util.utils import clean_state_dict, get_phrases_from_posmap
     grounding_dino_transform = T.Compose([
         T.RandomResize([800], max_size=1333),
         T.ToTensor(),
@@ -37,6 +36,7 @@ import sys
 from mmengine.config import Config
 from mmengine.utils import ProgressBar
 from PIL import Image
+
 # segment anything
 from segment_anything import SamPredictor, sam_model_registry
 
@@ -46,7 +46,6 @@ from mmdet_sam.utils import apply_exif_orientation, get_file_list  # noqa
 # GLIP
 try:
     import maskrcnn_benchmark
-
     from mmdet_sam.predictor_glip import GLIPDemo
 except ImportError:
     maskrcnn_benchmark = None

@@ -3,18 +3,21 @@ import copy
 import os.path as osp
 from unittest import TestCase
 
-import mmcv
 import numpy as np
 import pytest
 from mmengine.registry import init_default_scope
+from mmseg.datasets.transforms import *  # noqa
+from mmseg.datasets.transforms import (
+    LoadBiomedicalData,
+    LoadBiomedicalImageFromFile,
+    PhotoMetricDistortion,
+    RandomCrop,
+    RandomDepthMix,
+)
+from mmseg.registry import TRANSFORMS
 from PIL import Image
 
-from mmseg.datasets.transforms import *  # noqa
-from mmseg.datasets.transforms import (LoadBiomedicalData,
-                                       LoadBiomedicalImageFromFile,
-                                       PhotoMetricDistortion, RandomCrop,
-                                       RandomDepthMix)
-from mmseg.registry import TRANSFORMS
+import mmcv
 
 init_default_scope('mmseg')
 
@@ -830,8 +833,10 @@ def test_biomedical3d_random_crop():
         transform = dict(type='BioMedical3DRandomCrop', crop_shape=(-2, -1, 0))
         transform = TRANSFORMS.build(transform)
 
-    from mmseg.datasets.transforms import (LoadBiomedicalAnnotation,
-                                           LoadBiomedicalImageFromFile)
+    from mmseg.datasets.transforms import (
+        LoadBiomedicalAnnotation,
+        LoadBiomedicalImageFromFile,
+    )
     results = dict()
     results['img_path'] = osp.join(
         osp.dirname(__file__), '../data', 'biomedical.nii.gz')

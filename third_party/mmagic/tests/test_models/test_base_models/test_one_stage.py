@@ -5,12 +5,12 @@ from unittest.mock import patch
 
 import pytest
 import torch
-from mmengine import Config
-
 from mmagic.models import GLEncoderDecoder
 from mmagic.registry import MODELS
 from mmagic.structures import DataSample
 from mmagic.utils import register_all_modules
+
+from mmengine import Config
 
 
 def test_one_stage_inpaintor():

@@ -1,9 +1,16 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import pytest
-
-from mmengine import (PARAM_SCHEDULERS, Config, ConfigDict, ManagerMixin,
-                      Registry, build_from_cfg, build_model_from_cfg)
 from mmengine.utils import is_installed
+
+from mmengine import (
+    PARAM_SCHEDULERS,
+    Config,
+    ConfigDict,
+    ManagerMixin,
+    Registry,
+    build_from_cfg,
+    build_model_from_cfg,
+)
 
 
 @pytest.mark.parametrize('cfg_type', [dict, ConfigDict, Config])

@@ -1,11 +1,9 @@
 # Copyright (c) OpenMMLab. All rights reserved.
-from mmengine.dataset import DefaultSampler
-
 from mmagic.datasets import BasicImageDataset
-from mmagic.datasets.transforms import (LoadImageFromFile, PackInputs,
-                                        RandomNoise)
+from mmagic.datasets.transforms import LoadImageFromFile, PackInputs, RandomNoise
 from mmagic.engine.runner import MultiTestLoop
 from mmagic.evaluation import PSNR, SSIM
+from mmengine.dataset import DefaultSampler
 
 sigma = 15
 test_pipeline = [

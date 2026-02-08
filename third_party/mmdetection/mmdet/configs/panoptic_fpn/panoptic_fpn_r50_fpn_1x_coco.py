@@ -7,20 +7,18 @@
 from mmengine.config import read_base
 
 with read_base():
-    from .._base_.models.mask_rcnn_r50_fpn import *
     from .._base_.datasets.coco_panoptic import *
-    from .._base_.schedules.schedule_1x import *
     from .._base_.default_runtime import *
+    from .._base_.models.mask_rcnn_r50_fpn import *
+    from .._base_.schedules.schedule_1x import *
 
 from mmcv.ops import nms
-from torch.nn import GroupNorm
-
-from mmdet.models.data_preprocessors.data_preprocessor import \
-    DetDataPreprocessor
+from mmdet.models.data_preprocessors.data_preprocessor import DetDataPreprocessor
 from mmdet.models.detectors.panoptic_fpn import PanopticFPN
 from mmdet.models.losses.cross_entropy_loss import CrossEntropyLoss
 from mmdet.models.seg_heads.panoptic_fpn_head import PanopticFPNHead
 from mmdet.models.seg_heads.panoptic_fusion_heads import HeuristicFusionHead
+from torch.nn import GroupNorm
 
 model.update(
     dict(

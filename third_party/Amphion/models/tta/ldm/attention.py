@@ -3,12 +3,13 @@
 # This source code is licensed under the MIT license found in the
 # LICENSE file in the root directory of this source tree.
 
-from inspect import isfunction
 import math
+from inspect import isfunction
+
 import torch
 import torch.nn.functional as F
-from torch import nn, einsum
 from einops import rearrange, repeat
+from torch import einsum, nn
 
 
 class CheckpointFunction(torch.autograd.Function):

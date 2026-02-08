@@ -6,15 +6,16 @@ from abc import abstractmethod
 from typing import Any, Dict, List, Optional, Sequence, Tuple, Union
 
 import torch
-from mmengine import fileio
 from mmengine.evaluator import Evaluator
 from mmengine.runner import IterBasedTrainLoop
 from mmengine.utils import is_list_of
 from torch.utils.data import DataLoader
 
+from mmengine import fileio
 from mmrazor.registry import LOOPS, TASK_UTILS
 from mmrazor.structures import Candidates
 from mmrazor.utils import SupportRandomSubnet
+
 from .utils import check_subnet_resources
 
 

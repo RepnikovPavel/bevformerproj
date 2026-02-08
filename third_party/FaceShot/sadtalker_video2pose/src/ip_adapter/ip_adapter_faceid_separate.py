@@ -2,13 +2,11 @@ import os
 from typing import List
 
 import torch
-from diffusers import StableDiffusionPipeline
-from diffusers.pipelines.controlnet import MultiControlNetModel
 from PIL import Image
 from safetensors import safe_open
 from transformers import CLIPImageProcessor, CLIPVisionModelWithProjection
 
-from .utils import is_torch2_available, get_generator
+from .utils import get_generator, is_torch2_available
 
 USE_DAFAULT_ATTN = False # should be True for visualization_attnmap
 if is_torch2_available() and (not USE_DAFAULT_ATTN):
@@ -20,7 +18,7 @@ if is_torch2_available() and (not USE_DAFAULT_ATTN):
     )
 else:
     from .attention_processor import AttnProcessor, IPAttnProcessor
-from .resampler import PerceiverAttention, FeedForward
+from .resampler import FeedForward, PerceiverAttention
 
 
 class FacePerceiverResampler(torch.nn.Module):

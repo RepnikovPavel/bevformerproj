@@ -1,7 +1,6 @@
 # Credit to https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix/blob/master/models/networks.py
-import torch
-import torch.nn as nn
 from torch.nn import init
+
 
 def init_weights(net, init_type='normal', init_gain=0.02):
     """Initialize network weights.

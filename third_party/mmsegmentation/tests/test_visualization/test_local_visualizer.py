@@ -5,13 +5,13 @@ import tempfile
 from unittest import TestCase
 
 import cv2
-import mmcv
 import numpy as np
 import torch
 from mmengine.structures import PixelData
-
 from mmseg.structures import SegDataSample
 from mmseg.visualization import SegLocalVisualizer
+
+import mmcv
 
 
 class TestSegLocalVisualizer(TestCase):

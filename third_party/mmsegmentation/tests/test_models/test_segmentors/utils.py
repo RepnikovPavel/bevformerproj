@@ -2,14 +2,13 @@
 import torch
 from mmengine.optim import OptimWrapper
 from mmengine.structures import PixelData
-from torch import nn
-from torch.optim import SGD
-
 from mmseg.models import SegDataPreProcessor
 from mmseg.models.decode_heads.cascade_decode_head import BaseCascadeDecodeHead
 from mmseg.models.decode_heads.decode_head import BaseDecodeHead
 from mmseg.registry import MODELS
 from mmseg.structures import SegDataSample
+from torch import nn
+from torch.optim import SGD
 
 
 def _demo_mm_inputs(input_shape=(1, 3, 8, 16), num_classes=10):

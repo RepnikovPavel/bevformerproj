@@ -1,7 +1,6 @@
 # Copyright (c) OpenMMLab. All rights reserved.
-from mmengine.dataset import DefaultSampler, InfiniteSampler
-
 from mmagic.evaluation import SAD, ConnectivityError, GradientError, MattingMSE
+from mmengine.dataset import DefaultSampler, InfiniteSampler
 
 # Base config for Composition-1K dataset
 

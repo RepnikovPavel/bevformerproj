@@ -1,18 +1,21 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import random
 
-import mmcv
 import numpy as np
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
 
+import mmcv
 from mmgen.models.architectures import PixelNorm
 from mmgen.models.architectures.common import get_module_device
-from mmgen.models.architectures.pggan import (EqualizedLRConvDownModule,
-                                              EqualizedLRConvModule)
+from mmgen.models.architectures.pggan import (
+    EqualizedLRConvDownModule,
+    EqualizedLRConvModule,
+)
 from mmgen.models.architectures.stylegan.modules import Blur
 from mmgen.models.builder import MODULES
+
 from .. import MiniBatchStddevLayer
 from .modules.styleganv1_modules import StyleConv
 from .modules.styleganv2_modules import EqualLinearActModule

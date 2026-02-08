@@ -3,12 +3,13 @@ import copy
 import re
 from collections import OrderedDict
 
-from mmengine import ConfigDict
 from torch.nn import Conv2d, Linear
 from torch.nn.modules import GroupNorm
 from torch.nn.modules.batchnorm import _NormBase
 
+from mmengine import ConfigDict
 from mmrazor.registry import TASK_UTILS
+
 from .parsers import DEFAULT_BACKWARD_TRACER
 from .path import Path, PathList
 

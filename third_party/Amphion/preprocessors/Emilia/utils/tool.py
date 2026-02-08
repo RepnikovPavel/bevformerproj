@@ -3,19 +3,20 @@
 # This source code is licensed under the MIT license found in the
 # LICENSE file in the root directory of this source tree.
 
-from concurrent.futures import ThreadPoolExecutor
 import json
 import os
+import re
+import subprocess
+import time
+from concurrent.futures import ThreadPoolExecutor
+
 import librosa
 import numpy as np
-import time
-import torch
-from pydub import AudioSegment
-import soundfile as sf
 import onnxruntime as ort
+import soundfile as sf
+import torch
 import tqdm
-import subprocess
-import re
+from pydub import AudioSegment
 
 from utils.logger import Logger, time_logger
 
@@ -37,7 +38,7 @@ def load_cfg(cfg_path):
     with open(cfg_path, "r") as f:
         try:
             cfg = json.load(f)
-        except json.decoder.JSONDecodeError as e:
+        except json.decoder.JSONDecodeError:
             raise TypeError(
                 "Please finish the `// TODO:` in the `config.json` file before running the script. Check README.md for details."
             )

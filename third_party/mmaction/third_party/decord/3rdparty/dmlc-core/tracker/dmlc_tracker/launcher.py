@@ -2,9 +2,10 @@
 # pylint: disable=invalid-name
 """The container launcher script that launches DMLC with the right env variable."""
 import glob
-import sys
 import os
 import subprocess
+import sys
+
 
 def unzip_archives(ar_list, env):
     for fname in ar_list:

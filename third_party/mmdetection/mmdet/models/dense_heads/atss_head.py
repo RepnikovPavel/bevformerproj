@@ -8,8 +8,15 @@ from mmengine.structures import InstanceData
 from torch import Tensor
 
 from mmdet.registry import MODELS
-from mmdet.utils import (ConfigType, InstanceList, MultiConfig, OptConfigType,
-                         OptInstanceList, reduce_mean)
+from mmdet.utils import (
+    ConfigType,
+    InstanceList,
+    MultiConfig,
+    OptConfigType,
+    OptInstanceList,
+    reduce_mean,
+)
+
 from ..task_modules.prior_generators import anchor_inside_flags
 from ..utils import images_to_levels, multi_apply, unmap
 from .anchor_head import AnchorHead

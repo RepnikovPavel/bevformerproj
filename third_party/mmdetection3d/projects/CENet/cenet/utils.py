@@ -2,10 +2,9 @@
 import math
 
 import torch
+from mmdet3d.utils import ConfigType
 from torch import Tensor, nn
 from torch.nn import functional as F
-
-from mmdet3d.utils import ConfigType
 
 
 def get_gaussian_kernel(kernel_size: int = 3, sigma: int = 2) -> Tensor:

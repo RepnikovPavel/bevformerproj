@@ -4,13 +4,14 @@ from collections import defaultdict
 from functools import partial
 from typing import Optional, Union
 
-import mmengine
 import torch
 from mmengine.model import BaseModel
 
+import mmengine
 from mmpretrain.datasets import CleanCaption
 from mmpretrain.registry import MODELS, TOKENIZER
 from mmpretrain.structures import DataSample
+
 from .ofa_modules import OFAEncoderDecoder
 
 

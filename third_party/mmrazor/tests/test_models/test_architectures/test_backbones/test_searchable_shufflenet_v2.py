@@ -7,12 +7,11 @@ import tempfile
 import pytest
 import torch
 from mmcls.models import *  # noqa: F401,F403
-from torch.nn import GroupNorm
-from torch.nn.modules.batchnorm import _BatchNorm
-
 from mmrazor.models import *  # noqa: F401,F403
 from mmrazor.models.mutables import *  # noqa: F401,F403
 from mmrazor.registry import MODELS
+from torch.nn import GroupNorm
+from torch.nn.modules.batchnorm import _BatchNorm
 
 sys.path.append('tests/test_models/test_architectures/test_backbones')
 from utils import MockMutable  # noqa: E402

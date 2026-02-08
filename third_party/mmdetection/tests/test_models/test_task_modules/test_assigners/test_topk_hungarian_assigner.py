@@ -2,9 +2,9 @@
 from unittest import TestCase
 
 import torch
-from mmengine import ConfigDict
-
 from mmdet.models.task_modules.assigners import TopkHungarianAssigner
+
+from mmengine import ConfigDict
 
 
 class TestTopkHungarianAssigner(TestCase):

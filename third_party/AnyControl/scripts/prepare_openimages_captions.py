@@ -1,14 +1,9 @@
-import os
-import sys
-import json
-import glob
-import torch
 import argparse
+import os
 
-from tqdm import tqdm
-from PIL import Image
 from lavis.models import load_model_and_preprocess
-
+from PIL import Image
+from tqdm import tqdm
 
 if __name__ == "__main__":
 

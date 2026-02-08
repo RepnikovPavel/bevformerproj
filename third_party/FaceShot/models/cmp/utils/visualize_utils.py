@@ -1,7 +1,8 @@
 import numpy as np
-
 import torch
+
 from . import flowlib
+
 
 class Fuser(object):
     def __init__(self, nbins, fmax):

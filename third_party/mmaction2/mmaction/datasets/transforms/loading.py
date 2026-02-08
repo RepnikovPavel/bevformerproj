@@ -6,12 +6,12 @@ import os.path as osp
 import shutil
 from typing import Dict, List, Optional, Union
 
-import mmcv
 import numpy as np
 import torch
 from mmcv.transforms import BaseTransform
 from mmengine.fileio import FileClient
 
+import mmcv
 from mmaction.registry import TRANSFORMS
 from mmaction.utils import get_random_string, get_shm_dir, get_thread_id
 

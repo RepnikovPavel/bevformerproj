@@ -4,12 +4,14 @@ from unittest import TestCase
 
 import torch
 import torch.nn as nn
-
 from mmrazor.models.architectures.dynamic_ops.mixins import DynamicChannelMixin
 from mmrazor.models.mutables.mutable_channel import (
-    L1MutableChannelUnit, MutableChannelUnit, SequentialMutableChannelUnit)
-from mmrazor.models.mutables.mutable_channel.units.channel_unit import \
-    ChannelUnit
+    L1MutableChannelUnit,
+    MutableChannelUnit,
+    SequentialMutableChannelUnit,
+)
+from mmrazor.models.mutables.mutable_channel.units.channel_unit import ChannelUnit
+
 from .....data.models import SingleLineModel
 from .....data.tracer_passed_models import backward_passed_library
 

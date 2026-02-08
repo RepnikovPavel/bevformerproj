@@ -2,9 +2,7 @@
 from unittest import TestCase
 
 import torch
-
-from mmpretrain.structures import (batch_label_to_onehot, cat_batch_labels,
-                                   tensor_split)
+from mmpretrain.structures import batch_label_to_onehot, cat_batch_labels, tensor_split
 
 
 class TestStructureUtils(TestCase):

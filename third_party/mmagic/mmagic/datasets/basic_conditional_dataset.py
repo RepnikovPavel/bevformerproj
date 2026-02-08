@@ -1,13 +1,14 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 from typing import List, Optional, Sequence, Union
 
-import mmengine
 import numpy as np
 from mmengine.dataset import BaseDataset
 from mmengine.fileio import get_file_backend
 from mmengine.logging import MMLogger
 
+import mmengine
 from mmagic.registry import DATASETS
+
 from .data_utils import expanduser, find_folders, get_samples
 
 

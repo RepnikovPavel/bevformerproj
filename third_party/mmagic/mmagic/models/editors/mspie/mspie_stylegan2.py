@@ -7,7 +7,6 @@ import torch
 import torch.distributed as dist
 import torch.nn as nn
 import torch.nn.functional as F
-from mmengine import MessageHub
 from mmengine.logging import MMLogger
 from mmengine.model import is_model_wrapper
 from mmengine.optim import OptimWrapper, OptimWrapperDict
@@ -15,6 +14,8 @@ from torch import Tensor
 
 from mmagic.registry import MODELS
 from mmagic.structures import DataSample
+from mmengine import MessageHub
+
 from ...utils import set_requires_grad
 from ..stylegan2 import StyleGAN2
 

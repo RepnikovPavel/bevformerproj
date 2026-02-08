@@ -8,17 +8,16 @@ from datetime import timedelta
 
 import numpy as np
 import torch
-import torchvision
 
 from ..core.metrics.rank import evaluate_rank
 from ..core.utils.compute_dist import build_dist
+from ..data.utils.data_utils import save_image
 from ..models.utils.dsbn_utils import switch_target_bn
 from ..models.utils.extract import extract_features
-from ..data.utils.data_utils import save_image
 from ..utils.dist_utils import get_dist_info, synchronize
 from ..utils.file_utils import mkdir_if_missing
-from ..utils.torch_utils import tensor2im
 from ..utils.meters import Meters
+from ..utils.torch_utils import tensor2im
 
 # # Deprecated
 # from ..core.utils.rerank import re_ranking_cpu

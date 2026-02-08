@@ -4,9 +4,13 @@ from typing import Union
 
 import torch
 from mmengine.model.base_model import BaseModel
-
-from mmocr.utils import (OptConfigType, OptMultiConfig, OptRecSampleList,
-                         RecForwardResults, RecSampleList)
+from mmocr.utils import (
+    OptConfigType,
+    OptMultiConfig,
+    OptRecSampleList,
+    RecForwardResults,
+    RecSampleList,
+)
 
 
 class BaseTextSpotter(BaseModel, metaclass=ABCMeta):

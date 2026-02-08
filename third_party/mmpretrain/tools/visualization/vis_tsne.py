@@ -14,7 +14,6 @@ from mmengine.device import get_device
 from mmengine.logging import MMLogger
 from mmengine.runner import Runner
 from mmengine.utils import mkdir_or_exist
-
 from mmpretrain.apis import get_model
 from mmpretrain.registry import DATASETS
 

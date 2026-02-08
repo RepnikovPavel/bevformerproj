@@ -1,29 +1,23 @@
 # Copyright (c) Facebook, Inc. and its affiliates.
+import copy
 from typing import Tuple
 
 import torch
-from torch import nn
-from torch.nn import functional as F
-import pdb
-import numpy as np
-import cv2
-import os
-
 from detectron2.config import configurable
 from detectron2.data import MetadataCatalog
+from detectron2.data.datasets.builtin_meta import COCO_CATEGORIES
 from detectron2.modeling import META_ARCH_REGISTRY, build_backbone, build_sem_seg_head
 from detectron2.modeling.backbone import Backbone
-from detectron2.modeling.postprocessing import sem_seg_postprocess
-from detectron2.structures import Boxes, ImageList, Instances, BitMasks
+from detectron2.structures import Boxes, ImageList, Instances
 from detectron2.utils.memory import retry_if_cuda_oom
-from detectron2.data.datasets.builtin_meta import COCO_CATEGORIES
+from torch import nn
+from torch.nn import functional as F
 
 from .modeling.criterion import SetCriterion
-from .modeling.matcher import HungarianMatcher
 from .modeling.criterion_view import ViewSetCriterion
+from .modeling.matcher import HungarianMatcher
 from .modeling.matcher_view import ViewHungarianMatcher
-import pdb
-import copy
+
 
 @META_ARCH_REGISTRY.register()
 class CropFormer(nn.Module):

@@ -6,18 +6,27 @@ import torch
 import torch.distributed as dist
 import torch.nn as nn
 from torch.distributed import ProcessGroup
+
 # yapf: disable
-from torch.distributed.fsdp.api import (FullStateDictConfig,
-                                        LocalOptimStateDictConfig,
-                                        LocalStateDictConfig,
-                                        OptimStateDictConfig,
-                                        ShardedOptimStateDictConfig,
-                                        ShardedStateDictConfig,
-                                        ShardingStrategy, StateDictConfig,
-                                        StateDictSettings, StateDictType)
+from torch.distributed.fsdp.api import (
+    FullStateDictConfig,
+    LocalOptimStateDictConfig,
+    LocalStateDictConfig,
+    OptimStateDictConfig,
+    ShardedOptimStateDictConfig,
+    ShardedStateDictConfig,
+    ShardingStrategy,
+    StateDictConfig,
+    StateDictSettings,
+    StateDictType,
+)
 from torch.distributed.fsdp.fully_sharded_data_parallel import (
-    BackwardPrefetch, CPUOffload, FullOptimStateDictConfig,
-    FullyShardedDataParallel, MixedPrecision)
+    BackwardPrefetch,
+    CPUOffload,
+    FullOptimStateDictConfig,
+    FullyShardedDataParallel,
+    MixedPrecision,
+)
 
 # yapf: enable
 from mmengine.optim import OptimWrapper

@@ -1,5 +1,6 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 from __future__ import annotations
+
 import os.path as osp
 from typing import Mapping
 
@@ -8,6 +9,7 @@ from torch import Tensor
 from torch.utils.data import Dataset
 
 from mmfewshot.utils import local_numpy_seed
+
 from .builder import DATASETS
 
 

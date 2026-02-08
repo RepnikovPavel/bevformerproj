@@ -8,6 +8,7 @@ from mmcv.cnn import ConvModule
 from mmengine.device import get_device
 
 from mmseg.registry import MODELS
+
 from ..utils import resize
 from .decode_head import BaseDecodeHead
 

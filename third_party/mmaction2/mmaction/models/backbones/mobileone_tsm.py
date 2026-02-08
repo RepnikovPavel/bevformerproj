@@ -2,11 +2,11 @@
 
 import torch.nn as nn
 from mmengine.logging import MMLogger
-from mmengine.runner.checkpoint import (_load_checkpoint,
-                                        _load_checkpoint_with_prefix)
+from mmengine.runner.checkpoint import _load_checkpoint, _load_checkpoint_with_prefix
 from mmpretrain.models import MobileOne
 
 from mmaction.registry import MODELS
+
 from .resnet_tsm import TemporalShift
 
 

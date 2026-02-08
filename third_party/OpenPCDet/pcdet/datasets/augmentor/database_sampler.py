@@ -1,16 +1,18 @@
+import copy
+import os
 import pickle
 
-import os
-import copy
 import numpy as np
-from skimage import io
-import torch
 import SharedArray
+import torch
 import torch.distributed as dist
+from skimage import io
+
+from pcdet.datasets.kitti.kitti_object_eval_python import kitti_common
 
 from ...ops.iou3d_nms import iou3d_nms_utils
-from ...utils import box_utils, common_utils, calibration_kitti
-from pcdet.datasets.kitti.kitti_object_eval_python import kitti_common
+from ...utils import box_utils, calibration_kitti, common_utils
+
 
 class DataBaseSampler(object):
     def __init__(self, root_path, sampler_cfg, class_names, logger=None):

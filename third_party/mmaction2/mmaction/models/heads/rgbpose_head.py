@@ -9,6 +9,7 @@ from mmengine.model.weight_init import normal_init
 from mmaction.evaluation import top_k_accuracy
 from mmaction.registry import MODELS
 from mmaction.utils import SampleList
+
 from .base import BaseHead
 
 

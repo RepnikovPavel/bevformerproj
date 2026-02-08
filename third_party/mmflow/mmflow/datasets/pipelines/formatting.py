@@ -3,10 +3,11 @@ import copy
 from collections.abc import Sequence
 from typing import Union
 
-import mmcv
 import numpy as np
 import torch
 from mmcv.parallel import DataContainer as DC
+
+import mmcv
 
 from ..builder import PIPELINES
 

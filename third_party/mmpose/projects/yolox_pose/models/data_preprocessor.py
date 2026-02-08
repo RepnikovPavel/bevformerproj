@@ -2,10 +2,9 @@
 from typing import List, Tuple
 
 from mmdet.models import BatchSyncRandomResize
+from mmpose.structures import PoseDataSample
 from mmyolo.registry import MODELS
 from torch import Tensor
-
-from mmpose.structures import PoseDataSample
 
 
 @MODELS.register_module()

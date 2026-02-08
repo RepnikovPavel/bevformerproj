@@ -5,10 +5,8 @@ import warnings
 from argparse import ArgumentParser
 from pathlib import Path
 
-import mmcv
 import numpy as np
 import torch
-
 from mmhuman3d.apis import (
     feature_extract,
     inference_image_based_model,
@@ -28,6 +26,8 @@ from mmhuman3d.utils.demo_utils import (
     speed_up_process,
 )
 from mmhuman3d.utils.ffmpeg_utils import array_to_images
+
+import mmcv
 
 try:
     from mmdet.apis import inference_detector, init_detector

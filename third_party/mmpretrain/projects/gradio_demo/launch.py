@@ -5,16 +5,18 @@ from typing import Callable
 import gradio as gr
 import torch
 from mmengine.logging import MMLogger
-
-import mmpretrain
-from mmpretrain.apis import (ImageCaptionInferencer,
-                             ImageClassificationInferencer,
-                             ImageRetrievalInferencer,
-                             TextToImageRetrievalInferencer,
-                             VisualGroundingInferencer,
-                             VisualQuestionAnsweringInferencer)
+from mmpretrain.apis import (
+    ImageCaptionInferencer,
+    ImageClassificationInferencer,
+    ImageRetrievalInferencer,
+    TextToImageRetrievalInferencer,
+    VisualGroundingInferencer,
+    VisualQuestionAnsweringInferencer,
+)
 from mmpretrain.utils.dependency import WITH_MULTIMODAL
 from mmpretrain.visualization import UniversalVisualizer
+
+import mmpretrain
 
 mmpretrain.utils.progress.disable_progress_bar = True
 

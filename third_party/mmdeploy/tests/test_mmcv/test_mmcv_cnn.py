@@ -1,9 +1,9 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import torch
-from mmengine import Config
-
 from mmdeploy.utils import Backend
 from mmdeploy.utils.test import check_backend, get_rewrite_outputs
+
+from mmengine import Config
 
 
 def test_multiheadattention_ncnn():

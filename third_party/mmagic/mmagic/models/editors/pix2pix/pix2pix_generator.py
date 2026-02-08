@@ -2,6 +2,7 @@
 from mmengine.model import BaseModule
 
 from mmagic.registry import MODELS
+
 from ...utils import generation_init_weights
 from .pix2pix_modules import UnetSkipConnectionBlock
 

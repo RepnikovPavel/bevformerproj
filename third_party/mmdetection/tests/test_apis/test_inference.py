@@ -4,7 +4,6 @@ from pathlib import Path
 import numpy as np
 import pytest
 import torch
-
 from mmdet.apis import inference_detector, init_detector
 from mmdet.structures import DetDataSample
 from mmdet.utils import register_all_modules

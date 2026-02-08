@@ -6,6 +6,7 @@ import shutil
 from typing import List, Tuple
 
 from mmocr.registry import DATA_GATHERERS
+
 from .base import BaseGatherer
 
 

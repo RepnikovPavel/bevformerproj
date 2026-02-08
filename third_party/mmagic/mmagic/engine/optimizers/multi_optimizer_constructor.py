@@ -3,12 +3,14 @@ import re
 from typing import Tuple, Union
 
 import torch.nn as nn
-from mmengine import print_log
-from mmengine.optim import (DefaultOptimWrapperConstructor, OptimWrapper,
-                            OptimWrapperDict)
+from mmengine.optim import (
+    DefaultOptimWrapperConstructor,
+    OptimWrapper,
+    OptimWrapperDict,
+)
 
-from mmagic.registry import (OPTIM_WRAPPER_CONSTRUCTORS, OPTIM_WRAPPERS,
-                             OPTIMIZERS)
+from mmagic.registry import OPTIM_WRAPPER_CONSTRUCTORS, OPTIM_WRAPPERS, OPTIMIZERS
+from mmengine import print_log
 
 
 @OPTIM_WRAPPER_CONSTRUCTORS.register_module()

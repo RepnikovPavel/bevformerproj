@@ -4,13 +4,15 @@ from typing import Dict, Union
 from unittest import TestCase
 
 import torch
-
-from mmrazor import digit_version
-from mmrazor.implementations.pruning.group_fisher.prune_sub_model import \
-    GroupFisherSubModel
+from mmrazor.implementations.pruning.group_fisher.prune_sub_model import (
+    GroupFisherSubModel,
+)
 from mmrazor.models import BaseAlgorithm
 from mmrazor.models.mutators import ChannelMutator
 from mmrazor.registry import MODELS
+
+from mmrazor import digit_version
+
 from ....data.models import MMClsResNet18
 
 

@@ -6,8 +6,7 @@
 # This code is modified from https://github.com/descriptinc/descript-audio-codec/blob/main/dac/model/dac.py
 
 import math
-from typing import List
-from typing import Union
+from typing import List, Union
 
 import numpy as np
 import torch
@@ -15,12 +14,10 @@ from audiotools import AudioSignal
 from audiotools.ml import BaseModel
 from torch import nn
 
-from .base import CodecMixin
 from ..nn.layers import Snake1d
-from ..nn.layers import WNConv1d
-from ..nn.layers import WNConvTranspose1d
 from ..nn.quantize import ResidualVectorQuantize
-from .encodec import SConv1d, SConvTranspose1d, SLSTM
+from .base import CodecMixin
+from .encodec import SLSTM, SConv1d, SConvTranspose1d
 
 
 def init_weights(m):
@@ -398,8 +395,9 @@ class DAC(BaseModel, CodecMixin):
 
 
 if __name__ == "__main__":
-    import numpy as np
     from functools import partial
+
+    import numpy as np
 
     model = DAC().to("cpu")
 

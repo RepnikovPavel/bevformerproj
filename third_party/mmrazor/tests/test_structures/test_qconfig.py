@@ -12,11 +12,12 @@ except ImportError:
     QConfig = get_placeholder('torch>=1.13')
     FakeQuantize = get_placeholder('torch>=1.13')
 
-from mmrazor import digit_version
 from mmrazor.models.fake_quants import register_torch_fake_quants
 from mmrazor.models.observers import register_torch_observers
 from mmrazor.registry import MODELS
 from mmrazor.structures import QConfigHandler, QSchemeHandler
+
+from mmrazor import digit_version
 
 register_torch_observers()
 register_torch_fake_quants()

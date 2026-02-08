@@ -3,7 +3,6 @@ import math
 import warnings
 from typing import Optional, no_type_check
 
-import mmengine
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
@@ -12,8 +11,14 @@ from mmengine.registry import MODELS
 from mmengine.utils import deprecated_api_warning
 from torch.autograd.function import Function, once_differentiable
 
-from mmcv.utils import (IS_CUDA_AVAILABLE, IS_MLU_AVAILABLE, IS_MUSA_AVAILABLE,
-                        IS_NPU_AVAILABLE)
+import mmengine
+from mmcv.utils import (
+    IS_CUDA_AVAILABLE,
+    IS_MLU_AVAILABLE,
+    IS_MUSA_AVAILABLE,
+    IS_NPU_AVAILABLE,
+)
+
 from ..utils import ext_loader
 
 ext_module = ext_loader.load_ext(

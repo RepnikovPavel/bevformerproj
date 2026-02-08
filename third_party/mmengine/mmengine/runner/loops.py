@@ -12,6 +12,7 @@ from mmengine.logging import HistoryBuffer, print_log
 from mmengine.registry import LOOPS
 from mmengine.structures import BaseDataElement
 from mmengine.utils import is_list_of
+
 from .amp import autocast
 from .base_loop import BaseLoop
 from .utils import calc_dynamic_intervals

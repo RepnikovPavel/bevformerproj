@@ -4,13 +4,12 @@
 # LICENSE file in the root directory of this source tree.
 
 import torch
-import torch.nn.functional as F
 import torch.nn as nn
-from torch.nn import Conv1d, AvgPool1d
-from torch.nn.utils import weight_norm, spectral_norm
-from torch import nn
+import torch.nn.functional as F
 from modules.vocoder_blocks import *
-
+from torch import nn
+from torch.nn import AvgPool1d, Conv1d
+from torch.nn.utils import spectral_norm, weight_norm
 
 LRELU_SLOPE = 0.1
 

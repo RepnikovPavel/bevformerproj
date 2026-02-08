@@ -5,14 +5,14 @@ import time
 
 import numpy as np
 import torch
-from mmengine import Config
 from mmengine.fileio import dump
 from mmengine.model.utils import revert_sync_batchnorm
 from mmengine.registry import init_default_scope
 from mmengine.runner import Runner, load_checkpoint
 from mmengine.utils import mkdir_or_exist
-
 from mmseg.registry import MODELS
+
+from mmengine import Config
 
 
 def parse_args():

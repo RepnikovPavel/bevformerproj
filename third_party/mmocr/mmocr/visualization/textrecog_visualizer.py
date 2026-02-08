@@ -2,11 +2,12 @@
 from typing import Dict, Optional, Tuple, Union
 
 import cv2
-import mmcv
 import numpy as np
 
+import mmcv
 from mmocr.registry import VISUALIZERS
 from mmocr.structures import TextRecogDataSample
+
 from .base_visualizer import BaseLocalVisualizer
 
 

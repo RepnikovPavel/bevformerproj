@@ -1,9 +1,10 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import pytest
 import torch
-
-from mmdet.models.task_modules.coders import (DeltaXYWHBBoxCoder,
-                                              DeltaXYWHBBoxCoderForGLIP)
+from mmdet.models.task_modules.coders import (
+    DeltaXYWHBBoxCoder,
+    DeltaXYWHBBoxCoderForGLIP,
+)
 
 
 def test_delta_bbox_coder():

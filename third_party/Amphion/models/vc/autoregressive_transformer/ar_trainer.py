@@ -3,23 +3,20 @@
 # This source code is licensed under the MIT license found in the
 # LICENSE file in the root directory of this source tree.
 
-import os
-import random
-import time
-import torch
-import numpy as np
 import math
+import random
+
+import numpy as np
+import safetensors
+import torch
 import torchaudio
 import yaml
-
 from models.base.base_trainer import BaseTrainer
-from models.codec.melvqgan.melspec import MelSpectrogram
-from models.vc.autoregressive_transformer.ar_model import AutoregressiveTransformer
 from models.codec.kmeans.repcodec_model import RepCodec
+from models.codec.melvqgan.melspec import MelSpectrogram
 from models.codec.vevo.vevo_repcodec import VevoRepCodec
-from models.vc.base.vc_emilia_dataset import VCEmiliaDataset, VCCollator
-
-import safetensors
+from models.vc.autoregressive_transformer.ar_model import AutoregressiveTransformer
+from models.vc.base.vc_emilia_dataset import VCCollator, VCEmiliaDataset
 
 
 class AutoregressiveTransformerTrainer(BaseTrainer):

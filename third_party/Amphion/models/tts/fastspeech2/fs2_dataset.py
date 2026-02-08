@@ -4,16 +4,17 @@
 # LICENSE file in the root directory of this source tree.
 
 import random
+
 import torch
-from torch.nn.utils.rnn import pad_sequence
-from utils.data_utils import *
 from models.base.base_dataset import (
     BaseOfflineCollator,
     BaseOfflineDataset,
-    BaseTestDataset,
     BaseTestCollator,
+    BaseTestDataset,
 )
 from text import text_to_sequence
+from torch.nn.utils.rnn import pad_sequence
+from utils.data_utils import *
 
 
 class FS2Dataset(BaseOfflineDataset):

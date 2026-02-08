@@ -3,7 +3,6 @@ import unittest
 from functools import partial
 
 from mmcls.models.classifiers.image import ImageClassifier
-
 from mmrazor.utils import get_placeholder
 
 try:
@@ -11,10 +10,11 @@ try:
 except ImportError:
     GraphModule = get_placeholder('torch>=1.12')
 import torch
-
-from mmrazor import digit_version
 from mmrazor.models.task_modules.demo_inputs import DefaultDemoInput
 from mmrazor.models.task_modules.tracer.fx_tracer import FxTracer
+
+from mmrazor import digit_version
+
 from ...data.models import UntracableModel
 
 MODELS = [

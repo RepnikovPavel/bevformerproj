@@ -4,11 +4,11 @@ from abc import abstractmethod
 from typing import Any, Dict, Optional, Union
 
 import tvm
-from mmengine import Registry
 from tvm import IRModule, auto_scheduler, autotvm, relay
 from tvm.target import Target
 
 from mmdeploy.utils import get_root_logger
+from mmengine import Registry
 
 TVM_TUNER = Registry('tvm_tuner')
 AUTOTVM_TUNER = Registry('autotvm_tuner')

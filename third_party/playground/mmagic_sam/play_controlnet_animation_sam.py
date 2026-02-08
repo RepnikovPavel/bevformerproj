@@ -4,10 +4,11 @@ import os
 import cv2
 import numpy as np
 from mmagic.apis import MMagicInferencer
-from mmengine import MODELS, Config
 from mmengine.registry import init_default_scope
 from segment_anything import SamPredictor, sam_model_registry
 from tqdm import tqdm
+
+from mmengine import MODELS, Config
 
 IMAGE_EXTENSIONS = ('.jpg', '.jpeg', '.png', '.JPG', '.JPEG', '.PNG')
 

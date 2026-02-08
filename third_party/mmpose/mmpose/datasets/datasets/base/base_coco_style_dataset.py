@@ -14,6 +14,7 @@ from xtcocotools.coco import COCO
 
 from mmpose.registry import DATASETS
 from mmpose.structures.bbox import bbox_xywh2xyxy
+
 from ..utils import parse_pose_metainfo
 
 

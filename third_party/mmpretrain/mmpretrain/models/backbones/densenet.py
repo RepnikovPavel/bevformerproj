@@ -8,9 +8,9 @@ import torch.nn as nn
 import torch.nn.functional as F
 import torch.utils.checkpoint as cp
 from mmcv.cnn.bricks import build_activation_layer, build_norm_layer
-from torch.jit.annotations import List
 
 from mmpretrain.registry import MODELS
+
 from .base_backbone import BaseBackbone
 
 

@@ -3,7 +3,6 @@ import torch
 import torch.nn.functional as F
 from mmengine.dist import all_reduce, get_world_size
 from mmengine.model import BaseModule
-
 from mmpretrain.registry import MODELS
 
 

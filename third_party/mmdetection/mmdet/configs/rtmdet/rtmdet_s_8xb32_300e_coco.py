@@ -11,15 +11,20 @@ with read_base():
 
 from mmcv.transforms.loading import LoadImageFromFile
 from mmcv.transforms.processing import RandomResize
-from mmengine.hooks.ema_hook import EMAHook
-
 from mmdet.datasets.transforms.formatting import PackDetInputs
 from mmdet.datasets.transforms.loading import LoadAnnotations
-from mmdet.datasets.transforms.transforms import (CachedMixUp, CachedMosaic,
-                                                  Pad, RandomCrop, RandomFlip,
-                                                  Resize, YOLOXHSVRandomAug)
+from mmdet.datasets.transforms.transforms import (
+    CachedMixUp,
+    CachedMosaic,
+    Pad,
+    RandomCrop,
+    RandomFlip,
+    Resize,
+    YOLOXHSVRandomAug,
+)
 from mmdet.engine.hooks.pipeline_switch_hook import PipelineSwitchHook
 from mmdet.models.layers.ema import ExpMomentumEMA
+from mmengine.hooks.ema_hook import EMAHook
 
 checkpoint = 'https://download.openmmlab.com/mmdetection/v3.0/rtmdet/cspnext_rsb_pretrain/cspnext-s_imagenet_600e.pth'  # noqa
 model.update(

@@ -1,10 +1,8 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import pytest
 import torch
-
 from mmseg.models.backbones import CGNet
-from mmseg.models.backbones.cgnet import (ContextGuidedBlock,
-                                          GlobalContextExtractor)
+from mmseg.models.backbones.cgnet import ContextGuidedBlock, GlobalContextExtractor
 
 
 def test_cgnet_GlobalContextExtractor():

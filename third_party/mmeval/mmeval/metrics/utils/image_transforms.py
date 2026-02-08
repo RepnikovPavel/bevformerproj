@@ -1,7 +1,8 @@
 # Copyright (c) OpenMMLab. All rights reserved.
+from typing import Optional, Union
+
 import cv2
 import numpy as np
-from typing import Optional, Union
 
 
 def _convert_input_type_range(img: np.ndarray) -> np.ndarray:

@@ -9,7 +9,6 @@ from collections import OrderedDict
 from importlib import import_module
 from tempfile import TemporaryDirectory
 
-import mmcv
 import torch
 import torchvision
 from mmcv.fileio import FileClient
@@ -20,6 +19,8 @@ from mmcv.utils import mkdir_or_exist
 from torch.nn import functional as F
 from torch.optim import Optimizer
 from torch.utils import model_zoo
+
+import mmcv
 
 ENV_MMCV_HOME = 'MMCV_HOME'
 ENV_XDG_CACHE_HOME = 'XDG_CACHE_HOME'

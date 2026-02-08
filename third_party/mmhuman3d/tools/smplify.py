@@ -2,15 +2,15 @@ import argparse
 import os
 import time
 
-import mmcv
 import numpy as np
 import torch
-
 from mmhuman3d.core.conventions.keypoints_mapping import convert_kps
 from mmhuman3d.core.evaluation import keypoint_mpjpe
 from mmhuman3d.core.visualization.visualize_smpl import visualize_smpl_pose
 from mmhuman3d.data.data_structures.human_data import HumanData
 from mmhuman3d.models.registrants.builder import build_registrant
+
+import mmcv
 
 
 def parse_args():

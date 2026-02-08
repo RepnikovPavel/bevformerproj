@@ -6,6 +6,7 @@ from typing import List
 from mmengine.fileio import load
 
 from mmseg.registry import DATASETS
+
 from .basesegdataset import BaseSegDataset
 
 

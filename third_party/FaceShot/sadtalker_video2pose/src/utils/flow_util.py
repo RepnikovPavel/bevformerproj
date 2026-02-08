@@ -1,5 +1,6 @@
-import torch
 import sys
+
+import torch
 
 
 def convert_flow_to_deformation(flow):

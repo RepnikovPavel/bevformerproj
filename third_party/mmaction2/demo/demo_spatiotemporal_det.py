@@ -4,18 +4,18 @@ import copy as cp
 import tempfile
 
 import cv2
-import mmcv
-import mmengine
 import numpy as np
 import torch
-from mmengine import DictAction
-from mmengine.runner import load_checkpoint
-from mmengine.structures import InstanceData
-
 from mmaction.apis import detection_inference
 from mmaction.registry import MODELS
 from mmaction.structures import ActionDataSample
 from mmaction.utils import frame_extract, get_str_type
+from mmengine.runner import load_checkpoint
+from mmengine.structures import InstanceData
+
+import mmcv
+import mmengine
+from mmengine import DictAction
 
 try:
     import moviepy.editor as mpy

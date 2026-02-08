@@ -3,9 +3,11 @@ from unittest import TestCase
 
 import pytest
 import torch
-
-from mmrazor.models.mutables import (DerivedMutable, OneShotMutableValue,
-                                     SquentialMutableChannel)
+from mmrazor.models.mutables import (
+    DerivedMutable,
+    OneShotMutableValue,
+    SquentialMutableChannel,
+)
 from mmrazor.models.mutables.base_mutable import BaseMutable
 
 
@@ -158,8 +160,10 @@ class TestDerivedMutable(TestCase):
 
         mc_derived1 = DerivedMutable.derive_concat_mutable(ms)
 
-        from mmrazor.models.mutables.derived_mutable import (_concat_choice_fn,
-                                                             _concat_mask_fn)
+        from mmrazor.models.mutables.derived_mutable import (
+            _concat_choice_fn,
+            _concat_mask_fn,
+        )
         mc_derived2 = DerivedMutable(
             choice_fn=_concat_choice_fn(ms),
             mask_fn=_concat_mask_fn(ms),

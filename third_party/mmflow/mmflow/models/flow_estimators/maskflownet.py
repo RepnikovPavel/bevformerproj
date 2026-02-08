@@ -6,6 +6,7 @@ from numpy import ndarray
 from torch import Tensor
 
 from mmflow.ops import Warp
+
 from ..builder import FLOW_ESTIMATORS, build_flow_estimator
 from ..decoders.maskflownet_decoder import Upsample
 from .pwcnet import PWCNet

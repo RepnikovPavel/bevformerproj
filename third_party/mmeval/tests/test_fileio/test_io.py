@@ -1,6 +1,5 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import os.path as osp
-import pytest
 import sys
 import tempfile
 from contextlib import contextmanager
@@ -8,6 +7,7 @@ from pathlib import Path
 from unittest.mock import MagicMock
 
 import mmeval.fileio as fileio
+import pytest
 
 sys.modules['petrel_client'] = MagicMock()
 sys.modules['petrel_client.client'] = MagicMock()

@@ -5,10 +5,11 @@ import os.path as osp
 import re
 import subprocess
 
-import mmengine
 import numpy as np
 from PIL import Image
 from pymatting import estimate_foreground_ml, load_image
+
+import mmengine
 
 
 def fix_png_file(filename, folder):

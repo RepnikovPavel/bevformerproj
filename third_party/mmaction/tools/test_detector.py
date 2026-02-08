@@ -1,23 +1,19 @@
 import argparse
-import time
 import os.path as osp
 import tempfile
+import time
 
 import torch
 import torch.distributed as dist
-import mmcv
-from mmcv.runner import load_checkpoint, obj_from_dict
-from mmcv.runner import get_dist_info
-from mmcv.parallel.distributed import MMDistributedDataParallel
-
-from mmaction import datasets
 from mmaction.apis import init_dist
+from mmaction.core.evaluation.ava_utils import ava_eval, results2csv
 from mmaction.datasets import build_dataloader
-from mmaction.models import build_detector, detectors
-from mmaction.core.evaluation.ava_utils import results2csv, ava_eval
+from mmaction.models import build_detector
+from mmcv.parallel.distributed import MMDistributedDataParallel
+from mmcv.runner import get_dist_info, load_checkpoint, obj_from_dict
 
-import os.path as osp
-
+import mmcv
+from mmaction import datasets
 
 args = None
 

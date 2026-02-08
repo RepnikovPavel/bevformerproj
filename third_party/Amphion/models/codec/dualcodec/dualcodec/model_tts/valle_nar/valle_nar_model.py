@@ -3,13 +3,13 @@
 # This source code is licensed under the MIT license found in the
 # LICENSE file in the root directory of this source tree.
 
-from transformers import LlamaConfig, LlamaForCausalLM, LlamaModel
-import torch
-import torch.nn.functional as F
-import numpy as np
-import os
-import torch.nn as nn
 from typing import List, Optional, Tuple, Union
+
+import numpy as np
+import torch
+import torch.nn as nn
+import torch.nn.functional as F
+from transformers import LlamaConfig, LlamaModel
 
 from .modeling_llama import LlamaDecoderLayer
 
@@ -370,11 +370,11 @@ class LlammaNARModel(LlamaModel):
         )
 
 
-from transformers.models.llama.modeling_llama import LlamaPreTrainedModel
+from easydict import EasyDict as edict
 
 # from transformers.models.llama.modeling_llama import CrossEntropyLoss
 from torch.nn import CrossEntropyLoss
-from easydict import EasyDict as edict
+from transformers.models.llama.modeling_llama import LlamaPreTrainedModel
 
 
 class LlamaForNARModeling(LlamaPreTrainedModel):

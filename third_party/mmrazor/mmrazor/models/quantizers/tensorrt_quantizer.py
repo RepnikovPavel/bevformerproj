@@ -4,6 +4,7 @@ from typing import Any, Optional, Tuple, Union
 import torch
 
 from mmrazor.registry import MODELS
+
 from .native_quantizer import TorchNativeQuantizer
 
 

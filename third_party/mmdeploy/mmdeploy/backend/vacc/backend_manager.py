@@ -4,6 +4,7 @@ import sys
 from typing import Any, Callable, Optional, Sequence
 
 from mmdeploy.utils import get_common_config, get_model_inputs, get_root_logger
+
 from ..base import BACKEND_MANAGERS, BaseBackendManager
 
 

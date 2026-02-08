@@ -14,15 +14,22 @@ try:
     import torch.nn.intrinsic.qat as nniqat
     import torch.nn.qat as nnqat
     import torch.nn.quantized._reference as nnqr
-    from torch.ao.quantization.backend_config import (BackendPatternConfig,
-                                                      DTypeConfig,
-                                                      ObservationType)
+    from torch.ao.quantization.backend_config import (
+        BackendPatternConfig,
+        DTypeConfig,
+        ObservationType,
+    )
     from torch.ao.quantization.fake_quantize import FixedQParamsFakeQuantize
     from torch.ao.quantization.fuser_method_mappings import (
-        fuse_conv_bn, fuse_conv_bn_relu, fuse_convtranspose_bn, fuse_linear_bn,
-        reverse2, reverse3, reverse_sequential_wrapper2)
-    from torch.ao.quantization.qconfig_mapping import \
-        _FIXED_QPARAMS_OP_TO_OBSERVER
+        fuse_conv_bn,
+        fuse_conv_bn_relu,
+        fuse_convtranspose_bn,
+        fuse_linear_bn,
+        reverse2,
+        reverse3,
+        reverse_sequential_wrapper2,
+    )
+    from torch.ao.quantization.qconfig_mapping import _FIXED_QPARAMS_OP_TO_OBSERVER
 except ImportError:
     from mmrazor.utils import get_package_placeholder, get_placeholder
     F = get_package_placeholder('torch>=1.13')

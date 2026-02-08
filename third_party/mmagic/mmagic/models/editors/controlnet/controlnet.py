@@ -6,7 +6,6 @@ import numpy as np
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-from mmengine import print_log
 from mmengine.model import is_model_wrapper
 from mmengine.optim import OptimWrapperDict
 from PIL import Image
@@ -18,6 +17,8 @@ from mmagic.models.utils import build_module
 from mmagic.registry import MODELS
 from mmagic.structures import DataSample
 from mmagic.utils.typing import SampleList
+from mmengine import print_log
+
 from ..stable_diffusion import StableDiffusion
 from .controlnet_utils import change_base_model
 

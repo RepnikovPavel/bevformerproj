@@ -4,7 +4,6 @@ import warnings
 import numpy as np
 import pytest
 import torch
-
 from mmhuman3d.core.conventions.keypoints_mapping import (
     KEYPOINTS_FACTORY,
     convert_kps,

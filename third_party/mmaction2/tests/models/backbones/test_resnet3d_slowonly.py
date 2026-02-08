@@ -1,7 +1,6 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import pytest
 import torch
-
 from mmaction.models import ResNet3dSlowOnly
 from mmaction.testing import generate_backbone_demo_inputs
 

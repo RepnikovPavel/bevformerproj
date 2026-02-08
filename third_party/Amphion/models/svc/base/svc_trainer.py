@@ -8,7 +8,8 @@ import os
 
 import torch
 import torch.nn as nn
-import numpy as np
+from processors.acoustic_extractor import load_mel_extrema
+from processors.audio_features_extractor import AudioFeaturesExtractor
 
 from models.base.new_trainer import BaseTrainer
 from models.svc.base.svc_dataset import (
@@ -17,8 +18,6 @@ from models.svc.base.svc_dataset import (
     SVCOnlineCollator,
     SVCOnlineDataset,
 )
-from processors.audio_features_extractor import AudioFeaturesExtractor
-from processors.acoustic_extractor import cal_normalized_mel, load_mel_extrema
 
 EPS = 1.0e-12
 

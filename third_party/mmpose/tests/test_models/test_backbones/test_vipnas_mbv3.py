@@ -2,11 +2,10 @@
 from unittest import TestCase
 
 import torch
-from torch.nn.modules import GroupNorm
-from torch.nn.modules.batchnorm import _BatchNorm
-
 from mmpose.models.backbones import ViPNAS_MobileNetV3
 from mmpose.models.backbones.utils import InvertedResidual
+from torch.nn.modules import GroupNorm
+from torch.nn.modules.batchnorm import _BatchNorm
 
 
 class TestVipnasMbv3(TestCase):

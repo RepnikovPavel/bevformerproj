@@ -1,5 +1,6 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 from mmpretrain.utils.dependency import WITH_MULTIMODAL
+
 from .base_dataset import BaseDataset
 from .builder import build_dataset
 from .caltech101 import Caltech101

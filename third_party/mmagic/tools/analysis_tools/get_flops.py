@@ -2,10 +2,10 @@
 import argparse
 
 import torch
-from mmengine import Config
+from mmagic.registry import MODELS
 from mmengine.registry import init_default_scope
 
-from mmagic.registry import MODELS
+from mmengine import Config
 
 try:
     from mmengine.analysis import get_model_complexity_info

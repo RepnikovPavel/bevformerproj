@@ -3,10 +3,10 @@ import os.path as osp
 from unittest import TestCase
 from unittest.mock import patch
 
-from mmengine import Config
-
 from mmpretrain.apis import ModelHub, get_model, init_model, list_models
 from mmpretrain.models import ImageClassifier, MobileNetV2
+
+from mmengine import Config
 
 
 class TestModelHub(TestCase):

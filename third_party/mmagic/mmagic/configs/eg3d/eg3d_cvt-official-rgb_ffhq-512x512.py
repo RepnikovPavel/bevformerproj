@@ -4,15 +4,14 @@
 # mmcv >= 2.0.1
 # mmengine >= 0.8.0
 
-from mmengine.config import read_base
-from mmengine.dataset import DefaultSampler
-
 from mmagic.datasets import BasicConditionalDataset
 from mmagic.datasets.transforms import LoadImageFromFile, PackInputs
 from mmagic.engine import VisualizationHook
 from mmagic.evaluation.metrics import FrechetInceptionDistance
 from mmagic.models.data_preprocessors import DataPreprocessor
 from mmagic.models.editors.eg3d import EG3D, GaussianCamera, TriplaneGenerator
+from mmengine.config import read_base
+from mmengine.dataset import DefaultSampler
 
 with read_base():
     from .._base_.gen_default_runtime import *

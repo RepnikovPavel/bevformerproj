@@ -1,6 +1,5 @@
 import numpy as np
 import pytest
-
 from mmhuman3d.core.conventions.keypoints_mapping import get_keypoint_num
 from mmhuman3d.data.data_structures.human_data import HumanData
 from mmhuman3d.data.data_structures.human_data_cache import (

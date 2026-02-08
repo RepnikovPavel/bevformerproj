@@ -1,9 +1,8 @@
 import torch
 import torch.nn as nn
+from mmaction.models.utils import unit_tcn
 from mmcv.cnn import build_activation_layer
 from mmengine.model import BaseModule, ModuleList, Sequential
-
-from mmaction.models.utils import unit_tcn
 
 
 # ! Notice: The implementation of MSTCN in

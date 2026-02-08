@@ -1,7 +1,6 @@
 import copy
 
 import numpy as np
-
 from mmhuman3d.data.datasets import HumanImageSMPLXDataset
 from mmhuman3d.data.datasets.pipelines import (
     BBoxCenterJitter,

@@ -1,8 +1,6 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import torch
-
-from mmflow.models.decoders.irr_refine import (FlowRefine, OccRefine,
-                                               OccShuffleUpsample)
+from mmflow.models.decoders.irr_refine import FlowRefine, OccRefine, OccShuffleUpsample
 
 
 def test_flow_refine():

@@ -26,8 +26,9 @@ def convert_onnx(net, path_module, output, opset=11, simplify=False):
 
     
 if __name__ == '__main__':
-    import os
     import argparse
+    import os
+
     from backbones import get_model
 
     parser = argparse.ArgumentParser(description='ArcFace PyTorch to onnx')

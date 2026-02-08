@@ -2,11 +2,11 @@
 from unittest import TestCase
 
 import torch
-from mmengine import Config, MessageHub
-from mmengine.structures import InstanceData
-
 from mmdet import *  # noqa
 from mmdet.models.dense_heads import TOODHead
+from mmengine.structures import InstanceData
+
+from mmengine import Config, MessageHub
 
 
 def _tood_head(anchor_type):

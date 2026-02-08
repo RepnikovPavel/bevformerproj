@@ -1,11 +1,11 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 from typing import Optional, Sequence
 
-import mmcv
-from mmengine import Config, FileClient
+from mmdeploy.apis import build_task_processor
 from torch.utils.data import Dataset
 
-from mmdeploy.apis import build_task_processor
+import mmcv
+from mmengine import Config, FileClient
 
 
 class QuantizationImageDataset(Dataset):

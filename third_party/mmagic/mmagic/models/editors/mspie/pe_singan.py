@@ -3,10 +3,11 @@ from typing import Dict, Optional, Union
 
 import torch
 import torch.nn as nn
-from mmengine import Config
 from torch import Tensor
 
 from mmagic.registry import MODELS
+from mmengine import Config
+
 from ..singan import SinGAN
 
 ModelType = Union[Dict, nn.Module]

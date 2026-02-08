@@ -1,9 +1,13 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 # This is a BETA new format config file, and the usage may change recently.
-from mmengine.hooks import (CheckpointHook, DistSamplerSeedHook, IterTimerHook,
-                            LoggerHook, ParamSchedulerHook)
+from mmengine.hooks import (
+                            CheckpointHook,
+                            DistSamplerSeedHook,
+                            IterTimerHook,
+                            LoggerHook,
+                            ParamSchedulerHook,
+)
 from mmengine.visualization import LocalVisBackend
-
 from mmpretrain.engine.hooks import VisualizationHook
 from mmpretrain.visualization import UniversalVisualizer
 

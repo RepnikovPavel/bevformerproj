@@ -4,6 +4,7 @@ from mmcv.runner import force_fp32
 from mmdet.core import bbox_overlaps
 
 from mmtrack.models import TRACKERS
+
 from .base_tracker import BaseTracker
 
 

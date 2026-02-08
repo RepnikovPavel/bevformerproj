@@ -3,11 +3,11 @@ import json
 import os
 from argparse import ArgumentParser
 
-from mmcv import track_iter_progress
+from mmpose.apis import inference_top_down_pose_model, init_pose_model
 from PIL import Image
 from xtcocotools.coco import COCO
 
-from mmpose.apis import inference_top_down_pose_model, init_pose_model
+from mmcv import track_iter_progress
 
 
 def main():

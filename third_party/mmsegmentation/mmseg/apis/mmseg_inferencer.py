@@ -3,8 +3,6 @@ import os.path as osp
 import warnings
 from typing import List, Optional, Sequence, Union
 
-import mmcv
-import mmengine
 import numpy as np
 import torch
 import torch.nn as nn
@@ -15,6 +13,8 @@ from mmengine.registry import init_default_scope
 from mmengine.runner.checkpoint import _load_checkpoint_to_model
 from PIL import Image
 
+import mmcv
+import mmengine
 from mmseg.structures import SegDataSample
 from mmseg.utils import ConfigType, SampleList, get_classes, get_palette
 from mmseg.visualization import SegLocalVisualizer

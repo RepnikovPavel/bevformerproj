@@ -13,7 +13,6 @@ from mmengine.model.wrappers import MMDistributedDataParallel, is_model_wrapper
 from mmengine.registry import init_default_scope
 from mmengine.runner import Runner, load_checkpoint
 from mmengine.utils import mkdir_or_exist
-
 from mmselfsup.evaluation.functional import knn_eval
 from mmselfsup.models.utils import Extractor
 from mmselfsup.registry import MODELS

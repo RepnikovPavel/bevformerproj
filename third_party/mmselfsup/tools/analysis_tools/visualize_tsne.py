@@ -6,7 +6,6 @@ from functools import partial
 from typing import Optional
 
 import matplotlib.pyplot as plt
-import mmengine
 import numpy as np
 import torch
 import torch.nn.functional as F
@@ -16,11 +15,12 @@ from mmengine.dist import get_rank
 from mmengine.logging import MMLogger
 from mmengine.registry import init_default_scope
 from mmengine.utils import mkdir_or_exist
+from mmselfsup.apis import init_model
+from mmselfsup.registry import DATA_SAMPLERS, DATASETS
 from sklearn.manifold import TSNE
 from torch.utils.data import DataLoader
 
-from mmselfsup.apis import init_model
-from mmselfsup.registry import DATA_SAMPLERS, DATASETS
+import mmengine
 
 
 def parse_args():

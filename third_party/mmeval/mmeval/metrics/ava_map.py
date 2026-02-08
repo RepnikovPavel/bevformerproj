@@ -1,12 +1,14 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import csv
-import numpy as np
 import os
 from collections import defaultdict
 from datetime import datetime
 from typing import List, Optional, Sequence
 
+import numpy as np
+
 from mmeval.core.base_metric import BaseMetric
+
 from ._vendor.ava_evaluation import object_detection_evaluation as det_eval
 from ._vendor.ava_evaluation import standard_fields
 

@@ -3,7 +3,6 @@ import random
 import numpy as np
 import pytest
 import torch
-
 from mmhuman3d.core.cameras.cameras import FoVPerspectiveCameras
 from mmhuman3d.core.conventions.cameras.convert_convention import (
     CAMERA_CONVENTIONS,

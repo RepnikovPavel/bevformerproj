@@ -2,7 +2,6 @@
 from unittest import TestCase
 
 import torch
-
 from mmocr.models.textdet.heads import DBHead
 from mmocr.registry import MODELS
 

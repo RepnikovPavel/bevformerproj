@@ -4,6 +4,7 @@ from mmcls.models.backbones.resnet import ResLayer
 from mmcls.models.backbones.resnext import Bottleneck
 
 from mmselfsup.registry import MODELS
+
 from .resnet import ResNet
 
 

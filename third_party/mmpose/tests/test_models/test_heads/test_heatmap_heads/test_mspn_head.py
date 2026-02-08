@@ -4,10 +4,9 @@ from unittest import TestCase
 
 import torch
 from mmengine.structures import InstanceData, PixelData
-from torch import Tensor, nn
-
 from mmpose.models.heads import MSPNHead
 from mmpose.testing import get_packed_inputs
+from torch import Tensor, nn
 
 
 class TestMSPNHead(TestCase):

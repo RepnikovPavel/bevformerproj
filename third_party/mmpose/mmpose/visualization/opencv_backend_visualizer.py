@@ -2,11 +2,12 @@
 from typing import List, Optional, Union
 
 import cv2
-import mmcv
 import numpy as np
 import torch
 from mmengine.dist import master_only
 from mmengine.visualization import Visualizer
+
+import mmcv
 
 
 class OpencvBackendVisualizer(Visualizer):

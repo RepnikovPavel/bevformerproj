@@ -3,11 +3,11 @@ import argparse
 import os.path as osp
 from functools import wraps
 
-import mmengine
 import numpy as np
+from mmpose.utils import SimpleCamera
 from PIL import Image
 
-from mmpose.utils import SimpleCamera
+import mmengine
 
 
 def _keypoint_camera_to_world(keypoints,

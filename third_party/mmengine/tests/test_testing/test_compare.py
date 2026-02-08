@@ -1,8 +1,7 @@
 # Copyright (c) OpenMMLab. All rights reserved.
+import mmengine.testing as testing
 import numpy as np
 import pytest
-
-import mmengine.testing as testing
 
 try:
     import torch

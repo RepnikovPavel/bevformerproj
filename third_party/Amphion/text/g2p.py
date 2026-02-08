@@ -4,8 +4,9 @@
 # LICENSE file in the root directory of this source tree.
 
 import re
-from g2p_en import G2p
 from string import punctuation
+
+from g2p_en import G2p
 
 
 def read_lexicon(lex_path):

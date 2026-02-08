@@ -7,8 +7,14 @@ from torch import Tensor, nn
 from mmpose.models.utils.tta import flip_visibility
 from mmpose.registry import MODELS
 from mmpose.utils.tensor_utils import to_numpy
-from mmpose.utils.typing import (ConfigType, InstanceList, OptConfigType,
-                                 OptSampleList, Predictions)
+from mmpose.utils.typing import (
+    ConfigType,
+    InstanceList,
+    OptConfigType,
+    OptSampleList,
+    Predictions,
+)
+
 from ..base_head import BaseHead
 
 

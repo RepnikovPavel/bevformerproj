@@ -1,12 +1,11 @@
 # Adapted from https://github.com/dajes/frame-interpolation-pytorch
+import bisect
 import os
-import cv2
+
 import numpy as np
 import torch
-import bisect
-import shutil
-import pdb
 from tqdm import tqdm
+
 
 def init_frame_interpolation_model():
     print("Initializing frame interpolation model")

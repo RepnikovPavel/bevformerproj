@@ -2,10 +2,9 @@
 from unittest import TestCase
 
 import torch
-from torch import nn
-
 from mmpretrain.engine import LearningRateDecayOptimWrapperConstructor
 from mmpretrain.models import ImageClassifier, VisionTransformer
+from torch import nn
 
 
 class ToyViTBackbone(nn.Module):

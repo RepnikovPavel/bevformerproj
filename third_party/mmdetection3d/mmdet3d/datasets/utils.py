@@ -4,13 +4,17 @@ from mmcv.transforms import LoadImageFromFile
 from pyquaternion import Quaternion
 
 # yapf: disable
-from mmdet3d.datasets.transforms import (LoadAnnotations3D,
-                                         LoadImageFromFileMono3D,
-                                         LoadMultiViewImageFromFiles,
-                                         LoadPointsFromFile,
-                                         LoadPointsFromMultiSweeps,
-                                         MultiScaleFlipAug3D, Pack3DDetInputs,
-                                         PointSegClassMapping)
+from mmdet3d.datasets.transforms import (
+    LoadAnnotations3D,
+    LoadImageFromFileMono3D,
+    LoadMultiViewImageFromFiles,
+    LoadPointsFromFile,
+    LoadPointsFromMultiSweeps,
+    MultiScaleFlipAug3D,
+    Pack3DDetInputs,
+    PointSegClassMapping,
+)
+
 # yapf: enable
 from mmdet3d.registry import TRANSFORMS
 

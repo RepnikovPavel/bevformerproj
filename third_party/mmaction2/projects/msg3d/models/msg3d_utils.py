@@ -1,11 +1,10 @@
 import numpy as np
 import torch
 import torch.nn as nn
-from mmcv.cnn import build_activation_layer
-from mmengine.model import BaseModule, ModuleList, Sequential
-
 from mmaction.models.utils import unit_tcn
 from mmaction.models.utils.graph import k_adjacency, normalize_digraph
+from mmcv.cnn import build_activation_layer
+from mmengine.model import BaseModule, ModuleList, Sequential
 
 
 class MLP(BaseModule):

@@ -6,6 +6,7 @@ from scipy.optimize import linear_sum_assignment
 
 from mmtrack.core import imrenormalize
 from mmtrack.models import TRACKERS
+
 from .base_tracker import BaseTracker
 
 

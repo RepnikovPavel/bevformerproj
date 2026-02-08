@@ -7,12 +7,12 @@ from matplotlib.ticker import MultipleLocator
 from mmcv.ops import nms
 from mmdet.evaluation import bbox_overlaps
 from mmdet.utils import replace_cfg_vals, update_data_root
-from mmengine import Config, DictAction
 from mmengine.fileio import load
 from mmengine.registry import init_default_scope
 from mmengine.utils import ProgressBar
-
 from mmyolo.registry import DATASETS
+
+from mmengine import Config, DictAction
 
 
 def parse_args():

@@ -2,7 +2,6 @@
 from unittest import TestCase
 
 import torch
-
 from mmyolo.models.necks import YOLOv5PAFPN
 from mmyolo.utils import register_all_modules
 

@@ -4,9 +4,10 @@ from logging import WARNING
 from typing import Any, List, Optional, Union
 
 import torch
-from mmengine import print_log
 from mmengine.model import BaseModule
 from torch import dtype as TORCH_DTYPE
+
+from mmengine import print_log
 
 dtype_mapping = {
     'float32': torch.float32,

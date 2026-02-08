@@ -4,7 +4,6 @@ from typing import Dict, List, Optional, Sequence, Tuple, Union
 import numpy as np
 import torch
 from mmengine.structures import InstanceData
-
 from mmocr.models import Dictionary
 from mmocr.models.textrecog.postprocessors import BaseTextRecogPostprocessor
 from mmocr.registry import MODELS

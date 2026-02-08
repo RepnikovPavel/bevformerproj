@@ -1,8 +1,7 @@
 # Copyright (c) OpenMMLab. All rights reserved.
+import mmdeploy.backend.onnxruntime as ort_apis
 import pytest
 import torch
-
-import mmdeploy.backend.onnxruntime as ort_apis
 from mmdeploy.codebase import import_codebase
 from mmdeploy.utils import Backend, Codebase, load_config
 from mmdeploy.utils.test import SwitchBackendWrapper, backend_checker
@@ -16,8 +15,10 @@ except ImportError:
     pytest.skip(
         f'{Codebase.MMPOSE} is not installed.', allow_module_level=True)
 
-from .utils import generate_datasample  # noqa: E402
-from .utils import generate_mmpose_deploy_config  # noqa: E402
+from .utils import (
+    generate_datasample,  # noqa: E402
+    generate_mmpose_deploy_config,  # noqa: E402
+)
 
 
 @backend_checker(Backend.ONNXRUNTIME)
@@ -36,8 +37,7 @@ class TestEnd2EndModel:
         }
         cls.wrapper.set(outputs=cls.outputs)
 
-        from mmdeploy.codebase.mmpose.deploy.pose_detection_model import \
-            End2EndModel
+        from mmdeploy.codebase.mmpose.deploy.pose_detection_model import End2EndModel
         model_cfg_path = 'tests/test_codebase/test_mmpose/data/model.py'
         model_cfg = load_config(model_cfg_path)[0]
         deploy_cfg = generate_mmpose_deploy_config()
@@ -72,7 +72,9 @@ def test_build_pose_detection_model():
     with SwitchBackendWrapper(ORTWrapper) as wrapper:
         wrapper.set(model_cfg=model_cfg, deploy_cfg=deploy_cfg)
         from mmdeploy.codebase.mmpose.deploy.pose_detection_model import (
-            End2EndModel, build_pose_detection_model)
+            End2EndModel,
+            build_pose_detection_model,
+        )
         posedetector = build_pose_detection_model([''], model_cfg, deploy_cfg,
                                                   'cpu')
         assert isinstance(posedetector, End2EndModel)

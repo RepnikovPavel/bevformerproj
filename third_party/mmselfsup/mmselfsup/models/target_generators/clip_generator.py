@@ -6,6 +6,7 @@ from mmengine.model import BaseModule
 from mmengine.runner.checkpoint import _load_checkpoint
 
 from mmselfsup.registry import MODELS
+
 from ..utils import build_clip_model
 
 

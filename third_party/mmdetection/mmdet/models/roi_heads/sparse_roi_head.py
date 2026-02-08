@@ -11,6 +11,7 @@ from mmdet.registry import MODELS
 from mmdet.structures import SampleList
 from mmdet.structures.bbox import bbox2roi
 from mmdet.utils import ConfigType, InstanceList, OptConfigType
+
 from ..utils.misc import empty_instances, unpack_gt_instances
 from .cascade_roi_head import CascadeRoIHead
 

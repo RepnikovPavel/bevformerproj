@@ -4,6 +4,7 @@ from mmcv.utils import print_log
 from mmdet.datasets import DATASETS
 
 from mmtrack.core.evaluation import eval_sot_ope
+
 from .coco_video_dataset import CocoVideoDataset
 
 

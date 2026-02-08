@@ -7,6 +7,7 @@ from mmengine.model.weight_init import trunc_normal_
 from torch import nn
 
 from mmselfsup.registry import MODELS
+
 from ..utils import TransformerEncoderLayer, build_2d_sincos_position_embedding
 
 

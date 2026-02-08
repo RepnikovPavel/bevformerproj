@@ -1,13 +1,12 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 from mmcv.transforms.loading import LoadImageFromFile
-from mmengine.dataset.sampler import DefaultSampler
-
 from mmdet.datasets.coco_panoptic import CocoPanopticDataset
 from mmdet.datasets.samplers.batch_sampler import AspectRatioBatchSampler
 from mmdet.datasets.transforms.formatting import PackDetInputs
 from mmdet.datasets.transforms.loading import LoadPanopticAnnotations
 from mmdet.datasets.transforms.transforms import RandomFlip, Resize
 from mmdet.evaluation.metrics.coco_panoptic_metric import CocoPanopticMetric
+from mmengine.dataset.sampler import DefaultSampler
 
 # dataset settings
 dataset_type = 'CocoPanopticDataset'

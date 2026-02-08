@@ -15,9 +15,8 @@ from mmengine.model import BaseModel
 from mmengine.optim import OptimWrapper
 from mmengine.runner import Runner
 from mmengine.testing import assert_allclose
-from torch.utils.data import Dataset
-
 from mmpretrain.engine import EMAHook
+from torch.utils.data import Dataset
 
 
 class SimpleModel(BaseModel):

@@ -5,12 +5,14 @@ import pytest
 import torch
 
 # yapf:disable
-from mmagic.models.editors.biggan import (BigGANConditionBN,
-                                          BigGANDeepDiscResBlock,
-                                          BigGANDeepGenResBlock,
-                                          BigGANDiscResBlock,
-                                          BigGANGenResBlock,
-                                          SelfAttentionBlock)
+from mmagic.models.editors.biggan import (
+    BigGANConditionBN,
+    BigGANDeepDiscResBlock,
+    BigGANDeepGenResBlock,
+    BigGANDiscResBlock,
+    BigGANGenResBlock,
+    SelfAttentionBlock,
+)
 from mmagic.registry import MODELS
 
 # yapf:enable

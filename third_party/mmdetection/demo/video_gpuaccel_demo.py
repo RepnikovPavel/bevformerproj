@@ -3,16 +3,16 @@ import argparse
 from typing import Tuple
 
 import cv2
-import mmcv
 import numpy as np
 import torch
 import torch.nn as nn
 from mmcv.transforms import Compose
-from mmengine.utils import track_iter_progress
-
 from mmdet.apis import init_detector
 from mmdet.registry import VISUALIZERS
 from mmdet.structures import DetDataSample
+from mmengine.utils import track_iter_progress
+
+import mmcv
 
 try:
     import ffmpegcv

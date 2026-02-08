@@ -1,14 +1,15 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import random
 
-import mmengine
 import numpy as np
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
 from mmengine.model import BaseModule
 
+import mmengine
 from mmagic.registry import MODELS
+
 from ...utils import get_module_device
 from ..pggan import EqualizedLRConvModule, PixelNorm
 from .stylegan1_modules import EqualLinearActModule, StyleConv

@@ -2,7 +2,6 @@
 from copy import deepcopy
 from functools import partial
 
-import mmcv
 import numpy as np
 import torch
 import torch.distributed as dist
@@ -10,8 +9,10 @@ import torch.nn as nn
 import torch.nn.functional as F
 from torch.nn.parallel.distributed import _find_tensors
 
+import mmcv
 from mmgen.core.optimizer import build_optimizers
 from mmgen.models.builder import MODELS, build_module
+
 from ..common import set_requires_grad
 from .base_gan import BaseGAN
 

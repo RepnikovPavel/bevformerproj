@@ -11,12 +11,16 @@ import torch.nn as nn
 from torch.nn import Module
 
 from mmrazor.models.task_modules.tracer.backward_tracer import BackwardTracer
-from mmrazor.models.task_modules.tracer.loss_calculator import \
-    ImageClassifierPseudoLoss
-from mmrazor.models.task_modules.tracer.path import (Path, PathConcatNode,
-                                                     PathList, PathNode)
+from mmrazor.models.task_modules.tracer.loss_calculator import ImageClassifierPseudoLoss
+from mmrazor.models.task_modules.tracer.path import (
+    Path,
+    PathConcatNode,
+    PathList,
+    PathNode,
+)
 from mmrazor.registry import TASK_UTILS
 from mmrazor.utils import print_log
+
 from .base_graph import BaseGraph, BaseNode
 from .pseudo_fx_graph import FxBaseNode
 

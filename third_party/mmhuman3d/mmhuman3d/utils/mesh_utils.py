@@ -2,9 +2,8 @@ import warnings
 from typing import List, Optional, Union
 
 import torch
-from pytorch3d.io import IO
+from pytorch3d.io import IO, save_obj
 from pytorch3d.io import load_objs_as_meshes as _load_objs_as_meshes
-from pytorch3d.io import save_obj
 from pytorch3d.renderer import TexturesUV, TexturesVertex
 from pytorch3d.structures import (
     Meshes,

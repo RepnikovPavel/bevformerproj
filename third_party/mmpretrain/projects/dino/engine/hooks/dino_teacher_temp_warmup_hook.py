@@ -1,7 +1,6 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import numpy as np
 from mmengine.hooks import Hook
-
 from mmpretrain.registry import HOOKS
 
 

@@ -2,11 +2,12 @@
 import os
 from typing import Dict, List
 
-import mmcv
 import numpy as np
-from mmengine import mkdir_or_exist
 from PIL.Image import Image, fromarray
 from torchvision.utils import save_image
+
+import mmcv
+from mmengine import mkdir_or_exist
 
 from .base_mmagic_inferencer import BaseMMagicInferencer, InputsType, PredType
 

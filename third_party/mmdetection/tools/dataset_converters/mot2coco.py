@@ -18,9 +18,10 @@ import os
 import os.path as osp
 from collections import defaultdict
 
-import mmengine
 import numpy as np
 from tqdm import tqdm
+
+import mmengine
 
 # Classes in MOT:
 CLASSES = [

@@ -3,16 +3,16 @@ import os.path as osp
 from datetime import datetime
 from typing import Dict, List, Optional, Tuple, Union
 
-import mmcv
-import mmengine
 import numpy as np
 from rich.progress import track
 
+import mmcv
+import mmengine
 from mmocr.registry import VISUALIZERS
 from mmocr.structures import TextSpottingDataSample
 from mmocr.utils import ConfigType, bbox2poly, crop_img, poly2bbox
-from .base_mmocr_inferencer import (BaseMMOCRInferencer, InputsType, PredType,
-                                    ResType)
+
+from .base_mmocr_inferencer import BaseMMOCRInferencer, InputsType, PredType, ResType
 from .kie_inferencer import KIEInferencer
 from .textdet_inferencer import TextDetInferencer
 from .textrec_inferencer import TextRecInferencer

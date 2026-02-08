@@ -1,8 +1,11 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import pytest
-
-from mmengine.fileio.backends import (BaseStorageBackend, backends,
-                                      prefix_to_backends, register_backend)
+from mmengine.fileio.backends import (
+    BaseStorageBackend,
+    backends,
+    prefix_to_backends,
+    register_backend,
+)
 
 
 def test_register_backend():

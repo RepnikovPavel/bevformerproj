@@ -3,19 +3,25 @@ from typing import List, Tuple
 
 import torch
 from mmcv.cnn import Scale
+
 # from mmcv.ops import nms3d, nms3d_normal
 from mmdet.models.utils import multi_apply
 from mmdet.utils import reduce_mean
+from mmdet3d.registry import MODELS, TASK_UTILS
+
+# from mmdet3d.structures.bbox_3d.utils import rotation_3d_in_axis
+from mmdet3d.structures.det3d_data_sample import SampleList
+from mmdet3d.utils.typing_utils import (
+    ConfigType,
+    InstanceList,
+    OptConfigType,
+    OptInstanceList,
+)
+
 # from mmengine.config import ConfigDict
 from mmengine.model import BaseModule, bias_init_with_prob, normal_init
 from mmengine.structures import InstanceData
 from torch import Tensor, nn
-
-from mmdet3d.registry import MODELS, TASK_UTILS
-# from mmdet3d.structures.bbox_3d.utils import rotation_3d_in_axis
-from mmdet3d.structures.det3d_data_sample import SampleList
-from mmdet3d.utils.typing_utils import (ConfigType, InstanceList,
-                                        OptConfigType, OptInstanceList)
 
 
 @torch.no_grad()

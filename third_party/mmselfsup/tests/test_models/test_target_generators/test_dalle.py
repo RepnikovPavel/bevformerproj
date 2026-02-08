@@ -3,7 +3,6 @@ import platform
 
 import pytest
 import torch
-
 from mmselfsup.models.target_generators import Encoder
 
 

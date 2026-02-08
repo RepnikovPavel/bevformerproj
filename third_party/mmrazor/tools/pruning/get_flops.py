@@ -1,12 +1,12 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import argparse
 
-from mmengine import Config
-
 from mmrazor.models.algorithms import ItePruneAlgorithm
 from mmrazor.models.task_modules import ResourceEstimator
 from mmrazor.models.task_modules.demo_inputs import DefaultDemoInput
 from mmrazor.registry import MODELS
+
+from mmengine import Config
 
 
 def parse_args():

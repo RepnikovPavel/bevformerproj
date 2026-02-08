@@ -5,7 +5,6 @@ import pytest
 import torch
 from mmengine.config import Config
 from mmengine.structures import InstanceData
-
 from mmyolo.models.dense_heads import RTMDetRotatedHead
 from mmyolo.utils import register_all_modules
 

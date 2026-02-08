@@ -1,9 +1,12 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 # This is a BETA new format config file, and the usage may change recently.
 from mmengine.model.weight_init import KaimingInit
-
-from mmpretrain.models import (ImageClassifier, LabelSmoothLoss,
-                               VisionTransformer, VisionTransformerClsHead)
+from mmpretrain.models import (
+                               ImageClassifier,
+                               LabelSmoothLoss,
+                               VisionTransformer,
+                               VisionTransformerClsHead,
+)
 
 # model settings
 model = dict(

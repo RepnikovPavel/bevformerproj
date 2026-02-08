@@ -2,20 +2,22 @@
 import numpy as np
 import pytest
 import torch
-from mmengine import Config
-
 from mmdeploy.codebase import import_codebase
 from mmdeploy.utils import Codebase
+
+from mmengine import Config
 
 try:
     import_codebase(Codebase.MMDET)
 except ImportError:
     pytest.skip(f'{Codebase.MMDET} is not installed.', allow_module_level=True)
 
-from mmdeploy.codebase.mmdet.deploy import (clip_bboxes,
-                                            get_post_processing_params,
-                                            pad_with_value,
-                                            pad_with_value_if_necessary)
+from mmdeploy.codebase.mmdet.deploy import (
+    clip_bboxes,
+    get_post_processing_params,
+    pad_with_value,
+    pad_with_value_if_necessary,
+)
 
 
 def test_clip_bboxes():
@@ -71,10 +73,10 @@ def test_get_mmdet_params():
 
 
 def test_get_topk_from_heatmap():
+    from mmdeploy.codebase.mmdet.models.utils.gaussian_target import (
+        get_topk_from_heatmap__default,
+    )
     from mmdet.models.utils.gaussian_target import get_topk_from_heatmap
-
-    from mmdeploy.codebase.mmdet.models.utils.gaussian_target import \
-        get_topk_from_heatmap__default
     scores = torch.rand(1, 2, 4, 4)
 
     gts = get_topk_from_heatmap(scores, k=20)

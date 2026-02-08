@@ -3,8 +3,9 @@ import os
 from concurrent import futures as futures
 from os import path as osp
 
-import mmengine
 import numpy as np
+
+import mmengine
 
 
 class S3DISData(object):

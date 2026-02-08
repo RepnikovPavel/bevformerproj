@@ -9,14 +9,11 @@
 #       This code is included in an MIT-licensed repository.
 #       The repository's MIT license does not apply to this code.
 
-import os
+import warnings
+
 import librosa
 import numpy as np
 import onnxruntime as ort
-import pandas as pd
-import tqdm
-import warnings
-
 
 warnings.filterwarnings("ignore")
 

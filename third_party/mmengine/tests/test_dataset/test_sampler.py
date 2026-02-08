@@ -5,7 +5,6 @@ from unittest.mock import patch
 
 import numpy as np
 import torch
-
 from mmengine.dataset import DefaultSampler, InfiniteSampler
 
 

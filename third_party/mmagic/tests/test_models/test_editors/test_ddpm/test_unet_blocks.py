@@ -1,12 +1,13 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import pytest
 import torch
-
-from mmagic.models.editors.ddpm.unet_blocks import (CrossAttnDownBlock2D,
-                                                    CrossAttnUpBlock2D,
-                                                    UNetMidBlock2DCrossAttn,
-                                                    get_down_block,
-                                                    get_up_block)
+from mmagic.models.editors.ddpm.unet_blocks import (
+    CrossAttnDownBlock2D,
+    CrossAttnUpBlock2D,
+    UNetMidBlock2DCrossAttn,
+    get_down_block,
+    get_up_block,
+)
 
 
 def test_UNetMidBlock2DCrossAttn():

@@ -2,7 +2,6 @@
 import copy
 from typing import Dict, Optional, Union
 
-import mmcv
 import numpy as np
 import torch
 from mmcls.apis.test import collect_results_cpu
@@ -12,6 +11,7 @@ from mmcv.utils import print_log
 from torch import nn
 from torch.utils.data import DataLoader
 
+import mmcv
 from mmfewshot.classification.datasets import label_wrapper
 from mmfewshot.classification.utils import MetaTestParallel
 

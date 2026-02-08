@@ -5,12 +5,12 @@ import shutil
 import tempfile
 from typing import Any, Dict, List, Optional, Sequence
 
-import mmcv
 import numpy as np
 import torch
 import torch.distributed as dist
 from mmcv.runner import get_dist_info
 
+import mmcv
 from mmflow.datasets.utils import visualize_flow, write_flow
 
 Module = torch.nn.Module

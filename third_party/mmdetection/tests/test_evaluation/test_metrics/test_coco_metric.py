@@ -5,9 +5,8 @@ from unittest import TestCase
 import numpy as np
 import pycocotools.mask as mask_util
 import torch
-from mmengine.fileio import dump
-
 from mmdet.evaluation import CocoMetric
+from mmengine.fileio import dump
 
 
 class TestCocoMetric(TestCase):

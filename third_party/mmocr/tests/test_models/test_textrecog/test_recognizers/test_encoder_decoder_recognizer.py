@@ -2,7 +2,6 @@
 from unittest import TestCase
 
 import torch
-
 from mmocr.models.textrecog.recognizers import EncoderDecoderRecognizer
 from mmocr.registry import MODELS
 

@@ -4,11 +4,17 @@ from unittest.mock import patch
 import pytest
 import torch
 import torch.nn as nn
+from mmcv.cnn.bricks import (
+    Conv2d,
+    Conv3d,
+    ConvTranspose2d,
+    ConvTranspose3d,
+    Linear,
+    MaxPool2d,
+    MaxPool3d,
+)
 from mmengine.utils import digit_version
 from mmengine.utils.dl_utils import TORCH_VERSION
-
-from mmcv.cnn.bricks import (Conv2d, Conv3d, ConvTranspose2d, ConvTranspose3d,
-                             Linear, MaxPool2d, MaxPool3d)
 
 if torch.__version__ != 'parrots':
     torch_version = '1.1'

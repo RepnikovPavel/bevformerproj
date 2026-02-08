@@ -1,7 +1,6 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import pytest
 import torch
-
 from mmselfsup.utils import AliasMethod
 
 

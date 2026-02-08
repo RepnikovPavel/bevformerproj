@@ -3,10 +3,11 @@ from typing import List, Optional, Tuple, Union
 
 import torch
 import torch.nn.functional as F
-from mmengine import print_log
 from mmengine.model import BaseModule
 from mmengine.utils import digit_version
 from mmengine.utils.dl_utils import TORCH_VERSION
+
+from mmengine import print_log
 
 from ..stylegan2 import StyleGAN2Generator
 from ..stylegan2.stylegan2_modules import ModulatedStyleConv, ModulatedToRGB

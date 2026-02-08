@@ -4,10 +4,9 @@ from unittest import TestCase
 
 import torch
 from mmengine.structures import LabelData
-from torch.utils.data import Dataset
-
 from mmselfsup.engine.hooks import DeepClusterHook
 from mmselfsup.structures import SelfSupDataSample
+from torch.utils.data import Dataset
 
 num_classes = 5
 with_sobel = True,

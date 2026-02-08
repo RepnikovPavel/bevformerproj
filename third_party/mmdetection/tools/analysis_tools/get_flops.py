@@ -6,14 +6,13 @@ from pathlib import Path
 
 import numpy as np
 import torch
+from mmdet.registry import MODELS
 from mmengine.config import Config, DictAction
 from mmengine.logging import MMLogger
 from mmengine.model import revert_sync_batchnorm
 from mmengine.registry import init_default_scope
 from mmengine.runner import Runner
 from mmengine.utils import digit_version
-
-from mmdet.registry import MODELS
 
 try:
     from mmengine.analysis import get_model_complexity_info

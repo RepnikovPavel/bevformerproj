@@ -3,6 +3,7 @@ import os.path as osp
 from typing import List, Union
 
 from mmdet.registry import DATASETS
+
 from .base_video_dataset import BaseVideoDataset
 
 

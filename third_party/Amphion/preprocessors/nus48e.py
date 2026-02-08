@@ -3,17 +3,17 @@
 # This source code is licensed under the MIT license found in the
 # LICENSE file in the root directory of this source tree.
 
-import os
 import json
+import os
+from collections import defaultdict
+from glob import glob
+
 import torchaudio
 from tqdm import tqdm
-from glob import glob
-from collections import defaultdict
-
-
+from utils.audio_slicer import Slicer
 from utils.io import save_audio
 from utils.util import has_existed
-from utils.audio_slicer import Slicer
+
 from preprocessors import GOLDEN_TEST_SAMPLES
 
 

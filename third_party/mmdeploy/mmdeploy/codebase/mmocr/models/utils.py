@@ -2,7 +2,6 @@
 from typing import Union
 
 import mmengine
-
 from mmdeploy.utils import load_config
 
 

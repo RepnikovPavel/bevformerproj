@@ -3,7 +3,6 @@ import torch.nn as nn
 import torch.nn.functional as F
 import torch.utils.checkpoint as checkpoint
 from mmcv.cnn.bricks import DropPath
-
 from mmdet.registry import MODELS
 
 # modified from https://github.com/microsoft/X-Decoder/blob/main/xdecoder/backbone/focal_dw.py # noqa

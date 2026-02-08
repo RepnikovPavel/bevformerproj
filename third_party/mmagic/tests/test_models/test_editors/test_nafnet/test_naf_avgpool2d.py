@@ -1,6 +1,5 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import torch
-
 from mmagic.models.editors.nafnet.naf_avgpool2d import NAFAvgPool2d
 
 

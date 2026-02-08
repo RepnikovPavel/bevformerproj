@@ -3,13 +3,13 @@ import os.path as osp
 import subprocess
 import tempfile
 
-import mmengine
 import pytest
 import torch
 import torch.nn as nn
-
 from mmdeploy.utils.constants import Backend
 from mmdeploy.utils.test import check_backend
+
+import mmengine
 
 onnx_file = tempfile.NamedTemporaryFile(suffix='.onnx').name
 ts_file = tempfile.NamedTemporaryFile(suffix='.pt').name
@@ -147,7 +147,9 @@ def ir2backend(backend, onnx_file, ts_file):
     elif backend == Backend.COREML:
         output_names = ['output']
         from mmdeploy.backend.coreml.torchscript2coreml import (
-            from_torchscript, get_model_suffix)
+            from_torchscript,
+            get_model_suffix,
+        )
         backend_dir = tempfile.TemporaryDirectory().name
         work_dir = backend_dir
         torchscript_name = osp.splitext(osp.split(ts_file)[1])[0]

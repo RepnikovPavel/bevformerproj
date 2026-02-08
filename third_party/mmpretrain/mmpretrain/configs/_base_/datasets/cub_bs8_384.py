@@ -1,9 +1,15 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 # This is a BETA new format config file, and the usage may change recently.
 from mmengine.dataset import DefaultSampler
-
-from mmpretrain.datasets import (CUB, CenterCrop, LoadImageFromFile,
-                                 PackInputs, RandomCrop, RandomFlip, Resize)
+from mmpretrain.datasets import (
+                                 CUB,
+                                 CenterCrop,
+                                 LoadImageFromFile,
+                                 PackInputs,
+                                 RandomCrop,
+                                 RandomFlip,
+                                 Resize,
+)
 from mmpretrain.evaluation import Accuracy
 
 # dataset settings

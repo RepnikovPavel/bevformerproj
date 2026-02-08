@@ -1,9 +1,9 @@
 import torch
 import torch.nn as nn
-from mmengine.model import BaseModule, ModuleList
-
 from mmaction.models.utils import Graph, unit_tcn
 from mmaction.registry import MODELS
+from mmengine.model import BaseModule, ModuleList
+
 from .ctrgcn_utils import MSTCN, unit_ctrgcn
 
 

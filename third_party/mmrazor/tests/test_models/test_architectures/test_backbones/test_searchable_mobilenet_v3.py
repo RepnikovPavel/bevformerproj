@@ -5,15 +5,15 @@ import sys
 import pytest
 import torch
 from mmcls.models import *  # noqa: F401,F403
-from torch.nn.modules.batchnorm import _BatchNorm
-
-from mmrazor.models.architectures.dynamic_ops import (BigNasConv2d,
-                                                      DynamicBatchNorm2d,
-                                                      DynamicSequential)
-from mmrazor.models.mutables import (MutableChannelContainer,
-                                     OneShotMutableValue)
+from mmrazor.models.architectures.dynamic_ops import (
+    BigNasConv2d,
+    DynamicBatchNorm2d,
+    DynamicSequential,
+)
+from mmrazor.models.mutables import MutableChannelContainer, OneShotMutableValue
 from mmrazor.models.utils import parse_values
 from mmrazor.registry import MODELS
+from torch.nn.modules.batchnorm import _BatchNorm
 
 sys.path.append('tests/test_models/test_architectures/test_backbones')
 

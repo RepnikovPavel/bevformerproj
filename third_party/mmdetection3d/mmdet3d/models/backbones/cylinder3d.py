@@ -10,8 +10,7 @@ from typing import List, Optional
 import numpy as np
 import torch
 from mmcv.cnn import build_activation_layer, build_norm_layer
-from mmcv.ops import (SparseConv3d, SparseConvTensor, SparseInverseConv3d,
-                      SubMConv3d)
+from mmcv.ops import SparseConv3d, SparseConvTensor, SparseInverseConv3d, SubMConv3d
 from mmengine.model import BaseModule
 from torch import Tensor
 

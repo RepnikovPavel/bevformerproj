@@ -2,14 +2,13 @@
 # MIT License
 
 import os
+
 import cv2
-import torch
 import numpy as np
-
+import torch
 import torch.nn as nn
-from einops import rearrange
 from annotator.util import annotator_ckpts_path
-
+from einops import rearrange
 
 norm_layer = nn.InstanceNorm2d
 

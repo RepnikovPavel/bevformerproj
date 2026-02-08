@@ -2,14 +2,15 @@ import math
 from abc import ABCMeta
 
 import cv2
-import mmcv
 import numpy as np
 import torch
-from mmcv import imshow, imwrite
 from mmengine.model import BaseModel
-
 from mmpose.models import builder
 from mmpose.registry import MODELS
+
+import mmcv
+from mmcv import imshow, imwrite
+
 from ..backbones.swin_utils import load_pretrained
 
 

@@ -5,12 +5,14 @@ import pytest
 import torch
 import torch.nn as nn
 from mmcv.cnn import ConvModule
-
 from mmrazor.models.architectures.utils import mutate_conv_module
-from mmrazor.models.mutables import (MutableChannelContainer, MutableValue,
-                                     OneShotMutableChannel,
-                                     OneShotMutableChannelUnit,
-                                     OneShotMutableValue)
+from mmrazor.models.mutables import (
+    MutableChannelContainer,
+    MutableValue,
+    OneShotMutableChannel,
+    OneShotMutableChannelUnit,
+    OneShotMutableValue,
+)
 from mmrazor.models.mutables.mutable_module import MutableModule
 from mmrazor.models.mutators import NasMutator
 from mmrazor.registry import MODELS

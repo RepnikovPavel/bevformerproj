@@ -11,10 +11,12 @@ Example:
 import os
 from argparse import ArgumentParser
 
-from mmfewshot.classification.apis import (inference_classifier,
-                                           init_classifier,
-                                           process_support_images,
-                                           show_result_pyplot)
+from mmfewshot.classification.apis import (
+    inference_classifier,
+    init_classifier,
+    process_support_images,
+    show_result_pyplot,
+)
 
 
 def main():

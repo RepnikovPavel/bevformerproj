@@ -1,9 +1,9 @@
 # Copyright (c) OpenMMLab. All rights reserved.
-import mmcv
 import torch
 from mmdet.core import build_assigner, build_sampler
-
 from mmtrack.models.track_heads import QuasiDenseEmbedHead
+
+import mmcv
 
 
 def test_quasi_dense_embed_head():

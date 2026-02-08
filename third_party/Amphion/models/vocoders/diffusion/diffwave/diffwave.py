@@ -7,13 +7,12 @@
 # https://github.com/lmnt-com/diffwave
 # Only the config-related varaible names are changed.
 
+from math import sqrt
+
 import numpy as np
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-
-from math import sqrt
-
 
 Linear = nn.Linear
 ConvTranspose2d = nn.ConvTranspose2d

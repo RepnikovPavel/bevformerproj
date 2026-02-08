@@ -6,11 +6,13 @@
 
 import os
 import pickle
+
 import numpy as np
-from ...utils import common_utils
 import tensorflow as tf
-from waymo_open_dataset.utils import frame_utils, transform_utils, range_image_utils
 from waymo_open_dataset import dataset_pb2
+from waymo_open_dataset.utils import frame_utils, range_image_utils, transform_utils
+
+from ...utils import common_utils
 
 try:
     tf.enable_eager_execution()

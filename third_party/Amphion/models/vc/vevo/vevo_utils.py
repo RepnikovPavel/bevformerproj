@@ -4,27 +4,26 @@
 # LICENSE file in the root directory of this source tree.
 
 import math
+
+import accelerate
 import librosa
+import numpy as np
+import safetensors
 import torch
 import torchaudio
-import accelerate
-import safetensors
-import numpy as np
 import yaml
-from IPython.display import display, Audio
-
-from models.vc.flow_matching_transformer.fmt_model import FlowMatchingTransformer
-from models.vc.autoregressive_transformer.ar_model import AutoregressiveTransformer
-from models.codec.kmeans.repcodec_model import RepCodec
-from models.codec.vevo.vevo_repcodec import VevoRepCodec
-from models.codec.melvqgan.melspec import MelSpectrogram
+from IPython.display import Audio, display
 from models.codec.amphion_codec.vocos import Vocos
-
+from models.codec.kmeans.repcodec_model import RepCodec
+from models.codec.melvqgan.melspec import MelSpectrogram
+from models.codec.vevo.vevo_repcodec import VevoRepCodec
+from models.vc.autoregressive_transformer.ar_model import AutoregressiveTransformer
+from models.vc.flow_matching_transformer.fmt_model import FlowMatchingTransformer
 from utils.util import load_config
 
 
 def g2p_(text, language):
-    from models.tts.maskgct.g2p.g2p_generation import g2p, chn_eng_g2p
+    from models.tts.maskgct.g2p.g2p_generation import chn_eng_g2p, g2p
 
     if language in ["zh", "en"]:
         return chn_eng_g2p(text)

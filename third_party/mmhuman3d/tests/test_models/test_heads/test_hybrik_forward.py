@@ -5,7 +5,6 @@ import tempfile
 import numpy as np
 import pytest
 import torch
-
 from mmhuman3d.models.architectures.hybrik import HybrIK_trainer
 from mmhuman3d.models.body_models.builder import build_body_model
 from mmhuman3d.models.heads.hybrik_head import HybrIKHead

@@ -6,11 +6,10 @@ from unittest import TestCase
 from unittest.mock import Mock
 
 import torch
-from mmengine.structures import InstanceData
-
 from mmdet.engine.hooks import DetVisualizationHook, TrackVisualizationHook
 from mmdet.structures import DetDataSample, TrackDataSample
 from mmdet.visualization import DetLocalVisualizer, TrackLocalVisualizer
+from mmengine.structures import InstanceData
 
 
 def _rand_bboxes(num_boxes, h, w):

@@ -14,14 +14,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-from dataclasses import dataclass
-from dataclasses import field
-from typing import Dict
-from typing import Generic
-from typing import List
-from typing import Optional
-from typing import TypeVar
-from typing import Union
+from dataclasses import dataclass, field
+from typing import Dict, Generic, List, Optional, TypeVar, Union
 
 Symbol = TypeVar("Symbol")
 

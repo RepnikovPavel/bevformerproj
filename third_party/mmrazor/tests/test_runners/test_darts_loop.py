@@ -10,11 +10,12 @@ from mmengine.config import Config
 from mmengine.hooks import Hook
 from mmengine.model import BaseDataPreprocessor, BaseModel
 from mmengine.runner import Runner
-from torch.utils.data import DataLoader, Dataset
-
-from mmrazor.engine import DartsEpochBasedTrainLoop  # noqa: F401
-from mmrazor.engine import DartsIterBasedTrainLoop  # noqa: F401
+from mmrazor.engine import (
+    DartsEpochBasedTrainLoop,  # noqa: F401
+    DartsIterBasedTrainLoop,  # noqa: F401
+)
 from mmrazor.registry import DATASETS, HOOKS, MODELS
+from torch.utils.data import DataLoader, Dataset
 
 
 class ToyDataPreprocessor(BaseDataPreprocessor):

@@ -4,20 +4,20 @@
 # LICENSE file in the root directory of this source tree.
 
 import argparse
-import os
 import glob
-from tqdm import tqdm
 import json
-import torch
+import os
 import time
 
-from models.svc.diffusion.diffusion_inference import DiffusionInference
+import torch
 from models.svc.comosvc.comosvc_inference import ComoSVCInference
+from models.svc.diffusion.diffusion_inference import DiffusionInference
 from models.svc.transformer.transformer_inference import TransformerInference
 from models.svc.vits.vits_inference import VitsInference
-from utils.util import load_config
-from utils.audio_slicer import split_audio, merge_segments_encodec
 from processors import acoustic_extractor, content_extractor
+from tqdm import tqdm
+from utils.audio_slicer import merge_segments_encodec, split_audio
+from utils.util import load_config
 
 
 def build_inference(args, cfg, infer_type="from_dataset"):

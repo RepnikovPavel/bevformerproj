@@ -3,13 +3,12 @@ import argparse
 import os
 import os.path as osp
 
+from mmdet.utils import register_all_modules
 from mmengine.config import Config, DictAction
 from mmengine.model import is_model_wrapper
 from mmengine.registry import RUNNERS
 from mmengine.runner import Runner
 from mmengine.runner.checkpoint import load_checkpoint
-
-from mmdet.utils import register_all_modules
 
 
 # TODO: support fuse_conv_bn, visualization, and format_only

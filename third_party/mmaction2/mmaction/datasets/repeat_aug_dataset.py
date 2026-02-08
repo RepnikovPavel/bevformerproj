@@ -7,6 +7,7 @@ from mmengine.dataset import COLLATE_FUNCTIONS, pseudo_collate
 
 from mmaction.registry import DATASETS
 from mmaction.utils import ConfigType
+
 from .video_dataset import VideoDataset
 
 

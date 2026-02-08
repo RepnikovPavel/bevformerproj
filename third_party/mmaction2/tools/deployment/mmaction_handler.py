@@ -7,7 +7,6 @@ import warnings
 import decord
 import numpy as np
 import torch
-
 from mmaction.apis import inference_recognizer, init_recognizer  # noqa: F401
 
 try:

@@ -1,13 +1,13 @@
 # Copyright (c) OpenMMLab. All rights reserved.
+import mmdeploy.backend.onnxruntime as ort_apis
 import pytest
 import torch
-from mmengine import Config
-from mmengine.structures import BaseDataElement
-
-import mmdeploy.backend.onnxruntime as ort_apis
 from mmdeploy.codebase import import_codebase
 from mmdeploy.utils import Backend, Codebase, load_config
 from mmdeploy.utils.test import SwitchBackendWrapper, backend_checker
+from mmengine.structures import BaseDataElement
+
+from mmengine import Config
 
 try:
     import_codebase(Codebase.MMROTATE)
@@ -39,8 +39,9 @@ class TestEnd2EndModel:
                 'output_names': ['dets', 'labels']
             }})
 
-        from mmdeploy.codebase.mmrotate.deploy.rotated_detection_model import \
-            End2EndModel
+        from mmdeploy.codebase.mmrotate.deploy.rotated_detection_model import (
+            End2EndModel,
+        )
         cls.end2end_model = End2EndModel(
             Backend.ONNXRUNTIME, [''], device='cpu', deploy_cfg=deploy_cfg)
 
@@ -77,6 +78,8 @@ def test_build_rotated_detection_model():
     with SwitchBackendWrapper(ORTWrapper) as wrapper:
         wrapper.set(model_cfg=model_cfg, deploy_cfg=deploy_cfg)
         from mmdeploy.codebase.mmrotate.deploy.rotated_detection_model import (
-            End2EndModel, build_rotated_detection_model)
+            End2EndModel,
+            build_rotated_detection_model,
+        )
         segmentor = build_rotated_detection_model([''], deploy_cfg, 'cpu')
         assert isinstance(segmentor, End2EndModel)

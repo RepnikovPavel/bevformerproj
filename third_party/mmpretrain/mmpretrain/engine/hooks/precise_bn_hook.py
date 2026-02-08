@@ -6,7 +6,6 @@ import itertools
 import logging
 from typing import List, Optional, Sequence, Union
 
-import mmengine
 import torch
 import torch.nn as nn
 from mmengine.hooks import Hook
@@ -20,6 +19,7 @@ from torch.nn.modules.batchnorm import _BatchNorm
 from torch.nn.modules.instancenorm import _InstanceNorm
 from torch.utils.data import DataLoader
 
+import mmengine
 from mmpretrain.registry import HOOKS
 
 DATA_BATCH = Optional[Sequence[dict]]

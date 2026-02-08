@@ -2,7 +2,6 @@
 from unittest import TestCase
 
 import torch
-
 from mmpose.models.losses.regression_loss import SoftWeightSmoothL1Loss
 
 

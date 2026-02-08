@@ -3,9 +3,8 @@ from unittest import TestCase
 import numpy as np
 import pytest
 import torch
-from mmengine.structures import InstanceData, PixelData
-
 from mmdet.structures import DetDataSample
+from mmengine.structures import InstanceData, PixelData
 
 
 def _equal(a, b):

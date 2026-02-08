@@ -1,9 +1,9 @@
-from typing import Callable, List, Optional, Union
+from typing import Optional
 
 import torch
 import torch.nn.functional as F
-from torch import nn
 from diffusers.models.attention_processor import Attention
+from torch import nn
 
 
 class JointAttnProcessor2_0:

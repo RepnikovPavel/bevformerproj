@@ -4,7 +4,6 @@ from copy import deepcopy
 
 import pytest
 import torch
-
 from mmagic.models.editors.stylegan1 import StyleGAN1Generator
 from mmagic.utils import register_all_modules
 

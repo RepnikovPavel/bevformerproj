@@ -3,16 +3,18 @@ from typing import List, Optional
 
 import torch
 from mmdet.structures.bbox import BaseBoxes, get_box_tensor
-from mmengine import ConfigDict
 from mmrotate.structures.bbox import rbox2hbox
 from torch import Tensor
 
-from mmdeploy.codebase.mmdet.deploy import (gather_topk,
-                                            get_post_processing_params,
-                                            pad_with_value_if_necessary)
+from mmdeploy.codebase.mmdet.deploy import (
+    gather_topk,
+    get_post_processing_params,
+    pad_with_value_if_necessary,
+)
 from mmdeploy.core import FUNCTION_REWRITER
 from mmdeploy.mmcv.ops import multiclass_nms
 from mmdeploy.utils import is_dynamic_shape
+from mmengine import ConfigDict
 
 
 @FUNCTION_REWRITER.register_rewriter(

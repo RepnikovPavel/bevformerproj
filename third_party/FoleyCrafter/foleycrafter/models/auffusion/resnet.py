@@ -19,7 +19,6 @@ from typing import Optional, Tuple, Union
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-
 from diffusers.models.activations import get_activation
 from diffusers.models.downsampling import (  # noqa
     Downsample1D,

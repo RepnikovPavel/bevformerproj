@@ -1,9 +1,10 @@
 # Copyright (c) OpenMMLab. All rights reserved.
-import mmcv
 import torch
 from torch import nn
 
+import mmcv
 from mmgen.models.builder import MODULES
+
 from .model_irse import Backbone
 
 

@@ -5,11 +5,11 @@ from unittest.mock import MagicMock
 
 import torch
 import torch.nn as nn
-from mmengine import ConfigDict
-
 from mmpretrain.models import ImageClassifier
 from mmpretrain.registry import MODELS
 from mmpretrain.structures import DataSample
+
+from mmengine import ConfigDict
 
 
 def has_timm() -> bool:

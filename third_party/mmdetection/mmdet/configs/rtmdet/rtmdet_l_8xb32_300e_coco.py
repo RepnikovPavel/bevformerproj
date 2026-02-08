@@ -7,42 +7,49 @@
 from mmengine.config import read_base
 
 with read_base():
+    from .._base_.datasets.coco_detection import *
     from .._base_.default_runtime import *
     from .._base_.schedules.schedule_1x import *
-    from .._base_.datasets.coco_detection import *
     from .rtmdet_tta import *
 
 from mmcv.ops import nms
 from mmcv.transforms.loading import LoadImageFromFile
 from mmcv.transforms.processing import RandomResize
-from mmengine.hooks.ema_hook import EMAHook
-from mmengine.optim.optimizer.optimizer_wrapper import OptimWrapper
-from mmengine.optim.scheduler.lr_scheduler import CosineAnnealingLR, LinearLR
-from torch.nn import SyncBatchNorm
-from torch.nn.modules.activation import SiLU
-from torch.optim.adamw import AdamW
-
 from mmdet.datasets.transforms.formatting import PackDetInputs
 from mmdet.datasets.transforms.loading import LoadAnnotations
-from mmdet.datasets.transforms.transforms import (CachedMixUp, CachedMosaic,
-                                                  Pad, RandomCrop, RandomFlip,
-                                                  Resize, YOLOXHSVRandomAug)
+from mmdet.datasets.transforms.transforms import (
+    CachedMixUp,
+    CachedMosaic,
+    Pad,
+    RandomCrop,
+    RandomFlip,
+    Resize,
+    YOLOXHSVRandomAug,
+)
 from mmdet.engine.hooks.pipeline_switch_hook import PipelineSwitchHook
 from mmdet.models.backbones.cspnext import CSPNeXt
-from mmdet.models.data_preprocessors.data_preprocessor import \
-    DetDataPreprocessor
+from mmdet.models.data_preprocessors.data_preprocessor import DetDataPreprocessor
 from mmdet.models.dense_heads.rtmdet_head import RTMDetSepBNHead
 from mmdet.models.detectors.rtmdet import RTMDet
 from mmdet.models.layers.ema import ExpMomentumEMA
 from mmdet.models.losses.gfocal_loss import QualityFocalLoss
 from mmdet.models.losses.iou_loss import GIoULoss
 from mmdet.models.necks.cspnext_pafpn import CSPNeXtPAFPN
-from mmdet.models.task_modules.assigners.dynamic_soft_label_assigner import \
-    DynamicSoftLabelAssigner
-from mmdet.models.task_modules.coders.distance_point_bbox_coder import \
-    DistancePointBBoxCoder
-from mmdet.models.task_modules.prior_generators.point_generator import \
-    MlvlPointGenerator
+from mmdet.models.task_modules.assigners.dynamic_soft_label_assigner import (
+    DynamicSoftLabelAssigner,
+)
+from mmdet.models.task_modules.coders.distance_point_bbox_coder import (
+    DistancePointBBoxCoder,
+)
+from mmdet.models.task_modules.prior_generators.point_generator import (
+    MlvlPointGenerator,
+)
+from mmengine.hooks.ema_hook import EMAHook
+from mmengine.optim.optimizer.optimizer_wrapper import OptimWrapper
+from mmengine.optim.scheduler.lr_scheduler import CosineAnnealingLR, LinearLR
+from torch.nn import SyncBatchNorm
+from torch.nn.modules.activation import SiLU
+from torch.optim.adamw import AdamW
 
 model = dict(
     type=RTMDet,

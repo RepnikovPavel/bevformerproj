@@ -3,12 +3,12 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 from mmcv.cnn import ConvModule
-from mmengine import MMLogger
 from mmengine.model import BaseModule
 from mmengine.runner import load_checkpoint
 
 from mmagic.models.utils import flow_warp
 from mmagic.registry import MODELS
+from mmengine import MMLogger
 
 
 @MODELS.register_module()

@@ -5,10 +5,11 @@ import torch
 import torch.autograd as autograd
 import torch.nn as nn
 import torch.nn.functional as F
-from mmengine import Config
 from torch import Tensor
 
 from mmagic.registry import MODELS
+from mmengine import Config
+
 from ..pggan import ProgressiveGrowingGAN
 
 ModelType = Union[Dict, nn.Module]

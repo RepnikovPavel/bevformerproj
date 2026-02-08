@@ -4,9 +4,7 @@ import math
 import numpy.testing as npt
 import pytest
 import torch
-
-from mmagic.models import (CharbonnierCompLoss, L1CompositionLoss,
-                           MSECompositionLoss)
+from mmagic.models import CharbonnierCompLoss, L1CompositionLoss, MSECompositionLoss
 
 
 def test_composition_losses():

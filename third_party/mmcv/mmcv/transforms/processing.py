@@ -5,11 +5,12 @@ import warnings
 from itertools import product
 from typing import Dict, Iterable, List, Optional, Sequence, Tuple, Union
 
-import mmengine
 import numpy as np
 
 import mmcv
+import mmengine
 from mmcv.image.geometric import _scale_size
+
 from .base import BaseTransform
 from .builder import TRANSFORMS
 from .utils import cache_randomness

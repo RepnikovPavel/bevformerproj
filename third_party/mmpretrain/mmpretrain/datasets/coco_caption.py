@@ -2,10 +2,10 @@
 from pathlib import Path
 from typing import List
 
-import mmengine
 from mmengine.dataset import BaseDataset
 from mmengine.fileio import get_file_backend
 
+import mmengine
 from mmpretrain.registry import DATASETS
 
 

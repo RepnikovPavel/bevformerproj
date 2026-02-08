@@ -1,34 +1,43 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 # this file includes models for tesing.
+import math
 from collections import OrderedDict
 from typing import Dict
-import math
 
-from torch.nn import Module
-from torch import Tensor
+import torch
 import torch.nn as nn
 import torch.nn.functional as F
-import torch
-from mmengine.model import BaseModel
-from mmrazor.models.architectures.dynamic_ops import DynamicBatchNorm2d, DynamicConv2d, DynamicLinear, DynamicChannelMixin, DynamicPatchEmbed, DynamicSequential
-from mmrazor.models.mutables.mutable_channel import MutableChannelContainer
-from mmrazor.models.mutables import MutableChannelUnit
-from mmrazor.models.mutables import DerivedMutable
-from mmrazor.models.mutables import BaseMutable
-from mmrazor.models.mutables import OneShotMutableChannelUnit, OneShotMutableChannel
-
-from mmrazor.models.mutables import OneShotMutableValue
-from mmrazor.models.architectures.backbones.searchable_autoformer import TransformerEncoderLayer
-from mmrazor.registry import MODELS
-from mmrazor.models.mutables import OneShotMutableValue
-from mmrazor.models.architectures.backbones.searchable_autoformer import TransformerEncoderLayer
-from mmrazor.models.utils.parse_values import parse_values
-
-from mmrazor.models.architectures.ops.mobilenet_series import MBBlock
 from mmcv.cnn import ConvModule
-from mmengine.model import Sequential
+from mmengine.model import BaseModel, Sequential
+from mmrazor.models.architectures.backbones.searchable_autoformer import (
+    TransformerEncoderLayer,
+)
+from mmrazor.models.architectures.dynamic_ops import (
+    DynamicBatchNorm2d,
+    DynamicChannelMixin,
+    DynamicConv2d,
+    DynamicLinear,
+    DynamicPatchEmbed,
+    DynamicSequential,
+)
+from mmrazor.models.architectures.ops.mobilenet_series import MBBlock
 from mmrazor.models.architectures.utils.mutable_register import (
-    mutate_conv_module, mutate_mobilenet_layer)
+    mutate_conv_module,
+    mutate_mobilenet_layer,
+)
+from mmrazor.models.mutables import (
+    BaseMutable,
+    DerivedMutable,
+    MutableChannelUnit,
+    OneShotMutableChannel,
+    OneShotMutableChannelUnit,
+    OneShotMutableValue,
+)
+from mmrazor.models.mutables.mutable_channel import MutableChannelContainer
+from mmrazor.models.utils.parse_values import parse_values
+from mmrazor.registry import MODELS
+from torch import Tensor
+from torch.nn import Module
 
 # models to test fx tracer
 

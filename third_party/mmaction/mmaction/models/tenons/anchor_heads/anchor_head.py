@@ -1,14 +1,18 @@
 import numpy as np
 import torch
 import torch.nn as nn
-from mmcv.cnn import normal_init
-
-
 from mmaction.core.anchor2d import AnchorGenerator, anchor_target
 from mmaction.core.bbox2d import delta2bbox
-from mmaction.losses import weighted_cross_entropy, weighted_smoothl1, weighted_binary_cross_entropy
+from mmaction.losses import (
+    weighted_binary_cross_entropy,
+    weighted_cross_entropy,
+    weighted_smoothl1,
+)
 from mmaction.utils.misc import multi_apply
+from mmcv.cnn import normal_init
+
 from ...registry import HEADS
+
 
 @HEADS.register_module
 class AnchorHead(nn.Module):

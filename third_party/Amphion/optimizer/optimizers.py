@@ -1,13 +1,14 @@
 # This module is modified from https://github.com/Plachtaa/VALL-E-X/blob/3faaf8ccadb154d63b38070caf518ce9309ea0f4/modules/optim.py#L836
 
-import logging
 import contextlib
+import logging
+from collections import defaultdict
+from typing import List, Tuple
+
 import torch
 from torch import Tensor
-from torch.optim.lr_scheduler import _LRScheduler
 from torch.optim import Optimizer
-from typing import List, Tuple
-from collections import defaultdict
+from torch.optim.lr_scheduler import _LRScheduler
 
 
 class NoamLR(_LRScheduler):

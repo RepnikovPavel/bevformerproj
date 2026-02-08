@@ -3,10 +3,9 @@ from typing import Optional
 
 import torch
 import torch.nn as nn
+from mmpose.datasets.datasets.utils import parse_pose_metainfo
 from mmyolo.registry import MODELS
 from torch import Tensor
-
-from mmpose.datasets.datasets.utils import parse_pose_metainfo
 
 
 @MODELS.register_module()

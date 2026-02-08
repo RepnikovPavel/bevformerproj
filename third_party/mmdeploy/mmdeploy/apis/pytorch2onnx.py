@@ -46,8 +46,15 @@ def torch2onnx(img: Any,
     """
 
     from mmdeploy.apis.core.pipeline_manager import no_mp
-    from mmdeploy.utils import (Backend, get_backend, get_dynamic_axes,
-                                get_input_shape, get_onnx_config, load_config)
+    from mmdeploy.utils import (
+        Backend,
+        get_backend,
+        get_dynamic_axes,
+        get_input_shape,
+        get_onnx_config,
+        load_config,
+    )
+
     from .onnx import export
 
     # load deploy_cfg if necessary

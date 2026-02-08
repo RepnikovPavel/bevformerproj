@@ -3,22 +3,15 @@
 # This source code is licensed under the MIT license found in the
 # LICENSE file in the root directory of this source tree.
 
-import random
+import pickle
+
 import torch
-from torch.nn.utils.rnn import pad_sequence
-from utils.data_utils import *
-from processors.acoustic_extractor import cal_normalized_mel
-from processors.acoustic_extractor import load_normalized
 from models.base.base_dataset import (
     BaseOfflineCollator,
-    BaseOfflineDataset,
-    BaseTestDataset,
-    BaseTestCollator,
 )
-from text import text_to_sequence
 from text.cmudict import valid_symbols
-from tqdm import tqdm
-import pickle
+from torch.nn.utils.rnn import pad_sequence
+from utils.data_utils import *
 
 
 class NS2Dataset(torch.utils.data.Dataset):

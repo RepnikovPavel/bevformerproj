@@ -3,7 +3,6 @@ import platform
 
 import pytest
 import torch
-
 from mmselfsup.models.backbones import SimMIMSwinTransformer
 
 backbone = dict(

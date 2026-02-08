@@ -5,6 +5,7 @@ import gradio as gr
 import torch
 
 from mmpretrain.registry import MODELS, TRANSFORMS
+
 from .config.ram_swin_large_14m import get_ram_cfg, test_transforms_cfg
 from .run.inference import inference
 

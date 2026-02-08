@@ -5,14 +5,18 @@ import os.path as osp
 
 import numpy as np
 import torch
-from mmengine import DictAction
-from prettytable import PrettyTable
-
 from mmdeploy.apis import build_task_processor
 from mmdeploy.utils import get_root_logger
-from mmdeploy.utils.config_utils import (Backend, get_backend, get_input_shape,
-                                         load_config)
+from mmdeploy.utils.config_utils import (
+    Backend,
+    get_backend,
+    get_input_shape,
+    load_config,
+)
 from mmdeploy.utils.timer import TimeCounter
+from prettytable import PrettyTable
+
+from mmengine import DictAction
 
 
 def parse_args():

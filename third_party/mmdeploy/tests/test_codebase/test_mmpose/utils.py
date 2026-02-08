@@ -1,11 +1,11 @@
 # Copyright (c) OpenMMLab. All rights reserved.
-import mmengine
 import numpy
 import torch
-from mmengine.structures import InstanceData, PixelData
-
 from mmdeploy.apis import build_task_processor
 from mmdeploy.utils import IR, Backend, Codebase, Task, load_config
+from mmengine.structures import InstanceData, PixelData
+
+import mmengine
 
 
 def generate_datasample(img_size, heatmap_size=(64, 48)):

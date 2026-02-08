@@ -7,12 +7,11 @@ from unittest import TestCase
 from unittest.mock import Mock, patch
 
 import torch
-from torch import nn
-from torch.nn.init import constant_
-
 from mmengine.logging.logger import MMLogger
 from mmengine.model import BaseModule, ModuleDict, ModuleList, Sequential
 from mmengine.registry import Registry, build_from_cfg
+from torch import nn
+from torch.nn.init import constant_
 
 COMPONENTS = Registry('component')
 FOOMODELS = Registry('model')

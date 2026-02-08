@@ -4,10 +4,12 @@ from copy import deepcopy
 import numpy as np
 import pytest
 import torch
-
 from mmgen.models.builder import build_module
 from mmgen.models.losses.pixelwise_loss import (
-    DiscretizedGaussianLogLikelihoodLoss, GaussianKLDLoss, MSELoss)
+    DiscretizedGaussianLogLikelihoodLoss,
+    GaussianKLDLoss,
+    MSELoss,
+)
 
 
 class TestDDPMVLBLoss:

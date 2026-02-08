@@ -15,6 +15,7 @@ from torchvision import __version__ as TORCHVISION_VERSION
 
 from mmagic.models.losses import tv_loss
 from mmagic.utils import try_import
+
 from .secondary_model import alpha_sigma_to_t
 
 clip = try_import('clip')

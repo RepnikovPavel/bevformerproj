@@ -5,9 +5,10 @@ import os
 import os.path as osp
 from collections import defaultdict
 
-import mmcv
 from PIL import Image
 from tqdm import tqdm
+
+import mmcv
 
 
 def parse_args():

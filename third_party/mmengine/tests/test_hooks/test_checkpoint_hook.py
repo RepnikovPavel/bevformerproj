@@ -7,14 +7,13 @@ import sys
 from unittest.mock import MagicMock, patch
 
 import torch
-from parameterized import parameterized
-
 from mmengine.evaluator import BaseMetric
 from mmengine.fileio import FileClient, LocalBackend
 from mmengine.hooks import CheckpointHook
 from mmengine.logging import MessageHub
 from mmengine.registry import METRICS
 from mmengine.testing import RunnerTestCase
+from parameterized import parameterized
 
 
 class TriangleMetric(BaseMetric):

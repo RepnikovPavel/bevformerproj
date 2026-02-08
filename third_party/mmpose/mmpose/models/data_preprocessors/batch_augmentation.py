@@ -5,11 +5,11 @@ from typing import List, Tuple
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-from mmengine import MessageHub
 from mmengine.dist import barrier, broadcast, get_dist_info
 from mmengine.structures import PixelData
 from torch import Tensor
 
+from mmengine import MessageHub
 from mmpose.registry import MODELS
 from mmpose.structures import PoseDataSample
 

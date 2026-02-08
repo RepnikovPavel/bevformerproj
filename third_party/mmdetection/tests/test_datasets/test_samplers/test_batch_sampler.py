@@ -4,10 +4,9 @@ from unittest import TestCase
 from unittest.mock import patch
 
 import numpy as np
+from mmdet.datasets.samplers import AspectRatioBatchSampler
 from mmengine.dataset import DefaultSampler
 from torch.utils.data import Dataset
-
-from mmdet.datasets.samplers import AspectRatioBatchSampler
 
 
 class DummyDataset(Dataset):

@@ -1,14 +1,14 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 
+import mmdeploy.backend.onnxruntime as ort_apis
 import numpy as np
 import pytest
 import torch
-from mmengine import Config
-
-import mmdeploy.backend.onnxruntime as ort_apis
 from mmdeploy.codebase import import_codebase
 from mmdeploy.utils import Backend, Codebase
 from mmdeploy.utils.test import SwitchBackendWrapper, backend_checker
+
+from mmengine import Config
 
 IMAGE_SIZE = 64
 NUM_CLASS = 1000
@@ -38,8 +38,9 @@ class TestEnd2EndModel:
         cls.wrapper.set(outputs=cls.outputs)
         deploy_cfg = Config({'onnx_config': {'output_names': ['outputs']}})
 
-        from mmdeploy.codebase.mmpretrain.deploy.classification_model import \
-            End2EndModel
+        from mmdeploy.codebase.mmpretrain.deploy.classification_model import (
+            End2EndModel,
+        )
         cls.end2end_model = End2EndModel(
             Backend.ONNXRUNTIME, [''], device='cpu', deploy_cfg=deploy_cfg)
 
@@ -84,8 +85,9 @@ class TestRKNNEnd2EndModel:
             }
         })
 
-        from mmdeploy.codebase.mmpretrain.deploy.classification_model import \
-            RKNNEnd2EndModel
+        from mmdeploy.codebase.mmpretrain.deploy.classification_model import (
+            RKNNEnd2EndModel,
+        )
         class_names = ['' for i in range(NUM_CLASS)]
         cls.end2end_model = RKNNEnd2EndModel(
             Backend.RKNN, [''],
@@ -115,7 +117,9 @@ def test_build_classification_model():
     with SwitchBackendWrapper(ORTWrapper) as wrapper:
         wrapper.set(model_cfg=model_cfg, deploy_cfg=deploy_cfg)
         from mmdeploy.codebase.mmpretrain.deploy.classification_model import (
-            End2EndModel, build_classification_model)
+            End2EndModel,
+            build_classification_model,
+        )
         classifier = build_classification_model([''], model_cfg, deploy_cfg,
                                                 'cpu')
         assert isinstance(classifier, End2EndModel)

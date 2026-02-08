@@ -10,7 +10,6 @@ from PIL import Image
 from torch.utils.data import IterableDataset
 from torchvision import transforms
 
-
 logger = get_logger(__name__)
 
 INVALID_OPEN_FLAG = "a 1911 1911 1911 1911 1911 1911 1911 1911 1911 1911 1911 1911 1911 1911 1911 1911 1911 1911"

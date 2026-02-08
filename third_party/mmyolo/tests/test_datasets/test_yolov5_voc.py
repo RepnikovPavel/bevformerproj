@@ -2,7 +2,6 @@
 import unittest
 
 from mmengine.dataset import ConcatDataset
-
 from mmyolo.datasets import YOLOv5VOCDataset
 from mmyolo.utils import register_all_modules
 

@@ -1,13 +1,14 @@
 import pytest
 import torch
-from mmcv import assert_params_all_zeros
-from torch.nn.modules import AvgPool2d, GroupNorm
-from torch.nn.modules.batchnorm import _BatchNorm
-
 from mmhuman3d.models.backbones.builder import ResNet, ResNetV1d
 from mmhuman3d.models.backbones.resnet import BasicBlock, Bottleneck
 from mmhuman3d.models.utils import ResLayer, SimplifiedBasicBlock
 from mmhuman3d.utils.path_utils import Existence, check_path_existence
+from torch.nn.modules import AvgPool2d, GroupNorm
+from torch.nn.modules.batchnorm import _BatchNorm
+
+from mmcv import assert_params_all_zeros
+
 from .utils import check_norm_state, is_block, is_norm
 
 

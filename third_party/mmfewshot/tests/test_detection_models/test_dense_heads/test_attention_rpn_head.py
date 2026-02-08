@@ -1,8 +1,8 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import torch
-from mmcv import ConfigDict
-
 from mmfewshot.detection.models.dense_heads import AttentionRPNHead
+
+from mmcv import ConfigDict
 
 
 def test_attention_rpn_head():

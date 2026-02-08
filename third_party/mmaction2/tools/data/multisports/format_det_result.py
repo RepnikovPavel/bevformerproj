@@ -2,10 +2,10 @@
 from argparse import ArgumentParser
 
 import numpy as np
-from mmengine import dump, load
+from mmaction.evaluation import link_tubes
 from rich.progress import track
 
-from mmaction.evaluation import link_tubes
+from mmengine import dump, load
 
 
 def parse_args():

@@ -1,9 +1,10 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import pytest
-
-from mmagic.apis.inferencers.inference_functions import (calculate_grid_size,
-                                                         init_model,
-                                                         set_random_seed)
+from mmagic.apis.inferencers.inference_functions import (
+    calculate_grid_size,
+    init_model,
+    set_random_seed,
+)
 
 
 def test_init_model():

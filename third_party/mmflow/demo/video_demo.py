@@ -4,10 +4,9 @@ from typing import Sequence
 
 import cv2
 import numpy as np
-from numpy import ndarray
-
 from mmflow.apis import inference_model, init_model
 from mmflow.datasets import visualize_flow
+from numpy import ndarray
 
 try:
     import imageio

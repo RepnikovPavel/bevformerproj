@@ -1,18 +1,23 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import tempfile
 
-import mmengine
 import numpy as np
 import pytest
 import torch
-
 from mmdeploy.codebase import import_codebase
 from mmdeploy.core import RewriterContext, patch_model
 from mmdeploy.utils import Backend, Codebase
 from mmdeploy.utils.config_utils import load_config
-from mmdeploy.utils.test import (WrapModel, check_backend, get_backend_outputs,
-                                 get_model_outputs, get_onnx_model,
-                                 get_rewrite_outputs)
+from mmdeploy.utils.test import (
+    WrapModel,
+    check_backend,
+    get_backend_outputs,
+    get_model_outputs,
+    get_onnx_model,
+    get_rewrite_outputs,
+)
+
+import mmengine
 
 try:
     import_codebase(Codebase.MMOCR)

@@ -2,10 +2,10 @@
 
 # yapf: disable
 
-import numpy as np
-import pytest
 from distutils.version import LooseVersion
 
+import numpy as np
+import pytest
 from mmeval.core.base_metric import BaseMetric
 from mmeval.metrics import MeanIoU
 from mmeval.utils import try_import

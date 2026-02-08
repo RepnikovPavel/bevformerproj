@@ -1,8 +1,6 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import torch
-
-from mmfewshot.classification.models.backbones.wrn import (WideResNet,
-                                                           WRN28x10, WRNBlock)
+from mmfewshot.classification.models.backbones.wrn import WideResNet, WRN28x10, WRNBlock
 
 
 def test_wrnblock():

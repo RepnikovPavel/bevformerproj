@@ -3,8 +3,7 @@ from mmengine.config import read_base
 with read_base():
     from mmdet.configs.dino.dino_5scale_swin_l_8xb2_12e_coco import *  # noqa
 
-from projects.example_largemodel import (checkpoint_check_fn,
-                                         layer_auto_wrap_policy)
+from projects.example_largemodel import checkpoint_check_fn, layer_auto_wrap_policy
 
 # The checkpoint needs to be controlled by the checkpoint_check_fn.
 model.update(dict(backbone=dict(with_cp=False)))  # noqa

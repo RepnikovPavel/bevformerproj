@@ -6,20 +6,19 @@
 # This code is modified from https://github.com/lifeiteng/vall-e/blob/main/valle/models/valle.py
 
 import random
-from typing import Dict, Iterator, List, Tuple, Union
+from typing import Iterator, Tuple, Union
 
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-from torchmetrics.classification import MulticlassAccuracy
-from utils.util import make_pad_mask
-from utils.topk_sampling import topk_sampling
-from modules.general import Transpose
 from modules.encoder import TokenEmbedding
-from modules.general import PromptedFeatures
-from modules.transformer import SinePositionalEmbedding
+from modules.general import PromptedFeatures, Transpose
 from modules.norms import AdaptiveLayerNorm, LayerNorm
+from modules.transformer import SinePositionalEmbedding
 from modules.transformer.transformer import TransformerEncoder, TransformerEncoderLayer
+from torchmetrics.classification import MulticlassAccuracy
+from utils.topk_sampling import topk_sampling
+from utils.util import make_pad_mask
 
 
 class VALLE(nn.Module):

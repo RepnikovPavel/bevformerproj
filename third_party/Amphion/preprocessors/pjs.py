@@ -3,14 +3,14 @@
 # This source code is licensed under the MIT license found in the
 # LICENSE file in the root directory of this source tree.
 
-import os
-from tqdm import tqdm
 import glob
 import json
-import torchaudio
+import os
 
-from utils.util import has_existed
+import torchaudio
+from tqdm import tqdm
 from utils.io import save_audio
+from utils.util import has_existed
 
 
 def get_splitted_utterances(

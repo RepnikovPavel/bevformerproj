@@ -6,6 +6,7 @@ import torch.nn.functional as F
 from mmcv.cnn import ConvModule
 
 from mmseg.registry import MODELS
+
 from ..utils import SelfAttentionBlock as _SelfAttentionBlock
 from .decode_head import BaseDecodeHead
 

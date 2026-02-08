@@ -12,9 +12,9 @@ from torch.nn.modules.batchnorm import _BatchNorm
 
 from mmrazor.models.distillers import ConfigurableDistiller
 from mmrazor.models.mutators import ChannelMutator
-from mmrazor.models.utils import (add_prefix,
-                                  reinitialize_optim_wrapper_count_status)
+from mmrazor.models.utils import add_prefix, reinitialize_optim_wrapper_count_status
 from mmrazor.registry import MODEL_WRAPPERS, MODELS
+
 from ..base import BaseAlgorithm
 
 VALID_MUTATOR_TYPE = Union[ChannelMutator, Dict]

@@ -2,10 +2,9 @@
 import unittest
 
 import torch
+from mmpose.models.backbones.csp_darknet import CSPDarknet
 from torch.nn.modules import GroupNorm
 from torch.nn.modules.batchnorm import _BatchNorm
-
-from mmpose.models.backbones.csp_darknet import CSPDarknet
 
 
 def is_norm(modules):

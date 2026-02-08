@@ -3,10 +3,8 @@ import platform
 
 import pytest
 import torch
-
 from mmagic.models.editors.deblurganv2 import DeblurGanV2Generator
-from mmagic.models.editors.deblurganv2.deblurganv2_generator import \
-    FPNMobileNet
+from mmagic.models.editors.deblurganv2.deblurganv2_generator import FPNMobileNet
 from mmagic.registry import MODELS
 
 

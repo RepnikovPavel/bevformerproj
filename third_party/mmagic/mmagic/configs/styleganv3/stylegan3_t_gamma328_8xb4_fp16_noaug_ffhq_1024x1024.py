@@ -6,13 +6,12 @@ with read_base():
     from .._base_.gen_default_runtime import *
     from .._base_.models.base_styleganv3 import *
 
-from torch.optim import Adam
-
 from mmagic.engine.hooks.visualization_hook import VisualizationHook
 from mmagic.evaluation.metrics.fid import FrechetInceptionDistance
 from mmagic.models.base_models.average_model import RampUpEMA
 from mmagic.models.base_models.base_gan import BaseGAN
 from mmagic.models.editors.stylegan3.stylegan3_modules import SynthesisNetwork
+from torch.optim import Adam
 
 batch_size = 32
 magnitude_ema_beta = 0.5**(batch_size / (20 * 1e3))

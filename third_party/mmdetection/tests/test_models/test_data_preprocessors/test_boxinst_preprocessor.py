@@ -2,7 +2,6 @@
 from unittest import TestCase
 
 import torch
-
 from mmdet.models.data_preprocessors import BoxInstDataPreprocessor
 from mmdet.structures import DetDataSample
 from mmdet.testing import demo_mm_inputs

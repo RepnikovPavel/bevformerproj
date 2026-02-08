@@ -1,7 +1,12 @@
 # Copyright (c) OpenMMLab. All rights reserved.
-from .model_library import (MMClsModelLibrary, MMDetModelLibrary,
-                            DefaultModelLibrary, TorchModelLibrary,
-                            MMPoseModelLibrary, MMSegModelLibrary)
+from .model_library import (
+    DefaultModelLibrary,
+    MMClsModelLibrary,
+    MMDetModelLibrary,
+    MMPoseModelLibrary,
+    MMSegModelLibrary,
+    TorchModelLibrary,
+)
 
 
 class PassedModelManager:

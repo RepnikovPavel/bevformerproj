@@ -1,10 +1,10 @@
 # Copyright (c) OpenMMLab. All rights reserved.
-import mmengine
 import numpy as np
 import pytest
 import torch
-
 from mmcv.utils import IS_CUDA_AVAILABLE, IS_MLU_AVAILABLE, IS_MUSA_AVAILABLE
+
+import mmengine
 
 
 class Testnms:

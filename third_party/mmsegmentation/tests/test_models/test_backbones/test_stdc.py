@@ -1,11 +1,13 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import pytest
 import torch
-
 from mmseg.models.backbones import STDCContextPathNet
-from mmseg.models.backbones.stdc import (AttentionRefinementModule,
-                                         FeatureFusionModule, STDCModule,
-                                         STDCNet)
+from mmseg.models.backbones.stdc import (
+    AttentionRefinementModule,
+    FeatureFusionModule,
+    STDCModule,
+    STDCNet,
+)
 
 
 def test_stdc_context_path_net():

@@ -3,7 +3,6 @@ from unittest import TestCase
 
 import pytest
 import torch
-
 from mmrazor.models import L1Loss, L2Loss
 
 

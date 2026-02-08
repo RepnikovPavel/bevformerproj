@@ -6,6 +6,7 @@ from typing import Optional
 
 from mmengine.fileio import dump
 from mmengine.logging import print_log
+
 from . import root
 from .default_scope import DefaultScope
 from .registry import Registry

@@ -3,7 +3,6 @@ from copy import deepcopy
 
 import pytest
 import torch
-
 from mmagic.models.editors.biggan import BigGANDeepDiscriminator
 from mmagic.registry import MODELS
 

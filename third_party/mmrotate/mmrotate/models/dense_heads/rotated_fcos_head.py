@@ -7,6 +7,7 @@ from mmcv.runner import force_fp32
 from mmdet.core import multi_apply, reduce_mean
 
 from mmrotate.core import build_bbox_coder, multiclass_nms_rotated
+
 from ..builder import ROTATED_HEADS, build_loss
 from .rotated_anchor_free_head import RotatedAnchorFreeHead
 

@@ -8,14 +8,14 @@ from multiprocessing import Pool
 
 import cv2
 import lmdb
-import mmcv
-import mmengine
 import numpy as np
+from mmagic.datasets.transforms import MATLABLikeResize, blur_kernels
+from mmagic.utils import modify_args
 from skimage import img_as_float
 from skimage.io import imread, imsave
 
-from mmagic.datasets.transforms import MATLABLikeResize, blur_kernels
-from mmagic.utils import modify_args
+import mmcv
+import mmengine
 
 
 def make_lmdb(mode,

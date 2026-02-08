@@ -7,7 +7,6 @@ import numpy as np
 import torch
 from mmengine.structures import InstanceData, PixelData
 from mmengine.utils import is_tuple_of
-
 from mmpose.codecs import AssociativeEmbedding  # noqa
 from mmpose.models.heads import AssociativeEmbeddingHead
 from mmpose.registry import KEYPOINT_CODECS

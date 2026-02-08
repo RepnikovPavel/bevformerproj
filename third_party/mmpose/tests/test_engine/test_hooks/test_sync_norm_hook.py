@@ -3,7 +3,6 @@ from unittest import TestCase
 from unittest.mock import Mock, patch
 
 import torch.nn as nn
-
 from mmpose.engine.hooks import SyncNormHook
 
 

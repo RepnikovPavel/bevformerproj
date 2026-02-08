@@ -11,6 +11,7 @@ import torch
 
 import mmengine
 from mmengine.device import is_cuda_available, is_musa_available
+
 from .parrots_wrapper import TORCH_VERSION, get_build_config, is_rocm_pytorch
 
 

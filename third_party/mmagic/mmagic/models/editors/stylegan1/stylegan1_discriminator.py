@@ -5,8 +5,12 @@ import torch.nn.functional as F
 from mmengine.model import BaseModule
 
 from mmagic.registry import MODELS
-from ..pggan import (EqualizedLRConvDownModule, EqualizedLRConvModule,
-                     MiniBatchStddevLayer)
+
+from ..pggan import (
+    EqualizedLRConvDownModule,
+    EqualizedLRConvModule,
+    MiniBatchStddevLayer,
+)
 from .stylegan1_modules import Blur, EqualLinearActModule
 
 

@@ -7,9 +7,13 @@ import numpy as np
 import torch
 from mmengine.structures import InstanceData
 
-from mmdet3d.structures import (CameraInstance3DBoxes, DepthInstance3DBoxes,
-                                Det3DDataSample, LiDARInstance3DBoxes,
-                                PointData)
+from mmdet3d.structures import (
+    CameraInstance3DBoxes,
+    DepthInstance3DBoxes,
+    Det3DDataSample,
+    LiDARInstance3DBoxes,
+    PointData,
+)
 
 
 def setup_seed(seed):

@@ -3,10 +3,11 @@
 # This source code is licensed under the MIT license found in the
 # LICENSE file in the root directory of this source tree.
 
+import copy
+
+import librosa
 import numpy as np
 import scipy.signal as sig
-import copy
-import librosa
 
 
 def bandpower(ps, mode="time"):

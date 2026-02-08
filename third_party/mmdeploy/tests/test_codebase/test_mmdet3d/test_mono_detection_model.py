@@ -1,20 +1,19 @@
 # Copyright (c) OpenMMLab. All rights reserved.
-import mmengine
+import mmdeploy.backend.onnxruntime as ort_apis
 import pytest
 import torch
-
-import mmdeploy.backend.onnxruntime as ort_apis
 from mmdeploy.codebase import import_codebase
 from mmdeploy.utils import Backend, Codebase
 from mmdeploy.utils.test import SwitchBackendWrapper, backend_checker
+
+import mmengine
 
 try:
     import_codebase(Codebase.MMDET3D)
 except ImportError:
     pytest.skip(
         f'{Codebase.MMDET3D} is not installed.', allow_module_level=True)
-from mmdeploy.codebase.mmdet3d.deploy.mono_detection_model import \
-    MonoDetectionModel
+from mmdeploy.codebase.mmdet3d.deploy.mono_detection_model import MonoDetectionModel
 
 nuscenes_pcd_path = 'tests/test_codebase/test_mmdet3d/data/nuscenes/n015-2018-07-24-11-22-45+0800.pkl'  # noqa: E501
 somke_model_cfg = 'tests/test_codebase/test_mmdet3d/data/smoke_dla34_dlaneck_gn-all_4xb8-6x_kitti-mono3d.py'  # noqa: E501
@@ -89,7 +88,9 @@ def test_build_mono_detection_model():
     with SwitchBackendWrapper(ORTWrapper) as wrapper:
         wrapper.set(model_cfg=model_cfg, deploy_cfg=deploy_cfg)
         from mmdeploy.codebase.mmdet3d.deploy.mono_detection_model import (
-            MonoDetectionModel, build_mono_detection_model)
+            MonoDetectionModel,
+            build_mono_detection_model,
+        )
         monodetector = build_mono_detection_model([''],
                                                   model_cfg=model_cfg,
                                                   deploy_cfg=deploy_cfg,

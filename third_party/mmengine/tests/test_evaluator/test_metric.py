@@ -4,10 +4,9 @@ import tempfile
 from unittest import TestCase
 
 import torch
-from torch import Tensor
-
 from mmengine.evaluator import DumpResults
 from mmengine.fileio import load
+from torch import Tensor
 
 
 class TestDumpResults(TestCase):

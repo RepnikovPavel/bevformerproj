@@ -3,19 +3,24 @@ import copy
 import os.path as osp
 import unittest
 
-import mmcv
 import numpy as np
 import torch
 from mmdet.structures.bbox import HorizontalBoxes
 from mmdet.structures.mask import BitmapMasks, PolygonMasks
+from mmyolo.datasets.transforms import (
+    LetterResize,
+    LoadAnnotations,
+    YOLOv5HSVRandomAug,
+    YOLOv5KeepRatioResize,
+    YOLOv5RandomAffine,
+)
+from mmyolo.datasets.transforms.transforms import (
+    PPYOLOERandomCrop,
+    PPYOLOERandomDistort,
+    YOLOv5CopyPaste,
+)
 
-from mmyolo.datasets.transforms import (LetterResize, LoadAnnotations,
-                                        YOLOv5HSVRandomAug,
-                                        YOLOv5KeepRatioResize,
-                                        YOLOv5RandomAffine)
-from mmyolo.datasets.transforms.transforms import (PPYOLOERandomCrop,
-                                                   PPYOLOERandomDistort,
-                                                   YOLOv5CopyPaste)
+import mmcv
 
 
 class TestLetterResize(unittest.TestCase):

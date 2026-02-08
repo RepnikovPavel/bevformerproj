@@ -3,12 +3,23 @@ from unittest import TestCase
 
 import torch
 from mmengine.structures import BaseDataElement
+from mmrazor.models import (
+    ABLoss,
+    ActivationLoss,
+    ATLoss,
+    CRDLoss,
+    DKDLoss,
+    FBKDLoss,
+    FTLoss,
+    InformationEntropyLoss,
+    KDSoftCELoss,
+    MGDLoss,
+    OFDLoss,
+    OnehotLikeLoss,
+    PKDLoss,
+)
 
 from mmrazor import digit_version
-from mmrazor.models import (ABLoss, ActivationLoss, ATLoss, CRDLoss, DKDLoss,
-                            FBKDLoss, FTLoss, InformationEntropyLoss,
-                            KDSoftCELoss, MGDLoss, OFDLoss, OnehotLikeLoss,
-                            PKDLoss)
 
 
 class TestLosses(TestCase):

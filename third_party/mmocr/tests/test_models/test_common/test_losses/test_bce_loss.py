@@ -2,10 +2,12 @@
 from unittest import TestCase
 
 import torch
-
-from mmocr.models.common.losses import (MaskedBalancedBCELoss,
-                                        MaskedBalancedBCEWithLogitsLoss,
-                                        MaskedBCELoss, MaskedBCEWithLogitsLoss)
+from mmocr.models.common.losses import (
+    MaskedBalancedBCELoss,
+    MaskedBalancedBCEWithLogitsLoss,
+    MaskedBCELoss,
+    MaskedBCEWithLogitsLoss,
+)
 
 
 class TestMaskedBalancedBCELoss(TestCase):

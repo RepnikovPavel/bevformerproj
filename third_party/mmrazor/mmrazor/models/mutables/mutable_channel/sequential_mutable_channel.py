@@ -4,6 +4,7 @@ from typing import Callable, Union
 import torch
 
 from mmrazor.registry import MODELS
+
 from ..derived_mutable import DerivedMutable
 from .simple_mutable_channel import SimpleMutableChannel
 

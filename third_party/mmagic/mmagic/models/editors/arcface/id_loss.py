@@ -1,9 +1,10 @@
 # Copyright (c) OpenMMLab. All rights reserved.
-import mmengine
 import torch
 from torch import nn
 
+import mmengine
 from mmagic.registry import MODELS
+
 from .model_irse import Backbone
 
 

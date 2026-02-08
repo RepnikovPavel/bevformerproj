@@ -16,13 +16,15 @@ from typing import Any, Dict, Optional, Tuple, Union
 import numpy as np
 import torch
 import torch.nn.functional as F
-from torch import nn
-
 from diffusers.models.activations import get_activation
 from diffusers.models.normalization import AdaGroupNorm
 from diffusers.utils import is_torch_version, logging
 from diffusers.utils.torch_utils import apply_freeu
-from foleycrafter.models.auffusion.attention_processor import Attention, AttnAddedKVProcessor, AttnAddedKVProcessor2_0
+from foleycrafter.models.auffusion.attention_processor import (
+    Attention,
+    AttnAddedKVProcessor,
+    AttnAddedKVProcessor2_0,
+)
 from foleycrafter.models.auffusion.dual_transformer_2d import DualTransformer2DModel
 from foleycrafter.models.auffusion.resnet import (
     Downsample2D,
@@ -34,7 +36,7 @@ from foleycrafter.models.auffusion.resnet import (
     Upsample2D,
 )
 from foleycrafter.models.auffusion.transformer_2d import Transformer2DModel
-
+from torch import nn
 
 logger = logging.get_logger(__name__)  # pylint: disable=invalid-name
 

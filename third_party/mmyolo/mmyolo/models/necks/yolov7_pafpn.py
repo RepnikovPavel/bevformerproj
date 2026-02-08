@@ -6,6 +6,7 @@ from mmcv.cnn import ConvModule
 from mmdet.utils import ConfigType, OptMultiConfig
 
 from mmyolo.registry import MODELS
+
 from ..layers import MaxPoolAndStrideConvBlock, RepVGGBlock, SPPFCSPBlock
 from .base_yolo_neck import BaseYOLONeck
 

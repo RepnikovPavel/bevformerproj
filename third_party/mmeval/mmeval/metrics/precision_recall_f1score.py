@@ -1,8 +1,18 @@
 # Copyright (c) OpenMMLab. All rights reserved.
-import numpy as np
 import warnings
-from typing import (TYPE_CHECKING, Any, Dict, List, Optional, Sequence, Tuple,
-                    Union, overload)
+from typing import (
+    TYPE_CHECKING,
+    Any,
+    Dict,
+    List,
+    Optional,
+    Sequence,
+    Tuple,
+    Union,
+    overload,
+)
+
+import numpy as np
 
 from mmeval.core.base_metric import BaseMetric
 from mmeval.core.dispatcher import dispatch

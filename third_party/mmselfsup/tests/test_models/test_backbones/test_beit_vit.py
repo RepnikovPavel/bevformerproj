@@ -3,7 +3,6 @@ import platform
 
 import pytest
 import torch
-
 from mmselfsup.models.backbones import BEiTViT
 
 backbone = dict(

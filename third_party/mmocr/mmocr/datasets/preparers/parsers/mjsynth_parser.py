@@ -3,6 +3,7 @@ import os.path as osp
 from typing import List
 
 from mmocr.registry import DATA_PARSERS
+
 from .icdar_txt_parser import ICDARTxtTextRecogAnnParser
 
 

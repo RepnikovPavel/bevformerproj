@@ -6,6 +6,7 @@ import torch.nn.functional as F
 from mmengine.model import BaseModule
 
 from mmagic.registry import MODELS
+
 from .naf_avgpool2d import Local_Base
 from .naf_layerNorm2d import LayerNorm2d
 

@@ -1,10 +1,10 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 from typing import Any, Optional, Sequence, Tuple, Union
 
-import mmengine
 import torch
 from torch import Tensor
 
+import mmengine
 from mmdeploy.core import FUNCTION_REWRITER
 from mmdeploy.core.rewriters.rewriter_utils import LibVersionChecker
 from mmdeploy.utils import Backend, load_config

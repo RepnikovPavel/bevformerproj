@@ -1,12 +1,11 @@
 import unittest
 
 import torch
+from mmdet.models.dense_heads import RepPointsHead
+from mmdet.structures import DetDataSample
 from mmengine.config import ConfigDict
 from mmengine.structures import InstanceData
 from parameterized import parameterized
-
-from mmdet.models.dense_heads import RepPointsHead
-from mmdet.structures import DetDataSample
 
 
 class TestRepPointsHead(unittest.TestCase):

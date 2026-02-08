@@ -8,6 +8,7 @@ from torch import Tensor
 
 from mmdet.registry import MODELS
 from mmdet.utils import OptConfigType, OptMultiConfig
+
 from .anchor_head import AnchorHead
 
 

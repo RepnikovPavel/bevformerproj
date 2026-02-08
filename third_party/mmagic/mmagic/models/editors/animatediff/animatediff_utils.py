@@ -11,8 +11,12 @@ from diffusers.pipelines.paint_by_example import PaintByExampleImageEncoder
 from diffusers.pipelines.stable_diffusion import StableUnCLIPImageNormalizer
 from diffusers.schedulers import DDPMScheduler
 from einops import rearrange
-from transformers import (CLIPImageProcessor, CLIPTextModel, CLIPVisionConfig,
-                          CLIPVisionModelWithProjection)
+from transformers import (
+    CLIPImageProcessor,
+    CLIPTextModel,
+    CLIPVisionConfig,
+    CLIPVisionModelWithProjection,
+)
 
 
 def shave_segments(path, n_shave_prefix_segments=1):

@@ -4,7 +4,6 @@ from unittest.mock import MagicMock
 import numpy as np
 import torch
 import torch.nn as nn
-
 from mmagic.engine.hooks import PickleDataHook
 
 

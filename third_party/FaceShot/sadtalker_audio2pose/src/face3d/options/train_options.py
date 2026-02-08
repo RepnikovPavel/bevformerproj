@@ -1,8 +1,10 @@
 """This script contains the training options for Deep3DFaceRecon_pytorch
 """
 
-from .base_options import BaseOptions
 from util import util
+
+from .base_options import BaseOptions
+
 
 class TrainOptions(BaseOptions):
     """This class includes training options.

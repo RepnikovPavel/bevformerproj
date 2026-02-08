@@ -3,10 +3,9 @@ import unittest
 
 import pytest
 import torch
+from mmpretrain.models.backbones import TIMMBackbone
 from torch import nn
 from torch.nn.modules.batchnorm import _BatchNorm
-
-from mmpretrain.models.backbones import TIMMBackbone
 
 
 def has_timm() -> bool:

@@ -1,9 +1,10 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import pytest
 import torch
-
 from mmagic.models.editors.stylegan1.stylegan1_modules import (
-    AdaptiveInstanceNorm, StyleConv)
+    AdaptiveInstanceNorm,
+    StyleConv,
+)
 
 
 class TestAdaptiveInstanceNorm:

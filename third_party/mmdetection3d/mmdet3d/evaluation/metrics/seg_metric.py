@@ -3,11 +3,11 @@ import os.path as osp
 import tempfile
 from typing import Dict, Optional, Sequence
 
-import mmcv
 import numpy as np
 from mmengine.evaluator import BaseMetric
 from mmengine.logging import MMLogger
 
+import mmcv
 from mmdet3d.evaluation import seg_eval
 from mmdet3d.registry import METRICS
 

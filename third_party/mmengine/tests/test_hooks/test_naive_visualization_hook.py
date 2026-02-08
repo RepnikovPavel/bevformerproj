@@ -2,7 +2,6 @@
 from unittest.mock import Mock
 
 import torch
-
 from mmengine.hooks import NaiveVisualizationHook
 from mmengine.structures import BaseDataElement
 

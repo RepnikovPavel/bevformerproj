@@ -4,10 +4,9 @@ import os
 import numpy
 import pytest
 import torch
+from mmcv.utils import IS_CUDA_AVAILABLE, IS_MLU_AVAILABLE, IS_MUSA_AVAILABLE
 from mmengine.utils import digit_version
 from mmengine.utils.dl_utils import TORCH_VERSION
-
-from mmcv.utils import IS_CUDA_AVAILABLE, IS_MLU_AVAILABLE, IS_MUSA_AVAILABLE
 
 if IS_MUSA_AVAILABLE:
     try:
@@ -52,8 +51,9 @@ class TestMdconv:
         if not torch.cuda.is_available() and device == 'cuda':
             pytest.skip('test requires GPU')
         if device == 'mlu':
-            from mmcv.ops import \
-                ModulatedDeformConv2dPack_MLU as ModulatedDeformConv2dPack
+            from mmcv.ops import (
+                ModulatedDeformConv2dPack_MLU as ModulatedDeformConv2dPack,
+            )
         else:
             from mmcv.ops import ModulatedDeformConv2dPack
 
@@ -97,8 +97,9 @@ class TestMdconv:
         if not torch.cuda.is_available() and device == 'cuda':
             return
         if device == 'mlu':
-            from mmcv.ops import \
-                ModulatedDeformConv2dPack_MLU as ModulatedDeformConv2dPack
+            from mmcv.ops import (
+                ModulatedDeformConv2dPack_MLU as ModulatedDeformConv2dPack,
+            )
         else:
             from mmcv.ops import ModulatedDeformConv2dPack
 

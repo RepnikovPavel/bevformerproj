@@ -13,12 +13,13 @@ import argparse
 import os
 import sys
 
-import mmcv
 import numpy as np
 import torch
-from mmcv import DictAction
 from mmcv.runner import load_checkpoint
 from torchvision import utils
+
+import mmcv
+from mmcv import DictAction
 
 # yapf: disable
 sys.path.append(os.path.abspath(os.path.join(__file__, '../..')))  # isort:skip  # noqa

@@ -3,7 +3,6 @@ from argparse import ArgumentParser
 
 import cv2
 from mmengine.model.utils import revert_sync_batchnorm
-
 from mmseg.apis import inference_model, init_model
 from mmseg.apis.inference import show_result_pyplot
 

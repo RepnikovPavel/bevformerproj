@@ -1,13 +1,12 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import pytest
 import torch
-from mmengine.optim import OptimWrapper
-from torch.optim import Adam
-
 from mmagic.models import EDVR, EDVRNet
 from mmagic.models.losses import CharbonnierLoss
 from mmagic.structures import DataSample
 from mmagic.utils import register_all_modules
+from mmengine.optim import OptimWrapper
+from torch.optim import Adam
 
 register_all_modules()
 

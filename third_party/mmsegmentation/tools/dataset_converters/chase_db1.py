@@ -5,8 +5,9 @@ import os.path as osp
 import tempfile
 import zipfile
 
-import mmcv
 from mmengine.utils import mkdir_or_exist
+
+import mmcv
 
 CHASE_DB1_LEN = 28 * 3
 TRAINING_LEN = 60

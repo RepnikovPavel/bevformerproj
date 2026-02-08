@@ -8,14 +8,14 @@ from unittest.mock import MagicMock, patch
 
 import torch
 import torch.nn as nn
-from mmengine import fileio
 from mmengine.config import Config
-from torch.utils.data import DataLoader, Dataset
-
 from mmrazor.engine import EvolutionSearchLoop
 from mmrazor.models import OneShotMutableOP
 from mmrazor.registry import LOOPS
 from mmrazor.structures import Candidates
+from torch.utils.data import DataLoader, Dataset
+
+from mmengine import fileio
 
 
 def collate_fn(data_batch):

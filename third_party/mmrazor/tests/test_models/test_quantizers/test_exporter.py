@@ -18,8 +18,9 @@ except ImportError:
     onnx = get_package_placeholder('No module named onnx')
     helper = get_package_placeholder('No module named onnx.helper')
 
-from mmengine import ConfigDict
 from mmengine.model import BaseModel
+
+from mmengine import ConfigDict
 
 try:
     import mmdeploy
@@ -27,11 +28,14 @@ except ImportError:
     from mmrazor.utils import get_package_placeholder
     mmdeploy = get_package_placeholder('mmdeploy')
 
-from mmrazor import digit_version
-from mmrazor.models.quantizers.exporters import (OpenVinoQuantizeExportor,
-                                                 TensorRTExplicitExporter)
+from mmrazor.models.quantizers.exporters import (
+    OpenVinoQuantizeExportor,
+    TensorRTExplicitExporter,
+)
 from mmrazor.models.quantizers.exporters.optim_utils import ONNXOptimUtils
 from mmrazor.registry import MODELS
+
+from mmrazor import digit_version
 
 
 class BasicBlock(nn.Module):

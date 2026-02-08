@@ -7,8 +7,15 @@ from typing import Any, Generator, Iterator, Optional, Tuple, Union
 
 from mmengine.logging import print_log
 from mmengine.utils import is_filepath
-from .backends import (BaseStorageBackend, HTTPBackend, LmdbBackend,
-                       LocalBackend, MemcachedBackend, PetrelBackend)
+
+from .backends import (
+    BaseStorageBackend,
+    HTTPBackend,
+    LmdbBackend,
+    LocalBackend,
+    MemcachedBackend,
+    PetrelBackend,
+)
 
 
 class HardDiskBackend(LocalBackend):

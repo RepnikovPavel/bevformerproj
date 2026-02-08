@@ -2,10 +2,9 @@
 import numpy as np
 import torch
 from mmcv.transforms import BaseTransform
-from PIL import Image
-
 from mmdet3d.registry import TRANSFORMS
 from mmdet3d.structures.bbox_3d import LiDARInstance3DBoxes
+from PIL import Image
 
 
 @TRANSFORMS.register_module()

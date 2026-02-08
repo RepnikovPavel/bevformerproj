@@ -3,7 +3,6 @@ from argparse import ArgumentParser
 
 import numpy as np
 import requests
-
 from mmpretrain.apis import get_model, inference_model
 
 

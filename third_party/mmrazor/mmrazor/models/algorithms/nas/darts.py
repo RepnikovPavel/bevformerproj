@@ -12,6 +12,7 @@ from torch.nn.modules.batchnorm import _BatchNorm
 from mmrazor.models.mutators import NasMutator
 from mmrazor.models.utils import add_prefix
 from mmrazor.registry import MODEL_WRAPPERS, MODELS
+
 from ..base import BaseAlgorithm
 
 VALID_MUTATOR_TYPE = Union[NasMutator, Dict]

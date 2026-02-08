@@ -4,9 +4,10 @@ import logging
 import sys
 from argparse import ArgumentParser
 
-from mmcv import Config, DictAction
 from mmpose.apis.webcam import WebcamExecutor
 from mmpose.apis.webcam.nodes import model_nodes
+
+from mmcv import Config, DictAction
 
 sys.path.append('.')
 from src import *  # noqa

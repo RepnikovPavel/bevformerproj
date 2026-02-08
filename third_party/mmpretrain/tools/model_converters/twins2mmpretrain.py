@@ -3,9 +3,10 @@ import argparse
 import os.path as osp
 from collections import OrderedDict
 
-import mmcv
 import torch
 from mmcv.runner import CheckpointLoader
+
+import mmcv
 
 
 def convert_twins(args, ckpt):

@@ -3,11 +3,19 @@ from pathlib import Path
 
 import numpy as np
 import pytest
-
-from mmagic.datasets.transforms import (CropAroundCenter, CropAroundFg,
-                                        CropAroundUnknown, LoadImageFromFile)
-from mmagic.utils import (adjust_gamma, bbox2mask, brush_stroke_mask,
-                          get_irregular_mask, random_bbox)
+from mmagic.datasets.transforms import (
+    CropAroundCenter,
+    CropAroundFg,
+    CropAroundUnknown,
+    LoadImageFromFile,
+)
+from mmagic.utils import (
+    adjust_gamma,
+    bbox2mask,
+    brush_stroke_mask,
+    get_irregular_mask,
+    random_bbox,
+)
 
 dtype_range = {
     np.bool_: (False, True),

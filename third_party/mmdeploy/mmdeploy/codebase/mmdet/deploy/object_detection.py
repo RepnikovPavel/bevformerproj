@@ -4,15 +4,14 @@ from typing import Callable, Dict, Optional, Sequence, Tuple, Union
 
 import numpy as np
 import torch
-from mmengine import Config
 from mmengine.dataset import pseudo_collate
 from mmengine.model import BaseDataPreprocessor
 from mmengine.registry import Registry
 
 from mmdeploy.codebase.base import CODEBASE, BaseTask, MMCodebase
 from mmdeploy.utils import Backend, Codebase, Task
-from mmdeploy.utils.config_utils import (get_backend, get_input_shape,
-                                         is_dynamic_shape)
+from mmdeploy.utils.config_utils import get_backend, get_input_shape, is_dynamic_shape
+from mmengine import Config
 
 MMDET_TASK = Registry('mmdet_tasks')
 

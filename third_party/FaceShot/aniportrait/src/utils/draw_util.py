@@ -3,6 +3,7 @@ import mediapipe as mp
 import numpy as np
 from mediapipe.framework.formats import landmark_pb2
 
+
 class FaceMeshVisualizer:
     def __init__(self, forehead_edge=False):
         self.mp_drawing = mp.solutions.drawing_utils

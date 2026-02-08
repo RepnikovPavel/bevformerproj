@@ -6,26 +6,22 @@ https://github.com/CompVis/taming-transformers
 -- merci
 """
 
-import sys
 import os
-
-import torch
-import torch.nn as nn
-import numpy as np
 from contextlib import contextmanager
 from functools import partial
+
+import numpy as np
+import torch
+import torch.nn as nn
 from tqdm import tqdm
 
-from audioldm.utils import exists, default, count_params, instantiate_from_config
 from audioldm.latent_diffusion.ema import LitEma
 from audioldm.latent_diffusion.util import (
-    make_beta_schedule,
     extract_into_tensor,
+    make_beta_schedule,
     noise_like,
 )
-import soundfile as sf
-import os
-
+from audioldm.utils import count_params, default, exists, instantiate_from_config
 
 __conditioning_keys__ = {"concat": "c_concat", "crossattn": "c_crossattn", "adm": "y"}
 

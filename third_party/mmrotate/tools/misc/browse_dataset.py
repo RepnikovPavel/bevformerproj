@@ -4,11 +4,11 @@ import os
 from collections import Sequence
 from pathlib import Path
 
+from mmdet.datasets.builder import build_dataset
+from mmrotate.core.visualization import imshow_det_rbboxes
+
 import mmcv
 from mmcv import Config, DictAction
-from mmdet.datasets.builder import build_dataset
-
-from mmrotate.core.visualization import imshow_det_rbboxes
 
 
 def parse_args():

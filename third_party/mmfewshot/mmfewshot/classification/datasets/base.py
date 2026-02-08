@@ -3,13 +3,14 @@ import copy
 from abc import ABCMeta, abstractmethod
 from typing import Dict, List, Mapping, Optional, Sequence, Union
 
-import mmcv
 import numpy as np
 from mmcls.core.evaluation import precision_recall_f1, support
 from mmcls.datasets.builder import DATASETS
 from mmcls.datasets.pipelines import Compose
 from mmcls.models.losses import accuracy
 from torch.utils.data import Dataset
+
+import mmcv
 
 
 @DATASETS.register_module()

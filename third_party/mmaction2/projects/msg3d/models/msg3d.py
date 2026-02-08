@@ -1,10 +1,10 @@
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-from mmengine.model import BaseModule, Sequential
-
 from mmaction.models.utils import Graph
 from mmaction.registry import MODELS
+from mmengine.model import BaseModule, Sequential
+
 from .msg3d_utils import MSGCN, MSTCN, MW_MSG3DBlock
 
 

@@ -7,10 +7,10 @@ import torch
 from controlnet_aux import HEDdetector, OpenposeDetector
 from diffusers.pipelines.controlnet.pipeline_controlnet import ControlNetModel
 from PIL import Image, ImageFilter
-from pipeline.pipeline_PowerPaint import \
-    StableDiffusionInpaintPipeline as Pipeline
-from pipeline.pipeline_PowerPaint_ControlNet import \
-    StableDiffusionControlNetInpaintPipeline as controlnetPipeline
+from pipeline.pipeline_PowerPaint import StableDiffusionInpaintPipeline as Pipeline
+from pipeline.pipeline_PowerPaint_ControlNet import (
+    StableDiffusionControlNetInpaintPipeline as controlnetPipeline,
+)
 from safetensors.torch import load_model
 from transformers import DPTFeatureExtractor, DPTForDepthEstimation
 from utils.utils import TokenizerWrapper, add_tokens

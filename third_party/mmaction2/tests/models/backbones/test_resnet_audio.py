@@ -1,6 +1,5 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import torch
-
 from mmaction.models import ResNetAudio
 from mmaction.testing import generate_backbone_demo_inputs
 from mmaction.utils import register_all_modules

@@ -1,13 +1,14 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 from functools import partial
 
-import mmengine
 import numpy as np
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
 
+import mmengine
 from mmagic.registry import MODELS
+
 from ..singan.singan_generator import SinGANMultiScaleGenerator
 from ..singan.singan_modules import GeneratorBlock
 

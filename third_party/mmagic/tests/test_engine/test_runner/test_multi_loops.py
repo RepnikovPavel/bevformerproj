@@ -2,10 +2,9 @@
 from unittest import TestCase
 from unittest.mock import MagicMock
 
-from mmengine.evaluator import Evaluator as BaseEvaluator
-
 from mmagic.engine import MultiTestLoop, MultiValLoop
 from mmagic.evaluation import Evaluator
+from mmengine.evaluator import Evaluator as BaseEvaluator
 
 
 def build_dataloader(loader, **kwargs):

@@ -3,7 +3,6 @@ import copy
 
 import pytest
 import torch
-
 from mmaction.models import TPN
 from mmaction.structures import ActionDataSample
 from mmaction.testing import generate_backbone_demo_inputs

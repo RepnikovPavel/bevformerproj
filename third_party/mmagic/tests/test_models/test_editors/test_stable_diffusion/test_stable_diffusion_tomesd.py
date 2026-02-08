@@ -5,9 +5,9 @@ import pytest
 import torch
 import torch.nn as nn
 from addict import Dict
-from mmengine import MODELS, Config
-
 from mmagic.utils import register_all_modules
+
+from mmengine import MODELS, Config
 
 register_all_modules()
 

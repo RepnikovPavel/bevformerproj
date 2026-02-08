@@ -4,12 +4,12 @@ import math
 import torch
 import torch.nn as nn
 from mmengine.model import ModuleList
-from mmengine.model.weight_init import (constant_init, kaiming_init,
-                                        trunc_normal_)
+from mmengine.model.weight_init import constant_init, kaiming_init, trunc_normal_
 from mmengine.runner.checkpoint import _load_checkpoint
 from torch.nn.modules.batchnorm import _BatchNorm
 
 from mmseg.registry import MODELS
+
 from .beit import BEiT, BEiTAttention, BEiTTransformerEncoderLayer
 
 

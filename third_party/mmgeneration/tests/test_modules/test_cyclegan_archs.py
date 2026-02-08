@@ -3,7 +3,6 @@ from copy import deepcopy
 
 import pytest
 import torch
-
 from mmgen.models.architectures.cyclegan import ResnetGenerator
 
 

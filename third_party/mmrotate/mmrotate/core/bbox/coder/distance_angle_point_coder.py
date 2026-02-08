@@ -3,6 +3,7 @@ import torch
 from mmdet.core import BaseBBoxCoder
 
 from mmrotate.core.bbox.transforms import norm_angle
+
 from ..builder import BBOX_CODERS
 
 

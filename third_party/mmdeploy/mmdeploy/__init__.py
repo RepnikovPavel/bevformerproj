@@ -2,6 +2,7 @@
 import importlib
 
 from mmdeploy.utils import get_root_logger
+
 from .version import __version__, version_info  # noqa F401
 
 if importlib.util.find_spec('torch'):

@@ -11,14 +11,13 @@ from __future__ import annotations
 import os
 import random
 from collections import defaultdict
-from importlib.resources import files
 
 import torch
 from torch.nn.utils.rnn import pad_sequence
 
 try:
     import jieba
-    from pypinyin import lazy_pinyin, Style
+    from pypinyin import Style, lazy_pinyin
 except:
     pass
 

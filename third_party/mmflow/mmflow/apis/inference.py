@@ -2,13 +2,13 @@
 import copy
 from typing import List, Optional, Sequence, Union
 
-import mmcv
 import numpy as np
 import torch
 from mmcv.ops import Correlation
 from mmcv.parallel import collate, scatter
 from mmcv.runner import load_checkpoint
 
+import mmcv
 from mmflow.datasets.pipelines import Compose
 from mmflow.models import build_flow_estimator
 

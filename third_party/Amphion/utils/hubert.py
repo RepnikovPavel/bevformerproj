@@ -6,12 +6,12 @@
 # This code is modified from https://github.com/svc-develop-team/so-vits-svc/blob/4.0/preprocess_hubert_f0.py
 
 import os
+
 import librosa
-import torch
 import numpy as np
+import torch
 from fairseq import checkpoint_utils
 from tqdm import tqdm
-import torch
 
 
 def load_hubert_model(hps):

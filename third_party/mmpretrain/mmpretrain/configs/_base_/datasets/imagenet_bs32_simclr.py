@@ -1,11 +1,15 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 # This is a BETA new format config file, and the usage may change recently.
-from mmcv.transforms import (LoadImageFromFile, RandomApply, RandomFlip,
-                             RandomGrayscale)
+from mmcv.transforms import LoadImageFromFile, RandomApply, RandomFlip, RandomGrayscale
 from mmengine.dataset import DefaultSampler, default_collate
-
-from mmpretrain.datasets import (ColorJitter, GaussianBlur, ImageNet,
-                                 MultiView, PackInputs, RandomResizedCrop)
+from mmpretrain.datasets import (
+                             ColorJitter,
+                             GaussianBlur,
+                             ImageNet,
+                             MultiView,
+                             PackInputs,
+                             RandomResizedCrop,
+)
 from mmpretrain.models import SelfSupDataPreprocessor
 
 # dataset settings

@@ -8,8 +8,11 @@ from mmengine.logging import print_log
 from mmengine.runner import EpochBasedTrainLoop, TestLoop, ValLoop
 
 try:
-    from torch.ao.quantization import (disable_observer, enable_fake_quant,
-                                       enable_observer)
+    from torch.ao.quantization import (
+        disable_observer,
+        enable_fake_quant,
+        enable_observer,
+    )
     from torch.nn.intrinsic.qat import freeze_bn_stats
 except ImportError:
     from mmrazor.utils import get_placeholder
@@ -23,8 +26,11 @@ from mmengine.dist import all_reduce_params, is_distributed
 from torch.utils.data import DataLoader
 
 from mmrazor.models import register_torch_fake_quants, register_torch_observers
-from mmrazor.models.fake_quants import (enable_param_learning,
-                                        enable_static_estimate, enable_val)
+from mmrazor.models.fake_quants import (
+    enable_param_learning,
+    enable_static_estimate,
+    enable_val,
+)
 from mmrazor.registry import LOOPS
 
 TORCH_observers = register_torch_observers()

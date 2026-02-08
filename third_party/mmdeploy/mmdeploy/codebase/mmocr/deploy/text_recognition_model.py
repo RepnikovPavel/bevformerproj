@@ -1,15 +1,14 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 from typing import Optional, Sequence, Union
 
-import mmengine
 import torch
 from mmengine.registry import Registry
 from mmengine.structures import LabelData
 from mmocr.utils.typing_utils import RecSampleList
 
+import mmengine
 from mmdeploy.codebase.base import BaseBackendModel
-from mmdeploy.utils import (Backend, get_backend, get_codebase_config,
-                            load_config)
+from mmdeploy.utils import Backend, get_backend, get_codebase_config, load_config
 
 __BACKEND_MODEL = Registry('backend_text_recognizer')
 

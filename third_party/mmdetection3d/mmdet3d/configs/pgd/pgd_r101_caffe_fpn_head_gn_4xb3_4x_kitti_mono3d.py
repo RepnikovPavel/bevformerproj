@@ -3,22 +3,21 @@ from mmengine import read_base
 
 with read_base():
     from .._base_.datasets.kitti_mono3d import *
+    from .._base_.default_runtime import *
     from .._base_.models.pgd import *
     from .._base_.schedules.mmdet_schedule_1x import *
-    from .._base_.default_runtime import *
 
 from mmcv.transforms.processing import Resize
-from mmengine.optim.scheduler.lr_scheduler import LinearLR, MultiStepLR
-
 from mmdet3d.datasets.transforms.formating import Pack3DDetInputs
-from mmdet3d.datasets.transforms.loading import (LoadAnnotations3D,
-                                                 LoadImageFromFileMono3D)
+from mmdet3d.datasets.transforms.loading import (
+    LoadAnnotations3D,
+    LoadImageFromFileMono3D,
+)
 from mmdet3d.datasets.transforms.transforms_3d import RandomFlip3D
-from mmdet3d.models.data_preprocessors.data_preprocessor import \
-    Det3DDataPreprocessor
-from mmdet3d.models.losses.uncertain_smooth_l1_loss import \
-    UncertainSmoothL1Loss
+from mmdet3d.models.data_preprocessors.data_preprocessor import Det3DDataPreprocessor
+from mmdet3d.models.losses.uncertain_smooth_l1_loss import UncertainSmoothL1Loss
 from mmdet3d.models.task_modules.coders.pgd_bbox_coder import PGDBBoxCoder
+from mmengine.optim.scheduler.lr_scheduler import LinearLR, MultiStepLR
 
 # model settings
 model.update(

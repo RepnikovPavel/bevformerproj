@@ -1,9 +1,8 @@
 from unittest import TestCase
 
 import numpy as np
-from mmengine.testing import assert_allclose
-
 from mmdet.structures.mask import BitmapMasks, PolygonMasks
+from mmengine.testing import assert_allclose
 
 
 class TestMaskStructures(TestCase):

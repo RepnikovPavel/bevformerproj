@@ -4,7 +4,6 @@ from unittest.mock import Mock
 
 import torch
 from mmengine.structures import PixelData
-
 from mmseg.engine.hooks import SegVisualizationHook
 from mmseg.structures import SegDataSample
 from mmseg.visualization import SegLocalVisualizer

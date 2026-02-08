@@ -8,11 +8,11 @@ from mmdet.models.dense_heads import DETRHead
 from mmdet.models.layers import inverse_sigmoid
 from mmdet.models.utils import multi_apply
 from mmdet.utils import InstanceList, OptInstanceList, reduce_mean
+from mmdet3d.registry import MODELS, TASK_UTILS
 from mmengine.model import bias_init_with_prob
 from mmengine.structures import InstanceData
 from torch import Tensor
 
-from mmdet3d.registry import MODELS, TASK_UTILS
 from .util import normalize_bbox
 
 

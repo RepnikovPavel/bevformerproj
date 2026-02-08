@@ -1,6 +1,7 @@
-import mmengine
 import mmengine.runner.runner as runner
 from mmengine.utils import digit_version
+
+import mmengine
 
 from .evaluation import Evaluator
 from .version import __version__, version_info

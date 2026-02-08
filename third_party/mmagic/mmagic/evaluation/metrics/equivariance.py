@@ -10,6 +10,7 @@ from mmengine.dist import all_gather
 from torch.utils.data.dataloader import DataLoader
 
 from mmagic.registry import METRICS
+
 from .base_gen_metric import GenerativeMetric
 
 

@@ -3,10 +3,10 @@ import os.path as osp
 from os import PathLike
 from typing import List, Optional, Sequence, Union
 
-import mmengine
 import numpy as np
 from mmengine.dataset import BaseDataset as _BaseDataset
 
+import mmengine
 from mmpretrain.registry import DATASETS, TRANSFORMS
 
 

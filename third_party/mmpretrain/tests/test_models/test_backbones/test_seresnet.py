@@ -1,12 +1,11 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import pytest
 import torch
-from torch.nn.modules import AvgPool2d
-from torch.nn.modules.batchnorm import _BatchNorm
-
 from mmpretrain.models.backbones import SEResNet
 from mmpretrain.models.backbones.resnet import ResLayer
 from mmpretrain.models.backbones.seresnet import SEBottleneck, SELayer
+from torch.nn.modules import AvgPool2d
+from torch.nn.modules.batchnorm import _BatchNorm
 
 
 def all_zeros(modules):

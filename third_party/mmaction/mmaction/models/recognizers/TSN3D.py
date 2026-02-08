@@ -1,8 +1,8 @@
-from .base import BaseRecognizer
+import torch
+
 from .. import builder
 from ..registry import RECOGNIZERS
-
-import torch
+from .base import BaseRecognizer
 
 
 @RECOGNIZERS.register_module

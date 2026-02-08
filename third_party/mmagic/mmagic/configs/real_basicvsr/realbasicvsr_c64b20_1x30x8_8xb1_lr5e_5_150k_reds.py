@@ -4,16 +4,18 @@
 # mmcv >= 2.0.1
 # mmengine >= 0.8.0
 
+from mmagic.engine import MultiOptimWrapperConstructor
+from mmagic.models.data_preprocessors import DataPreprocessor
+from mmagic.models.editors import (
+    RealBasicVSR,
+    RealBasicVSRNet,
+    UNetDiscriminatorWithSpectralNorm,
+)
+from mmagic.models.losses import GANLoss, L1Loss, PerceptualLoss
 from mmengine.config import read_base
 from mmengine.optim.optimizer import OptimWrapper
 from mmengine.runner.loops import IterBasedTrainLoop
 from torch.optim.adam import Adam
-
-from mmagic.engine import MultiOptimWrapperConstructor
-from mmagic.models.data_preprocessors import DataPreprocessor
-from mmagic.models.editors import (RealBasicVSR, RealBasicVSRNet,
-                                   UNetDiscriminatorWithSpectralNorm)
-from mmagic.models.losses import GANLoss, L1Loss, PerceptualLoss
 
 with read_base():
     from .realbasicvsr_wogan_c64b20_2x30x8_8xb2_lr1e_4_300k_reds import *

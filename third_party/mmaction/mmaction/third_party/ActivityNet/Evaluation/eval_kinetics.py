@@ -1,11 +1,9 @@
 import json
-import urllib.request, urllib.error, urllib.parse
 
 import numpy as np
 import pandas as pd
+from utils import get_blocked_videos, interpolated_prec_rec
 
-from utils import get_blocked_videos
-from utils import interpolated_prec_rec
 
 class ANETclassification(object):
     GROUND_TRUTH_FIELDS = ['database', 'taxonomy', 'version']

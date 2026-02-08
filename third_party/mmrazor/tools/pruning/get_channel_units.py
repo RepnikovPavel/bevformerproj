@@ -4,11 +4,11 @@ import json
 import sys
 
 import torch.nn as nn
-from mmengine import MODELS
 from mmengine.config import Config
-
 from mmrazor.models import BaseAlgorithm
 from mmrazor.models.mutators import ChannelMutator
+
+from mmengine import MODELS
 
 sys.setrecursionlimit(int(pow(2, 20)))
 

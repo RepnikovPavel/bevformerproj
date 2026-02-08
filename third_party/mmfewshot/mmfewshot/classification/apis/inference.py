@@ -1,7 +1,6 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 from typing import Dict, List, Optional, Tuple, Union
 
-import mmcv
 import numpy as np
 import torch
 import torch.nn as nn
@@ -11,6 +10,7 @@ from mmcls.models import build_classifier
 from mmcv.parallel import collate, scatter
 from mmcv.runner import load_checkpoint
 
+import mmcv
 from mmfewshot.classification.models import BaseMetricClassifier
 
 

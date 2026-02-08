@@ -7,6 +7,7 @@ import torch.nn.functional as F
 from torch import Tensor
 
 from mmdet.registry import MODELS
+
 from .accuracy import accuracy
 from .cross_entropy_loss import cross_entropy
 from .utils import weight_reduce_loss

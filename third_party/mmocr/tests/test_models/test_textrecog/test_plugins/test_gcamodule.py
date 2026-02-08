@@ -2,9 +2,8 @@
 from unittest import TestCase
 
 import torch
-from parameterized import parameterized
-
 from mmocr.models.textrecog.plugins import GCAModule
+from parameterized import parameterized
 
 
 class TestGCAModule(TestCase):

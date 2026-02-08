@@ -5,27 +5,26 @@
 
 import argparse
 import json
+import os
+import warnings
+
 import librosa
 import numpy as np
-import sys
-import os
-import tqdm
-import warnings
-import torch
-from pydub import AudioSegment
-from pyannote.audio import Pipeline
 import pandas as pd
-
-from utils.tool import (
-    export_to_mp3,
-    load_cfg,
-    get_audio_files,
-    detect_gpu,
-    check_env,
-    calculate_audio_stats,
-)
+import torch
+import tqdm
+from models import dnsmos, separate_fast, silero_vad, whisper_asr
+from pyannote.audio import Pipeline
+from pydub import AudioSegment
 from utils.logger import Logger, time_logger
-from models import separate_fast, dnsmos, whisper_asr, silero_vad
+from utils.tool import (
+    calculate_audio_stats,
+    check_env,
+    detect_gpu,
+    export_to_mp3,
+    get_audio_files,
+    load_cfg,
+)
 
 warnings.filterwarnings("ignore")
 audio_count = 0

@@ -1,9 +1,12 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import torch
-
-from mmtrack.core.bbox import (bbox_cxcyah_to_xyxy, bbox_cxcywh_to_x1y1wh,
-                               bbox_xyxy_to_cxcyah, bbox_xyxy_to_x1y1wh,
-                               quad2bbox)
+from mmtrack.core.bbox import (
+    bbox_cxcyah_to_xyxy,
+    bbox_cxcywh_to_x1y1wh,
+    bbox_xyxy_to_cxcyah,
+    bbox_xyxy_to_x1y1wh,
+    quad2bbox,
+)
 
 
 def test_quad2bbox():

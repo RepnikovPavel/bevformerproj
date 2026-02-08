@@ -3,9 +3,9 @@ import argparse
 
 import numpy as np
 import torch
-from mmcv import Config, DictAction
-
 from mmrotate.models import build_detector
+
+from mmcv import Config, DictAction
 
 try:
     from mmcv.cnn import get_model_complexity_info

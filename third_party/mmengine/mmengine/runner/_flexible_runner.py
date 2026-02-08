@@ -20,12 +20,23 @@ from mmengine.fileio import FileClient, join_path
 from mmengine.hooks import Hook
 from mmengine.logging import MessageHub, print_log
 from mmengine.optim import OptimWrapper, OptimWrapperDict, _ParamScheduler
-from mmengine.registry import (DATA_SAMPLERS, DATASETS, EVALUATOR, FUNCTIONS,
-                               HOOKS, LOG_PROCESSORS, LOOPS, RUNNERS,
-                               STRATEGIES, VISUALIZERS, DefaultScope)
+from mmengine.registry import (
+    DATA_SAMPLERS,
+    DATASETS,
+    EVALUATOR,
+    FUNCTIONS,
+    HOOKS,
+    LOG_PROCESSORS,
+    LOOPS,
+    RUNNERS,
+    STRATEGIES,
+    VISUALIZERS,
+    DefaultScope,
+)
 from mmengine.utils import digit_version
 from mmengine.utils.dl_utils import TORCH_VERSION
 from mmengine.visualization import Visualizer
+
 from .base_loop import BaseLoop
 from .checkpoint import find_latest_checkpoint
 from .log_processor import LogProcessor

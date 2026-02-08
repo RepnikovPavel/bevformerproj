@@ -5,7 +5,6 @@ import platform
 from tempfile import TemporaryDirectory
 
 import pytest
-
 from mmaction.utils import frame_extract
 
 

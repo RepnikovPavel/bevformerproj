@@ -4,12 +4,11 @@ import types
 from typing import Union
 
 import torch.nn as nn
-from mmengine import fileio
 
+from mmengine import fileio
 from mmrazor.models.utils.expandable_utils import make_channel_divisible
 from mmrazor.registry import MODELS
-from mmrazor.structures.subnet.fix_subnet import (export_fix_subnet,
-                                                  load_fix_subnet)
+from mmrazor.structures.subnet.fix_subnet import export_fix_subnet, load_fix_subnet
 from mmrazor.utils import print_log
 
 

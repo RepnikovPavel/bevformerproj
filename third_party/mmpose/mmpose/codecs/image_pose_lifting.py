@@ -4,6 +4,7 @@ from typing import List, Optional, Tuple, Union
 import numpy as np
 
 from mmpose.registry import KEYPOINT_CODECS
+
 from .base import BaseKeypointCodec
 
 

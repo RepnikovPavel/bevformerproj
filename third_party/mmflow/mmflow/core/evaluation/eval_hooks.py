@@ -1,12 +1,12 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 from typing import Any, Optional, Sequence, Union
 
-import mmcv
 from mmcv.runner import Hook, IterBasedRunner, get_dist_info
 from torch.utils.data import DataLoader
 
-from .evaluation import (multi_gpu_online_evaluation,
-                         single_gpu_online_evaluation)
+import mmcv
+
+from .evaluation import multi_gpu_online_evaluation, single_gpu_online_evaluation
 
 
 class EvalHook(Hook):

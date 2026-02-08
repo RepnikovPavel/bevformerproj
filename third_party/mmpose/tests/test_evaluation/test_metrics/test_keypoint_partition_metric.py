@@ -9,10 +9,9 @@ import numpy as np
 from mmengine.fileio import load
 from mmengine.logging import MessageHub
 from mmengine.structures import InstanceData
-from xtcocotools.coco import COCO
-
 from mmpose.datasets.datasets.utils import parse_pose_metainfo
 from mmpose.evaluation.metrics import KeypointPartitionMetric
+from xtcocotools.coco import COCO
 
 
 class TestKeypointPartitionMetricWrappingCocoMetric(TestCase):

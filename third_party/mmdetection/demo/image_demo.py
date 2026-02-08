@@ -58,10 +58,9 @@ Example:
 import ast
 from argparse import ArgumentParser
 
-from mmengine.logging import print_log
-
 from mmdet.apis import DetInferencer
 from mmdet.evaluation import get_classes
+from mmengine.logging import print_log
 
 
 def parse_args():

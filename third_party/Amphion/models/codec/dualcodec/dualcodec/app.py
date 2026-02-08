@@ -2,13 +2,14 @@
 #
 # This source code is licensed under the MIT license found in the
 # LICENSE file in the root directory of this source tree.
-import gradio as gr
-import torch
-import torchaudio
-import dualcodec
 import base64
-import soundfile as sf
 import io
+
+import gradio as gr
+import soundfile as sf
+import torchaudio
+
+import dualcodec
 
 # Model configuration
 MODEL_CONFIGS = {"12hz_v1": {"max_quantizers": 8}, "25hz_v1": {"max_quantizers": 12}}

@@ -4,19 +4,18 @@
 # LICENSE file in the root directory of this source tree.
 
 import math
+import random
+
+import accelerate
 import torch
 import torch.nn.functional as F
 import torchvision
-import random
-import numpy as np
-import accelerate
-
 import whisper
 from models.base.base_trainer import BaseTrainer
-from models.codec.coco.coco_dataset import CocoDataset, CocoCollator
-from models.svc.flow_matching_transformer.fmt_model import FlowMatchingTransformer
+from models.codec.coco.coco_dataset import CocoCollator, CocoDataset
+from models.codec.coco.rep_coco_model import CocoContent, CocoContentStyle
 from models.codec.melvqgan.melspec import MelSpectrogram
-from models.codec.coco.rep_coco_model import CocoContentStyle, CocoContent
+from models.svc.flow_matching_transformer.fmt_model import FlowMatchingTransformer
 
 
 class FlowMatchingTransformerTrainer(BaseTrainer):

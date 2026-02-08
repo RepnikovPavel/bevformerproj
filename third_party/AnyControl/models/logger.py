@@ -1,11 +1,11 @@
 import os
 
 import numpy as np
-from PIL import Image
 import torch
 import torchvision
 from PIL import Image
 from pytorch_lightning.callbacks import Callback
+
 try:
     from pytorch_lightning.utilities.distributed import rank_zero_only
 except:

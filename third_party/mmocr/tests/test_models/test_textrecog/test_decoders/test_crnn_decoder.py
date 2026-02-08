@@ -5,7 +5,6 @@ from unittest import TestCase
 
 import torch
 import torch.nn as nn
-
 from mmocr.models.textrecog.decoders import CRNNDecoder
 from mmocr.testing import create_dummy_dict_file
 

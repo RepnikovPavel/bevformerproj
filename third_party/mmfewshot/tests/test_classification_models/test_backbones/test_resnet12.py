@@ -1,9 +1,7 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import torch
 import torch.nn as nn
-
-from mmfewshot.classification.models.backbones.resnet12 import (BasicBlock,
-                                                                ResNet12)
+from mmfewshot.classification.models.backbones.resnet12 import BasicBlock, ResNet12
 
 
 def test_basicblock():

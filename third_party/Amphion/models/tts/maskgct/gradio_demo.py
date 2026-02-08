@@ -3,28 +3,25 @@
 # This source code is licensed under the MIT license found in the
 # LICENSE file in the root directory of this source tree.
 
-import spaces
-import accelerate
-import gradio as gr
-import torch
-import safetensors
-from huggingface_hub import hf_hub_download
-import soundfile as sf
 import os
 
-import numpy as np
+import gradio as gr
 import librosa
+import numpy as np
+import py3langid as langid
+import safetensors
+import soundfile as sf
+import spaces
+import torch
+import whisper
+from huggingface_hub import hf_hub_download
+from models.codec.amphion_codec.codec import CodecDecoder, CodecEncoder
 from models.codec.kmeans.repcodec_model import RepCodec
+from models.tts.maskgct.g2p.g2p_generation import chn_eng_g2p, g2p
 from models.tts.maskgct.maskgct_s2a import MaskGCT_S2A
 from models.tts.maskgct.maskgct_t2s import MaskGCT_T2S
-from models.codec.amphion_codec.codec import CodecEncoder, CodecDecoder
-from transformers import Wav2Vec2BertModel
+from transformers import SeamlessM4TFeatureExtractor, Wav2Vec2BertModel
 from utils.util import load_config
-from models.tts.maskgct.g2p.g2p_generation import g2p, chn_eng_g2p
-
-from transformers import SeamlessM4TFeatureExtractor
-import py3langid as langid
-import whisper
 
 print("Start loading: facebook/w2v-bert-2.0")
 processor = SeamlessM4TFeatureExtractor.from_pretrained("facebook/w2v-bert-2.0")

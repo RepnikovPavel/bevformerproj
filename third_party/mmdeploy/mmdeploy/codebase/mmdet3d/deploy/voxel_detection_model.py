@@ -1,17 +1,16 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 from typing import Any, Dict, List, Optional, Sequence, Union
 
-import mmcv
 import torch
 from mmdet3d.structures.det3d_data_sample import SampleList
-from mmengine import Config
 from mmengine.model.base_model.data_preprocessor import BaseDataPreprocessor
 from mmengine.registry import Registry
 from mmengine.structures import BaseDataElement, InstanceData
 
+import mmcv
 from mmdeploy.codebase.base import BaseBackendModel
-from mmdeploy.utils import (Backend, get_backend, get_codebase_config,
-                            load_config)
+from mmdeploy.utils import Backend, get_backend, get_codebase_config, load_config
+from mmengine import Config
 
 __BACKEND_MODEL = Registry('backend_voxel_detectors')
 

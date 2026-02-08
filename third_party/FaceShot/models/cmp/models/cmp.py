@@ -6,6 +6,7 @@ import models.cmp.utils as utils
 
 from . import SingleStageModel
 
+
 class CMP(SingleStageModel):
 
     def __init__(self, params, dist_model=False):

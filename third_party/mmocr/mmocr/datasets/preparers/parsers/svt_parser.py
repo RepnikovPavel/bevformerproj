@@ -4,6 +4,7 @@ import xml.etree.ElementTree as ET
 from typing import List, Tuple
 
 from mmocr.registry import DATA_PARSERS
+
 from .base import BaseParser
 
 

@@ -1,14 +1,14 @@
 # Copyright (c) OpenMMLab. All rights reserved.
-import cv2
-import numpy as np
 import os.path as osp
 import tempfile
 from contextlib import contextmanager
-from parameterized import parameterized
 from pathlib import Path
 from unittest import TestCase
 
+import cv2
+import numpy as np
 from mmeval.fileio.backends import LocalBackend
+from parameterized import parameterized
 
 
 def imfrombytes(content):

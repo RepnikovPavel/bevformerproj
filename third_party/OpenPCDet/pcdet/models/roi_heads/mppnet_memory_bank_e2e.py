@@ -1,15 +1,18 @@
-from typing import ValuesView
-import torch.nn as nn
-import torch
-import numpy as np
 import copy
+
+import numpy as np
+import torch
+import torch.nn as nn
 import torch.nn.functional as F
+
 from pcdet.ops.iou3d_nms import iou3d_nms_utils
-from ...utils import common_utils, loss_utils
+from pcdet.ops.pointnet2.pointnet2_stack import (
+    pointnet2_modules as pointnet2_stack_modules,
+)
+
+from ...utils import common_utils
+from ..model_utils.mppnet_utils import MLP, PointNet, build_transformer
 from .roi_head_template import RoIHeadTemplate
-from ..model_utils.mppnet_utils import build_transformer, PointNet, MLP
-from .target_assigner.proposal_target_layer import ProposalTargetLayer
-from pcdet.ops.pointnet2.pointnet2_stack import pointnet2_modules as pointnet2_stack_modules
 
 
 class MPPNetHeadE2E(RoIHeadTemplate):

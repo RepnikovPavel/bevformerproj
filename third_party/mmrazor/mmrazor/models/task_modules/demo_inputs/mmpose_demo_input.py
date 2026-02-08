@@ -5,10 +5,17 @@ Modified from mmpose.
 """
 
 import torch
-from mmpose.models.heads import (CPMHead, DSNTHead, HeatmapHead,
-                                 IntegralRegressionHead, MSPNHead,
-                                 RegressionHead, RLEHead, SimCCHead,
-                                 ViPNASHead)
+from mmpose.models.heads import (
+    CPMHead,
+    DSNTHead,
+    HeatmapHead,
+    IntegralRegressionHead,
+    MSPNHead,
+    RegressionHead,
+    RLEHead,
+    SimCCHead,
+    ViPNASHead,
+)
 from mmpose.testing._utils import get_packed_inputs
 
 from mmrazor.utils import get_placeholder

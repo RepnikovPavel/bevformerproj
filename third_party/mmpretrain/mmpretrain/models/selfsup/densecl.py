@@ -8,6 +8,7 @@ from mmengine.model import ExponentialMovingAverage
 
 from mmpretrain.registry import MODELS
 from mmpretrain.structures import DataSample
+
 from ..utils import batch_shuffle_ddp, batch_unshuffle_ddp
 from .base import BaseSelfSupervisor
 

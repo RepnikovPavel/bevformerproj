@@ -5,11 +5,16 @@ from typing import Union
 import torch
 import torch.nn as nn
 
-from mmengine.device import (is_cuda_available, is_mlu_available,
-                             is_musa_available, is_npu_available)
+from mmengine.device import (
+    is_cuda_available,
+    is_mlu_available,
+    is_musa_available,
+    is_npu_available,
+)
 from mmengine.registry import OPTIM_WRAPPERS
 from mmengine.utils import digit_version
 from mmengine.utils.dl_utils import TORCH_VERSION
+
 from .optimizer_wrapper import OptimWrapper
 
 if is_npu_available():
@@ -82,8 +87,7 @@ class AmpOptimWrapper(OptimWrapper):
 
         if use_fsdp:
             if digit_version(torch.__version__) >= digit_version('2.0.0'):
-                from torch.distributed.fsdp.sharded_grad_scaler import \
-                    ShardedGradScaler
+                from torch.distributed.fsdp.sharded_grad_scaler import ShardedGradScaler
                 scaler_type = ShardedGradScaler
             else:
                 raise RuntimeError(

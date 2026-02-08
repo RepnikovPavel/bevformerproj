@@ -8,9 +8,10 @@
 # ==============================
 """
 #import png
+import io
+
 import numpy as np
 from PIL import Image
-import io
 
 UNKNOWN_FLOW_THRESH = 1e7
 SMALLFLOW = 0.0

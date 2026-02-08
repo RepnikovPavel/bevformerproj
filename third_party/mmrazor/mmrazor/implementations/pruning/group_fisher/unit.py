@@ -4,16 +4,18 @@ from typing import List
 import torch
 import torch.nn as nn
 from mmengine.model.utils import _BatchNormXd
-from mmengine.utils.dl_utils.parrots_wrapper import \
-    SyncBatchNorm as EngineSyncBatchNorm
+from mmengine.utils.dl_utils.parrots_wrapper import SyncBatchNorm as EngineSyncBatchNorm
 from torch import distributed as dist
 
 import mmrazor.models.architectures.dynamic_ops as dynamic_ops
-from mmrazor.models.mutables.mutable_channel.mutable_channel_container import \
-    MutableChannelContainer
-from mmrazor.models.mutables.mutable_channel.units.l1_mutable_channel_unit import \
-    L1MutableChannelUnit  # noqa
+from mmrazor.models.mutables.mutable_channel.mutable_channel_container import (
+    MutableChannelContainer,
+)
+from mmrazor.models.mutables.mutable_channel.units.l1_mutable_channel_unit import (
+    L1MutableChannelUnit,  # noqa
+)
 from mmrazor.registry import MODELS
+
 from .ops import GroupFisherConv2d, GroupFisherLinear, GroupFisherMixin
 
 

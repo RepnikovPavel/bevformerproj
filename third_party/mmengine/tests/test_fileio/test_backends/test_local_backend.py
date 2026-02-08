@@ -11,9 +11,8 @@ from unittest.mock import patch
 
 import cv2
 import numpy as np
-from parameterized import parameterized
-
 from mmengine.fileio.backends import LocalBackend
+from parameterized import parameterized
 
 
 def imfrombytes(content):

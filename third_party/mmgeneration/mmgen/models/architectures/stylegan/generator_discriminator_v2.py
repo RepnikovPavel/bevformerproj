@@ -1,22 +1,28 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import random
 
-import mmcv
 import numpy as np
 import torch
 import torch.nn as nn
 from mmcv.runner.checkpoint import _load_checkpoint_with_prefix
 
+import mmcv
 from mmgen.core.runners.fp16_utils import auto_fp16
 from mmgen.models.architectures import PixelNorm
 from mmgen.models.architectures.common import get_module_device
 from mmgen.models.builder import MODULES, build_module
+
 from .ada.augment import AugmentPipe
 from .ada.misc import constant
-from .modules.styleganv2_modules import (ConstantInput, ConvDownLayer,
-                                         EqualLinearActModule,
-                                         ModMBStddevLayer, ModulatedStyleConv,
-                                         ModulatedToRGB, ResBlock)
+from .modules.styleganv2_modules import (
+    ConstantInput,
+    ConvDownLayer,
+    EqualLinearActModule,
+    ModMBStddevLayer,
+    ModulatedStyleConv,
+    ModulatedToRGB,
+    ResBlock,
+)
 from .utils import get_mean_latent, style_mixing
 
 

@@ -6,6 +6,7 @@ import torch.nn as nn
 
 from mmpretrain.registry import MODELS
 from mmpretrain.structures import DataSample
+
 from ..utils import CosineEMA
 from .base import BaseSelfSupervisor
 

@@ -2,7 +2,6 @@
 import numpy as np
 import torch
 import torch.nn as nn
-
 from mmcv.utils import IS_MUSA_AVAILABLE
 
 

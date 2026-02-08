@@ -3,13 +3,12 @@
 # This source code is licensed under the MIT license found in the
 # LICENSE file in the root directory of this source tree.
 
-import torch
-import numpy as np
-import torch.nn as nn
 import math
-from einops import rearrange
+
+import numpy as np
+import torch
+import torch.nn as nn
 from models.vc.flow_matching_transformer.llama_nar import DiffLlama
-import torch.nn.functional as F
 
 
 class FlowMatchingTransformer(nn.Module):

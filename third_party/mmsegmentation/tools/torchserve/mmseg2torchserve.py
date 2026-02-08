@@ -3,8 +3,9 @@ from argparse import ArgumentParser, Namespace
 from pathlib import Path
 from tempfile import TemporaryDirectory
 
-from mmengine import Config
 from mmengine.utils import mkdir_or_exist
+
+from mmengine import Config
 
 try:
     from model_archiver.model_packaging import package_model

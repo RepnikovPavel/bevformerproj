@@ -9,8 +9,13 @@ from mmengine.model import ModuleList
 from torch import Tensor, nn
 
 from mmpose.models.utils import inverse_sigmoid
-from .detr_layers import (DetrTransformerDecoder, DetrTransformerDecoderLayer,
-                          DetrTransformerEncoder, DetrTransformerEncoderLayer)
+
+from .detr_layers import (
+    DetrTransformerDecoder,
+    DetrTransformerDecoderLayer,
+    DetrTransformerEncoder,
+    DetrTransformerEncoderLayer,
+)
 
 
 class DeformableDetrTransformerEncoder(DetrTransformerEncoder):

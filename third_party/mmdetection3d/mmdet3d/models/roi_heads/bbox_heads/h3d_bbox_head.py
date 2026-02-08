@@ -14,8 +14,11 @@ from mmdet3d.models import aligned_3d_nms
 from mmdet3d.models.layers.pointnet_modules import build_sa_module
 from mmdet3d.models.losses import chamfer_distance
 from mmdet3d.registry import MODELS, TASK_UTILS
-from mmdet3d.structures import (BaseInstance3DBoxes, DepthInstance3DBoxes,
-                                Det3DDataSample)
+from mmdet3d.structures import (
+    BaseInstance3DBoxes,
+    DepthInstance3DBoxes,
+    Det3DDataSample,
+)
 
 
 @MODELS.register_module()

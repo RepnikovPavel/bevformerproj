@@ -4,6 +4,7 @@ from mmcv.cnn import ConvModule
 from mmengine.utils.dl_utils.parrots_wrapper import _BatchNorm
 
 from mmaction.registry import MODELS
+
 from .resnet3d import Bottleneck3d, ResNet3d
 
 

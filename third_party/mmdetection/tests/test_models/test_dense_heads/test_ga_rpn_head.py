@@ -2,10 +2,9 @@
 from unittest import TestCase
 
 import torch
+from mmdet.models.dense_heads import GARPNHead
 from mmengine.config import ConfigDict
 from mmengine.structures import InstanceData
-
-from mmdet.models.dense_heads import GARPNHead
 
 ga_rpn_config = ConfigDict(
     dict(

@@ -2,11 +2,10 @@
 from typing import Dict, List, Optional, Union
 
 import torch.nn as nn
-from torch import Tensor
-
 from mmocr.models.textrecog.encoders import BaseEncoder
 from mmocr.registry import MODELS
 from mmocr.structures import TextSpottingDataSample
+from torch import Tensor
 
 
 @MODELS.register_module()

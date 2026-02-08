@@ -3,16 +3,17 @@ import os
 from copy import deepcopy
 from typing import Dict, Optional, Sequence, Tuple, Union
 
-import mmengine
 import numpy as np
 import torch
 from mmdet3d.structures import get_box_type
-from mmengine import Config
 from mmengine.dataset import Compose, pseudo_collate
 from mmengine.model import BaseDataPreprocessor
 
+import mmengine
 from mmdeploy.codebase.base import BaseTask
 from mmdeploy.utils import Task
+from mmengine import Config
+
 from .mmdet3d import MMDET3D_TASK
 
 

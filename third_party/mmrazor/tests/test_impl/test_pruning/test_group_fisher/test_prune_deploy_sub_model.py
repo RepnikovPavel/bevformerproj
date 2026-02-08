@@ -4,11 +4,13 @@ import os
 from unittest import TestCase
 
 import torch
-from mmengine import fileio
+from mmrazor.implementations.pruning.group_fisher.prune_deploy_sub_model import (
+    GroupFisherDeploySubModel,  # noqa
+)
 
+from mmengine import fileio
 from mmrazor import digit_version
-from mmrazor.implementations.pruning.group_fisher.prune_deploy_sub_model import \
-    GroupFisherDeploySubModel  # noqa
+
 from ....data.models import MMClsResNet18
 from .test_prune_sub_model import PruneAlgorithm, get_model_structure
 

@@ -1,13 +1,13 @@
-from functools import partial
-
-from mmcv.runner import get_dist_info
-from mmcv.parallel import collate
-from torch.utils.data import DataLoader
-
-from .sampler import GroupSampler, DistributedGroupSampler, DistributedSampler
-
 # https://github.com/pytorch/pytorch/issues/973
 import resource
+from functools import partial
+
+from mmcv.parallel import collate
+from mmcv.runner import get_dist_info
+from torch.utils.data import DataLoader
+
+from .sampler import DistributedGroupSampler, DistributedSampler, GroupSampler
+
 rlimit = resource.getrlimit(resource.RLIMIT_NOFILE)
 resource.setrlimit(resource.RLIMIT_NOFILE, (4096, rlimit[1]))
 

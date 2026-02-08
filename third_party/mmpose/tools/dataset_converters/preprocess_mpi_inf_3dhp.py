@@ -7,9 +7,10 @@ from os.path import join
 
 import cv2
 import h5py
-import mmcv
 import numpy as np
 from scipy.io import loadmat
+
+import mmcv
 
 train_subjects = [i for i in range(1, 9)]
 test_subjects = [i for i in range(1, 7)]

@@ -10,8 +10,12 @@ from torch import Tensor
 from torch.utils.data.dataloader import DataLoader
 
 from mmagic.registry import METRICS
-from ..functional import (disable_gpu_fuser_on_pt19, load_inception,
-                          prepare_inception_feat)
+
+from ..functional import (
+    disable_gpu_fuser_on_pt19,
+    load_inception,
+    prepare_inception_feat,
+)
 from .base_gen_metric import GenerativeMetric
 
 

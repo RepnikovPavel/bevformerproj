@@ -4,7 +4,6 @@ from argparse import ArgumentParser
 
 import cv2
 import requests
-
 from mmtrack.apis import inference_vid, init_model
 
 

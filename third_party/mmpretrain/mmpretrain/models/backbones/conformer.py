@@ -11,6 +11,7 @@ from mmengine.model import BaseModule
 from mmengine.model.weight_init import trunc_normal_
 
 from mmpretrain.registry import MODELS
+
 from .base_backbone import BaseBackbone
 from .vision_transformer import TransformerEncoderLayer
 

@@ -1,6 +1,5 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 from mmengine.evaluator import Evaluator
-
 from mmpretrain.structures import DataSample
 
 

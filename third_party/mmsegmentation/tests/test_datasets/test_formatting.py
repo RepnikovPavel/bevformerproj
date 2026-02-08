@@ -6,7 +6,6 @@ import unittest
 import numpy as np
 import pytest
 from mmengine.structures import BaseDataElement
-
 from mmseg.datasets.transforms import PackSegInputs
 from mmseg.structures import SegDataSample
 

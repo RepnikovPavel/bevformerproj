@@ -6,6 +6,7 @@ from mmengine.model import BaseModule
 
 from mmseg.models.decode_heads.psp_head import PPM
 from mmseg.registry import MODELS
+
 from ..utils import InvertedResidual, resize
 
 

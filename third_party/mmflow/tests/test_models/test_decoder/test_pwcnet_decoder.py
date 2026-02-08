@@ -1,7 +1,6 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import pytest
 import torch
-
 from mmflow.models.decoders.pwcnet_decoder import PWCModule, PWCNetDecoder
 
 

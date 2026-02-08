@@ -4,10 +4,10 @@
 # LICENSE file in the root directory of this source tree.
 
 import torch
-import torch.nn.functional as F
 import torch.nn as nn
-from torch.nn.utils import weight_norm, remove_weight_norm, spectral_norm
+import torch.nn.functional as F
 from torch import nn
+from torch.nn.utils import spectral_norm, weight_norm
 
 LRELU_SLOPE = 0.1
 

@@ -1,11 +1,9 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 from mmcv.transforms import LoadImageFromFile
-from mmengine.dataset.sampler import DefaultSampler
-
 from mmdet.datasets import AspectRatioBatchSampler, CocoDataset
-from mmdet.datasets.transforms import (LoadAnnotations, PackDetInputs,
-                                       RandomFlip, Resize)
+from mmdet.datasets.transforms import LoadAnnotations, PackDetInputs, RandomFlip, Resize
 from mmdet.evaluation import CocoMetric
+from mmengine.dataset.sampler import DefaultSampler
 
 # dataset settings
 dataset_type = CocoDataset

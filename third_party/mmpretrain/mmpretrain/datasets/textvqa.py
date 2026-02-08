@@ -2,9 +2,9 @@
 from collections import Counter
 from typing import List
 
-import mmengine
 from mmengine.dataset import BaseDataset
 
+import mmengine
 from mmpretrain.registry import DATASETS
 
 

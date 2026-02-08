@@ -4,11 +4,11 @@ import os.path as osp
 import tempfile
 
 import pytest
-from mmengine import Config
-
 from mmdeploy.apis import torch2torchscript
 from mmdeploy.utils import IR, Backend
 from mmdeploy.utils.test import get_random_name
+
+from mmengine import Config
 
 ts_file = tempfile.NamedTemporaryFile(suffix='.pt').name
 input_name = get_random_name()

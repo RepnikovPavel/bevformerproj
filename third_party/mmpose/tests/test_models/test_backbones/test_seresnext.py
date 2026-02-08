@@ -2,7 +2,6 @@
 from unittest import TestCase
 
 import torch
-
 from mmpose.models.backbones import SEResNeXt
 from mmpose.models.backbones.seresnext import SEBottleneck as SEBottleneckX
 

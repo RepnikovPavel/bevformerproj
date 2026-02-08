@@ -5,6 +5,7 @@ from mmdet.structures.det_data_sample import OptSampleList
 
 from mmdeploy.core import FUNCTION_REWRITER, mark
 from mmdeploy.utils import is_dynamic_shape
+
 from .single_stage import _set_metainfo
 
 

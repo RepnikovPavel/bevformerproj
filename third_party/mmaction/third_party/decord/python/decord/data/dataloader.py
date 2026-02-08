@@ -4,13 +4,18 @@ import warnings
 from multiprocessing.pool import ThreadPool
 
 import numpy as np
-from ..ndarray import cpu, gpu
+
 from ..bridge.mxnet import try_import_mxnet
+from ..ndarray import cpu
 
 try_import_mxnet()
-from mxnet.gluon.data.dataloader import DataLoader, default_batchify_fn, _thread_worker_initializer
 from mxnet.gluon.data import sampler as _sampler
-from mxnet.util import is_np_shape, is_np_array
+from mxnet.gluon.data.dataloader import (
+    DataLoader,
+    _thread_worker_initializer,
+    default_batchify_fn,
+)
+from mxnet.util import is_np_array, is_np_shape
 
 
 class ShardedDataLoader(object):

@@ -3,17 +3,21 @@
 from mmengine.config import read_base
 
 with read_base():
-    from .._base_.models.mae_vit_base_p16 import *
     from .._base_.datasets.imagenet_bs512_mae import *
     from .._base_.default_runtime import *
+    from .._base_.models.mae_vit_base_p16 import *
 
 from mmengine.hooks import CheckpointHook
 from mmengine.optim import CosineAnnealingLR, LinearLR, OptimWrapper
 from mmengine.runner import EpochBasedTrainLoop
+from mmpretrain.models import (
+    EVA,
+    CLIPGenerator,
+    CosineSimilarityLoss,
+    MAEPretrainDecoder,
+    MIMHead,
+)
 from torch.optim import AdamW
-
-from mmpretrain.models import (EVA, CLIPGenerator, CosineSimilarityLoss,
-                               MAEPretrainDecoder, MIMHead)
 
 # dataset settings
 train_dataloader.batch_size = 256

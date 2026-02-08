@@ -9,6 +9,7 @@ from mmengine.model import BaseModule
 
 from mmdet.registry import MODELS
 from mmdet.utils import ConfigType, OptMultiConfig
+
 from ..layers import ResLayer
 from .resnet import BasicBlock
 

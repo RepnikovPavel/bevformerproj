@@ -5,7 +5,6 @@ import subprocess
 import tempfile
 
 from click.testing import CliRunner
-
 from mim.commands.install import cli as install
 from mim.commands.uninstall import cli as uninstall
 

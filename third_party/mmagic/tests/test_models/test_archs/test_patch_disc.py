@@ -3,7 +3,6 @@ import copy
 
 import pytest
 import torch
-
 from mmagic.registry import MODELS
 from mmagic.utils import register_all_modules
 

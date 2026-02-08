@@ -6,7 +6,6 @@ import cv2
 import numpy as np
 import torch
 from mmengine.structures import InstanceData, PixelData
-
 from mmpose.structures import PoseDataSample
 from mmpose.visualization import PoseLocalVisualizer
 

@@ -3,11 +3,10 @@ import os
 import unittest
 from unittest import TestCase
 
+import mmengine.dist as dist
 import numpy as np
 import torch
 import torch.distributed as torch_dist
-
-import mmengine.dist as dist
 from mmengine.testing._internal import MultiProcessTestCase
 
 

@@ -4,8 +4,9 @@ from typing import List, Optional
 import torch
 
 try:
-    import mmpretrain
     from mmpretrain.models.classifiers import ImageClassifier
+
+    import mmpretrain
 except ImportError:
     mmpretrain = None
     ImageClassifier = object

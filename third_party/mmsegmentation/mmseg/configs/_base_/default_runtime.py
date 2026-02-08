@@ -1,7 +1,6 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 
 from mmengine.visualization import LocalVisBackend
-
 from mmseg.models import SegTTAModel
 from mmseg.visualization import SegLocalVisualizer
 

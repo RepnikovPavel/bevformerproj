@@ -6,10 +6,12 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 
-from mmagic.models.editors.ddpm.denoising_unet import (QKVAttention,
-                                                       QKVAttentionLegacy,
-                                                       convert_module_to_f16,
-                                                       convert_module_to_f32)
+from mmagic.models.editors.ddpm.denoising_unet import (
+    QKVAttention,
+    QKVAttentionLegacy,
+    convert_module_to_f16,
+    convert_module_to_f32,
+)
 from mmagic.registry import MODELS
 
 

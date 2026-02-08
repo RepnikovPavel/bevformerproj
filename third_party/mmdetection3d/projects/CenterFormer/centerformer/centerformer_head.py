@@ -12,13 +12,13 @@ import numpy as np
 import torch
 from mmcv.cnn import build_norm_layer
 from mmcv.ops import boxes_iou3d
+from mmdet3d.models.layers import circle_nms, nms_bev
+from mmdet3d.registry import MODELS
 from mmengine.logging import print_log
 from mmengine.model import kaiming_init
 from mmengine.structures import InstanceData
 from torch import nn
 
-from mmdet3d.models.layers import circle_nms, nms_bev
-from mmdet3d.registry import MODELS
 from .bbox_ops import nms_iou3d
 from .losses import FastFocalLoss
 

@@ -5,7 +5,6 @@ import tempfile
 import pytest
 import torch
 import torch.nn as nn
-
 from mmdeploy.utils import Backend
 from mmdeploy.utils.test import backend_checker
 

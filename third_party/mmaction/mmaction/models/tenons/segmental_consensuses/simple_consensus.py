@@ -1,6 +1,7 @@
-import torch
 import torch.nn as nn
+
 from ...registry import SEGMENTAL_CONSENSUSES
+
 
 @SEGMENTAL_CONSENSUSES.register_module
 class SimpleConsensus(nn.Module):

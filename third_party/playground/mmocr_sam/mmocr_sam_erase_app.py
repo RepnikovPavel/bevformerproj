@@ -1,21 +1,29 @@
+import sys
+
 import cv2
 import gradio as gr
 import numpy as np
 import PIL.Image as Image
 import torch
+
+# Diffusion model
+from diffusers import StableDiffusionInpaintPipeline
 from matplotlib import pyplot as plt
+
 # MMOCR
 from mmocr.apis.inferencers import MMOCRInferencer
 from mmocr.utils import poly2bbox
+from mmocr.utils.polygon_utils import offset_polygon
+
 # SAM
 from segment_anything import SamPredictor, sam_model_registry
-# Diffusion model
-from diffusers import StableDiffusionInpaintPipeline
-from mmocr.utils.polygon_utils import offset_polygon
-import sys
 
 sys.path.append('latent_diffusion')
-from latent_diffusion.ldm_erase_text import erase_text_from_image, instantiate_from_config, OmegaConf
+from latent_diffusion.ldm_erase_text import (
+    OmegaConf,
+    erase_text_from_image,
+    instantiate_from_config,
+)
 
 det_config = 'mmocr_dev/configs/textdet/dbnetpp/dbnetpp_swinv2_base_w16_in21k.py'  # noqa
 det_weight = 'checkpoints/mmocr/db_swin_mix_pretrain.pth'

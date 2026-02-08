@@ -4,12 +4,12 @@ from unittest import TestCase
 import numpy as np
 import pytest
 import torch
-from mmengine import MessageHub
-
 from mmagic.engine import PGGANOptimWrapperConstructor
 from mmagic.models import ProgressiveGrowingGAN
 from mmagic.structures import DataSample
 from mmagic.utils import register_all_modules
+
+from mmengine import MessageHub
 
 register_all_modules()
 

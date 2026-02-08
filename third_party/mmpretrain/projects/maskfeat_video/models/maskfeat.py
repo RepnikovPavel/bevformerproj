@@ -3,7 +3,6 @@ from typing import Dict, List
 
 import torch
 import torch.nn.functional as F
-
 from mmpretrain.models import BaseSelfSupervisor
 from mmpretrain.registry import MODELS
 from mmpretrain.structures import DataSample

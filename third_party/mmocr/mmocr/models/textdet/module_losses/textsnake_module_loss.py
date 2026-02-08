@@ -12,6 +12,7 @@ from torch import Tensor
 
 from mmocr.registry import MODELS
 from mmocr.structures import TextDetDataSample
+
 from .seg_based_module_loss import SegBasedModuleLoss
 
 

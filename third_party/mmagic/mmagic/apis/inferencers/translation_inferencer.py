@@ -4,12 +4,13 @@ from typing import Dict, List
 
 import numpy as np
 import torch
-from mmengine import mkdir_or_exist
 from mmengine.dataset import Compose
 from mmengine.dataset.utils import default_collate as collate
 from torchvision import utils
 
 from mmagic.models.base_models import BaseTranslationModel
+from mmengine import mkdir_or_exist
+
 from .base_mmagic_inferencer import BaseMMagicInferencer, InputsType, PredType
 
 

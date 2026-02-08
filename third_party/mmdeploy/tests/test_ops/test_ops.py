@@ -5,12 +5,12 @@ import onnx
 import pytest
 import torch
 import torch.nn as nn
-from mmengine import Config
-from onnx.helper import (make_graph, make_model, make_node,
-                         make_tensor_value_info)
-
 from mmdeploy.core import RewriterContext
 from mmdeploy.utils.test import WrapFunction, assert_allclose
+from onnx.helper import make_graph, make_model, make_node, make_tensor_value_info
+
+from mmengine import Config
+
 from .utils import TestNCNNExporter, TestOnnxRTExporter, TestTensorRTExporter
 
 TEST_ONNXRT = TestOnnxRTExporter()
@@ -1223,8 +1223,7 @@ def test_multiclass_nms_rotated_with_keep_top_k(backend, pre_top_k):
 @pytest.mark.parametrize('backend', [TEST_TENSORRT])
 def test_multi_scale_deformable_attn(backend, save_dir=None):
     backend.check_env()
-    from mmcv.ops.multi_scale_deform_attn import \
-        MultiScaleDeformableAttnFunction
+    from mmcv.ops.multi_scale_deform_attn import MultiScaleDeformableAttnFunction
 
     Bs = 2
     Nh = 8

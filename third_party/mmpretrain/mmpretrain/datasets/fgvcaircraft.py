@@ -2,8 +2,8 @@
 from typing import List
 
 from mmengine import get_file_backend, list_from_file
-
 from mmpretrain.registry import DATASETS
+
 from .base_dataset import BaseDataset
 from .categories import FGVCAIRCRAFT_CATEGORIES
 

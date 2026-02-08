@@ -4,11 +4,10 @@ from unittest import TestCase
 from unittest.mock import Mock
 
 from mmcv.cnn import VGG
-from mmengine.dataset import BaseDataset
-from torch import nn
-
 from mmdet.engine.hooks import NumClassCheckHook
 from mmdet.models.roi_heads.mask_heads import FusedSemanticHead
+from mmengine.dataset import BaseDataset
+from torch import nn
 
 
 class TestNumClassCheckHook(TestCase):

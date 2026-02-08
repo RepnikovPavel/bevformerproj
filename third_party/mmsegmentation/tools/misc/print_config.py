@@ -2,9 +2,9 @@
 import argparse
 import warnings
 
-from mmengine import Config, DictAction
-
 from mmseg.apis import init_model
+
+from mmengine import Config, DictAction
 
 
 def parse_args():

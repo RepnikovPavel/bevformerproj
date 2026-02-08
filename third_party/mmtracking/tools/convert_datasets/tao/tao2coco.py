@@ -58,9 +58,10 @@ import argparse
 import os.path as osp
 from collections import defaultdict
 
-import mmcv
 from tao.toolkit.tao import Tao
 from tqdm import tqdm
+
+import mmcv
 
 
 def parse_args():

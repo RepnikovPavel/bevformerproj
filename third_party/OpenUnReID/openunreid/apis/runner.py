@@ -8,6 +8,7 @@ import warnings
 import torch
 import torch.nn as nn
 from torch.nn.parallel import DataParallel, DistributedDataParallel
+
 try:
     # PyTorch >= 1.6 supports mixed precision training
     from torch.cuda.amp import GradScaler, autocast
@@ -21,13 +22,17 @@ from ..data import build_train_dataloader, build_val_dataloader
 from ..data.utils.data_utils import save_image
 from ..utils import bcolors
 from ..utils.dist_utils import get_dist_info, synchronize
-from ..utils.meters import Meters
-from ..utils.image_pool import ImagePool
-from ..utils.torch_utils import copy_state_dict, load_checkpoint, save_checkpoint
 from ..utils.file_utils import mkdir_if_missing
-from ..utils.torch_utils import tensor2im
+from ..utils.image_pool import ImagePool
+from ..utils.meters import Meters
+from ..utils.torch_utils import (
+    copy_state_dict,
+    load_checkpoint,
+    save_checkpoint,
+    tensor2im,
+)
 from .test import val_reid
-from .train import batch_processor, set_random_seed
+from .train import batch_processor
 
 
 class BaseRunner(object):

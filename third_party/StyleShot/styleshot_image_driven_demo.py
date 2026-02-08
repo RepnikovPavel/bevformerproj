@@ -1,16 +1,14 @@
+import argparse
 import os
-from types import MethodType
 
-import torch
 import cv2
 from annotator.hed import SOFT_HEDdetector
 from annotator.lineart import LineartDetector
-from diffusers import UNet2DConditionModel, ControlNetModel
-from transformers import CLIPVisionModelWithProjection
-from PIL import Image
+from diffusers import ControlNetModel, UNet2DConditionModel
 from huggingface_hub import snapshot_download
-from ip_adapter import StyleShot, StyleContentStableDiffusionControlNetPipeline
-import argparse
+from ip_adapter import StyleContentStableDiffusionControlNetPipeline, StyleShot
+from PIL import Image
+
 
 def main(args):
     base_model_path = "runwayml/stable-diffusion-v1-5"

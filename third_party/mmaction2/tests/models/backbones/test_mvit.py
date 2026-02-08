@@ -4,7 +4,6 @@ from copy import deepcopy
 from unittest import TestCase
 
 import torch
-
 from mmaction.models import MViT
 
 

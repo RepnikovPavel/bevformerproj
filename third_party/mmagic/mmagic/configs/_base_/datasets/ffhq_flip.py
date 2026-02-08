@@ -1,10 +1,9 @@
 # Copyright (c) OpenMMLab. All rights reserved.
-from mmengine.dataset.sampler import DefaultSampler, InfiniteSampler
-
 from mmagic.datasets.basic_image_dataset import BasicImageDataset
 from mmagic.datasets.transforms.aug_shape import Flip
 from mmagic.datasets.transforms.formatting import PackInputs
 from mmagic.datasets.transforms.loading import LoadImageFromFile
+from mmengine.dataset.sampler import DefaultSampler, InfiniteSampler
 
 dataset_type = BasicImageDataset
 

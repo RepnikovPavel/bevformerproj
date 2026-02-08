@@ -1,22 +1,28 @@
 # Copyright (c) OpenMMLab. All rights reserved.
-import mmengine
 import pytest
 import torch
-from packaging import version
-
 from mmdeploy.codebase import import_codebase
 from mmdeploy.utils import Backend, Codebase, Task
-from mmdeploy.utils.test import (WrapModel, check_backend, get_model_outputs,
-                                 get_rewrite_outputs)
+from mmdeploy.utils.test import (
+    WrapModel,
+    check_backend,
+    get_model_outputs,
+    get_rewrite_outputs,
+)
+from packaging import version
+
+import mmengine
 
 try:
     import_codebase(Codebase.MMSEG)
 except ImportError:
     pytest.skip(f'{Codebase.MMSEG} is not installed.', allow_module_level=True)
 
-from .utils import generate_datasample  # noqa: E402
-from .utils import generate_mmseg_deploy_config  # noqa: E402
-from .utils import generate_mmseg_task_processor  # noqa: E402
+from .utils import (
+    generate_datasample,  # noqa: E402
+    generate_mmseg_deploy_config,  # noqa: E402
+    generate_mmseg_task_processor,  # noqa: E402
+)
 
 
 @pytest.mark.parametrize('backend', [Backend.ONNXRUNTIME])

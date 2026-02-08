@@ -15,9 +15,8 @@ from mmengine.model import BaseModel
 from mmengine.registry import init_default_scope
 from mmengine.runner import Runner
 from mmengine.visualization import Visualizer
-from rich.progress import BarColumn, MofNCompleteColumn, Progress, TextColumn
-
 from mmocr.registry import DATASETS
+from rich.progress import BarColumn, MofNCompleteColumn, Progress, TextColumn
 
 
 class SimpleModel(BaseModel):

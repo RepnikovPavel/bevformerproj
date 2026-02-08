@@ -4,12 +4,12 @@ from typing import List, Optional, Tuple
 import torch
 import torch.nn.functional as F
 from mmdet.structures.bbox import get_box_tensor
-from mmengine import ConfigDict
 from torch import Tensor
 
 from mmdeploy.codebase.mmdet.deploy import get_post_processing_params
 from mmdeploy.core import FUNCTION_REWRITER, mark
 from mmdeploy.mmcv.ops import multiclass_nms
+from mmengine import ConfigDict
 
 
 @FUNCTION_REWRITER.register_rewriter(

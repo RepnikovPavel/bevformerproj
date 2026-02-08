@@ -1,21 +1,24 @@
 import csv
+import heapq
 import logging
 import time
 from collections import defaultdict
-import heapq
+
 import numpy as np
 
 from .recall import eval_recalls
 
 try:
-    import sys
     import os.path as osp
+    import sys
     sys.path.append(
         osp.abspath(osp.join(__file__, '../../../',
                              'third_party/ActivityNet/Evaluation/ava')))
-    from mmaction.third_party.ActivityNet.Evaluation.ava import (
-        object_detection_evaluation as det_eval)
     import standard_fields
+
+    from mmaction.third_party.ActivityNet.Evaluation.ava import (
+        object_detection_evaluation as det_eval,
+    )
 
 except ImportError:
     print('Failed to import ActivityNet evaluation toolbox. Did you clone with'

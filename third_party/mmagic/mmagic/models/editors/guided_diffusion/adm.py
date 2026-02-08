@@ -2,19 +2,19 @@
 from copy import deepcopy
 from typing import List, Optional
 
-import mmengine
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-from mmengine import MessageHub
 from mmengine.model import BaseModel, is_model_wrapper
 from mmengine.optim import OptimWrapperDict
 from mmengine.runner.checkpoint import _load_checkpoint_with_prefix
 from tqdm import tqdm
 
+import mmengine
 from mmagic.registry import DIFFUSION_SCHEDULERS, MODELS
 from mmagic.structures import DataSample
 from mmagic.utils.typing import ForwardInputs, SampleList
+from mmengine import MessageHub
 
 
 def classifier_grad(classifier, x, t, y=None, classifier_scale=1.0):

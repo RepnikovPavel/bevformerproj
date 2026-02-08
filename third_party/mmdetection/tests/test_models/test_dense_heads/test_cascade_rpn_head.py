@@ -2,11 +2,10 @@
 from unittest import TestCase
 
 import torch
-from mmengine.config import ConfigDict
-from mmengine.structures import InstanceData
-
 from mmdet.models.dense_heads import CascadeRPNHead
 from mmdet.structures import DetDataSample
+from mmengine.config import ConfigDict
+from mmengine.structures import InstanceData
 
 rpn_weight = 0.7
 cascade_rpn_config = ConfigDict(

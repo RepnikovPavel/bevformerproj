@@ -3,14 +3,14 @@ import argparse
 import os.path as osp
 from pathlib import Path
 
-import mmcv
-import mmengine
 import torch
-from mmengine import DictAction
-
 from mmpretrain.datasets import build_dataset
 from mmpretrain.structures import DataSample
 from mmpretrain.visualization import UniversalVisualizer
+
+import mmcv
+import mmengine
+from mmengine import DictAction
 
 
 def parse_args():

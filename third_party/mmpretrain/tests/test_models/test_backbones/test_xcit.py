@@ -1,7 +1,6 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 # The basic forward/backward tests are in ../test_models.py
 import torch
-
 from mmpretrain.apis import get_model
 
 

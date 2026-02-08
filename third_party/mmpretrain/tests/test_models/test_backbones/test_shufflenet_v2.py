@@ -1,11 +1,10 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import pytest
 import torch
-from torch.nn.modules import GroupNorm
-from torch.nn.modules.batchnorm import _BatchNorm
-
 from mmpretrain.models.backbones import ShuffleNetV2
 from mmpretrain.models.backbones.shufflenet_v2 import InvertedResidual
+from torch.nn.modules import GroupNorm
+from torch.nn.modules.batchnorm import _BatchNorm
 
 
 def is_block(modules):

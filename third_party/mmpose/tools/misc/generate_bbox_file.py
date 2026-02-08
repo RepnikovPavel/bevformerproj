@@ -3,12 +3,12 @@ import argparse
 import json
 
 import numpy as np
-from mmengine import Config
-
 from mmpose.evaluation.functional import nms
 from mmpose.registry import DATASETS
 from mmpose.structures import bbox_xyxy2xywh
 from mmpose.utils import register_all_modules
+
+from mmengine import Config
 
 try:
     from mmdet.apis import DetInferencer

@@ -4,10 +4,10 @@ from typing import Dict, List, Type, Union
 
 from mmengine.dist import dist
 
-from mmrazor.models.mutators.channel_mutator.channel_mutator import \
-    ChannelMutator
+from mmrazor.models.mutators.channel_mutator.channel_mutator import ChannelMutator
 from mmrazor.registry import MODELS
 from mmrazor.utils import print_log
+
 from .unit import GroupFisherChannelUnit
 
 

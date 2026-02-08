@@ -10,13 +10,14 @@ import zipfile
 from collections import defaultdict
 from functools import partial
 
-import mmcv
 import numpy as np
 import torch
 from mmcv.ops import nms_rotated
 from mmdet.datasets.custom import CustomDataset
 
+import mmcv
 from mmrotate.core import eval_rbbox_map, obb2poly_np, poly2obb_np
+
 from .builder import ROTATED_DATASETS
 
 

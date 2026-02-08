@@ -4,19 +4,19 @@ import hashlib
 import importlib
 import os
 import os.path as osp
-import pkg_resources
 import re
 import subprocess
 import tarfile
 import typing
 from collections import defaultdict
 from email.parser import FeedParser
-from pkg_resources import get_distribution, parse_version
 from typing import Any, List, Optional, Sequence, Tuple, Union
 
 import click
+import pkg_resources
 import requests
 from pip._vendor.packaging import version
+from pkg_resources import get_distribution, parse_version
 from requests.exceptions import InvalidURL, RequestException, Timeout
 from requests.models import Response
 
@@ -25,7 +25,6 @@ from .progress_bars import rich_progress_bar
 
 try:
     import torch
-    import torch_npu
 
     IS_NPU_AVAILABLE = hasattr(
         torch, 'npu') and torch.npu.is_available()  # type: ignore

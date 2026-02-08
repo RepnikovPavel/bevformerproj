@@ -1,10 +1,12 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import pytest
-from mmcv import ConfigDict
+from mmrotate.utils.compat_config import (
+    compat_imgs_per_gpu,
+    compat_loader_args,
+    compat_runner_args,
+)
 
-from mmrotate.utils.compat_config import (compat_imgs_per_gpu,
-                                          compat_loader_args,
-                                          compat_runner_args)
+from mmcv import ConfigDict
 
 
 def test_compat_runner_args():

@@ -2,7 +2,6 @@
 import pytest
 import torch
 from mmengine.utils import digit_version
-
 from mmpretrain.models.utils import channel_shuffle, is_tracing, make_divisible
 
 

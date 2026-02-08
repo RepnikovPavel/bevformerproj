@@ -7,6 +7,7 @@ from mmengine.model.weight_init import constant_init, xavier_init
 from torch import Tensor
 
 from mmagic.registry import MODELS
+
 from ..archs.aspp import ASPP
 
 

@@ -4,9 +4,9 @@ import platform
 
 import pytest
 import torch
-
-from mmagic.apis.inferencers.image_super_resolution_inferencer import \
-    ImageSuperResolutionInferencer
+from mmagic.apis.inferencers.image_super_resolution_inferencer import (
+    ImageSuperResolutionInferencer,
+)
 from mmagic.utils import register_all_modules
 
 register_all_modules()

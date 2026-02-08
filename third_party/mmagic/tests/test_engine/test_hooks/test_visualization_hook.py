@@ -3,19 +3,19 @@ import copy
 from unittest import TestCase
 from unittest.mock import MagicMock, Mock
 
-import mmcv
 import numpy as np
 import torch
-from mmengine import MessageHub
-from mmengine.testing import assert_allclose
-from mmengine.visualization import Visualizer
-from torch.utils.data.dataset import Dataset
-
 from mmagic.engine import VisualizationHook
 from mmagic.engine.hooks import BasicVisualizationHook
 from mmagic.structures import DataSample
 from mmagic.utils import register_all_modules
 from mmagic.visualization import ConcatImageVisualizer
+from mmengine.testing import assert_allclose
+from mmengine.visualization import Visualizer
+from torch.utils.data.dataset import Dataset
+
+import mmcv
+from mmengine import MessageHub
 
 from mmagic.registry import MODELS  # isort:skip  # noqa
 

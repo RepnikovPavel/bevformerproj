@@ -1,13 +1,11 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import pytest
 import torch
-
 from mmdet3d.models.layers import SparseBasicBlock
 from mmdet3d.models.layers.spconv import IS_SPCONV2_AVAILABLE
 
 if IS_SPCONV2_AVAILABLE:
-    from spconv.pytorch import (SparseConvTensor, SparseInverseConv3d,
-                                SubMConv3d)
+    from spconv.pytorch import SparseConvTensor, SparseInverseConv3d, SubMConv3d
 else:
     from mmcv.ops import SparseConvTensor, SparseInverseConv3d, SubMConv3d
 

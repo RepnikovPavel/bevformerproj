@@ -6,7 +6,6 @@ from unittest.mock import patch
 
 import torch
 from mmengine.logging import MMLogger
-
 from mmpretrain.datasets import RepeatAugSampler
 
 file = 'mmpretrain.datasets.samplers.repeat_aug.'

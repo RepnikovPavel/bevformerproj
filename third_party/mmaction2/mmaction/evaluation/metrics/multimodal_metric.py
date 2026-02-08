@@ -4,7 +4,6 @@
 # Copyright (c) 2014, Aishwarya Agrawal
 from typing import List, Optional, Sequence, Union
 
-import mmengine
 import numpy as np
 import torch
 import torch.nn.functional as F
@@ -12,8 +11,10 @@ from mmengine.evaluator import BaseMetric
 from mmengine.logging import MMLogger
 from mmengine.utils import is_seq_of
 
+import mmengine
 from mmaction.registry import METRICS
 from mmaction.structures.action_data_sample import format_label
+
 from .acc_metric import to_tensor
 
 

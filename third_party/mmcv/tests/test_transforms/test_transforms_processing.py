@@ -5,11 +5,18 @@ from unittest.mock import Mock
 
 import numpy as np
 import pytest
+from mmcv.transforms import (
+    TRANSFORMS,
+    Normalize,
+    Pad,
+    RandomFlip,
+    RandomResize,
+    Resize,
+    TestTimeAug,
+)
+from mmcv.transforms.base import BaseTransform
 
 import mmcv
-from mmcv.transforms import (TRANSFORMS, Normalize, Pad, RandomFlip,
-                             RandomResize, Resize, TestTimeAug)
-from mmcv.transforms.base import BaseTransform
 
 try:
     import torch

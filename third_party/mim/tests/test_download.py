@@ -1,7 +1,6 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import pytest
 from click.testing import CliRunner
-
 from mim.commands.download import download
 from mim.commands.install import cli as install
 from mim.commands.uninstall import cli as uninstall

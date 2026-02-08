@@ -2,12 +2,13 @@ import argparse
 import os
 import sys
 
-import mmcv
 import torch
 import torch.nn as nn
-from mmcv import Config, DictAction
 from mmcv.runner import load_checkpoint
 from torchvision.utils import save_image
+
+import mmcv
+from mmcv import Config, DictAction
 
 # yapf: disable
 sys.path.append(os.path.abspath(os.path.join(__file__, '../..')))  # isort:skip  # noqa

@@ -6,13 +6,11 @@
 import argparse
 
 import torch
-
+from models.codec.coco.rep_coco_trainer import RepCocoTrainer
 from models.codec.facodec.facodec_trainer import FAcodecTrainer
 from models.codec.vevo.vqvae_trainer import (
     VQVAETrainer,
 )
-from models.codec.coco.rep_coco_trainer import RepCocoTrainer
-
 from utils.util import load_config
 
 

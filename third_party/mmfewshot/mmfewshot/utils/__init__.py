@@ -2,9 +2,12 @@
 from .collate import multi_pipeline_collate_fn
 from .compat_config import compat_cfg
 from .dist_utils import check_dist_init, sync_random_seed
-from .infinite_sampler import (DistributedInfiniteGroupSampler,
+from .infinite_sampler import (
+                               DistributedInfiniteGroupSampler,
                                DistributedInfiniteSampler,
-                               InfiniteGroupSampler, InfiniteSampler)
+                               InfiniteGroupSampler,
+                               InfiniteSampler,
+)
 from .local_seed import local_numpy_seed
 from .logger import get_root_logger
 from .runner import InfiniteEpochBasedRunner

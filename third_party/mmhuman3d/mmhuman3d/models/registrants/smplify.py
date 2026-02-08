@@ -9,6 +9,7 @@ from mmhuman3d.core.conventions.keypoints_mapping import (
     get_keypoint_idx,
     get_keypoint_idxs_by_part,
 )
+
 from ..body_models.builder import build_body_model
 from ..losses.builder import build_loss
 

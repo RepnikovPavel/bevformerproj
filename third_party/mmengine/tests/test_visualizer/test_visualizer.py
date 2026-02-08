@@ -9,9 +9,9 @@ import numpy as np
 import pytest
 import torch
 import torch.nn as nn
+from mmengine.visualization import Visualizer
 
 from mmengine import VISBACKENDS, Config
-from mmengine.visualization import Visualizer
 
 
 @VISBACKENDS.register_module()

@@ -4,10 +4,10 @@ from abc import ABC, abstractmethod
 from typing import Any, Dict, Optional, Set, Tuple
 
 import torch
-from mmengine import print_log
 from torch import Tensor, nn
 from torch.nn.modules.batchnorm import _BatchNorm
 
+from mmengine import print_log
 from mmrazor.models.mutables.base_mutable import BaseMutable
 
 
@@ -74,8 +74,7 @@ class DynamicMixin(ABC):
         Raises:
             RuntimeError: Error if a existing mutable is not fixed.
         """
-        from mmrazor.models.mutables import (DerivedMutable,
-                                             MutableChannelContainer)
+        from mmrazor.models.mutables import DerivedMutable, MutableChannelContainer
 
         def check_fixed(mutable: Optional[BaseMutable]) -> None:
             if mutable is not None and not mutable.is_fixed:

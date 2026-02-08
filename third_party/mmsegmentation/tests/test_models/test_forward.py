@@ -12,9 +12,8 @@ from mmengine.model.utils import revert_sync_batchnorm
 from mmengine.registry import init_default_scope
 from mmengine.structures import PixelData
 from mmengine.utils import is_list_of, is_tuple_of
-from torch import Tensor
-
 from mmseg.structures import SegDataSample
+from torch import Tensor
 
 init_default_scope('mmseg')
 

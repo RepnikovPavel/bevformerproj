@@ -2,6 +2,7 @@ import argparse
 import json
 import os
 import uuid
+
 try:
     from label_studio_converter.imports.label_config import generate_label_config
 except:

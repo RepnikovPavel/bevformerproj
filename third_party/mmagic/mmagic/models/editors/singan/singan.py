@@ -8,7 +8,6 @@ import torch
 import torch.autograd as autograd
 import torch.nn as nn
 import torch.nn.functional as F
-from mmengine import Config, MessageHub, print_log
 from mmengine.model import is_model_wrapper
 from mmengine.optim import OptimWrapper, OptimWrapperDict
 from torch import Tensor
@@ -17,6 +16,8 @@ from mmagic.models.utils import get_module_device
 from mmagic.registry import MODELS
 from mmagic.structures import DataSample
 from mmagic.utils import ForwardInputs, SampleList
+from mmengine import Config, MessageHub, print_log
+
 from ...base_models import BaseGAN
 from ...utils import set_requires_grad
 

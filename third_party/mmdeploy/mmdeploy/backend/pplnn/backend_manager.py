@@ -83,6 +83,7 @@ class PPLNNManager(BaseBackendManager):
             Sequence[str]: Backend files.
         """
         from mmdeploy.utils import get_model_inputs
+
         from . import is_available
         from .onnx2pplnn import from_onnx
         assert is_available(), \

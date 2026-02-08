@@ -2,7 +2,6 @@
 from unittest import TestCase
 
 import torch
-
 from mmdet3d.models.decode_heads import PAConvHead
 from mmdet3d.structures import Det3DDataSample, PointData
 

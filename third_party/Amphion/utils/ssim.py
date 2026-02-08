@@ -5,10 +5,11 @@
 
 # This code is modified from https://github.com/Po-Hsun-Su/pytorch-ssim
 
+from math import exp
+
 import torch
 import torch.nn.functional as F
 from torch.autograd import Variable
-from math import exp
 
 
 def gaussian(window_size, sigma):

@@ -1,6 +1,7 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 """This module defines MutableChannelUnit."""
 import abc
+
 # from collections import set
 from typing import Dict, List, Type, TypeVar
 
@@ -9,9 +10,12 @@ import torch.nn as nn
 
 from mmrazor.models.architectures.dynamic_ops.mixins import DynamicChannelMixin
 from mmrazor.models.mutables import DerivedMutable
-from mmrazor.models.mutables.mutable_channel import (BaseMutableChannel,
-                                                     MutableChannelContainer)
+from mmrazor.models.mutables.mutable_channel import (
+    BaseMutableChannel,
+    MutableChannelContainer,
+)
 from mmrazor.models.utils import get_module_device
+
 from .channel_unit import Channel, ChannelUnit
 
 

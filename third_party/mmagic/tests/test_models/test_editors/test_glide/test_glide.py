@@ -4,7 +4,6 @@ import unittest
 from unittest import TestCase
 
 import torch
-
 from mmagic.models.diffusion_schedulers import EditDDIMScheduler
 from mmagic.utils import register_all_modules
 from projects.glide.models import Glide, SuperResText2ImUNet, Text2ImUNet

@@ -1,11 +1,11 @@
 """Stripped version of https://github.com/richzhang/PerceptualSimilarity/tree/master/models"""
 
-import torch
-import torch.nn as nn
-from torchvision import models
 from collections import namedtuple
 
+import torch
+import torch.nn as nn
 from taming.util import get_ckpt_path
+from torchvision import models
 
 
 class LPIPS(nn.Module):

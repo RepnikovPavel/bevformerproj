@@ -4,9 +4,9 @@ import os.path as osp
 import tempfile
 from argparse import ArgumentParser
 
-import mmcv
-
 from mmtrack.apis import inference_vid, init_model
+
+import mmcv
 
 
 def main():

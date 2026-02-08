@@ -7,17 +7,17 @@ from argparse import ArgumentParser
 
 import cv2
 import json_tricks as json
-import mmcv
-import mmengine
 import numpy as np
 from mmengine.logging import print_log
-
 from mmpose.apis import inference_topdown
 from mmpose.apis import init_model as init_pose_estimator
 from mmpose.evaluation.functional import nms
 from mmpose.registry import VISUALIZERS
 from mmpose.structures import merge_data_samples, split_instances
 from mmpose.utils import adapt_mmdet_pipeline
+
+import mmcv
+import mmengine
 
 try:
     from mmdet.apis import inference_detector, init_detector

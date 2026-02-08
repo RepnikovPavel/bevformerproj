@@ -4,18 +4,21 @@ from unittest import TestCase
 from unittest.mock import MagicMock
 
 import torch
-from mmengine import MessageHub
+from mmagic.models import BaseGAN, DataPreprocessor
+from mmagic.models.losses import (
+    DiscShiftLossComps,
+    GANLossComps,
+    GeneratorPathRegularizerComps,
+    GradientPenaltyLossComps,
+)
+from mmagic.registry import MODELS
+from mmagic.structures import DataSample
 from mmengine.optim import OptimWrapper, OptimWrapperDict
 from mmengine.testing import assert_allclose
 from torch.nn import ModuleList
 from torch.optim import SGD
 
-from mmagic.models import BaseGAN, DataPreprocessor
-from mmagic.models.losses import (DiscShiftLossComps, GANLossComps,
-                                  GeneratorPathRegularizerComps,
-                                  GradientPenaltyLossComps)
-from mmagic.registry import MODELS
-from mmagic.structures import DataSample
+from mmengine import MessageHub
 
 generator = dict(type='DCGANGenerator', output_scale=8, base_channels=8)
 discriminator = dict(

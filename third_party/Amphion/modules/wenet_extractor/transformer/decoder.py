@@ -20,18 +20,20 @@
 # }
 #
 """Decoder definition."""
-from typing import Tuple, List, Optional
+from typing import List, Optional, Tuple
 
 import torch
 
 from modules.wenet_extractor.transformer.attention import MultiHeadedAttention
 from modules.wenet_extractor.transformer.decoder_layer import DecoderLayer
-from modules.wenet_extractor.transformer.embedding import PositionalEncoding
-from modules.wenet_extractor.transformer.embedding import NoPositionalEncoding
+from modules.wenet_extractor.transformer.embedding import (
+    NoPositionalEncoding,
+    PositionalEncoding,
+)
 from modules.wenet_extractor.transformer.positionwise_feed_forward import (
     PositionwiseFeedForward,
 )
-from modules.wenet_extractor.utils.mask import subsequent_mask, make_pad_mask
+from modules.wenet_extractor.utils.mask import make_pad_mask, subsequent_mask
 
 
 class TransformerDecoder(torch.nn.Module):

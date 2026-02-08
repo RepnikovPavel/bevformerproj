@@ -4,6 +4,7 @@ from typing import Dict, List, Optional, Sequence
 from torch import Tensor
 
 from mmdet3d.registry import MODELS
+
 from .mvx_two_stage import MVXTwoStageDetector
 
 

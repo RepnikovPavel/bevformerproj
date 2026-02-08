@@ -3,7 +3,6 @@ from unittest import TestCase
 from unittest.mock import MagicMock
 
 import torch
-
 from mmpretrain.engine import PrepareProtoBeforeValLoopHook
 from mmpretrain.models.retrievers import BaseRetriever
 

@@ -2,8 +2,9 @@
 import sys
 from unittest import TestCase
 
-import mmengine
 from mmengine.utils.dl_utils import collect_env
+
+import mmengine
 
 
 class TestCollectEnv(TestCase):

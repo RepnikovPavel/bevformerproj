@@ -6,6 +6,7 @@ import torch.nn as nn
 from mmcv.cnn import build_activation_layer
 
 from mmpretrain.registry import MODELS
+
 from .cls_head import ClsHead
 
 

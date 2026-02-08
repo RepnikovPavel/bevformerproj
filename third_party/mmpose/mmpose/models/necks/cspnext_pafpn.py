@@ -10,6 +10,7 @@ from torch import Tensor
 
 from mmpose.registry import MODELS
 from mmpose.utils.typing import ConfigType, OptMultiConfig
+
 from ..utils import CSPLayer
 
 

@@ -4,8 +4,9 @@ import os
 import os.path as osp
 from typing import Dict, List, Optional, Tuple
 
-import mmengine
 import numpy as np
+
+import mmengine
 
 training_subjects_60 = [
     1, 2, 4, 5, 8, 9, 13, 14, 15, 16, 17, 18, 19, 25, 27, 28, 31, 34, 35, 38

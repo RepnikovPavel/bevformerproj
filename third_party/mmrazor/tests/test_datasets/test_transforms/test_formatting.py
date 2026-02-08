@@ -7,7 +7,6 @@ import numpy as np
 import torch
 from mmcls.structures import ClsDataSample
 from mmengine.structures import LabelData
-
 from mmrazor.datasets.transforms import PackCRDClsInputs
 
 

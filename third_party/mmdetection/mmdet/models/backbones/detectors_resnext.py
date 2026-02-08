@@ -4,6 +4,7 @@ import math
 from mmcv.cnn import build_conv_layer, build_norm_layer
 
 from mmdet.registry import MODELS
+
 from .detectors_resnet import Bottleneck as _Bottleneck
 from .detectors_resnet import DetectoRS_ResNet
 

@@ -1,8 +1,7 @@
 from mmengine.dataset import RepeatDataset
 from mmengine.registry import build_from_cfg
-from torch.utils.data.dataset import ConcatDataset
-
 from mmpose.datasets.builder import DATASETS
+from torch.utils.data.dataset import ConcatDataset
 
 
 def _concat_cfg(cfg):

@@ -1,5 +1,4 @@
 # Copyright (c) OpenMMLab. All rights reserved.
-import mmcv
 import numpy as np
 import torch
 from mmcv.ops import RoIPool
@@ -7,6 +6,7 @@ from mmcv.parallel import collate, scatter
 from mmdet.datasets import replace_ImageToTensor
 from mmdet.datasets.pipelines import Compose
 
+import mmcv
 from mmrotate.core import get_multiscale_patch, merge_results, slide_window
 
 

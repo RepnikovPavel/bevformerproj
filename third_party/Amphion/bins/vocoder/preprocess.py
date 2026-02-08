@@ -7,17 +7,15 @@ import faulthandler
 
 faulthandler.enable()
 
-import os
 import argparse
 import json
-import pyworld as pw
+import os
 from multiprocessing import cpu_count
 
-
-from utils.util import load_config
-from preprocessors.processor import preprocess_dataset, prepare_align
 from preprocessors.metadata import cal_metadata
-from processors import acoustic_extractor, content_extractor, data_augment
+from preprocessors.processor import preprocess_dataset
+from processors import acoustic_extractor, data_augment
+from utils.util import load_config
 
 
 def extract_acoustic_features(dataset, output_path, cfg, n_workers=1):

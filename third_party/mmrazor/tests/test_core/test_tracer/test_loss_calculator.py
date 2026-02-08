@@ -3,10 +3,11 @@ from unittest import TestCase
 
 import torch
 from mmengine.hub import get_model
-
-from mmrazor.models.task_modules.tracer import (ImageClassifierPseudoLoss,
-                                                SingleStageDetectorPseudoLoss,
-                                                SumPseudoLoss)
+from mmrazor.models.task_modules.tracer import (
+    ImageClassifierPseudoLoss,
+    SingleStageDetectorPseudoLoss,
+    SumPseudoLoss,
+)
 
 
 class TestLossCalculator(TestCase):

@@ -13,6 +13,7 @@ from tqdm.auto import tqdm
 
 from mmagic.registry import MODELS
 from mmagic.utils.typing import SampleList
+
 from .stable_diffusion import StableDiffusion
 
 logger = MMLogger.get_current_instance()

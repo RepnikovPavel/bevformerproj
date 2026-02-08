@@ -4,6 +4,7 @@ from copy import deepcopy
 import torch
 
 from mmagic.registry import MODELS
+
 from ..srgan import SRGAN
 
 

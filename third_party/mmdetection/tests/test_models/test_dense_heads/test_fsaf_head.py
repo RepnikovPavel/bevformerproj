@@ -3,10 +3,10 @@ from math import ceil
 from unittest import TestCase
 
 import torch
-from mmengine import Config
+from mmdet.models.dense_heads import FSAFHead
 from mmengine.structures import InstanceData
 
-from mmdet.models.dense_heads import FSAFHead
+from mmengine import Config
 
 
 class TestFSAFHead(TestCase):

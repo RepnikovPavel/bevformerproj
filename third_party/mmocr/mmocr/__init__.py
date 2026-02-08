@@ -1,11 +1,13 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 
-import mmcv
 import mmdet
 
+import mmcv
+
 try:
-    import mmengine
     from mmengine.utils import digit_version
+
+    import mmengine
 except ImportError:
     mmengine = None
     from mmcv import digit_version

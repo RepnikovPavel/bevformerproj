@@ -4,21 +4,14 @@
 # LICENSE file in the root directory of this source tree.
 
 import torch
+from models.tts.base.tts_dataset import (
+    TTSCollator,
+    TTSDataset,
+    TTSTestCollator,
+    TTSTestDataset,
+)
 from torch.nn.utils.rnn import pad_sequence
 from utils.data_utils import *
-from models.tts.base.tts_dataset import (
-    TTSDataset,
-    TTSCollator,
-    TTSTestDataset,
-    TTSTestCollator,
-)
-
-from torch.utils.data.sampler import (
-    BatchSampler,
-    RandomSampler,
-    SequentialSampler,
-)
-
 from utils.tokenizer import tokenize_audio
 
 

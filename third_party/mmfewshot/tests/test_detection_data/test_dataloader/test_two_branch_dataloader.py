@@ -1,8 +1,6 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 from mmdet.apis.train import set_random_seed
-
-from mmfewshot.detection.datasets.builder import (build_dataloader,
-                                                  build_dataset)
+from mmfewshot.detection.datasets.builder import build_dataloader, build_dataset
 
 
 def test_two_branch_dataloader():

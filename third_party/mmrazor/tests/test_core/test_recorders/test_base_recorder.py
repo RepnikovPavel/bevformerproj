@@ -1,9 +1,8 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 from unittest import TestCase
 
-from toy_mod import Toy
-
 from mmrazor.models.task_modules import MethodOutputsRecorder
+from toy_mod import Toy
 
 
 class TestFuncOutputsRecorder(TestCase):

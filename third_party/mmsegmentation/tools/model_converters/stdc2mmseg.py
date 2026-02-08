@@ -2,9 +2,10 @@
 import argparse
 import os.path as osp
 
-import mmengine
 import torch
 from mmengine.runner import CheckpointLoader
+
+import mmengine
 
 
 def convert_stdc(ckpt, stdc_type):

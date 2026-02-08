@@ -3,7 +3,6 @@ from unittest import TestCase
 
 import torch
 from mmengine.config import Config
-
 from mmyolo.models.dense_heads import YOLOv6Head
 from mmyolo.utils import register_all_modules
 

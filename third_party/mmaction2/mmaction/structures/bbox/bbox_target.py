@@ -1,9 +1,10 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 from typing import List, Union
 
-import mmengine
 import torch
 import torch.nn.functional as F
+
+import mmengine
 
 
 def bbox_target(pos_bboxes_list: List[torch.Tensor],

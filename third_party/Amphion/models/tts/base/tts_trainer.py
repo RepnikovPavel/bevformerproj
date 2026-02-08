@@ -5,23 +5,22 @@
 
 import json
 import os
+import re
 import shutil
-import torch
 import time
 from pathlib import Path
-import torch
-from tqdm import tqdm
-import re
-import logging
-import json5
+
 import accelerate
+import json5
+import torch
+from accelerate import DistributedDataParallelKwargs
 from accelerate.logging import get_logger
 from accelerate.utils import ProjectConfiguration
-from torch.utils.data import ConcatDataset, DataLoader
-from accelerate import DistributedDataParallelKwargs
-from schedulers.scheduler import Eden
 from models.base.base_sampler import build_samplers
 from models.base.new_trainer import BaseTrainer
+from schedulers.scheduler import Eden
+from torch.utils.data import ConcatDataset, DataLoader
+from tqdm import tqdm
 
 
 class TTSTrainer(BaseTrainer):

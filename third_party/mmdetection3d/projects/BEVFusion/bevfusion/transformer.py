@@ -1,8 +1,7 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 from mmdet.models import DetrTransformerDecoderLayer
-from torch import Tensor, nn
-
 from mmdet3d.registry import MODELS
+from torch import Tensor, nn
 
 
 class PositionEncodingLearned(nn.Module):

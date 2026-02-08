@@ -6,7 +6,6 @@ from copy import deepcopy
 from typing import Dict, List, Optional, Sequence, Tuple, Union
 
 import torch
-from mmengine import MessageHub
 from mmengine.dist import master_only
 from mmengine.hooks import Hook
 from mmengine.registry import HOOKS
@@ -17,6 +16,7 @@ from mmengine.visualization import Visualizer
 
 from mmagic.structures import DataSample
 from mmagic.utils import get_sampler
+from mmengine import MessageHub
 
 
 @HOOKS.register_module()

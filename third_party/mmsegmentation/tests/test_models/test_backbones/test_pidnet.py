@@ -4,7 +4,6 @@ import tempfile
 
 import torch
 from mmengine.registry import init_default_scope
-
 from mmseg.registry import MODELS
 
 init_default_scope('mmseg')

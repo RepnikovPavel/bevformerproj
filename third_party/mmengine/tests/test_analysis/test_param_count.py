@@ -5,10 +5,8 @@
 
 import unittest
 
+from mmengine.analysis.complexity_analysis import parameter_count, parameter_count_table
 from torch import nn
-
-from mmengine.analysis.complexity_analysis import (parameter_count,
-                                                   parameter_count_table)
 
 
 class NetWithReuse(nn.Module):

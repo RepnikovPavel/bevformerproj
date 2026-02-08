@@ -2,10 +2,11 @@
 import warnings
 from copy import deepcopy
 
-import mmcv
 import torch
 from mmcv.parallel import is_module_wrapper
 from mmcv.runner import HOOKS, Hook
+
+import mmcv
 
 
 @HOOKS.register_module()

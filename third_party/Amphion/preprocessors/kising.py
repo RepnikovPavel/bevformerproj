@@ -3,15 +3,14 @@
 # This source code is licensed under the MIT license found in the
 # LICENSE file in the root directory of this source tree.
 
-import random
-import os
 import json
-import torchaudio
-from tqdm import tqdm
-from glob import glob
+import os
 from collections import defaultdict
+from glob import glob
 
+import torchaudio
 from utils.util import has_existed
+
 from preprocessors import GOLDEN_TEST_SAMPLES
 
 

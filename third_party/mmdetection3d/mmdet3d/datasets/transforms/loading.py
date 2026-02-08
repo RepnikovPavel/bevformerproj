@@ -2,14 +2,14 @@
 import copy
 from typing import List, Optional, Union
 
-import mmcv
-import mmengine
 import numpy as np
 from mmcv.transforms import LoadImageFromFile
 from mmcv.transforms.base import BaseTransform
 from mmdet.datasets.transforms import LoadAnnotations
 from mmengine.fileio import get
 
+import mmcv
+import mmengine
 from mmdet3d.registry import TRANSFORMS
 from mmdet3d.structures.bbox_3d import get_box_type
 from mmdet3d.structures.points import BasePoints, get_points_type

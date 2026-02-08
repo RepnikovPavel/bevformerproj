@@ -8,6 +8,7 @@ from mmengine.fileio import exists, get_local_path
 
 from mmpose.registry import DATASETS
 from mmpose.structures.bbox import bbox_cs2xyxy
+
 from ..base import BaseCocoStyleDataset
 
 

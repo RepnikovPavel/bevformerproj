@@ -2,8 +2,13 @@
 from .stylegan1 import StyleGAN1
 from .stylegan1_discriminator import StyleGAN1Discriminator
 from .stylegan1_generator import StyleGAN1Generator
-from .stylegan1_modules import (Blur, ConstantInput, EqualLinearActModule,
-                                NoiseInjection, make_kernel)
+from .stylegan1_modules import (
+                                Blur,
+                                ConstantInput,
+                                EqualLinearActModule,
+                                NoiseInjection,
+                                make_kernel,
+)
 from .stylegan_utils import get_mean_latent, style_mixing
 
 __all__ = [

@@ -16,8 +16,10 @@ try:
 
     kernel_path = os.path.abspath(os.path.join('..'))
     sys.path.append(kernel_path)
-    from kernels.window_process.window_process import (WindowProcess,
-                                                       WindowProcessReverse)
+    from kernels.window_process.window_process import (
+        WindowProcess,
+        WindowProcessReverse,
+    )
 
 except ImportError:
     WindowProcess = None

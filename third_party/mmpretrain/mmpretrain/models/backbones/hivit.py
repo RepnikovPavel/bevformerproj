@@ -7,6 +7,7 @@ from mmcv.cnn.bricks import DropPath
 from mmengine.model.weight_init import trunc_normal_
 
 from mmpretrain.registry import MODELS
+
 from ..utils import build_norm_layer, to_2tuple
 from .base_backbone import BaseBackbone
 

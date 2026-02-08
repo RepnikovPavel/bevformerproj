@@ -6,18 +6,18 @@ import random
 from unittest import TestCase
 from unittest.mock import ANY, call, patch
 
-import mmengine
 import numpy as np
 import pytest
 import torch
 import torchvision
 from mmcv.transforms import Compose
 from mmengine.utils import digit_version
+from mmpretrain.datasets.transforms.processing import VISION_TRANSFORMS
+from mmpretrain.registry import TRANSFORMS
 from PIL import Image
 from torchvision import transforms
 
-from mmpretrain.datasets.transforms.processing import VISION_TRANSFORMS
-from mmpretrain.registry import TRANSFORMS
+import mmengine
 
 try:
     import albumentations

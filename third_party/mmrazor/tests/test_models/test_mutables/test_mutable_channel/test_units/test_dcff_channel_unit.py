@@ -3,10 +3,10 @@ from typing import List
 from unittest import TestCase
 
 import torch
-
 from mmrazor.models.architectures.dynamic_ops import FuseConv2d
 from mmrazor.models.mutables import DCFFChannelUnit
 from mmrazor.models.task_modules import ChannelAnalyzer
+
 from .....data.models import SingleLineModel
 
 DEVICE = torch.device('cpu')

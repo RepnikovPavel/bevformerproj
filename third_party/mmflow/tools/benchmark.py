@@ -3,12 +3,12 @@ import argparse
 import time
 
 import torch
-from mmcv import Config
 from mmcv.parallel import MMDataParallel
 from mmcv.runner import load_checkpoint, wrap_fp16_model
-
 from mmflow.datasets import build_dataloader, build_dataset
 from mmflow.models import build_flow_estimator
+
+from mmcv import Config
 
 
 def parse_args():

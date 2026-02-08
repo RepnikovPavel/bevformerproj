@@ -2,7 +2,6 @@
 import os.path as osp
 from typing import Dict, List, Optional, Sequence, Tuple, Union
 
-import mmengine
 import numpy as np
 from mmengine.dataset import Compose
 from mmengine.fileio import list_from_file
@@ -10,6 +9,7 @@ from mmengine.infer.infer import BaseInferencer, ModelType
 from mmengine.registry import init_default_scope
 from mmengine.structures import InstanceData
 
+import mmengine
 from mmaction.registry import INFERENCERS
 from mmaction.structures import ActionDataSample
 from mmaction.utils import ConfigType, get_str_type

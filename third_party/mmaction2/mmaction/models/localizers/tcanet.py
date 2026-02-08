@@ -10,9 +10,15 @@ from torch import Tensor, nn
 
 from mmaction.registry import MODELS
 from mmaction.utils import OptConfigType
-from .utils import (batch_iou, bbox_se_transform_batch, bbox_se_transform_inv,
-                    bbox_xw_transform_batch, bbox_xw_transform_inv,
-                    post_processing)
+
+from .utils import (
+    batch_iou,
+    bbox_se_transform_batch,
+    bbox_se_transform_inv,
+    bbox_xw_transform_batch,
+    bbox_xw_transform_inv,
+    post_processing,
+)
 
 
 class LGTE(BaseModel):

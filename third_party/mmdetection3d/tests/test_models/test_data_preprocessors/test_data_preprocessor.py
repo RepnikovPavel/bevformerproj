@@ -3,7 +3,6 @@ from unittest import TestCase
 
 import pytest
 import torch
-
 from mmdet3d.models.data_preprocessors import Det3DDataPreprocessor
 from mmdet3d.structures import Det3DDataSample, PointData
 

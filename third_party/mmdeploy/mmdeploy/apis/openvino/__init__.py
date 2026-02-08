@@ -6,6 +6,7 @@ __all__ = ['is_available']
 if is_available():
     from mmdeploy.backend.openvino.onnx2openvino import from_onnx as _from_onnx
     from mmdeploy.backend.openvino.onnx2openvino import get_output_model_file
+
     from ..core import PIPELINE_MANAGER
 
     from_onnx = PIPELINE_MANAGER.register_pipeline()(_from_onnx)

@@ -1,12 +1,10 @@
 # Copyright (c) OpenMMLab. All rights reserved.
-from mmengine.model import MMSeparateDistributedDataParallel
-from mmengine.optim import OptimWrapper
-
 from mmagic.models import DataPreprocessor
-from mmagic.models.editors import (GLDecoder, GLDilationNeck, GLEncoder,
-                                   GLEncoderDecoder)
+from mmagic.models.editors import GLDecoder, GLDilationNeck, GLEncoder, GLEncoderDecoder
 from mmagic.models.editors.global_local import GLDiscs, GLInpaintor
 from mmagic.models.losses import GANLoss, L1Loss
+from mmengine.model import MMSeparateDistributedDataParallel
+from mmengine.optim import OptimWrapper
 
 # DistributedDataParallel
 model_wrapper_cfg = dict(type=MMSeparateDistributedDataParallel)

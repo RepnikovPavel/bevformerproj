@@ -7,6 +7,7 @@ from mmengine.structures import InstanceData
 from torch import Tensor
 
 from mmdet.registry import TASK_UTILS
+
 from .assign_result import AssignResult
 from .base_assigner import BaseAssigner
 

@@ -3,6 +3,7 @@
 
 import os
 
+
 # save path to training data
 def write_list(lms_list, imgs_list, msks_list, mode='train',save_folder='datalist', save_name=''):
     save_path = os.path.join(save_folder, mode)

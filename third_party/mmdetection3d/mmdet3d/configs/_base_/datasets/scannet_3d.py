@@ -1,20 +1,23 @@
 # Copyright (c) OpenMMLab. All rights reserved.
+from mmdet3d.datasets.scannet_dataset import ScanNetDataset
+from mmdet3d.datasets.transforms.formating import Pack3DDetInputs
+from mmdet3d.datasets.transforms.loading import (
+                                                 LoadAnnotations3D,
+                                                 LoadPointsFromFile,
+                                                 PointSegClassMapping,
+)
+from mmdet3d.datasets.transforms.test_time_aug import MultiScaleFlipAug3D
+from mmdet3d.datasets.transforms.transforms_3d import (
+                                                 GlobalAlignment,
+                                                 GlobalRotScaleTrans,
+                                                 PointSample,
+                                                 RandomFlip3D,
+)
+from mmdet3d.evaluation.metrics.indoor_metric import IndoorMetric
+from mmdet3d.visualization.local_visualizer import Det3DLocalVisualizer
 from mmengine.dataset.dataset_wrapper import RepeatDataset
 from mmengine.dataset.sampler import DefaultSampler
 from mmengine.visualization.vis_backend import LocalVisBackend
-
-from mmdet3d.datasets.scannet_dataset import ScanNetDataset
-from mmdet3d.datasets.transforms.formating import Pack3DDetInputs
-from mmdet3d.datasets.transforms.loading import (LoadAnnotations3D,
-                                                 LoadPointsFromFile,
-                                                 PointSegClassMapping)
-from mmdet3d.datasets.transforms.test_time_aug import MultiScaleFlipAug3D
-from mmdet3d.datasets.transforms.transforms_3d import (GlobalAlignment,
-                                                       GlobalRotScaleTrans,
-                                                       PointSample,
-                                                       RandomFlip3D)
-from mmdet3d.evaluation.metrics.indoor_metric import IndoorMetric
-from mmdet3d.visualization.local_visualizer import Det3DLocalVisualizer
 
 # dataset settings
 dataset_type = 'ScanNetDataset'

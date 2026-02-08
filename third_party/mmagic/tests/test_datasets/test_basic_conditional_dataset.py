@@ -4,7 +4,6 @@ import os.path as osp
 from unittest import TestCase
 
 import numpy as np
-
 from mmagic.datasets import BasicConditionalDataset
 from mmagic.utils import register_all_modules
 

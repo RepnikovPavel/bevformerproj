@@ -3,14 +3,20 @@ from copy import deepcopy
 
 import pytest
 import torch
-
 from mmgen.models.architectures.stylegan.generator_discriminator_v2 import (
-    ADAStyleGAN2Discriminator, StyleGAN2Discriminator, StyleGANv2Generator)
-from mmgen.models.architectures.stylegan.modules import (Blur,
-                                                         ModulatedStyleConv,
-                                                         ModulatedToRGB)
+    ADAStyleGAN2Discriminator,
+    StyleGAN2Discriminator,
+    StyleGANv2Generator,
+)
+from mmgen.models.architectures.stylegan.modules import (
+    Blur,
+    ModulatedStyleConv,
+    ModulatedToRGB,
+)
 from mmgen.models.architectures.stylegan.mspie import (
-    MSStyleGAN2Discriminator, MSStyleGANv2Generator)
+    MSStyleGAN2Discriminator,
+    MSStyleGANv2Generator,
+)
 
 
 class TestBlur:

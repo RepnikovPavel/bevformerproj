@@ -1,5 +1,6 @@
 from .twodim_pose import TwoDimPoseEstimator
 
+
 class HRPoseEstimator(TwoDimPoseEstimator):
     def __init__(self,
                  backbone,

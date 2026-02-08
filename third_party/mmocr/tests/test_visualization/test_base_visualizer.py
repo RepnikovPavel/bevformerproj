@@ -2,7 +2,6 @@
 from unittest import TestCase
 
 import numpy as np
-
 from mmocr.visualization import BaseLocalVisualizer
 
 

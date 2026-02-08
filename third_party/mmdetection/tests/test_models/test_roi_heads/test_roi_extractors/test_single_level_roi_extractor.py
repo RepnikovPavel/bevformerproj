@@ -1,7 +1,6 @@
 import unittest
 
 import torch
-
 from mmdet.models.roi_heads.roi_extractors import SingleRoIExtractor
 
 

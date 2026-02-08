@@ -1,8 +1,8 @@
 # modified from https://github.com/Haiyang-W/DSVT
 import torch
 import torch.nn as nn
-
 from mmdet3d.registry import MODELS
+
 from .dsvt_input_layer import DSVTInputLayer
 
 

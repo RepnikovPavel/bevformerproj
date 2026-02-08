@@ -1,11 +1,10 @@
 # Modified from https://github.com/Simon4Yan/eSPGAN/blob/master/py-spgan/models/models_spgan.py
 
 import functools
+
 import torch.nn as nn
-import torch.nn.functional as F
 
 from ..utils.init_net import init_weights
-
 
 __all__ = ['NLayerDiscriminator', 'patchgan_3layers']
 

@@ -20,12 +20,12 @@ from typing import Callable, Dict, List, Optional, Tuple, Union
 import safetensors
 import torch
 import torch.nn.functional as F
-from huggingface_hub.utils import validate_hf_hub_args
-from torch import nn
-
 from diffusers.loaders.utils import AttnProcsLayers
 from diffusers.models.embeddings import ImageProjection
-from diffusers.models.modeling_utils import _LOW_CPU_MEM_USAGE_DEFAULT, load_model_dict_into_meta
+from diffusers.models.modeling_utils import (
+    _LOW_CPU_MEM_USAGE_DEFAULT,
+    load_model_dict_into_meta,
+)
 from diffusers.utils import (
     USE_PEFT_BACKEND,
     _get_model_file,
@@ -41,7 +41,8 @@ from foleycrafter.models.auffusion.attention_processor import (
     IPAdapterAttnProcessor2_0,
     VPTemporalAdapterAttnProcessor2_0,
 )
-
+from huggingface_hub.utils import validate_hf_hub_args
+from torch import nn
 
 if is_accelerate_available():
     from accelerate import init_empty_weights
@@ -204,7 +205,12 @@ class UNet2DConditionLoadersMixin:
         ```
         """
         from diffusers.models.attention_processor import CustomDiffusionAttnProcessor
-        from diffusers.models.lora import LoRACompatibleConv, LoRACompatibleLinear, LoRAConv2dLayer, LoRALinearLayer
+        from diffusers.models.lora import (
+            LoRACompatibleConv,
+            LoRACompatibleLinear,
+            LoRAConv2dLayer,
+            LoRALinearLayer,
+        )
 
         cache_dir = kwargs.pop("cache_dir", None)
         force_download = kwargs.pop("force_download", False)

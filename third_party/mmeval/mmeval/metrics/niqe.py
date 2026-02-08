@@ -1,12 +1,14 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import math
-import numpy as np
 import os
-from scipy.ndimage import convolve
-from scipy.special import gamma
 from typing import Callable, Dict, List, Optional, Sequence, Tuple
 
+import numpy as np
+from scipy.ndimage import convolve
+from scipy.special import gamma
+
 from mmeval.core import BaseMetric
+
 from .utils import reorder_and_crop
 
 

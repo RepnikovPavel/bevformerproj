@@ -3,10 +3,10 @@ from typing import List, Tuple
 
 import torch
 from mmengine.structures import InstanceData
-from torch import Tensor
-
 from mmocr.registry import MODELS
 from mmocr.utils import ConfigType, OptMultiConfig
+from torch import Tensor
+
 from .base_roi_extractor import BaseRoIExtractor
 
 

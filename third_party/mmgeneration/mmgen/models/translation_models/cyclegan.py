@@ -2,6 +2,7 @@
 from torch.nn.parallel.distributed import _find_tensors
 
 from mmgen.models.builder import MODELS
+
 from ..common import GANImageBuffer, set_requires_grad
 from .static_translation_gan import StaticTranslationGAN
 

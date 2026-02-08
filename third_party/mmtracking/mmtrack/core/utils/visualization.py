@@ -5,11 +5,12 @@ import random
 import cv2
 import matplotlib
 import matplotlib.pyplot as plt
-import mmcv
 import numpy as np
 import seaborn as sns
 from matplotlib.patches import Rectangle
 from mmcv.utils import mkdir_or_exist
+
+import mmcv
 
 
 def random_color(seed):

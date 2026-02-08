@@ -1,13 +1,19 @@
 from __future__ import division
+
 import argparse
 import os
 
-from mmcv import Config
-
-from mmfashion.apis import (get_root_logger, init_dist, set_random_seed,
-                            train_geometric_matching, train_tryon)
+from mmfashion.apis import (
+    get_root_logger,
+    init_dist,
+    set_random_seed,
+    train_geometric_matching,
+    train_tryon,
+)
 from mmfashion.datasets import get_dataset
 from mmfashion.models import build_geometric_matching, build_tryon
+
+from mmcv import Config
 
 
 def parse_args():

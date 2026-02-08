@@ -3,6 +3,7 @@ from abc import ABCMeta, abstractmethod
 
 import torch.nn as nn
 
+
 class BaseLocalizer(nn.Module):
     """Base class for localizers"""
 

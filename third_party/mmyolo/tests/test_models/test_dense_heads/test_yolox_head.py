@@ -5,7 +5,6 @@ import torch
 from mmengine.config import Config
 from mmengine.model import bias_init_with_prob
 from mmengine.testing import assert_allclose
-
 from mmyolo.models.dense_heads import YOLOXHead, YOLOXPoseHead
 from mmyolo.utils import register_all_modules
 

@@ -1,7 +1,6 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import pytest
 import torch
-
 from mmselfsup.models.backbones import ResNeXt
 from mmselfsup.models.backbones.resnext import Bottleneck as BottleneckX
 

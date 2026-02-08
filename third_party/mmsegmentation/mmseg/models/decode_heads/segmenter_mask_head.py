@@ -4,11 +4,11 @@ import torch.nn as nn
 import torch.nn.functional as F
 from mmcv.cnn import build_norm_layer
 from mmengine.model import ModuleList
-from mmengine.model.weight_init import (constant_init, trunc_normal_,
-                                        trunc_normal_init)
+from mmengine.model.weight_init import constant_init, trunc_normal_, trunc_normal_init
 
 from mmseg.models.backbones.vit import TransformerEncoderLayer
 from mmseg.registry import MODELS
+
 from .decode_head import BaseDecodeHead
 
 

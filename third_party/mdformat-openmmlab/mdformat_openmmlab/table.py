@@ -1,7 +1,7 @@
 # Modified from https://github.com/executablebooks/mdformat-tables
 
-from typing import List, Optional, Sequence
 import unicodedata
+from typing import List, Optional, Sequence
 
 from mdformat.renderer import RenderContext, RenderTreeNode
 

@@ -1,7 +1,6 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import torch
 import torch.nn as nn
-
 from mmaction.engine.optimizers import SwinOptimWrapperConstructor
 
 

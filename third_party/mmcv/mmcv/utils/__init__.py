@@ -1,7 +1,11 @@
 # Copyright (c) OpenMMLab. All rights reserved.
-from .device_type import (IS_CUDA_AVAILABLE, IS_MLU_AVAILABLE,
-                          IS_MPS_AVAILABLE, IS_MUSA_AVAILABLE,
-                          IS_NPU_AVAILABLE)
+from .device_type import (
+                          IS_CUDA_AVAILABLE,
+                          IS_MLU_AVAILABLE,
+                          IS_MPS_AVAILABLE,
+                          IS_MUSA_AVAILABLE,
+                          IS_NPU_AVAILABLE,
+)
 from .env import collect_env
 from .parrots_jit import jit, skip_no_elena
 

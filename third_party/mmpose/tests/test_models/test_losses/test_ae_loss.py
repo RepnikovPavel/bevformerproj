@@ -6,11 +6,10 @@ from unittest import TestCase
 import numpy as np
 import torch
 import torch.nn as nn
-from torch import Tensor
-
 from mmpose.codecs.associative_embedding import AssociativeEmbedding
 from mmpose.models.losses.ae_loss import AssociativeEmbeddingLoss
 from mmpose.testing._utils import get_coco_sample
+from torch import Tensor
 
 
 class AELoss(nn.Module):

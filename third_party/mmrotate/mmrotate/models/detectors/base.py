@@ -1,10 +1,11 @@
 # Copyright (c) OpenMMLab. All rights reserved.
-import mmcv
 import numpy as np
 import torch
 from mmdet.models import BaseDetector
 
+import mmcv
 from mmrotate.core import imshow_det_rbboxes
+
 from ..builder import ROTATED_DETECTORS
 
 

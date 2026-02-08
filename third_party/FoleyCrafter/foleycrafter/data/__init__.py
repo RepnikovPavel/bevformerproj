@@ -1,4 +1,11 @@
-from .dataset import AudioSetStrong, CPU_Unpickler, VGGSound, dynamic_range_compression, get_mel, zero_rank_print
+from .dataset import (
+    AudioSetStrong,
+    CPU_Unpickler,
+    VGGSound,
+    dynamic_range_compression,
+    get_mel,
+    zero_rank_print,
+)
 from .video_transforms import (
     CenterCropVideo,
     KineticsRandomCropResizeVideo,
@@ -8,7 +15,6 @@ from .video_transforms import (
     ToTensorVideo,
     UCFCenterCropVideo,
 )
-
 
 __all__ = [
     "zero_rank_print",

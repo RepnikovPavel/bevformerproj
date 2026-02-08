@@ -18,14 +18,14 @@ All the features extraction are designed to utilize GPU to the maximum extent, w
 
 import torch
 from torch.nn.utils.rnn import pad_sequence
-
-from utils.mel import extract_mel_features
 from utils.f0 import get_f0 as extract_f0_features
+from utils.mel import extract_mel_features
+
 from processors.content_extractor import (
-    WhisperExtractor,
     ContentvecExtractor,
-    WenetExtractor,
     HubertExtractor,
+    WenetExtractor,
+    WhisperExtractor,
 )
 
 

@@ -3,7 +3,6 @@ from unittest import TestCase
 
 import numpy as np
 from mmengine.structures import InstanceData
-
 from mmpose.evaluation import MPJPE
 from mmpose.structures import PoseDataSample
 

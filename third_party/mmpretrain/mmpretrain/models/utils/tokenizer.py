@@ -3,11 +3,18 @@ import collections
 import os
 
 from mmengine.fileio import list_from_file
-from transformers import (AutoTokenizer, BartTokenizer, BasicTokenizer,
-                          BertTokenizer, BertTokenizerFast, LlamaTokenizer,
-                          WordpieceTokenizer)
+from transformers import (
+    AutoTokenizer,
+    BartTokenizer,
+    BasicTokenizer,
+    BertTokenizer,
+    BertTokenizerFast,
+    LlamaTokenizer,
+    WordpieceTokenizer,
+)
 
 from mmpretrain.registry import TOKENIZER
+
 from .huggingface import register_hf_tokenizer
 
 register_hf_tokenizer(AutoTokenizer)

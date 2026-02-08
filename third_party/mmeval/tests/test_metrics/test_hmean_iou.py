@@ -2,7 +2,6 @@
 
 import numpy as np
 import pytest
-
 from mmeval.metrics import HmeanIoU
 from mmeval.metrics.hmean_iou import compute_hmean
 

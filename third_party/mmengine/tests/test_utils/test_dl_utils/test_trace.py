@@ -1,7 +1,6 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import pytest
 import torch
-
 from mmengine.utils import digit_version
 from mmengine.utils.dl_utils import is_jit_tracing
 

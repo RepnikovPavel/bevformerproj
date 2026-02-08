@@ -1,7 +1,8 @@
 # Copyright (c) OpenMMLab. All rights reserved.
-import mmengine
 import torch.nn as nn
 from mmcv.cnn import ConvModule
+
+import mmengine
 
 
 class SELayer(nn.Module):

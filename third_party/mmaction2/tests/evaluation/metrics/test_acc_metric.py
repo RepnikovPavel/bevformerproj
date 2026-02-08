@@ -6,13 +6,13 @@ from unittest import TestCase
 import numpy as np
 import pytest
 import torch
-from mmengine import load
-from numpy.testing import assert_array_almost_equal
-
 from mmaction.evaluation import AccMetric, ConfusionMatrix, MultiSportsMetric
 from mmaction.evaluation.functional import ava_eval
 from mmaction.registry import METRICS
 from mmaction.structures import ActionDataSample
+from numpy.testing import assert_array_almost_equal
+
+from mmengine import load
 
 
 def generate_data(num_classes=5, random_label=False, multi_label=False):

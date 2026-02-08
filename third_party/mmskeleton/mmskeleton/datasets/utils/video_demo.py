@@ -1,9 +1,10 @@
 import cv2
-import torch
-import mmcv
 import numpy as np
-from .coco_transform import xywh2cs, get_affine_transform
+import torch
+
 from mmskeleton.ops.nms.nms import oks_nms
+
+from .coco_transform import get_affine_transform, xywh2cs
 
 
 class VideoDemo(object):

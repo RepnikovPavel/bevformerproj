@@ -1,25 +1,24 @@
 import os
 import sys
+
 sys.path.append(os.getcwd())
 sys.path.append(os.path.join(os.getcwd(), "annotator/entityseg"))
 import cv2
 import einops
-import torch
 import gradio as gr
 import numpy as np
-from pytorch_lightning import seed_everything
-from PIL import Image
-
-from annotator.util import resize_image, HWC3
+import torch
 from annotator.canny import CannyDetector
-from annotator.midas import MidasDetector
-from annotator.entityseg import EntitysegDetector
-from annotator.openpose import OpenposeDetector
-from annotator.content import ContentDetector
 from annotator.cielab import CIELabDetector
-
-from models.util import create_model, load_state_dict
+from annotator.content import ContentDetector
+from annotator.entityseg import EntitysegDetector
+from annotator.midas import MidasDetector
+from annotator.openpose import OpenposeDetector
+from annotator.util import HWC3, resize_image
 from models.ddim_hacked import DDIMSampler
+from models.util import create_model, load_state_dict
+from PIL import Image
+from pytorch_lightning import seed_everything
 
 '''
 define conditions

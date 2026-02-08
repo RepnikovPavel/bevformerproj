@@ -5,9 +5,8 @@ import os.path as ops
 import unittest
 from unittest.mock import MagicMock
 
-import torch
-
 import mmengine.hooks
+import torch
 from mmengine.device import is_npu_available
 from mmengine.hooks import NPUProfilerHook, ProfilerHook
 from mmengine.logging import MMLogger

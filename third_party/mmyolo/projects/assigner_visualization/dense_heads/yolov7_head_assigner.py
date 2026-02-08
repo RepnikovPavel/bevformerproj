@@ -3,10 +3,9 @@ from typing import List, Union
 
 import torch
 from mmdet.utils import InstanceList
-from torch import Tensor
-
 from mmyolo.models import YOLOv7Head
 from mmyolo.registry import MODELS
+from torch import Tensor
 
 
 @MODELS.register_module()

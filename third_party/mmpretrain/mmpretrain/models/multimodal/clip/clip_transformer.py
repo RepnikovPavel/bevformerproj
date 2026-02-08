@@ -6,8 +6,7 @@ import torch
 from mmengine.model import BaseModule
 from torch import nn
 
-from mmpretrain.models.utils.clip_generator_helper import \
-    ResidualAttentionBlock
+from mmpretrain.models.utils.clip_generator_helper import ResidualAttentionBlock
 from mmpretrain.registry import MODELS
 
 

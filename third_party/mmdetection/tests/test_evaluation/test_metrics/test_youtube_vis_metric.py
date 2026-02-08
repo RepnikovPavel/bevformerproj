@@ -6,11 +6,10 @@ from unittest import TestCase
 import numpy as np
 import pycocotools.mask as mask_util
 import torch
-from mmengine.registry import init_default_scope
-from mmengine.structures import BaseDataElement, InstanceData
-
 from mmdet.registry import METRICS
 from mmdet.structures import DetDataSample, TrackDataSample
+from mmengine.registry import init_default_scope
+from mmengine.structures import BaseDataElement, InstanceData
 
 
 class TestYouTubeVISMetric(TestCase):

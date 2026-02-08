@@ -3,8 +3,9 @@ import argparse
 import os.path as osp
 import subprocess
 
-import mmengine
 from joblib import Parallel, delayed
+
+import mmengine
 
 URL_PREFIX = 'https://s3.amazonaws.com/ava-dataset/trainval/'
 

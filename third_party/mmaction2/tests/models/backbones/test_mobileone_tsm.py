@@ -3,19 +3,17 @@ import os
 import tempfile
 
 import torch
-from mmengine.runner import load_checkpoint, save_checkpoint
-from mmengine.runner.checkpoint import _load_checkpoint_with_prefix
-
 from mmaction.models.backbones.mobileone_tsm import MobileOneTSM
 from mmaction.testing import generate_backbone_demo_inputs
+from mmengine.runner import load_checkpoint, save_checkpoint
+from mmengine.runner.checkpoint import _load_checkpoint_with_prefix
 
 
 def test_mobileone_tsm_backbone():
     """Test MobileOne TSM backbone."""
 
-    from mmpretrain.models.backbones.mobileone import MobileOneBlock
-
     from mmaction.models.backbones.resnet_tsm import TemporalShift
+    from mmpretrain.models.backbones.mobileone import MobileOneBlock
 
     model = MobileOneTSM('s0', pretrained2d=False)
     model.init_weights()

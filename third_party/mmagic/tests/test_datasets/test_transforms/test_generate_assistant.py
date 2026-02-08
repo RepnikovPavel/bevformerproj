@@ -1,9 +1,10 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import torch
-
-from mmagic.datasets.transforms import (GenerateCoordinateAndCell,
-                                        GenerateFacialHeatmap,
-                                        LoadImageFromFile)
+from mmagic.datasets.transforms import (
+    GenerateCoordinateAndCell,
+    GenerateFacialHeatmap,
+    LoadImageFromFile,
+)
 
 
 def test_generate_coordinate_and_cell():

@@ -1,6 +1,7 @@
 import numpy as np
 from scipy.optimize import least_squares
 
+
 def normalize_points(theta, points, center_x, center_y):
     R = np.array([
         [np.cos(theta), np.sin(theta)],

@@ -7,6 +7,7 @@ from torch import Tensor, nn
 from mmdet3d.models.layers import PointFPModule, build_sa_module
 from mmdet3d.registry import MODELS
 from mmdet3d.utils import ConfigType, OptMultiConfig
+
 from .base_pointnet import BasePointNet
 
 

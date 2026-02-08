@@ -3,6 +3,7 @@ from mmcv.cnn import ConvModule
 from torch.nn.modules.batchnorm import _BatchNorm
 
 from mmpretrain.registry import MODELS
+
 from ..utils import InvertedResidual
 from .base_backbone import BaseBackbone
 

@@ -4,7 +4,6 @@ import copy
 import numpy as np
 import pytest
 import torch
-
 from mmcv.utils import IS_MUSA_AVAILABLE
 
 # [1,4c,h,w]

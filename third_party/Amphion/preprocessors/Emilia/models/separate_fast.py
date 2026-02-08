@@ -8,9 +8,9 @@
 
 # This code is modified from https://github.com/seanghay/uvr-mdx-infer/blob/main/separate.py
 
-import torch
 import numpy as np
 import onnxruntime as ort
+import torch
 from tqdm import tqdm
 
 

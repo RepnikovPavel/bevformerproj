@@ -3,7 +3,6 @@ import platform
 
 import pytest
 import torch
-
 from mmagic.models.editors.stylegan1 import StyleGAN1Discriminator
 from mmagic.utils import register_all_modules
 

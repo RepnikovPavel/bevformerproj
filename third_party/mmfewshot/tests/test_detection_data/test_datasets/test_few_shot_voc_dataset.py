@@ -5,9 +5,7 @@ import tempfile
 
 import numpy as np
 from mmdet.apis import set_random_seed
-
-from mmfewshot.detection.datasets.voc import (FewShotVOCCopyDataset,
-                                              FewShotVOCDataset)
+from mmfewshot.detection.datasets.voc import FewShotVOCCopyDataset, FewShotVOCDataset
 
 
 def test_few_shot_voc_dataset():

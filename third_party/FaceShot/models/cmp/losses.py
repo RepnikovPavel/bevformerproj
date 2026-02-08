@@ -1,10 +1,12 @@
-import torch
+import math
+import random
+
 import numpy as np
+import torch
 import torch.nn as nn
 import torch.nn.functional as F
 from torch.autograd import Variable
-import random
-import math
+
 
 def MultiChannelSoftBinaryCrossEntropy(input, target, reduction='mean'):
     '''

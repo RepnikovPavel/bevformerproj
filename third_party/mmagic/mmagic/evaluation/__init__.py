@@ -1,12 +1,31 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 from .evaluator import Evaluator
 from .functional import gauss_gradient
-from .metrics import (MAE, MSE, NIQE, PSNR, SAD, SNR, SSIM, ConnectivityError,
-                      Equivariance, FrechetInceptionDistance, GradientError,
-                      InceptionScore, MattingMSE,
-                      MultiScaleStructureSimilarity, PerceptualPathLength,
-                      PrecisionAndRecall, SlicedWassersteinDistance, TransFID,
-                      TransIS, niqe, psnr, snr, ssim)
+from .metrics import (
+                      MAE,
+                      MSE,
+                      NIQE,
+                      PSNR,
+                      SAD,
+                      SNR,
+                      SSIM,
+                      ConnectivityError,
+                      Equivariance,
+                      FrechetInceptionDistance,
+                      GradientError,
+                      InceptionScore,
+                      MattingMSE,
+                      MultiScaleStructureSimilarity,
+                      PerceptualPathLength,
+                      PrecisionAndRecall,
+                      SlicedWassersteinDistance,
+                      TransFID,
+                      TransIS,
+                      niqe,
+                      psnr,
+                      snr,
+                      ssim,
+)
 
 __all__ = [
     'Evaluator',

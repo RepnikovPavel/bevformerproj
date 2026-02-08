@@ -11,11 +11,10 @@ import torch.nn as nn
 from mmengine.logging import MMLogger
 from mmengine.model import BaseModel
 from mmengine.runner import Runner
-from torch.utils.data import DataLoader, Dataset
-
 from mmpretrain.models.utils import ClsDataPreprocessor
 from mmpretrain.registry import HOOKS
 from mmpretrain.structures import DataSample
+from torch.utils.data import DataLoader, Dataset
 
 
 class ExampleDataset(Dataset):

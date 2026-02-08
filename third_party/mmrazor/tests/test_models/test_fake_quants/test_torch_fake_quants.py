@@ -1,10 +1,10 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import pytest
 import torch
-
-from mmrazor import digit_version
 from mmrazor.models.fake_quants import register_torch_fake_quants
 from mmrazor.registry import MODELS
+
+from mmrazor import digit_version
 
 
 @pytest.mark.skipif(

@@ -2,10 +2,12 @@
 import torch
 
 try:
-    from torch.ao.quantization.backend_config import (BackendConfig,
-                                                      BackendPatternConfig,
-                                                      DTypeConfig,
-                                                      ObservationType)
+    from torch.ao.quantization.backend_config import (
+        BackendConfig,
+        BackendPatternConfig,
+        DTypeConfig,
+        ObservationType,
+    )
 except ImportError:
     from mmrazor.utils import get_placeholder
     BackendConfig = get_placeholder('torch>=1.13')
@@ -13,10 +15,12 @@ except ImportError:
     DTypeConfig = get_placeholder('torch>=1.13')
     ObservationType = get_placeholder('torch>=1.13')
 
-from .common_operator_config_utils import (_get_binary_op_configs,
-                                           _get_conv_configs,
-                                           _get_linear_configs,
-                                           _get_share_qparams_op_configs)
+from .common_operator_config_utils import (
+    _get_binary_op_configs,
+    _get_conv_configs,
+    _get_linear_configs,
+    _get_share_qparams_op_configs,
+)
 
 
 def get_openvino_backend_config() -> BackendConfig:

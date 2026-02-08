@@ -1,7 +1,12 @@
 # Copyright (c) OpenMMLab. All rights reserved.
-from mmengine.device import (get_device, is_cuda_available, is_mlu_available,
-                             is_mps_available, is_musa_available,
-                             is_npu_available)
+from mmengine.device import (
+    get_device,
+    is_cuda_available,
+    is_mlu_available,
+    is_mps_available,
+    is_musa_available,
+    is_npu_available,
+)
 
 
 def test_get_device():

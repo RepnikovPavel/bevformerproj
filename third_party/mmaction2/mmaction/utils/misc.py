@@ -9,8 +9,9 @@ from types import FunctionType, ModuleType
 from typing import Optional, Union
 
 import cv2
-import mmcv
 import numpy as np
+
+import mmcv
 
 
 def get_random_string(length: int = 15) -> str:

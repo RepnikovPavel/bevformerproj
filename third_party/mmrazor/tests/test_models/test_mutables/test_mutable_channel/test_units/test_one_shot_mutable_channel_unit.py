@@ -3,6 +3,7 @@ from unittest import TestCase
 
 from mmrazor.models.mutables import OneShotMutableChannelUnit
 from mmrazor.models.mutators.channel_mutator import ChannelMutator
+
 from tests.data.models import DynamicAttention
 
 

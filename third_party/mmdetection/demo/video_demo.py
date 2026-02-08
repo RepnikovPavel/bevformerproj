@@ -2,12 +2,12 @@
 import argparse
 
 import cv2
-import mmcv
 from mmcv.transforms import Compose
-from mmengine.utils import track_iter_progress
-
 from mmdet.apis import inference_detector, init_detector
 from mmdet.registry import VISUALIZERS
+from mmengine.utils import track_iter_progress
+
+import mmcv
 
 
 def parse_args():

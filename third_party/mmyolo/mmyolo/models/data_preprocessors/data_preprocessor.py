@@ -6,10 +6,10 @@ import torch
 import torch.nn.functional as F
 from mmdet.models import BatchSyncRandomResize
 from mmdet.models.data_preprocessors import DetDataPreprocessor
-from mmengine import MessageHub, is_list_of
 from mmengine.structures import BaseDataElement
 from torch import Tensor
 
+from mmengine import MessageHub, is_list_of
 from mmyolo.registry import MODELS
 
 CastData = Union[tuple, dict, BaseDataElement, torch.Tensor, list, bytes, str,

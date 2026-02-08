@@ -2,14 +2,15 @@
 from unittest import TestCase
 
 import torch
-from mmengine.logging import MessageHub
-
-from mmdet.models.data_preprocessors import (BatchFixedSizePad,
-                                             BatchSyncRandomResize,
-                                             DetDataPreprocessor,
-                                             MultiBranchDataPreprocessor)
+from mmdet.models.data_preprocessors import (
+    BatchFixedSizePad,
+    BatchSyncRandomResize,
+    DetDataPreprocessor,
+    MultiBranchDataPreprocessor,
+)
 from mmdet.structures import DetDataSample
 from mmdet.testing import demo_mm_inputs
+from mmengine.logging import MessageHub
 
 
 class TestDetDataPreprocessor(TestCase):

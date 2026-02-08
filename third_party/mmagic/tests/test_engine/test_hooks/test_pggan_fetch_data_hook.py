@@ -4,13 +4,12 @@ from unittest import TestCase
 from unittest.mock import MagicMock
 
 import torch
-from mmengine.dataset import DefaultSampler, InfiniteSampler, pseudo_collate
-from mmengine.runner import IterBasedTrainLoop
-from torch.utils.data.dataloader import DataLoader
-
 from mmagic.engine import PGGANFetchDataHook
 from mmagic.registry import DATASETS, MODELS
 from mmagic.utils import register_all_modules
+from mmengine.dataset import DefaultSampler, InfiniteSampler, pseudo_collate
+from mmengine.runner import IterBasedTrainLoop
+from torch.utils.data.dataloader import DataLoader
 
 register_all_modules()
 

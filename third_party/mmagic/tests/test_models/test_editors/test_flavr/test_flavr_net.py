@@ -1,6 +1,5 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import torch
-
 from mmagic.models.editors.flavr.flavr_net import UpConv3d
 from mmagic.registry import MODELS
 

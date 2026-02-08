@@ -4,10 +4,10 @@ from unittest.mock import MagicMock
 
 import pytest
 import torch
-from torch import nn
-
 from mmrazor.models.mutables import SquentialMutableChannel
 from mmrazor.structures.subnet import export_fix_subnet, load_fix_subnet
+from torch import nn
+
 from ..utils import fix_dynamic_op
 
 from mmrazor.models.architectures.dynamic_ops import (  # isort:skip

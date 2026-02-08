@@ -3,11 +3,10 @@ import unittest
 
 import numpy as np
 import torch
-from parameterized import parameterized
-
 from mmocr.models.textdet.postprocessors import PANPostprocessor
 from mmocr.structures import TextDetDataSample
 from mmocr.utils import poly2shapely, poly_iou
+from parameterized import parameterized
 
 
 class TestPANPostprocessor(unittest.TestCase):

@@ -20,15 +20,14 @@
 # }
 #
 
+import datetime
 import logging
 import os
 import re
-
-import yaml
-import torch
 from collections import OrderedDict
 
-import datetime
+import torch
+import yaml
 
 
 def load_checkpoint(model: torch.nn.Module, path: str) -> dict:

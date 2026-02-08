@@ -5,15 +5,26 @@ from typing import Dict, Union
 import torch
 from mmcls.core import DistOptimizerHook
 from mmcv.parallel import MMDataParallel, MMDistributedDataParallel
-from mmcv.runner import (HOOKS, DistSamplerSeedHook, EpochBasedRunner,
-                         Fp16OptimizerHook, build_optimizer, build_runner)
+from mmcv.runner import (
+    HOOKS,
+    DistSamplerSeedHook,
+    EpochBasedRunner,
+    Fp16OptimizerHook,
+    build_optimizer,
+    build_runner,
+)
 from mmcv.utils import ConfigDict, build_from_cfg
 from torch.utils.data import Dataset
 
-from mmfewshot.classification.core.evaluation import (DistMetaTestEvalHook,
-                                                      MetaTestEvalHook)
+from mmfewshot.classification.core.evaluation import (
+    DistMetaTestEvalHook,
+    MetaTestEvalHook,
+)
 from mmfewshot.classification.datasets.builder import (
-    build_dataloader, build_dataset, build_meta_test_dataloader)
+    build_dataloader,
+    build_dataset,
+    build_meta_test_dataloader,
+)
 from mmfewshot.utils import compat_cfg, get_root_logger
 
 

@@ -9,8 +9,7 @@ from typing import Dict, List, Optional, Sequence, Union
 
 import numpy as np
 import torch
-from mmengine.dist import (all_gather_object, broadcast_object_list,
-                           is_main_process)
+from mmengine.dist import all_gather_object, broadcast_object_list, is_main_process
 from mmengine.evaluator import BaseMetric
 from mmengine.evaluator.metric import _to_cpu
 from mmengine.fileio import get_local_path
@@ -19,6 +18,7 @@ from terminaltables import AsciiTable
 
 from mmdet.registry import METRICS
 from mmdet.structures.mask import encode_mask_results
+
 from ..functional import eval_recalls
 from .coco_metric import CocoMetric
 

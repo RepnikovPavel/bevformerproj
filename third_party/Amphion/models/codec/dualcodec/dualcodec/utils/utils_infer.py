@@ -9,13 +9,10 @@ Some helper functions are from F5-TTS
 
 # A unified script for inference process
 # Make adjustments inside functions, and consider both gradio and cli scripts if need to change func output format
-import os
-import sys
-from concurrent.futures import ThreadPoolExecutor
-
 import hashlib
 import re
 import tempfile
+from concurrent.futures import ThreadPoolExecutor
 from importlib.resources import files
 
 import matplotlib
@@ -27,17 +24,17 @@ import numpy as np
 import torch
 import torchaudio
 import tqdm
-from huggingface_hub import snapshot_download, hf_hub_download
+from huggingface_hub import hf_hub_download, snapshot_download
+
 from dualcodec.utils import logger
 
 try:
+    from f5_tts.model.utils import (
+        convert_char_to_pinyin,
+        get_tokenizer,
+    )
     from pydub import AudioSegment, silence
     from transformers import pipeline
-
-    from f5_tts.model.utils import (
-        get_tokenizer,
-        convert_char_to_pinyin,
-    )
 except:
     pass  # pass if not installed f5-tts
 
@@ -85,10 +82,10 @@ def instantiate_model(model_cfg_path):
     Returns:
         model: The instantiated model.
     """
-    import hydra
-
     # instantiate model
     from pathlib import Path
+
+    import hydra
 
     model_cfg_path = Path(model_cfg_path)
     with hydra.initialize(config_path=str(model_cfg_path.parent), version_base="1.2"):

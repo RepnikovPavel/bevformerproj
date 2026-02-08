@@ -4,11 +4,10 @@ from unittest import TestCase
 
 import torch
 from mmengine.model.utils import revert_sync_batchnorm
-from parameterized import parameterized
-
 from mmpose.structures import PoseDataSample
 from mmpose.testing import get_packed_inputs, get_pose_estimator_cfg
 from mmpose.utils import register_all_modules
+from parameterized import parameterized
 
 configs = [
     'wholebody_2d_keypoint/dwpose/ubody/'

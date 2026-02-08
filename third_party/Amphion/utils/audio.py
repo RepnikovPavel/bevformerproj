@@ -3,12 +3,11 @@
 # This source code is licensed under the MIT license found in the
 # LICENSE file in the root directory of this source tree.
 
-import torch
-import numpy as np
-from numpy import linalg as LA
 import librosa
-import soundfile as sf
 import librosa.filters
+import numpy as np
+import torch
+from numpy import linalg as LA
 
 
 def load_audio_torch(wave_file, fs):

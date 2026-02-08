@@ -4,11 +4,11 @@ import os.path as osp
 from collections import OrderedDict
 from typing import Any, Optional, Sequence, Tuple
 
-import mmcv
-import mmengine
 import numpy as np
 from mmengine.evaluator import BaseMetric
 
+import mmcv
+import mmengine
 from mmaction.evaluation import average_recall_at_avg_proposals
 from mmaction.registry import METRICS
 from mmaction.utils import ConfigType

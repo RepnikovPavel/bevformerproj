@@ -16,10 +16,9 @@ from mmengine.model.wrappers import MMDistributedDataParallel, is_model_wrapper
 from mmengine.registry import init_default_scope
 from mmengine.runner import load_checkpoint
 from mmengine.utils import mkdir_or_exist
-from torch.utils.data import DataLoader
-
 from mmselfsup.models.utils import Extractor
 from mmselfsup.registry import DATA_SAMPLERS, DATASETS, MODELS
+from torch.utils.data import DataLoader
 
 
 def parse_args():

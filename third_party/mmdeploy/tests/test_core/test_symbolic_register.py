@@ -4,11 +4,11 @@ import tempfile
 import onnx
 import pytest
 import torch
+from mmdeploy.core import SYMBOLIC_REWRITER, RewriterContext
+from mmdeploy.core.rewriters.symbolic_rewriter import SymbolicRewriter
 from torch.autograd import Function
 
 import mmdeploy
-from mmdeploy.core import SYMBOLIC_REWRITER, RewriterContext
-from mmdeploy.core.rewriters.symbolic_rewriter import SymbolicRewriter
 
 output_file = tempfile.NamedTemporaryFile(suffix='.onnx').name
 

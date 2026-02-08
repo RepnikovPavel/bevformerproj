@@ -10,15 +10,20 @@ from mmcv.cnn import ConvModule, is_norm
 from mmcv.ops import batched_nms
 from mmdet.models.utils import filter_scores_and_topk
 from mmdet.structures.bbox import get_box_tensor, get_box_wh, scale_boxes
-from mmdet.utils import (ConfigType, InstanceList, OptConfigType,
-                         OptInstanceList, OptMultiConfig)
-from mmengine import ConfigDict
-from mmengine.model import (BaseModule, bias_init_with_prob, constant_init,
-                            normal_init)
+from mmdet.utils import (
+    ConfigType,
+    InstanceList,
+    OptConfigType,
+    OptInstanceList,
+    OptMultiConfig,
+)
+from mmengine.model import BaseModule, bias_init_with_prob, constant_init, normal_init
 from mmengine.structures import InstanceData
 from torch import Tensor
 
+from mmengine import ConfigDict
 from mmyolo.registry import MODELS
+
 from .rtmdet_head import RTMDetHead, RTMDetSepBNHeadModule
 
 

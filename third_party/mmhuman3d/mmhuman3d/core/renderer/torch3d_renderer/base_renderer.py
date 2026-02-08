@@ -4,7 +4,6 @@ from pathlib import Path
 from typing import Optional, Tuple, Union
 
 import cv2
-import mmcv
 import torch
 import torch.nn as nn
 from pytorch3d.renderer import (
@@ -17,9 +16,11 @@ from pytorch3d.renderer import (
     RasterizationSettings,
 )
 
+import mmcv
 from mmhuman3d.core.cameras import MMCamerasBase
 from mmhuman3d.utils.ffmpeg_utils import images_to_gif, images_to_video
 from mmhuman3d.utils.path_utils import check_path_suffix
+
 from .lights import build_lights
 from .shader import build_shader
 from .utils import normalize, rgb2bgr, tensor2array

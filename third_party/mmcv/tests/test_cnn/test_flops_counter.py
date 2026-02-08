@@ -2,7 +2,6 @@
 import pytest
 import torch
 import torch.nn as nn
-
 from mmcv.cnn import get_model_complexity_info
 from mmcv.cnn.utils.flops_counter import flops_to_string, params_to_string
 

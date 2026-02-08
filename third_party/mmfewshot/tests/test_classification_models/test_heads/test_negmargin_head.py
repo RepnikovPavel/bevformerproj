@@ -3,7 +3,6 @@ import copy
 
 import pytest
 import torch
-
 from mmfewshot.classification.models.heads import NegMarginHead
 
 

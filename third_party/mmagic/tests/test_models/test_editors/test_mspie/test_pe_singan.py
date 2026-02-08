@@ -1,10 +1,10 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import torch
-from mmengine import MessageHub
-
 from mmagic.engine import SinGANOptimWrapperConstructor
 from mmagic.models import PESinGAN
 from mmagic.utils import register_all_modules
+
+from mmengine import MessageHub
 
 register_all_modules()
 

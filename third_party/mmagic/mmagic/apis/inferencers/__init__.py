@@ -4,6 +4,7 @@ from typing import Dict, List, Optional, Union
 import torch
 
 from mmagic.utils import ConfigType
+
 from .colorization_inferencer import ColorizationInferencer
 from .conditional_inferencer import ConditionalInferencer
 from .controlnet_animation_inferencer import ControlnetAnimationInferencer

@@ -3,9 +3,10 @@ import argparse
 import os.path as osp
 from collections import OrderedDict
 
-import mmengine
 import torch
 from mmengine.runner import CheckpointLoader
+
+import mmengine
 
 
 def correct_unfold_reduction_order(x: torch.Tensor):

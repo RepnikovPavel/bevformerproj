@@ -1,11 +1,10 @@
-from collections import OrderedDict
-import torch
-import logging
 import numpy as np
-from mmskeleton.utils import call_obj, import_obj, load_checkpoint
-from mmcv.runner import Runner
-from mmcv import Config, ProgressBar
+import torch
 from mmcv.parallel import MMDataParallel
+from mmcv.runner import Runner
+
+from mmcv import ProgressBar
+from mmskeleton.utils import call_obj, load_checkpoint
 
 
 def test(model_cfg,

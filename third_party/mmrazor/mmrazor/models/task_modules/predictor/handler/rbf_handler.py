@@ -8,6 +8,7 @@ except ImportError:
     RBFInterpolant = get_placeholder('pySOT')
 
 from mmrazor.registry import TASK_UTILS
+
 from .base_handler import BaseHandler
 
 
@@ -22,8 +23,14 @@ class RBFHandler(BaseHandler):
     """
 
     def __init__(self, kernel: str = 'tps', tail: str = 'linear'):
-        from pySOT.surrogate import (ConstantTail, CubicKernel, Kernel,
-                                     LinearTail, Tail, TPSKernel)
+        from pySOT.surrogate import (
+            ConstantTail,
+            CubicKernel,
+            Kernel,
+            LinearTail,
+            Tail,
+            TPSKernel,
+        )
 
         self.kernel_mapping = {'cubic': CubicKernel, 'tps': TPSKernel}
         self.tail_mapping = {'linear': LinearTail, 'constant': ConstantTail}

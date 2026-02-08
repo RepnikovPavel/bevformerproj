@@ -5,6 +5,7 @@ from torch import Tensor
 
 from mmdet3d.registry import MODELS
 from mmdet3d.utils import ConfigType, OptConfigType, OptMultiConfig
+
 from .single_stage import SingleStage3DDetector
 
 

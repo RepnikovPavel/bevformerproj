@@ -7,6 +7,7 @@ from pathlib import Path
 from typing import Generator, Iterator, Optional, Tuple, Union
 
 import mmengine
+
 from .base import BaseStorageBackend
 
 

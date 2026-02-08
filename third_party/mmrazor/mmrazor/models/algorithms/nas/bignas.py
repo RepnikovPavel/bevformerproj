@@ -12,9 +12,9 @@ from mmrazor.models.architectures.ops.mobilenet_series import MBBlock
 from mmrazor.models.architectures.utils import set_dropout
 from mmrazor.models.distillers import ConfigurableDistiller
 from mmrazor.models.mutators import NasMutator
-from mmrazor.models.utils import (add_prefix,
-                                  reinitialize_optim_wrapper_count_status)
+from mmrazor.models.utils import add_prefix, reinitialize_optim_wrapper_count_status
 from mmrazor.registry import MODEL_WRAPPERS, MODELS
+
 from ..base import BaseAlgorithm
 
 VALID_MUTATOR_TYPE = Union[NasMutator, Dict]

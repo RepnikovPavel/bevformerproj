@@ -4,6 +4,7 @@ from typing import Dict, List, Optional, Tuple
 import numpy as np
 
 from mmpose.registry import KEYPOINT_CODECS
+
 from .base import BaseKeypointCodec
 
 INF = 1e6

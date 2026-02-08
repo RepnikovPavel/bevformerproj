@@ -10,6 +10,7 @@ from mmcv.utils import print_log
 
 from mmgen.models.builder import MODULES
 from mmgen.utils import get_root_logger
+
 from .modules import DiscriminatorBlock, GeneratorBlock
 
 

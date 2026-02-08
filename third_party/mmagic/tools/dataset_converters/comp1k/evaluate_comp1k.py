@@ -4,12 +4,12 @@ import os.path as osp
 import re
 
 import cv2
-import mmcv
-import mmengine
 import numpy as np
-
 from mmagic.evaluation import gauss_gradient
 from mmagic.utils import modify_args
+
+import mmcv
+import mmengine
 
 
 def sad(alpha, trimap, pred_alpha):

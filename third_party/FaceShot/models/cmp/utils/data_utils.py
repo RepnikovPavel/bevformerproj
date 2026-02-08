@@ -1,10 +1,12 @@
-from PIL import Image, ImageOps
-import scipy.ndimage as ndimage
-import cv2
 import random
+
+import cv2
 import numpy as np
-from scipy.ndimage.filters import maximum_filter
+import scipy.ndimage as ndimage
+from PIL import Image, ImageOps
 from scipy import signal
+from scipy.ndimage.filters import maximum_filter
+
 cv2.ocl.setUseOpenCL(False)
 
 def get_edge(data, blur=False):

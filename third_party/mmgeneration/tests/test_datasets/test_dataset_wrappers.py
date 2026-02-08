@@ -1,7 +1,6 @@
 # Copyright (c) OpenMMLab. All rights reserved.
-from torch.utils.data import Dataset
-
 from mmgen.datasets import RepeatDataset
+from torch.utils.data import Dataset
 
 
 def test_repeat_dataset():

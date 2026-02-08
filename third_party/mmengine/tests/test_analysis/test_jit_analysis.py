@@ -13,12 +13,16 @@ from typing import Any, Dict, List
 
 import torch
 import torch.nn as nn
-
-from mmengine import MMLogger
 from mmengine.analysis import FlopAnalyzer
 from mmengine.analysis.jit_analysis import JitModelAnalysis
-from mmengine.analysis.jit_handles import (Handle, addmm_flop_jit,
-                                           conv_flop_jit, linear_flop_jit)
+from mmengine.analysis.jit_handles import (
+    Handle,
+    addmm_flop_jit,
+    conv_flop_jit,
+    linear_flop_jit,
+)
+
+from mmengine import MMLogger
 
 
 class NestedNetInnerModule(nn.Module):

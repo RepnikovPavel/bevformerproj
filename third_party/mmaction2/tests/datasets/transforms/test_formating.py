@@ -5,16 +5,19 @@ import unittest
 import numpy as np
 import pytest
 import torch
-from mmengine.structures import InstanceData
-from mmengine.testing import assert_dict_has_keys
-from numpy.testing import assert_array_equal
-
-from mmaction.datasets.transforms import (FormatAudioShape, FormatGCNInput,
-                                          FormatShape, PackActionInputs,
-                                          Transpose)
+from mmaction.datasets.transforms import (
+    FormatAudioShape,
+    FormatGCNInput,
+    FormatShape,
+    PackActionInputs,
+    Transpose,
+)
 from mmaction.registry import TRANSFORMS
 from mmaction.structures import ActionDataSample
 from mmaction.utils import register_all_modules
+from mmengine.structures import InstanceData
+from mmengine.testing import assert_dict_has_keys
+from numpy.testing import assert_array_equal
 
 register_all_modules()
 

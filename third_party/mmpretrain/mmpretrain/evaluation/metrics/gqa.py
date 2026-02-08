@@ -3,8 +3,10 @@ from typing import List, Optional
 
 from mmengine.evaluator import BaseMetric
 
-from mmpretrain.evaluation.metrics.vqa import (_process_digit_article,
-                                               _process_punctuation)
+from mmpretrain.evaluation.metrics.vqa import (
+    _process_digit_article,
+    _process_punctuation,
+)
 from mmpretrain.registry import METRICS
 
 

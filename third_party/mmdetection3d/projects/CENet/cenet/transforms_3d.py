@@ -3,7 +3,6 @@ from typing import Sequence
 
 import numpy as np
 from mmcv.transforms import BaseTransform
-
 from mmdet3d.registry import TRANSFORMS
 
 

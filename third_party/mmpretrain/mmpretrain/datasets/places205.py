@@ -2,6 +2,7 @@
 from typing import Optional, Union
 
 from mmpretrain.registry import DATASETS
+
 from .categories import PLACES205_CATEGORIES
 from .custom import CustomDataset
 

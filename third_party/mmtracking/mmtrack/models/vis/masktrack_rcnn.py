@@ -4,6 +4,7 @@ from mmdet.models import build_detector, build_head
 
 from mmtrack.core import outs2results, results2outs
 from mmtrack.models.mot import BaseMultiObjectTracker
+
 from ..builder import MODELS, build_tracker
 
 

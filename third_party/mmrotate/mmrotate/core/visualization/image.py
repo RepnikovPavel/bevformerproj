@@ -2,13 +2,13 @@
 
 import cv2
 import matplotlib.pyplot as plt
-import mmcv
 import numpy as np
 from matplotlib.collections import PatchCollection
 from matplotlib.patches import Polygon
 from mmdet.core.visualization import palette_val
 from mmdet.core.visualization.image import draw_labels, draw_masks
 
+import mmcv
 from mmrotate.core.visualization.palette import get_palette
 
 EPS = 1e-2

@@ -2,15 +2,14 @@
 from typing import List, Optional, Sequence, Union
 
 import cv2
-import mmengine
 import torch
 from mmengine.registry import Registry
 from mmengine.structures import BaseDataElement, InstanceData
 from mmocr.structures import TextDetDataSample
 
+import mmengine
 from mmdeploy.codebase.base import BaseBackendModel
-from mmdeploy.utils import (Backend, get_backend, get_codebase_config,
-                            load_config)
+from mmdeploy.utils import Backend, get_backend, get_codebase_config, load_config
 
 __BACKEND_MODEL = Registry('backend_text_detectors')
 
@@ -117,8 +116,9 @@ class End2EndModel(BaseBackendModel):
         from mmocr.utils.bbox_utils import bbox2poly
 
         from mmdeploy.codebase.mmdet.deploy import get_post_processing_params
-        from mmdeploy.codebase.mmdet.deploy.object_detection_model import \
-            End2EndModel as DetModel
+        from mmdeploy.codebase.mmdet.deploy.object_detection_model import (
+            End2EndModel as DetModel,
+        )
         if len(x) == 3:  # instance seg
             batch_dets, _, batch_masks = x
             for i in range(batch_dets.size(0)):

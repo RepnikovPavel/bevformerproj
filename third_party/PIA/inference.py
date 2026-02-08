@@ -4,10 +4,9 @@ import os
 
 import numpy as np
 import torch
-from omegaconf import OmegaConf
-
 from animatediff.pipelines import I2VPipeline
 from animatediff.utils.util import preprocess_img, save_videos_grid
+from omegaconf import OmegaConf
 
 
 def seed_everything(seed):

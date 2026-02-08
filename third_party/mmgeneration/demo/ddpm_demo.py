@@ -4,11 +4,12 @@ import os
 import os.path as osp
 import sys
 
-import mmcv
 import numpy as np
 import torch
-from mmcv import DictAction
 from torchvision import utils
+
+import mmcv
+from mmcv import DictAction
 
 # yapf: disable
 sys.path.append(os.path.abspath(os.path.join(__file__, '../..')))  # isort:skip  # noqa

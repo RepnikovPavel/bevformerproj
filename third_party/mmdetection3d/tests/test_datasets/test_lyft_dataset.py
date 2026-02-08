@@ -1,11 +1,10 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import numpy as np
 from mmcv.transforms.base import BaseTransform
-from mmengine.registry import TRANSFORMS
-from mmengine.structures import InstanceData
-
 from mmdet3d.datasets import LyftDataset
 from mmdet3d.structures import Det3DDataSample, LiDARInstance3DBoxes
+from mmengine.registry import TRANSFORMS
+from mmengine.structures import InstanceData
 
 
 def _generate_nus_dataset_config():

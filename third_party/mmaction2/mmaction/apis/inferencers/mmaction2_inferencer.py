@@ -1,12 +1,13 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 from typing import Dict, List, Optional, Sequence, Tuple, Union
 
-import mmengine
 import numpy as np
 from mmengine.infer import BaseInferencer
 from mmengine.structures import InstanceData
 
+import mmengine
 from mmaction.utils import ConfigType
+
 from .actionrecog_inferencer import ActionRecogInferencer
 
 InstanceList = List[InstanceData]

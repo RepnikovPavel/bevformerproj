@@ -2,12 +2,13 @@
 import math
 from typing import Optional
 
-import mmcv
 import numpy as np
 from mmcv.transforms import BaseTransform
 from mmcv.transforms.utils import cache_randomness
 
+import mmcv
 from mmdet.registry import TRANSFORMS
+
 from .augment_wrappers import _MAX_LEVEL, level_to_mag
 
 

@@ -1,11 +1,14 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 # This is a BETA new format config file, and the usage may change recently.
 from mmengine.model.weight_init import NormalInit
+from mmpretrain.models import (
+                               CrossEntropyLoss,
+                               GlobalAveragePooling,
+                               ImageClassifier,
+                               MobileNetV3,
+                               StackedLinearClsHead,
+)
 from torch.nn.modules.activation import Hardswish
-
-from mmpretrain.models import (CrossEntropyLoss, GlobalAveragePooling,
-                               ImageClassifier, MobileNetV3,
-                               StackedLinearClsHead)
 
 # model settings
 model = dict(

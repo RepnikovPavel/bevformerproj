@@ -11,7 +11,7 @@ from functools import wraps
 from typing import Callable
 
 import torch.nn
-from mmengine import mkdir_or_exist
+from mim.utils import OFFICIAL_MODULES
 from mmengine.config import ConfigDict
 from mmengine.logging import print_log
 from mmengine.model import (
@@ -23,7 +23,8 @@ from mmengine.model import (
 from mmengine.registry import Registry
 from yapf.yapflib.yapf_api import FormatCode
 
-from mim.utils import OFFICIAL_MODULES
+from mmengine import mkdir_or_exist
+
 from .common import REGISTRY_TYPES
 from .flatten_func import *  # noqa: F403, F401
 from .flatten_func import (

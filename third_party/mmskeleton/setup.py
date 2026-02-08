@@ -1,15 +1,13 @@
 import os
-import sys
 import platform
 import subprocess
+import sys
 import time
 
-from setuptools import find_packages, setup, Extension
-from setuptools.command.install import install
-
 import numpy as np
-from Cython.Build import cythonize  # noqa: E402
 import torch
+from Cython.Build import cythonize  # noqa: E402
+from setuptools import Extension, find_packages, setup
 from torch.utils.cpp_extension import BuildExtension, CUDAExtension
 
 

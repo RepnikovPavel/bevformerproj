@@ -3,8 +3,9 @@ import argparse
 import json
 import os.path as osp
 
-import mmcv
 import numpy as np
+
+import mmcv
 
 
 def parse_args():

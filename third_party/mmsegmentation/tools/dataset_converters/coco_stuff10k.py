@@ -5,8 +5,7 @@ import shutil
 from functools import partial
 
 import numpy as np
-from mmengine.utils import (mkdir_or_exist, track_parallel_progress,
-                            track_progress)
+from mmengine.utils import mkdir_or_exist, track_parallel_progress, track_progress
 from PIL import Image
 from scipy.io import loadmat
 

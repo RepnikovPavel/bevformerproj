@@ -8,9 +8,8 @@ import pytest
 import torch
 from mmengine.utils import digit_version
 from mmengine.utils.dl_utils.parrots_wrapper import _BatchNorm
-from torch import nn
-
 from mmpretrain.models.backbones import HorNet
+from torch import nn
 
 
 def check_norm_state(modules, train_state):

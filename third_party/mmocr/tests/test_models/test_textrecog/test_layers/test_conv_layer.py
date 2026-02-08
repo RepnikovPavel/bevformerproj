@@ -2,9 +2,12 @@
 from unittest import TestCase
 
 import torch
-
-from mmocr.models.textrecog.layers.conv_layer import (BasicBlock, Bottleneck,
-                                                      conv1x1, conv3x3)
+from mmocr.models.textrecog.layers.conv_layer import (
+    BasicBlock,
+    Bottleneck,
+    conv1x1,
+    conv3x3,
+)
 
 
 class TestUtils(TestCase):

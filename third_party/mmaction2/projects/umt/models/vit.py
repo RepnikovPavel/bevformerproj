@@ -5,10 +5,10 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 import torch.utils.checkpoint as checkpoint
-from mmcv.cnn.bricks import DropPath
-from mmengine import to_2tuple
-
 from mmaction.registry import MODELS
+from mmcv.cnn.bricks import DropPath
+
+from mmengine import to_2tuple
 
 
 class Mlp(nn.Module):

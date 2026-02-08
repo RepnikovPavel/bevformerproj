@@ -4,14 +4,11 @@ import os.path as osp
 import warnings
 from typing import Dict, Iterable, List, Optional, Sequence, Tuple, Union
 
-import mmcv
-import mmengine
 import numpy as np
 import torch.nn as nn
 from mmcv.transforms import LoadImageFromFile
 from mmengine.dataset import Compose
-from mmengine.fileio import (get_file_backend, isdir, join_path,
-                             list_dir_or_file)
+from mmengine.fileio import get_file_backend, isdir, join_path, list_dir_or_file
 from mmengine.infer.infer import BaseInferencer, ModelType
 from mmengine.model.utils import revert_sync_batchnorm
 from mmengine.registry import init_default_scope
@@ -19,11 +16,14 @@ from mmengine.runner.checkpoint import _load_checkpoint_to_model
 from mmengine.visualization import Visualizer
 from rich.progress import track
 
+import mmcv
+import mmengine
 from mmdet.evaluation import INSTANCE_OFFSET
 from mmdet.registry import DATASETS
 from mmdet.structures import DetDataSample
 from mmdet.structures.mask import encode_mask_results, mask2bbox
 from mmdet.utils import ConfigType
+
 from ..evaluation import get_classes
 
 try:

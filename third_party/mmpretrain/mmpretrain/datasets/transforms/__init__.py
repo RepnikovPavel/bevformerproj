@@ -1,22 +1,61 @@
 # Copyright (c) OpenMMLab. All rights reserved.
-from mmcv.transforms import (CenterCrop, LoadImageFromFile, Normalize,
-                             RandomFlip, RandomGrayscale, RandomResize, Resize)
+from mmcv.transforms import (
+    CenterCrop,
+    LoadImageFromFile,
+    Normalize,
+    RandomFlip,
+    RandomGrayscale,
+    RandomResize,
+    Resize,
+)
 
 from mmpretrain.registry import TRANSFORMS
-from .auto_augment import (AutoAugment, AutoContrast, BaseAugTransform,
-                           Brightness, ColorTransform, Contrast, Cutout,
-                           Equalize, GaussianBlur, Invert, Posterize,
-                           RandAugment, Rotate, Sharpness, Shear, Solarize,
-                           SolarizeAdd, Translate)
-from .formatting import (Collect, NumpyToPIL, PackInputs, PackMultiTaskInputs,
-                         PILToNumpy, Transpose)
-from .processing import (Albumentations, BEiTMaskGenerator, CleanCaption,
-                         ColorJitter, EfficientNetCenterCrop,
-                         EfficientNetRandomCrop, Lighting,
-                         MAERandomResizedCrop, RandomCrop, RandomErasing,
-                         RandomResizedCrop,
-                         RandomResizedCropAndInterpolationWithTwoPic,
-                         RandomTranslatePad, ResizeEdge, SimMIMMaskGenerator)
+
+from .auto_augment import (
+    AutoAugment,
+    AutoContrast,
+    BaseAugTransform,
+    Brightness,
+    ColorTransform,
+    Contrast,
+    Cutout,
+    Equalize,
+    GaussianBlur,
+    Invert,
+    Posterize,
+    RandAugment,
+    Rotate,
+    Sharpness,
+    Shear,
+    Solarize,
+    SolarizeAdd,
+    Translate,
+)
+from .formatting import (
+    Collect,
+    NumpyToPIL,
+    PackInputs,
+    PackMultiTaskInputs,
+    PILToNumpy,
+    Transpose,
+)
+from .processing import (
+    Albumentations,
+    BEiTMaskGenerator,
+    CleanCaption,
+    ColorJitter,
+    EfficientNetCenterCrop,
+    EfficientNetRandomCrop,
+    Lighting,
+    MAERandomResizedCrop,
+    RandomCrop,
+    RandomErasing,
+    RandomResizedCrop,
+    RandomResizedCropAndInterpolationWithTwoPic,
+    RandomTranslatePad,
+    ResizeEdge,
+    SimMIMMaskGenerator,
+)
 from .utils import get_transform_idx, remove_transform
 from .wrappers import ApplyToList, MultiView
 

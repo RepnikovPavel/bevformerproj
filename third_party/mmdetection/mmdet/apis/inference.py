@@ -17,6 +17,7 @@ from mmengine.runner import load_checkpoint
 
 from mmdet.registry import DATASETS
 from mmdet.utils import ConfigType
+
 from ..evaluation import get_classes
 from ..registry import MODELS
 from ..structures import DetDataSample, SampleList

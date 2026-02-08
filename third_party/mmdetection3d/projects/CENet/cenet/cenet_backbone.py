@@ -2,14 +2,17 @@
 from typing import Optional, Sequence, Tuple
 
 import torch
-from mmcv.cnn import (ConvModule, build_activation_layer, build_conv_layer,
-                      build_norm_layer)
+from mmcv.cnn import (
+    ConvModule,
+    build_activation_layer,
+    build_conv_layer,
+    build_norm_layer,
+)
+from mmdet3d.registry import MODELS
+from mmdet3d.utils import ConfigType, OptConfigType, OptMultiConfig
 from mmengine.model import BaseModule
 from torch import Tensor, nn
 from torch.nn import functional as F
-
-from mmdet3d.registry import MODELS
-from mmdet3d.utils import ConfigType, OptConfigType, OptMultiConfig
 
 
 class BasicBlock(BaseModule):

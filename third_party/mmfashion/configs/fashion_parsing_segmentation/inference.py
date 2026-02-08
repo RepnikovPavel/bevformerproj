@@ -1,7 +1,6 @@
 import warnings
 
 import matplotlib.pyplot as plt
-import mmcv
 import numpy as np
 import pycocotools.mask as maskUtils
 import torch
@@ -10,6 +9,8 @@ from mmcv.runner import load_checkpoint
 from mmdet.core import get_classes
 from mmdet.datasets.pipelines import Compose
 from mmdet.models import build_detector
+
+import mmcv
 
 
 def init_detector(config, checkpoint=None, device='cuda:0'):

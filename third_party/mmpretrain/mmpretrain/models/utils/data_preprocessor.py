@@ -5,13 +5,17 @@ from typing import List, Optional, Sequence, Tuple, Union
 
 import torch
 import torch.nn.functional as F
-from mmengine.model import (BaseDataPreprocessor, ImgDataPreprocessor,
-                            stack_batch)
+from mmengine.model import BaseDataPreprocessor, ImgDataPreprocessor, stack_batch
 
 from mmpretrain.registry import MODELS
-from mmpretrain.structures import (DataSample, MultiTaskDataSample,
-                                   batch_label_to_onehot, cat_batch_labels,
-                                   tensor_split)
+from mmpretrain.structures import (
+    DataSample,
+    MultiTaskDataSample,
+    batch_label_to_onehot,
+    cat_batch_labels,
+    tensor_split,
+)
+
 from .batch_augments import RandomBatchAugment
 
 

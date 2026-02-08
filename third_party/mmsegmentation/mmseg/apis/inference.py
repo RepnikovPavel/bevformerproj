@@ -3,19 +3,20 @@ import warnings
 from pathlib import Path
 from typing import Optional, Union
 
-import mmcv
 import numpy as np
 import torch
-from mmengine import Config
 from mmengine.registry import init_default_scope
 from mmengine.runner import load_checkpoint
 from mmengine.utils import mkdir_or_exist
 
+import mmcv
+from mmengine import Config
 from mmseg.models import BaseSegmentor
 from mmseg.registry import MODELS
 from mmseg.structures import SegDataSample
 from mmseg.utils import SampleList, dataset_aliases, get_classes, get_palette
 from mmseg.visualization import SegLocalVisualizer
+
 from .utils import ImageType, _preprare_data
 
 

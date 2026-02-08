@@ -2,6 +2,7 @@
 from mmdet.datasets import VOCDataset
 
 from mmyolo.datasets.yolov5_coco import BatchShapePolicyDataset
+
 from ..registry import DATASETS
 
 

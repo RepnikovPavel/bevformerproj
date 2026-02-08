@@ -9,6 +9,7 @@ from torch.utils.data.dataloader import DataLoader
 
 from mmagic.registry import EVALUATORS
 from mmagic.structures import DataSample
+
 from .metrics.base_gen_metric import GenMetric
 
 

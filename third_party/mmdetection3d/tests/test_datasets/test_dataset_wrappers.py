@@ -4,11 +4,10 @@ import os.path as osp
 import numpy as np
 import pytest
 from mmcv.transforms.base import BaseTransform
-from mmengine.structures import InstanceData
-
 from mmdet3d.datasets import CBGSDataset, NuScenesDataset
 from mmdet3d.registry import DATASETS, TRANSFORMS
 from mmdet3d.structures import Det3DDataSample
+from mmengine.structures import InstanceData
 
 
 def is_equal(dict_a, dict_b):

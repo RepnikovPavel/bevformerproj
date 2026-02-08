@@ -1,8 +1,9 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 # This class is modified from `torchmetrics
 # <https://github.com/Lightning-AI/metrics/blob/master/src/torchmetrics/text/perplexity.py>`_.
-import numpy as np
 from typing import TYPE_CHECKING, Dict, List, Sequence, Tuple, Union, overload
+
+import numpy as np
 
 from mmeval import BaseMetric
 from mmeval.core.dispatcher import dispatch

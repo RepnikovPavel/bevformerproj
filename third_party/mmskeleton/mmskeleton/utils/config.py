@@ -1,4 +1,5 @@
 import os
+
 from mmcv import Config as BaseConfig
 from mmskeleton.version import mmskl_home
 

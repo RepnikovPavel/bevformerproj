@@ -6,8 +6,9 @@ import tempfile
 import zipfile
 
 import cv2
-import mmcv
 from mmengine.utils import mkdir_or_exist
+
+import mmcv
 
 
 def parse_args():

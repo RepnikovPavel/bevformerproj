@@ -6,10 +6,9 @@ from unittest import TestCase
 import numpy as np
 import pytest
 import torch
-from PIL import Image
-
 from mmagic.registry import MODELS
 from mmagic.utils import register_all_modules
+from PIL import Image
 
 gc.collect()
 torch.cuda.empty_cache()

@@ -6,13 +6,12 @@ import os.path as osp
 import cv2
 import numpy as np
 from mmcv.image import imfrombytes, imwrite
-from mmengine.fileio import get
-from mmengine.structures import InstanceData
-from mmengine.utils import mkdir_or_exist
-
 from mmdet.structures import DetDataSample
 from mmdet.visualization import DetLocalVisualizer
 from mmdet.visualization.palette import _get_adaptive_scales
+from mmengine.fileio import get
+from mmengine.structures import InstanceData
+from mmengine.utils import mkdir_or_exist
 
 # backend_args = dict(
 #     backend='petrel',

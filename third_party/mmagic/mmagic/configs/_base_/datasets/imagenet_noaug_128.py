@@ -1,12 +1,11 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 # dataset settings
-from mmengine.dataset.sampler import DefaultSampler
-
 from mmagic.datasets.imagenet_dataset import ImageNet
 from mmagic.datasets.transforms.aug_shape import Resize
 from mmagic.datasets.transforms.crop import CenterCropLongEdge
 from mmagic.datasets.transforms.formatting import PackInputs
 from mmagic.datasets.transforms.loading import LoadImageFromFile
+from mmengine.dataset.sampler import DefaultSampler
 
 dataset_type = ImageNet
 

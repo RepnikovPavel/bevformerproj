@@ -2,11 +2,10 @@
 from typing import List, Optional, Union
 
 import torch
-from torch import nn
-
 from mmselfsup.models import BaseModel, CosineEMA
 from mmselfsup.registry import MODELS
 from mmselfsup.structures import SelfSupDataSample
+from torch import nn
 
 
 @MODELS.register_module()

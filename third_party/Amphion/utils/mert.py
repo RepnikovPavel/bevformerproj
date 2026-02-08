@@ -5,15 +5,13 @@
 
 # This code is modified from https://huggingface.co/m-a-p/MERT-v1-330M
 
-import torch
-from tqdm import tqdm
 import numpy as np
-
-from transformers import Wav2Vec2FeatureExtractor
-from transformers import AutoModel
+import torch
 import torchaudio
 import torchaudio.transforms as T
 from sklearn.preprocessing import StandardScaler
+from tqdm import tqdm
+from transformers import AutoModel, Wav2Vec2FeatureExtractor
 
 
 def mert_encoder(model, processor, audio_path, hps):

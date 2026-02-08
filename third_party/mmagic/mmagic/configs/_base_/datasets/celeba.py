@@ -1,7 +1,6 @@
 # Copyright (c) OpenMMLab. All rights reserved.
-from mmengine.dataset import DefaultSampler, InfiniteSampler
-
 from mmagic.evaluation import MAE, PSNR, SSIM
+from mmengine.dataset import DefaultSampler, InfiniteSampler
 
 # Base config for CelebA-HQ dataset
 

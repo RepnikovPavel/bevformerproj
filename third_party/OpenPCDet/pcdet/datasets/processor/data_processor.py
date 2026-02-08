@@ -1,9 +1,10 @@
 from functools import partial
 
 import numpy as np
-from skimage import transform
 import torch
 import torchvision
+from skimage import transform
+
 from ...utils import box_utils, common_utils
 
 tv = None

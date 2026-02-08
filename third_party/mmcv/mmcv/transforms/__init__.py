@@ -2,11 +2,25 @@
 from .base import BaseTransform
 from .builder import TRANSFORMS
 from .loading import LoadAnnotations, LoadImageFromFile
-from .processing import (CenterCrop, MultiScaleFlipAug, Normalize, Pad,
-                         RandomChoiceResize, RandomFlip, RandomGrayscale,
-                         RandomResize, Resize, TestTimeAug)
-from .wrappers import (Compose, KeyMapper, RandomApply, RandomChoice,
-                       TransformBroadcaster)
+from .processing import (
+    CenterCrop,
+    MultiScaleFlipAug,
+    Normalize,
+    Pad,
+    RandomChoiceResize,
+    RandomFlip,
+    RandomGrayscale,
+    RandomResize,
+    Resize,
+    TestTimeAug,
+)
+from .wrappers import (
+    Compose,
+    KeyMapper,
+    RandomApply,
+    RandomChoice,
+    TransformBroadcaster,
+)
 
 try:
     import torch  # noqa: F401

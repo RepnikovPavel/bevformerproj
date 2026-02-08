@@ -6,6 +6,7 @@ import numpy as np
 
 from mmagic.registry import METRICS
 from mmagic.utils import to_numpy
+
 from .base_sample_wise_metric import BaseSampleWiseMetric
 from .metrics_utils import img_transform
 

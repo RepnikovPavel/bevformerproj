@@ -19,9 +19,8 @@ from typing import Union
 
 import numpy as np
 import torch
-from PIL import Image
-
 from mmagic.models.diffusion_schedulers import EditDDIMScheduler
+from PIL import Image
 
 
 class DDIMInversion:

@@ -1,10 +1,10 @@
 # Copyright (c) OpenMMLab. All rights reserved.
-import mmcv
 import numpy as np
 import torch
-
 from mmagic.structures import DataSample
 from mmagic.visualization import ConcatImageVisualizer
+
+import mmcv
 
 
 def test_concatimagevisualizer():

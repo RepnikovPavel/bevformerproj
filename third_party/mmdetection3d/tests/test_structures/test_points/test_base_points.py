@@ -2,7 +2,6 @@
 import numpy as np
 import pytest
 import torch
-
 from mmdet3d.structures.points import BasePoints
 
 

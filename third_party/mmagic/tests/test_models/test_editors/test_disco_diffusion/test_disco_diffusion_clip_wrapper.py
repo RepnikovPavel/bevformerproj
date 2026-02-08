@@ -4,11 +4,9 @@ from unittest.mock import MagicMock, patch
 
 import torch
 import torch.nn as nn
-
 from mmagic.models.archs import TokenizerWrapper
 from mmagic.models.editors import ClipWrapper
-from mmagic.models.editors.disco_diffusion.clip_wrapper import \
-    EmbeddingLayerWithFixes
+from mmagic.models.editors.disco_diffusion.clip_wrapper import EmbeddingLayerWithFixes
 
 
 class TestClipWrapper(TestCase):

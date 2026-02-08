@@ -1,8 +1,7 @@
 # Copyright (c) OpenMMLab. All rights reserved.
+import mmrotate.core.bbox.transforms as rtf
 import numpy as np
 import torch
-
-import mmrotate.core.bbox.transforms as rtf
 
 
 def test_transforms():

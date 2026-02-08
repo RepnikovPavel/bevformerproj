@@ -1,8 +1,9 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 from coremltools.converters.mil import Builder as mb
 from coremltools.converters.mil.frontend.torch.ops import _get_inputs
-from coremltools.converters.mil.frontend.torch.torch_op_registry import \
-    register_torch_op
+from coremltools.converters.mil.frontend.torch.torch_op_registry import (
+    register_torch_op,
+)
 
 
 @register_torch_op(torch_alias=['mmdeploy::coreml_nms'])

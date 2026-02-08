@@ -4,12 +4,11 @@ from typing import Dict, Optional, Sequence, Union
 
 import torch
 import torch.nn as nn
-from torch.nn import functional as F
-
 from mmocr.models.common.dictionary import Dictionary
 from mmocr.models.textrecog.decoders.base import BaseDecoder
 from mmocr.registry import MODELS
 from mmocr.structures import TextRecogDataSample
+from torch.nn import functional as F
 
 
 @MODELS.register_module()

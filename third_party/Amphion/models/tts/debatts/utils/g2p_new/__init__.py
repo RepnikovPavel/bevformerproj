@@ -3,11 +3,13 @@
 # This source code is licensed under the MIT license found in the
 # LICENSE file in the root directory of this source tree.
 
-from utils.g2p_new import cleaners
-from tokenizers import Tokenizer
-from utils.g2p_new.text_tokenizers import TextTokenizer
 import json
 import re
+
+from tokenizers import Tokenizer
+
+from utils.g2p_new import cleaners
+from utils.g2p_new.text_tokenizers import TextTokenizer
 
 
 class PhonemeBpeTokenizer:

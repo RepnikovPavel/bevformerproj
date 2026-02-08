@@ -2,7 +2,6 @@
 import numpy as np
 import pytest
 import torch
-
 from mmcv.ops import RiRoIAlignRotated
 
 if torch.__version__ == 'parrots':

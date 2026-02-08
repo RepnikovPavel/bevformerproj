@@ -3,10 +3,10 @@ from argparse import ArgumentParser
 from io import BytesIO
 
 import matplotlib.pyplot as plt
-import mmcv
 import requests
-
 from mmseg.apis import inference_model, init_model
+
+import mmcv
 
 
 def parse_args():

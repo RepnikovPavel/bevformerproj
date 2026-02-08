@@ -1,6 +1,7 @@
 import torch
-from torch import nn
 import torch.nn.functional as F
+from torch import nn
+
 
 def clip_sigmoid(x, eps=1e-4):
     y = torch.clamp(x.sigmoid_(), min=eps, max=1 - eps)

@@ -1,10 +1,12 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import pytest
 import torch
-
-from mmseg.models.backbones.twins import (PCPVT, SVT,
-                                          ConditionalPositionEncoding,
-                                          LocallyGroupedSelfAttention)
+from mmseg.models.backbones.twins import (
+    PCPVT,
+    SVT,
+    ConditionalPositionEncoding,
+    LocallyGroupedSelfAttention,
+)
 
 
 def test_pcpvt():

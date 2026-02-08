@@ -3,10 +3,15 @@ import copy
 
 import numpy as np
 import pytest
-
-from mmagic.datasets.transforms import (CenterCropLongEdge, Flip, NumpyPad,
-                                        RandomCropLongEdge, RandomRotation,
-                                        RandomTransposeHW, Resize)
+from mmagic.datasets.transforms import (
+    CenterCropLongEdge,
+    Flip,
+    NumpyPad,
+    RandomCropLongEdge,
+    RandomRotation,
+    RandomTransposeHW,
+    Resize,
+)
 
 
 class TestAugmentations:

@@ -2,7 +2,6 @@
 from unittest import TestCase
 
 import torch
-
 from mmdet.models import L2Loss
 
 

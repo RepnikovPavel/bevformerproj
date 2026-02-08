@@ -3,10 +3,10 @@
 import torch.nn as nn
 
 from .classification import CrossEntropyLoss, SoftEntropyLoss
-from .memory import HybridMemory
-from .triplet import SoftmaxTripletLoss, SoftSoftmaxTripletLoss, TripletLoss
 from .gan_loss import GANLoss
+from .memory import HybridMemory
 from .sia_loss import SiaLoss
+from .triplet import SoftmaxTripletLoss, SoftSoftmaxTripletLoss, TripletLoss
 
 
 def build_loss(

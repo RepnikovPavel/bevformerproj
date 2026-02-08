@@ -12,6 +12,7 @@ from mmengine.model import BaseModule
 from mmpretrain.models import VisionTransformer
 from mmpretrain.registry import MODELS
 from mmpretrain.structures import DataSample
+
 from .base import BaseSelfSupervisor
 
 

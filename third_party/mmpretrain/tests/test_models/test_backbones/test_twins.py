@@ -4,10 +4,12 @@ import copy
 import pytest
 import torch
 import torch.nn as nn
-
-from mmpretrain.models.backbones.twins import (PCPVT, SVT,
-                                               GlobalSubsampledAttention,
-                                               LocallyGroupedSelfAttention)
+from mmpretrain.models.backbones.twins import (
+    PCPVT,
+    SVT,
+    GlobalSubsampledAttention,
+    LocallyGroupedSelfAttention,
+)
 
 
 def test_LSA_module():

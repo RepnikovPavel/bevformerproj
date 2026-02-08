@@ -2,19 +2,27 @@
 from mmengine.config import read_base
 
 with read_base():
-    from ..._base_.models.slowonly_r50 import *
     from ..._base_.default_runtime import *
+    from ..._base_.models.slowonly_r50 import *
 
+from mmaction.datasets import (
+    CenterCrop,
+    DecordDecode,
+    DecordInit,
+    Flip,
+    FormatShape,
+    PackActionInputs,
+    RandomResizedCrop,
+    Resize,
+    SampleFrames,
+    ThreeCrop,
+    VideoDataset,
+)
+from mmaction.evaluation import AccMetric
 from mmengine.dataset import DefaultSampler
 from mmengine.optim import CosineAnnealingLR, LinearLR
 from mmengine.runner import EpochBasedTrainLoop, TestLoop, ValLoop
 from torch.optim.sgd import SGD
-
-from mmaction.datasets import (CenterCrop, DecordDecode, DecordInit, Flip,
-                               FormatShape, PackActionInputs,
-                               RandomResizedCrop, Resize, SampleFrames,
-                               ThreeCrop, VideoDataset)
-from mmaction.evaluation import AccMetric
 
 # model settings
 model.update(dict(backbone=dict(pretrained=None)))

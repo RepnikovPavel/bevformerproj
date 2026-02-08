@@ -3,10 +3,10 @@ import argparse
 import math
 import os.path as osp
 
+from mmocr.utils import convert_annotations
+
 import mmcv
 import mmengine
-
-from mmocr.utils import convert_annotations
 
 
 def parse_args():

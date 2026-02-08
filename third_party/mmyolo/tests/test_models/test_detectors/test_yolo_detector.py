@@ -7,10 +7,9 @@ import torch
 from mmdet.structures import DetDataSample
 from mmdet.testing import demo_mm_inputs
 from mmengine.logging import MessageHub
-from parameterized import parameterized
-
 from mmyolo.testing import get_detector_cfg
 from mmyolo.utils import register_all_modules
+from parameterized import parameterized
 
 
 class TestSingleStageDetector(TestCase):

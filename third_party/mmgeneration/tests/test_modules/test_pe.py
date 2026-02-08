@@ -1,10 +1,10 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import pytest
 import torch
-
 from mmgen.models.architectures.positional_encoding import CatersianGrid as CSG
-from mmgen.models.architectures.positional_encoding import \
-    SinusoidalPositionalEmbedding as SPE
+from mmgen.models.architectures.positional_encoding import (
+    SinusoidalPositionalEmbedding as SPE,
+)
 
 
 class TestSPE:

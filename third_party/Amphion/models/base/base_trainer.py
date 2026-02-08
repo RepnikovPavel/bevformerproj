@@ -4,19 +4,17 @@
 # LICENSE file in the root directory of this source tree.
 
 import os
-import shutil
 import random
+import shutil
 import time
-import torch
-import numpy as np
-from utils.util import Logger, ValueWindow
-from torch.utils.data import DataLoader
-
-import torch.nn.functional as F
-from transformers import get_inverse_sqrt_schedule, get_constant_schedule
 
 import accelerate
+import numpy as np
+import torch
 from accelerate.utils import ProjectConfiguration
+from torch.utils.data import DataLoader
+from transformers import get_inverse_sqrt_schedule
+from utils.util import Logger, ValueWindow
 
 from models.base.base_sampler import VariableSampler
 

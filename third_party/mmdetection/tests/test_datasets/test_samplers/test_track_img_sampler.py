@@ -3,9 +3,8 @@ from collections.abc import Iterable
 from copy import deepcopy
 from unittest import TestCase
 
-from mmengine.dataset import ClassBalancedDataset, ConcatDataset
-
 from mmdet.datasets import MOTChallengeDataset, TrackImgSampler
+from mmengine.dataset import ClassBalancedDataset, ConcatDataset
 
 
 class TestTrackImgSampler(TestCase):

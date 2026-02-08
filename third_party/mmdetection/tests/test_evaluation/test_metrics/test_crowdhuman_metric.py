@@ -4,7 +4,6 @@ from unittest import TestCase
 
 import numpy as np
 import torch
-
 from mmdet.evaluation import CrowdHumanMetric
 
 

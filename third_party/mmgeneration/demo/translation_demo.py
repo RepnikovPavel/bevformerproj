@@ -3,9 +3,10 @@ import argparse
 import os
 import sys
 
+from torchvision import utils
+
 import mmcv
 from mmcv import DictAction
-from torchvision import utils
 
 # yapf: disable
 sys.path.append(os.path.abspath(os.path.join(__file__, '../..')))  # isort:skip  # noqa

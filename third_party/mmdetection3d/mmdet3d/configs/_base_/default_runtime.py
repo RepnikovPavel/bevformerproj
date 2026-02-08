@@ -1,12 +1,11 @@
 # Copyright (c) OpenMMLab. All rights reserved.
+from mmdet3d.engine.hooks.visualization_hook import Det3DVisualizationHook
 from mmengine.hooks.checkpoint_hook import CheckpointHook
 from mmengine.hooks.iter_timer_hook import IterTimerHook
 from mmengine.hooks.logger_hook import LoggerHook
 from mmengine.hooks.param_scheduler_hook import ParamSchedulerHook
 from mmengine.hooks.sampler_seed_hook import DistSamplerSeedHook
 from mmengine.runner.log_processor import LogProcessor
-
-from mmdet3d.engine.hooks.visualization_hook import Det3DVisualizationHook
 
 default_scope = 'mmdet3d'
 

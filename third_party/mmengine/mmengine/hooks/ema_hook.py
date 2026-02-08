@@ -7,6 +7,7 @@ from typing import Dict, Optional
 from mmengine.logging import print_log
 from mmengine.model import is_model_wrapper
 from mmengine.registry import HOOKS, MODELS
+
 from .hook import DATA_BATCH, Hook
 
 

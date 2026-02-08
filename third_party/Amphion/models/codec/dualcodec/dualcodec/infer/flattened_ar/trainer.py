@@ -2,19 +2,10 @@
 #
 # This source code is licensed under the MIT license found in the
 # LICENSE file in the root directory of this source tree.
-import json
-import os
-import shutil
 import torch
-import time
-from pathlib import Path
-import torch
-from tqdm import tqdm
-import torch.nn as nn
 from dualcodec import BaseTrainer
-import safetensors
-import numpy as np
 from einops import rearrange
+
 from .flatten_patterns import offset_codes
 
 

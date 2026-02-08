@@ -6,9 +6,8 @@ from unittest.mock import MagicMock, patch
 
 import cv2
 import numpy as np
-from parameterized import parameterized
-
 from mmengine.fileio.backends import MemcachedBackend
+from parameterized import parameterized
 
 
 def imfrombytes(content):

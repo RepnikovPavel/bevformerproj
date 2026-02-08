@@ -5,6 +5,7 @@ import torch
 import torch.nn as nn
 
 from mmagic.registry import MODELS
+
 from ..gan_loss import gen_path_regularizer
 
 

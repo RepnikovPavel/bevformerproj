@@ -15,6 +15,7 @@ from mmengine.utils import to_3tuple
 
 from mmaction.registry import MODELS
 from mmaction.utils import get_str_type
+
 from ..utils.embed import PatchEmbed3D
 
 

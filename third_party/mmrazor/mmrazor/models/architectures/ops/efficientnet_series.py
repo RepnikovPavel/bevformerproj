@@ -5,6 +5,7 @@ import torch.nn as nn
 from mmcv.cnn import ConvModule
 
 from mmrazor.registry import MODELS
+
 from .base import BaseOP
 
 try:

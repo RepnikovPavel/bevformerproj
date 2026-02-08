@@ -4,12 +4,13 @@ from abc import abstractmethod
 from collections import Counter
 from typing import List
 
-import mmengine
 import numpy as np
 from mmengine.dataset import BaseDataset
 from pycocotools.coco import COCO
 
+import mmengine
 from mmpretrain.registry import DATASETS
+
 from .coco_vqa import COCOVQA
 
 

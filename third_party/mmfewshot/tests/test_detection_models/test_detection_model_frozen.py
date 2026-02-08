@@ -1,9 +1,9 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 
-from mmcv import ConfigDict
 from mmcv.utils import get_logger
-
 from mmfewshot.detection.models.builder import build_detector
+
+from mmcv import ConfigDict
 
 
 def test_attention_rpn_detector_forward():

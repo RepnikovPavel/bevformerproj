@@ -1,9 +1,7 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import pytest
 import torch
-
-from mmflow.models.encoders import (CorrEncoder, FlowNetEncoder,
-                                    FlowNetSDEncoder)
+from mmflow.models.encoders import CorrEncoder, FlowNetEncoder, FlowNetSDEncoder
 
 
 def test_flownet_encoder():

@@ -4,11 +4,10 @@ import math
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
+from mmrazor.models.architectures.dynamic_ops import DynamicConv2d, DynamicLinear
 from torch import Tensor
 from torch.cuda.amp import custom_bwd, custom_fwd
 
-from mmrazor.models.architectures.dynamic_ops import (DynamicConv2d,
-                                                      DynamicLinear)
 # from mmrazor.implementations.pruning.sparse_gpt.utils import torch_setting
 from .gptq import GPTQMixIn
 

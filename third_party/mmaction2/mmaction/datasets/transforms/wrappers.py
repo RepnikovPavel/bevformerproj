@@ -1,11 +1,11 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import random
 
-import mmengine
 import numpy as np
 from mmcv.transforms import BaseTransform, to_tensor
 from mmengine.utils import digit_version
 
+import mmengine
 from mmaction.registry import TRANSFORMS
 
 

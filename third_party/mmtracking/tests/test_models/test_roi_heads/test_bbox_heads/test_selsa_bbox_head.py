@@ -1,9 +1,9 @@
 # Copyright (c) OpenMMLab. All rights reserved.
-import mmcv
 import torch
 from mmdet.core import bbox2roi, build_assigner, build_sampler
-
 from mmtrack.models.roi_heads.bbox_heads import SelsaBBoxHead
+
+import mmcv
 
 
 def test_selsa_bbox_head_loss():

@@ -3,7 +3,7 @@
 # This source code is licensed under the MIT license found in the
 # LICENSE file in the root directory of this source tree.
 
-from datasets import load_dataset, IterableDataset
+from datasets import IterableDataset, load_dataset
 
 path = "DE/*.tar"  # only for testing. please use full data
 
@@ -45,7 +45,6 @@ if __name__ == "__main__":
         # example['mp3']['array'].shape: [T,]
         break
     # dataloader with distributed sampler
-    import torch
     from torch.utils.data import DataLoader
 
     dataloader = DataLoader(dataset, batch_size=2, num_workers=2)

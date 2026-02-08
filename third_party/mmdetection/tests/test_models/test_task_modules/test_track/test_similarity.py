@@ -1,5 +1,4 @@
 import torch
-
 from mmdet.models.task_modules import embed_similarity
 
 

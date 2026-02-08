@@ -7,8 +7,9 @@ with read_base():
     from .._base_.models.base_styleganv3 import *
 
 from mmagic.evaluation.metrics.fid import FrechetInceptionDistance
-from mmagic.models.editors.stylegan2.stylegan2_discriminator import \
-    StyleGAN2Discriminator
+from mmagic.models.editors.stylegan2.stylegan2_discriminator import (
+    StyleGAN2Discriminator,
+)
 from mmagic.models.editors.stylegan3.stylegan3_modules import SynthesisNetwork
 
 synthesis_cfg = {

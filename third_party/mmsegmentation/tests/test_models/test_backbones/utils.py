@@ -1,10 +1,9 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import torch
-from torch.nn.modules import GroupNorm
-from torch.nn.modules.batchnorm import _BatchNorm
-
 from mmseg.models.backbones.resnet import BasicBlock, Bottleneck
 from mmseg.models.backbones.resnext import Bottleneck as BottleneckX
+from torch.nn.modules import GroupNorm
+from torch.nn.modules.batchnorm import _BatchNorm
 
 
 def is_block(modules):

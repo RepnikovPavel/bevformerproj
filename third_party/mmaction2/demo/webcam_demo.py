@@ -8,11 +8,11 @@ from threading import Thread
 import cv2
 import numpy as np
 import torch
-from mmengine import Config, DictAction
-from mmengine.dataset import Compose, pseudo_collate
-
 from mmaction.apis import init_recognizer
 from mmaction.utils import get_str_type
+from mmengine.dataset import Compose, pseudo_collate
+
+from mmengine import Config, DictAction
 
 FONTFACE = cv2.FONT_HERSHEY_COMPLEX_SMALL
 FONTSCALE = 1

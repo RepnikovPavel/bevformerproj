@@ -4,8 +4,7 @@ from typing import List
 
 import torch
 
-from mmrazor.models.mutables.mutable_channel.units import \
-    SequentialMutableChannelUnit
+from mmrazor.models.mutables.mutable_channel.units import SequentialMutableChannelUnit
 from mmrazor.utils import print_log
 
 

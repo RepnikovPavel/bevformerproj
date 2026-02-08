@@ -12,6 +12,7 @@ from mmengine.utils import is_seq_of
 from mmpretrain.models.losses import convert_to_one_hot
 from mmpretrain.registry import MODELS
 from mmpretrain.structures import DataSample
+
 from .cls_head import ClsHead
 
 

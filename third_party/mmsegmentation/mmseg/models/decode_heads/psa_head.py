@@ -5,6 +5,7 @@ import torch.nn.functional as F
 from mmcv.cnn import ConvModule
 
 from mmseg.registry import MODELS
+
 from ..utils import resize
 from .decode_head import BaseDecodeHead
 

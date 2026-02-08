@@ -2,10 +2,9 @@
 from unittest import TestCase
 
 import torch
+from mmdet.models.dense_heads import GuidedAnchorHead
 from mmengine.config import ConfigDict
 from mmengine.structures import InstanceData
-
-from mmdet.models.dense_heads import GuidedAnchorHead
 
 guided_anchor_head_config = ConfigDict(
     dict(

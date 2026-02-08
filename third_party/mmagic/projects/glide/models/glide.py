@@ -2,19 +2,19 @@
 from copy import deepcopy
 from typing import Dict, List, Optional, Union
 
-import mmengine
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-from mmengine import MessageHub
+from mmagic.registry import DIFFUSION_SCHEDULERS, MODELS
+from mmagic.structures import DataSample
+from mmagic.utils.typing import ForwardInputs, SampleList
 from mmengine.model import BaseModel, is_model_wrapper
 from mmengine.optim import OptimWrapperDict
 from mmengine.runner.checkpoint import _load_checkpoint_with_prefix
 from tqdm import tqdm
 
-from mmagic.registry import DIFFUSION_SCHEDULERS, MODELS
-from mmagic.structures import DataSample
-from mmagic.utils.typing import ForwardInputs, SampleList
+import mmengine
+from mmengine import MessageHub
 
 ModelType = Union[Dict, nn.Module]
 

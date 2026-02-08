@@ -4,13 +4,13 @@ import random
 from abc import ABCMeta, abstractmethod
 from io import StringIO
 
-import mmcv
 import numpy as np
 from addict import Dict
 from mmcv.utils import print_log
 from mmdet.datasets.pipelines import Compose
 from torch.utils.data import Dataset
 
+import mmcv
 from mmtrack.core.evaluation import eval_sot_ope
 from mmtrack.datasets import DATASETS
 

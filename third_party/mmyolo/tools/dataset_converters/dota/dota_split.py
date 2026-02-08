@@ -15,8 +15,9 @@ from typing import List, Sequence
 
 import cv2
 import numpy as np
-from mmengine import Config, MMLogger, mkdir_or_exist, print_log
 from PIL import Image
+
+from mmengine import Config, MMLogger, mkdir_or_exist, print_log
 
 Image.MAX_IMAGE_PIXELS = None
 

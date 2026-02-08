@@ -4,18 +4,15 @@ from mmengine.config import read_base
 
 with read_base():
     from ..._base_.datasets.imagenet_bs64_swin_224 import *
-    from ..._base_.schedules.imagenet_bs1024_adamw_swin import *
     from ..._base_.default_runtime import *
+    from ..._base_.schedules.imagenet_bs1024_adamw_swin import *
 
 from mmengine.model import PretrainedInit, TruncNormalInit
 from mmengine.optim import CosineAnnealingLR, LinearLR
-from torch.optim import AdamW
-
-from mmpretrain.engine.optimizers import \
-    LearningRateDecayOptimWrapperConstructor
-from mmpretrain.models import (BEiTViT, ImageClassifier, LabelSmoothLoss,
-                               LinearClsHead)
+from mmpretrain.engine.optimizers import LearningRateDecayOptimWrapperConstructor
+from mmpretrain.models import BEiTViT, ImageClassifier, LabelSmoothLoss, LinearClsHead
 from mmpretrain.models.utils.batch_augments import CutMix, Mixup
+from torch.optim import AdamW
 
 # model settings
 model = dict(

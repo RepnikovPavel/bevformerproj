@@ -5,6 +5,7 @@ from typing import List, Optional, Tuple
 
 from mmocr.registry import DATA_GATHERERS
 from mmocr.utils import list_files
+
 from .base import BaseGatherer
 
 

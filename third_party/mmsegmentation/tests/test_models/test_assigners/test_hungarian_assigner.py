@@ -3,7 +3,6 @@ from unittest import TestCase
 
 import torch
 from mmengine.structures import InstanceData
-
 from mmseg.models.assigners import HungarianAssigner
 
 

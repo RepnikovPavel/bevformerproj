@@ -5,6 +5,7 @@ from typing import Optional
 import numpy as np
 
 from mmpose.registry import DATASETS
+
 from .humanart_dataset import HumanArtDataset
 
 

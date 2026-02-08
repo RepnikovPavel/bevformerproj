@@ -5,10 +5,9 @@ import json_tricks as json
 import numpy as np
 from mmcv.parallel import DataContainer as DC
 from mmengine.dataset import Compose
-from torch.utils.data import Dataset
-
 from mmpose.core.evaluation.top_down_eval import keypoint_pck_accuracy
 from mmpose.datasets import DATASETS
+from torch.utils.data import Dataset
 
 
 @DATASETS.register_module()

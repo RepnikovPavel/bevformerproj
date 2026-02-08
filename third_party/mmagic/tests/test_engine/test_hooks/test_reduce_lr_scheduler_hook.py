@@ -4,9 +4,9 @@ from unittest.mock import Mock
 import pytest
 import torch
 import torch.nn.functional as F
-from mmengine import MessageHub
-
 from mmagic.engine.hooks import ReduceLRSchedulerHook
+
+from mmengine import MessageHub
 
 
 class ToyModel(torch.nn.Module):

@@ -3,10 +3,9 @@ import numpy as np
 import pytest
 import torch
 import torch.nn.functional as F
-from mmcv.transforms import to_tensor
-
 from mmaction.models import CutmixBlending, MixupBlending, RandomBatchAugment
 from mmaction.structures import ActionDataSample
+from mmcv.transforms import to_tensor
 
 
 def get_label(label_):

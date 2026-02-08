@@ -4,14 +4,16 @@ from unittest.mock import patch
 
 import pytest
 import torch
-from mmengine.optim import OptimWrapper
-from torch.optim import Adam
-
 from mmagic.models.data_preprocessors import DataPreprocessor
-from mmagic.models.editors import (RealBasicVSR, RealBasicVSRNet,
-                                   UNetDiscriminatorWithSpectralNorm)
+from mmagic.models.editors import (
+    RealBasicVSR,
+    RealBasicVSRNet,
+    UNetDiscriminatorWithSpectralNorm,
+)
 from mmagic.models.losses import GANLoss, L1Loss, PerceptualLoss, PerceptualVGG
 from mmagic.structures import DataSample
+from mmengine.optim import OptimWrapper
+from torch.optim import Adam
 
 
 @patch.object(PerceptualVGG, 'init_weights')

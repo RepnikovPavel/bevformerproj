@@ -3,7 +3,6 @@ import platform
 
 import pytest
 import torch
-
 from mmagic.models.losses import LightCNNFeatureLoss
 
 

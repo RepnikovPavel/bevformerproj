@@ -6,13 +6,12 @@ from collections import OrderedDict
 from typing import Dict
 
 import numpy as np
-from mmengine.fileio import load
-from mmengine.logging import MMLogger
-from terminaltables import AsciiTable
-
 from mmdet.datasets.api_wrappers import COCO, COCOeval
 from mmdet.evaluation.metrics import CocoMetric
 from mmdet.registry import METRICS
+from mmengine.fileio import load
+from mmengine.logging import MMLogger
+from terminaltables import AsciiTable
 
 
 @METRICS.register_module()

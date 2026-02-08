@@ -1,9 +1,10 @@
-import numpy as np
-import cv2
 import os
+
+import cv2
+import numpy as np
 import torch
-from einops import rearrange
 from annotator.util import annotator_ckpts_path
+from einops import rearrange
 
 
 class Network(torch.nn.Module):

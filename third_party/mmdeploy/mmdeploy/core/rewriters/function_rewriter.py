@@ -1,13 +1,19 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import types
 from collections import defaultdict
-from typing import (Any, Callable, Dict, List, MutableSequence, Optional,
-                    Tuple, Union)
+from typing import Any, Callable, Dict, List, MutableSequence, Optional, Tuple, Union
 
 from mmdeploy.utils import IR, Backend, get_root_logger
-from .rewriter_utils import (Checker, ContextCaller, RewriterRegistry,
-                             copy_function, get_frame_func, get_func_qualname,
-                             import_function)
+
+from .rewriter_utils import (
+    Checker,
+    ContextCaller,
+    RewriterRegistry,
+    copy_function,
+    get_frame_func,
+    get_func_qualname,
+    import_function,
+)
 
 try:
     try:

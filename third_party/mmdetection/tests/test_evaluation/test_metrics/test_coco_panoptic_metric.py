@@ -4,12 +4,12 @@ import tempfile
 import unittest
 from copy import deepcopy
 
-import mmcv
 import numpy as np
 import torch
+from mmdet.evaluation import INSTANCE_OFFSET, CocoPanopticMetric
 from mmengine.fileio import dump
 
-from mmdet.evaluation import INSTANCE_OFFSET, CocoPanopticMetric
+import mmcv
 
 try:
     import panopticapi

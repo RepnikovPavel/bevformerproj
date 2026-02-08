@@ -2,9 +2,8 @@
 import os
 import unittest
 
-from mmengine.fileio import dump
-
 from mmdet.datasets import CityscapesDataset
+from mmengine.fileio import dump
 
 
 class TestCityscapesDataset(unittest.TestCase):

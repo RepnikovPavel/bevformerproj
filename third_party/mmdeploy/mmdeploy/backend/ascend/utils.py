@@ -3,7 +3,6 @@ import math
 import os.path as osp
 
 import mmengine
-
 from mmdeploy.utils import get_root_logger
 
 

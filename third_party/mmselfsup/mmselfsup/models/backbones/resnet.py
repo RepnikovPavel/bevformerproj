@@ -6,6 +6,7 @@ from mmcls.models.backbones import ResNet as _ResNet
 from mmcls.models.backbones.resnet import BasicBlock, Bottleneck
 
 from mmselfsup.registry import MODELS
+
 from ..utils import Sobel
 
 

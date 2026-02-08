@@ -1,10 +1,11 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import pytest
 import torch
-
-from mmselfsup.models.utils import (SelfSupDataPreprocessor,
-                                    TwoNormDataPreprocessor,
-                                    VideoDataPreprocessor)
+from mmselfsup.models.utils import (
+    SelfSupDataPreprocessor,
+    TwoNormDataPreprocessor,
+    VideoDataPreprocessor,
+)
 from mmselfsup.structures import SelfSupDataSample
 
 

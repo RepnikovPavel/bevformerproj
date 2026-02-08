@@ -10,6 +10,7 @@ from mmengine.model import Sequential
 from mmengine.model.weight_init import trunc_normal_
 
 from mmpretrain.registry import MODELS
+
 from .cls_head import ClsHead
 
 

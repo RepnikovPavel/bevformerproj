@@ -12,8 +12,8 @@ from mmengine.model import BaseModule, ModuleList, Sequential
 from mmengine.registry import MODELS
 from mmengine.utils import deprecated_api_warning, to_2tuple
 
-from mmcv.cnn import (Linear, build_activation_layer, build_conv_layer,
-                      build_norm_layer)
+from mmcv.cnn import Linear, build_activation_layer, build_conv_layer, build_norm_layer
+
 from .drop import build_dropout
 from .scale import LayerScale
 

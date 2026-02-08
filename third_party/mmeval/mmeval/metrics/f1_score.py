@@ -1,6 +1,7 @@
 # Copyright (c) OpenMMLab. All rights reserved.
-import numpy as np
 from typing import TYPE_CHECKING, Dict, Sequence, Tuple, Union, overload
+
+import numpy as np
 
 from mmeval.core.base_metric import BaseMetric
 from mmeval.core.dispatcher import dispatch

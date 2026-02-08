@@ -4,12 +4,17 @@ import glob
 import os.path as osp
 
 import cityscapesscripts.helpers.labels as CSLabels
-import mmcv
 import numpy as np
 import pycocotools.mask as maskUtils
 from mmengine.fileio import dump
-from mmengine.utils import (Timer, mkdir_or_exist, track_parallel_progress,
-                            track_progress)
+from mmengine.utils import (
+    Timer,
+    mkdir_or_exist,
+    track_parallel_progress,
+    track_progress,
+)
+
+import mmcv
 
 
 def collect_files(img_dir, gt_dir):

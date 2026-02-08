@@ -12,6 +12,7 @@ from torch.nn.modules.batchnorm import SyncBatchNorm
 from torch.nn.utils import spectral_norm
 
 from mmgen.models.builder import MODULES
+
 from .biggan_snmodule import SNConv2d, SNLinear
 
 

@@ -3,7 +3,6 @@ import os.path as osp
 import warnings
 from typing import List, Optional, Union
 
-import mmcv
 import torch
 from mmcv.transforms import Compose
 from mmengine.dist import master_only
@@ -13,6 +12,7 @@ from mmengine.model import is_model_wrapper
 from mmengine.utils import mkdir_or_exist
 from mmengine.visualization import Visualizer
 
+import mmcv
 from mmrazor.models.task_modules import RecorderManager
 from mmrazor.registry import HOOKS
 from mmrazor.visualization.local_visualizer import modify

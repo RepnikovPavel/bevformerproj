@@ -1,7 +1,6 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import torch
 from mmdet.core.bbox.demodata import random_boxes
-
 from mmtrack.models import TRACKERS
 
 

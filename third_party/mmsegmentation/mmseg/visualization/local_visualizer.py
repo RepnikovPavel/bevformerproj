@@ -2,13 +2,13 @@
 from typing import Dict, List, Optional
 
 import cv2
-import mmcv
 import numpy as np
 import torch
 from mmengine.dist import master_only
 from mmengine.structures import PixelData
 from mmengine.visualization import Visualizer
 
+import mmcv
 from mmseg.registry import VISUALIZERS
 from mmseg.structures import SegDataSample
 from mmseg.utils import get_classes, get_palette

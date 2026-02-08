@@ -4,7 +4,6 @@ from unittest import TestCase
 import numpy as np
 import torch
 import torch.nn as nn
-
 from mmpose.models.backbones import TCN
 from mmpose.models.backbones.tcn import BasicTemporalBlock
 

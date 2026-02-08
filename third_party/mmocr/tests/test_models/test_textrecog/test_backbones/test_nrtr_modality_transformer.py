@@ -2,7 +2,6 @@
 import unittest
 
 import torch
-
 from mmocr.models.textrecog.backbones import NRTRModalityTransform
 
 

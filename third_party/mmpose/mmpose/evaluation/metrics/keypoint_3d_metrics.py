@@ -8,6 +8,7 @@ from mmengine.evaluator import BaseMetric
 from mmengine.logging import MMLogger
 
 from mmpose.registry import METRICS
+
 from ..functional import keypoint_mpjpe
 
 

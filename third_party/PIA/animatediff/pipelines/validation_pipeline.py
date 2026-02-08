@@ -5,12 +5,6 @@ from typing import Callable, List, Optional, Union
 
 import numpy as np
 import torch
-from einops import rearrange
-from packaging import version
-from PIL import Image
-from tqdm import tqdm
-from transformers import CLIPTextModel, CLIPTokenizer
-
 from animatediff.models.unet import UNet3DConditionModel
 from animatediff.utils.util import prepare_mask_coef
 from diffusers.configuration_utils import FrozenDict
@@ -25,7 +19,11 @@ from diffusers.schedulers import (
     PNDMScheduler,
 )
 from diffusers.utils import BaseOutput, deprecate, is_accelerate_available, logging
-
+from einops import rearrange
+from packaging import version
+from PIL import Image
+from tqdm import tqdm
+from transformers import CLIPTextModel, CLIPTokenizer
 
 PIL_INTERPOLATION = {
     "linear": Image.Resampling.BILINEAR,

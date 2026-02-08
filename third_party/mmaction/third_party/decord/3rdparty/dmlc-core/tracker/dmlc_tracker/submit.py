@@ -2,13 +2,9 @@
 from __future__ import absolute_import
 
 import logging
-from . import opts
-from . import local
-from . import mpi
-from . import sge
-from . import yarn
-from . import mesos
-from . import kubernetes
+
+from . import kubernetes, local, mesos, mpi, opts, sge, yarn
+
 
 def config_logger(args):
     """Configure the logger according to the arguments

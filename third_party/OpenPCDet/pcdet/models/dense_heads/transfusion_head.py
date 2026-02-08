@@ -1,15 +1,20 @@
 import copy
+
 import numpy as np
 import torch
-from torch import nn
 import torch.nn.functional as F
+from torch import nn
 from torch.nn.init import kaiming_normal_
-from ..model_utils.transfusion_utils import clip_sigmoid
-from ..model_utils.basic_block_2d import BasicBlock2D
-from ..model_utils.transfusion_utils import PositionEmbeddingLearned, TransformerDecoderLayer
-from .target_assigner.hungarian_assigner import HungarianAssigner3D
+
 from ...utils import loss_utils
 from ..model_utils import centernet_utils
+from ..model_utils.basic_block_2d import BasicBlock2D
+from ..model_utils.transfusion_utils import (
+    PositionEmbeddingLearned,
+    TransformerDecoderLayer,
+    clip_sigmoid,
+)
+from .target_assigner.hungarian_assigner import HungarianAssigner3D
 
 
 class SeparateHead_Transfusion(nn.Module):

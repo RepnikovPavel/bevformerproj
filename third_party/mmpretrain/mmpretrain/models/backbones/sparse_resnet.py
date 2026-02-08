@@ -4,12 +4,15 @@ from typing import Optional, Tuple
 
 import torch.nn as nn
 
-from mmpretrain.models.utils.sparse_modules import (SparseAvgPooling,
-                                                    SparseBatchNorm2d,
-                                                    SparseConv2d,
-                                                    SparseMaxPooling,
-                                                    SparseSyncBatchNorm2d)
+from mmpretrain.models.utils.sparse_modules import (
+    SparseAvgPooling,
+    SparseBatchNorm2d,
+    SparseConv2d,
+    SparseMaxPooling,
+    SparseSyncBatchNorm2d,
+)
 from mmpretrain.registry import MODELS
+
 from .resnet import ResNet
 
 

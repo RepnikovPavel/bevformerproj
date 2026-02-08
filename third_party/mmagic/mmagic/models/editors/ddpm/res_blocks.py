@@ -1,10 +1,11 @@
 # Copyright (c) OpenMMLab. All rights reserved.
-import mmengine
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
 from mmengine.utils.dl_utils import TORCH_VERSION
 from mmengine.utils.version_utils import digit_version
+
+import mmengine
 
 
 class ResnetBlock2D(nn.Module):

@@ -4,8 +4,9 @@ import tempfile
 from collections import OrderedDict
 
 import torch
-from mmengine import Config
 from mmengine.utils import digit_version
+
+from mmengine import Config
 
 
 def parse_config(config_strings):

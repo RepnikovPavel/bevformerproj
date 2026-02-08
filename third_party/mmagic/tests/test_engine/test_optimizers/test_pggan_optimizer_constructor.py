@@ -3,11 +3,10 @@ from copy import deepcopy
 from unittest import TestCase
 from unittest.mock import MagicMock
 
-from mmengine.model import MMSeparateDistributedDataParallel
-
 from mmagic.engine import PGGANOptimWrapperConstructor
 from mmagic.registry import MODELS
 from mmagic.utils import register_all_modules
+from mmengine.model import MMSeparateDistributedDataParallel
 
 register_all_modules()
 

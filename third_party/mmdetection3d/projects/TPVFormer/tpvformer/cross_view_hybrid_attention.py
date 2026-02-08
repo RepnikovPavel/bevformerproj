@@ -4,11 +4,12 @@ from typing import List, Optional, Tuple
 import torch
 import torch.nn as nn
 from mmcv.ops.multi_scale_deform_attn import (
-    MultiScaleDeformableAttnFunction, multi_scale_deformable_attn_pytorch)
+    MultiScaleDeformableAttnFunction,
+    multi_scale_deformable_attn_pytorch,
+)
+from mmdet3d.registry import MODELS
 from mmengine.model import BaseModule, constant_init, xavier_init
 from torch import Tensor
-
-from mmdet3d.registry import MODELS
 
 
 @MODELS.register_module()

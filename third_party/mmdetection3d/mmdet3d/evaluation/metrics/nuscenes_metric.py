@@ -3,21 +3,25 @@ import tempfile
 from os import path as osp
 from typing import Dict, List, Optional, Sequence, Tuple, Union
 
-import mmengine
 import numpy as np
 import pyquaternion
 import torch
-from mmengine import Config, load
 from mmengine.evaluator import BaseMetric
 from mmengine.logging import MMLogger
 from nuscenes.eval.detection.config import config_factory
 from nuscenes.eval.detection.data_classes import DetectionConfig
 from nuscenes.utils.data_classes import Box as NuScenesBox
 
+import mmengine
 from mmdet3d.models.layers import box3d_multiclass_nms
 from mmdet3d.registry import METRICS
-from mmdet3d.structures import (CameraInstance3DBoxes, LiDARInstance3DBoxes,
-                                bbox3d2result, xywhr2xyxyr)
+from mmdet3d.structures import (
+    CameraInstance3DBoxes,
+    LiDARInstance3DBoxes,
+    bbox3d2result,
+    xywhr2xyxyr,
+)
+from mmengine import Config, load
 
 
 @METRICS.register_module()

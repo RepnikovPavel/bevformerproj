@@ -6,6 +6,7 @@ from mmengine.model import BaseModule, constant_init
 from mmengine.model.weight_init import trunc_normal_
 
 from mmpose.registry import MODELS
+
 from .base_backbone import BaseBackbone
 
 

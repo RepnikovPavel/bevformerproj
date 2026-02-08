@@ -4,10 +4,9 @@ import logging
 import os
 import os.path as osp
 
+from mmagic.utils import print_colored_log
 from mmengine.config import Config, DictAction
 from mmengine.runner import Runner
-
-from mmagic.utils import print_colored_log
 
 
 def parse_args():

@@ -1,7 +1,8 @@
+import copy
+
 import numpy as np
 import scipy
 import torch
-import copy
 from scipy.spatial import Delaunay
 
 from ..ops.roiaware_pool3d import roiaware_pool3d_utils

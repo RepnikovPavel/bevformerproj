@@ -6,12 +6,12 @@ from unittest.mock import MagicMock
 
 import pytest
 import torch
-from mmengine import Config
-from mmengine.optim import OptimWrapper
-
 from mmagic.registry import MODELS
 from mmagic.structures import DataSample
 from mmagic.utils import register_all_modules
+from mmengine.optim import OptimWrapper
+
+from mmengine import Config
 
 
 # TODO: this test is same as `test_two_stage_encoder_decoder.py`

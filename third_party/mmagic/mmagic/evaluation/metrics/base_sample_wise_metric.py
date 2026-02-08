@@ -9,6 +9,7 @@ from mmengine.model import is_model_wrapper
 from torch.utils.data.dataloader import DataLoader
 
 from mmagic.registry import METRICS
+
 from .metrics_utils import average, obtain_data
 
 

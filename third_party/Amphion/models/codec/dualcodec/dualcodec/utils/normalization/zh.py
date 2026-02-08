@@ -3,7 +3,9 @@
 # This source code is licensed under the MIT license found in the
 # LICENSE file in the root directory of this source tree.
 import re
+
 import cn2an
+
 from .global_punct import normalize_punctuation
 
 # from .text_normalization.cn_tn import TextNorm

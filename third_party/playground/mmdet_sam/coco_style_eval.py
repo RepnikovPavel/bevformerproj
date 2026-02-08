@@ -13,8 +13,13 @@ import torch
 import torch.nn.functional as F
 from mmengine.config import Config
 from mmengine.dataset import DefaultSampler, worker_init_fn
-from mmengine.dist import (collect_results, get_dist_info, get_rank, init_dist,
-                           is_distributed)
+from mmengine.dist import (
+    collect_results,
+    get_dist_info,
+    get_rank,
+    init_dist,
+    is_distributed,
+)
 from mmengine.utils import ProgressBar
 from PIL import Image
 from pycocotools.coco import COCO
@@ -26,8 +31,7 @@ try:
     import groundingdino.datasets.transforms as T
     from groundingdino.models import build_model
     from groundingdino.util import get_tokenlizer
-    from groundingdino.util.utils import (clean_state_dict,
-                                          get_phrases_from_posmap)
+    from groundingdino.util.utils import clean_state_dict, get_phrases_from_posmap
     grounding_dino_transform = T.Compose([
         T.RandomResize([800], max_size=1333),
         T.ToTensor(),
@@ -55,7 +59,6 @@ from mmdet_sam.utils import apply_exif_orientation  # noqa
 # GLIP
 try:
     import maskrcnn_benchmark
-
     from mmdet_sam.predictor_glip import GLIPDemo
 except ImportError:
     maskrcnn_benchmark = None

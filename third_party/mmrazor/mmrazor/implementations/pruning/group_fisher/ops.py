@@ -3,10 +3,8 @@ from typing import List
 
 import torch
 
-from mmrazor.models.architectures.dynamic_ops.bricks.dynamic_conv import \
-    DynamicConv2d
-from mmrazor.models.architectures.dynamic_ops.bricks.dynamic_linear import \
-    DynamicLinear
+from mmrazor.models.architectures.dynamic_ops.bricks.dynamic_conv import DynamicConv2d
+from mmrazor.models.architectures.dynamic_ops.bricks.dynamic_linear import DynamicLinear
 
 
 class GroupFisherMixin:

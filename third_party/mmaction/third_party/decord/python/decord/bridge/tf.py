@@ -3,6 +3,7 @@ from __future__ import absolute_import
 
 from .._ffi._ctypes.ndarray import _from_dlpack
 
+
 def try_import_tfdl():
     """Try to import tensorflow dlpack at runtime.
 
@@ -12,7 +13,7 @@ def try_import_tfdl():
     """
     try:
         return __import__('tensorflow.experimental.dlpack', fromlist=[''])
-    except ImportError as e:
+    except ImportError:
         raise ImportError("tensorflow >= 2.2.0 is required.")
 
 def to_tensorflow(decord_arr):

@@ -4,6 +4,7 @@ import torch.nn as nn
 from mmengine.model import BaseModule
 
 from mmagic.registry import MODELS
+
 from ..basicvsr.basicvsr_net import BasicVSRNet, ResidualBlocksWithInputConv
 
 

@@ -4,7 +4,6 @@ import platform
 import pytest
 import torch
 import torch.nn as nn
-
 from mmagic.models import RDNNet
 
 

@@ -5,6 +5,7 @@ import glob
 import multiprocessing as mp
 import os
 import sys
+
 sys.path.insert(1, os.getcwd())
 
 import tempfile
@@ -13,19 +14,15 @@ import warnings
 
 import cv2
 import numpy as np
-import tqdm
 import torch
-
+import tqdm
+from annotator.util import annotator_ckpts_path
 from detectron2.config import get_cfg
 from detectron2.data.detection_utils import read_image
 from detectron2.projects.deeplab import add_deeplab_config
 from detectron2.utils.logger import setup_logger
-
 from mask2former import add_maskformer2_config
 from predictor import VisualizationDemo
-
-from annotator.util import annotator_ckpts_path
-
 
 model_url = "https://huggingface.co/datasets/qqlu1992/Adobe_EntitySeg/resolve/main/CropFormer_model/Entity_Segmentation/CropFormer_hornet_3x.pth"
 

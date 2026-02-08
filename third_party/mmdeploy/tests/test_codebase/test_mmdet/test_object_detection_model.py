@@ -1,16 +1,16 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 from typing import Sequence
 
-import pytest
-import torch
-from mmengine import Config
-from mmengine.structures import BaseDataElement, InstanceData
-
 import mmdeploy.backend.ncnn as ncnn_apis
 import mmdeploy.backend.onnxruntime as ort_apis
+import pytest
+import torch
 from mmdeploy.codebase import import_codebase
 from mmdeploy.utils import Backend, Codebase
 from mmdeploy.utils.test import SwitchBackendWrapper, backend_checker
+from mmengine.structures import BaseDataElement, InstanceData
+
+from mmengine import Config
 
 try:
     import_codebase(Codebase.MMDET)
@@ -61,8 +61,7 @@ class TestEnd2EndModel:
                 'output_names': ['dets', 'labels']
             }})
 
-        from mmdeploy.codebase.mmdet.deploy.object_detection_model import \
-            End2EndModel
+        from mmdeploy.codebase.mmdet.deploy.object_detection_model import End2EndModel
         cls.end2end_model = End2EndModel(Backend.ONNXRUNTIME, [''], 'cpu',
                                          deploy_cfg)
 
@@ -119,8 +118,7 @@ class TestMaskEnd2EndModel:
             }
         })
 
-        from mmdeploy.codebase.mmdet.deploy.object_detection_model import \
-            End2EndModel
+        from mmdeploy.codebase.mmdet.deploy.object_detection_model import End2EndModel
         cls.end2end_model = End2EndModel(Backend.ONNXRUNTIME, [''], 'cpu',
                                          deploy_cfg)
 
@@ -245,8 +243,9 @@ def test_build_object_detection_model(partition_type):
     # simplify backend inference
     with SwitchBackendWrapper(ORTWrapper) as wrapper:
         wrapper.set(model_cfg=model_cfg, deploy_cfg=deploy_cfg)
-        from mmdeploy.codebase.mmdet.deploy.object_detection_model import \
-            build_object_detection_model
+        from mmdeploy.codebase.mmdet.deploy.object_detection_model import (
+            build_object_detection_model,
+        )
         detector = build_object_detection_model([''], model_cfg, deploy_cfg,
                                                 'cpu')
         assert isinstance(detector, End2EndModel)
@@ -270,8 +269,9 @@ class TestNCNNEnd2EndModel:
         deploy_cfg = Config({'onnx_config': {'output_names': ['output']}})
         model_cfg = Config({})
 
-        from mmdeploy.codebase.mmdet.deploy.object_detection_model import \
-            NCNNEnd2EndModel
+        from mmdeploy.codebase.mmdet.deploy.object_detection_model import (
+            NCNNEnd2EndModel,
+        )
         cls.ncnn_end2end_model = NCNNEnd2EndModel(Backend.NCNN, ['', ''],
                                                   'cpu', model_cfg, deploy_cfg)
 
@@ -356,8 +356,7 @@ class TestRKNNModel:
                         nms=dict(type='nms', iou_threshold=0.45),
                         max_per_img=100))))
 
-        from mmdeploy.codebase.mmdet.deploy.object_detection_model import \
-            RKNNModel
+        from mmdeploy.codebase.mmdet.deploy.object_detection_model import RKNNModel
         cls.rknn_model = RKNNModel(Backend.RKNN, ['', ''], 'cpu',
                                    ['' for i in range(80)], model_cfg,
                                    deploy_cfg)

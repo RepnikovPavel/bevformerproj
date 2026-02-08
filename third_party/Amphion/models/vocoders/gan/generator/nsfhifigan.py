@@ -3,18 +3,14 @@
 # This source code is licensed under the MIT license found in the
 # LICENSE file in the root directory of this source tree.
 
-import torch
-
 import numpy as np
+import torch
 import torch.nn as nn
 import torch.nn.functional as F
-
-from torch.nn import Conv1d, ConvTranspose1d
-from torch.nn.utils import weight_norm, remove_weight_norm, spectral_norm
-
 from modules.neural_source_filter import *
 from modules.vocoder_blocks import *
-
+from torch.nn import Conv1d, ConvTranspose1d
+from torch.nn.utils import remove_weight_norm, weight_norm
 
 LRELU_SLOPE = 0.1
 

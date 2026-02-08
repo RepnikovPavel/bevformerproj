@@ -8,6 +8,7 @@ from torch import Tensor, nn
 
 from mmseg.registry import MODELS
 from mmseg.utils import SampleList, add_prefix
+
 from ..utils import SelfAttentionBlock as _SelfAttentionBlock
 from .decode_head import BaseDecodeHead
 

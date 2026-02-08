@@ -1,8 +1,8 @@
 # Copyright (c) OpenMMLab. All rights reserved.
-import mmcv
 import torch
-
 from mmtrack.models.track_heads import CorrelationHead, SiameseRPNHead
+
+import mmcv
 
 
 def test_correlation_head():

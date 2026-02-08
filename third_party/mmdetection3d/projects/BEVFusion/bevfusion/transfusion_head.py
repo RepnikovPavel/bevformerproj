@@ -6,18 +6,21 @@ import numpy as np
 import torch
 import torch.nn.functional as F
 from mmcv.cnn import ConvModule, build_conv_layer
-from mmdet.models.task_modules import (AssignResult, PseudoSampler,
-                                       build_assigner, build_bbox_coder,
-                                       build_sampler)
+from mmdet.models.task_modules import (
+    AssignResult,
+    PseudoSampler,
+    build_assigner,
+    build_bbox_coder,
+    build_sampler,
+)
 from mmdet.models.utils import multi_apply
-from mmengine.structures import InstanceData
-from torch import nn
-
 from mmdet3d.models import circle_nms, draw_heatmap_gaussian, gaussian_radius
 from mmdet3d.models.dense_heads.centerpoint_head import SeparateHead
 from mmdet3d.models.layers import nms_bev
 from mmdet3d.registry import MODELS
 from mmdet3d.structures import xywhr2xyxyr
+from mmengine.structures import InstanceData
+from torch import nn
 
 
 def clip_sigmoid(x, eps=1e-4):

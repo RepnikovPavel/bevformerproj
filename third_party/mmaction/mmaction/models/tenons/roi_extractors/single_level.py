@@ -5,6 +5,7 @@ from mmaction import ops
 
 from ...registry import ROI_EXTRACTORS
 
+
 @ROI_EXTRACTORS.register_module
 class SingleRoIExtractor(nn.Module):
     """Extract RoI features from a single level feature map.

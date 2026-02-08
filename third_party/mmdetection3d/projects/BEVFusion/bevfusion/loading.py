@@ -2,12 +2,12 @@
 import copy
 from typing import Optional
 
-import mmcv
 import numpy as np
-from mmengine.fileio import get
-
 from mmdet3d.datasets.transforms import LoadMultiViewImageFromFiles
 from mmdet3d.registry import TRANSFORMS
+from mmengine.fileio import get
+
+import mmcv
 
 
 @TRANSFORMS.register_module()

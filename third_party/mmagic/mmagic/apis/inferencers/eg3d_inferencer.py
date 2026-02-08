@@ -6,7 +6,6 @@ from typing import Dict, List, Optional, Sequence, Union
 
 import numpy as np
 import torch
-from mmengine import print_log
 from mmengine.utils import digit_version
 from mmengine.utils.dl_utils import TORCH_VERSION
 from PIL import Image
@@ -15,6 +14,8 @@ from torchvision.utils import make_grid
 
 from mmagic.structures import DataSample
 from mmagic.utils import ForwardInputs, try_import
+from mmengine import print_log
+
 from .base_mmagic_inferencer import BaseMMagicInferencer, InputsType, PredType
 from .inference_functions import calculate_grid_size
 

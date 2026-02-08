@@ -1,17 +1,17 @@
 import argparse
 import os
 
-import mmcv
 import torch
-from mmcv import Config, DictAction
 from mmcv.parallel import MMDataParallel
 from mmcv.runner import get_dist_info, init_dist, load_checkpoint
 from mmgen.apis import set_random_seed
-from mmgen.core import (build_metric, single_gpu_evaluation,
-                        single_gpu_online_evaluation)
+from mmgen.core import build_metric, single_gpu_evaluation, single_gpu_online_evaluation
 from mmgen.datasets import build_dataloader, build_dataset
 from mmgen.models import build_model
 from mmgen.utils import get_root_logger
+
+import mmcv
+from mmcv import Config, DictAction
 
 
 def parse_args():

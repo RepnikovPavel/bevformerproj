@@ -7,9 +7,8 @@ The default implementation only does the register process. Users need to rename
 the ``CustomMetric`` to the real name of the metric and implement it.
 """  # noqa: E501
 
-from mmeval import BaseMetric
-
 from mmengine_template.registry import METRICS
+from mmeval import BaseMetric
 
 
 @METRICS.register_module()

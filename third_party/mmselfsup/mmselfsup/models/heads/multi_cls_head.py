@@ -10,6 +10,7 @@ from mmcv.cnn import build_norm_layer
 from mmengine.structures import LabelData
 
 from mmselfsup.registry import MODELS
+
 from ..utils import MultiPooling
 
 

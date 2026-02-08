@@ -2,12 +2,12 @@
 import numpy as np
 import pytest
 import torch
-from mmengine import Config
-
 from mmdeploy.codebase import import_codebase
 from mmdeploy.core.rewriters.rewriter_manager import RewriterContext
 from mmdeploy.utils import Backend, Codebase
 from mmdeploy.utils.test import WrapModel, check_backend, get_rewrite_outputs
+
+from mmengine import Config
 
 try:
     from torch.testing import assert_close as torch_assert_close
@@ -39,9 +39,8 @@ def get_fcuup_model():
 
 
 def test_baseclassifier_forward():
-    from mmpretrain.models.classifiers import ImageClassifier
-
     from mmdeploy.codebase.mmpretrain import models  # noqa
+    from mmpretrain.models.classifiers import ImageClassifier
 
     class DummyClassifier(ImageClassifier):
 

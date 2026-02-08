@@ -4,13 +4,13 @@ import random
 from typing import Dict, List, Sequence, Tuple, Union
 
 import cv2
-import mmcv
 import numpy as np
 from mmcv.transforms import RandomFlip as MMCV_RandomFlip
 from mmcv.transforms.base import BaseTransform
 from mmcv.transforms.utils import avoid_cache_randomness, cache_randomness
 from shapely.geometry import Polygon as plg
 
+import mmcv
 from mmocr.registry import TRANSFORMS
 from mmocr.utils import crop_polygon, poly2bbox, poly_intersection
 

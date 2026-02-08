@@ -8,13 +8,13 @@ import numpy as np
 import onnxruntime
 import torch
 import torch.nn as nn
-from mmengine import Config
+from mmaction.registry import MODELS
+from mmaction.structures import ActionDataSample
 from mmengine.registry import init_default_scope
 from mmengine.runner import load_checkpoint
 from mmengine.structures import LabelData
 
-from mmaction.registry import MODELS
-from mmaction.structures import ActionDataSample
+from mmengine import Config
 
 
 def parse_args():

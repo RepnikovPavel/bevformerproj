@@ -2,7 +2,6 @@
 import numpy.testing as npt
 import pytest
 import torch
-
 from mmagic.models.losses import GANLossComps
 
 

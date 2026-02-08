@@ -15,7 +15,6 @@ from mmengine.logging import MMLogger
 from mmengine.model import BaseDataPreprocessor, BaseModel
 from mmengine.optim import OptimWrapper
 from mmengine.runner import Runner
-
 from mmpretrain.engine import SwitchRecipeHook
 from mmpretrain.models import CrossEntropyLoss
 from mmpretrain.models.heads.cls_head import ClsHead

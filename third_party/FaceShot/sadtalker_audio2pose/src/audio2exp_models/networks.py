@@ -1,6 +1,6 @@
 import torch
-import torch.nn.functional as F
 from torch import nn
+
 
 class Conv2d(nn.Module):
     def __init__(self, cin, cout, kernel_size, stride, padding, residual=False, use_act = True, *args, **kwargs):

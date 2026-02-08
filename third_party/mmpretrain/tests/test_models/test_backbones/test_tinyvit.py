@@ -2,7 +2,6 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import pytest
 import torch
-
 from mmpretrain.models.backbones import TinyViT
 
 

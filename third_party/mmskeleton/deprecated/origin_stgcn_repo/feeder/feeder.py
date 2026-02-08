@@ -1,20 +1,12 @@
 # sys
-import os
-import sys
-import numpy as np
-import random
 import pickle
+
+import numpy as np
 
 # torch
 import torch
-import torch.nn as nn
-import torch.optim as optim
-import torch.nn.functional as F
-from torchvision import datasets, transforms
 
 # visualization
-import time
-
 # operation
 from . import tools
 

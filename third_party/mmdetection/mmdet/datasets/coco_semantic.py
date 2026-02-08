@@ -1,5 +1,6 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 from mmdet.registry import DATASETS
+
 from .ade20k import ADE20KSegDataset
 
 

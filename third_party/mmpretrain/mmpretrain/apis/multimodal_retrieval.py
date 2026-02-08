@@ -3,19 +3,19 @@ from copy import deepcopy
 from pathlib import Path
 from typing import Callable, List, Optional, Tuple, Union
 
-import mmengine
 import numpy as np
 import torch
 from mmcv.image import imread
 from mmengine.config import Config
 from mmengine.dataset import BaseDataset, Compose, default_collate
 
+import mmengine
 from mmpretrain.registry import TRANSFORMS
 from mmpretrain.structures import DataSample
 from mmpretrain.utils import track
-from .base import BaseInferencer
+
+from .base import BaseInferencer, ModelType
 from .base import InputType as ImageType
-from .base import ModelType
 from .model import list_models
 
 

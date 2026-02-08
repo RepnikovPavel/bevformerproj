@@ -1,9 +1,12 @@
 import math
+
 import numpy as np
 import torch
 import torch.nn as nn
 
-from ....ops.pointnet2.pointnet2_stack import pointnet2_modules as pointnet2_stack_modules
+from ....ops.pointnet2.pointnet2_stack import (
+    pointnet2_modules as pointnet2_stack_modules,
+)
 from ....ops.pointnet2.pointnet2_stack import pointnet2_utils as pointnet2_stack_utils
 from ....utils import common_utils
 

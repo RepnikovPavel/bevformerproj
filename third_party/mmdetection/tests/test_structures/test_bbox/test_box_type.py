@@ -2,11 +2,16 @@ from unittest import TestCase
 from unittest.mock import MagicMock
 
 import torch
+from mmdet.structures.bbox.box_type import (
+    _box_type_to_name,
+    box_converters,
+    box_types,
+    convert_box_type,
+    get_box_type,
+    register_box,
+    register_box_converter,
+)
 
-from mmdet.structures.bbox.box_type import (_box_type_to_name, box_converters,
-                                            box_types, convert_box_type,
-                                            get_box_type, register_box,
-                                            register_box_converter)
 from .utils import ToyBaseBoxes
 
 

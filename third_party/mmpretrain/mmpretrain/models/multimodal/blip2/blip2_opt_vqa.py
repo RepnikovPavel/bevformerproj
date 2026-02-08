@@ -5,6 +5,7 @@ import torch
 
 from mmpretrain.registry import MODELS
 from mmpretrain.structures import DataSample
+
 from .blip2_caption import Blip2Caption
 
 

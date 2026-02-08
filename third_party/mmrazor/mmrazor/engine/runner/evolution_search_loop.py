@@ -8,17 +8,17 @@ from typing import Any, Dict, List, Optional, Tuple, Union
 
 import numpy as np
 import torch
-from mmengine import fileio
 from mmengine.dist import broadcast_object_list
 from mmengine.evaluator import Evaluator
 from mmengine.runner import EpochBasedTrainLoop
 from mmengine.utils import is_list_of
 from torch.utils.data import DataLoader
 
+from mmengine import fileio
 from mmrazor.registry import LOOPS, TASK_UTILS
-from mmrazor.structures import (Candidates, convert_fix_subnet,
-                                export_fix_subnet)
+from mmrazor.structures import Candidates, convert_fix_subnet, export_fix_subnet
 from mmrazor.utils import SupportRandomSubnet
+
 from .utils import CalibrateBNMixin, check_subnet_resources, crossover
 
 

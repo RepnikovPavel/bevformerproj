@@ -2,13 +2,16 @@
 import unittest
 
 import torch
-
-from mmrazor import digit_version
 from mmrazor.models.mutables import SimpleMutableChannel
 from mmrazor.models.utils.expandable_utils import (
-    expand_expandable_dynamic_model, make_channel_divisible,
-    to_expandable_model)
+    expand_expandable_dynamic_model,
+    make_channel_divisible,
+    to_expandable_model,
+)
 from mmrazor.models.utils.expandable_utils.ops import ExpandLinear
+
+from mmrazor import digit_version
+
 from ....data.models import DwConvModel, MultiConcatModel, SingleLineModel
 
 

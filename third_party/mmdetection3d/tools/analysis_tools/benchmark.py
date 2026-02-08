@@ -3,13 +3,13 @@ import argparse
 import time
 
 import torch
-from mmengine import Config
+from mmdet3d.registry import MODELS
 from mmengine.device import get_device
 from mmengine.registry import init_default_scope
 from mmengine.runner import Runner, autocast, load_checkpoint
-
-from mmdet3d.registry import MODELS
 from tools.misc.fuse_conv_bn import fuse_module
+
+from mmengine import Config
 
 
 def parse_args():

@@ -4,19 +4,23 @@ from typing import Dict, Optional, Union
 import numpy as np
 import torch
 import torch.nn as nn
-from mmengine import Config, MessageHub
 from mmengine.optim import OptimWrapper
 from torch import Tensor
 
 from mmagic.registry import MODELS
 from mmagic.structures import DataSample
 from mmagic.utils.typing import SampleList
+from mmengine import Config, MessageHub
+
 from ...utils import get_module_device, get_valid_num_batches
 from ..stylegan2 import StyleGAN2
-from .stylegan3_utils import (apply_fractional_pseudo_rotation,
-                              apply_fractional_rotation,
-                              apply_fractional_translation,
-                              apply_integer_translation, rotation_matrix)
+from .stylegan3_utils import (
+    apply_fractional_pseudo_rotation,
+    apply_fractional_rotation,
+    apply_fractional_translation,
+    apply_integer_translation,
+    rotation_matrix,
+)
 
 ModelType = Union[Dict, nn.Module]
 

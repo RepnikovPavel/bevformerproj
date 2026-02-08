@@ -1,8 +1,9 @@
+import itertools
+import random
+
+import numpy as np
 import torch
 import torchaudio
-import random
-import itertools
-import numpy as np
 
 # from utils.mix import mix
 

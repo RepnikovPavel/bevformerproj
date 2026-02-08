@@ -3,10 +3,11 @@ import argparse
 import os
 import os.path as osp
 
-import mmengine
 from mmengine.config import Config, DictAction
 from mmengine.hooks import Hook
 from mmengine.runner import Runner
+
+import mmengine
 
 
 def parse_args():

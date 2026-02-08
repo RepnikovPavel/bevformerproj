@@ -7,8 +7,9 @@ import sys
 import warnings
 from multiprocessing import Lock, Pool
 
-import mmcv
 import numpy as np
+
+import mmcv
 
 
 def extract_frame(vid_item):

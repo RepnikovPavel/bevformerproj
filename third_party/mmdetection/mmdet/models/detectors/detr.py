@@ -7,8 +7,12 @@ from torch import Tensor, nn
 
 from mmdet.registry import MODELS
 from mmdet.structures import OptSampleList
-from ..layers import (DetrTransformerDecoder, DetrTransformerEncoder,
-                      SinePositionalEncoding)
+
+from ..layers import (
+    DetrTransformerDecoder,
+    DetrTransformerEncoder,
+    SinePositionalEncoding,
+)
 from .base_detr import DetectionTransformer
 
 

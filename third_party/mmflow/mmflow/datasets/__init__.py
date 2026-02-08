@@ -9,17 +9,41 @@ from .flyingthings3d_subset import FlyingThings3DSubset
 from .hd1k import HD1K
 from .kiiti2012 import KITTI2012
 from .kitti2015 import KITTI2015
-from .pipelines import (Collect, ColorJitter, Compose, DefaultFormatBundle,
-                        Erase, GaussianNoise, ImageToTensor, InputPad,
-                        InputResize, LoadImageFromFile, Normalize,
-                        PhotoMetricDistortion, RandomAffine, RandomCrop,
-                        RandomFlip, RandomRotation, RandomTranslate, Rerange,
-                        SpacialTransform, ToDataContainer, ToTensor, Transpose,
-                        Validation)
+from .pipelines import (
+                        Collect,
+                        ColorJitter,
+                        Compose,
+                        DefaultFormatBundle,
+                        Erase,
+                        GaussianNoise,
+                        ImageToTensor,
+                        InputPad,
+                        InputResize,
+                        LoadImageFromFile,
+                        Normalize,
+                        PhotoMetricDistortion,
+                        RandomAffine,
+                        RandomCrop,
+                        RandomFlip,
+                        RandomRotation,
+                        RandomTranslate,
+                        Rerange,
+                        SpacialTransform,
+                        ToDataContainer,
+                        ToTensor,
+                        Transpose,
+                        Validation,
+)
 from .samplers import DistributedSampler, MixedBatchDistributedSampler
 from .sintel import Sintel
-from .utils import (read_flow, read_flow_kitti, render_color_wheel,
-                    visualize_flow, write_flow, write_flow_kitti)
+from .utils import (
+                        read_flow,
+                        read_flow_kitti,
+                        render_color_wheel,
+                        visualize_flow,
+                        write_flow,
+                        write_flow_kitti,
+)
 
 __all__ = [
     'DATASETS', 'PIPELINES', 'build_dataloader', 'build_dataset',

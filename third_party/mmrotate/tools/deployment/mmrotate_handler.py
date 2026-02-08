@@ -2,11 +2,11 @@
 import base64
 import os
 
-import mmcv
 import torch
 from mmdet.apis import inference_detector, init_detector
 from ts.torch_handler.base_handler import BaseHandler
 
+import mmcv
 import mmrotate  # noqa: F401
 
 

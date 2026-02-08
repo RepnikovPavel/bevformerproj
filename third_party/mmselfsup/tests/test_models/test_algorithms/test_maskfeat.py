@@ -6,7 +6,6 @@ import pytest
 import torch
 from mmengine.structures import InstanceData
 from mmengine.utils import digit_version
-
 from mmselfsup.models.algorithms.maskfeat import MaskFeat
 from mmselfsup.structures import SelfSupDataSample
 

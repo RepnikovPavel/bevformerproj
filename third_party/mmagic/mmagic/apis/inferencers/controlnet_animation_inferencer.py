@@ -3,7 +3,6 @@ import os
 from typing import Dict, List, Optional, Union
 
 import cv2
-import mmcv
 import numpy as np
 import PIL.Image
 import requests
@@ -12,8 +11,10 @@ from controlnet_aux import HEDdetector
 from mmengine.config import Config
 from mmengine.runner import set_random_seed
 
+import mmcv
 from mmagic.registry import DIFFUSION_SCHEDULERS, MODELS
 from mmagic.utils import ConfigType
+
 from .base_mmagic_inferencer import BaseMMagicInferencer
 
 VIDEO_EXTENSIONS = ('.mp4', '.mov', '.avi')

@@ -4,6 +4,7 @@ from inspect import signature
 from typing import Callable, List
 
 from mmrazor.registry import TASK_UTILS
+
 from .method_outputs_recorder import MethodOutputsRecorder
 
 

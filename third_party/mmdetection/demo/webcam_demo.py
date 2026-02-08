@@ -2,11 +2,11 @@
 import argparse
 
 import cv2
-import mmcv
 import torch
-
 from mmdet.apis import inference_detector, init_detector
 from mmdet.registry import VISUALIZERS
+
+import mmcv
 
 
 def parse_args():

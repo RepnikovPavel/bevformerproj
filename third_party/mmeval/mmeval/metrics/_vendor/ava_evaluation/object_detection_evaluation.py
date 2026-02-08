@@ -29,10 +29,11 @@ Note: This module operates on numpy boxes and box lists.
 
 import collections
 import logging
-import numpy as np
 import warnings
 from abc import ABCMeta, abstractmethod
 from collections import defaultdict
+
+import numpy as np
 
 from . import metrics, per_image_evaluation, standard_fields
 

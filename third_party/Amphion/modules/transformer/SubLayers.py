@@ -3,9 +3,9 @@
 # This source code is licensed under the MIT license found in the
 # LICENSE file in the root directory of this source tree.
 
+import numpy as np
 import torch.nn as nn
 import torch.nn.functional as F
-import numpy as np
 
 from .Modules import ScaledDotProductAttention
 

@@ -9,17 +9,24 @@ from mmengine.registry import MODELS
 from torch import Tensor, nn
 
 from mmdet3d.models.layers.minkowski_engine_block import (
-    IS_MINKOWSKI_ENGINE_AVAILABLE, MinkowskiBasicBlock, MinkowskiBottleneck,
-    MinkowskiConvModule)
-from mmdet3d.models.layers.sparse_block import (SparseBasicBlock,
-                                                SparseBottleneck,
-                                                make_sparse_convmodule,
-                                                replace_feature)
+    IS_MINKOWSKI_ENGINE_AVAILABLE,
+    MinkowskiBasicBlock,
+    MinkowskiBottleneck,
+    MinkowskiConvModule,
+)
+from mmdet3d.models.layers.sparse_block import (
+    SparseBasicBlock,
+    SparseBottleneck,
+    make_sparse_convmodule,
+    replace_feature,
+)
 from mmdet3d.models.layers.spconv import IS_SPCONV2_AVAILABLE
 from mmdet3d.models.layers.torchsparse import IS_TORCHSPARSE_AVAILABLE
-from mmdet3d.models.layers.torchsparse_block import (TorchSparseBasicBlock,
-                                                     TorchSparseBottleneck,
-                                                     TorchSparseConvModule)
+from mmdet3d.models.layers.torchsparse_block import (
+    TorchSparseBasicBlock,
+    TorchSparseBottleneck,
+    TorchSparseConvModule,
+)
 from mmdet3d.utils import OptMultiConfig
 
 if IS_SPCONV2_AVAILABLE:

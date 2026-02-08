@@ -6,9 +6,9 @@ import tempfile
 from unittest.mock import MagicMock, patch
 
 import pytest
+from mmengine.fileio import HTTPBackend, PetrelBackend
 
 import mmengine
-from mmengine.fileio import HTTPBackend, PetrelBackend
 
 sys.modules['petrel_client'] = MagicMock()
 sys.modules['petrel_client.client'] = MagicMock()

@@ -5,11 +5,13 @@
 Copyright by Contributors
 """
 from __future__ import print_function
+
 import argparse
 import codecs
-import sys
-import re
 import os
+import re
+import sys
+
 import cpplint
 from cpplint import _cpplint_state
 from pylint import epylint

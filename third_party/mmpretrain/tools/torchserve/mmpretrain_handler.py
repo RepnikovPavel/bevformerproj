@@ -2,14 +2,17 @@
 import base64
 import os
 
-import mmcv
+import mmpretrain.models
 import numpy as np
 import torch
+from mmpretrain.apis import (
+    ImageClassificationInferencer,
+    ImageRetrievalInferencer,
+    get_model,
+)
 from ts.torch_handler.base_handler import BaseHandler
 
-import mmpretrain.models
-from mmpretrain.apis import (ImageClassificationInferencer,
-                             ImageRetrievalInferencer, get_model)
+import mmcv
 
 
 class MMPreHandler(BaseHandler):

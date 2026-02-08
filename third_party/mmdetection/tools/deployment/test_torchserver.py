@@ -1,14 +1,14 @@
 import os
 from argparse import ArgumentParser
 
-import mmcv
 import requests
 import torch
-from mmengine.structures import InstanceData
-
 from mmdet.apis import inference_detector, init_detector
 from mmdet.registry import VISUALIZERS
 from mmdet.structures import DetDataSample
+from mmengine.structures import InstanceData
+
+import mmcv
 
 
 def parse_args():

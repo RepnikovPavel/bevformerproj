@@ -5,17 +5,17 @@ import os.path as osp
 import tempfile
 from typing import Dict, Optional, Sequence, Tuple, Union
 
-import mmcv
 import numpy as np
 from mmengine.evaluator import BaseMetric
 from mmengine.fileio import dump, get_local_path, load
 from mmengine.logging import MMLogger, print_log
 from terminaltables import AsciiTable
 
+import mmcv
 from mmdet.datasets.api_wrappers import COCOPanoptic
 from mmdet.registry import METRICS
-from ..functional import (INSTANCE_OFFSET, pq_compute_multi_core,
-                          pq_compute_single_core)
+
+from ..functional import INSTANCE_OFFSET, pq_compute_multi_core, pq_compute_single_core
 
 try:
     import panopticapi

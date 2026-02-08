@@ -10,12 +10,11 @@ from mmengine.logging import MMLogger
 from mmengine.model import BaseModule
 from mmengine.runner import Runner
 from mmengine.structures import LabelData
-from torch.utils.data import Dataset
-
 from mmpretrain.engine import SimSiamHook
 from mmpretrain.models.selfsup import BaseSelfSupervisor
 from mmpretrain.registry import MODELS
 from mmpretrain.structures import DataSample
+from torch.utils.data import Dataset
 
 
 class DummyDataset(Dataset):

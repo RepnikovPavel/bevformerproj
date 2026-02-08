@@ -8,6 +8,7 @@ from mmengine.dist import all_gather, get_world_size, is_main_process
 from scipy import signal
 
 from mmagic.registry import METRICS
+
 from .base_gen_metric import GenerativeMetric
 
 

@@ -1,7 +1,8 @@
 import argparse
-import numpy as np
 
+import numpy as np
 from eval_proposal import ANETproposal
+
 
 def main(ground_truth_filename, proposal_filename, max_avg_nr_proposals=100,
          tiou_thresholds=np.linspace(0.5, 0.95, 10),

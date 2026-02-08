@@ -3,16 +3,12 @@
 # This source code is licensed under the MIT license found in the
 # LICENSE file in the root directory of this source tree.
 
-import os
-import sys
+
+import json
+from typing import List
 
 from models.tts.maskgct.g2p.g2p import PhonemeBpeTokenizer
 from models.tts.maskgct.g2p.utils.g2p import phonemizer_g2p
-import tqdm
-from typing import List
-import json
-import os
-import re
 
 
 def ph_g2p(text, language):

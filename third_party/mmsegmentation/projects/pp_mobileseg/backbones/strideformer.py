@@ -10,7 +10,6 @@ from mmcv.cnn.bricks.transformer import build_dropout
 from mmengine.logging import print_log
 from mmengine.model import BaseModule
 from mmengine.runner.checkpoint import CheckpointLoader, load_state_dict
-
 from mmseg.registry import MODELS
 
 

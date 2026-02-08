@@ -1,12 +1,11 @@
 from .bninception import BNInception
-from .resnet import ResNet
-
+from .c3d import C3D
 from .inception_v1_i3d import InceptionV1_I3D
+from .resnet import ResNet
 from .resnet_i3d import ResNet_I3D
-from .resnet_s3d import ResNet_S3D
 from .resnet_i3d_slowfast import ResNet_I3D_SlowFast
 from .resnet_r3d import ResNet_R3D
-from .c3d import C3D
+from .resnet_s3d import ResNet_S3D
 
 __all__ = [
     'BNInception',

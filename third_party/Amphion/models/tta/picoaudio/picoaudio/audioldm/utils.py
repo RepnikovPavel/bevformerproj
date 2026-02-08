@@ -1,14 +1,13 @@
 import contextlib
 import importlib
-
-from inspect import isfunction
 import os
-import soundfile as sf
 import time
-import wave
-
 import urllib.request
+import wave
+from inspect import isfunction
+
 import progressbar
+import soundfile as sf
 
 CACHE_DIR = os.getenv(
     "AUDIOLDM_CACHE_DIR", os.path.join(os.path.expanduser("~"), ".cache/audioldm")
@@ -34,7 +33,9 @@ def get_time():
 
 
 def seed_everything(seed):
-    import random, os
+    import os
+    import random
+
     import numpy as np
     import torch
 

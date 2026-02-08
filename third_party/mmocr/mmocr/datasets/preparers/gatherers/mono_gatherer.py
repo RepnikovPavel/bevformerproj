@@ -3,6 +3,7 @@ import os.path as osp
 from typing import Tuple
 
 from mmocr.registry import DATA_GATHERERS
+
 from .base import BaseGatherer
 
 

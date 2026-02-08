@@ -34,9 +34,10 @@ import os
 import os.path as osp
 import random
 
-import mmcv
 import numpy as np
 from tqdm import tqdm
+
+import mmcv
 
 USELESS = [3, 4, 5, 6, 9, 10, 11]
 IGNORES = [2, 7, 8, 12, 13]

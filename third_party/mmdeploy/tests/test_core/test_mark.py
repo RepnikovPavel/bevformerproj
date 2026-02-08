@@ -3,7 +3,6 @@ import tempfile
 
 import onnx
 import torch
-
 from mmdeploy.core import RewriterContext, mark
 from mmdeploy.core.optimizers import attribute_to_dict
 from mmdeploy.utils.constants import IR, Backend

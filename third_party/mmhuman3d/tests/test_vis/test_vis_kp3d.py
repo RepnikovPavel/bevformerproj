@@ -3,7 +3,6 @@ import shutil
 
 import numpy as np
 import pytest
-
 from mmhuman3d.core.conventions.keypoints_mapping import convert_kps
 from mmhuman3d.core.visualization import visualize_kp3d
 from mmhuman3d.utils.ffmpeg_utils import video_to_array

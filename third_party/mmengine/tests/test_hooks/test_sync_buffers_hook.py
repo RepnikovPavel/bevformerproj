@@ -4,12 +4,11 @@ from unittest.mock import MagicMock
 import torch
 import torch.distributed as torch_dist
 import torch.nn as nn
-from torch.testing._internal.common_distributed import DistributedTestBase
-
 from mmengine.dist import all_gather
 from mmengine.hooks import SyncBuffersHook
 from mmengine.registry import MODELS
 from mmengine.testing.runner_test_case import RunnerTestCase, ToyModel
+from torch.testing._internal.common_distributed import DistributedTestBase
 
 
 class ToyModuleWithNorm(ToyModel):

@@ -4,10 +4,9 @@ from typing import Sequence, Union
 import torch
 from mmdet.models.utils import unpack_gt_instances
 from mmengine.structures import InstanceData
-from torch import Tensor
-
 from mmyolo.models import YOLOv5Head
 from mmyolo.registry import MODELS
+from torch import Tensor
 
 
 @MODELS.register_module()

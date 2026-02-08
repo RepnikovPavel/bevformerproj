@@ -7,12 +7,11 @@
 import torch
 import torch.nn as nn
 from einops import rearrange
-
 from models.tts.maskgct.maskgct_t2s import (
+    MaskGCT_T2S,
     gumbel_noise,
     gumbel_sample,
     top_k,
-    MaskGCT_T2S,
 )
 
 

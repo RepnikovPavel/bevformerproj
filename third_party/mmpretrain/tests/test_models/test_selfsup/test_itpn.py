@@ -3,7 +3,6 @@ import platform
 
 import pytest
 import torch
-
 from mmpretrain.models import iTPN
 from mmpretrain.structures import DataSample
 

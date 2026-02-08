@@ -2,7 +2,6 @@
 import pytest
 import torch
 from click.testing import CliRunner
-
 from mim.commands.install import cli as install
 from mim.commands.test import cli as test
 from mim.commands.uninstall import cli as uninstall

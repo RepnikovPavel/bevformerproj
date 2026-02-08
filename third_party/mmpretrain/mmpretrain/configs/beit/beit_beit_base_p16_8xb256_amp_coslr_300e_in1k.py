@@ -10,14 +10,24 @@ from mmengine.hooks import CheckpointHook
 from mmengine.model import ConstantInit, PretrainedInit, TruncNormalInit
 from mmengine.optim import AmpOptimWrapper, CosineAnnealingLR, LinearLR
 from mmengine.runner import EpochBasedTrainLoop
+from mmpretrain.datasets import (
+    BEiTMaskGenerator,
+    ColorJitter,
+    ImageNet,
+    LoadImageFromFile,
+    PackInputs,
+    RandomFlip,
+    RandomResizedCropAndInterpolationWithTwoPic,
+)
+from mmpretrain.models import (
+    BEiT,
+    BEiTPretrainViT,
+    BEiTV1Head,
+    CrossEntropyLoss,
+    DALLEEncoder,
+    TwoNormDataPreprocessor,
+)
 from torch.optim import AdamW
-
-from mmpretrain.datasets import (BEiTMaskGenerator, ColorJitter, ImageNet,
-                                 LoadImageFromFile, PackInputs, RandomFlip,
-                                 RandomResizedCropAndInterpolationWithTwoPic)
-from mmpretrain.models import (BEiT, BEiTPretrainViT, BEiTV1Head,
-                               CrossEntropyLoss, DALLEEncoder,
-                               TwoNormDataPreprocessor)
 
 # dataset settings
 dataset_type = ImageNet

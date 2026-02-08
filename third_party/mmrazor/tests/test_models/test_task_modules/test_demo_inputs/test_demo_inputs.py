@@ -2,6 +2,7 @@
 import unittest
 
 from mmrazor.models.task_modules.demo_inputs import DefaultDemoInput
+
 from ....data.tracer_passed_models import FxPassedModelManager
 
 

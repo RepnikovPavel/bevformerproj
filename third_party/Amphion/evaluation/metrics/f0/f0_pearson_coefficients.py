@@ -3,15 +3,12 @@
 # This source code is licensed under the MIT license found in the
 # LICENSE file in the root directory of this source tree.
 
-import torch
 import librosa
-
 import numpy as np
-
+import torch
 from torchmetrics import PearsonCorrCoef
-
-from utils.util import JsonHParams
 from utils.f0 import get_f0_features_using_parselmouth, get_pitch_sub_median
+from utils.util import JsonHParams
 
 
 def extract_fpc(

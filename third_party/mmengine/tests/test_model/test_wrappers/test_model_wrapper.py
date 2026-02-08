@@ -6,18 +6,20 @@ from unittest.mock import MagicMock
 import torch
 import torch.distributed as torch_dist
 import torch.nn as nn
-from torch.optim import SGD
-
 from mmengine.dist import all_gather, broadcast
-from mmengine.model import (BaseDataPreprocessor, BaseModel,
-                            ExponentialMovingAverage,
-                            MMDistributedDataParallel,
-                            MMSeparateDistributedDataParallel)
+from mmengine.model import (
+    BaseDataPreprocessor,
+    BaseModel,
+    ExponentialMovingAverage,
+    MMDistributedDataParallel,
+    MMSeparateDistributedDataParallel,
+)
 from mmengine.optim import AmpOptimWrapper, OptimWrapper, OptimWrapperDict
 from mmengine.testing import assert_allclose
 from mmengine.testing._internal import MultiProcessTestCase
 from mmengine.utils.dl_utils import TORCH_VERSION
 from mmengine.utils.version_utils import digit_version
+from torch.optim import SGD
 
 if digit_version(TORCH_VERSION) >= digit_version('2.0.0'):
     from mmengine.model import MMFullyShardedDataParallel  # noqa: F401

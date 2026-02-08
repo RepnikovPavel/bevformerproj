@@ -5,6 +5,7 @@ import re
 
 import yaml
 
+
 class AttrDict(dict):
     """Dict as attribute trick."""
 

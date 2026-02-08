@@ -2,11 +2,11 @@
 from unittest import TestCase
 
 import torch
-from mmengine import ConfigDict
 from mmengine.config import Config
-
 from mmyolo.models import YOLOv8Head
 from mmyolo.utils import register_all_modules
+
+from mmengine import ConfigDict
 
 register_all_modules()
 

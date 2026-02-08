@@ -7,9 +7,8 @@ import torch.nn as nn
 import torchvision
 import torchvision.datasets as datasets
 import torchvision.transforms as transforms
-from torch.utils.data import DataLoader
-
 from mmrazor.implementations.pruning import sparse_gpt
+from torch.utils.data import DataLoader
 
 
 def get_dataloaders(batch_size, n_workers, path=''):

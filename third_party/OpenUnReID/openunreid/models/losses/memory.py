@@ -9,7 +9,7 @@ from ...utils.dist_utils import all_gather_tensor
 
 try:
     # PyTorch >= 1.6 supports mixed precision training
-    from torch.cuda.amp import custom_fwd, custom_bwd
+    from torch.cuda.amp import custom_bwd, custom_fwd
     class HM(autograd.Function):
 
         @staticmethod

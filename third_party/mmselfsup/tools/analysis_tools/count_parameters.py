@@ -1,9 +1,9 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import argparse
 
-from mmengine import Config
-
 from mmselfsup.models import build_algorithm
+
+from mmengine import Config
 
 
 def parse_args():

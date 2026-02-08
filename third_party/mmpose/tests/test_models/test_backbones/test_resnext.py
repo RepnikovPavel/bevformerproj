@@ -2,7 +2,6 @@
 from unittest import TestCase
 
 import torch
-
 from mmpose.models.backbones import ResNeXt
 from mmpose.models.backbones.resnext import Bottleneck as BottleneckX
 

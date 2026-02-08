@@ -3,26 +3,27 @@
 # This source code is licensed under the MIT license found in the
 # LICENSE file in the root directory of this source tree.
 
-import random
-import torch
-from torch.nn.utils.rnn import pad_sequence
 import json
 import os
-import numpy as np
-import librosa
+import random
 
-from utils.data_utils import *
+import librosa
+import numpy as np
+import torch
 from processors.acoustic_extractor import cal_normalized_mel, load_mel_extrema
 from processors.content_extractor import (
     ContentvecExtractor,
-    WhisperExtractor,
     WenetExtractor,
+    WhisperExtractor,
 )
+from torch.nn.utils.rnn import pad_sequence
+from utils.data_utils import *
+
 from models.base.base_dataset import (
-    BaseOfflineDataset,
     BaseOfflineCollator,
-    BaseOnlineDataset,
+    BaseOfflineDataset,
     BaseOnlineCollator,
+    BaseOnlineDataset,
 )
 from models.base.new_dataset import BaseTestDataset
 

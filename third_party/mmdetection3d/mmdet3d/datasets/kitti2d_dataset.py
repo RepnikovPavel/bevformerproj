@@ -1,7 +1,7 @@
 # Copyright (c) OpenMMLab. All rights reserved.
-import mmengine
 import numpy as np
 
+import mmengine
 from mmdet3d.datasets import Det3DDataset
 from mmdet3d.registry import DATASETS
 

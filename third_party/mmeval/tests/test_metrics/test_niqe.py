@@ -1,9 +1,9 @@
 # Copyright (c) OpenMMLab. All rights reserved.
+import os
+
 import cv2
 import numpy as np
-import os
 import pytest
-
 from mmeval.metrics import NaturalImageQualityEvaluator
 
 

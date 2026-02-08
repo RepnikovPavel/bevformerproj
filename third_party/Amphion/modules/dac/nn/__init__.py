@@ -5,6 +5,4 @@
 
 # This code is borrowed from https://github.com/descriptinc/descript-audio-codec/blob/main/dac/nn/__init__.py
 
-from . import layers
-from . import loss
-from . import quantize
+from . import layers, loss, quantize

@@ -5,14 +5,15 @@ from pathlib import Path
 from typing import Iterable, List, Optional, Union
 
 import cv2
-import mmcv
 import numpy as np
 from matplotlib import pyplot as plt
 from matplotlib.lines import Line2D
 from mpl_toolkits.mplot3d import Axes3D
 
-from mmhuman3d.core.conventions.cameras.convert_convention import \
-    enc_camera_convention  # prevent yapf isort conflict
+import mmcv
+from mmhuman3d.core.conventions.cameras.convert_convention import (
+    enc_camera_convention,  # prevent yapf isort conflict
+)
 from mmhuman3d.utils.demo_utils import get_different_colors
 from mmhuman3d.utils.ffmpeg_utils import images_to_video
 from mmhuman3d.utils.path_utils import check_path_suffix

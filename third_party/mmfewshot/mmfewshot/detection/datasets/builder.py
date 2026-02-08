@@ -8,17 +8,25 @@ from mmcv.parallel import collate
 from mmcv.runner import get_dist_info
 from mmcv.utils import ConfigDict, build_from_cfg
 from mmdet.datasets.builder import DATASETS, worker_init_fn
-from mmdet.datasets.dataset_wrappers import (ClassBalancedDataset,
-                                             ConcatDataset, RepeatDataset)
-from mmdet.datasets.samplers import (DistributedGroupSampler,
-                                     DistributedSampler, GroupSampler)
+from mmdet.datasets.dataset_wrappers import (
+    ClassBalancedDataset,
+    ConcatDataset,
+    RepeatDataset,
+)
+from mmdet.datasets.samplers import (
+    DistributedGroupSampler,
+    DistributedSampler,
+    GroupSampler,
+)
 from torch.utils.data import DataLoader, Dataset, Sampler
 
-from mmfewshot.utils.infinite_sampler import (DistributedInfiniteGroupSampler,
-                                              DistributedInfiniteSampler,
-                                              InfiniteGroupSampler)
-from .dataset_wrappers import (NWayKShotDataset, QueryAwareDataset,
-                               TwoBranchDataset)
+from mmfewshot.utils.infinite_sampler import (
+    DistributedInfiniteGroupSampler,
+    DistributedInfiniteSampler,
+    InfiniteGroupSampler,
+)
+
+from .dataset_wrappers import NWayKShotDataset, QueryAwareDataset, TwoBranchDataset
 from .utils import get_copy_dataset_type
 
 
@@ -205,6 +213,7 @@ def build_dataloader(dataset: Dataset,
             **kwargs)
     elif isinstance(dataset, NWayKShotDataset):
         from mmfewshot.utils import multi_pipeline_collate_fn
+
         from .dataloader_wrappers import NWayKShotDataloader
 
         # `NWayKShotDataset` will return a list of DataContainer
@@ -262,6 +271,7 @@ def build_dataloader(dataset: Dataset,
             support_data_loader=support_data_loader)
     elif isinstance(dataset, TwoBranchDataset):
         from mmfewshot.utils import multi_pipeline_collate_fn
+
         from .dataloader_wrappers import TwoBranchDataloader
 
         # `TwoBranchDataset` will return a list of DataContainer

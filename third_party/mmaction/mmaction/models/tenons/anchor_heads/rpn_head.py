@@ -1,12 +1,13 @@
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-from mmcv.cnn import normal_init
-
 from mmaction.core.bbox2d import delta2bbox
 from mmaction.ops import nms
-from .anchor_head import AnchorHead
+from mmcv.cnn import normal_init
+
 from ...registry import HEADS
+from .anchor_head import AnchorHead
+
 
 @HEADS.register_module
 class RPNHead(AnchorHead):

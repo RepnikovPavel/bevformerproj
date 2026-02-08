@@ -1,20 +1,18 @@
 import os
 import sys
+
 sys.path.append(os.getcwd())
 sys.path.append(os.path.join(os.getcwd(), "annotator/entityseg"))
-import cv2
 import argparse
-import numpy as np
-from PIL import Image
-from tqdm import tqdm
 
-from annotator.util import resize_image, HWC3
+import cv2
 from annotator.canny import CannyDetector
+from annotator.entityseg import EntitysegDetector
 from annotator.hed import HEDdetector
 from annotator.midas import MidasDetector
-from annotator.entityseg import EntitysegDetector
 from annotator.openpose import OpenposeDetector
-
+from annotator.util import HWC3
+from tqdm import tqdm
 
 if __name__ == "__main__":
 

@@ -5,10 +5,9 @@ import math
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
+from mmdet.registry import MODELS
 from mmengine.model.weight_init import caffe2_xavier_init, kaiming_init
 from torch.nn import init
-
-from mmdet.registry import MODELS
 
 
 def _make_stack_3x3_convs(num_convs,

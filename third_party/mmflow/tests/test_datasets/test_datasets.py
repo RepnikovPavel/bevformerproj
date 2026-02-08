@@ -4,7 +4,6 @@ import os.path as osp
 import re
 
 import pytest
-
 from mmflow.datasets import build_dataset
 
 

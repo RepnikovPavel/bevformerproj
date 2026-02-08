@@ -6,6 +6,7 @@ import torch.nn as nn
 
 from mmpretrain.registry import MODELS
 from mmpretrain.structures import DataSample
+
 from .cls_head import ClsHead
 
 

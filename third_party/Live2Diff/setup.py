@@ -1,6 +1,5 @@
 from setuptools import find_packages, setup
 
-
 deps = [
     "diffusers==0.25.0",
     "transformers",

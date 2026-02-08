@@ -5,12 +5,11 @@ import tempfile
 import pytest
 import torch
 from mmengine.runner import load_checkpoint, save_checkpoint
+from mmpretrain.models.backbones import RepLKNet
+from mmpretrain.models.backbones.replknet import ReparamLargeKernelConv
 from torch import nn
 from torch.nn.modules import GroupNorm
 from torch.nn.modules.batchnorm import _BatchNorm
-
-from mmpretrain.models.backbones import RepLKNet
-from mmpretrain.models.backbones.replknet import ReparamLargeKernelConv
 
 
 def check_norm_state(modules, train_state):

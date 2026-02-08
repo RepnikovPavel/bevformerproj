@@ -3,10 +3,10 @@ import os
 import os.path as osp
 import shutil
 import sys
-import cv2
 from pathlib import Path
 
 import av
+import cv2
 import numpy as np
 import torch
 import torchvision

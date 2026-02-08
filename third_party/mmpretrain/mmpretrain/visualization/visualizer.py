@@ -1,7 +1,6 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 from typing import Optional, Sequence, Tuple, Union
 
-import mmcv
 import numpy as np
 import torch
 import torch.nn.functional as F
@@ -10,8 +9,10 @@ from mmengine.dist import master_only
 from mmengine.visualization import Visualizer
 from mmengine.visualization.utils import img_from_canvas
 
+import mmcv
 from mmpretrain.registry import VISUALIZERS
 from mmpretrain.structures import DataSample
+
 from .utils import create_figure, get_adaptive_scale
 
 

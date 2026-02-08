@@ -4,18 +4,35 @@ from importlib import import_module
 
 import numpy as np
 import pytest
+from mmengine.utils import is_installed
+
+# yapf: disable
+from mmengine.utils.misc import (
+    apply_to,
+    concat_list,
+    deprecated_api_warning,
+    deprecated_function,
+    get_object_from_string,
+    has_method,
+    import_modules_from_strings,
+    is_list_of,
+    is_method_overridden,
+    is_seq_of,
+    is_tuple_of,
+    iter_cast,
+    list_cast,
+    requires_executable,
+    requires_package,
+    slice_list,
+    to_1tuple,
+    to_2tuple,
+    to_3tuple,
+    to_4tuple,
+    to_ntuple,
+    tuple_cast,
+)
 
 from mmengine import MMLogger
-from mmengine.utils import is_installed
-# yapf: disable
-from mmengine.utils.misc import (apply_to, concat_list, deprecated_api_warning,
-                                 deprecated_function, get_object_from_string,
-                                 has_method, import_modules_from_strings,
-                                 is_list_of, is_method_overridden, is_seq_of,
-                                 is_tuple_of, iter_cast, list_cast,
-                                 requires_executable, requires_package,
-                                 slice_list, to_1tuple, to_2tuple, to_3tuple,
-                                 to_4tuple, to_ntuple, tuple_cast)
 
 # yapf: enable
 

@@ -1,16 +1,17 @@
 import copy
 import pickle
-import numpy as np
-
-from PIL import Image
-import torch
-import torch.nn.functional as F
 from pathlib import Path
 
-from ..dataset import DatasetTemplate
+import numpy as np
+import torch
+import torch.nn.functional as F
+from PIL import Image
+
 from ...ops.roiaware_pool3d import roiaware_pool3d_utils
 from ...utils import box_utils
+from ..dataset import DatasetTemplate
 from .once_toolkits import Octopus
+
 
 class ONCEDataset(DatasetTemplate):
     def __init__(self, dataset_cfg, class_names, training=True, root_path=None, logger=None):
@@ -421,8 +422,9 @@ if __name__ == '__main__':
     args = parser.parse_args()
 
     if args.func == 'create_once_infos':
-        import yaml
         from pathlib import Path
+
+        import yaml
         from easydict import EasyDict
         dataset_cfg = EasyDict(yaml.load(open(args.cfg_file)))
 

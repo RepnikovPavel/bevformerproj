@@ -1,11 +1,13 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import pytest
 import torch
-
 from mmseg.models.backbones import BiSeNetV1
-from mmseg.models.backbones.bisenetv1 import (AttentionRefinementModule,
-                                              ContextPath, FeatureFusionModule,
-                                              SpatialPath)
+from mmseg.models.backbones.bisenetv1 import (
+    AttentionRefinementModule,
+    ContextPath,
+    FeatureFusionModule,
+    SpatialPath,
+)
 
 
 def test_bisenetv1_backbone():

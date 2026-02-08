@@ -3,18 +3,19 @@
 import argparse
 
 import cv2
-import mmcv
 import numpy as np
 import torch
 from mmcv.transforms import Compose
 from mmdet.apis import init_detector
-from mmengine import Config
 from mmengine.registry import TRANSFORMS
 from mmengine.structures import InstanceData
 from mmrotate.structures import RotatedBoxes
 from mmrotate.utils import register_all_modules
 from mmrotate.visualization import RotLocalVisualizer
 from segment_anything import SamPredictor, sam_model_registry
+
+import mmcv
+from mmengine import Config
 
 
 def parse_args():

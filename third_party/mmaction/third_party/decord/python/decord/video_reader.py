@@ -2,15 +2,14 @@
 from __future__ import absolute_import
 
 import ctypes
+
 import numpy as np
 
-from ._ffi.base import c_array, c_str
+from . import ndarray as _nd
 from ._ffi.function import _init_api
 from ._ffi.ndarray import DECORDContext
-from .base import DECORDError
-from . import ndarray as _nd
-from .ndarray import cpu, gpu
 from .bridge import bridge_out
+from .ndarray import cpu
 
 VideoReaderHandle = ctypes.c_void_p
 

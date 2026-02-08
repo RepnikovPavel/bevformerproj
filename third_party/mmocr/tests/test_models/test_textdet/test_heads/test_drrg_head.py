@@ -3,11 +3,14 @@ from unittest import TestCase, mock
 
 import numpy as np
 import torch
-
-from mmocr.models.textdet.heads.drrg_head import (GCN, DRRGHead, LocalGraphs,
-                                                  ProposalLocalGraphs,
-                                                  feature_embedding,
-                                                  normalize_adjacent_matrix)
+from mmocr.models.textdet.heads.drrg_head import (
+    GCN,
+    DRRGHead,
+    LocalGraphs,
+    ProposalLocalGraphs,
+    feature_embedding,
+    normalize_adjacent_matrix,
+)
 
 
 class TestDRRGHead(TestCase):

@@ -2,8 +2,9 @@
 from __future__ import absolute_import
 
 import os
+
+from ...ndarray import cpu
 from ..base_action import VideoClsCustom
-from ...ndarray import cpu, gpu
 
 
 class Kinetics400(VideoClsCustom):

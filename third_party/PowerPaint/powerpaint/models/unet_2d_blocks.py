@@ -14,8 +14,6 @@
 from typing import Any, Dict, Optional, Tuple, Union
 
 import torch
-from torch import nn
-
 from diffusers.models.resnet import Downsample2D, ResnetBlock2D, Upsample2D
 from diffusers.models.transformers.dual_transformer_2d import DualTransformer2DModel
 from diffusers.models.transformers.transformer_2d import Transformer2DModel
@@ -44,7 +42,7 @@ from diffusers.models.unets.unet_2d_blocks import (
 )
 from diffusers.utils import is_torch_version, logging
 from diffusers.utils.torch_utils import apply_freeu
-
+from torch import nn
 
 logger = logging.get_logger(__name__)  # pylint: disable=invalid-name
 

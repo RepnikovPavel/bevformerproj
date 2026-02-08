@@ -2,11 +2,11 @@
 import os.path as osp
 from unittest import TestCase
 
-import mmcv
 import pytest
-
 from mmdet.datasets.transforms import *  # noqa
 from mmdet.registry import TRANSFORMS
+
+import mmcv
 
 
 class TestMuitiScaleFlipAug(TestCase):

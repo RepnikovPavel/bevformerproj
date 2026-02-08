@@ -2,13 +2,12 @@
 import argparse
 import os.path as osp
 
-from mmengine.config import Config, DictAction
-from mmengine.registry import init_default_scope
-from mmengine.utils import ProgressBar
-
 from mmdet.models.utils import mask2ndarray
 from mmdet.registry import DATASETS, VISUALIZERS
 from mmdet.structures.bbox import BaseBoxes
+from mmengine.config import Config, DictAction
+from mmengine.registry import init_default_scope
+from mmengine.utils import ProgressBar
 
 
 def parse_args():

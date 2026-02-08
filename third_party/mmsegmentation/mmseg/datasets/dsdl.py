@@ -3,6 +3,7 @@ import os
 from typing import Dict, List, Optional, Sequence, Union
 
 from mmseg.registry import DATASETS
+
 from .basesegdataset import BaseSegDataset
 
 try:

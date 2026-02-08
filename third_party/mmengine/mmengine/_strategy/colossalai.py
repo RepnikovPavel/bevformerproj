@@ -473,8 +473,9 @@ class ColossalAIStrategy(BaseStrategy):
                     plugin = colo_plugin.GeminiPlugin(
                         precision='bf16', placement_policy='auto')
                 except AssertionError:
-                    from colossalai.zero.gemini.placement_policy import \
-                        PlacementPolicyFactory as colo_placement
+                    from colossalai.zero.gemini.placement_policy import (
+                        PlacementPolicyFactory as colo_placement,
+                    )
                     raise ValueError('placement policy must be one of ' +
                                      f'{list(colo_placement.policies.keys())}')
             elif plugin == 'lowlevel-zero':

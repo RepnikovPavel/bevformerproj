@@ -5,7 +5,6 @@ from unittest import TestCase
 
 import torch
 from mmengine.structures import InstanceData, PixelData
-
 from mmpose.models.heads import IntegralRegressionHead
 from mmpose.testing import get_packed_inputs
 

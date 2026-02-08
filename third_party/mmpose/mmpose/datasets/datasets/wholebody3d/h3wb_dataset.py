@@ -6,6 +6,7 @@ import numpy as np
 from mmengine.fileio import get_local_path
 
 from mmpose.registry import DATASETS
+
 from ..body3d import Human36mDataset
 
 

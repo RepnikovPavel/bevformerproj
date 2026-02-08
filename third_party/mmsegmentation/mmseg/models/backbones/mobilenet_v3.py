@@ -8,6 +8,7 @@ from mmengine.utils import is_tuple_of
 from torch.nn.modules.batchnorm import _BatchNorm
 
 from mmseg.registry import MODELS
+
 from ..utils import InvertedResidualV3 as InvertedResidual
 
 

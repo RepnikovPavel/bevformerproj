@@ -4,6 +4,7 @@ from mmcv.cnn import ConvModule
 from mmengine.model import BaseModule
 
 from mmseg.registry import MODELS
+
 from ..utils import resize
 
 

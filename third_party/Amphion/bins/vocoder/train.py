@@ -6,11 +6,9 @@
 import argparse
 
 import torch
-
-from models.vocoders.gan.gan_vocoder_trainer import GANVocoderTrainer
 from models.vocoders.diffusion.diffusion_vocoder_trainer import DiffusionVocoderTrainer
+from models.vocoders.gan.gan_vocoder_trainer import GANVocoderTrainer
 from models.vocoders.vocos.vocos_trainer import VocosTrainer
-
 from utils.util import load_config
 
 

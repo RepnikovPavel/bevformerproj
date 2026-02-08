@@ -2,7 +2,6 @@
 
 import numpy as np
 import torch
-
 from mmdet3d.models.losses import RotatedIoU3DLoss
 
 

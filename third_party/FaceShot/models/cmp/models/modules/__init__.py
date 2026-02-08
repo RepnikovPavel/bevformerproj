@@ -1,6 +1,6 @@
-from .warp import *
+from .cmp import *
+from .decoder import *
 from .others import *
 from .shallownet import *
-from .decoder import *
-from .cmp import *
+from .warp import *
 

@@ -1,5 +1,6 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 from mmocr.registry import MODELS
+
 from .two_stage_text_spotting import TwoStageTextSpotter
 
 

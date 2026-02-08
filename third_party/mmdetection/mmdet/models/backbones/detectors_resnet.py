@@ -8,9 +8,9 @@ from mmengine.runner.checkpoint import load_checkpoint
 from torch.nn.modules.batchnorm import _BatchNorm
 
 from mmdet.registry import MODELS
-from .resnet import BasicBlock
+
+from .resnet import BasicBlock, ResNet
 from .resnet import Bottleneck as _Bottleneck
-from .resnet import ResNet
 
 
 class Bottleneck(_Bottleneck):

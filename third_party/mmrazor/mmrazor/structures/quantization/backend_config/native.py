@@ -9,10 +9,18 @@ except ImportError:
     DTypeConfig = get_placeholder('torch>=1.13')
 
 from .common_operator_config_utils import (  # noqa: F401,F403
-    _get_binary_op_configs, _get_bn_configs, _get_cat_config,
-    _get_conv_configs, _get_default_op_configs, _get_embedding_op_configs,
-    _get_fixed_qparams_op_configs, _get_linear_configs, _get_ln_configs,
-    _get_rnn_op_configs, _get_share_qparams_op_configs)
+    _get_binary_op_configs,
+    _get_bn_configs,
+    _get_cat_config,
+    _get_conv_configs,
+    _get_default_op_configs,
+    _get_embedding_op_configs,
+    _get_fixed_qparams_op_configs,
+    _get_linear_configs,
+    _get_ln_configs,
+    _get_rnn_op_configs,
+    _get_share_qparams_op_configs,
+)
 
 # =====================
 # |  BACKEND CONFIGS  |

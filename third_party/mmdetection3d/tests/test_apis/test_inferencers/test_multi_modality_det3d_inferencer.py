@@ -3,14 +3,14 @@ import os.path as osp
 import tempfile
 from unittest import TestCase
 
-import mmcv
-import mmengine
 import numpy as np
 import torch
-from mmengine.utils import is_list_of
-
 from mmdet3d.apis import MultiModalityDet3DInferencer
 from mmdet3d.structures import Det3DDataSample
+from mmengine.utils import is_list_of
+
+import mmcv
+import mmengine
 
 
 class TestMultiModalityDet3DInferencer(TestCase):

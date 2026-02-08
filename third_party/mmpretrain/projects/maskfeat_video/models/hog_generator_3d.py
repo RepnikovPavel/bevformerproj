@@ -1,6 +1,5 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import torch
-
 from mmpretrain.models import HOGGenerator
 from mmpretrain.registry import MODELS
 

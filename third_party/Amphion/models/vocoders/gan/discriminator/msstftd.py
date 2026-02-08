@@ -10,13 +10,11 @@
 
 import typing as tp
 
-import torchaudio
 import torch
-from torch import nn
+import torchaudio
 from einops import rearrange
-
 from modules.vocoder_blocks import *
-
+from torch import nn
 
 FeatureMapType = tp.List[torch.Tensor]
 LogitsType = torch.Tensor

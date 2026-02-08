@@ -1,12 +1,14 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import pytest
 import torch
-from torch.distributions.normal import Normal
-
 from mmgen.models.architectures.pix2pix import UnetGenerator
 from mmgen.models.losses import L1Loss, MSELoss
 from mmgen.models.losses.pixelwise_loss import (
-    DiscretizedGaussianLogLikelihoodLoss, GaussianKLDLoss, approx_gaussian_cdf)
+    DiscretizedGaussianLogLikelihoodLoss,
+    GaussianKLDLoss,
+    approx_gaussian_cdf,
+)
+from torch.distributions.normal import Normal
 
 
 class TestPixelwiseLosses:

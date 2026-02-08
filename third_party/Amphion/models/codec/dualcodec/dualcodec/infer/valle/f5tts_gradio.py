@@ -30,16 +30,15 @@ def gpu_decorator(func):
         return func
 
 
-from f5_tts.model import DiT, UNetT
 from f5_tts.infer.utils_infer import (
-    load_vocoder,
-    load_model,
-    preprocess_ref_audio_text,
     infer_process,
+    load_model,
+    load_vocoder,
+    preprocess_ref_audio_text,
     remove_silence_for_generated_wav,
     save_spectrogram,
 )
-
+from f5_tts.model import DiT, UNetT
 
 DEFAULT_TTS_MODEL = "F5-TTS_v1"
 tts_model_choice = DEFAULT_TTS_MODEL

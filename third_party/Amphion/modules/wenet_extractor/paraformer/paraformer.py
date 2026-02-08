@@ -23,7 +23,6 @@
 from typing import Dict, Optional, Tuple
 
 import torch
-
 from modules.wenet_extractor.cif.predictor import MAELoss
 from modules.wenet_extractor.paraformer.search.beam_search import Hypothesis
 from modules.wenet_extractor.transformer.asr_model import ASRModel

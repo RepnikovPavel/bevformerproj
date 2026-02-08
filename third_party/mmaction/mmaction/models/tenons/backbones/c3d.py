@@ -1,13 +1,10 @@
 import logging
 
-import torch
 import torch.nn as nn
-import torch.nn.functional as F
-from mmcv.cnn import constant_init, normal_init
+from mmcv.cnn import normal_init
 from mmcv.runner import load_checkpoint
 
 from ...registry import BACKBONES
-
 
 __all__ = ['C3D']
 

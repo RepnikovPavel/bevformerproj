@@ -1,6 +1,5 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 from click.testing import CliRunner
-
 from mim.cli import cli as mim_cli
 
 

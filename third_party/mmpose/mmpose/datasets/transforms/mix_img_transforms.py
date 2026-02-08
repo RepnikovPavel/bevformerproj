@@ -4,15 +4,19 @@ from abc import ABCMeta
 from collections import defaultdict
 from typing import Optional, Sequence, Tuple
 
-import mmcv
 import numpy as np
 from mmcv.transforms import BaseTransform
 from mmengine.dataset.base_dataset import Compose
 from numpy import random
 
+import mmcv
 from mmpose.registry import TRANSFORMS
-from mmpose.structures import (bbox_clip_border, flip_bbox, flip_keypoints,
-                               keypoint_clip_border)
+from mmpose.structures import (
+    bbox_clip_border,
+    flip_bbox,
+    flip_keypoints,
+    keypoint_clip_border,
+)
 
 
 class MixImageTransform(BaseTransform, metaclass=ABCMeta):

@@ -3,14 +3,14 @@ import copy
 import os.path as osp
 
 import cv2
-import mmcv
 import numpy as np
 import pytest
 from mmcv.utils import build_from_cfg
-
 from mmflow.datasets import Compose
 from mmflow.datasets.builder import PIPELINES
 from mmflow.datasets.utils import read_flow
+
+import mmcv
 
 img1_ = '../data/0000000-img_0.png'
 img2_ = '../data/0000000-img_1.png'

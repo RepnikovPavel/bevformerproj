@@ -2,8 +2,9 @@
 import argparse
 import os.path as osp
 
-import mmengine
 import requests
+
+import mmengine
 
 RESOURCES = {
     'Matting': [

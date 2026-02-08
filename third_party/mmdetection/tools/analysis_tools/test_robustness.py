@@ -4,14 +4,13 @@ import copy
 import os
 import os.path as osp
 
+from mmdet.engine.hooks.utils import trigger_visualization_hook
+from mmdet.registry import RUNNERS
 from mmengine.config import Config, DictAction
 from mmengine.dist import get_dist_info
 from mmengine.evaluator import DumpResults
 from mmengine.fileio import dump
 from mmengine.runner import Runner
-
-from mmdet.engine.hooks.utils import trigger_visualization_hook
-from mmdet.registry import RUNNERS
 from tools.analysis_tools.robustness_eval import get_results
 
 

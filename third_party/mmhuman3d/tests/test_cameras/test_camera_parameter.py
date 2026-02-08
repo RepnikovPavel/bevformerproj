@@ -4,7 +4,6 @@ import os
 import numpy as np
 import pytest
 import torch
-
 from mmhuman3d.core.cameras.camera_parameters import CameraParameter
 from mmhuman3d.data.data_structures.smc_reader import SMCReader
 from mmhuman3d.utils.path_utils import Existence, check_path_existence

@@ -2,7 +2,6 @@
 from unittest import TestCase
 
 import torch
-
 from mmpose.models.backbones import CPM
 from mmpose.models.backbones.cpm import CpmBlock
 

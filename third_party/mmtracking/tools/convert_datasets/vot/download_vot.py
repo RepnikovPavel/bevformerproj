@@ -10,8 +10,12 @@ from tqdm import tqdm
 
 try:
     from vot.utilities import extract_files
-    from vot.utilities.net import (download_json, download_uncompress,
-                                   get_base_url, join_url)
+    from vot.utilities.net import (
+        download_json,
+        download_uncompress,
+        get_base_url,
+        join_url,
+    )
 except ImportError:
     raise ImportError(
         'Please run'

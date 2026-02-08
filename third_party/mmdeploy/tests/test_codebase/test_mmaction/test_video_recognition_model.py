@@ -1,13 +1,13 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 
+import mmdeploy.backend.onnxruntime as ort_apis
 import pytest
 import torch
-from mmengine import Config
-
-import mmdeploy.backend.onnxruntime as ort_apis
 from mmdeploy.codebase import import_codebase
 from mmdeploy.utils import Backend, Codebase, load_config
 from mmdeploy.utils.test import SwitchBackendWrapper, backend_checker
+
+from mmengine import Config
 
 IMAGE_SIZE = 224
 
@@ -37,8 +37,9 @@ class TestEnd2EndModel:
         model_cfg_path = 'tests/test_codebase/test_mmaction/data/model.py'
         model_cfg = load_config(model_cfg_path)[0]
 
-        from mmdeploy.codebase.mmaction.deploy.video_recognition_model import \
-            End2EndModel
+        from mmdeploy.codebase.mmaction.deploy.video_recognition_model import (
+            End2EndModel,
+        )
         cls.end2end_model = End2EndModel(
             Backend.ONNXRUNTIME, [''],
             device='cpu',
@@ -77,7 +78,9 @@ def test_build_video_recognition_model():
     with SwitchBackendWrapper(ORTWrapper) as wrapper:
         wrapper.set(model_cfg=model_cfg, deploy_cfg=deploy_cfg)
         from mmdeploy.codebase.mmaction.deploy.video_recognition_model import (
-            End2EndModel, build_video_recognition_model)
+            End2EndModel,
+            build_video_recognition_model,
+        )
         classifier = build_video_recognition_model([''], model_cfg, deploy_cfg,
                                                    'cpu')
         assert isinstance(classifier, End2EndModel)

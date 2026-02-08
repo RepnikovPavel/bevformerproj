@@ -23,14 +23,25 @@ from rich.text import Text
 
 from mmengine.fileio import dump, load
 from mmengine.logging import print_log
-from mmengine.utils import (check_file_exist, digit_version,
-                            get_installed_path, import_modules_from_strings,
-                            is_installed)
+from mmengine.utils import (
+    check_file_exist,
+    digit_version,
+    get_installed_path,
+    import_modules_from_strings,
+    is_installed,
+)
+
 from .lazy import LazyAttr, LazyObject
-from .utils import (ConfigParsingError, ImportTransformer, RemoveAssignFromAST,
-                    _gather_abs_import_lazyobj, _get_external_cfg_base_path,
-                    _get_external_cfg_path, _get_package_and_cfg_path,
-                    _is_builtin_module)
+from .utils import (
+    ConfigParsingError,
+    ImportTransformer,
+    RemoveAssignFromAST,
+    _gather_abs_import_lazyobj,
+    _get_external_cfg_base_path,
+    _get_external_cfg_path,
+    _get_package_and_cfg_path,
+    _is_builtin_module,
+)
 
 BASE_KEY = '_base_'
 DELETE_KEY = '_delete_'

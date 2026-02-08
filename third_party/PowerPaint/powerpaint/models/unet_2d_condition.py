@@ -19,7 +19,6 @@ from typing import Any, Dict, List, Optional, Tuple, Union
 import torch
 import torch.nn as nn
 import torch.utils.checkpoint
-
 from diffusers.configuration_utils import ConfigMixin, register_to_config
 from diffusers.loaders import PeftAdapterMixin, UNet2DConditionLoadersMixin
 from diffusers.models.activations import get_activation
@@ -44,10 +43,16 @@ from diffusers.models.embeddings import (
     Timesteps,
 )
 from diffusers.models.modeling_utils import ModelMixin
-from diffusers.utils import USE_PEFT_BACKEND, BaseOutput, deprecate, logging, scale_lora_layers, unscale_lora_layers
+from diffusers.utils import (
+    USE_PEFT_BACKEND,
+    BaseOutput,
+    deprecate,
+    logging,
+    scale_lora_layers,
+    unscale_lora_layers,
+)
 
 from .unet_2d_blocks import get_down_block, get_mid_block, get_up_block
-
 
 logger = logging.get_logger(__name__)  # pylint: disable=invalid-name
 

@@ -1,20 +1,19 @@
 # Copyright (c) OpenMMLab. All rights reserved.
-import mmengine
+import mmdeploy.backend.onnxruntime as ort_apis
 import pytest
 import torch
-
-import mmdeploy.backend.onnxruntime as ort_apis
 from mmdeploy.codebase import import_codebase
 from mmdeploy.utils import Backend, Codebase
 from mmdeploy.utils.test import SwitchBackendWrapper, backend_checker
+
+import mmengine
 
 try:
     import_codebase(Codebase.MMDET3D)
 except ImportError:
     pytest.skip(
         f'{Codebase.MMDET3D} is not installed.', allow_module_level=True)
-from mmdeploy.codebase.mmdet3d.deploy.voxel_detection_model import \
-    VoxelDetectionModel
+from mmdeploy.codebase.mmdet3d.deploy.voxel_detection_model import VoxelDetectionModel
 
 pcd_path = 'tests/test_codebase/test_mmdet3d/data/kitti/kitti_000008.bin'
 model_cfg = 'tests/test_codebase/test_mmdet3d/data/model_cfg.py'
@@ -95,7 +94,9 @@ def test_build_voxel_detection_model():
     with SwitchBackendWrapper(ORTWrapper) as wrapper:
         wrapper.set(model_cfg=model_cfg, deploy_cfg=deploy_cfg)
         from mmdeploy.codebase.mmdet3d.deploy.voxel_detection_model import (
-            VoxelDetectionModel, build_voxel_detection_model)
+            VoxelDetectionModel,
+            build_voxel_detection_model,
+        )
         voxeldetector = build_voxel_detection_model([''],
                                                     model_cfg=model_cfg,
                                                     deploy_cfg=deploy_cfg,

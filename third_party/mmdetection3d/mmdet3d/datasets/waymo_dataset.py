@@ -3,11 +3,12 @@ import os.path as osp
 from typing import Callable, List, Union
 
 import numpy as np
-from mmengine import print_log
 from mmengine.fileio import load
 
 from mmdet3d.registry import DATASETS
 from mmdet3d.structures import CameraInstance3DBoxes, LiDARInstance3DBoxes
+from mmengine import print_log
+
 from .det3d_dataset import Det3DDataset
 from .kitti_dataset import KittiDataset
 

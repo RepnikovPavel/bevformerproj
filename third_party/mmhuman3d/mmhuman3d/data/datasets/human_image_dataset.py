@@ -5,12 +5,12 @@ from abc import ABCMeta
 from collections import OrderedDict
 from typing import Any, List, Optional, Union
 
-import mmcv
 import numpy as np
 import torch
 import torch.distributed as dist
 from mmcv.runner import get_dist_info
 
+import mmcv
 from mmhuman3d.core.conventions.keypoints_mapping import (
     convert_kps,
     get_keypoint_num,
@@ -28,6 +28,7 @@ from mmhuman3d.data.data_structures.human_data_cache import (
     HumanDataCacheWriter,
 )
 from mmhuman3d.models.body_models.builder import build_body_model
+
 from .base_dataset import BaseDataset
 from .builder import DATASETS
 

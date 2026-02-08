@@ -3,15 +3,15 @@ import os
 from logging import warning
 from os import path as osp
 
-import mmcv
-import mmengine
 import numpy as np
 from lyft_dataset_sdk.lyftdataset import LyftDataset as Lyft
+from mmdet3d.datasets.convert_utils import LyftNameMapping
 from pyquaternion import Quaternion
 
-from mmdet3d.datasets.convert_utils import LyftNameMapping
-from .nuscenes_converter import (get_2d_boxes, get_available_scenes,
-                                 obtain_sensor2top)
+import mmcv
+import mmengine
+
+from .nuscenes_converter import get_2d_boxes, get_available_scenes, obtain_sensor2top
 
 lyft_categories = ('car', 'truck', 'bus', 'emergency_vehicle', 'other_vehicle',
                    'motorcycle', 'bicycle', 'pedestrian', 'animal')

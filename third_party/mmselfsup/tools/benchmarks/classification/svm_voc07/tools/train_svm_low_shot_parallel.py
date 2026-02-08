@@ -11,8 +11,8 @@ Relevant transfer tasks: Low-shot Image Classification VOC07 and Places205 low
 shot samples.
 """
 
-from __future__ import (absolute_import, division, print_function,
-                        unicode_literals)
+from __future__ import absolute_import, division, print_function, unicode_literals
+
 import argparse
 import multiprocessing as mp
 import os

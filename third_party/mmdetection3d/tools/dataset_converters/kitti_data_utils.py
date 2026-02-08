@@ -4,10 +4,11 @@ from concurrent import futures as futures
 from os import path as osp
 from pathlib import Path
 
-import mmengine
 import numpy as np
 from PIL import Image
 from skimage import io
+
+import mmengine
 
 
 def get_image_index_str(img_idx, use_prefix_id=False):

@@ -1,8 +1,7 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import torch
-from mmengine.utils.dl_utils.parrots_wrapper import _BatchNorm
-
 from mmagic.models.editors import PConvEncoder
+from mmengine.utils.dl_utils.parrots_wrapper import _BatchNorm
 
 
 def test_pconv_enc():

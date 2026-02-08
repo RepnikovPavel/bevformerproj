@@ -13,6 +13,7 @@ from einops import rearrange, repeat
 from torch import nn
 
 from mmagic.models.editors.ddpm.attention import GEGLU, ApproximateGELU
+
 from .attention_3d import CrossAttention
 
 

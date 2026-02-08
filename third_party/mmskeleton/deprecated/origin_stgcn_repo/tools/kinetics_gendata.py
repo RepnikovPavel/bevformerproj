@@ -1,9 +1,8 @@
-import os
-import sys
-import pickle
 import argparse
+import os
+import pickle
+import sys
 
-import numpy as np
 from numpy.lib.format import open_memmap
 
 sys.path.append(

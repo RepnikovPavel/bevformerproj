@@ -3,15 +3,16 @@ import copy
 import os.path as osp
 from typing import Any, Dict, List, Optional, Sequence, Union
 
-import mmcv
-import mmengine
 import numpy as np
 from mmengine.dataset import Compose, pseudo_collate
 from mmengine.runner.checkpoint import _load_checkpoint
 
+import mmcv
+import mmengine
 from mmocr.registry import DATASETS
 from mmocr.structures import KIEDataSample
 from mmocr.utils import ConfigType
+
 from .base_mmocr_inferencer import BaseMMOCRInferencer, ModelType, PredType
 
 InputType = Dict

@@ -7,6 +7,7 @@ import numpy as np
 from mmengine.fileio import get_file_backend
 
 from mmagic.registry import DATASETS
+
 from .basic_conditional_dataset import BasicConditionalDataset
 from .categories import CIFAR10_CATEGORIES
 from .data_utils import check_md5, download_and_extract_archive

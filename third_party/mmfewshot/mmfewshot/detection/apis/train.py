@@ -6,16 +6,24 @@ from typing import Dict, Iterable, Optional
 import torch
 import torch.nn as nn
 from mmcv.parallel import MMDataParallel, MMDistributedDataParallel
-from mmcv.runner import (HOOKS, DistSamplerSeedHook, EpochBasedRunner,
-                         Fp16OptimizerHook, OptimizerHook, build_optimizer,
-                         build_runner)
+from mmcv.runner import (
+    HOOKS,
+    DistSamplerSeedHook,
+    EpochBasedRunner,
+    Fp16OptimizerHook,
+    OptimizerHook,
+    build_optimizer,
+    build_runner,
+)
 from mmcv.utils import ConfigDict, build_from_cfg
 from mmdet.core import DistEvalHook, EvalHook
 
-from mmfewshot.detection.core import (QuerySupportDistEvalHook,
-                                      QuerySupportEvalHook)
-from mmfewshot.detection.datasets import (build_dataloader, build_dataset,
-                                          get_copy_dataset_type)
+from mmfewshot.detection.core import QuerySupportDistEvalHook, QuerySupportEvalHook
+from mmfewshot.detection.datasets import (
+    build_dataloader,
+    build_dataset,
+    get_copy_dataset_type,
+)
 from mmfewshot.utils import compat_cfg, get_root_logger
 
 

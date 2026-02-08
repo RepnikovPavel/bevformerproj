@@ -5,13 +5,14 @@ import numpy as np
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-from mmengine import print_log
 from PIL import Image
 from scipy.stats import entropy
 from torch import Tensor
 from torch.utils.data.dataloader import DataLoader
 
 from mmagic.registry import METRICS
+from mmengine import print_log
+
 # from .inception_utils import disable_gpu_fuser_on_pt19, load_inception
 from ..functional import disable_gpu_fuser_on_pt19, load_inception
 from .base_gen_metric import GenerativeMetric

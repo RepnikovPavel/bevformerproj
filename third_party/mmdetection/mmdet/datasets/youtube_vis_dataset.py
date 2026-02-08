@@ -1,5 +1,6 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 from mmdet.registry import DATASETS
+
 from .base_video_dataset import BaseVideoDataset
 
 

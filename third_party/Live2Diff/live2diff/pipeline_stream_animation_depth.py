@@ -16,7 +16,6 @@ from live2diff.image_filter import SimilarImageFilter
 
 from .animatediff.pipeline import AnimationDepthPipeline
 
-
 WARMUP_FRAMES = 8
 WINDOW_SIZE = 16
 

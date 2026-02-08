@@ -7,12 +7,15 @@ from mmrazor.models.task_modules.tracer import build_graphmodule
 from mmrazor.models.utils import str2class
 from mmrazor.registry import MODELS
 from mmrazor.structures.quantization import BackendConfigs, QConfigHandler
+
 from .base import BaseQuantizer
 
 try:
     from torch.ao.quantization.fx import prepare
-    from torch.ao.quantization.fx.custom_config import (FuseCustomConfig,
-                                                        PrepareCustomConfig)
+    from torch.ao.quantization.fx.custom_config import (
+        FuseCustomConfig,
+        PrepareCustomConfig,
+    )
     from torch.ao.quantization.qconfig_mapping import QConfigMapping
     from torch.ao.quantization.quantize_fx import _fuse_fx
 except ImportError:

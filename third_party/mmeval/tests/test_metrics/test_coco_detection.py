@@ -1,10 +1,10 @@
 # Copyright (c) OpenMMLab. All rights reserved.
-import numpy as np
 import os.path as osp
-import pytest
 import tempfile
 from json import dump
 
+import numpy as np
+import pytest
 from mmeval.core.base_metric import BaseMetric
 from mmeval.metrics import COCODetection
 from mmeval.utils import try_import

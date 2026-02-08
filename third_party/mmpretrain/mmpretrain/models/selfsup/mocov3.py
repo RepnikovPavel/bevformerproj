@@ -9,10 +9,10 @@ import torch.nn as nn
 from torch.nn.modules.batchnorm import _BatchNorm
 
 from mmpretrain.models.backbones import VisionTransformer
-from mmpretrain.models.utils import (build_2d_sincos_position_embedding,
-                                     to_2tuple)
+from mmpretrain.models.utils import build_2d_sincos_position_embedding, to_2tuple
 from mmpretrain.registry import MODELS
 from mmpretrain.structures import DataSample
+
 from ..utils import CosineEMA
 from .base import BaseSelfSupervisor
 

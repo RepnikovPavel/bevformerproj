@@ -5,10 +5,10 @@ import tempfile
 from unittest import TestCase
 
 import torch
-
 from mmocr.models.common.dictionary import Dictionary
-from mmocr.models.textrecog.postprocessors.attn_postprocessor import \
-    AttentionPostprocessor
+from mmocr.models.textrecog.postprocessors.attn_postprocessor import (
+    AttentionPostprocessor,
+)
 from mmocr.structures import TextRecogDataSample
 from mmocr.testing import create_dummy_dict_file
 

@@ -2,26 +2,23 @@ import os
 from typing import List
 
 import torch
-from diffusers import StableDiffusionPipeline
+
 # from diffusers.pipelines.controlnet import MultiControlNetModel
 from PIL import Image
 from safetensors import safe_open
 from transformers import CLIPImageProcessor, CLIPVisionModelWithProjection
 
-from .utils import is_torch2_available, get_generator
+from .utils import get_generator, is_torch2_available
 
 if is_torch2_available():
     from .attention_processor import (
         AttnProcessor2_0 as AttnProcessor,
     )
     from .attention_processor import (
-        CNAttnProcessor2_0 as CNAttnProcessor,
-    )
-    from .attention_processor import (
         IPAttnProcessor2_0 as IPAttnProcessor,
     )
 else:
-    from .attention_processor import AttnProcessor, CNAttnProcessor, IPAttnProcessor
+    from .attention_processor import AttnProcessor, IPAttnProcessor
 from .resampler import Resampler
 
 

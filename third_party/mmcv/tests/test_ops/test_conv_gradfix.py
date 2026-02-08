@@ -2,10 +2,9 @@
 import pytest
 import torch
 import torch.nn as nn
-from torch.autograd import gradcheck, gradgradcheck
-
 from mmcv.ops import conv2d, conv_transpose2d
 from mmcv.utils import IS_MUSA_AVAILABLE
+from torch.autograd import gradcheck, gradgradcheck
 
 
 class TestCond2d:

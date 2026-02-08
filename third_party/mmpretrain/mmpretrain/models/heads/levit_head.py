@@ -5,6 +5,7 @@ from mmengine.model import BaseModule
 
 from mmpretrain.models.heads import ClsHead
 from mmpretrain.registry import MODELS
+
 from ..utils import build_norm_layer
 
 

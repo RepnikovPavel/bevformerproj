@@ -3,11 +3,12 @@
 # This code is modified from https://github.com/imdanboy/jets/blob/main/espnet2/gan_tts/jets/alignments.py
 # Licensed under Apache License 2.0
 
+from typing import Tuple
+
 import numpy as np
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-from typing import Tuple
 from numba import jit
 from scipy.stats import betabinom
 

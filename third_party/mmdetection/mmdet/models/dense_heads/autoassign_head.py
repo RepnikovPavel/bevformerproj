@@ -12,6 +12,7 @@ from torch import Tensor
 from mmdet.registry import MODELS
 from mmdet.structures.bbox import bbox_overlaps
 from mmdet.utils import InstanceList, OptInstanceList, reduce_mean
+
 from ..task_modules.prior_generators import MlvlPointGenerator
 from ..utils import levels_to_images, multi_apply
 from .fcos_head import FCOSHead

@@ -9,8 +9,7 @@ import torch.nn as nn
 from mmcv.cnn import build_activation_layer, build_norm_layer
 from mmcv.cnn.bricks import DropPath
 from mmengine.model import BaseModule
-from mmengine.model.weight_init import (constant_init, normal_init,
-                                        trunc_normal_init)
+from mmengine.model.weight_init import constant_init, normal_init, trunc_normal_init
 
 from mmseg.registry import MODELS
 

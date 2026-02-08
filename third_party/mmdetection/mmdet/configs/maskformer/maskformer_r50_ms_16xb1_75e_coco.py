@@ -1,5 +1,20 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 from mmcv.transforms import RandomChoice, RandomChoiceResize
+from mmdet.datasets.transforms.transforms import RandomCrop
+from mmdet.models import MaskFormer
+from mmdet.models.backbones import ResNet
+from mmdet.models.data_preprocessors.data_preprocessor import DetDataPreprocessor
+from mmdet.models.dense_heads.maskformer_head import MaskFormerHead
+from mmdet.models.layers.pixel_decoder import TransformerEncoderPixelDecoder
+from mmdet.models.losses import CrossEntropyLoss, DiceLoss, FocalLoss
+from mmdet.models.seg_heads.panoptic_fusion_heads import MaskFormerFusionHead
+from mmdet.models.task_modules.assigners.hungarian_assigner import HungarianAssigner
+from mmdet.models.task_modules.assigners.match_cost import (
+    ClassificationCost,
+    DiceCost,
+    FocalLossCost,
+)
+from mmdet.models.task_modules.samplers import MaskPseudoSampler
 from mmengine.config import read_base
 from mmengine.model.weight_init import PretrainedInit
 from mmengine.optim.optimizer import OptimWrapper
@@ -9,22 +24,6 @@ from torch.nn.modules.activation import ReLU
 from torch.nn.modules.batchnorm import BatchNorm2d
 from torch.nn.modules.normalization import GroupNorm
 from torch.optim.adamw import AdamW
-
-from mmdet.datasets.transforms.transforms import RandomCrop
-from mmdet.models import MaskFormer
-from mmdet.models.backbones import ResNet
-from mmdet.models.data_preprocessors.data_preprocessor import \
-    DetDataPreprocessor
-from mmdet.models.dense_heads.maskformer_head import MaskFormerHead
-from mmdet.models.layers.pixel_decoder import TransformerEncoderPixelDecoder
-from mmdet.models.losses import CrossEntropyLoss, DiceLoss, FocalLoss
-from mmdet.models.seg_heads.panoptic_fusion_heads import MaskFormerFusionHead
-from mmdet.models.task_modules.assigners.hungarian_assigner import \
-    HungarianAssigner
-from mmdet.models.task_modules.assigners.match_cost import (ClassificationCost,
-                                                            DiceCost,
-                                                            FocalLossCost)
-from mmdet.models.task_modules.samplers import MaskPseudoSampler
 
 with read_base():
     from .._base_.datasets.coco_panoptic import *

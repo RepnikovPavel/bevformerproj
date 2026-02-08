@@ -4,12 +4,13 @@ from typing import Dict, List, Optional, Union
 
 import torch
 import torch.nn as nn
-from mmengine import Config
 from mmengine.optim import OptimWrapper
 from torch import Tensor
 
 from mmagic.structures import DataSample
 from mmagic.utils.typing import ForwardInputs, LabelVar
+from mmengine import Config
+
 from ..utils import get_valid_num_batches, label_sample_fn
 from .base_gan import BaseGAN
 

@@ -2,14 +2,13 @@
 import unittest
 
 import torch
-from torch import nn
-
 from mmrazor.models.task_modules import BackwardTracer
 from mmrazor.registry import TASK_UTILS
 from mmrazor.structures.graph import ModuleGraph
 from mmrazor.structures.graph.channel_graph import ChannelGraph
-from mmrazor.structures.graph.channel_nodes import \
-    default_channel_node_converter
+from mmrazor.structures.graph.channel_nodes import default_channel_node_converter
+from torch import nn
+
 from ...data.models import SingleLineModel
 
 NodeMap = {}

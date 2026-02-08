@@ -10,6 +10,7 @@ from mmdet.models.layers.transformer import inverse_sigmoid
 from mmdet.registry import MODELS
 from mmdet.structures import SampleList
 from mmdet.utils import InstanceList
+
 from .detr_head import DETRHead
 
 

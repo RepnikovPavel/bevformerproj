@@ -3,7 +3,6 @@ from unittest import TestCase
 
 import pytest
 import torch
-
 from mmagic.models import AblatedDiffusionModel
 from mmagic.utils import register_all_modules
 

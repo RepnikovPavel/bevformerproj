@@ -4,6 +4,7 @@ from typing import Optional
 import numpy as np
 
 from mmagic.registry import METRICS
+
 from .base_sample_wise_metric import BaseSampleWiseMetric
 from .metrics_utils import img_transform
 

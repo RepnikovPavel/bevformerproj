@@ -7,7 +7,6 @@ import numpy as np
 import pytest
 import torch
 from mmengine.structures import PixelData
-
 from mmseg.evaluation import CityscapesMetric
 from mmseg.structures import SegDataSample
 

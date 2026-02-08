@@ -9,8 +9,13 @@ import yaml
 from controlnet_aux import OpenposeDetector
 from controlnet_aux.open_pose.face import faceDetect
 from controlnet_aux.open_pose.hand import handDetect
-from controlnet_aux.open_pose.util import (HWC3, draw_bodypose, draw_facepose,
-                                           draw_handpose, resize_image)
+from controlnet_aux.open_pose.util import (
+    HWC3,
+    draw_bodypose,
+    draw_facepose,
+    draw_handpose,
+    resize_image,
+)
 
 
 def draw_pose(pose, H, W, draw_body=True, draw_hand=True, draw_face=True):

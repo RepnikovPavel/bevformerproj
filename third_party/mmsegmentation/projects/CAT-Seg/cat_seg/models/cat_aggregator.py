@@ -6,8 +6,8 @@ from mmcv.cnn import build_norm_layer
 from mmcv.cnn.bricks.transformer import FFN, build_dropout
 from mmengine.model import BaseModule
 from mmengine.utils import to_2tuple
-
 from mmseg.registry import MODELS
+
 from ..utils import FullAttention, LinearAttention
 
 

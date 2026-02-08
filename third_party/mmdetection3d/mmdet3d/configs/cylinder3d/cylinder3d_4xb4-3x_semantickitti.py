@@ -3,8 +3,8 @@ from mmengine import read_base
 
 with read_base():
     from .._base_.datasets.semantickitti import *
-    from .._base_.models.cylinder3d import *
     from .._base_.default_runtime import *
+    from .._base_.models.cylinder3d import *
 
 from mmengine.optim.optimizer.optimizer_wrapper import OptimWrapper
 from mmengine.optim.scheduler.lr_scheduler import LinearLR, MultiStepLR

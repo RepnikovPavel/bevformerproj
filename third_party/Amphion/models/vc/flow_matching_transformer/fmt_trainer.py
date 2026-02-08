@@ -4,18 +4,18 @@
 # LICENSE file in the root directory of this source tree.
 
 
-import torch
-import numpy as np
 import math
+
+import numpy as np
+import safetensors
+import torch
 import torch.nn.functional as F
 import torchaudio
 from models.base.base_trainer import BaseTrainer
-from models.vc.base.vc_emilia_dataset import VCEmiliaDataset, VCCollator
-from models.codec.melvqgan.melspec import MelSpectrogram
-from models.vc.flow_matching_transformer.fmt_model import FlowMatchingTransformer
 from models.codec.kmeans.repcodec_model import RepCodec
-
-import safetensors
+from models.codec.melvqgan.melspec import MelSpectrogram
+from models.vc.base.vc_emilia_dataset import VCCollator, VCEmiliaDataset
+from models.vc.flow_matching_transformer.fmt_model import FlowMatchingTransformer
 
 
 class FlowMatchingTransformerTrainer(BaseTrainer):

@@ -3,9 +3,9 @@ import os.path as osp
 
 import numpy as np
 import pytest
-from mmengine import FileClient
-
 from mmseg.utils import datafrombytes
+
+from mmengine import FileClient
 
 
 @pytest.mark.parametrize(

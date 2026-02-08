@@ -2,8 +2,7 @@
 from .ppyoloe_head import PPYOLOEHead, PPYOLOEHeadModule
 from .rtmdet_head import RTMDetHead, RTMDetSepBNHeadModule
 from .rtmdet_ins_head import RTMDetInsSepBNHead, RTMDetInsSepBNHeadModule
-from .rtmdet_rotated_head import (RTMDetRotatedHead,
-                                  RTMDetRotatedSepBNHeadModule)
+from .rtmdet_rotated_head import RTMDetRotatedHead, RTMDetRotatedSepBNHeadModule
 from .yolov5_head import YOLOv5Head, YOLOv5HeadModule
 from .yolov5_ins_head import YOLOv5InsHead, YOLOv5InsHeadModule
 from .yolov6_head import YOLOv6Head, YOLOv6HeadModule

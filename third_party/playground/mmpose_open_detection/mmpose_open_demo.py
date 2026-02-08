@@ -4,11 +4,9 @@ import argparse
 import os
 
 import cv2
-import mmcv
 import numpy as np
 import torch
 import torch.nn.functional as F
-from mmengine import Registry
 from mmengine.config import Config
 from mmengine.utils import ProgressBar
 from mmpose.apis import inference_topdown
@@ -17,14 +15,16 @@ from mmpose.registry import VISUALIZERS
 from mmpose.structures import merge_data_samples
 from PIL import Image
 
+import mmcv
+from mmengine import Registry
+
 # Grounding DINO
 try:
     import groundingdino
     import groundingdino.datasets.transforms as T
     from groundingdino.models import build_model
     from groundingdino.util import get_tokenlizer
-    from groundingdino.util.utils import (clean_state_dict,
-                                          get_phrases_from_posmap)
+    from groundingdino.util.utils import clean_state_dict, get_phrases_from_posmap
     grounding_dino_transform = T.Compose([
         T.RandomResize([800], max_size=1333),
         T.ToTensor(),

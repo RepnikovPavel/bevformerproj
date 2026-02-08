@@ -1,9 +1,9 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import pytest
-from mmengine.testing import assert_dict_has_keys
-
 from mmaction.datasets import RepeatAugDataset
 from mmaction.utils import register_all_modules
+from mmengine.testing import assert_dict_has_keys
+
 from .base import BaseTestDataset
 
 

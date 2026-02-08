@@ -9,10 +9,10 @@
 from typing import Any, Dict, List, Tuple
 
 import torch
+from mmseg.registry import MODELS
 from torch import nn
 from torch.nn import functional as F
 
-from mmseg.registry import MODELS
 from .mask_decoder import MaskDecoder
 from .prompt_encoder import PromptEncoder
 

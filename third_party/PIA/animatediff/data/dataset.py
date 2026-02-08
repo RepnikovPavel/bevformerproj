@@ -3,16 +3,14 @@ import io
 import os
 import random
 
+import animatediff.data.video_transformer as video_transforms
 import cv2
 import numpy as np
 import torch
 import torchvision.transforms as transforms
+from animatediff.utils.util import detect_edges, zero_rank_print
 from decord import VideoReader
 from torch.utils.data.dataset import Dataset
-
-import animatediff.data.video_transformer as video_transforms
-from animatediff.utils.util import detect_edges, zero_rank_print
-
 
 try:
     from petrel_client.client import Client

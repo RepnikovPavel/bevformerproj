@@ -9,6 +9,7 @@ from torch import Tensor
 from mmdet.registry import MODELS
 from mmdet.structures import TrackDataSample
 from mmdet.structures.bbox import bbox_overlaps
+
 from .base_tracker import BaseTracker
 
 

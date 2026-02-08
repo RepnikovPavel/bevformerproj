@@ -12,6 +12,7 @@ from tqdm.auto import tqdm
 from mmagic.registry import MODELS
 from mmagic.structures import DataSample
 from mmagic.utils.typing import SampleList
+
 from ..stable_diffusion.stable_diffusion import StableDiffusion
 from .vico_utils import set_vico_modules
 

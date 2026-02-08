@@ -4,9 +4,8 @@ from tempfile import TemporaryDirectory
 from unittest import TestCase
 
 import torch
-from parameterized import parameterized
-
 from mmaction.apis import MMAction2Inferencer
+from parameterized import parameterized
 
 
 class TestMMActionInferencer(TestCase):

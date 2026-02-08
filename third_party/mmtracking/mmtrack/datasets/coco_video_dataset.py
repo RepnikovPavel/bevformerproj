@@ -8,6 +8,7 @@ from terminaltables import AsciiTable
 
 from mmtrack.core import eval_mot
 from mmtrack.utils import get_root_logger
+
 from .parsers import CocoVID
 
 

@@ -8,6 +8,7 @@ from mmengine.model import BaseModule
 from mmengine.model.weight_init import constant_init
 
 from mmagic.registry import MODELS
+
 from .gca_module import GCAModule
 
 

@@ -11,10 +11,19 @@ from rich.table import Table
 from torch import Tensor
 
 from .jit_analysis import JitModelAnalysis
-from .jit_handles import (Handle, addmm_flop_jit, batchnorm_flop_jit,
-                          bmm_flop_jit, conv_flop_jit, einsum_flop_jit,
-                          elementwise_flop_counter, generic_activation_jit,
-                          linear_flop_jit, matmul_flop_jit, norm_flop_counter)
+from .jit_handles import (
+    Handle,
+    addmm_flop_jit,
+    batchnorm_flop_jit,
+    bmm_flop_jit,
+    conv_flop_jit,
+    einsum_flop_jit,
+    elementwise_flop_counter,
+    generic_activation_jit,
+    linear_flop_jit,
+    matmul_flop_jit,
+    norm_flop_counter,
+)
 
 # A dictionary that maps supported operations to their flop count jit handles.
 _DEFAULT_SUPPORTED_FLOP_OPS: Dict[str, Handle] = {

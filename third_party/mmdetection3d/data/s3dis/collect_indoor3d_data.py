@@ -1,8 +1,9 @@
 import argparse
 from os import path as osp
 
-import mmengine
 from indoor3d_util import export
+
+import mmengine
 
 parser = argparse.ArgumentParser()
 parser.add_argument(

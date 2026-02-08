@@ -7,20 +7,17 @@
 """
 Dataset processor tool
 """
+import copy
 import logging
 import random
-from io import BytesIO
-import torch
-import torchaudio
-from torch.nn.utils.rnn import pad_sequence
-import torch.nn.functional as F
-import copy
-import torch.distributed as dist
-import os
-from pathlib import Path
 import string
 import time
-import transformers
+
+import torch
+import torch.distributed as dist
+import torch.nn.functional as F
+import torchaudio
+from torch.nn.utils.rnn import pad_sequence
 
 torchaudio.set_audio_backend("soundfile")
 AUDIO_FORMAT_SETS = set(["flac", "mp3", "m4a", "ogg", "opus", "wav", "wma"])

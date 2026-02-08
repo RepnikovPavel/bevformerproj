@@ -6,8 +6,9 @@ import os.path as osp
 import re
 from collections import defaultdict
 
-import mmcv
 from tqdm import tqdm
+
+import mmcv
 
 
 def parse_args():

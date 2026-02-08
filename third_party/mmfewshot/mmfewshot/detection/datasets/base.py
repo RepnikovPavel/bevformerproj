@@ -12,6 +12,7 @@ from mmdet.datasets.pipelines import Compose
 from terminaltables import AsciiTable
 
 from mmfewshot.utils import get_root_logger
+
 from .utils import NumpyEncoder
 
 

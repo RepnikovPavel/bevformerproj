@@ -4,13 +4,25 @@ from itertools import chain, permutations
 
 import numpy as np
 import torch
+from mmocr.utils import (
+    boundary_iou,
+    crop_polygon,
+    offset_polygon,
+    poly2bbox,
+    poly2shapely,
+    poly_intersection,
+    poly_iou,
+    poly_make_valid,
+    poly_union,
+    polys2shapely,
+    rescale_polygon,
+    rescale_polygons,
+    shapely2poly,
+    sort_points,
+    sort_vertex,
+    sort_vertex8,
+)
 from shapely.geometry import MultiPolygon, Polygon
-
-from mmocr.utils import (boundary_iou, crop_polygon, offset_polygon, poly2bbox,
-                         poly2shapely, poly_intersection, poly_iou,
-                         poly_make_valid, poly_union, polys2shapely,
-                         rescale_polygon, rescale_polygons, shapely2poly,
-                         sort_points, sort_vertex, sort_vertex8)
 
 
 class TestPolygonUtils(unittest.TestCase):

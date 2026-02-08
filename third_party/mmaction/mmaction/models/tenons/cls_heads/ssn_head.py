@@ -1,8 +1,10 @@
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
+from mmaction.losses import classwise_regression_loss, completeness_loss
+
 from ...registry import HEADS
-from mmaction.losses import completeness_loss, classwise_regression_loss
+
 
 @HEADS.register_module
 class SSNHead(nn.Module):

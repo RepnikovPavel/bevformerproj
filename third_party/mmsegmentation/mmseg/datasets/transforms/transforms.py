@@ -5,8 +5,6 @@ import warnings
 from typing import Dict, List, Optional, Sequence, Tuple, Union
 
 import cv2
-import mmcv
-import mmengine
 import numpy as np
 from mmcv.transforms import RandomFlip as MMCV_RandomFlip
 from mmcv.transforms import Resize as MMCV_Resize
@@ -16,6 +14,8 @@ from mmengine.utils import is_tuple_of
 from numpy import random
 from scipy.ndimage import gaussian_filter
 
+import mmcv
+import mmengine
 from mmseg.datasets.dataset_wrappers import MultiImageMixDataset
 from mmseg.registry import TRANSFORMS
 

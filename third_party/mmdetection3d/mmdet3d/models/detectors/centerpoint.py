@@ -2,6 +2,7 @@
 from typing import Optional
 
 from mmdet3d.registry import MODELS
+
 from .mvx_two_stage import MVXTwoStageDetector
 
 

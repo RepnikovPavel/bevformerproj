@@ -1,8 +1,9 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import torch
-
-from mmagic.models.editors.singan.singan_modules import (DiscriminatorBlock,
-                                                         GeneratorBlock)
+from mmagic.models.editors.singan.singan_modules import (
+    DiscriminatorBlock,
+    GeneratorBlock,
+)
 
 
 def test_GeneratorBlock():

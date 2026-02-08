@@ -2,21 +2,22 @@
 from functools import partial
 from typing import Dict, List, Optional, Tuple, Union
 
-import mmengine
 import numpy as np
 import torch
 import torch.autograd as autograd
 import torch.nn as nn
 import torch.nn.functional as F
-from mmengine import MessageHub
 from mmengine.dist import get_world_size
 from mmengine.model import is_model_wrapper
 from mmengine.optim import OptimWrapper, OptimWrapperDict
 from torch import Tensor
 
+import mmengine
 from mmagic.registry import MODELS
 from mmagic.structures import DataSample
 from mmagic.utils.typing import ForwardInputs, SampleList
+from mmengine import MessageHub
+
 from ...base_models import BaseGAN
 from ...utils import get_valid_num_batches, set_requires_grad
 

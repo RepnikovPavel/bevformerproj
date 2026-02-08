@@ -4,13 +4,12 @@ from typing import List, Tuple
 import torch
 import torch.nn as nn
 from mmcv.cnn import build_norm_layer
-from torch import Tensor
-
 from mmseg.models.decode_heads.sep_aspp_head import DepthwiseSeparableASPPHead
 from mmseg.models.losses import accuracy
 from mmseg.models.utils import resize
 from mmseg.registry import MODELS
 from mmseg.utils import SampleList
+from torch import Tensor
 
 
 class ProjectionHead(nn.Module):

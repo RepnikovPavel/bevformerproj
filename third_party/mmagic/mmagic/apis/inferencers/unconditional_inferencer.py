@@ -4,10 +4,11 @@ from typing import Dict, List
 
 import numpy as np
 import torch
-from mmengine import mkdir_or_exist
 from torchvision import utils
 
 from mmagic.structures import DataSample
+from mmengine import mkdir_or_exist
+
 from .base_mmagic_inferencer import BaseMMagicInferencer, InputsType, PredType
 
 

@@ -4,14 +4,13 @@ from unittest.mock import MagicMock, patch
 import pytest
 import torch
 import torch.nn as nn
-from mmengine.runner import Runner
-
 from mmagic.datasets import BasicImageDataset
 from mmagic.datasets.transforms import PackInputs
 from mmagic.evaluation import PrecisionAndRecall
 from mmagic.models import LSGAN, DataPreprocessor
 from mmagic.models.editors.dcgan import DCGANGenerator
 from mmagic.utils import register_all_modules
+from mmengine.runner import Runner
 
 register_all_modules()
 

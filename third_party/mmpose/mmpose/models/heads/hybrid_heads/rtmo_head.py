@@ -12,11 +12,15 @@ from mmengine.structures import InstanceData
 from torch import Tensor
 
 from mmpose.evaluation.functional import nms_torch
-from mmpose.models.utils import (GAUEncoder, SinePositionalEncoding,
-                                 filter_scores_and_topk)
+from mmpose.models.utils import (
+    GAUEncoder,
+    SinePositionalEncoding,
+    filter_scores_and_topk,
+)
 from mmpose.registry import MODELS
 from mmpose.structures.bbox import bbox_xyxy2cs
 from mmpose.utils.typing import Features, OptSampleList, Predictions
+
 from .yoloxpose_head import YOLOXPoseHead
 
 EPS = 1e-8

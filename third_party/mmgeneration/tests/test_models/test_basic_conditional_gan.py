@@ -4,7 +4,6 @@ from copy import deepcopy
 import pytest
 import torch
 import torch.nn as nn
-
 from mmgen.models import BasicConditionalGAN, build_model
 
 

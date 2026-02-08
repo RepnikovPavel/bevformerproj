@@ -1,8 +1,9 @@
 import torch.nn as nn
 import torch.nn.functional as F
 
-from . import ddn, ddn_loss
 from pcdet.models.model_utils.basic_block_2d import BasicBlock2D
+
+from . import ddn, ddn_loss
 
 
 class DepthFFN(nn.Module):

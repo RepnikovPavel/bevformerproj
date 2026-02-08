@@ -3,20 +3,19 @@
 # This source code is licensed under the MIT license found in the
 # LICENSE file in the root directory of this source tree.
 
+import argparse
 import os
+
 import numpy as np
 import torch
 import torchaudio
-import argparse
-
-
-from text.g2p_module import G2PModule
-from utils.tokenizer import AudioTokenizer, tokenize_audio
-from models.tts.valle.valle import VALLE
 from models.tts.base.tts_inferece import TTSInference
-from models.tts.valle.valle_dataset import VALLETestDataset, VALLETestCollator
+from models.tts.valle.valle import VALLE
+from models.tts.valle.valle_dataset import VALLETestCollator, VALLETestDataset
 from processors.phone_extractor import phoneExtractor
+from text.g2p_module import G2PModule
 from text.text_token_collation import phoneIDCollation
+from utils.tokenizer import AudioTokenizer, tokenize_audio
 
 
 class VALLEInference(TTSInference):

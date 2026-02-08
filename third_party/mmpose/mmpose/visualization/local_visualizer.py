@@ -4,15 +4,16 @@ import warnings
 from typing import Dict, List, Optional, Tuple, Union
 
 import cv2
-import mmcv
 import numpy as np
 import torch
 from mmengine.dist import master_only
 from mmengine.structures import InstanceData, PixelData
 
+import mmcv
 from mmpose.datasets.datasets.utils import parse_pose_metainfo
 from mmpose.registry import VISUALIZERS
 from mmpose.structures import PoseDataSample
+
 from .opencv_backend_visualizer import OpencvBackendVisualizer
 from .simcc_vis import SimCCVisualizer
 

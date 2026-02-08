@@ -2,7 +2,6 @@
 import pytest
 import torch
 import torch.nn as nn
-
 from mmagic.models.editors import MaskConvModule
 from mmagic.utils import register_all_modules
 

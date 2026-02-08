@@ -3,7 +3,6 @@ import numpy as np
 import torch
 import torch.nn as nn
 import torch_scatter
-
 from mmdet3d.registry import MODELS
 
 

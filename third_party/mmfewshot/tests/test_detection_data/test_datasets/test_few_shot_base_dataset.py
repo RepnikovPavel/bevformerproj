@@ -3,7 +3,6 @@ import copy
 from unittest.mock import MagicMock, patch
 
 import numpy as np
-
 from mmfewshot.detection.datasets import BaseFewShotDataset
 
 

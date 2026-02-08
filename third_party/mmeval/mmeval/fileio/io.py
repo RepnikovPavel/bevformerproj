@@ -37,6 +37,7 @@ from pathlib import Path
 from typing import Generator, Iterator, Optional, Tuple, Union
 
 from mmeval.utils import is_filepath
+
 from .backends import backends, prefix_to_backends
 from .handlers import file_handlers
 

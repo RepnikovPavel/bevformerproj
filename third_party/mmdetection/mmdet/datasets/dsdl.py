@@ -3,6 +3,7 @@ import os
 from typing import List
 
 from mmdet.registry import DATASETS
+
 from .base_det_dataset import BaseDetDataset
 
 try:

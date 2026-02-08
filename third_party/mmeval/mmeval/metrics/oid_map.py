@@ -2,12 +2,14 @@
 import copy
 import csv
 import json
-import numpy as np
 import warnings
 from multiprocessing.pool import Pool
 from typing import Dict, List, Optional, Sequence, Tuple, Union
 
+import numpy as np
+
 from mmeval.metrics.utils import calculate_overlaps
+
 from .voc_map import VOCMeanAP, filter_by_bboxes_area
 
 

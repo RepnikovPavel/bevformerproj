@@ -1,12 +1,12 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import argparse
 
-import mmengine
-from mmengine import Config, DictAction
+from mmdet.registry import DATASETS
 from mmengine.evaluator import Evaluator
 from mmengine.registry import init_default_scope
 
-from mmdet.registry import DATASETS
+import mmengine
+from mmengine import Config, DictAction
 
 
 def parse_args():

@@ -47,8 +47,11 @@ def simple_roialign__forward(self, features, rois):
     Returns:
         torch.Tensor: RoI features.
     """
-    from mmcv.ops.point_sample import (generate_grid, point_sample,
-                                       rel_roi_point_to_rel_img_point)
+    from mmcv.ops.point_sample import (
+        generate_grid,
+        point_sample,
+        rel_roi_point_to_rel_img_point,
+    )
     num_imgs = features.size(0)
     num_rois = rois.size(0)
     rel_roi_points = generate_grid(

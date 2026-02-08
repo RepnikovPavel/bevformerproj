@@ -1,6 +1,5 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import numpy as np
-
 from mmagic.evaluation.functional import gauss_gradient
 
 

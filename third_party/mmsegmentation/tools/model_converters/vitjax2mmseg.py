@@ -2,9 +2,10 @@
 import argparse
 import os.path as osp
 
-import mmengine
 import numpy as np
 import torch
+
+import mmengine
 
 
 def vit_jax_to_torch(jax_weights, num_layer=12):

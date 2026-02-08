@@ -2,43 +2,43 @@
 from mmengine import read_base
 
 with read_base():
-    from .._base_.schedules.cosine import *
     from .._base_.default_runtime import *
+    from .._base_.schedules.cosine import *
 
 from mmcv.transforms.loading import LoadImageFromFile
 from mmcv.transforms.processing import RandomResize, Resize
-from mmengine.dataset.dataset_wrapper import RepeatDataset
-from mmengine.dataset.sampler import DefaultSampler
-from mmengine.visualization.vis_backend import LocalVisBackend
-
 from mmdet3d.datasets.kitti_dataset import KittiDataset
 from mmdet3d.datasets.transforms.formating import Pack3DDetInputs
-from mmdet3d.datasets.transforms.loading import (LoadAnnotations3D,
-                                                 LoadPointsFromFile)
+from mmdet3d.datasets.transforms.loading import LoadAnnotations3D, LoadPointsFromFile
 from mmdet3d.datasets.transforms.test_time_aug import MultiScaleFlipAug3D
-from mmdet3d.datasets.transforms.transforms_3d import (GlobalRotScaleTrans,
-                                                       ObjectRangeFilter,
-                                                       PointShuffle,
-                                                       PointsRangeFilter,
-                                                       RandomFlip3D)
+from mmdet3d.datasets.transforms.transforms_3d import (
+    GlobalRotScaleTrans,
+    ObjectRangeFilter,
+    PointShuffle,
+    PointsRangeFilter,
+    RandomFlip3D,
+)
 from mmdet3d.evaluation.metrics.kitti_metric import KittiMetric
 from mmdet3d.models.backbones.second import SECOND
-from mmdet3d.models.data_preprocessors.data_preprocessor import \
-    Det3DDataPreprocessor
+from mmdet3d.models.data_preprocessors.data_preprocessor import Det3DDataPreprocessor
 from mmdet3d.models.dense_heads.anchor3d_head import Anchor3DHead
 from mmdet3d.models.detectors.mvx_faster_rcnn import DynamicMVXFasterRCNN
 from mmdet3d.models.layers.fusion_layers.point_fusion import PointFusion
 from mmdet3d.models.middle_encoders.sparse_encoder import SparseEncoder
 from mmdet3d.models.necks.second_fpn import SECONDFPN
-from mmdet3d.models.task_modules.anchor.anchor_3d_generator import \
-    Anchor3DRangeGenerator
-from mmdet3d.models.task_modules.assigners.max_3d_iou_assigner import \
-    Max3DIoUAssigner
-from mmdet3d.models.task_modules.coders.delta_xyzwhlr_bbox_coder import \
-    DeltaXYZWLHRBBoxCoder
+from mmdet3d.models.task_modules.anchor.anchor_3d_generator import (
+    Anchor3DRangeGenerator,
+)
+from mmdet3d.models.task_modules.assigners.max_3d_iou_assigner import Max3DIoUAssigner
+from mmdet3d.models.task_modules.coders.delta_xyzwhlr_bbox_coder import (
+    DeltaXYZWLHRBBoxCoder,
+)
 from mmdet3d.models.voxel_encoders.voxel_encoder import DynamicVFE
 from mmdet3d.structures.ops.iou3d_calculator import BboxOverlapsNearest3D
 from mmdet3d.visualization.local_visualizer import Det3DLocalVisualizer
+from mmengine.dataset.dataset_wrapper import RepeatDataset
+from mmengine.dataset.sampler import DefaultSampler
+from mmengine.visualization.vis_backend import LocalVisBackend
 
 # model settings
 voxel_size = [0.05, 0.05, 0.1]

@@ -5,7 +5,6 @@ import platform
 import pytest
 import torch
 from mmengine.structures import InstanceData
-
 from mmselfsup.models.algorithms.rotation_pred import RotationPred
 from mmselfsup.structures import SelfSupDataSample
 

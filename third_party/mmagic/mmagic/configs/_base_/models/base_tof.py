@@ -1,13 +1,17 @@
 # Copyright (c) OpenMMLab. All rights reserved.
-from mmengine.dataset import DefaultSampler, InfiniteSampler
-from mmengine.hooks import (CheckpointHook, DistSamplerSeedHook, IterTimerHook,
-                            LoggerHook, ParamSchedulerHook)
-from mmengine.optim import MultiStepLR, OptimWrapper
-from mmengine.runner import IterBasedTrainLoop
-
 from mmagic.datasets.transforms import LoadImageFromFile, PackInputs
 from mmagic.engine.runner import MultiTestLoop, MultiValLoop
 from mmagic.evaluation import MAE, PSNR, SSIM
+from mmengine.dataset import DefaultSampler, InfiniteSampler
+from mmengine.hooks import (
+                            CheckpointHook,
+                            DistSamplerSeedHook,
+                            IterTimerHook,
+                            LoggerHook,
+                            ParamSchedulerHook,
+)
+from mmengine.optim import MultiStepLR, OptimWrapper
+from mmengine.runner import IterBasedTrainLoop
 
 _base_ = '../default_runtime.py'
 

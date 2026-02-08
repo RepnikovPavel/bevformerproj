@@ -5,7 +5,6 @@ from unittest import TestCase
 import torch
 import torch.nn as nn
 from mmcls.models import *  # noqa:F403,F401
-
 from mmrazor.models import *  # noqa:F403,F401
 from mmrazor.registry import MODELS
 

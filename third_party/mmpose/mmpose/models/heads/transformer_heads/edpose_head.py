@@ -19,11 +19,19 @@ from torch import Tensor, nn
 from mmpose.models.utils import inverse_sigmoid
 from mmpose.registry import KEYPOINT_CODECS, MODELS
 from mmpose.utils.tensor_utils import to_numpy
-from mmpose.utils.typing import (ConfigType, Features, OptConfigType,
-                                 OptSampleList, Predictions)
+from mmpose.utils.typing import (
+    ConfigType,
+    Features,
+    OptConfigType,
+    OptSampleList,
+    Predictions,
+)
+
 from .base_transformer_head import TransformerHead
 from .transformers.deformable_detr_layers import (
-    DeformableDetrTransformerDecoderLayer, DeformableDetrTransformerEncoder)
+    DeformableDetrTransformerDecoderLayer,
+    DeformableDetrTransformerEncoder,
+)
 from .transformers.utils import FFN, PositionEmbeddingSineHW
 
 

@@ -6,7 +6,7 @@ import numpy as np
 from tqdm import tqdm
 
 from ...ops.roiaware_pool3d import roiaware_pool3d_utils
-from ...utils import common_utils, box_utils
+from ...utils import common_utils
 from ..dataset import DatasetTemplate
 
 
@@ -107,8 +107,8 @@ class LyftDataset(DatasetTemplate):
         return data_dict
 
     def kitti_eval(self, eval_det_annos, eval_gt_annos, class_names):
-        from ..kitti.kitti_object_eval_python import eval as kitti_eval
         from ..kitti import kitti_utils
+        from ..kitti.kitti_object_eval_python import eval as kitti_eval
 
         map_name_to_kitti = {
             'car': 'Car',
@@ -144,7 +144,9 @@ class LyftDataset(DatasetTemplate):
     
     def lyft_eval(self, det_annos, class_names, iou_thresholds=[0.5]):
         from lyft_dataset_sdk.lyftdataset import LyftDataset as Lyft
+
         from . import lyft_utils
+
         # from lyft_dataset_sdk.eval.detection.mAP_evaluation import get_average_precisions
         from .lyft_mAP_eval.lyft_eval import get_average_precisions
 
@@ -206,6 +208,7 @@ class LyftDataset(DatasetTemplate):
 
 def create_lyft_info(version, data_path, save_path, split, max_sweeps=10):
     from lyft_dataset_sdk.lyftdataset import LyftDataset
+
     from . import lyft_utils
     data_path = data_path / version
     save_path = save_path / version
@@ -263,9 +266,10 @@ def create_lyft_info(version, data_path, save_path, split, max_sweeps=10):
 
 
 if __name__ == '__main__':
-    import yaml
     import argparse
     from pathlib import Path
+
+    import yaml
     from easydict import EasyDict
 
     parser = argparse.ArgumentParser(description='arg parser')

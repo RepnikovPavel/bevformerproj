@@ -14,8 +14,7 @@ from mmdet3d.models.layers.spconv import IS_SPCONV2_AVAILABLE
 from mmdet3d.utils.typing_utils import InstanceList
 
 if IS_SPCONV2_AVAILABLE:
-    from spconv.pytorch import (SparseConvTensor, SparseMaxPool3d,
-                                SparseSequential)
+    from spconv.pytorch import SparseConvTensor, SparseMaxPool3d, SparseSequential
 else:
     from mmcv.ops import SparseConvTensor, SparseMaxPool3d, SparseSequential
 
@@ -24,8 +23,11 @@ from torch import nn as nn
 
 from mmdet3d.models.layers import nms_bev, nms_normal_bev
 from mmdet3d.registry import MODELS, TASK_UTILS
-from mmdet3d.structures.bbox_3d import (LiDARInstance3DBoxes,
-                                        rotation_3d_in_axis, xywhr2xyxyr)
+from mmdet3d.structures.bbox_3d import (
+    LiDARInstance3DBoxes,
+    rotation_3d_in_axis,
+    xywhr2xyxyr,
+)
 from mmdet3d.utils.typing_utils import SamplingResultList
 
 

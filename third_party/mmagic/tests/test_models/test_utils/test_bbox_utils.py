@@ -2,7 +2,6 @@
 import numpy as np
 import pytest
 import torch
-
 from mmagic.models.editors import PlainRefiner
 from mmagic.models.utils import extract_around_bbox, extract_bbox_patch
 

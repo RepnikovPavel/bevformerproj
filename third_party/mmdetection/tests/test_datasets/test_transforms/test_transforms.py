@@ -3,25 +3,42 @@ import copy
 import os.path as osp
 import unittest
 
-import mmcv
 import numpy as np
 import torch
 from mmcv.transforms import LoadImageFromFile
 
 # yapf:disable
-from mmdet.datasets.transforms import (CopyPaste, CutOut, Expand,
-                                       FixScaleResize, FixShapeResize,
-                                       MinIoURandomCrop, MixUp, Mosaic, Pad,
-                                       PhotoMetricDistortion, RandomAffine,
-                                       RandomCenterCropPad, RandomCrop,
-                                       RandomErasing, RandomFlip, RandomShift,
-                                       Resize, ResizeShortestEdge, SegRescale,
-                                       YOLOXHSVRandomAug)
+from mmdet.datasets.transforms import (
+    CopyPaste,
+    CutOut,
+    Expand,
+    FixScaleResize,
+    FixShapeResize,
+    MinIoURandomCrop,
+    MixUp,
+    Mosaic,
+    Pad,
+    PhotoMetricDistortion,
+    RandomAffine,
+    RandomCenterCropPad,
+    RandomCrop,
+    RandomErasing,
+    RandomFlip,
+    RandomShift,
+    Resize,
+    ResizeShortestEdge,
+    SegRescale,
+    YOLOXHSVRandomAug,
+)
+
 # yapf:enable
 from mmdet.evaluation import bbox_overlaps
 from mmdet.registry import TRANSFORMS
 from mmdet.structures.bbox import HorizontalBoxes, bbox_project
 from mmdet.structures.mask import BitmapMasks
+
+import mmcv
+
 from .utils import construct_toy_data, create_full_masks, create_random_bboxes
 
 try:

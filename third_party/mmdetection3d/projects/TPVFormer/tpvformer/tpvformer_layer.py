@@ -3,8 +3,7 @@ import warnings
 
 import torch
 from mmcv.cnn import build_norm_layer
-from mmcv.cnn.bricks.transformer import (build_attention,
-                                         build_feedforward_network)
+from mmcv.cnn.bricks.transformer import build_attention, build_feedforward_network
 from mmengine.config import ConfigDict
 from mmengine.model import BaseModule, ModuleList
 from mmengine.registry import MODELS

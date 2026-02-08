@@ -3,10 +3,11 @@ from typing import *
 import torch
 from polygraphy import cuda
 
-from live2diff.animatediff.models.unet_depth_streaming import UNet3DConditionStreamingOutput
+from live2diff.animatediff.models.unet_depth_streaming import (
+    UNet3DConditionStreamingOutput,
+)
 
 from .utilities import Engine
-
 
 try:
     from diffusers.models.autoencoder_tiny import AutoencoderTinyOutput

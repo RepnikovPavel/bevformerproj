@@ -4,11 +4,10 @@ import multiprocessing
 import os
 from pathlib import Path
 
-from mmengine import (Config, DictAction, track_parallel_progress,
-                      track_progress)
-
 from mmpretrain.datasets import build_dataset
 from mmpretrain.registry import TRANSFORMS
+
+from mmengine import Config, DictAction, track_parallel_progress, track_progress
 
 file_lock = multiprocessing.Lock()
 

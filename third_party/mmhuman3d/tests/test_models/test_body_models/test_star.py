@@ -2,7 +2,6 @@ import os
 
 import numpy as np
 import torch
-
 from mmhuman3d.models.body_models.builder import build_body_model
 
 BODY_MODEL_LOAD_DIR = 'data/body_models/star'

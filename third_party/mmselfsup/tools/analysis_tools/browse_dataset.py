@@ -2,13 +2,13 @@
 import argparse
 import os.path as osp
 
-import mmengine
 import numpy as np
-from mmengine import Config, DictAction
 from mmengine.registry import init_default_scope
-
 from mmselfsup.datasets.builder import build_dataset
 from mmselfsup.registry import VISUALIZERS
+
+import mmengine
+from mmengine import Config, DictAction
 
 
 def parse_args():

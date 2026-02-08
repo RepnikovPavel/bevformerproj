@@ -1,9 +1,11 @@
-import cv2, os
-import numpy as np
-from tqdm import tqdm
+import os
 import uuid
 
-from src.utils.videoio import save_video_with_watermark 
+import cv2
+import numpy as np
+from src.utils.videoio import save_video_with_watermark
+from tqdm import tqdm
+
 
 def paste_pic(video_path, pic_path, crop_info, new_audio_path, full_video_path, extended_crop=False):
 

@@ -5,7 +5,7 @@ try:
     from yaml import CDumper as Dumper  # type: ignore
     from yaml import CLoader as Loader  # type: ignore
 except ImportError:
-    from yaml import Loader, Dumper  # type: ignore
+    from yaml import Dumper, Loader  # type: ignore
 
 from .base import BaseFileHandler  # isort:skip
 

@@ -5,14 +5,14 @@ import os
 import time
 
 import torch
-from mmcv import Config, DictAction
 from mmcv.cnn import fuse_conv_bn
 from mmcv.parallel import MMDistributedDataParallel
 from mmcv.runner import init_dist, load_checkpoint, wrap_fp16_model
 from mmdet.datasets import build_dataloader, replace_ImageToTensor
-
 from mmrotate.datasets import build_dataset
 from mmrotate.models import build_detector
+
+from mmcv import Config, DictAction
 
 
 def parse_args():

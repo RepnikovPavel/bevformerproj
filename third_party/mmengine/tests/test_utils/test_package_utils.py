@@ -4,7 +4,6 @@ import sys
 from importlib.metadata import PackageNotFoundError
 
 import pytest
-
 from mmengine.utils import get_installed_path, is_installed
 
 

@@ -3,7 +3,6 @@ import platform
 
 import pytest
 import torch
-
 from mmagic.models.editors.swinir.swinir_rstb import RSTB
 
 

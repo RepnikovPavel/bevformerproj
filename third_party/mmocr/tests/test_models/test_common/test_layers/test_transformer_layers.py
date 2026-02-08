@@ -2,9 +2,7 @@
 from unittest import TestCase
 
 import torch
-
-from mmocr.models.common.layers.transformer_layers import (TFDecoderLayer,
-                                                           TFEncoderLayer)
+from mmocr.models.common.layers.transformer_layers import TFDecoderLayer, TFEncoderLayer
 
 
 class TestTFEncoderLayer(TestCase):

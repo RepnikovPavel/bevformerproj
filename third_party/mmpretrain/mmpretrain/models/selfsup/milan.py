@@ -7,6 +7,7 @@ from mmengine.runner.checkpoint import _load_checkpoint
 
 from mmpretrain.registry import MODELS
 from mmpretrain.structures import DataSample
+
 from ..utils import build_clip_model
 from .base import BaseSelfSupervisor
 from .mae import MAEViT

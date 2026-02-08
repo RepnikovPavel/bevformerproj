@@ -1,4 +1,6 @@
-import os, hashlib
+import hashlib
+import os
+
 import requests
 from tqdm import tqdm
 

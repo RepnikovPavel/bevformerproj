@@ -6,7 +6,6 @@ from unittest import TestCase
 import torch
 import torch.nn as nn
 from mmengine.testing import assert_allclose
-
 from mmyolo.models.layers import ExpMomentumEMA
 
 

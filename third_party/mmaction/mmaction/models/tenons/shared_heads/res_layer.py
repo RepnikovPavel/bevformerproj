@@ -4,10 +4,9 @@ import torch.nn as nn
 from mmcv.cnn import constant_init, kaiming_init
 from mmcv.runner import load_checkpoint
 
+from ...registry import HEADS
 from ..backbones import ResNet
 from ..backbones.resnet import make_res_layer
-from ...registry import HEADS
-from ..spatial_temporal_modules.non_local import NonLocalModule
 
 
 @HEADS.register_module

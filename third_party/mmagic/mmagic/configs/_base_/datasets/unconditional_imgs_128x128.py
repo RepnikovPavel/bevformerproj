@@ -1,7 +1,6 @@
 # Copyright (c) OpenMMLab. All rights reserved.
-from mmengine.dataset import DefaultSampler, InfiniteSampler
-
 from mmagic.datasets.transforms import LoadImageFromFile, PackInputs, Resize
+from mmengine.dataset import DefaultSampler, InfiniteSampler
 
 # dataset_type = 'BasicImageDataset'
 dataset_type = 'BasicImageDataset'

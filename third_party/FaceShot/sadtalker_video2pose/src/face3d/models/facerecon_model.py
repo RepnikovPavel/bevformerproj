@@ -3,16 +3,23 @@
 
 import numpy as np
 import torch
-from src.face3d.models.base_model import BaseModel
-from src.face3d.models import networks
-from src.face3d.models.bfm import ParametricFaceModel
-from src.face3d.models.losses import perceptual_loss, photo_loss, reg_loss, reflectance_loss, landmark_loss
-from src.face3d.util import util 
-from src.face3d.util.nvdiffrast import MeshRenderer
-# from src.face3d.util.preprocess import estimate_norm_torch
 
+# from src.face3d.util.preprocess import estimate_norm_torch
 import trimesh
 from scipy.io import savemat
+from src.face3d.models import networks
+from src.face3d.models.base_model import BaseModel
+from src.face3d.models.bfm import ParametricFaceModel
+from src.face3d.models.losses import (
+    landmark_loss,
+    perceptual_loss,
+    photo_loss,
+    reflectance_loss,
+    reg_loss,
+)
+from src.face3d.util import util
+from src.face3d.util.nvdiffrast import MeshRenderer
+
 
 class FaceReconModel(BaseModel):
 

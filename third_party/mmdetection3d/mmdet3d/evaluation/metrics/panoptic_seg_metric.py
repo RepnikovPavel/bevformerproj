@@ -6,6 +6,7 @@ from mmengine.logging import MMLogger
 
 from mmdet3d.evaluation import panoptic_seg_eval
 from mmdet3d.registry import METRICS
+
 from .seg_metric import SegMetric
 
 

@@ -4,6 +4,7 @@ import warnings
 from typing import List
 
 from mmagic.utils import try_import
+
 from .all_gather_layer import AllGatherLayer
 from .aspp import ASPP
 from .attention_injection import AttentionInjection
@@ -13,8 +14,13 @@ from .ensemble import SpatialTemporalEnsemble
 from .gated_conv_module import SimpleGatedConvModule
 from .img_normalize import ImgNormalize
 from .linear_module import LinearModule
-from .lora import (LoRAWrapper, set_lora, set_lora_disable, set_lora_enable,
-                   set_only_lora_trainable)
+from .lora import (
+    LoRAWrapper,
+    set_lora,
+    set_lora_disable,
+    set_lora_enable,
+    set_only_lora_trainable,
+)
 from .multi_layer_disc import MultiLayerDiscriminator
 from .patch_disc import PatchDiscriminator
 from .resnet import ResNet

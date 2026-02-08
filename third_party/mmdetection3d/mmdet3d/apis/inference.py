@@ -5,7 +5,6 @@ from os import path as osp
 from pathlib import Path
 from typing import Optional, Sequence, Union
 
-import mmengine
 import numpy as np
 import torch
 import torch.nn as nn
@@ -14,6 +13,7 @@ from mmengine.dataset import Compose, pseudo_collate
 from mmengine.registry import init_default_scope
 from mmengine.runner import load_checkpoint
 
+import mmengine
 from mmdet3d.registry import DATASETS, MODELS
 from mmdet3d.structures import Box3DMode, Det3DDataSample, get_box_type
 from mmdet3d.structures.det3d_data_sample import SampleList

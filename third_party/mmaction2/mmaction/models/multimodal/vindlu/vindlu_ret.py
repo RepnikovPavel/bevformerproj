@@ -10,6 +10,7 @@ from torch.distributed.nn import all_gather as all_gather_with_grad
 from mmaction.registry import MODELS
 from mmaction.structures import ActionDataSample
 from mmaction.utils import track_on_main_process
+
 from .utils import all_gather_concat
 from .vindlu import VindLUBase
 

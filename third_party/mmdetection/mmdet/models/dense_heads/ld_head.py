@@ -8,6 +8,7 @@ from mmdet.registry import MODELS
 from mmdet.structures import SampleList
 from mmdet.structures.bbox import bbox_overlaps
 from mmdet.utils import ConfigType, InstanceList, OptInstanceList, reduce_mean
+
 from ..utils import multi_apply, unpack_gt_instances
 from .gfl_head import GFLHead
 

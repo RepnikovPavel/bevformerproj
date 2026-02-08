@@ -5,9 +5,14 @@ import numpy as np
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-from mmcv.cnn.bricks import (NORM_LAYERS, PLUGIN_LAYERS, ConvModule,
-                             build_activation_layer, build_norm_layer,
-                             build_upsample_layer)
+from mmcv.cnn.bricks import (
+    NORM_LAYERS,
+    PLUGIN_LAYERS,
+    ConvModule,
+    build_activation_layer,
+    build_norm_layer,
+    build_upsample_layer,
+)
 from mmcv.cnn.utils import normal_init
 from torch.nn.init import _calculate_correct_fan
 

@@ -1,7 +1,6 @@
-import torch
 
+from .image_vfe_modules import f2v, ffn
 from .vfe_template import VFETemplate
-from .image_vfe_modules import ffn, f2v
 
 
 class ImageVFE(VFETemplate):

@@ -1,12 +1,11 @@
+import json
 import os
 import random
-import cv2
-import json
-import numpy as np
 
-from io import BytesIO
-from PIL import Image
+import cv2
+import numpy as np
 from torch.utils.data import Dataset
+
 from .util import *
 
 

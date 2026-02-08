@@ -5,7 +5,6 @@ from unittest.mock import MagicMock
 
 import torch
 import torch.nn as nn
-
 from mmagic.models.editors.eg3d.eg3d import EG3D
 from mmagic.structures import DataSample
 from mmagic.utils import register_all_modules

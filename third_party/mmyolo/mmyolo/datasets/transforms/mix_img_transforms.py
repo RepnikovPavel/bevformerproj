@@ -4,7 +4,6 @@ import copy
 from abc import ABCMeta, abstractmethod
 from typing import Optional, Sequence, Tuple, Union
 
-import mmcv
 import numpy as np
 from mmcv.transforms import BaseTransform
 from mmdet.structures.bbox import autocast_box_type
@@ -12,6 +11,7 @@ from mmengine.dataset import BaseDataset
 from mmengine.dataset.base_dataset import Compose
 from numpy import random
 
+import mmcv
 from mmyolo.registry import TRANSFORMS
 
 

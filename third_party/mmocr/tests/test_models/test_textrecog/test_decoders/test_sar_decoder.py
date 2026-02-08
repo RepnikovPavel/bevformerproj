@@ -3,9 +3,7 @@ from unittest import TestCase
 
 import torch
 from mmengine.structures import LabelData
-
-from mmocr.models.textrecog.decoders import (ParallelSARDecoder,
-                                             SequentialSARDecoder)
+from mmocr.models.textrecog.decoders import ParallelSARDecoder, SequentialSARDecoder
 from mmocr.structures import TextRecogDataSample
 
 

@@ -1,11 +1,11 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import pytest
 import torch
-from mmengine import Config
-
 from mmdeploy.codebase import import_codebase
 from mmdeploy.utils import Backend, Codebase, load_config
 from mmdeploy.utils.test import SwitchBackendWrapper, backend_checker
+
+from mmengine import Config
 
 try:
     import_codebase(Codebase.MMAGIC)
@@ -22,8 +22,7 @@ class TestEnd2EndModel:
         # force add backend wrapper regardless of plugins
         # make sure ONNXRuntimeEditor can use ORTWrapper inside itself
         from mmdeploy.backend.onnxruntime import ORTWrapper
-        from mmdeploy.codebase.mmagic.deploy.super_resolution_model import \
-            End2EndModel
+        from mmdeploy.codebase.mmagic.deploy.super_resolution_model import End2EndModel
 
         # simplify backend inference
         with SwitchBackendWrapper(ORTWrapper) as wrapper:

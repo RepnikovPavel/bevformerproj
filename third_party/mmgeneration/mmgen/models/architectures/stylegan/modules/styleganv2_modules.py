@@ -2,21 +2,22 @@
 from copy import deepcopy
 from functools import partial
 
-import mmcv
 import numpy as np
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
 from mmcv.cnn.bricks.activation import build_activation_layer
-from mmcv.ops.fused_bias_leakyrelu import (FusedBiasLeakyReLU,
-                                           fused_bias_leakyrelu)
+from mmcv.ops.fused_bias_leakyrelu import FusedBiasLeakyReLU, fused_bias_leakyrelu
 from mmcv.ops.upfirdn2d import upfirdn2d
 from mmcv.runner.dist_utils import get_dist_info
 
+import mmcv
 from mmgen.core.runners.fp16_utils import auto_fp16
-from mmgen.models.architectures.pggan import (EqualizedLRConvModule,
-                                              EqualizedLRLinearModule,
-                                              equalized_lr)
+from mmgen.models.architectures.pggan import (
+    EqualizedLRConvModule,
+    EqualizedLRLinearModule,
+    equalized_lr,
+)
 from mmgen.models.common import AllGatherLayer
 from mmgen.ops import conv2d, conv_transpose2d
 

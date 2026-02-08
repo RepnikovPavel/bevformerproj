@@ -4,6 +4,7 @@ import torch.nn.functional as F
 from mmengine.device import get_device
 
 from mmaction.registry import MODELS
+
 from .base import BaseWeightedLoss
 
 

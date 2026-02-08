@@ -10,9 +10,10 @@ from typing import Any, Callable, Dict, List, Optional, Tuple, Union
 import numpy as np
 import pytest
 import torch
-from mmengine import Config
 from mmengine.model import BaseModel
 from torch import nn
+
+from mmengine import Config
 
 try:
     from torch.testing import assert_close as torch_assert_close
@@ -21,8 +22,14 @@ except Exception:
 
 import mmdeploy.codebase  # noqa: F401,F403
 from mmdeploy.core import RewriterContext, patch_model
-from mmdeploy.utils import (IR, Backend, get_backend, get_dynamic_axes,
-                            get_ir_config, get_onnx_config)
+from mmdeploy.utils import (
+    IR,
+    Backend,
+    get_backend,
+    get_dynamic_axes,
+    get_ir_config,
+    get_onnx_config,
+)
 
 
 def backend_checker(backend: Backend, require_plugin: bool = False):

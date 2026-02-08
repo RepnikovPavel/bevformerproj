@@ -1,19 +1,16 @@
 #!/usr/bin/env python
 import argparse
 import os
-import sys
-import traceback
-import time
-import warnings
 import pickle
+import sys
+import time
+import traceback
+import warnings
 from collections import OrderedDict
-import yaml
-import numpy as np
+
 # torch
 import torch
-import torch.nn as nn
-import torch.optim as optim
-from torch.autograd import Variable
+import yaml
 
 with warnings.catch_warnings():
     warnings.filterwarnings("ignore",category=FutureWarning)

@@ -1,14 +1,13 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import torch
-from mmengine.optim import OptimWrapper
-from torch import nn
-from torch.optim import Adam
-
 from mmagic.models import BaseEditModel, DataPreprocessor
 from mmagic.models.losses import L1Loss
 from mmagic.registry import MODELS
 from mmagic.structures import DataSample
 from mmagic.utils import register_all_modules
+from mmengine.optim import OptimWrapper
+from torch import nn
+from torch.optim import Adam
 
 register_all_modules()
 

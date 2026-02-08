@@ -10,7 +10,6 @@ from mmengine.dataset import Compose
 from mmengine.registry import init_default_scope
 from mmengine.utils import ProgressBar
 from mmengine.visualization.utils import img_from_canvas
-
 from mmpretrain.datasets.builder import build_dataset
 from mmpretrain.structures import DataSample
 from mmpretrain.visualization import UniversalVisualizer, create_figure

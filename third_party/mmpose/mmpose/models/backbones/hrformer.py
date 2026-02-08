@@ -10,6 +10,7 @@ from mmengine.model import BaseModule, trunc_normal_init
 from torch.nn.functional import pad
 
 from mmpose.registry import MODELS
+
 from .hrnet import Bottleneck, HRModule, HRNet
 
 

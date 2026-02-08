@@ -4,8 +4,14 @@ from typing import Optional, Sequence, Union
 from torch import Tensor
 
 from mmdet.registry import TASK_UTILS
-from mmdet.structures.bbox import (BaseBoxes, HorizontalBoxes, bbox2distance,
-                                   distance2bbox, get_box_tensor)
+from mmdet.structures.bbox import (
+    BaseBoxes,
+    HorizontalBoxes,
+    bbox2distance,
+    distance2bbox,
+    get_box_tensor,
+)
+
 from .base_bbox_coder import BaseBBoxCoder
 
 

@@ -1,14 +1,14 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import os.path as osp
 
-import mmcv
 import numpy as np
 import pytest
 import torch
 from mmcv.utils import Config
-
 from mmflow.apis import inference_model, init_model
 from mmflow.models import PWCNet
+
+import mmcv
 
 
 def test_init_model():

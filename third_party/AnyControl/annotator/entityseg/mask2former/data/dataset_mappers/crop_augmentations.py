@@ -3,37 +3,23 @@
 """
 Implement many useful :class:`Augmentation`.
 """
-import numpy as np
-import sys
-from typing import Tuple
-from PIL import Image
+import copy
 import random
+import sys
 
-from fvcore.transforms.transform import NoOpTransform, Transform
-
-from detectron2.data.transforms.augmentation import Augmentation
-import pdb
-import math
-
-import logging
 import numpy as np
 import pycocotools.mask as mask_util
 import torch
-from PIL import Image
-from collections import defaultdict
-import copy
 from detectron2.data import transforms as T
+from detectron2.data.transforms.augmentation import Augmentation
 from detectron2.structures import (
     BitMasks,
     Boxes,
     BoxMode,
     Instances,
-    Keypoints,
-    PolygonMasks,
-    RotatedBoxes,
-    polygons_to_bitmask,
 )
-from detectron2.utils.file_io import PathManager
+from fvcore.transforms.transform import NoOpTransform, Transform
+from PIL import Image
 
 __all__ = [
     "BatchResizeShortestEdge",

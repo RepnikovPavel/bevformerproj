@@ -1,10 +1,14 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import numpy as np
 import pytest
-
-from mmagic.datasets.transforms import (DegradationsWithShuffle, RandomBlur,
-                                        RandomJPEGCompression, RandomNoise,
-                                        RandomResize, RandomVideoCompression)
+from mmagic.datasets.transforms import (
+    DegradationsWithShuffle,
+    RandomBlur,
+    RandomJPEGCompression,
+    RandomNoise,
+    RandomResize,
+    RandomVideoCompression,
+)
 
 
 def test_random_noise():

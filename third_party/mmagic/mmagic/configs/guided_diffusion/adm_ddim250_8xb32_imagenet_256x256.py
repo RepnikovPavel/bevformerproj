@@ -9,8 +9,10 @@ from mmagic.engine.hooks.visualization_hook import VisualizationHook
 from mmagic.evaluation.metrics import FrechetInceptionDistance
 from mmagic.models.data_preprocessors.data_preprocessor import DataPreprocessor
 from mmagic.models.diffusion_schedulers.ddim_scheduler import EditDDIMScheduler
-from mmagic.models.editors.ddpm.denoising_unet import (DenoisingUnet,
-                                                       MultiHeadAttentionBlock)
+from mmagic.models.editors.ddpm.denoising_unet import (
+    DenoisingUnet,
+    MultiHeadAttentionBlock,
+)
 from mmagic.models.editors.guided_diffusion.adm import AblatedDiffusionModel
 
 model = dict(

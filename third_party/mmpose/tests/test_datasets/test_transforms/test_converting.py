@@ -3,7 +3,6 @@
 from unittest import TestCase
 
 import numpy as np
-
 from mmpose.datasets.transforms import KeypointConverter
 from mmpose.testing import get_coco_sample
 

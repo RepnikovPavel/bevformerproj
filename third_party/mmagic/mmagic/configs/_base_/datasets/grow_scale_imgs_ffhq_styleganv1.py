@@ -1,8 +1,7 @@
 # Copyright (c) OpenMMLab. All rights reserved.
-from mmengine.dataset import DefaultSampler, InfiniteSampler
-
 from mmagic.datasets import BasicImageDataset, GrowScaleImgDataset
 from mmagic.datasets.transforms import Flip, LoadImageFromFile, PackInputs
+from mmengine.dataset import DefaultSampler, InfiniteSampler
 
 dataset_type = 'GrowScaleImgDataset'
 

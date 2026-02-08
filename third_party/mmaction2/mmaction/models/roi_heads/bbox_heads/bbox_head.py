@@ -8,6 +8,7 @@ import torch.nn.functional as F
 from mmdet.models.task_modules.samplers import SamplingResult
 from mmengine.config import ConfigDict
 from mmengine.structures import InstanceData
+
 # Resolve cross-entropy function to support multi-target in Torch < 1.10
 #   This is a very basic 'hack', with minimal functionality to support the
 #   procedure under prior torch versions

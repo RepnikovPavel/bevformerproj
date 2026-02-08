@@ -3,7 +3,6 @@ import os.path as osp
 from typing import Any, Optional, Union
 
 import mmengine
-
 from mmdeploy.apis.core.pipeline_manager import PIPELINE_MANAGER, no_mp
 
 
@@ -32,6 +31,7 @@ def torch2torchscript(img: Any,
     import torch
 
     from mmdeploy.utils import get_backend, get_input_shape, load_config
+
     from .torch_jit import trace
 
     # load deploy_cfg if necessary

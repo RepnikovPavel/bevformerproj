@@ -7,10 +7,13 @@ import torch
 
 # from mmrazor.models.mutables import MutableChannelUnit
 from mmrazor.models.mutables.mutable_channel import (
-    L1MutableChannelUnit, SequentialMutableChannelUnit)
+    L1MutableChannelUnit,
+    SequentialMutableChannelUnit,
+)
 from mmrazor.models.mutators.channel_mutator import ChannelMutator
 from mmrazor.models.task_modules import ChannelAnalyzer
 from mmrazor.registry import MODELS
+
 from ...data.models import DynamicAttention, DynamicLinearModel, DynamicMMBlock
 from ...data.tracer_passed_models import backward_passed_library
 

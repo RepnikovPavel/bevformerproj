@@ -8,6 +8,7 @@ from mmdet.registry import MODELS, TASK_UTILS
 from mmdet.structures import DetDataSample, SampleList
 from mmdet.structures.bbox import bbox2roi
 from mmdet.utils import ConfigType, InstanceList
+
 from ..task_modules.samplers import SamplingResult
 from ..utils import empty_instances, unpack_gt_instances
 from .base_roi_head import BaseRoIHead

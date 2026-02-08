@@ -1,15 +1,14 @@
-import cv2
-import numpy as np
 import math
-import time
-from scipy.ndimage.filters import gaussian_filter
+
+import cv2
 import matplotlib.pyplot as plt
-import matplotlib
+import numpy as np
 import torch
-from torchvision import transforms
+from scipy.ndimage.filters import gaussian_filter
 
 from . import util
 from .model import bodypose_model
+
 
 class Body(object):
     def __init__(self, model_path):

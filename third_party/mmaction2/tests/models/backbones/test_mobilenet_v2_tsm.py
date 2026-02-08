@@ -1,16 +1,14 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import torch
-
 from mmaction.models import MobileNetV2TSM
 from mmaction.testing import generate_backbone_demo_inputs
 
 
 def test_mobilenetv2_tsm_backbone():
     """Test mobilenetv2_tsm backbone."""
-    from mmcv.cnn import ConvModule
-
     from mmaction.models.backbones.mobilenet_v2 import InvertedResidual
     from mmaction.models.backbones.resnet_tsm import TemporalShift
+    from mmcv.cnn import ConvModule
 
     input_shape = (8, 3, 64, 64)
     imgs = generate_backbone_demo_inputs(input_shape)

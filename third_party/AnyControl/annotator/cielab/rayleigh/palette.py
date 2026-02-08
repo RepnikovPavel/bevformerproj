@@ -9,6 +9,7 @@ of colors.
 """
 
 import os
+
 import numpy as np
 from skimage.color import hsv2rgb, rgb2lab
 from skimage.io import imsave

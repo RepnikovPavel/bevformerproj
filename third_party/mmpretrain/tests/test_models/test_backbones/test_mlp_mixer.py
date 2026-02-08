@@ -3,10 +3,9 @@ from copy import deepcopy
 from unittest import TestCase
 
 import torch
+from mmpretrain.models.backbones import MlpMixer
 from torch.nn.modules import GroupNorm
 from torch.nn.modules.batchnorm import _BatchNorm
-
-from mmpretrain.models.backbones import MlpMixer
 
 
 def is_norm(modules):

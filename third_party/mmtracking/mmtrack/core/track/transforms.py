@@ -1,8 +1,9 @@
 # Copyright (c) OpenMMLab. All rights reserved.
-import mmcv
 import numpy as np
 import torch
 from mmdet.core import bbox2result
+
+import mmcv
 
 
 def imrenormalize(img, img_norm_cfg, new_img_norm_cfg):

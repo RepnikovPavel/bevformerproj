@@ -10,11 +10,12 @@ try:
 except ImportError:
     from mmrazor.utils import get_placeholder
     PatchEmbed = get_placeholder('mmcls')
-from mmengine import print_log
 from torch import Tensor
 
+from mmengine import print_log
 from mmrazor.models.mutables.base_mutable import BaseMutable
 from mmrazor.registry import MODELS
+
 from ..mixins import DynamicChannelMixin
 
 

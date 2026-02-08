@@ -6,6 +6,7 @@ import torch
 import torch.nn.functional as F
 
 from mmaction.registry import MODELS
+
 from .base import BaseWeightedLoss
 
 

@@ -3,9 +3,10 @@ import platform
 
 import pytest
 import torch
-
 from mmagic.models.editors.animatediff.motion_module import (
-    FeedForward, VanillaTemporalModule)
+    FeedForward,
+    VanillaTemporalModule,
+)
 
 
 @pytest.mark.skipif(

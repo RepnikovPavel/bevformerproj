@@ -3,6 +3,7 @@ import torch
 from mmcv.cnn import ContextBlock
 
 from mmseg.registry import MODELS
+
 from .fcn_head import FCNHead
 
 

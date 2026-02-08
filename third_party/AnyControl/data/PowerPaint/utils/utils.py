@@ -1,15 +1,14 @@
-import torch
-import torch.nn as nn
-import math
 import copy
 import os
 import random
 from logging import WARNING
 from typing import Any, List, Optional, Union
 
-from mmengine import print_log
-
+import torch
+import torch.nn as nn
 from mmagic.utils import try_import
+
+from mmengine import print_log
 
 
 class TokenizerWrapper:

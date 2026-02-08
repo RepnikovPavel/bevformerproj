@@ -1,14 +1,17 @@
 import os
 from pathlib import Path
+
 import torch
 from torchvision import transforms
+
 main_path = Path(__file__).resolve().parent.parent.parent
 print(f'main path: {main_path}')
 
 import sys
+
 sys.path.append(os.path.join(main_path, 'guided-diffusion'))
-from guided_diffusion.script_util import create_model_and_diffusion
 from guided_diffusion.nn import timestep_embedding
+from guided_diffusion.script_util import create_model_and_diffusion
 
 
 class ADMFeaturizer:

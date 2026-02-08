@@ -1,11 +1,10 @@
 from typing import Dict, List, Optional
 
 import torch
-from torch import Tensor
-
 from mmdet3d.models import Base3DDetector
 from mmdet3d.registry import MODELS
 from mmdet3d.structures import Det3DDataSample
+from torch import Tensor
 
 
 @MODELS.register_module()

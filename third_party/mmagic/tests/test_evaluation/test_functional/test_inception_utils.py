@@ -1,11 +1,12 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 from unittest.mock import MagicMock
 
-from torch.utils.data import Dataset
-
 from mmagic.datasets.transforms import LoadImageFromFile
 from mmagic.evaluation.functional.inception_utils import (
-    get_inception_feat_cache_name_and_args, get_vgg_feat_cache_name_and_args)
+    get_inception_feat_cache_name_and_args,
+    get_vgg_feat_cache_name_and_args,
+)
+from torch.utils.data import Dataset
 
 
 def test_inception_feat_cache_name_args():

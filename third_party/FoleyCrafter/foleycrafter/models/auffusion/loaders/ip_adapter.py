@@ -16,9 +16,6 @@ from pathlib import Path
 from typing import Dict, List, Optional, Union
 
 import torch
-from huggingface_hub.utils import validate_hf_hub_args
-from safetensors import safe_open
-
 from diffusers.models.modeling_utils import _LOW_CPU_MEM_USAGE_DEFAULT
 from diffusers.utils import (
     _get_model_file,
@@ -27,23 +24,22 @@ from diffusers.utils import (
     is_transformers_available,
     logging,
 )
-
+from huggingface_hub.utils import validate_hf_hub_args
+from safetensors import safe_open
 
 if is_transformers_available():
+    from diffusers.models.attention_processor import (
+        IPAdapterAttnProcessor,
+    )
     from transformers import (
         CLIPImageProcessor,
         CLIPVisionModelWithProjection,
-    )
-
-    from diffusers.models.attention_processor import (
-        IPAdapterAttnProcessor,
     )
 
 from foleycrafter.models.auffusion.attention_processor import (
     IPAdapterAttnProcessor2_0,
     VPTemporalAdapterAttnProcessor2_0,
 )
-
 
 logger = logging.get_logger(__name__)
 

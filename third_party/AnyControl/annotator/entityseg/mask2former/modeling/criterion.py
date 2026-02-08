@@ -3,17 +3,15 @@
 """
 MaskFormer criterion.
 """
-import logging
 
 import torch
 import torch.nn.functional as F
-from torch import nn
-
-from detectron2.utils.comm import get_world_size
 from detectron2.projects.point_rend.point_features import (
     get_uncertain_point_coords_with_randomness,
     point_sample,
 )
+from detectron2.utils.comm import get_world_size
+from torch import nn
 
 from ..utils.misc import is_dist_avail_and_initialized, nested_tensor_from_tensor_list
 

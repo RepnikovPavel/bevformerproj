@@ -4,11 +4,10 @@
 # LICENSE file in the root directory of this source tree.
 
 import math
+
 import torch
-from torch import nn
-from torch.nn import Parameter
 import torch.nn.functional as F
-import numpy as np
+from torch import nn
 
 
 class StyleAdaptiveLayerNorm(nn.Module):

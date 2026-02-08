@@ -4,15 +4,14 @@ from typing import Any, List, Optional, Sequence, Union
 import numpy as np
 import torch
 from mmdet.structures.bbox import scale_boxes
-from mmengine import Config, Registry
 from mmengine.model.base_model.data_preprocessor import BaseDataPreprocessor
 from mmengine.structures import BaseDataElement, InstanceData
 from mmrotate.structures.bbox import RotatedBoxes
 from torch import nn
 
 from mmdeploy.codebase.base import BaseBackendModel
-from mmdeploy.utils import (Backend, get_backend, get_codebase_config,
-                            load_config)
+from mmdeploy.utils import Backend, get_backend, get_codebase_config, load_config
+from mmengine import Config, Registry
 
 __BACKEND_MODEL = Registry('backend_detectors')
 

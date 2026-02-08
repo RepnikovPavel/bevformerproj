@@ -38,8 +38,7 @@ def deltaxywhbboxcoder__decode(self,
     assert pred_bboxes.size(0) == bboxes.size(0)
     if pred_bboxes.ndim == 3:
         assert pred_bboxes.size(1) == bboxes.size(1)
-    from mmdet.models.task_modules.coders.delta_xywh_bbox_coder import \
-        delta2bbox
+    from mmdet.models.task_modules.coders.delta_xywh_bbox_coder import delta2bbox
     decoded_bboxes = delta2bbox(bboxes, pred_bboxes, self.means, self.stds,
                                 max_shape, wh_ratio_clip, self.clip_border,
                                 self.add_ctr_clamp, self.ctr_clamp)

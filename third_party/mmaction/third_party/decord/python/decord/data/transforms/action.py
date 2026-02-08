@@ -2,14 +2,16 @@
 """Extended image transformations to video transformations.
 Code adapted from https://github.com/bryanyzhu/two-stream-pytorch"""
 from __future__ import division
-import random
+
 import numbers
+import random
 
 from ...bridge.mxnet import try_import_mxnet
+
 try_import_mxnet()
-from mxnet.gluon import Block
-from mxnet import numpy as np
 from mxnet import npx
+from mxnet import numpy as np
+from mxnet.gluon import Block
 from mxnet.util import use_np
 
 __all__ = ['VideoToTensor', 'VideoNormalize', 'VideoRandomHorizontalFlip', 'VideoMultiScaleCrop',

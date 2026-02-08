@@ -3,10 +3,11 @@ import os.path as osp
 import pickle
 import sys
 
-import mmcv
 import numpy as np
 import torch
 import torch.nn as nn
+
+import mmcv
 from mmcv import Config, print_log
 
 # yapf: disable

@@ -7,7 +7,6 @@ from typing import Any, List, Optional, Sequence, Tuple, Union
 import numpy as np
 import torch
 import torch.nn.functional as F
-from mmengine import Config
 from mmengine.model.base_model.data_preprocessor import BaseDataPreprocessor
 from mmengine.registry import Registry
 from mmengine.structures import BaseDataElement, InstanceData
@@ -17,9 +16,16 @@ from mmdeploy.backend.base import get_backend_file_count
 from mmdeploy.codebase.base import BaseBackendModel
 from mmdeploy.codebase.mmdet.deploy import get_post_processing_params
 from mmdeploy.mmcv.ops import multiclass_nms
-from mmdeploy.utils import (Backend, get_backend, get_codebase_config,
-                            get_ir_config, get_partition_config,
-                            get_quantization_config, load_config)
+from mmdeploy.utils import (
+    Backend,
+    get_backend,
+    get_codebase_config,
+    get_ir_config,
+    get_partition_config,
+    get_quantization_config,
+    load_config,
+)
+from mmengine import Config
 
 # Use registry to store models with different partition methods
 # If a model doesn't need to partition, we don't need this registry
@@ -345,8 +351,7 @@ class PanOpticEnd2EndModel(End2EndModel):
             model_cfg=model_cfg,
             data_preprocessor=data_preprocessor,
             **kwargs)
-        from mmdet.models.seg_heads import (HeuristicFusionHead,
-                                            MaskFormerFusionHead)
+        from mmdet.models.seg_heads import HeuristicFusionHead, MaskFormerFusionHead
         obj_dict = {
             'HeuristicFusionHead': HeuristicFusionHead,
             'MaskFormerFusionHead': MaskFormerFusionHead

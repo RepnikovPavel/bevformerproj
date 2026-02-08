@@ -8,6 +8,7 @@ from motmetrics.lap import linear_sum_assignment
 from mmtrack.core import imrenormalize
 from mmtrack.core.bbox import bbox_xyxy_to_cxcyah
 from mmtrack.models import TRACKERS
+
 from .base_tracker import BaseTracker
 
 

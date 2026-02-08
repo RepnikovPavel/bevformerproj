@@ -13,6 +13,7 @@ from mmengine.fileio import FileClient, get_file_backend
 from mmengine.logging import print_log
 from mmengine.registry import HOOKS
 from mmengine.utils import is_list_of, is_seq_of
+
 from .hook import Hook
 
 DATA_BATCH = Optional[Union[dict, tuple, list]]

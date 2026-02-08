@@ -5,10 +5,9 @@ from unittest.mock import Mock
 import torch
 from mmengine.config import Config
 from mmengine.runner import Runner
-from torch.utils.data import Dataset
-
 from mmpose.engine.hooks import RTMOModeSwitchHook, YOLOXPoseModeSwitchHook
 from mmpose.utils import register_all_modules
+from torch.utils.data import Dataset
 
 
 class DummyDataset(Dataset):

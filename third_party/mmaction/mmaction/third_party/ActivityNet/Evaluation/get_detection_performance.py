@@ -1,7 +1,8 @@
 import argparse
-import numpy as np
 
+import numpy as np
 from eval_detection import ANETdetection
+
 
 def main(ground_truth_filename, prediction_filename,
          subset='validation', tiou_thresholds=np.linspace(0.5, 0.95, 10),

@@ -7,6 +7,7 @@ from mmcv.cnn import ConvModule
 from mmengine.model import BaseModule
 
 from mmagic.registry import MODELS
+
 from .wgan_gp_module import ConvLNModule, WGANDecisionHead
 
 

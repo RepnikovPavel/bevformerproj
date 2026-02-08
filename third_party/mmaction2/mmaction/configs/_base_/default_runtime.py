@@ -1,10 +1,15 @@
 # Copyright (c) OpenMMLab. All rights reserved.
-from mmengine.hooks import (CheckpointHook, DistSamplerSeedHook, IterTimerHook,
-                            LoggerHook, ParamSchedulerHook, RuntimeInfoHook,
-                            SyncBuffersHook)
-from mmengine.runner import LogProcessor
-
 from mmaction.visualization import ActionVisualizer, LocalVisBackend
+from mmengine.hooks import (
+                            CheckpointHook,
+                            DistSamplerSeedHook,
+                            IterTimerHook,
+                            LoggerHook,
+                            ParamSchedulerHook,
+                            RuntimeInfoHook,
+                            SyncBuffersHook,
+)
+from mmengine.runner import LogProcessor
 
 default_scope = 'mmaction'
 

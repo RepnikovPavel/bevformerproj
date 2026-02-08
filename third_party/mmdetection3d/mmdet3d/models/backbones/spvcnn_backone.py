@@ -6,6 +6,7 @@ from mmengine.registry import MODELS
 from torch import Tensor, nn
 
 from mmdet3d.models.layers.torchsparse import IS_TORCHSPARSE_AVAILABLE
+
 from .minkunet_backbone import MinkUNetBackbone
 
 if IS_TORCHSPARSE_AVAILABLE:

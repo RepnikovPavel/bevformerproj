@@ -1,8 +1,8 @@
 # Copyright (c) OpenMMLab. All rights reserved.
-from mmengine import MessageHub
 from mmengine.optim import _ParamScheduler
 
 from mmagic.registry import PARAM_SCHEDULERS
+from mmengine import MessageHub
 
 
 @PARAM_SCHEDULERS.register_module()

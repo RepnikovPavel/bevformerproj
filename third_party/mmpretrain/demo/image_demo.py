@@ -2,9 +2,8 @@
 from argparse import ArgumentParser
 
 from mmengine.fileio import dump
-from rich import print_json
-
 from mmpretrain.apis import ImageClassificationInferencer
+from rich import print_json
 
 
 def main():

@@ -4,14 +4,13 @@ from typing import List, Tuple
 import numpy as np
 import torch
 import torch.nn as nn
-from PIL import Image
-from torch import Tensor
-from torch.nn import functional as F
-
 from mmdet3d.models import Det3DDataPreprocessor
 from mmdet3d.models.data_preprocessors.voxelize import dynamic_scatter_3d
 from mmdet3d.registry import MODELS
 from mmdet3d.structures.det3d_data_sample import SampleList
+from PIL import Image
+from torch import Tensor
+from torch.nn import functional as F
 
 
 @MODELS.register_module()

@@ -3,10 +3,8 @@ import copy
 
 import torch
 from mmcv.runner import obj_from_dict
-
 from mmgen.models import GANLoss, L1Loss, build_model
-from mmgen.models.architectures.pix2pix import (PatchDiscriminator,
-                                                UnetGenerator)
+from mmgen.models.architectures.pix2pix import PatchDiscriminator, UnetGenerator
 
 
 def test_pix2pix():

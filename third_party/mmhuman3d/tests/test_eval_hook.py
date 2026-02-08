@@ -10,9 +10,8 @@ import torch
 import torch.nn as nn
 from mmcv.runner import EpochBasedRunner, build_optimizer
 from mmcv.utils import get_logger
-from torch.utils.data import DataLoader, Dataset
-
 from mmhuman3d.core.evaluation import DistEvalHook, EvalHook
+from torch.utils.data import DataLoader, Dataset
 
 
 class ExampleDataset(Dataset):

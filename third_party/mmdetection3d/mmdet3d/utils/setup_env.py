@@ -6,8 +6,9 @@ import platform
 import warnings
 
 import cv2
-from mmengine import DefaultScope
 from torch import multiprocessing as mp
+
+from mmengine import DefaultScope
 
 
 def setup_multi_processes(cfg):

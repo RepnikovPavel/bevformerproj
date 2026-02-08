@@ -9,6 +9,7 @@ import torch
 import torch.nn.functional as F
 from diffusers.configuration_utils import ConfigMixin, register_to_config
 from diffusers.models.attention import AdaLayerNorm, FeedForward
+
 # from diffusers.models.cross_attention import CrossAttention
 # from diffusers.models.attention_processor import Attention as CrossAttention
 from diffusers.models.modeling_utils import ModelMixin

@@ -1,4 +1,6 @@
 import ast
+import copy
+import io
 import json
 import logging
 import math
@@ -7,34 +9,29 @@ import random
 
 # import h5py
 from dataclasses import dataclass
-from audioldm.clap.training.params import parse_args
+from functools import partial
+from pathlib import Path
 
 # import braceexpand
 import numpy as np
 import pandas as pd
+import soundfile as sf
 import torch
-import torch.nn as nn
 import torch.nn.functional as F
 import torchvision.datasets as datasets
 import torchvision.transforms
 
 # import webdataset as wds
 from PIL import Image
-from torch.utils.data import Dataset, DataLoader, SubsetRandomSampler
+from torch.utils.data import DataLoader, Dataset, SubsetRandomSampler
 from torch.utils.data.distributed import DistributedSampler
-from functools import partial
-import soundfile as sf
-import io
-from pathlib import Path
 
 # import wget
-
 from audioldm.clap.open_clip.utils import (
-    get_tar_path_from_dataset_name,
     dataset_split,
+    get_tar_path_from_dataset_name,
+    load_class_label,
 )
-from audioldm.clap.open_clip.utils import load_p, load_class_label
-import copy
 
 try:
     import horovod.torch as hvd

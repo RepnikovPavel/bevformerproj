@@ -8,17 +8,16 @@ from datetime import datetime
 from pathlib import Path
 from typing import List, Union
 
-import mmengine
+import mmdeploy.version
 import openpyxl
 import pandas as pd
 import yaml
+from mmdeploy.utils import get_backend, get_codebase, get_root_logger, is_dynamic_shape
 from torch.hub import download_url_to_file
 from torch.multiprocessing import set_start_method
 from tqdm import tqdm
 
-import mmdeploy.version
-from mmdeploy.utils import (get_backend, get_codebase, get_root_logger,
-                            is_dynamic_shape)
+import mmengine
 
 
 def parse_args():

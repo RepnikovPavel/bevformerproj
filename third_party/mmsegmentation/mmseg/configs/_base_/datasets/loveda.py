@@ -1,14 +1,11 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 from mmcv.transforms.loading import LoadImageFromFile
-from mmcv.transforms.processing import (RandomFlip, RandomResize, Resize,
-                                        TestTimeAug)
+from mmcv.transforms.processing import RandomFlip, RandomResize, Resize, TestTimeAug
 from mmengine.dataset.sampler import DefaultSampler, InfiniteSampler
-
 from mmseg.datasets.loveda import LoveDADataset
 from mmseg.datasets.transforms.formatting import PackSegInputs
 from mmseg.datasets.transforms.loading import LoadAnnotations
-from mmseg.datasets.transforms.transforms import (PhotoMetricDistortion,
-                                                  RandomCrop)
+from mmseg.datasets.transforms.transforms import PhotoMetricDistortion, RandomCrop
 from mmseg.evaluation import IoUMetric
 
 # dataset settings

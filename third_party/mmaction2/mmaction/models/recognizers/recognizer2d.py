@@ -4,6 +4,7 @@ import torch.nn as nn
 
 from mmaction.registry import MODELS
 from mmaction.utils import SampleList
+
 from .base import BaseRecognizer
 
 

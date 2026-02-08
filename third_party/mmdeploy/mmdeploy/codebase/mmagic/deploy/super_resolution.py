@@ -2,16 +2,16 @@
 from copy import deepcopy
 from typing import Any, Callable, Dict, Optional, Sequence, Tuple, Union
 
-import mmengine
 import numpy as np
 import torch
-from mmengine import Config
 from mmengine.dataset import pseudo_collate
 from mmengine.model import BaseDataPreprocessor
 
+import mmengine
 from mmdeploy.codebase.base import BaseTask
 from mmdeploy.codebase.mmagic.deploy.mmagic import MMAGIC_TASK
 from mmdeploy.utils import Task, get_input_shape
+from mmengine import Config
 
 
 def process_model_config(model_cfg: mmengine.Config,

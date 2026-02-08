@@ -6,6 +6,7 @@ from mmengine.fileio import exists, list_from_file
 
 from mmaction.registry import DATASETS
 from mmaction.utils import ConfigType
+
 from .base import BaseActionDataset
 
 

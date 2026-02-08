@@ -2,10 +2,11 @@
 import argparse
 import json
 
-import mmengine
 from mmengine.config import Config, DictAction
 from mmengine.evaluator import Evaluator
 from mmengine.registry import init_default_scope
+
+import mmengine
 
 
 def parse_args():

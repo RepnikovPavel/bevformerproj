@@ -23,10 +23,12 @@
 """Multi-Head Attention layer definition."""
 
 import math
+from typing import Tuple
+
 import torch
 import torch.nn as nn
+
 from modules.wenet_extractor.transformer.attention import MultiHeadedAttention
-from typing import Tuple
 
 
 class RelPositionMultiHeadedAttention(MultiHeadedAttention):

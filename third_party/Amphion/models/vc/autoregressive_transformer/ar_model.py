@@ -3,12 +3,11 @@
 # This source code is licensed under the MIT license found in the
 # LICENSE file in the root directory of this source tree.
 
-from transformers import LlamaConfig, LlamaForCausalLM
 import torch
-import torch.nn.functional as F
 import torch.nn as nn
-
+import torch.nn.functional as F
 from models.vc.autoregressive_transformer.global_encoder import GlobalEncoder
+from transformers import LlamaConfig, LlamaForCausalLM
 
 
 class AutoregressiveTransformer(nn.Module):

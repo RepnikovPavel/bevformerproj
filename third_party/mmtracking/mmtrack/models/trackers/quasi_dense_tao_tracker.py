@@ -3,6 +3,7 @@ import torch
 from mmdet.core import bbox_overlaps
 
 from mmtrack.core import embed_similarity
+
 from ..builder import TRACKERS
 from .base_tracker import BaseTracker
 

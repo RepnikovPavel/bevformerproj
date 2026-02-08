@@ -8,6 +8,7 @@ from numpy import ndarray
 from torch import Tensor
 
 from mmdet3d.registry import TASK_UTILS
+
 from . import RandomSampler, SamplingResult
 
 

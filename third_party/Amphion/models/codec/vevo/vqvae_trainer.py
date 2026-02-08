@@ -3,16 +3,14 @@
 # This source code is licensed under the MIT license found in the
 # LICENSE file in the root directory of this source tree.
 
-import torch
 import numpy as np
-import yaml
+import torch
 import torchaudio
-
-from models.vc.base.vc_emilia_dataset import VCEmiliaDataset, VCCollator
+import yaml
+from models.base.base_trainer import BaseTrainer
 from models.codec.kmeans.repcodec_model import RepCodec
 from models.codec.vevo.vevo_repcodec import VevoRepCodec
-
-from models.base.base_trainer import BaseTrainer
+from models.vc.base.vc_emilia_dataset import VCCollator, VCEmiliaDataset
 
 
 class VQVAETrainer(BaseTrainer):

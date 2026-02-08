@@ -1,10 +1,11 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import torch
-from mmengine import Config
 from mmengine.structures import PixelData
-
 from mmseg.models.decode_heads import SideAdapterCLIPHead
 from mmseg.structures import SegDataSample
+
+from mmengine import Config
+
 from .utils import list_to_cuda
 
 

@@ -1,12 +1,12 @@
+import math
+
 import torch
 import torch.nn as nn
+import traj_conv_cuda
 from torch.autograd import Function
 from torch.nn.modules.module import Module
 from torch.nn.modules.utils import _triple
 
-import math
-
-import traj_conv_cuda
 
 class TrajConvFunction(Function):
 

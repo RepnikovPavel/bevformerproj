@@ -5,7 +5,6 @@ Mostly copy-paste from
     
 """
 
-import warnings
 from collections import OrderedDict
 from copy import deepcopy
 
@@ -14,9 +13,17 @@ import torch.nn as nn
 import torch.nn.functional as F
 import torch.utils.checkpoint as cp
 
-from ..model_utils.swin_utils import swin_converter
-from ..model_utils.swin_utils import PatchEmbed, PatchMerging
-from ..model_utils.swin_utils import FFN, DropPath, to_2tuple, trunc_normal_, trunc_normal_init, constant_init
+from ..model_utils.swin_utils import (
+    FFN,
+    DropPath,
+    PatchEmbed,
+    PatchMerging,
+    constant_init,
+    swin_converter,
+    to_2tuple,
+    trunc_normal_,
+    trunc_normal_init,
+)
 
 
 class WindowMSA(nn.Module):

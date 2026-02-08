@@ -6,7 +6,6 @@ from typing import Dict, List, Optional, Union
 import torch
 import torch.nn as nn
 from einops import rearrange
-from mmengine import print_log
 from mmengine.logging import MMLogger
 from mmengine.model import BaseModel
 from safetensors import safe_open
@@ -17,9 +16,13 @@ from mmagic.models.utils import build_module, set_tomesd, set_xformers
 from mmagic.registry import DIFFUSION_SCHEDULERS, MODELS
 from mmagic.structures import DataSample
 from mmagic.utils.typing import SampleList
-from .animatediff_utils import (convert_ldm_clip_checkpoint,
-                                convert_ldm_unet_checkpoint,
-                                convert_ldm_vae_checkpoint)
+from mmengine import print_log
+
+from .animatediff_utils import (
+    convert_ldm_clip_checkpoint,
+    convert_ldm_unet_checkpoint,
+    convert_ldm_vae_checkpoint,
+)
 
 logger = MMLogger.get_current_instance()
 

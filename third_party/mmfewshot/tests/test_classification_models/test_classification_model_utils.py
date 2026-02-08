@@ -1,7 +1,6 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 
 import torch
-
 from mmfewshot.classification.models.backbones import Conv4
 from mmfewshot.classification.models.utils import convert_maml_module
 

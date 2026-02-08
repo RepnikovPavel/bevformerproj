@@ -6,7 +6,6 @@ import pytest
 def init_test():
     # init default scope
     from mmdet.utils import register_all_modules as register_det
-
     from mmyolo.utils import register_all_modules as register_yolo
 
     register_yolo(True)

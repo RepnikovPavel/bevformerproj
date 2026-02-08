@@ -1,6 +1,5 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 from mmengine.config import read_base
-
 from mmpretrain.engine import EMAHook
 
 with read_base():

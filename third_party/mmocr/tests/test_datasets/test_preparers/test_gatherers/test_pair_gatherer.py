@@ -6,7 +6,6 @@ import unittest
 
 import cv2
 import numpy as np
-
 from mmocr.datasets.preparers.gatherers import PairGatherer
 
 

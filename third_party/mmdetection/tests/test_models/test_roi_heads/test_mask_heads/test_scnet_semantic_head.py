@@ -3,10 +3,9 @@ import unittest
 from unittest import TestCase
 
 import torch
+from mmdet.models.roi_heads.mask_heads import SCNetSemanticHead
 from parameterized import parameterized
 from torch import Tensor
-
-from mmdet.models.roi_heads.mask_heads import SCNetSemanticHead
 
 
 class TestSCNetSemanticHead(TestCase):

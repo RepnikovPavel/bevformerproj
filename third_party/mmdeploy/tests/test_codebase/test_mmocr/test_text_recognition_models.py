@@ -1,12 +1,12 @@
 # Copyright (c) OpenMMLab. All rights reserved.
-import mmengine
+import mmdeploy.backend.onnxruntime as ort_apis
 import pytest
 import torch
-
-import mmdeploy.backend.onnxruntime as ort_apis
 from mmdeploy.codebase import import_codebase
 from mmdeploy.utils import Backend, Codebase, load_config
 from mmdeploy.utils.test import SwitchBackendWrapper, backend_checker
+
+import mmengine
 
 try:
     import_codebase(Codebase.MMOCR)
@@ -38,8 +38,7 @@ class TestEnd2EndModel:
         model_cfg_path = 'tests/test_codebase/test_mmocr/data/crnn.py'
         model_cfg = load_config(model_cfg_path)[0]
 
-        from mmdeploy.codebase.mmocr.deploy.text_recognition_model import \
-            End2EndModel
+        from mmdeploy.codebase.mmocr.deploy.text_recognition_model import End2EndModel
         cls.end2end_model = End2EndModel(
             Backend.ONNXRUNTIME, [''],
             device='cpu',
@@ -87,7 +86,9 @@ def test_build_text_recognition_model():
     with SwitchBackendWrapper(ORTWrapper) as wrapper:
         wrapper.set(model_cfg=model_cfg, deploy_cfg=deploy_cfg)
         from mmdeploy.codebase.mmocr.deploy.text_recognition_model import (
-            End2EndModel, build_text_recognition_model)
+            End2EndModel,
+            build_text_recognition_model,
+        )
         segmentor = build_text_recognition_model([''], model_cfg, deploy_cfg,
                                                  'cpu')
         assert isinstance(segmentor, End2EndModel)

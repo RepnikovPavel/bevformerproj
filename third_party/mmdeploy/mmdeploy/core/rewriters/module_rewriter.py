@@ -2,12 +2,12 @@
 import inspect
 from typing import Dict, List, Optional, Union
 
-import mmengine
 from torch import nn
 
+import mmengine
 from mmdeploy.utils.constants import IR, Backend
-from .rewriter_utils import (Checker, RewriterRegistry, collect_env,
-                             eval_with_import)
+
+from .rewriter_utils import Checker, RewriterRegistry, collect_env, eval_with_import
 
 
 class ModuleRewriter:

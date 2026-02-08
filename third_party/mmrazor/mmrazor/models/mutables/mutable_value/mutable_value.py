@@ -4,6 +4,7 @@ from typing import Any, Dict, List, Optional, Tuple, Union
 
 from mmrazor.registry import MODELS
 from mmrazor.utils.typing import DumpChosen
+
 from ..base_mutable import BaseMutable
 from ..derived_mutable import DerivedMethodMixin, DerivedMutable
 

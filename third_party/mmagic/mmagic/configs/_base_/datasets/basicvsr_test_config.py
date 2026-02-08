@@ -1,12 +1,14 @@
 # Copyright (c) OpenMMLab. All rights reserved.
-from mmengine.dataset import DefaultSampler
-
 from mmagic.datasets import BasicFramesDataset
-from mmagic.datasets.transforms import (GenerateSegmentIndices,
-                                        LoadImageFromFile, MirrorSequence,
-                                        PackInputs)
+from mmagic.datasets.transforms import (
+                                        GenerateSegmentIndices,
+                                        LoadImageFromFile,
+                                        MirrorSequence,
+                                        PackInputs,
+)
 from mmagic.engine.runner import MultiTestLoop
 from mmagic.evaluation import PSNR, SSIM
+from mmengine.dataset import DefaultSampler
 
 # configs for REDS4
 reds_data_root = 'data/REDS'

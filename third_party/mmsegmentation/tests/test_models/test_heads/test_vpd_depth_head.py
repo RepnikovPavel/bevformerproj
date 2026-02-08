@@ -3,7 +3,6 @@ from unittest import TestCase
 
 import torch
 from mmengine.structures import PixelData
-
 from mmseg.models.decode_heads import VPDDepthHead
 from mmseg.structures import SegDataSample
 

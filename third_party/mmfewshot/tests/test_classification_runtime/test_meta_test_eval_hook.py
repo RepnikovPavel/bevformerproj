@@ -8,11 +8,9 @@ import numpy as np
 import torch
 import torch.nn as nn
 from mmcv.runner import obj_from_dict
-from torch.utils.data import DataLoader, Dataset
-
 from mmfewshot.classification.core import MetaTestEvalHook
-from mmfewshot.classification.datasets import (BaseFewShotDataset,
-                                               MetaTestDataset)
+from mmfewshot.classification.datasets import BaseFewShotDataset, MetaTestDataset
+from torch.utils.data import DataLoader, Dataset
 
 
 @patch.multiple(BaseFewShotDataset, __abstractmethods__=set())

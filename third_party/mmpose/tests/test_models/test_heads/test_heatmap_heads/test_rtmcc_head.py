@@ -8,7 +8,6 @@ import torch.nn as nn
 from mmengine.structures import InstanceData
 from mmengine.utils import digit_version
 from mmengine.utils.dl_utils import TORCH_VERSION
-
 from mmpose.models.heads import RTMCCHead
 from mmpose.models.utils import RTMCCBlock
 from mmpose.testing import get_packed_inputs

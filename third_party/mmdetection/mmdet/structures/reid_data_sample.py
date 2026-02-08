@@ -2,10 +2,11 @@
 from numbers import Number
 from typing import Sequence, Union
 
-import mmengine
 import numpy as np
 import torch
 from mmengine.structures import BaseDataElement, LabelData
+
+import mmengine
 
 
 def format_label(value: Union[torch.Tensor, np.ndarray, Sequence, int],

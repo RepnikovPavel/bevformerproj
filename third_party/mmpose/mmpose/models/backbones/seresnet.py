@@ -2,6 +2,7 @@
 import torch.utils.checkpoint as cp
 
 from mmpose.registry import MODELS
+
 from .resnet import Bottleneck, ResLayer, ResNet
 from .utils.se_layer import SELayer
 

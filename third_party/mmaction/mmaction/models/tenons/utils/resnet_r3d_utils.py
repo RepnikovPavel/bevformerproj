@@ -3,9 +3,10 @@ This file contains helper functions for building the model and for loading model
 These helper functions are built to mirror those in the official TensorFlow implementation.
 """
 
-import torch.nn as nn
-import string
 import itertools
+import string
+
+import torch.nn as nn
 
 
 def conv3d_wobias(in_planes, out_planes, kernel, stride, pad, groups=1):

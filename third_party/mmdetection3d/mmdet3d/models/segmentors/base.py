@@ -6,8 +6,11 @@ from mmengine.model import BaseModel
 from torch import Tensor
 
 from mmdet3d.structures import PointData
-from mmdet3d.structures.det3d_data_sample import (ForwardResults,
-                                                  OptSampleList, SampleList)
+from mmdet3d.structures.det3d_data_sample import (
+    ForwardResults,
+    OptSampleList,
+    SampleList,
+)
 from mmdet3d.utils import OptConfigType, OptMultiConfig
 
 

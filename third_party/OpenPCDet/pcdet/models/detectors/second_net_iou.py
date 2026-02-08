@@ -1,7 +1,8 @@
 import torch
-from .detector3d_template import Detector3DTemplate
-from ..model_utils.model_nms_utils import class_agnostic_nms
+
 from ...ops.roiaware_pool3d import roiaware_pool3d_utils
+from ..model_utils.model_nms_utils import class_agnostic_nms
+from .detector3d_template import Detector3DTemplate
 
 
 class SECONDNetIoU(Detector3DTemplate):

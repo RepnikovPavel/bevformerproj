@@ -1,18 +1,19 @@
 import argparse
 
-import mmcv
 import numpy as np
-from mmcv.runner import obj_from_dict
-
-from mmaction import datasets
-from mmaction.core.evaluation.localize_utils import (results2det,
-                                                     perform_regression,
-                                                     temporal_nms,
-                                                     eval_ap_parallel,
-                                                     det2df)
-
 import pandas as pd
+from mmaction.core.evaluation.localize_utils import (
+    det2df,
+    eval_ap_parallel,
+    perform_regression,
+    results2det,
+    temporal_nms,
+)
+from mmcv.runner import obj_from_dict
 from terminaltables import AsciiTable
+
+import mmcv
+from mmaction import datasets
 
 
 def parse_args():

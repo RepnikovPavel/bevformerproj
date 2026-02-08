@@ -13,8 +13,8 @@ from rich.table import Table
 from torch import nn
 
 from mmengine.utils import is_tuple_of
-from .complexity_analysis import (ActivationAnalyzer, FlopAnalyzer,
-                                  parameter_count)
+
+from .complexity_analysis import ActivationAnalyzer, FlopAnalyzer, parameter_count
 
 
 def _format_size(x: int, sig_figs: int = 3, hide_zero: bool = False) -> str:

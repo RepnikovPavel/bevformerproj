@@ -3,6 +3,7 @@
 from typing import TYPE_CHECKING, Any, List
 
 from mmeval.utils import try_import
+
 from .base_backend import BaseDistBackend
 
 if TYPE_CHECKING:

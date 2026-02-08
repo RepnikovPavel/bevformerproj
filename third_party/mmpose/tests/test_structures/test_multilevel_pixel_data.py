@@ -4,7 +4,6 @@ from unittest import TestCase
 import numpy as np
 import torch
 from mmengine.structures import PixelData
-
 from mmpose.structures import MultilevelPixelData
 
 

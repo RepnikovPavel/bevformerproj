@@ -4,7 +4,6 @@ import shutil
 from unittest import TestCase
 
 import torch
-
 from mmagic.structures import DataSample
 from mmagic.utils import register_all_modules
 from mmagic.visualization import Visualizer

@@ -8,9 +8,9 @@
 # https://github.com/OpenGVLab/InternImage/blob/master/classification/models/
 
 from __future__ import absolute_import, division, print_function
-import pkg_resources
 
 import DCNv3
+import pkg_resources
 import torch
 import torch.nn.functional as F
 from torch.autograd import Function

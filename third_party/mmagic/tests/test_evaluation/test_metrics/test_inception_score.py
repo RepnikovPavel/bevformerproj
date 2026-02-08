@@ -6,13 +6,12 @@ from unittest.mock import MagicMock, patch
 import pytest
 import torch
 import torch.nn as nn
-from mmengine.runner import Runner
-
 from mmagic.datasets import PairedImageDataset
 from mmagic.evaluation import InceptionScore, TransIS
 from mmagic.models import DataPreprocessor, Pix2Pix
 from mmagic.structures import DataSample
 from mmagic.utils import register_all_modules
+from mmengine.runner import Runner
 
 register_all_modules()
 

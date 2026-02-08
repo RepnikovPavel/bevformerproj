@@ -2,7 +2,6 @@
 import numpy as np
 import torch
 from mmdet.core.bbox.demodata import random_boxes
-
 from mmtrack.models.motion import CameraMotionCompensation
 
 

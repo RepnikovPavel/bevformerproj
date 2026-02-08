@@ -4,9 +4,9 @@ import os.path as osp
 import time
 import warnings
 
-from mmengine import Config
-
 from mmocr.datasets.preparers import DatasetPreparer
+
+from mmengine import Config
 
 
 def parse_args():

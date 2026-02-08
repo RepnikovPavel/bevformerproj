@@ -16,12 +16,13 @@ import random
 from argparse import ArgumentParser
 from pathlib import Path
 
-import mmcv
 import numpy as np
 from mmdet.apis import inference_detector, init_detector
 from mmengine.config import Config, ConfigDict
 from mmengine.logging import print_log
 from mmengine.utils import ProgressBar
+
+import mmcv
 
 try:
     from sahi.slicing import slice_image

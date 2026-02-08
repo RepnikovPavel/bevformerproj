@@ -3,9 +3,9 @@ import unittest
 
 import torch
 import torch.nn as nn
+from mmrazor.implementations.quantization import gptq
 
 from mmrazor import digit_version
-from mmrazor.implementations.quantization import gptq
 
 
 class TestGPTQOps(unittest.TestCase):

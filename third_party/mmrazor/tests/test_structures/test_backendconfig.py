@@ -7,14 +7,19 @@ except ImportError:
 
 import pytest
 import torch
+from mmrazor.structures.quantization.backend_config import (
+    BackendConfigs,
+    get_academic_backend_config,
+    get_academic_backend_config_dict,
+    get_native_backend_config,
+    get_native_backend_config_dict,
+    get_openvino_backend_config,
+    get_openvino_backend_config_dict,
+    get_tensorrt_backend_config,
+    get_tensorrt_backend_config_dict,
+)
 
 from mmrazor import digit_version
-from mmrazor.structures.quantization.backend_config import (
-    BackendConfigs, get_academic_backend_config,
-    get_academic_backend_config_dict, get_native_backend_config,
-    get_native_backend_config_dict, get_openvino_backend_config,
-    get_openvino_backend_config_dict, get_tensorrt_backend_config,
-    get_tensorrt_backend_config_dict)
 
 
 @pytest.mark.skipif(

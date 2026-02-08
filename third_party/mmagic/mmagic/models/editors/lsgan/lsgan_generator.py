@@ -6,6 +6,7 @@ from mmcv.cnn import ConvModule
 from mmengine.model import BaseModule
 
 from mmagic.registry import MODELS
+
 from ...utils import get_module_device
 
 

@@ -4,9 +4,9 @@ import math
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-
 from mmseg.models.builder import LOSSES
 from mmseg.models.losses.cross_entropy_loss import CrossEntropyLoss
+
 from .tree_triplet_loss import TreeTripletLoss
 
 hiera_map = [0, 0, 1, 1, 1, 2, 2, 2, 3, 3, 4, 5, 5, 6, 6, 6, 6, 6, 6]

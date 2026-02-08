@@ -4,7 +4,6 @@ from copy import deepcopy
 import numpy as np
 import pytest
 import torch
-
 from mmagic.evaluation.metrics import SNR, snr
 
 

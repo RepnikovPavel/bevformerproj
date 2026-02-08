@@ -4,14 +4,13 @@ from unittest.mock import patch
 
 import pytest
 import torch
-from mmengine.runner import Runner
-
 from mmagic.datasets import BasicImageDataset
 from mmagic.datasets.transforms import PackInputs
 from mmagic.evaluation import PerceptualPathLength
 from mmagic.models import LSGAN, DataPreprocessor
 from mmagic.models.editors.stylegan2 import StyleGAN2Generator
 from mmagic.utils import register_all_modules
+from mmengine.runner import Runner
 
 register_all_modules()
 

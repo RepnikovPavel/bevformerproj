@@ -4,17 +4,16 @@
 # LICENSE file in the root directory of this source tree.
 
 #  This code is modified from https://github.com/ming024/FastSpeech2/blob/master/model/fastspeech2.py
-import torch
-import torch.nn as nn
-import numpy as np
-import torch.nn.functional as F
-
-from modules.transformer.Models import Encoder, Decoder
-from modules.transformer.Layers import PostNet
+import json
+import os
 from collections import OrderedDict
 
-import os
-import json
+import numpy as np
+import torch
+import torch.nn as nn
+import torch.nn.functional as F
+from modules.transformer.Layers import PostNet
+from modules.transformer.Models import Decoder, Encoder
 
 
 def get_mask_from_lengths(lengths, max_len=None):

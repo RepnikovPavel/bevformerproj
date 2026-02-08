@@ -8,6 +8,7 @@ from mmdet.utils import ConfigType, OptMultiConfig
 
 from mmyolo.models.layers.yolo_bricks import CSPSPPFBottleneck, SPPFBottleneck
 from mmyolo.registry import MODELS
+
 from ..layers import BepC3StageBlock, RepStageBlock
 from ..utils import make_round
 from .base_backbone import BaseBackbone

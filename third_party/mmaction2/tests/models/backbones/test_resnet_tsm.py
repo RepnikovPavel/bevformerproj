@@ -5,7 +5,6 @@ from unittest import TestCase
 import pytest
 import torch
 import torch.nn as nn
-
 from mmaction.models import ResNetTSM
 from mmaction.models.backbones.resnet import Bottleneck
 from mmaction.models.backbones.resnet_tsm import NL3DWrapper, TemporalShift

@@ -3,10 +3,11 @@ import os
 import random
 from typing import Optional, Sequence, Union
 
-import mmengine
 from mmengine.fileio import get_file_backend
 
+import mmengine
 from mmagic.registry import DATASETS
+
 from .basic_conditional_dataset import BasicConditionalDataset
 
 

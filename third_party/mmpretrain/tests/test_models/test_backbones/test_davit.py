@@ -3,7 +3,6 @@ from copy import deepcopy
 from unittest import TestCase
 
 import torch
-
 from mmpretrain.models.backbones import DaViT
 from mmpretrain.models.backbones.davit import SpatialBlock
 

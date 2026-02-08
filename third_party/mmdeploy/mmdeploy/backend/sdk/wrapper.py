@@ -1,6 +1,7 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 from mmdeploy.utils import Backend, parse_device_id, parse_device_type
 from mmdeploy.utils.timer import TimeCounter
+
 from ..base import BACKEND_WRAPPER, BaseWrapper
 
 

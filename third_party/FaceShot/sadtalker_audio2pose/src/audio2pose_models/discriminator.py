@@ -1,6 +1,5 @@
-import torch
-import torch.nn.functional as F
 from torch import nn
+
 
 class ConvNormRelu(nn.Module):
     def __init__(self, conv_type='1d', in_channels=3, out_channels=64, downsample=False,

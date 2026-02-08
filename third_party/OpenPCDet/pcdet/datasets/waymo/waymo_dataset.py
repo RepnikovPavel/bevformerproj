@@ -3,17 +3,18 @@
 # Written by Shaoshuai Shi, Chaoxu Guo
 # All Rights Reserved.
 
+import copy
+import multiprocessing
 import os
 import pickle
-import copy
+from functools import partial
+from pathlib import Path
+
 import numpy as np
-import torch
-import multiprocessing
 import SharedArray
+import torch
 import torch.distributed as dist
 from tqdm import tqdm
-from pathlib import Path
-from functools import partial
 
 from ...ops.roiaware_pool3d import roiaware_pool3d_utils
 from ...utils import box_utils, common_utils
@@ -412,8 +413,8 @@ class WaymoDataset(DatasetTemplate):
             return 'No ground-truth boxes for evaluation', {}
 
         def kitti_eval(eval_det_annos, eval_gt_annos):
-            from ..kitti.kitti_object_eval_python import eval as kitti_eval
             from ..kitti import kitti_utils
+            from ..kitti.kitti_object_eval_python import eval as kitti_eval
 
             map_name_to_kitti = {
                 'Vehicle': 'Car',
@@ -776,6 +777,7 @@ def create_waymo_gt_database(
 
 if __name__ == '__main__':
     import argparse
+
     import yaml
     from easydict import EasyDict
 

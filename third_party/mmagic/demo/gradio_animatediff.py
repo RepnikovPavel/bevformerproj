@@ -8,12 +8,12 @@ from glob import glob
 import gradio as gr
 import torch
 from diffusers import DDIMScheduler, EulerDiscreteScheduler, PNDMScheduler
-from mmengine import Config
-from safetensors import safe_open
-
 from mmagic.models.editors.animatediff import save_videos_grid
 from mmagic.registry import MODELS
 from mmagic.utils import register_all_modules
+from safetensors import safe_open
+
+from mmengine import Config
 
 register_all_modules()
 

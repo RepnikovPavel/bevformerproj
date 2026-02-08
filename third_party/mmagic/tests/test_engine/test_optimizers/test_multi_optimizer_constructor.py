@@ -1,10 +1,10 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import pytest
 import torch.nn as nn
-from mmengine import MMLogger
+from mmagic.engine.optimizers import MultiOptimWrapperConstructor
 from mmengine.optim import OptimWrapper
 
-from mmagic.engine.optimizers import MultiOptimWrapperConstructor
+from mmengine import MMLogger
 
 logger = MMLogger.get_instance('test_multi_optimizer_constructor')
 

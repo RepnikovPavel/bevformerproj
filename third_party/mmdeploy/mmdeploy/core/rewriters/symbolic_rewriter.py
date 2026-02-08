@@ -7,9 +7,16 @@ from torch.autograd import Function
 from torch.onnx.symbolic_helper import parse_args
 
 from mmdeploy.utils import IR, Backend, get_root_logger
-from .rewriter_utils import (Checker, ContextCaller, RewriterRegistry,
-                             copy_function, eval_with_import, get_frame_func,
-                             get_func_qualname)
+
+from .rewriter_utils import (
+    Checker,
+    ContextCaller,
+    RewriterRegistry,
+    copy_function,
+    eval_with_import,
+    get_frame_func,
+    get_func_qualname,
+)
 
 
 class SymbolicRewriter:
@@ -155,8 +162,7 @@ class SymbolicRewriter:
             for function_name, domain, version in self._pytorch_symbolic:
                 unregister_custom_op_symbolic(f'::{function_name}', version)
         else:
-            from torch.onnx.symbolic_registry import \
-                _registry as pytorch_registry
+            from torch.onnx.symbolic_registry import _registry as pytorch_registry
             for function_name, domain, version in self._pytorch_symbolic:
                 # Same to unregister_op() in torch 1.9.0+
                 del pytorch_registry[(domain, version)][function_name]

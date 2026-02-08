@@ -2,7 +2,6 @@
 from typing import Dict
 
 import torch
-
 from mmocr.models.textdet.detectors.base import BaseTextDetector
 from mmocr.registry import MODELS
 from mmocr.utils import OptConfigType, OptDetSampleList, OptMultiConfig

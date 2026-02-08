@@ -1,11 +1,11 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 from typing import List
 
-import mmengine
 from mmengine.dataset import BaseDataset
 from mmengine.fileio import get_file_backend
 from pycocotools.coco import COCO
 
+import mmengine
 from mmpretrain.registry import DATASETS
 
 

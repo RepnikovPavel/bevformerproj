@@ -4,15 +4,17 @@ from copy import deepcopy
 import pytest
 import torch
 import torch.nn as nn
-
-from mmagic.models.editors.pggan import (EqualizedLR,
-                                         EqualizedLRConvDownModule,
-                                         EqualizedLRConvModule,
-                                         EqualizedLRConvUpModule,
-                                         EqualizedLRLinearModule,
-                                         MiniBatchStddevLayer,
-                                         PGGANNoiseTo2DFeat, PixelNorm,
-                                         equalized_lr)
+from mmagic.models.editors.pggan import (
+    EqualizedLR,
+    EqualizedLRConvDownModule,
+    EqualizedLRConvModule,
+    EqualizedLRConvUpModule,
+    EqualizedLRLinearModule,
+    MiniBatchStddevLayer,
+    PGGANNoiseTo2DFeat,
+    PixelNorm,
+    equalized_lr,
+)
 from mmagic.utils import register_all_modules
 
 register_all_modules()

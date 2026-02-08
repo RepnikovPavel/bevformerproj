@@ -6,8 +6,7 @@ import re
 import warnings
 from abc import ABCMeta, abstractmethod
 from datetime import datetime
-from typing import (Any, Callable, Dict, Iterable, List, Optional, Sequence,
-                    Tuple, Union)
+from typing import Any, Callable, Dict, Iterable, List, Optional, Sequence, Tuple, Union
 
 import numpy as np
 import torch
@@ -18,12 +17,10 @@ from mmengine.config import Config, ConfigDict
 from mmengine.config.utils import MODULE2PACKAGE
 from mmengine.dataset import pseudo_collate
 from mmengine.device import get_device
-from mmengine.fileio import (get_file_backend, isdir, join_path,
-                             list_dir_or_file, load)
+from mmengine.fileio import get_file_backend, isdir, join_path, list_dir_or_file, load
 from mmengine.logging import print_log
 from mmengine.registry import FUNCTIONS, MODELS, VISUALIZERS, DefaultScope
-from mmengine.runner.checkpoint import (_load_checkpoint,
-                                        _load_checkpoint_to_model)
+from mmengine.runner.checkpoint import _load_checkpoint, _load_checkpoint_to_model
 from mmengine.structures import InstanceData
 from mmengine.visualization import Visualizer
 

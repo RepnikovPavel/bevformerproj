@@ -1,11 +1,9 @@
 # Copyright (c) OpenMMLab. All rights reserved.
-from mmengine.config import read_base
-
 from mmagic.engine import VisualizationHook
 from mmagic.evaluation.metrics import FrechetInceptionDistance
 from mmagic.models.data_preprocessors import DataPreprocessor
-from mmagic.models.editors.biggan import (BigGAN, BigGANDiscriminator,
-                                          BigGANGenerator)
+from mmagic.models.editors.biggan import BigGAN, BigGANDiscriminator, BigGANGenerator
+from mmengine.config import read_base
 
 # define model
 

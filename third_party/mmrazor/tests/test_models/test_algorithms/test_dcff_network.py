@@ -7,14 +7,13 @@ import unittest
 
 import torch
 from mmcls.structures import ClsDataSample
-from mmengine import MessageHub
 from mmengine.model import BaseModel
-
 from mmrazor.models.algorithms.pruning.dcff import DCFF
-from mmrazor.models.algorithms.pruning.ite_prune_algorithm import \
-    ItePruneConfigManager
+from mmrazor.models.algorithms.pruning.ite_prune_algorithm import ItePruneConfigManager
 from mmrazor.registry import MODELS
 from mmrazor.structures import export_fix_subnet
+
+from mmengine import MessageHub
 
 
 # @TASK_UTILS.register_module()

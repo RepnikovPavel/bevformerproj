@@ -2,7 +2,6 @@
 import copy
 
 import torch
-
 from mmfewshot.classification.models.heads import CosineDistanceHead
 
 

@@ -1,15 +1,24 @@
 # Copyright (c) OpenMMLab. All rights reserved.
-from mmengine.dataset import DefaultSampler, InfiniteSampler
-from mmengine.hooks import (CheckpointHook, DistSamplerSeedHook, IterTimerHook,
-                            LoggerHook, ParamSchedulerHook)
-from mmengine.optim import MultiStepLR, OptimWrapper
-from mmengine.runner import IterBasedTrainLoop
-
-from mmagic.datasets.transforms import (Flip, GenerateCoordinateAndCell,
-                                        LoadImageFromFile, PackInputs,
-                                        RandomDownSampling, RandomTransposeHW)
+from mmagic.datasets.transforms import (
+                            Flip,
+                            GenerateCoordinateAndCell,
+                            LoadImageFromFile,
+                            PackInputs,
+                            RandomDownSampling,
+                            RandomTransposeHW,
+)
 from mmagic.engine.runner import MultiValLoop
 from mmagic.evaluation import MAE, PSNR, SSIM, Evaluator
+from mmengine.dataset import DefaultSampler, InfiniteSampler
+from mmengine.hooks import (
+                            CheckpointHook,
+                            DistSamplerSeedHook,
+                            IterTimerHook,
+                            LoggerHook,
+                            ParamSchedulerHook,
+)
+from mmengine.optim import MultiStepLR, OptimWrapper
+from mmengine.runner import IterBasedTrainLoop
 
 _base_ = '../default_runtime.py'
 work_dir = './work_dirs/liif'

@@ -12,9 +12,9 @@ except ImportError:
 
 from mmrazor.models.mutables.base_mutable import BaseMutable
 from mmrazor.models.mutables.mutable_channel import MutableChannelContainer
-from mmrazor.models.mutables.mutable_channel.units import \
-    OneShotMutableChannelUnit
+from mmrazor.models.mutables.mutable_channel.units import OneShotMutableChannelUnit
 from mmrazor.registry import MODELS
+
 from ..bricks.dynamic_linear import DynamicLinear
 
 

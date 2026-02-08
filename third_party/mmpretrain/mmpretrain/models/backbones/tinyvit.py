@@ -9,6 +9,7 @@ from mmengine.model import BaseModule, ModuleList, Sequential
 from torch.nn import functional as F
 
 from mmpretrain.registry import MODELS
+
 from ..utils import LeAttention
 from .base_backbone import BaseBackbone
 

@@ -1,10 +1,9 @@
-import os
 import math
+
 import torch
 import torch.nn as nn
 from transformers import Wav2Vec2Config
 
-from .torch_utils import get_mask_from_lengths
 from .wav2vec2 import Wav2Vec2Model
 
 

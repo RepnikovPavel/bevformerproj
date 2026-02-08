@@ -8,6 +8,7 @@ from mmengine.utils import ProgressBar
 
 from mmdet.registry import DATASETS
 from mmdet.utils.typing_utils import List, Union
+
 from .xml_style import XMLDataset
 
 

@@ -3,21 +3,25 @@ from typing import List, Optional
 
 import torch
 from mmdet.models.dense_heads import PAAHead
-from mmdet.models.task_modules.coders import (DeltaXYWHBBoxCoder,
-                                              DistancePointBBoxCoder,
-                                              TBLRBBoxCoder)
+from mmdet.models.task_modules.coders import (
+    DeltaXYWHBBoxCoder,
+    DistancePointBBoxCoder,
+    TBLRBBoxCoder,
+)
 from mmdet.structures.bbox import BaseBoxes, get_box_tensor
 from mmdet.structures.bbox.transforms import distance2bbox
-from mmengine import ConfigDict
 from torch import Tensor
 
-from mmdeploy.codebase.mmdet.deploy import (gather_topk,
-                                            get_post_processing_params,
-                                            pad_with_value_if_necessary)
+from mmdeploy.codebase.mmdet.deploy import (
+    gather_topk,
+    get_post_processing_params,
+    pad_with_value_if_necessary,
+)
 from mmdeploy.codebase.mmdet.ops import ncnn_detection_output_forward
 from mmdeploy.core import FUNCTION_REWRITER, mark
 from mmdeploy.mmcv.ops import multiclass_nms
 from mmdeploy.utils import Backend, is_dynamic_shape
+from mmengine import ConfigDict
 
 
 @FUNCTION_REWRITER.register_rewriter(

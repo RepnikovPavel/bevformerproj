@@ -7,12 +7,12 @@ import argparse
 import onnxruntime
 import torch
 import torch.nn as nn
+from mmaction.registry import MODELS
 from mmdet.structures.bbox import bbox2roi
-from mmengine import Config
 from mmengine.registry import init_default_scope
 from mmengine.runner import load_checkpoint
 
-from mmaction.registry import MODELS
+from mmengine import Config
 
 
 def parse_args():

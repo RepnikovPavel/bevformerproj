@@ -3,20 +3,19 @@
 # This source code is licensed under the MIT license found in the
 # LICENSE file in the root directory of this source tree.
 
+import math
 import os
 import random
 import shutil
 import time
 from abc import abstractmethod
-from pathlib import Path
-import math
+
 import accelerate
 import numpy as np
+import psutil
 import torch
 from accelerate.utils import ProjectConfiguration
 from tqdm import tqdm
-import psutil
-import torch.distributed as dist
 
 
 def get_memory_usage():
@@ -530,7 +529,7 @@ class BaseTrainer(object):
                                 },
                                 step=self.step,
                             )
-                        except Exception as e:
+                        except Exception:
                             # print(e)
                             pass
                 if self.step % 200 == 0:
@@ -610,7 +609,7 @@ class BaseTrainer(object):
                 )
                 checkpoint_path = ls[0]
                 self.logger.info("Resume from {}".format(checkpoint_path))
-            except Exception as e:
+            except Exception:
                 print(
                     "Failed to load checkpoint from {}, starting FROM SCRATCH...".format(
                         checkpoint_dir
@@ -680,8 +679,9 @@ class BaseTrainer(object):
             project_dir=self.exp_dir,
             logging_dir=os.path.join(self.exp_dir, "log"),
         )
-        from accelerate import DistributedDataParallelKwargs, InitProcessGroupKwargs
         from datetime import timedelta
+
+        from accelerate import DistributedDataParallelKwargs, InitProcessGroupKwargs
 
         kwargs = DistributedDataParallelKwargs(
             find_unused_parameters=self.cfg.train.find_unused_parameters

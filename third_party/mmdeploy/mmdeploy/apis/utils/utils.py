@@ -3,11 +3,10 @@ import logging
 from typing import Any, Optional, Sequence
 
 import mmengine
-
 from mmdeploy.codebase import BaseTask, get_codebase_class, import_codebase
-from mmdeploy.utils import (get_backend, get_codebase, get_task_type,
-                            parse_device_id)
+from mmdeploy.utils import get_backend, get_codebase, get_task_type, parse_device_id
 from mmdeploy.utils.config_utils import get_codebase_external_module
+
 from ..core import PIPELINE_MANAGER
 
 

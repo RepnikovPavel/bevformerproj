@@ -3,7 +3,6 @@ from unittest.mock import MagicMock
 
 import torch
 from mmdet.core.bbox.demodata import random_boxes
-
 from mmtrack.models import TRACKERS
 
 

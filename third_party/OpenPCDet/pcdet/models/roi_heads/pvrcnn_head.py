@@ -1,6 +1,8 @@
 import torch.nn as nn
 
-from ...ops.pointnet2.pointnet2_stack import pointnet2_modules as pointnet2_stack_modules
+from ...ops.pointnet2.pointnet2_stack import (
+    pointnet2_modules as pointnet2_stack_modules,
+)
 from ...utils import common_utils
 from .roi_head_template import RoIHeadTemplate
 

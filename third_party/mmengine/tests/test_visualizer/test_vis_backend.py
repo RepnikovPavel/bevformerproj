@@ -9,15 +9,21 @@ from unittest.mock import MagicMock, patch
 import numpy as np
 import pytest
 import torch
-
-from mmengine import Config
 from mmengine.fileio import load
 from mmengine.registry import VISBACKENDS
 from mmengine.utils import digit_version, is_installed
-from mmengine.visualization import (AimVisBackend, ClearMLVisBackend,
-                                    DVCLiveVisBackend, LocalVisBackend,
-                                    MLflowVisBackend, NeptuneVisBackend,
-                                    TensorboardVisBackend, WandbVisBackend)
+from mmengine.visualization import (
+    AimVisBackend,
+    ClearMLVisBackend,
+    DVCLiveVisBackend,
+    LocalVisBackend,
+    MLflowVisBackend,
+    NeptuneVisBackend,
+    TensorboardVisBackend,
+    WandbVisBackend,
+)
+
+from mmengine import Config
 
 
 class TestLocalVisBackend:

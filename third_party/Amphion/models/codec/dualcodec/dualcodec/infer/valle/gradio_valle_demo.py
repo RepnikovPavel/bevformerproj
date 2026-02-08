@@ -1,28 +1,21 @@
-import gradio as gr
-import torch
-import soundfile as sf
-import numpy as np
-from pathlib import Path
 import tempfile
-from loguru import logger
-import torchaudio
 
+import dualcodec
+import gradio as gr
+import soundfile as sf
+import torchaudio
+from dualcodec.infer.valle.utils_valle_infer import (
+    infer_process,
+    load_dualcodec_valle_ar_12hzv1,
+    load_dualcodec_valle_nar_12hzv1,
+)
+from dualcodec.utils import get_whisper_tokenizer
 from dualcodec.utils.utils_infer import (
     device,
-    cross_fade_duration,
-    target_rms,
-    nfe_step,
-    speed,
     preprocess_ref_audio_text,
     remove_silence_for_generated_wav,
 )
-from dualcodec.infer.valle.utils_valle_infer import (
-    load_dualcodec_valle_ar_12hzv1,
-    load_dualcodec_valle_nar_12hzv1,
-    infer_process,
-)
-from dualcodec.utils import get_whisper_tokenizer
-import dualcodec
+from loguru import logger
 
 # Load models
 logger.info("Loading Valle models...")

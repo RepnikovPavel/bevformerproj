@@ -7,7 +7,6 @@ from mmcv.runner import load_checkpoint
 
 from ...registry import BACKBONES
 
-
 __all__ = ['BNInception']
 
 @BACKBONES.register_module

@@ -1,21 +1,23 @@
 # Copyright (c) OpenMMLab. All rights reserved.
-import mmengine
+import mmdeploy.backend.onnxruntime as ort_apis
 import numpy as np
 import pytest
 import torch
-
-import mmdeploy.backend.onnxruntime as ort_apis
 from mmdeploy.codebase import import_codebase
 from mmdeploy.utils import Backend, Codebase
 from mmdeploy.utils.test import SwitchBackendWrapper, backend_checker
+
+import mmengine
 
 try:
     import_codebase(Codebase.MMSEG)
 except ImportError:
     pytest.skip(f'{Codebase.MMSEG} is not installed.', allow_module_level=True)
 
-from .utils import generate_datasample  # noqa: E402
-from .utils import generate_mmseg_deploy_config  # noqa: E402
+from .utils import (
+    generate_datasample,  # noqa: E402
+    generate_mmseg_deploy_config,  # noqa: E402
+)
 
 NUM_CLASS = 19
 IMAGE_SIZE = 32
@@ -38,8 +40,7 @@ class TestEnd2EndModel:
         cls.wrapper.set(outputs=cls.outputs)
         deploy_cfg = generate_mmseg_deploy_config()
 
-        from mmdeploy.codebase.mmseg.deploy.segmentation_model import \
-            End2EndModel
+        from mmdeploy.codebase.mmseg.deploy.segmentation_model import End2EndModel
         cls.end2end_model = End2EndModel(
             Backend.ONNXRUNTIME, [''], device='cpu', deploy_cfg=deploy_cfg)
 
@@ -108,7 +109,9 @@ def test_build_segmentation_model():
     with SwitchBackendWrapper(ORTWrapper) as wrapper:
         wrapper.set(model_cfg=model_cfg, deploy_cfg=deploy_cfg)
         from mmdeploy.codebase.mmseg.deploy.segmentation_model import (
-            End2EndModel, build_segmentation_model)
+            End2EndModel,
+            build_segmentation_model,
+        )
         segmentor = build_segmentation_model([''], model_cfg, deploy_cfg,
                                              'cpu')
         assert isinstance(segmentor, End2EndModel)

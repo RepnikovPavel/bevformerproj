@@ -2,9 +2,12 @@
 from unittest import TestCase
 
 import torch
-
-from mmyolo.models.necks import (YOLOv6CSPRepBiPAFPN, YOLOv6CSPRepPAFPN,
-                                 YOLOv6RepBiPAFPN, YOLOv6RepPAFPN)
+from mmyolo.models.necks import (
+    YOLOv6CSPRepBiPAFPN,
+    YOLOv6CSPRepPAFPN,
+    YOLOv6RepBiPAFPN,
+    YOLOv6RepPAFPN,
+)
 from mmyolo.utils import register_all_modules
 
 register_all_modules()

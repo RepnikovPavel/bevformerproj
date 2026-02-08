@@ -1,6 +1,5 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import torch
-
 from mmagic.models.editors.eg3d.ray_sampler import sample_rays
 
 

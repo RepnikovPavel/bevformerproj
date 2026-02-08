@@ -1,8 +1,8 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import pytest
 import torch
-
 from mmseg.models.decode_heads import UPerHead
+
 from .utils import _conv_has_norm, to_cuda
 
 

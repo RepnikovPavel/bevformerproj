@@ -3,12 +3,13 @@
 # This source code is licensed under the MIT license found in the
 # LICENSE file in the root directory of this source tree.
 
-import os
 import glob
-import librosa
 import json
+import os
 
+import librosa
 from utils.util import has_existed
+
 from preprocessors import GOLDEN_TEST_SAMPLES
 
 

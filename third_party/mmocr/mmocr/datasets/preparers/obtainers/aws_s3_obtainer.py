@@ -4,8 +4,8 @@ import ssl
 from typing import Dict, List, Optional
 
 from mmengine import mkdir_or_exist
-
 from mmocr.registry import DATA_OBTAINERS
+
 from .naive_data_obtainer import NaiveDataObtainer
 
 ssl._create_default_https_context = ssl._create_unverified_context

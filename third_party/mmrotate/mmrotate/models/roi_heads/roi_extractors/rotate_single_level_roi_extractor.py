@@ -1,11 +1,11 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import torch
 import torch.nn as nn
-from mmcv import ops
 from mmcv.runner import force_fp32
 from mmcv.utils import to_2tuple
-from mmdet.models.roi_heads.roi_extractors.base_roi_extractor import \
-    BaseRoIExtractor
+from mmdet.models.roi_heads.roi_extractors.base_roi_extractor import BaseRoIExtractor
+
+from mmcv import ops
 
 from ...builder import ROTATED_ROI_EXTRACTORS
 

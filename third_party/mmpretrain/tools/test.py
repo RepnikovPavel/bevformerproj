@@ -4,11 +4,12 @@ import os
 import os.path as osp
 from copy import deepcopy
 
-import mmengine
 from mmengine.config import Config, ConfigDict, DictAction
 from mmengine.evaluator import DumpResults
 from mmengine.registry import RUNNERS
 from mmengine.runner import Runner
+
+import mmengine
 
 
 def parse_args():

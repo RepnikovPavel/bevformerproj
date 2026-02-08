@@ -14,13 +14,12 @@ import torch
 import torch.nn as nn
 import torch.utils.checkpoint as cp
 from mmcv.cnn import build_norm_layer
-from mmcv.cnn.bricks.transformer import (BaseTransformerLayer,
-                                         TransformerLayerSequence)
-from mmengine.model import BaseModule
-from mmengine.model.weight_init import xavier_init
+from mmcv.cnn.bricks.transformer import BaseTransformerLayer, TransformerLayerSequence
 
 # from mmcv.utils import deprecated_api_warning
 from mmdet3d.registry import MODELS, TASK_UTILS
+from mmengine.model import BaseModule
+from mmengine.model.weight_init import xavier_init
 
 
 @MODELS.register_module()

@@ -8,8 +8,7 @@ From DAC: https://github.com/descriptinc/descript-audio-codec/blob/main/dac/mode
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-from audiotools import AudioSignal
-from audiotools import STFTParams
+from audiotools import AudioSignal, STFTParams
 from einops import rearrange
 
 try:

@@ -7,23 +7,22 @@ import matplotlib
 import pandas as pd
 
 matplotlib.use('Agg')
-import matplotlib.pyplot as plt
-import timeit
-import sklearn
 import argparse
-import cv2
-import numpy as np
-import torch
-from skimage import transform as trans
-from backbones import get_model
-from sklearn.metrics import roc_curve, auc
-
-from menpo.visualize.viewmatplotlib import sample_colours_from_colourmap
-from prettytable import PrettyTable
+import sys
+import timeit
+import warnings
 from pathlib import Path
 
-import sys
-import warnings
+import cv2
+import matplotlib.pyplot as plt
+import numpy as np
+import sklearn
+import torch
+from backbones import get_model
+from menpo.visualize.viewmatplotlib import sample_colours_from_colourmap
+from prettytable import PrettyTable
+from skimage import transform as trans
+from sklearn.metrics import auc, roc_curve
 
 sys.path.insert(0, "../")
 warnings.filterwarnings("ignore")

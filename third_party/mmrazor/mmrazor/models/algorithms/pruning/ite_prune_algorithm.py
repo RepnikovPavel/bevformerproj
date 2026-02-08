@@ -3,13 +3,14 @@ from typing import Dict, List, Optional, Tuple, Union
 
 import torch
 import torch.nn as nn
-from mmengine import MessageHub, MMLogger
 from mmengine.model import BaseModel
 from mmengine.structures import BaseDataElement
 
+from mmengine import MessageHub, MMLogger
 from mmrazor.models.mutables import MutableChannelUnit
 from mmrazor.models.mutators import ChannelMutator
 from mmrazor.registry import MODELS
+
 from ..base import BaseAlgorithm
 
 LossResults = Dict[str, torch.Tensor]

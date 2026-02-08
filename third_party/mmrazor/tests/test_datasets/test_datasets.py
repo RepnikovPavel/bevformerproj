@@ -7,7 +7,6 @@ from unittest import TestCase
 
 import numpy as np
 from mmcls.registry import DATASETS as CLS_DATASETS
-
 from mmrazor.registry import DATASETS
 from mmrazor.utils import register_all_modules
 

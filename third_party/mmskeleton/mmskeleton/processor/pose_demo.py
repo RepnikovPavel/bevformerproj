@@ -1,12 +1,13 @@
-import torch
-import mmcv
-import numpy as np
-import cv2
 import os
-from mmskeleton.apis.estimation import init_pose_estimator, inference_pose_estimator
-from multiprocessing import current_process, Process, Manager
-from mmskeleton.utils import cache_checkpoint, third_party
+from multiprocessing import Manager, Process, current_process
+
+import cv2
+import numpy as np
 from mmcv.utils import ProgressBar
+
+import mmcv
+from mmskeleton.apis.estimation import inference_pose_estimator, init_pose_estimator
+from mmskeleton.utils import cache_checkpoint, third_party
 
 
 def render(image, pred, person_bbox, bbox_thre=0):

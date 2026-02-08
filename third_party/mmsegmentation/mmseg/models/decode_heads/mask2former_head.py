@@ -7,8 +7,7 @@ import torch.nn.functional as F
 from mmengine.model import BaseModule
 
 try:
-    from mmdet.models.dense_heads import \
-        Mask2FormerHead as MMDET_Mask2FormerHead
+    from mmdet.models.dense_heads import Mask2FormerHead as MMDET_Mask2FormerHead
 except ModuleNotFoundError:
     MMDET_Mask2FormerHead = BaseModule
 

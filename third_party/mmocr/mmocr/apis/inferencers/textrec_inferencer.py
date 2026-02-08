@@ -4,6 +4,7 @@ from typing import Dict
 import numpy as np
 
 from mmocr.structures import TextRecogDataSample
+
 from .base_mmocr_inferencer import BaseMMOCRInferencer
 
 

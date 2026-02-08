@@ -7,9 +7,10 @@ import sys
 from multiprocessing import Pool
 
 import cv2
+import numpy as np
+
 import mmcv
 import mmengine
-import numpy as np
 
 
 def worker(path, opt):

@@ -1,10 +1,12 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 
-import numpy as np
 import pickle
 from typing import TYPE_CHECKING, Any, List, Tuple, TypeVar, Union
 
+import numpy as np
+
 from mmeval.utils import try_import
+
 from .base_backend import TensorBaseDistBackend
 
 if TYPE_CHECKING:

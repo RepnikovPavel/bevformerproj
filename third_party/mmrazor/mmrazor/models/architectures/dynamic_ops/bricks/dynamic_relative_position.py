@@ -3,11 +3,12 @@ import logging
 from typing import Dict, Set
 
 import torch
-from mmengine import print_log
 from torch import Tensor, nn
 
+from mmengine import print_log
 from mmrazor.models.architectures.ops import RelativePosition2D
 from mmrazor.models.mutables.base_mutable import BaseMutable
+
 from ..mixins import DynamicChannelMixin
 
 

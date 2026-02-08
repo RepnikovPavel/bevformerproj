@@ -6,8 +6,8 @@ from os import PathLike
 from typing import List, Sequence, Union
 
 from mmengine import get_file_backend
-
 from mmpretrain.registry import DATASETS, TRANSFORMS
+
 from .base_dataset import BaseDataset
 
 

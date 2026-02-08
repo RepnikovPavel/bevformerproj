@@ -8,6 +8,7 @@ from torch import nn as nn
 
 from mmdet3d.registry import MODELS
 from mmdet3d.utils import ConfigType, OptConfigType, OptMultiConfig
+
 from ...structures.det3d_data_sample import OptSampleList, SampleList
 from ..utils import add_prefix
 from .base import Base3DSegmentor

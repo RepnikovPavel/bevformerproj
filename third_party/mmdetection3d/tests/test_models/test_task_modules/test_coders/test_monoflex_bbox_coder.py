@@ -1,7 +1,6 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import numpy as np
 import torch
-
 from mmdet3d.registry import TASK_UTILS
 from mmdet3d.structures import CameraInstance3DBoxes
 

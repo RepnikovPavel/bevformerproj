@@ -4,9 +4,8 @@
 # LICENSE file in the root directory of this source tree.
 
 import math
-import librosa
-import torch
 
+import librosa
 import numpy as np
 from numpy import linalg as LA
 

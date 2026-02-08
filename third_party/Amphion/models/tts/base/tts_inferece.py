@@ -4,22 +4,21 @@
 # LICENSE file in the root directory of this source tree.
 
 import os
-import torch
-import time
-import accelerate
 import random
-import numpy as np
-from tqdm import tqdm
-from accelerate.logging import get_logger
-from torch.utils.data import DataLoader
-from safetensors.torch import load_file
-
-
+import time
 from abc import abstractmethod
 from pathlib import Path
+
+import accelerate
+import numpy as np
+import torch
+from accelerate.logging import get_logger
+from models.vocoders.vocoder_inference import synthesis
+from safetensors.torch import load_file
+from torch.utils.data import DataLoader
+from tqdm import tqdm
 from utils.io import save_audio
 from utils.util import load_config
-from models.vocoders.vocoder_inference import synthesis
 
 
 class TTSInference(object):

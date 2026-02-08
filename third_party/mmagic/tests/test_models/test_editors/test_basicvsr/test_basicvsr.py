@@ -1,12 +1,11 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import pytest
 import torch
-from mmengine.optim import OptimWrapper
-from torch.optim import Adam
-
 from mmagic.models import BasicVSR, BasicVSRNet, DataPreprocessor
 from mmagic.models.losses import CharbonnierLoss
 from mmagic.structures import DataSample
+from mmengine.optim import OptimWrapper
+from torch.optim import Adam
 
 
 def test_basicvsr():

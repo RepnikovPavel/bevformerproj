@@ -5,7 +5,6 @@ from unittest import TestCase
 
 import torch
 from mmengine.structures import InstanceData
-
 from mmocr.models.common.dictionary import Dictionary
 from mmocr.models.kie.heads import SDMGRHead
 from mmocr.structures import KIEDataSample

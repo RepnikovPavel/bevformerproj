@@ -4,7 +4,6 @@ from copy import deepcopy
 from functools import partial
 from typing import Tuple
 
-import mmengine
 import numpy as np
 import torch
 import torch.nn as nn
@@ -17,7 +16,9 @@ from mmengine.runner import load_checkpoint
 from mmengine.utils.dl_utils import TORCH_VERSION
 from mmengine.utils.version_utils import digit_version
 
+import mmengine
 from mmagic.registry import MODELS
+
 from .embeddings import TimestepEmbedding, Timesteps
 from .unet_blocks import UNetMidBlock2DCrossAttn, get_down_block, get_up_block
 

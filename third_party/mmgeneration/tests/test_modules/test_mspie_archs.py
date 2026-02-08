@@ -2,7 +2,6 @@
 from copy import deepcopy
 
 import torch
-
 from mmgen.models.architectures.stylegan import MSStyleGANv2Generator
 
 

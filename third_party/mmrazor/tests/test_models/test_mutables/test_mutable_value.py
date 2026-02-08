@@ -3,9 +3,11 @@ from unittest import TestCase
 
 import pytest
 import torch
-
-from mmrazor.models.mutables import (MutableValue, OneShotMutableValue,
-                                     SquentialMutableChannel)
+from mmrazor.models.mutables import (
+    MutableValue,
+    OneShotMutableValue,
+    SquentialMutableChannel,
+)
 
 
 class TestMutableValue(TestCase):

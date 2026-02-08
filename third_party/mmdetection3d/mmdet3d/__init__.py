@@ -1,8 +1,9 @@
 # Copyright (c) OpenMMLab. All rights reserved.
-import mmcv
 import mmdet
-import mmengine
 from mmengine.utils import digit_version
+
+import mmcv
+import mmengine
 
 from .version import __version__, version_info
 

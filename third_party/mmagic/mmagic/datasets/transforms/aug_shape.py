@@ -3,11 +3,11 @@ import random
 from copy import deepcopy
 from typing import Dict, List, Union
 
-import mmcv
 import numpy as np
 from mmcv.transforms import BaseTransform
 from mmengine.utils import is_tuple_of
 
+import mmcv
 from mmagic.registry import TRANSFORMS
 
 

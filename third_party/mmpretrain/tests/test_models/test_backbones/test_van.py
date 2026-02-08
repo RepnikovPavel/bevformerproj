@@ -6,9 +6,8 @@ from unittest import TestCase
 
 import torch
 from mmengine.utils.dl_utils.parrots_wrapper import _BatchNorm
-from torch import nn
-
 from mmpretrain.models.backbones import VAN
+from torch import nn
 
 
 def check_norm_state(modules, train_state):

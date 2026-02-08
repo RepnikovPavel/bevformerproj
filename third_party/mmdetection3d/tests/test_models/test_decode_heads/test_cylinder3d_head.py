@@ -4,7 +4,6 @@ from unittest import TestCase
 import pytest
 import torch
 from mmcv.ops import SparseConvTensor
-
 from mmdet3d.models.decode_heads import Cylinder3DHead
 from mmdet3d.structures import Det3DDataSample, PointData
 

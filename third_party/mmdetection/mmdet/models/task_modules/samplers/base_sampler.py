@@ -5,6 +5,7 @@ import torch
 from mmengine.structures import InstanceData
 
 from mmdet.structures.bbox import BaseBoxes, cat_boxes
+
 from ..assigners import AssignResult
 from .sampling_result import SamplingResult
 

@@ -3,14 +3,15 @@ import os
 import os.path as osp
 import tempfile
 
-import mmcv
 import motmetrics as mm
 import numpy as np
 from mmcv.utils import print_log
 from mmdet.core import eval_map
 from mmdet.datasets import DATASETS
 
+import mmcv
 from mmtrack.core import interpolate_tracks, results2outs
+
 from .coco_video_dataset import CocoVideoDataset
 
 try:

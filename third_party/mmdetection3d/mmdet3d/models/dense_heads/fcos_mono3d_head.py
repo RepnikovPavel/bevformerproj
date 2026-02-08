@@ -13,8 +13,8 @@ from torch import nn as nn
 from mmdet3d.models.layers import box3d_multiclass_nms
 from mmdet3d.registry import MODELS, TASK_UTILS
 from mmdet3d.structures import limit_period, points_img2cam, xywhr2xyxyr
-from mmdet3d.utils import (ConfigType, InstanceList, OptConfigType,
-                           OptInstanceList)
+from mmdet3d.utils import ConfigType, InstanceList, OptConfigType, OptInstanceList
+
 from .anchor_free_mono3d_head import AnchorFreeMono3DHead
 
 RangeType = Sequence[Tuple[int, int]]

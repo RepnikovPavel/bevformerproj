@@ -1,12 +1,13 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import torch
 import torch.nn.functional as F
-from mmengine import MessageHub
 from mmengine.optim import OptimWrapperDict
 
 from mmagic.registry import MODELS
 from mmagic.structures import DataSample
 from mmagic.utils.typing import SampleList
+from mmengine import MessageHub
+
 from ...base_models import BaseTranslationModel
 from ...utils import set_requires_grad
 from .cyclegan_modules import GANImageBuffer

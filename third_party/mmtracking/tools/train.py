@@ -6,18 +6,18 @@ import os.path as osp
 import time
 import warnings
 
-import mmcv
 import torch
 import torch.distributed as dist
-from mmcv import Config, DictAction
 from mmcv.runner import get_dist_info, init_dist
 from mmdet.apis import set_random_seed
-
 from mmtrack import __version__
 from mmtrack.apis import init_random_seed
 from mmtrack.core import setup_multi_processes
 from mmtrack.datasets import build_dataset
 from mmtrack.utils import collect_env, get_device, get_root_logger
+
+import mmcv
+from mmcv import Config, DictAction
 
 
 def parse_args():
@@ -88,7 +88,6 @@ def main():
             cfg.model = cfg.model.detector
     elif cfg.get('TRAIN_REID', False):
         from mmdet.apis import train_detector as train_model
-
         from mmtrack.models import build_reid as build_model
         if 'reid' in cfg.model:
             cfg.model = cfg.model.reid

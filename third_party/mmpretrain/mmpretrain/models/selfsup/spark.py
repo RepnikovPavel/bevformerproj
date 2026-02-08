@@ -7,6 +7,7 @@ from mmengine.model.weight_init import trunc_normal_
 
 from mmpretrain.registry import MODELS
 from mmpretrain.structures import DataSample
+
 from ..utils.norm import build_norm_layer
 from ..utils.sparse_modules import SparseHelper
 from .base import BaseSelfSupervisor

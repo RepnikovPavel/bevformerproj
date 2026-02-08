@@ -5,16 +5,16 @@ import os
 import tempfile
 from functools import partial
 
+import mmdeploy.utils as util
 import pytest
 import torch.multiprocessing as mp
-from mmengine import Config
-
-import mmdeploy.utils as util
 from mmdeploy.backend.sdk.export_info import export2SDK
 from mmdeploy.utils import target_wrapper
 from mmdeploy.utils.config_utils import get_codebase_external_module
 from mmdeploy.utils.constants import Backend, Codebase, Task
 from mmdeploy.utils.test import get_random_name
+
+from mmengine import Config
 
 correct_model_path = 'tests/test_codebase/test_mmagic/data/model.py'
 correct_model_cfg = Config.fromfile(correct_model_path)

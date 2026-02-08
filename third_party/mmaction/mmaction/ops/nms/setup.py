@@ -1,9 +1,9 @@
 import os.path as osp
-from setuptools import setup, Extension
 
 import numpy as np
 from Cython.Build import cythonize
 from Cython.Distutils import build_ext
+from setuptools import Extension, setup
 from torch.utils.cpp_extension import BuildExtension, CUDAExtension
 
 ext_args = dict(

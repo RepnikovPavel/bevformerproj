@@ -7,7 +7,6 @@ import numpy as np
 import torch
 from mmengine.structures import InstanceData
 from mmengine.utils import digit_version
-
 from mmselfsup.structures import SelfSupDataSample
 from mmselfsup.visualization import SelfSupVisualizer
 

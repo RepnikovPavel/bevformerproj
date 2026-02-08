@@ -1,25 +1,26 @@
-import os
-import cv2
-import sys
-import json
-import random
 import argparse
-import gradio as gr
+import json
+import os
+import random
+import sys
+from copy import deepcopy
+
+import cv2
 import numpy as np
 import torch
-
-from tqdm import tqdm
-from copy import deepcopy
-from PIL import Image, ImageFilter
-
-from pycocotools.coco import COCO
-
 from diffusers.pipelines.controlnet.pipeline_controlnet import ControlNetModel
+from PIL import Image, ImageFilter
+from pycocotools.coco import COCO
+from tqdm import tqdm
+
 sys.path.append(os.path.join(os.getcwd(), "data/PowerPaint"))
 from pipeline.pipeline_PowerPaint import StableDiffusionInpaintPipeline as Pipeline
-from pipeline.pipeline_PowerPaint_ControlNet import StableDiffusionControlNetInpaintPipeline as controlnetPipeline
-from utils.utils import TokenizerWrapper, add_tokens
+from pipeline.pipeline_PowerPaint_ControlNet import (
+        StableDiffusionControlNetInpaintPipeline as controlnetPipeline,
+)
 from safetensors.torch import load_model
+from utils.utils import TokenizerWrapper, add_tokens
+
 torch.set_grad_enabled(False)
 
 weight_dtype = torch.float16

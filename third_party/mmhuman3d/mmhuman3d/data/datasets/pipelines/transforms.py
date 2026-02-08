@@ -2,10 +2,11 @@ import math
 import random
 
 import cv2
-import mmcv
 import numpy as np
 
+import mmcv
 from mmhuman3d.core.conventions.keypoints_mapping import get_flip_pairs
+
 from ..builder import PIPELINES
 from .compose import Compose
 

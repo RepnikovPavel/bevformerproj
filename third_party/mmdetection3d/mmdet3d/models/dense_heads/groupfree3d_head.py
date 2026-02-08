@@ -5,8 +5,10 @@ from typing import Dict, List, Optional, Tuple
 import numpy as np
 import torch
 from mmcv.cnn import ConvModule
-from mmcv.cnn.bricks.transformer import (build_positional_encoding,
-                                         build_transformer_layer)
+from mmcv.cnn.bricks.transformer import (
+    build_positional_encoding,
+    build_transformer_layer,
+)
 from mmcv.ops import PointsSampler as Points_Sampler
 from mmcv.ops import gather_points
 from mmdet.models.utils import multi_apply
@@ -20,6 +22,7 @@ from mmdet3d.models.layers import aligned_3d_nms
 from mmdet3d.registry import MODELS, TASK_UTILS
 from mmdet3d.structures import BaseInstance3DBoxes, Det3DDataSample
 from mmdet3d.structures.det3d_data_sample import SampleList
+
 from .base_conv_bbox_head import BaseConvBboxHead
 
 EPS = 1e-6

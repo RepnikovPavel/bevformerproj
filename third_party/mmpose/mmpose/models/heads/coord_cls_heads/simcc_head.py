@@ -13,8 +13,8 @@ from mmpose.evaluation.functional import simcc_pck_accuracy
 from mmpose.models.utils.tta import flip_vectors
 from mmpose.registry import KEYPOINT_CODECS, MODELS
 from mmpose.utils.tensor_utils import to_numpy
-from mmpose.utils.typing import (ConfigType, InstanceList, OptConfigType,
-                                 OptSampleList)
+from mmpose.utils.typing import ConfigType, InstanceList, OptConfigType, OptSampleList
+
 from ..base_head import BaseHead
 
 OptIntSeq = Optional[Sequence[int]]

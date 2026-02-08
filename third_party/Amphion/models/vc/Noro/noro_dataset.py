@@ -4,16 +4,16 @@
 # LICENSE file in the root directory of this source tree.
 
 import os
-import numpy as np
-import librosa
-import torch
-from torch.utils.data import Dataset
-from torch.nn.utils.rnn import pad_sequence
-from utils.data_utils import *
-from multiprocessing import Pool, Lock
 import random
-import torchaudio
+from multiprocessing import Lock, Pool
 
+import librosa
+import numpy as np
+import torch
+import torchaudio
+from torch.nn.utils.rnn import pad_sequence
+from torch.utils.data import Dataset
+from utils.data_utils import *
 
 NUM_WORKERS = 64
 lock = Lock()

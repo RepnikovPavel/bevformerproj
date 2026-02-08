@@ -5,8 +5,7 @@ from typing import List, Optional, Union
 import cv2
 import numpy as np
 from mmpose.apis.webcam.nodes import NODES, BaseVisualizerNode
-from mmpose.apis.webcam.utils import (get_eye_keypoint_ids,
-                                      load_image_from_disk_or_url)
+from mmpose.apis.webcam.utils import get_eye_keypoint_ids, load_image_from_disk_or_url
 
 
 @NODES.register_module()

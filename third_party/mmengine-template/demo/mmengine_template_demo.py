@@ -1,7 +1,6 @@
 from argparse import ArgumentParser
 
 from mmengine.registry import DefaultScope
-
 from mmengine_template.infer import CustomInferencer
 
 

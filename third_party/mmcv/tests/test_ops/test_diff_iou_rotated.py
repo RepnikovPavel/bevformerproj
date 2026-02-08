@@ -2,7 +2,6 @@
 import numpy as np
 import pytest
 import torch
-
 from mmcv.ops import diff_iou_rotated_2d, diff_iou_rotated_3d
 from mmcv.utils import IS_CUDA_AVAILABLE, IS_MLU_AVAILABLE, IS_MUSA_AVAILABLE
 

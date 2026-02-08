@@ -1,12 +1,12 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import argparse
 
-import mmengine
 import rich
-from mmengine import DictAction
 from mmengine.evaluator import Evaluator
-
 from mmpretrain.registry import METRICS
+
+import mmengine
+from mmengine import DictAction
 
 HELP_URL = (
     'https://mmpretrain.readthedocs.io/en/latest/useful_tools/'

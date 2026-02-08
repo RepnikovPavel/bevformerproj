@@ -5,13 +5,14 @@ import os.path as osp
 import warnings
 from typing import List, Union
 
-import mmcv
 from mmengine.dist import get_rank
 from mmengine.fileio import dump, get, get_text, load
 from mmengine.logging import print_log
 from mmengine.utils import ProgressBar
 
+import mmcv
 from mmdet.registry import DATASETS
+
 from .base_det_dataset import BaseDetDataset
 
 

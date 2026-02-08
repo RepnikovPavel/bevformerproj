@@ -4,9 +4,8 @@ import platform
 import numpy as np
 import pytest
 import torch
-from mmengine.utils.dl_utils.parrots_wrapper import _BatchNorm
-
 from mmagic.models.archs import VGG16
+from mmengine.utils.dl_utils.parrots_wrapper import _BatchNorm
 
 
 def check_norm_state(modules, train_state):

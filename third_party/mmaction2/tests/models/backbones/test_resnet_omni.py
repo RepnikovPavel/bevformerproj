@@ -1,7 +1,6 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import torch
 import torchvision
-
 from mmaction.models import OmniResNet
 from mmaction.testing import generate_backbone_demo_inputs
 

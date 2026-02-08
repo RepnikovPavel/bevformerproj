@@ -4,13 +4,14 @@ import xml.etree.ElementTree as ET
 from collections import OrderedDict
 from typing import Dict, List, Optional, Sequence, Union
 
-import mmcv
 import numpy as np
 from mmcv.utils import print_log
 from mmdet.core import eval_recalls
 from mmdet.datasets.builder import DATASETS
 
+import mmcv
 from mmfewshot.detection.core import eval_map
+
 from .base import BaseFewShotDataset
 
 # pre-defined classes split for few shot setting

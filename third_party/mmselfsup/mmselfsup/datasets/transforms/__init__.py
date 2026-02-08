@@ -1,11 +1,18 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 from .formatting import PackSelfSupInputs
-from .processing import (BEiTMaskGenerator, ColorJitter, RandomCrop,
-                         RandomGaussianBlur, RandomPatchWithLabels,
+from .processing import (
+                         BEiTMaskGenerator,
+                         ColorJitter,
+                         RandomCrop,
+                         RandomGaussianBlur,
+                         RandomPatchWithLabels,
                          RandomResizedCrop,
                          RandomResizedCropAndInterpolationWithTwoPic,
-                         RandomRotation, RandomSolarize, RotationWithLabels,
-                         SimMIMMaskGenerator)
+                         RandomRotation,
+                         RandomSolarize,
+                         RotationWithLabels,
+                         SimMIMMaskGenerator,
+)
 from .pytorch_transform import MAERandomResizedCrop
 from .wrappers import MultiView
 

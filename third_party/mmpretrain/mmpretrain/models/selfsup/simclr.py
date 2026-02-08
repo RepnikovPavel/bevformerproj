@@ -6,6 +6,7 @@ from mmengine.dist import all_gather, get_rank
 
 from mmpretrain.registry import MODELS
 from mmpretrain.structures import DataSample
+
 from .base import BaseSelfSupervisor
 
 

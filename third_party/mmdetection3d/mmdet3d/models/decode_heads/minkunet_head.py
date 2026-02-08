@@ -7,6 +7,7 @@ from torch import nn as nn
 
 from mmdet3d.registry import MODELS
 from mmdet3d.structures.det3d_data_sample import SampleList
+
 from .decode_head import Base3DDecodeHead
 
 

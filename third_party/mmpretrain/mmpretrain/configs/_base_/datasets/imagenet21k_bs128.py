@@ -1,9 +1,13 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 # This is a BETA new format config file, and the usage may change recently.
 from mmengine.dataset import DefaultSampler
-
-from mmpretrain.datasets import (ImageNet21k, LoadImageFromFile, PackInputs,
-                                 RandomFlip, RandomResizedCrop)
+from mmpretrain.datasets import (
+                                 ImageNet21k,
+                                 LoadImageFromFile,
+                                 PackInputs,
+                                 RandomFlip,
+                                 RandomResizedCrop,
+)
 
 # dataset settings
 dataset_type = ImageNet21k

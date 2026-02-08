@@ -4,9 +4,7 @@ import math
 import numpy.testing as npt
 import pytest
 import torch
-
-from mmagic.models import (CharbonnierLoss, L1Loss, MaskedTVLoss, MSELoss,
-                           PSNRLoss)
+from mmagic.models import CharbonnierLoss, L1Loss, MaskedTVLoss, MSELoss, PSNRLoss
 
 
 def test_pixelwise_losses():

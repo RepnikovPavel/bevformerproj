@@ -7,8 +7,7 @@ from mmengine.logging import print_log
 from mmengine.model import is_model_wrapper
 from mmengine.optim import OptimWrapper
 
-from mmyolo.registry import (OPTIM_WRAPPER_CONSTRUCTORS, OPTIM_WRAPPERS,
-                             OPTIMIZERS)
+from mmyolo.registry import OPTIM_WRAPPER_CONSTRUCTORS, OPTIM_WRAPPERS, OPTIMIZERS
 
 
 @OPTIM_WRAPPER_CONSTRUCTORS.register_module()

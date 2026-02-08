@@ -5,9 +5,8 @@
 
 #################### Norm2D for Discriminators ####################
 
-import torch
-import torch.nn as nn
 import einops
+import torch.nn as nn
 from torch.nn.utils import spectral_norm, weight_norm
 
 CONV_NORMALIZATIONS = frozenset(

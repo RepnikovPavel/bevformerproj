@@ -5,10 +5,15 @@ from unittest.mock import MagicMock
 
 import pytest
 import torch
-
 from mmengine.config import Config, ConfigDict
-from mmengine.dataset import (BaseDataset, ClassBalancedDataset, Compose,
-                              ConcatDataset, RepeatDataset, force_full_init)
+from mmengine.dataset import (
+    BaseDataset,
+    ClassBalancedDataset,
+    Compose,
+    ConcatDataset,
+    RepeatDataset,
+    force_full_init,
+)
 from mmengine.registry import DATASETS, TRANSFORMS
 
 

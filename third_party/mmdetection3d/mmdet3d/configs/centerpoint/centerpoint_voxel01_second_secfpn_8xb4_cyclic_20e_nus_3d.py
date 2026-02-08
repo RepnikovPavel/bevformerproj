@@ -3,22 +3,29 @@ from mmengine import read_base
 
 with read_base():
     from .._base_.datasets.nus_3d import *
+    from .._base_.default_runtime import *
     from .._base_.models.centerpoint_voxel01_second_secfpn_nus import *
     from .._base_.schedules.cyclic_20e import *
-    from .._base_.default_runtime import *
-
-from mmengine.dataset.sampler import DefaultSampler
 
 from mmdet3d.datasets.dataset_wrappers import CBGSDataset
 from mmdet3d.datasets.nuscenes_dataset import NuScenesDataset
 from mmdet3d.datasets.transforms.formating import Pack3DDetInputs
-from mmdet3d.datasets.transforms.loading import (LoadAnnotations3D,
-                                                 LoadPointsFromFile,
-                                                 LoadPointsFromMultiSweeps)
+from mmdet3d.datasets.transforms.loading import (
+    LoadAnnotations3D,
+    LoadPointsFromFile,
+    LoadPointsFromMultiSweeps,
+)
 from mmdet3d.datasets.transforms.test_time_aug import MultiScaleFlipAug3D
 from mmdet3d.datasets.transforms.transforms_3d import (  # noqa
-    GlobalRotScaleTrans, ObjectNameFilter, ObjectRangeFilter, ObjectSample,
-    PointShuffle, PointsRangeFilter, RandomFlip3D)
+    GlobalRotScaleTrans,
+    ObjectNameFilter,
+    ObjectRangeFilter,
+    ObjectSample,
+    PointShuffle,
+    PointsRangeFilter,
+    RandomFlip3D,
+)
+from mmengine.dataset.sampler import DefaultSampler
 
 # If point cloud range is changed, the models should also change their point
 # cloud range accordingly

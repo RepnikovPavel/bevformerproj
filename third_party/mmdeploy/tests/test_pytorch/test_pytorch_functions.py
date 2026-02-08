@@ -5,12 +5,11 @@ import numpy as np
 import pytest
 import torch
 import torch.nn.functional as F
-from mmengine import Config
+from mmdeploy.utils import Backend
+from mmdeploy.utils.test import WrapFunction, backend_checker, get_rewrite_outputs
 from packaging.version import parse
 
-from mmdeploy.utils import Backend
-from mmdeploy.utils.test import (WrapFunction, backend_checker,
-                                 get_rewrite_outputs)
+from mmengine import Config
 
 deploy_cfg_ncnn = Config(
     dict(
@@ -168,9 +167,8 @@ def test_linear_ncnn():
 
 @backend_checker(Backend.NCNN)
 def test_norm_ncnn():
-    import onnx
-
     import mmdeploy.apis.ncnn as ncnn_apis
+    import onnx
     from mmdeploy.utils.test import get_onnx_model
 
     input = torch.rand(1, 17, 24)
@@ -374,7 +372,6 @@ def test_getitem__ascend():
     import tempfile
 
     import onnx
-
     from mmdeploy.core import RewriterContext
     onnx_file = tempfile.NamedTemporaryFile(suffix='onnx').name
 
@@ -420,7 +417,6 @@ def test_masked_fill_onnxruntime(input):
 @pytest.mark.parametrize('y', [torch.rand(1, 3, 4, 4)])
 def test_tensor_setitem(x, y):
     import onnx
-
     from mmdeploy.utils.test import get_onnx_model
 
     def setitem_slice(x, y):
@@ -450,7 +446,6 @@ def test_tensor_setitem(x, y):
 @pytest.mark.parametrize('x', [torch.rand(1, 3, 16, 16)])
 def test_tensor_setitem_scalar(x):
     import onnx
-
     from mmdeploy.utils.test import get_onnx_model
 
     def setitem_slice(x):

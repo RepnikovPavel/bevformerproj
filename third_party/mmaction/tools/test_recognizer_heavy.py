@@ -1,22 +1,27 @@
 import argparse
-import time
-import torch
-import torch.distributed as dist
-import mmcv
 import os
 import os.path as osp
-from mmcv.runner import load_checkpoint, obj_from_dict
-from mmcv.runner import get_dist_info
-from mmcv.parallel.distributed import MMDistributedDataParallel
 import tempfile
-from mmaction import datasets
-from mmaction.apis import init_dist
-from mmaction.datasets import build_dataloader
-from mmaction.models import build_recognizer
-from mmaction.core.evaluation.accuracy import softmax, top_k_accuracy
-from mmaction.core.evaluation.accuracy import mean_class_accuracy
+import time
 import warnings
 from functools import reduce
+
+import torch
+import torch.distributed as dist
+from mmaction.apis import init_dist
+from mmaction.core.evaluation.accuracy import (
+    mean_class_accuracy,
+    softmax,
+    top_k_accuracy,
+)
+from mmaction.datasets import build_dataloader
+from mmaction.models import build_recognizer
+from mmcv.parallel.distributed import MMDistributedDataParallel
+from mmcv.runner import get_dist_info, load_checkpoint, obj_from_dict
+
+import mmcv
+from mmaction import datasets
+
 warnings.filterwarnings("ignore", category=UserWarning)
 
 args = None

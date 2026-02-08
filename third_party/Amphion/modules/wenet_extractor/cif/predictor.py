@@ -23,8 +23,8 @@
 from typing import Optional
 
 import torch
-from torch import nn
 from modules.wenet_extractor.utils.mask import make_pad_mask
+from torch import nn
 
 
 class Predictor(nn.Module):

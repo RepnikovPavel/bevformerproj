@@ -3,8 +3,7 @@ from .base import BaseParser
 from .coco_parser import COCOTextDetAnnParser
 from .ctw1500_parser import CTW1500AnnParser
 from .funsd_parser import FUNSDTextDetAnnParser
-from .icdar_txt_parser import (ICDARTxtTextDetAnnParser,
-                               ICDARTxtTextRecogAnnParser)
+from .icdar_txt_parser import ICDARTxtTextDetAnnParser, ICDARTxtTextRecogAnnParser
 from .mjsynth_parser import MJSynthAnnParser
 from .naf_parser import NAFAnnParser
 from .sroie_parser import SROIETextDetAnnParser

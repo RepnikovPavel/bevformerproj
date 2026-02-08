@@ -4,7 +4,6 @@ from typing import Callable, Dict, Optional, Sequence, Tuple, Union
 
 import numpy as np
 import torch
-from mmengine import Config
 from mmengine.dataset import pseudo_collate
 from mmengine.model import BaseDataPreprocessor
 from mmengine.registry import Registry
@@ -12,6 +11,7 @@ from mmengine.registry import Registry
 from mmdeploy.codebase.base import CODEBASE, BaseTask, MMCodebase
 from mmdeploy.utils import Codebase, Task
 from mmdeploy.utils.config_utils import get_input_shape, is_dynamic_shape
+from mmengine import Config
 
 MMROTATE_TASK = Registry('mmrotate_tasks')
 
@@ -31,8 +31,9 @@ class MMRotate(MMCodebase):
 
     @classmethod
     def register_all_modules(cls):
-        from mmdet.utils.setup_env import \
-            register_all_modules as register_all_modules_mmdet
+        from mmdet.utils.setup_env import (
+            register_all_modules as register_all_modules_mmdet,
+        )
         from mmrotate.utils.setup_env import register_all_modules
 
         cls.register_deploy_modules()

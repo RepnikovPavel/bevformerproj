@@ -1,6 +1,5 @@
 from .simple_consensus import SimpleConsensus
-from .stpp import parse_stage_config
-from .stpp import StructuredTemporalPyramidPooling
+from .stpp import StructuredTemporalPyramidPooling, parse_stage_config
 
 __all__ = [
     'SimpleConsensus',

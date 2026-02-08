@@ -2,7 +2,6 @@
 import os.path as osp
 
 import pytest
-
 from mmgen.datasets import GrowScaleImgDataset
 
 

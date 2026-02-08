@@ -12,9 +12,10 @@ import csv
 import os.path as osp
 from multiprocessing import Pool
 
-import mmcv
 from mmengine.config import Config
 from mmengine.fileio import dump, get
+
+import mmcv
 
 
 def parse_args():

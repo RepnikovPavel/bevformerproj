@@ -8,6 +8,7 @@ from torch import Tensor, nn
 from mmaction.evaluation import top_k_accuracy
 from mmaction.registry import MODELS
 from mmaction.utils import ConfigType, SampleList
+
 from .base import BaseHead
 
 

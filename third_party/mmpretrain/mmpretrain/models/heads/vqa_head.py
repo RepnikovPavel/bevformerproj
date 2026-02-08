@@ -1,13 +1,13 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 from typing import Optional, Union
 
-import mmengine
 import numpy as np
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
 from mmengine.model import BaseModule
 
+import mmengine
 from mmpretrain.registry import MODELS
 
 

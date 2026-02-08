@@ -3,13 +3,13 @@ import copy
 import os.path as osp
 import unittest
 
-import mmcv
 import numpy as np
 import torch
-from PIL import Image
-
 from mmpretrain.registry import TRANSFORMS
 from mmpretrain.structures import DataSample, MultiTaskDataSample
+from PIL import Image
+
+import mmcv
 
 
 class TestPackInputs(unittest.TestCase):

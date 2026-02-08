@@ -1,15 +1,16 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 from mmcv.transforms.processing import Resize
-from mmengine.dataset.sampler import DefaultSampler
-from mmengine.visualization.vis_backend import LocalVisBackend
-
 from mmdet3d.datasets.kitti_dataset import KittiDataset
 from mmdet3d.datasets.transforms.formating import Pack3DDetInputs
-from mmdet3d.datasets.transforms.loading import (LoadAnnotations3D,
-                                                 LoadImageFromFileMono3D)
+from mmdet3d.datasets.transforms.loading import (
+                                                 LoadAnnotations3D,
+                                                 LoadImageFromFileMono3D,
+)
 from mmdet3d.datasets.transforms.transforms_3d import RandomFlip3D
 from mmdet3d.evaluation.metrics.kitti_metric import KittiMetric
 from mmdet3d.visualization.local_visualizer import Det3DLocalVisualizer
+from mmengine.dataset.sampler import DefaultSampler
+from mmengine.visualization.vis_backend import LocalVisBackend
 
 dataset_type = 'KittiDataset'
 data_root = 'data/kitti/'

@@ -3,9 +3,11 @@ from typing import Union
 
 from mmyolo.models import YOLODetector
 from mmyolo.registry import MODELS
-from projects.assigner_visualization.dense_heads import (RTMHeadAssigner,
-                                                         YOLOv7HeadAssigner,
-                                                         YOLOv8HeadAssigner)
+from projects.assigner_visualization.dense_heads import (
+    RTMHeadAssigner,
+    YOLOv7HeadAssigner,
+    YOLOv8HeadAssigner,
+)
 
 
 @MODELS.register_module()

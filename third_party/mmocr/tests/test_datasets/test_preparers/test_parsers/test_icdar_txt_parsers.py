@@ -4,7 +4,9 @@ import tempfile
 import unittest
 
 from mmocr.datasets.preparers.parsers.icdar_txt_parser import (
-    ICDARTxtTextDetAnnParser, ICDARTxtTextRecogAnnParser)
+    ICDARTxtTextDetAnnParser,
+    ICDARTxtTextRecogAnnParser,
+)
 from mmocr.utils import list_to_file
 
 

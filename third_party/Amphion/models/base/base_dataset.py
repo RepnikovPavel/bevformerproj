@@ -3,16 +3,15 @@
 # This source code is licensed under the MIT license found in the
 # LICENSE file in the root directory of this source tree.
 
-import torch
-import numpy as np
-import torch.utils.data
-from torch.nn.utils.rnn import pad_sequence
 import librosa
-
-from utils.data_utils import *
+import numpy as np
+import torch
+import torch.utils.data
 from processors.acoustic_extractor import cal_normalized_mel
 from text import text_to_sequence
 from text.text_token_collation import phoneIDCollation
+from torch.nn.utils.rnn import pad_sequence
+from utils.data_utils import *
 
 
 class BaseOfflineDataset(torch.utils.data.Dataset):

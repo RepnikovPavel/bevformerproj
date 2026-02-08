@@ -4,15 +4,14 @@
 # LICENSE file in the root directory of this source tree.
 
 import random
-import torch
-import whisper
-
-from models.base.base_trainer import BaseTrainer
-from models.codec.coco.coco_dataset import CocoDataset, CocoCollator
-from models.svc.autoregressive_transformer.ar_model import AutoregressiveTransformer
-from models.codec.coco.rep_coco_model import CocoContentStyle, CocoContent, CocoStyle
 
 import accelerate
+import torch
+import whisper
+from models.base.base_trainer import BaseTrainer
+from models.codec.coco.coco_dataset import CocoCollator, CocoDataset
+from models.codec.coco.rep_coco_model import CocoContent, CocoContentStyle, CocoStyle
+from models.svc.autoregressive_transformer.ar_model import AutoregressiveTransformer
 
 
 class AutoregressiveTransformerTrainer(BaseTrainer):

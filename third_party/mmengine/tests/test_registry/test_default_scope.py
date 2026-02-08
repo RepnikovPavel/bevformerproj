@@ -2,7 +2,6 @@
 from collections import OrderedDict
 
 import pytest
-
 from mmengine.registry import DefaultScope
 
 

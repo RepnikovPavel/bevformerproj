@@ -5,7 +5,6 @@ from abc import ABC, abstractmethod
 from copy import deepcopy
 from functools import partial
 
-import mmcv
 import numpy as np
 import torch
 import torch.distributed as dist
@@ -16,17 +15,25 @@ from scipy.stats import entropy
 from torchvision import models
 from torchvision.models.inception import inception_v3
 
+import mmcv
 from mmgen.models.architectures import InceptionV3
 from mmgen.models.architectures.common import get_module_device
 from mmgen.models.architectures.lpips import PerceptualLoss
 from mmgen.models.losses import gaussian_kld
 from mmgen.utils import MMGEN_CACHE_DIR
 from mmgen.utils.io_utils import download_from_url
+
 from ..registry import METRICS
-from .metric_utils import (_f_special_gauss, _hox_downsample,
-                           compute_pr_distances, finalize_descriptors,
-                           get_descriptors_for_minibatch, get_gaussian_kernel,
-                           laplacian_pyramid, slerp)
+from .metric_utils import (
+    _f_special_gauss,
+    _hox_downsample,
+    compute_pr_distances,
+    finalize_descriptors,
+    get_descriptors_for_minibatch,
+    get_gaussian_kernel,
+    laplacian_pyramid,
+    slerp,
+)
 
 TERO_INCEPTION_URL = 'https://nvlabs-fi-cdn.nvidia.com/stylegan2-ada-pytorch/pretrained/metrics/inception-2015-12-05.pt'  # noqa
 

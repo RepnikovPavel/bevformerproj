@@ -5,6 +5,7 @@ from typing import Dict, Tuple
 import yaml
 
 from mmocr.registry import DATA_PARSERS
+
 from .base import BaseParser
 
 

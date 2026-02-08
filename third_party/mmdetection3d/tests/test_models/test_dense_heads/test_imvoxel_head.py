@@ -3,7 +3,6 @@ from unittest import TestCase
 
 import pytest
 import torch
-
 from mmdet3d import *  # noqa
 from mmdet3d.models.dense_heads import ImVoxelHead
 from mmdet3d.testing import create_detector_inputs

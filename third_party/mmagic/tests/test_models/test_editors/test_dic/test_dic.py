@@ -2,13 +2,11 @@
 from unittest.mock import patch
 
 import torch
+from mmagic.models import DIC, DataPreprocessor, DICNet, LightCNN
+from mmagic.models.losses import GANLoss, L1Loss, LightCNNFeatureLoss, PerceptualVGG
+from mmagic.structures import DataSample
 from mmengine.optim import OptimWrapper
 from torch.optim import Adam
-
-from mmagic.models import DIC, DataPreprocessor, DICNet, LightCNN
-from mmagic.models.losses import (GANLoss, L1Loss, LightCNNFeatureLoss,
-                                  PerceptualVGG)
-from mmagic.structures import DataSample
 
 
 @patch.object(PerceptualVGG, 'init_weights')

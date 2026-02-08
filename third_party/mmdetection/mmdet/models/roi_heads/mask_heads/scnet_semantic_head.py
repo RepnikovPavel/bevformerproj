@@ -1,6 +1,7 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 from mmdet.models.layers import ResLayer, SimplifiedBasicBlock
 from mmdet.registry import MODELS
+
 from .fused_semantic_head import FusedSemanticHead
 
 

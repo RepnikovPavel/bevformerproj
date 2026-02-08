@@ -1,11 +1,11 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import pytest
 import torch
-from mmengine import Config
-
 from mmdeploy.codebase import import_codebase
 from mmdeploy.utils import Backend, Codebase, load_config
 from mmdeploy.utils.test import WrapModel, check_backend, get_rewrite_outputs
+
+from mmengine import Config
 
 try:
     import_codebase(Codebase.MMACTION)

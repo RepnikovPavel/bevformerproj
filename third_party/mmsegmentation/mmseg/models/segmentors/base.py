@@ -7,8 +7,14 @@ from mmengine.structures import PixelData
 from torch import Tensor
 
 from mmseg.structures import SegDataSample
-from mmseg.utils import (ForwardResults, OptConfigType, OptMultiConfig,
-                         OptSampleList, SampleList)
+from mmseg.utils import (
+    ForwardResults,
+    OptConfigType,
+    OptMultiConfig,
+    OptSampleList,
+    SampleList,
+)
+
 from ..utils import resize
 
 

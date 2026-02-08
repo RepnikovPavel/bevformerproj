@@ -1,8 +1,9 @@
 import argparse
 import os.path as osp
 
-import mmengine
 from pycocotools.coco import COCO
+
+import mmengine
 
 
 def extract_coco(args):

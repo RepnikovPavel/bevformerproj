@@ -13,6 +13,7 @@ from mmhuman3d.utils.geometry import (
     batch_rodrigues,
     weak_perspective_projection,
 )
+
 from ..backbones.builder import build_backbone
 from ..body_models.builder import build_body_model
 from ..heads.builder import build_head

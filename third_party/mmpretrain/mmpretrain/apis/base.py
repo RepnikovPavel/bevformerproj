@@ -13,6 +13,7 @@ from mmengine.runner import load_checkpoint
 
 from mmpretrain.structures import DataSample
 from mmpretrain.utils import track
+
 from .model import get_model, list_models
 
 ModelType = Union[BaseModel, str, Config]

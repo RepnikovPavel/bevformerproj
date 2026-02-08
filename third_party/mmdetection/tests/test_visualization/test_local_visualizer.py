@@ -4,11 +4,10 @@ from unittest import TestCase
 import cv2
 import numpy as np
 import torch
-from mmengine.structures import InstanceData, PixelData
-
 from mmdet.evaluation import INSTANCE_OFFSET
 from mmdet.structures import DetDataSample
 from mmdet.visualization import DetLocalVisualizer, TrackLocalVisualizer
+from mmengine.structures import InstanceData, PixelData
 
 
 def _rand_bboxes(num_boxes, h, w):

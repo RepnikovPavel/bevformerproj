@@ -2,12 +2,11 @@
 from unittest import TestCase
 
 import torch
-from torch.nn.modules import AvgPool2d
-from torch.nn.modules.batchnorm import _BatchNorm
-
 from mmpose.models.backbones import SEResNet
 from mmpose.models.backbones.resnet import ResLayer
 from mmpose.models.backbones.seresnet import SEBottleneck, SELayer
+from torch.nn.modules import AvgPool2d
+from torch.nn.modules.batchnorm import _BatchNorm
 
 
 class TestSEResnet(TestCase):

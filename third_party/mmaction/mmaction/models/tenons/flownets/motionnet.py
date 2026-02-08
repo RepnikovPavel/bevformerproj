@@ -3,13 +3,13 @@ import logging
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-
-from ....ops.resample2d_package.resample2d import Resample2d
-from ....losses import charbonnier_loss, SSIM_loss
 from mmcv.cnn import kaiming_init
 from mmcv.runner import load_checkpoint
 
+from ....losses import SSIM_loss, charbonnier_loss
+from ....ops.resample2d_package.resample2d import Resample2d
 from ...registry import FLOWNETS
+
 
 def make_smoothness_mask(batch, height, width, tensor_type):
     mask = torch.ones(batch, 2, height, width).type(tensor_type)

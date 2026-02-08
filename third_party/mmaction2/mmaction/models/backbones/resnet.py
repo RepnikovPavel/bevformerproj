@@ -2,7 +2,6 @@
 from collections import OrderedDict
 from typing import Dict, List, Optional, Sequence, Tuple, Union
 
-import mmengine
 import torch
 import torch.nn as nn
 from mmcv.cnn import ConvModule
@@ -12,6 +11,7 @@ from mmengine.runner.checkpoint import _load_checkpoint
 from mmengine.utils.dl_utils.parrots_wrapper import _BatchNorm
 from torch.utils import checkpoint as cp
 
+import mmengine
 from mmaction.registry import MODELS
 from mmaction.utils import ConfigType
 

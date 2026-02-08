@@ -6,6 +6,7 @@ from mmcv.cnn import ConvModule
 from mmengine.model import BaseModule
 
 from mmpose.registry import MODELS
+
 from .base_backbone import BaseBackbone
 from .resnet import BasicBlock, ResLayer
 

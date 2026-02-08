@@ -4,9 +4,12 @@ DMLC submission script, SLURM version
 # pylint: disable=invalid-name
 from __future__ import absolute_import
 
-import subprocess, logging
+import logging
+import subprocess
 from threading import Thread
+
 from . import tracker
+
 
 def get_mpi_env(envs):
     """get the slurm command for setting the environment

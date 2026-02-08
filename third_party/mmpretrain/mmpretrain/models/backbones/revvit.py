@@ -12,8 +12,8 @@ from torch.autograd import Function as Function
 
 from mmpretrain.models.backbones.base_backbone import BaseBackbone
 from mmpretrain.registry import MODELS
-from ..utils import (MultiheadAttention, build_norm_layer, resize_pos_embed,
-                     to_2tuple)
+
+from ..utils import MultiheadAttention, build_norm_layer, resize_pos_embed, to_2tuple
 
 
 class RevBackProp(Function):

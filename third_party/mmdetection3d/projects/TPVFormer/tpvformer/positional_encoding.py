@@ -1,8 +1,7 @@
 import torch
 import torch.nn as nn
-from mmengine.model import BaseModule
-
 from mmdet3d.registry import MODELS
+from mmengine.model import BaseModule
 
 
 @MODELS.register_module()

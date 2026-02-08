@@ -1,9 +1,11 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import pytest
 import torch
-
 from mmagic.models.editors.dic.feedback_hour_glass import (
-    Hourglass, ResBlock, reduce_to_five_heatmaps)
+    Hourglass,
+    ResBlock,
+    reduce_to_five_heatmaps,
+)
 from mmagic.registry import MODELS
 
 

@@ -2,13 +2,13 @@
 import os
 from copy import deepcopy
 
-import mmcv
 import torch
 from mmcv.parallel import MMDataParallel, MMDistributedDataParallel
 from mmcv.runner import HOOKS, IterBasedRunner, OptimizerHook, build_runner
 from mmcv.runner import set_random_seed as set_random_seed_mmcv
 from mmcv.utils import build_from_cfg
 
+import mmcv
 from mmgen.core.ddp_wrapper import DistributedDataParallelWrapper
 from mmgen.core.optimizer import build_optimizers
 from mmgen.core.runners.apex_amp_utils import apex_amp_initialize

@@ -5,6 +5,7 @@ import numpy as np
 import torch.nn as nn
 
 from mmagic.registry import MODELS
+
 from .deblurganv2_util import get_norm_layer
 
 backbone_list = ['DoubleGan', 'MultiScale', 'NoGan', 'PatchGan']

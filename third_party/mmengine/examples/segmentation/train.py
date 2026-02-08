@@ -9,17 +9,16 @@ import numpy as np
 import torch
 import torch.nn.functional as F
 import torchvision.transforms as transforms
-from PIL import Image
-from torch.optim import AdamW
-from torchvision.datasets import VisionDataset
-from torchvision.models.segmentation import deeplabv3_resnet50
-
 from mmengine.dist import master_only
 from mmengine.evaluator import BaseMetric
 from mmengine.hooks import Hook
 from mmengine.model import BaseModel
 from mmengine.optim import AmpOptimWrapper
 from mmengine.runner import Runner
+from PIL import Image
+from torch.optim import AdamW
+from torchvision.datasets import VisionDataset
+from torchvision.models.segmentation import deeplabv3_resnet50
 
 
 def create_palette(csv_filepath):

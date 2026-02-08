@@ -2,7 +2,6 @@
 import unittest
 
 import pytest
-
 from mmrazor.utils import get_placeholder
 
 

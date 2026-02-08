@@ -4,6 +4,7 @@ import torch.nn as nn
 import torch.nn.functional as F
 
 from mmaction.registry import MODELS
+
 from .binary_logistic_regression_loss import binary_logistic_regression_loss
 
 

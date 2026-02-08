@@ -2,12 +2,12 @@
 import os.path as osp
 from typing import Dict, List, Optional, Sequence, Tuple, Union
 
-import mmcv
 import numpy as np
 from mmengine.dist import master_only
 from mmengine.fileio.io import isdir, isfile, join_path, list_dir_or_file
 from mmengine.visualization import Visualizer
 
+import mmcv
 from mmaction.registry import VISBACKENDS, VISUALIZERS
 from mmaction.structures import ActionDataSample
 

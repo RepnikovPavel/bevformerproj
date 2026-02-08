@@ -2,12 +2,11 @@
 
 import numpy as np
 import torch
-from mmengine.config import ConfigDict
-
 from mmagic.datasets.transforms import PackInputs
 from mmagic.registry import MODELS
 from mmagic.structures import DataSample
 from mmagic.utils import register_all_modules
+from mmengine.config import ConfigDict
 
 register_all_modules()
 

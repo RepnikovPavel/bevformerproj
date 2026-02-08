@@ -5,12 +5,12 @@ import math
 import os.path as osp
 from functools import partial
 
-import mmcv
-import mmengine
 import numpy as np
+from mmocr.utils import dump_ocr_data
 from shapely.geometry import Polygon
 
-from mmocr.utils import dump_ocr_data
+import mmcv
+import mmengine
 
 
 def seg2bbox(seg):

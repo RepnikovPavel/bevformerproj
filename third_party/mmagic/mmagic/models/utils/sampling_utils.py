@@ -3,8 +3,9 @@ from typing import Callable, List, Optional, Sequence, Union
 
 import numpy as np
 import torch
-from mmengine import is_list_of
 from torch import Tensor
+
+from mmengine import is_list_of
 
 
 def noise_sample_fn(noise: Union[Tensor, Callable, None] = None,

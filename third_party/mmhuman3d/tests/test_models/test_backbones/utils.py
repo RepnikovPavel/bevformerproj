@@ -1,8 +1,7 @@
-from torch.nn.modules import GroupNorm
-from torch.nn.modules.batchnorm import _BatchNorm
-
 from mmhuman3d.models.backbones.resnet import BasicBlock, Bottleneck
 from mmhuman3d.models.utils import SimplifiedBasicBlock
+from torch.nn.modules import GroupNorm
+from torch.nn.modules.batchnorm import _BatchNorm
 
 
 def is_block(modules):

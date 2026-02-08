@@ -3,20 +3,15 @@
 # This source code is licensed under the MIT license found in the
 # LICENSE file in the root directory of this source tree.
 
-import json
 import os
-import time
-import numpy as np
-from tqdm import tqdm
+
 import torch
 from torch.utils.data import DataLoader
+from utils.audio_slicer import is_silence
+from utils.io import save_audio
 
 from models.svc.base import SVCInference
 from models.svc.vits.vits import SynthesizerTrn
-
-from models.svc.base.svc_dataset import SVCTestDataset, SVCTestCollator
-from utils.io import save_audio
-from utils.audio_slicer import is_silence
 
 
 class VitsInference(SVCInference):

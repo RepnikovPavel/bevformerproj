@@ -2,9 +2,8 @@
 import pytest
 import torch
 from mmcls.models import SwinTransformer
-from torch import nn
-
 from mmselfsup.engine import LearningRateDecayOptimWrapperConstructor
+from torch import nn
 
 
 class ToyViTBackbone(nn.Module):

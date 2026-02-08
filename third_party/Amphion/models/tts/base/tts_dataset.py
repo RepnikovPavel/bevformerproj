@@ -5,27 +5,21 @@
 
 import json
 import os
-import torchaudio
+
 import numpy as np
 import torch
-from utils.data_utils import *
-from torch.nn.utils.rnn import pad_sequence
+import torchaudio
+from models.base.base_dataset import (
+    BaseOfflineCollator,
+    BaseOfflineDataset,
+    BaseTestCollator,
+    BaseTestDataset,
+)
+from processors.acoustic_extractor import cal_normalized_mel
 from text import text_to_sequence
 from text.text_token_collation import phoneIDCollation
-from processors.acoustic_extractor import cal_normalized_mel
-
-from models.base.base_dataset import (
-    BaseOfflineDataset,
-    BaseOfflineCollator,
-    BaseTestDataset,
-    BaseTestCollator,
-)
-
-from processors.content_extractor import (
-    ContentvecExtractor,
-    WenetExtractor,
-    WhisperExtractor,
-)
+from torch.nn.utils.rnn import pad_sequence
+from utils.data_utils import *
 
 
 class TTSDataset(BaseOfflineDataset):

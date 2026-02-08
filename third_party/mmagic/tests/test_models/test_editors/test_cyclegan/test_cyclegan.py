@@ -3,13 +3,13 @@ import copy
 import sys
 
 import torch
-from mmengine import MessageHub
-from mmengine.optim import OptimWrapper, OptimWrapperDict
-
 from mmagic.models import CycleGAN, DataPreprocessor
 from mmagic.models.archs import PatchDiscriminator
 from mmagic.models.editors.cyclegan import ResnetGenerator
 from mmagic.structures import DataSample
+from mmengine.optim import OptimWrapper, OptimWrapperDict
+
+from mmengine import MessageHub
 
 
 def obj_from_dict(info: dict, parent=None, default_args=None):

@@ -3,7 +3,6 @@ import logging
 import os
 import tempfile
 
-import mmcv
 import numpy as np
 import torch
 from mmcv.ops import RoIPool
@@ -11,6 +10,7 @@ from mmcv.parallel import collate, scatter
 from mmcv.runner import load_checkpoint
 from mmdet.datasets.pipelines import Compose
 
+import mmcv
 from mmtrack.models import build_model
 
 

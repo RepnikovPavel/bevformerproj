@@ -4,22 +4,22 @@
 # LICENSE file in the root directory of this source tree.
 
 import argparse
-from tqdm import tqdm
-import torch
+
 import numpy as np
-from torch.utils.data import DataLoader
-from torch.nn.parallel import DistributedDataParallel
-from optimizer.optimizers import Eve, ScaledAdam
-from schedulers.scheduler import NoamScheduler, Eden
-from models.tts.valle.valle_dataset import (
-    VALLEDataset,
-    VALLECollator,
-    batch_by_size,
-)
+import torch
 from models.base.base_sampler import VariableSampler
 from models.tts.base import TTSTrainer
 from models.tts.valle.valle import VALLE
-import diffusers
+from models.tts.valle.valle_dataset import (
+    VALLECollator,
+    VALLEDataset,
+    batch_by_size,
+)
+from optimizer.optimizers import Eve, ScaledAdam
+from schedulers.scheduler import Eden, NoamScheduler
+from torch.nn.parallel import DistributedDataParallel
+from torch.utils.data import DataLoader
+from tqdm import tqdm
 
 
 class VALLETrainer(TTSTrainer):

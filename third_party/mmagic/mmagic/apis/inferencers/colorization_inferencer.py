@@ -2,15 +2,16 @@
 import os
 from typing import Dict, List
 
-import mmcv
 import numpy as np
 import torch
-from mmengine import mkdir_or_exist
 from mmengine.dataset import Compose
 from mmengine.dataset.utils import default_collate as collate
 
+import mmcv
 from mmagic.structures import DataSample
 from mmagic.utils import tensor2img
+from mmengine import mkdir_or_exist
+
 from .base_mmagic_inferencer import BaseMMagicInferencer, InputsType, PredType
 
 

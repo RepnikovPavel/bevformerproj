@@ -1,5 +1,4 @@
 import torch
-
 from mmhuman3d.models.architectures.expressive_mesh_estimator import (
     SMPLXImageBodyModelEstimator,
     pose2rotmat,

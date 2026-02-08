@@ -6,6 +6,7 @@ from torch import Tensor, nn
 
 from mmaction.registry import MODELS
 from mmaction.utils import ConfigType
+
 from .base import BaseHead
 
 

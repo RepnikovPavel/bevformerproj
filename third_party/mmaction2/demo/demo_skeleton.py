@@ -3,16 +3,20 @@ import argparse
 import tempfile
 
 import cv2
-import mmcv
-import mmengine
 import torch
-from mmengine import DictAction
-from mmengine.utils import track_iter_progress
-
-from mmaction.apis import (detection_inference, inference_skeleton,
-                           init_recognizer, pose_inference)
+from mmaction.apis import (
+    detection_inference,
+    inference_skeleton,
+    init_recognizer,
+    pose_inference,
+)
 from mmaction.registry import VISUALIZERS
 from mmaction.utils import frame_extract
+from mmengine.utils import track_iter_progress
+
+import mmcv
+import mmengine
+from mmengine import DictAction
 
 try:
     import moviepy.editor as mpy

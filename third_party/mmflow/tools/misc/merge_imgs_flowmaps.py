@@ -3,8 +3,9 @@ import argparse
 import os.path as osp
 
 import cv2
-import mmcv
 import numpy as np
+
+import mmcv
 
 try:
     import imageio

@@ -3,11 +3,10 @@
 # This source code is licensed under the MIT license found in the
 # LICENSE file in the root directory of this source tree.
 
-import torch
 import numpy as np
-
+import torch
 from tqdm import tqdm
-from utils.util import pad_mels_to_tensors, pad_f0_to_tensors
+from utils.util import pad_f0_to_tensors, pad_mels_to_tensors
 
 
 def vocoder_inference(cfg, model, mels, f0s=None, device=None, fast_inference=False):

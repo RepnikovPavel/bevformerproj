@@ -1,11 +1,14 @@
 # Copyright (c) OpenMMLab. All rights reserved.
+from mmagic.models import DataPreprocessor
+from mmagic.models.editors import (
+                                   PConvDecoder,
+                                   PConvEncoder,
+                                   PConvEncoderDecoder,
+                                   PConvInpaintor,
+)
+from mmagic.models.losses import L1Loss, MaskedTVLoss, PerceptualLoss
 from mmengine.model import MMSeparateDistributedDataParallel
 from mmengine.optim import OptimWrapper
-
-from mmagic.models import DataPreprocessor
-from mmagic.models.editors import (PConvDecoder, PConvEncoder,
-                                   PConvEncoderDecoder, PConvInpaintor)
-from mmagic.models.losses import L1Loss, MaskedTVLoss, PerceptualLoss
 
 # DistributedDataParallel
 model_wrapper_cfg = dict(type=MMSeparateDistributedDataParallel)

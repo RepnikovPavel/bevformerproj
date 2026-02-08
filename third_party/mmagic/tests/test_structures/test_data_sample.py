@@ -3,11 +3,10 @@ from unittest import TestCase
 
 import numpy as np
 import torch
-from mmengine.structures import LabelData
-from mmengine.testing import assert_allclose
-
 from mmagic.structures import DataSample
 from mmagic.structures.data_sample import is_splitable_var
+from mmengine.structures import LabelData
+from mmengine.testing import assert_allclose
 
 
 def test_is_stacked_var():

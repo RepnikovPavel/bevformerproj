@@ -1,9 +1,10 @@
 import os
-import numpy as np
 import tempfile
+
 import matplotlib.pyplot as plt
-from sklearn.metrics import euclidean_distances
+import numpy as np
 from skimage.io import imsave
+from sklearn.metrics import euclidean_distances
 
 
 def rgb2hex(rgb_number):

@@ -5,7 +5,9 @@ import tempfile
 import unittest
 
 from mmocr.datasets.preparers.parsers.wildreceipt_parser import (
-    WildreceiptKIEAnnParser, WildreceiptTextDetAnnParser)
+    WildreceiptKIEAnnParser,
+    WildreceiptTextDetAnnParser,
+)
 from mmocr.utils import list_to_file
 
 

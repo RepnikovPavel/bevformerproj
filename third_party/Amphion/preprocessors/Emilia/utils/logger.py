@@ -4,8 +4,8 @@
 # LICENSE file in the root directory of this source tree.
 
 import logging
-import time
 import os
+import time
 
 
 class Logger:

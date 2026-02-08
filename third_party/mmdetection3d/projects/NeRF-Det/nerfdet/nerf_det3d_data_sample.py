@@ -2,9 +2,8 @@
 from typing import Dict, List, Optional, Tuple, Union
 
 import torch
-from mmengine.structures import InstanceData
-
 from mmdet3d.structures import Det3DDataSample
+from mmengine.structures import InstanceData
 
 
 class NeRFDet3DDataSample(Det3DDataSample):

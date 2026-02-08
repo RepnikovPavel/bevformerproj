@@ -3,12 +3,12 @@ from typing import Dict, List, Optional, Sequence, Union
 
 import torch
 import torch.nn.functional as F
-from torch import Tensor, nn
-
 from mmocr.models.common import Dictionary
 from mmocr.models.textrecog.decoders import BaseDecoder
 from mmocr.registry import MODELS
 from mmocr.utils.typing_utils import TextSpottingDataSample
+from torch import Tensor, nn
+
 from .position_embedding import PositionEmbeddingSine
 
 

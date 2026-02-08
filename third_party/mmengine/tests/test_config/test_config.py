@@ -13,13 +13,13 @@ from unittest import TestCase
 from unittest.mock import patch
 
 import pytest
-
-import mmengine
-from mmengine import Config, ConfigDict, DictAction
 from mmengine.config.lazy import LazyObject
 from mmengine.fileio import dump, load
 from mmengine.registry import MODELS, DefaultScope, Registry
 from mmengine.utils import is_installed
+
+import mmengine
+from mmengine import Config, ConfigDict, DictAction
 
 
 class TestConfig:

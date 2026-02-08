@@ -1,15 +1,14 @@
 import torch
 import torch.nn as nn
-import torch.nn.functional as F
 
 try:
     import torch_scatter
-except Exception as e:
+except Exception:
     # Incase someone doesn't want to use dynamic pillar vfe and hasn't installed torch_scatter
     pass
 
-from .vfe_template import VFETemplate
 from .dynamic_pillar_vfe import PFNLayerV2
+from .vfe_template import VFETemplate
 
 
 class DynamicVoxelVFE(VFETemplate):

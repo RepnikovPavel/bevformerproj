@@ -5,8 +5,8 @@ import torch
 import torch.nn as nn
 
 from mmagic.registry import MODELS
-from ..gan_loss import (disc_shift_loss, gradient_penalty_loss,
-                        r1_gradient_penalty_loss)
+
+from ..gan_loss import disc_shift_loss, gradient_penalty_loss, r1_gradient_penalty_loss
 
 
 @MODELS.register_module()

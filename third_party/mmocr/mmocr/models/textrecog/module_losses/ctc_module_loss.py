@@ -8,6 +8,7 @@ import torch.nn as nn
 from mmocr.models.common.dictionary import Dictionary
 from mmocr.registry import MODELS
 from mmocr.structures import TextRecogDataSample
+
 from .base import BaseTextRecogModuleLoss
 
 

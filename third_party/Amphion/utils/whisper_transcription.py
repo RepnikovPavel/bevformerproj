@@ -7,10 +7,11 @@ import os
 import pathlib
 import string
 import time
-from multiprocessing import Pool, Value, Lock
-from transformers import AutoModelForSpeechSeq2Seq, AutoProcessor
+from multiprocessing import Lock, Pool, Value
+
 import torch
 import whisper
+from transformers import AutoModelForSpeechSeq2Seq, AutoProcessor
 
 processed_files_count = Value("i", 0)  # count of processed files
 lock = Lock()  # lock for the count

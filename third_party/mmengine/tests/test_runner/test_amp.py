@@ -3,13 +3,17 @@ import unittest
 
 import torch
 import torch.nn as nn
-
-import mmengine
-from mmengine.device import (get_device, is_mlu_available, is_musa_available,
-                             is_npu_available)
+from mmengine.device import (
+    get_device,
+    is_mlu_available,
+    is_musa_available,
+    is_npu_available,
+)
 from mmengine.runner import autocast
 from mmengine.utils import digit_version
 from mmengine.utils.dl_utils import TORCH_VERSION
+
+import mmengine
 
 
 class TestAmp(unittest.TestCase):

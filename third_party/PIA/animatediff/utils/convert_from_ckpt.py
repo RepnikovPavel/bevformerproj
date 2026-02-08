@@ -15,14 +15,13 @@
 
 import re
 
+from diffusers.schedulers import (
+    DDIMScheduler,
+)
 from transformers import (
     CLIPImageProcessor,
     CLIPTextModel,
     CLIPVisionModelWithProjection,
-)
-
-from diffusers.schedulers import (
-    DDIMScheduler,
 )
 
 

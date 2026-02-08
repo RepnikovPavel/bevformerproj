@@ -3,13 +3,12 @@
 # This source code is licensed under the MIT license found in the
 # LICENSE file in the root directory of this source tree.
 
+import math
+
+import json5
 import torch
 import torch.nn as nn
-import numpy as np
 import torch.nn.functional as F
-import math
-import json5
-from librosa.filters import mel as librosa_mel_fn
 from einops.layers.torch import Rearrange
 
 

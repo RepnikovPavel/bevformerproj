@@ -5,9 +5,8 @@ import os
 import numpy as np
 import torch
 from mmengine.model import Sequential
-from tensorflow.python.training import py_checkpoint_reader
-
 from mmpretrain.models.backbones.efficientnet import EfficientNet
+from tensorflow.python.training import py_checkpoint_reader
 
 
 def tf2pth(v):

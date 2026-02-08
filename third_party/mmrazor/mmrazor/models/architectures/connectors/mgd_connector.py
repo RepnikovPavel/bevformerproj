@@ -5,6 +5,7 @@ import torch
 import torch.nn as nn
 
 from mmrazor.registry import MODELS
+
 from .base_connector import BaseConnector
 
 

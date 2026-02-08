@@ -1,15 +1,17 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import os.path as osp
 
-import mmcv
 import numpy as np
 import pytest
-
-from mmflow.datasets.pipelines.advanced_transform import (RandomAffine,
-                                                          check_out_of_bound,
-                                                          theta_is_valid,
-                                                          transform_flow)
+from mmflow.datasets.pipelines.advanced_transform import (
+    RandomAffine,
+    check_out_of_bound,
+    theta_is_valid,
+    transform_flow,
+)
 from mmflow.datasets.utils import read_flow
+
+import mmcv
 
 img1_ = '../data/0000000-img_0.png'
 img2_ = '../data/0000000-img_1.png'

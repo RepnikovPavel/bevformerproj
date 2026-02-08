@@ -1,12 +1,16 @@
 # Copyright (c) OpenMMLab. All rights reserved.
-from mmengine.hooks import (CheckpointHook, DistSamplerSeedHook, IterTimerHook,
-                            LoggerHook, ParamSchedulerHook)
+from mmagic.engine.runner import MultiTestLoop, MultiValLoop
+from mmagic.evaluation import MAE, PSNR, SSIM
+from mmengine.hooks import (
+                            CheckpointHook,
+                            DistSamplerSeedHook,
+                            IterTimerHook,
+                            LoggerHook,
+                            ParamSchedulerHook,
+)
 from mmengine.model import MMSeparateDistributedDataParallel
 from mmengine.optim import CosineAnnealingLR, OptimWrapper
 from mmengine.runner import IterBasedTrainLoop
-
-from mmagic.engine.runner import MultiTestLoop, MultiValLoop
-from mmagic.evaluation import MAE, PSNR, SSIM
 
 _base_ = '../default_runtime.py'
 

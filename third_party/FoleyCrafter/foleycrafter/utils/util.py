@@ -19,17 +19,18 @@ import torch.distributed as dist
 import torchaudio
 import torchvision
 import torchvision.transforms as transforms
+from diffusers import ControlNetModel
+from diffusers.models import AutoencoderKL
+from diffusers.schedulers import DDIMScheduler, PNDMScheduler
 from einops import rearrange
+from foleycrafter.models.auffusion_unet import (
+    UNet2DConditionModel as af_UNet2DConditionModel,
+)
+from foleycrafter.pipelines.pipeline_controlnet import StableDiffusionControlNetPipeline
 from moviepy.editor import AudioFileClip, ImageSequenceClip, VideoFileClip
 from PIL import Image, ImageOps
 from scipy.io import wavfile
 from transformers import CLIPTextModel, CLIPTokenizer
-
-from diffusers import ControlNetModel
-from diffusers.models import AutoencoderKL
-from diffusers.schedulers import DDIMScheduler, PNDMScheduler
-from foleycrafter.models.auffusion_unet import UNet2DConditionModel as af_UNet2DConditionModel
-from foleycrafter.pipelines.pipeline_controlnet import StableDiffusionControlNetPipeline
 
 
 def zero_rank_print(s):

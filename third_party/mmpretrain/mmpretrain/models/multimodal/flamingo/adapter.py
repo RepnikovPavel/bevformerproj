@@ -4,6 +4,7 @@ import random
 import torch.nn as nn
 
 from mmpretrain.registry import MODELS
+
 from .modules import FlamingoLayer, GatedCrossAttentionBlock
 from .utils import getattr_recursive, setattr_recursive
 

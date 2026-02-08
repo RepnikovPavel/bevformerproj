@@ -8,6 +8,7 @@ from mmengine.model import Sequential
 from torch import Tensor
 
 from mmpretrain.registry import MODELS
+
 from ..utils import InvertedResidual as MBConv
 from .base_backbone import BaseBackbone
 from .efficientnet import EdgeResidual as FusedMBConv

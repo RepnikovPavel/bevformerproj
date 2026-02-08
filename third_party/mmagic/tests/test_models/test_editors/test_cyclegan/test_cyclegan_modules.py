@@ -1,9 +1,10 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import numpy as np
 import torch
-
 from mmagic.models.editors.cyclegan.cyclegan_modules import (
-    GANImageBuffer, ResidualBlockWithDropout)
+    GANImageBuffer,
+    ResidualBlockWithDropout,
+)
 
 
 def test_residual_block_with_dropout():

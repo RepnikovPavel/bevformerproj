@@ -3,15 +3,20 @@ from abc import abstractmethod
 from copy import deepcopy
 from functools import partial
 
-import mmcv
 import torch
 import torch.distributed as dist
 import torch.nn as nn
 from mmcv.utils import digit_version
 
+import mmcv
 from mmgen.models.builder import MODULES
-from .pixelwise_loss import (DiscretizedGaussianLogLikelihoodLoss,
-                             GaussianKLDLoss, _reduction_modes, mse_loss)
+
+from .pixelwise_loss import (
+    DiscretizedGaussianLogLikelihoodLoss,
+    GaussianKLDLoss,
+    _reduction_modes,
+    mse_loss,
+)
 from .utils import reduce_loss
 
 

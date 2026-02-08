@@ -6,8 +6,7 @@ from mmcv.transforms.base import BaseTransform
 from mmengine.structures import InstanceData, LabelData
 
 from mmocr.registry import TRANSFORMS
-from mmocr.structures import (KIEDataSample, TextDetDataSample,
-                              TextRecogDataSample)
+from mmocr.structures import KIEDataSample, TextDetDataSample, TextRecogDataSample
 
 
 @TRANSFORMS.register_module()

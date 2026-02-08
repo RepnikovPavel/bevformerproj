@@ -2,19 +2,19 @@
 import os
 from tempfile import NamedTemporaryFile, TemporaryDirectory
 
+import mmdeploy.apis.onnxruntime as ort_apis
 import numpy as np
 import pytest
 import torch
-from mmengine import Config
-from torch.utils.data import DataLoader
-from torch.utils.data.dataset import Dataset
-
-import mmdeploy.apis.onnxruntime as ort_apis
 from mmdeploy.apis import build_task_processor
 from mmdeploy.codebase import import_codebase
 from mmdeploy.core.rewriters.rewriter_manager import RewriterContext
 from mmdeploy.utils import Codebase, load_config
 from mmdeploy.utils.test import DummyModel, SwitchBackendWrapper, WrapFunction
+from torch.utils.data import DataLoader
+from torch.utils.data.dataset import Dataset
+
+from mmengine import Config
 
 try:
     import_codebase(Codebase.MMAGIC)

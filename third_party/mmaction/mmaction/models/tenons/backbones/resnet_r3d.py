@@ -1,9 +1,9 @@
 import logging
+
 import torch.nn as nn
-import torch.utils.checkpoint as cp
-import torch
 from mmcv.cnn import constant_init, kaiming_init
 from mmcv.runner import load_checkpoint
+
 from ...registry import BACKBONES
 from ..utils.resnet_r3d_utils import *
 

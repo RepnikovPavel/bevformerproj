@@ -2,12 +2,12 @@
 from os.path import dirname, join
 
 import torch
-from mmengine import Config
 from mmengine.registry import init_default_scope
 from mmengine.structures import PixelData
-
 from mmseg.registry import MODELS
 from mmseg.structures import SegDataSample
+
+from mmengine import Config
 
 
 def test_maskformer_head():

@@ -2,13 +2,12 @@
 import copy
 
 import torch
-from torch.utils.data import Dataset
-
 from mmengine.hooks import Hook, PrepareTTAHook
 from mmengine.hooks.test_time_aug_hook import build_runner_with_tta
 from mmengine.model import BaseModel, BaseTTAModel
 from mmengine.registry import DATASETS, MODELS, TRANSFORMS
 from mmengine.testing import RunnerTestCase
+from torch.utils.data import Dataset
 
 
 class ToyDatasetTTA(Dataset):

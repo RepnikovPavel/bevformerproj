@@ -1,11 +1,11 @@
+import glob
 import os
+import time
 
 import torch
 import tqdm
-import time
-import glob
-from torch.nn.utils import clip_grad_norm_
 from pcdet.utils import common_utils, commu_utils
+from torch.nn.utils import clip_grad_norm_
 
 
 def train_one_epoch(model, optimizer, train_loader, model_func, lr_scheduler, accumulated_iter, optim_cfg,

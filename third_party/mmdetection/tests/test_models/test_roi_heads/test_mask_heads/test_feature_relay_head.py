@@ -3,10 +3,9 @@ import unittest
 from unittest import TestCase
 
 import torch
+from mmdet.models.roi_heads.mask_heads import FeatureRelayHead
 from parameterized import parameterized
 from torch import Tensor
-
-from mmdet.models.roi_heads.mask_heads import FeatureRelayHead
 
 
 class TestFeatureRelayHead(TestCase):

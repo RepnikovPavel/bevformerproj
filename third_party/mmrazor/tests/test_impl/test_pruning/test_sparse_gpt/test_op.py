@@ -3,9 +3,9 @@ import unittest
 
 import torch
 import torch.nn as nn
+from mmrazor.implementations.pruning import sparse_gpt
 
 from mmrazor import digit_version
-from mmrazor.implementations.pruning import sparse_gpt
 
 
 class TestSparseGptOps(unittest.TestCase):

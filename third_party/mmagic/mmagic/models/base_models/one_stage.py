@@ -9,6 +9,7 @@ from mmengine.optim import OptimWrapperDict
 from mmagic.registry import MODELS
 from mmagic.structures import DataSample
 from mmagic.utils import SampleList
+
 from ..utils import set_requires_grad
 
 FORWARD_RETURN_TYPE = Union[dict, torch.Tensor,

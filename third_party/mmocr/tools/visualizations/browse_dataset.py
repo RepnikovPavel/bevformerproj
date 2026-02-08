@@ -5,15 +5,15 @@ import sys
 from typing import Optional, Tuple
 
 import cv2
-import mmcv
 import numpy as np
 from mmengine.config import Config, DictAction
 from mmengine.dataset import Compose
 from mmengine.registry import init_default_scope
 from mmengine.utils import ProgressBar
 from mmengine.visualization import Visualizer
-
 from mmocr.registry import DATASETS, VISUALIZERS
+
+import mmcv
 
 
 # TODO: Support for printing the change in key of results

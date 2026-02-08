@@ -2,9 +2,9 @@ import torch
 import torch.nn as nn
 
 try:
-    from kornia.utils.grid import create_meshgrid3d
     from kornia.geometry.linalg import transform_points
-except Exception as e:
+    from kornia.utils.grid import create_meshgrid3d
+except Exception:
     # Note: Kornia team will fix this import issue to try to allow the usage of lower torch versions.
     # print('Warning: kornia is not installed correctly, please ignore this warning if you do not use CaDDN. Otherwise, it is recommended to use torch version greater than 1.2 to use kornia properly.')
     pass
@@ -24,8 +24,8 @@ class FrustumGridGenerator(nn.Module):
         """
         super().__init__()
         try:
-            import kornia
-        except Exception as e:
+            pass
+        except Exception:
             # Note: Kornia team will fix this import issue to try to allow the usage of lower torch versions.
             print('Error: kornia is not installed correctly, please ignore this warning if you do not use CaDDN. '
                   'Otherwise, it is recommended to use torch version greater than 1.2 to use kornia properly.')

@@ -2,9 +2,11 @@
 from unittest.mock import MagicMock
 
 import pytest
-
-from mmfewshot.classification.datasets import (CUBDataset, MiniImageNetDataset,
-                                               TieredImageNetDataset)
+from mmfewshot.classification.datasets import (
+    CUBDataset,
+    MiniImageNetDataset,
+    TieredImageNetDataset,
+)
 
 
 def test_cub_dataset():

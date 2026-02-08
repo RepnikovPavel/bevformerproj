@@ -14,9 +14,9 @@ import torch.nn.functional as F
 from einops import rearrange
 
 try:
-    from torch.nn.utils import weight_norm
+    pass
 except:
-    from torch.nn.utils.parameterizations import weight_norm
+    pass
 from .dac_layers import WNConv1d
 
 

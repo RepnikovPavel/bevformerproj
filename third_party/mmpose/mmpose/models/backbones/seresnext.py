@@ -2,6 +2,7 @@
 from mmcv.cnn import build_conv_layer, build_norm_layer
 
 from mmpose.registry import MODELS
+
 from .resnet import ResLayer
 from .seresnet import SEBottleneck as _SEBottleneck
 from .seresnet import SEResNet

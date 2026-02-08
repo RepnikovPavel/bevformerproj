@@ -7,6 +7,7 @@ import numpy as np
 from mmpose.codecs.utils import get_simcc_maximum
 from mmpose.codecs.utils.refinement import refine_simcc_dark
 from mmpose.registry import KEYPOINT_CODECS
+
 from .base import BaseKeypointCodec
 
 

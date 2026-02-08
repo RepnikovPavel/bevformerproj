@@ -3,7 +3,6 @@ from unittest import TestCase
 
 import pytest
 import torch
-
 from mmrazor.models.architectures.dynamic_ops import DynamicInputResizer
 from mmrazor.models.architectures.ops import InputResizer
 from mmrazor.models.mutables import OneShotMutableValue

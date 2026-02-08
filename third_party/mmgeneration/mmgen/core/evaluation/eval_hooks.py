@@ -6,9 +6,10 @@ import sys
 import warnings
 from bisect import bisect_right
 
-import mmcv
 import torch
 from mmcv.runner import HOOKS, Hook, get_dist_info
+
+import mmcv
 
 from ..registry import build_metric
 

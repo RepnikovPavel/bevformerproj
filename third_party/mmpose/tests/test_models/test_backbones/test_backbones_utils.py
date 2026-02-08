@@ -2,11 +2,14 @@
 from unittest import TestCase
 
 import torch
+from mmpose.models.backbones.utils import (
+    InvertedResidual,
+    SELayer,
+    channel_shuffle,
+    make_divisible,
+)
 from torch.nn.modules import GroupNorm
 from torch.nn.modules.batchnorm import _BatchNorm
-
-from mmpose.models.backbones.utils import (InvertedResidual, SELayer,
-                                           channel_shuffle, make_divisible)
 
 
 class TestBackboneUtils(TestCase):

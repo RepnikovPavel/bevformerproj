@@ -5,14 +5,20 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 from mmdet.models.utils import multi_apply
-from mmdet.utils import (ConfigType, OptConfigType, OptInstanceList,
-                         OptMultiConfig, reduce_mean)
-from mmengine import MessageHub
+from mmdet.utils import (
+    ConfigType,
+    OptConfigType,
+    OptInstanceList,
+    OptMultiConfig,
+    reduce_mean,
+)
 from mmengine.model import BaseModule, bias_init_with_prob
 from mmengine.structures import InstanceData
 from torch import Tensor
 
+from mmengine import MessageHub
 from mmyolo.registry import MODELS
+
 from ..layers.yolo_bricks import PPYOLOESELayer
 from ..utils import gt_instances_preprocess
 from .yolov6_head import YOLOv6Head

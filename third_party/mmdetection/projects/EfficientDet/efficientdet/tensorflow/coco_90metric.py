@@ -7,14 +7,14 @@ from collections import OrderedDict
 from typing import Dict, List, Optional, Sequence, Union
 
 import numpy as np
+from mmdet.evaluation.functional import eval_recalls
+from mmdet.registry import METRICS
+from mmdet.structures.mask import encode_mask_results
 from mmengine.evaluator import BaseMetric
 from mmengine.fileio import dump, get_local_path, load
 from mmengine.logging import MMLogger
 from terminaltables import AsciiTable
 
-from mmdet.evaluation.functional import eval_recalls
-from mmdet.registry import METRICS
-from mmdet.structures.mask import encode_mask_results
 from .api_wrappers import COCO, COCOeval
 
 

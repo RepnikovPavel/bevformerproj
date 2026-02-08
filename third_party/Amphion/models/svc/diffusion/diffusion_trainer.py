@@ -5,9 +5,10 @@
 
 import torch
 from diffusers import DDPMScheduler
+from modules.encoder.condition_encoder import ConditionEncoder
 
 from models.svc.base import SVCTrainer
-from modules.encoder.condition_encoder import ConditionEncoder
+
 from .diffusion_wrapper import DiffusionWrapper
 
 

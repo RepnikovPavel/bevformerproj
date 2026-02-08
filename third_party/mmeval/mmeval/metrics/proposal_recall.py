@@ -1,10 +1,11 @@
 # Copyright (c) OpenMMLab. All rights reserved.
-import numpy as np
 from collections import OrderedDict
 from multiprocessing.pool import Pool
+from typing import Dict, List, Optional, Sequence, Tuple, Union
+
+import numpy as np
 from rich.console import Console
 from rich.table import Table
-from typing import Dict, List, Optional, Sequence, Tuple, Union
 
 from mmeval.core.base_metric import BaseMetric
 from mmeval.metrics.utils import calculate_overlaps

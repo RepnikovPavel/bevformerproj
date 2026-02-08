@@ -6,6 +6,7 @@ from mmdet.models.backbones.resnet import BasicBlock, Bottleneck
 from torch import nn
 
 from mmdet3d.utils import OptConfigType
+
 from .spconv import IS_SPCONV2_AVAILABLE
 
 if IS_SPCONV2_AVAILABLE:

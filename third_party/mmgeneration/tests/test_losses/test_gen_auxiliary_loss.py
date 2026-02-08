@@ -1,7 +1,6 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import pytest
 import torch
-
 from mmgen.models.architectures.pix2pix import UnetGenerator
 from mmgen.models.architectures.stylegan import StyleGANv2Generator
 from mmgen.models.losses import GeneratorPathRegularizer, PerceptualLoss

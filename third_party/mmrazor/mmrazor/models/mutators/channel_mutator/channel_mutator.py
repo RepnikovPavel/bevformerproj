@@ -2,15 +2,18 @@
 import copy
 from typing import Any, Dict, Generic, List, Optional, Tuple, Type, Union
 
-from mmengine import fileio
 from torch.nn import Module, ModuleList
 
-from mmrazor.models.mutables import (ChannelUnitType, MutableChannelUnit,
-                                     SequentialMutableChannelUnit)
-from mmrazor.models.mutables.mutable_channel.units.channel_unit import \
-    ChannelUnit
+from mmengine import fileio
+from mmrazor.models.mutables import (
+    ChannelUnitType,
+    MutableChannelUnit,
+    SequentialMutableChannelUnit,
+)
+from mmrazor.models.mutables.mutable_channel.units.channel_unit import ChannelUnit
 from mmrazor.models.task_modules.tracer.channel_analyzer import ChannelAnalyzer
 from mmrazor.registry import MODELS, TASK_UTILS
+
 from ..base_mutator import BaseMutator
 
 

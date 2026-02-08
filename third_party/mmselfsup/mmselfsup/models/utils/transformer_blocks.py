@@ -3,8 +3,9 @@ from typing import List, Optional, Sequence, Union
 
 import torch
 import torch.nn as nn
-from mmcls.models.backbones.vision_transformer import \
-    TransformerEncoderLayer as _TransformerEncoderLayer
+from mmcls.models.backbones.vision_transformer import (
+    TransformerEncoderLayer as _TransformerEncoderLayer,
+)
 from mmcls.models.utils import MultiheadAttention as _MultiheadAttention
 from mmcv.cnn import build_norm_layer
 from mmcv.cnn.bricks.drop import build_dropout

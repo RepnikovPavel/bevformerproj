@@ -5,11 +5,13 @@
 
 #  from https://github.com/keithito/tacotron
 
-import sys
-import utils.g2p.cleaners
-from tokenizers import Tokenizer
 import json
 import re
+import sys
+
+from tokenizers import Tokenizer
+
+import utils.g2p.cleaners
 
 
 class PhonemeBpeTokenizer:

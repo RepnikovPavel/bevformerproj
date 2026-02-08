@@ -4,16 +4,19 @@ from unittest import TestCase
 from unittest.mock import MagicMock
 
 import torch
-from mmengine import MessageHub
+from mmagic.models import BaseConditionalGAN, DataPreprocessor
+from mmagic.models.losses import (
+    DiscShiftLossComps,
+    GANLossComps,
+    GeneratorPathRegularizerComps,
+    GradientPenaltyLossComps,
+)
+from mmagic.structures import DataSample
 from mmengine.structures import LabelData
 from mmengine.testing import assert_allclose
 from torch.nn import ModuleList
 
-from mmagic.models import BaseConditionalGAN, DataPreprocessor
-from mmagic.models.losses import (DiscShiftLossComps, GANLossComps,
-                                  GeneratorPathRegularizerComps,
-                                  GradientPenaltyLossComps)
-from mmagic.structures import DataSample
+from mmengine import MessageHub
 
 generator = dict(
     type='SAGANGenerator',

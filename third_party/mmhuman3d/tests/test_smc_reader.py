@@ -1,6 +1,5 @@
 import numpy as np
 import pytest
-
 from mmhuman3d.data.data_structures.smc_reader import SMCReader
 
 TEST_SMC_PATH = 'tests/data/dataset_sample/humman/p000003_a000014_tiny.smc'

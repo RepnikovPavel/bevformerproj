@@ -2,7 +2,6 @@
 import numpy as np
 import pytest
 import torch
-
 from mmdet3d.evaluation.functional.panoptic_seg_eval import panoptic_seg_eval
 
 

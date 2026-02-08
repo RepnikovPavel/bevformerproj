@@ -4,6 +4,7 @@ import os.path as osp
 from typing import Any, Callable, Optional, Sequence
 
 from mmdeploy.utils import get_backend_config, get_common_config
+
 from ..base import BACKEND_MANAGERS, BaseBackendManager
 
 

@@ -1,6 +1,5 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import numpy as np
-
 from mmaction.models.localizers.utils import post_processing
 
 

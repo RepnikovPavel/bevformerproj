@@ -3,14 +3,14 @@ import torch
 import torch.nn as nn
 
 from mmrazor.utils import print_log
+
 from .ops import SparseGptConv2d, SparseGptLinear, SparseGptMixIn
 from .utils import replace_with_dynamic_ops
 
 
 def to_static_model(model: nn.Module):
     """Replace dynamicops with torch modules."""
-    from mmrazor.structures.subnet.fix_subnet import (export_fix_subnet,
-                                                      load_fix_subnet)
+    from mmrazor.structures.subnet.fix_subnet import export_fix_subnet, load_fix_subnet
     fix_subnet = export_fix_subnet(model)[0]
     load_fix_subnet(model, fix_subnet)
     return model

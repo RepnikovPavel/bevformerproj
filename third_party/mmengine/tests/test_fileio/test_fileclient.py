@@ -11,7 +11,6 @@ from unittest.mock import MagicMock, patch
 import cv2
 import numpy as np
 import pytest
-
 from mmengine.fileio import BaseStorageBackend, FileClient
 from mmengine.utils import has_method
 

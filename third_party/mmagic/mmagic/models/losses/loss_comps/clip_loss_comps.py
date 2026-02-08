@@ -5,6 +5,7 @@ import torch
 import torch.nn as nn
 
 from mmagic.registry import MODELS
+
 from ..clip_loss import CLIPLossModel
 
 

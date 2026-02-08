@@ -4,14 +4,18 @@ from collections import OrderedDict
 from itertools import product
 from typing import Any, Dict, List, Optional, Sequence, Tuple, Union
 
-import mmengine
 import numpy as np
 import torch
 from mmengine.evaluator import BaseMetric
 
-from mmaction.evaluation import (get_weighted_score, mean_average_precision,
-                                 mean_class_accuracy,
-                                 mmit_mean_average_precision, top_k_accuracy)
+import mmengine
+from mmaction.evaluation import (
+    get_weighted_score,
+    mean_average_precision,
+    mean_class_accuracy,
+    mmit_mean_average_precision,
+    top_k_accuracy,
+)
 from mmaction.registry import METRICS
 
 

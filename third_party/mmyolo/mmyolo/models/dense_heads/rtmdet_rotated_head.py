@@ -8,14 +8,21 @@ import torch.nn as nn
 from mmdet.models.utils import filter_scores_and_topk
 from mmdet.structures.bbox import HorizontalBoxes, distance2bbox
 from mmdet.structures.bbox.transforms import bbox_cxcywh_to_xyxy, scale_boxes
-from mmdet.utils import (ConfigType, InstanceList, OptConfigType,
-                         OptInstanceList, OptMultiConfig, reduce_mean)
+from mmdet.utils import (
+    ConfigType,
+    InstanceList,
+    OptConfigType,
+    OptInstanceList,
+    OptMultiConfig,
+    reduce_mean,
+)
 from mmengine.config import ConfigDict
 from mmengine.model import normal_init
 from mmengine.structures import InstanceData
 from torch import Tensor
 
 from mmyolo.registry import MODELS, TASK_UTILS
+
 from ..utils import gt_instances_preprocess
 from .rtmdet_head import RTMDetHead, RTMDetSepBNHeadModule
 

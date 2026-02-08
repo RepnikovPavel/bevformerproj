@@ -3,16 +3,18 @@ import copy
 import os.path as osp
 import tempfile
 
-import mmcv
 import numpy as np
 from mmcv.transforms import LoadImageFromFile
+from mmseg.datasets.transforms import (
+    LoadAnnotations,  # noqa
+    LoadBiomedicalAnnotation,
+    LoadBiomedicalData,
+    LoadBiomedicalImageFromFile,
+    LoadDepthAnnotation,
+    LoadImageFromNDArray,
+)
 
-from mmseg.datasets.transforms import LoadAnnotations  # noqa
-from mmseg.datasets.transforms import (LoadBiomedicalAnnotation,
-                                       LoadBiomedicalData,
-                                       LoadBiomedicalImageFromFile,
-                                       LoadDepthAnnotation,
-                                       LoadImageFromNDArray)
+import mmcv
 
 
 class TestLoading:

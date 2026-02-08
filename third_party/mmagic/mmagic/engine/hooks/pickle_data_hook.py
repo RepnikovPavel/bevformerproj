@@ -7,13 +7,13 @@ from typing import List, Optional, Sequence, Tuple
 
 import numpy as np
 import torch
-from mmengine import is_list_of, mkdir_or_exist, print_log
 from mmengine.dist import master_only
 from mmengine.hooks import Hook
 from mmengine.runner import Runner
 from torch import Tensor
 
 from mmagic.registry import HOOKS
+from mmengine import is_list_of, mkdir_or_exist, print_log
 
 DATA_BATCH = Optional[Sequence[dict]]
 

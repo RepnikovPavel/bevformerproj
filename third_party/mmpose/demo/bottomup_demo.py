@@ -7,14 +7,14 @@ from argparse import ArgumentParser
 
 import cv2
 import json_tricks as json
-import mmcv
-import mmengine
 import numpy as np
 from mmengine.logging import print_log
-
 from mmpose.apis import inference_bottomup, init_model
 from mmpose.registry import VISUALIZERS
 from mmpose.structures import split_instances
+
+import mmcv
+import mmengine
 
 
 def process_one_image(args,

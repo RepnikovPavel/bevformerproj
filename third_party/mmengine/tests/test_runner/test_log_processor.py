@@ -5,12 +5,11 @@ from unittest.mock import MagicMock, patch
 import numpy as np
 import pytest
 import torch
-from parameterized import parameterized
-
 from mmengine.device import is_cuda_available, is_musa_available
 from mmengine.logging import HistoryBuffer, MessageHub, MMLogger
 from mmengine.runner import LogProcessor
 from mmengine.testing import RunnerTestCase
+from parameterized import parameterized
 
 
 class TestLogProcessor(RunnerTestCase):

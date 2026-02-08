@@ -6,6 +6,7 @@ from torch import Tensor
 
 from mmdet3d.models.layers import DGCNNFPModule
 from mmdet3d.registry import MODELS
+
 from .decode_head import Base3DDecodeHead
 
 

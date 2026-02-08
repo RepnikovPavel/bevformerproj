@@ -2,11 +2,10 @@
 # Example for opt is converted from https://github.com/ist-daslab/sparsegpt
 import torch
 import torch.nn as nn
+from mmrazor.utils import print_log
 from torch import distributed as dist
 from torch.utils.data import DataLoader
 from transformers import OPTForCausalLM
-
-from mmrazor.utils import print_log
 
 
 def fold_tokens(tokens: torch.Tensor, batch_seq_len=2048):

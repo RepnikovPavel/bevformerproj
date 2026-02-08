@@ -8,6 +8,7 @@ from mmengine.model import BaseModule
 from mmengine.model.weight_init import trunc_normal_
 
 from mmselfsup.registry import MODELS
+
 from ..utils import CAETransformerRegressorLayer, TransformerEncoderLayer
 
 

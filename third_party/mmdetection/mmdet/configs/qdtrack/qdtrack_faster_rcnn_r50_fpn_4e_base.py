@@ -2,11 +2,33 @@
 from mmengine.config import read_base
 
 with read_base():
+    from .._base_.default_runtime import *
     from .._base_.models.faster_rcnn_r50_fpn import *
     from .._base_.models.faster_rcnn_r50_fpn import model
-    from .._base_.default_runtime import *
 
 from mmcv.ops import RoIAlign
+from mmdet.engine.hooks import TrackVisualizationHook
+from mmdet.models import (
+    QDTrack,
+    QuasiDenseEmbedHead,
+    QuasiDenseTracker,
+    QuasiDenseTrackHead,
+    SingleRoIExtractor,
+    TrackDataPreprocessor,
+)
+from mmdet.models.losses import (
+    L1Loss,
+    MarginL2Loss,
+    MultiPosCrossEntropyLoss,
+    SmoothL1Loss,
+)
+from mmdet.models.task_modules import (
+    CombinedSampler,
+    InstanceBalancedPosSampler,
+    MaxIoUAssigner,
+    RandomSampler,
+)
+from mmdet.visualization import TrackLocalVisualizer
 from mmengine.hooks import LoggerHook, SyncBuffersHook
 from mmengine.model.weight_init import PretrainedInit
 from mmengine.optim import MultiStepLR, OptimWrapper
@@ -14,17 +36,6 @@ from mmengine.runner.runner import EpochBasedTrainLoop, TestLoop, ValLoop
 from torch.nn.modules.batchnorm import BatchNorm2d
 from torch.nn.modules.normalization import GroupNorm
 from torch.optim import SGD
-
-from mmdet.engine.hooks import TrackVisualizationHook
-from mmdet.models import (QDTrack, QuasiDenseEmbedHead, QuasiDenseTracker,
-                          QuasiDenseTrackHead, SingleRoIExtractor,
-                          TrackDataPreprocessor)
-from mmdet.models.losses import (L1Loss, MarginL2Loss,
-                                 MultiPosCrossEntropyLoss, SmoothL1Loss)
-from mmdet.models.task_modules import (CombinedSampler,
-                                       InstanceBalancedPosSampler,
-                                       MaxIoUAssigner, RandomSampler)
-from mmdet.visualization import TrackLocalVisualizer
 
 detector = model
 detector.pop('data_preprocessor')

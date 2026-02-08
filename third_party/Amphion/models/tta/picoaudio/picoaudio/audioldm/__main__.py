@@ -1,15 +1,14 @@
 #!/usr/bin/python3
-import os
-from audioldm import (
-    text_to_audio,
-    style_transfer,
-    build_model,
-    save_wave,
-    get_time,
-    round_up_duration,
-    get_duration,
-)
 import argparse
+import os
+
+from audioldm import (
+    build_model,
+    get_time,
+    save_wave,
+    style_transfer,
+    text_to_audio,
+)
 
 CACHE_DIR = os.getenv(
     "AUDIOLDM_CACHE_DIR", os.path.join(os.path.expanduser("~"), ".cache/audioldm")

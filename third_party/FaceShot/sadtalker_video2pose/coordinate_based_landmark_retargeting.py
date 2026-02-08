@@ -1,35 +1,19 @@
-from glob import glob
-import shutil
-import gc
-import torch
-import json
-import torch.nn as nn
-import cv2
-import torch.nn.functional as F
-from time import strftime
-import os, sys, time
+import os
+import sys
 from argparse import ArgumentParser
-import matplotlib.pyplot as plt
-import platform
-import scipy
+
 import numpy as np
 from PIL import Image
-import re
-
-from src.utils.preprocess_fromvideo import CropAndExtract
-from src.test_audio2coeff import Audio2Coeff
-from src.facerender.animate import AnimateFromCoeff
-from src.facerender.pirender_animate import AnimateFromCoeff_PIRender
-from src.generate_batch import get_data
-from src.generate_facerender_batch import get_facerender_data
-from src.utils.init_path import init_path
-from torchvision.transforms import PILToTensor
-from src.utils.visualize import save_landmarks_to_video
-from src.appearance_guided_landmark_matching import Landmark_Matching, get_angle_and_distance, Appearance_Matching
+from pytorch_lightning import seed_everything
+from src.appearance_guided_landmark_matching import (
+    Appearance_Matching,
+    Landmark_Matching,
+)
 from src.dift.models.inv_dift_sd import SDFeaturizer
 from src.retargeting_tools.tools import *
-
-from pytorch_lightning import seed_everything
+from src.utils.init_path import init_path
+from src.utils.preprocess_fromvideo import CropAndExtract
+from src.utils.visualize import save_landmarks_to_video
 from torchvision import transforms
 
 seed_everything(42, workers=True)

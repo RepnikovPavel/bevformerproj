@@ -1,15 +1,15 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 from tempfile import NamedTemporaryFile, TemporaryDirectory
 
-import mmengine
+import mmdeploy.backend.onnxruntime as ort_apis
 import pytest
 import torch
-
-import mmdeploy.backend.onnxruntime as ort_apis
 from mmdeploy.apis import build_task_processor
 from mmdeploy.codebase import import_codebase
 from mmdeploy.utils import Codebase, load_config
 from mmdeploy.utils.test import DummyModel, SwitchBackendWrapper
+
+import mmengine
 
 try:
     import_codebase(Codebase.MMDET3D)
@@ -65,8 +65,7 @@ def backend_model():
 
 
 def test_build_backend_model(backend_model):
-    from mmdeploy.codebase.mmdet3d.deploy.mono_detection_model import \
-        MonoDetectionModel
+    from mmdeploy.codebase.mmdet3d.deploy.mono_detection_model import MonoDetectionModel
     assert isinstance(backend_model, MonoDetectionModel)
 
 

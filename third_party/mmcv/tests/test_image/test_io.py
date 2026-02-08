@@ -7,7 +7,6 @@ from pathlib import Path
 from unittest.mock import MagicMock, patch
 
 import cv2
-import mmengine
 import numpy as np
 import pytest
 import torch
@@ -15,6 +14,7 @@ from mmengine.fileio.file_client import HTTPBackend, PetrelBackend
 from numpy.testing import assert_allclose, assert_array_equal
 
 import mmcv
+import mmengine
 
 if torch.__version__ == 'parrots':
     pytest.skip('not necessary in parrots test', allow_module_level=True)

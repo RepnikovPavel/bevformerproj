@@ -6,16 +6,20 @@ import sys
 import unittest
 from unittest.mock import MagicMock, Mock, patch
 
-import mmcv
 import numpy as np
-
-from mmdet.datasets.transforms import (FilterAnnotations, LoadAnnotations,
-                                       LoadEmptyAnnotations,
-                                       LoadImageFromNDArray,
-                                       LoadMultiChannelImageFromFiles,
-                                       LoadProposals, LoadTrackAnnotations)
+from mmdet.datasets.transforms import (
+    FilterAnnotations,
+    LoadAnnotations,
+    LoadEmptyAnnotations,
+    LoadImageFromNDArray,
+    LoadMultiChannelImageFromFiles,
+    LoadProposals,
+    LoadTrackAnnotations,
+)
 from mmdet.evaluation import INSTANCE_OFFSET
 from mmdet.structures.mask import BitmapMasks, PolygonMasks
+
+import mmcv
 
 try:
     import panopticapi

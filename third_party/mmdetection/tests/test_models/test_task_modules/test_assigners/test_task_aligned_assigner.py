@@ -2,9 +2,8 @@
 from unittest import TestCase
 
 import torch
-from mmengine.structures import InstanceData
-
 from mmdet.models.task_modules.assigners import TaskAlignedAssigner
+from mmengine.structures import InstanceData
 
 
 class TestTaskAlignedAssigner(TestCase):

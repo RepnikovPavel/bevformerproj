@@ -9,17 +9,18 @@ import os
 import sys
 from collections import OrderedDict
 
-import mmcv
 import numpy as np
 import torch
 import torch.nn.functional as F
-from mmcv import Config
 from mmcv.runner import load_checkpoint
 from PIL import Image
 from torch import optim
 from torchvision import transforms
 from torchvision.utils import save_image
 from tqdm import tqdm
+
+import mmcv
+from mmcv import Config
 
 # yapf: disable
 sys.path.append(os.path.abspath(os.path.join(__file__, '../..')))  # isort:skip  # noqa

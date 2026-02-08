@@ -4,7 +4,6 @@ from unittest import TestCase
 
 import pytest
 import torch
-
 from mmpretrain.models import BEiT, BEiTPretrainViT
 from mmpretrain.structures import DataSample
 

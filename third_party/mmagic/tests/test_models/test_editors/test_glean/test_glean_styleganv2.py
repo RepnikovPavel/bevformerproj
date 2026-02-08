@@ -4,14 +4,12 @@ from unittest.mock import patch
 
 import pytest
 import torch
-from mmengine.optim import OptimWrapper
-from torch.optim import Adam
-
 from mmagic.models import SRGAN, DataPreprocessor, GLEANStyleGANv2
 from mmagic.models.editors.stylegan2 import StyleGAN2Discriminator
-from mmagic.models.losses import (GANLoss, MSELoss, PerceptualLoss,
-                                  PerceptualVGG)
+from mmagic.models.losses import GANLoss, MSELoss, PerceptualLoss, PerceptualVGG
 from mmagic.structures import DataSample
+from mmengine.optim import OptimWrapper
+from torch.optim import Adam
 
 
 @pytest.mark.skipif(

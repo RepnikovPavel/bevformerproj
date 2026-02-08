@@ -3,11 +3,11 @@ from unittest import TestCase
 
 import numpy as np
 import pytest
-from mmengine import DefaultScope
-
 from mmdet3d.datasets.transforms import *  # noqa
 from mmdet3d.registry import TRANSFORMS
 from mmdet3d.structures.points import LiDARPoints
+
+from mmengine import DefaultScope
 
 DefaultScope.get_instance('test_multi_scale_flip_aug_3d', scope_name='mmdet3d')
 

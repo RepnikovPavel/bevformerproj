@@ -1,15 +1,19 @@
 # Copyright (c) OpenMMLab. All rights reserved.
-from mmengine.model import MMSeparateDistributedDataParallel
-from mmengine.optim import OptimWrapper
-
 from mmagic.models import DataPreprocessor
 from mmagic.models.archs import MultiLayerDiscriminator
 from mmagic.models.base_models import TwoStageInpaintor
-from mmagic.models.editors import (ContextualAttentionNeck, DeepFillDecoder,
-                                   DeepFillEncoder, DeepFillEncoderDecoder,
-                                   DeepFillRefiner, GLDilationNeck,
-                                   GLEncoderDecoder)
+from mmagic.models.editors import (
+                                   ContextualAttentionNeck,
+                                   DeepFillDecoder,
+                                   DeepFillEncoder,
+                                   DeepFillEncoderDecoder,
+                                   DeepFillRefiner,
+                                   GLDilationNeck,
+                                   GLEncoderDecoder,
+)
 from mmagic.models.losses import GANLoss, L1Loss
+from mmengine.model import MMSeparateDistributedDataParallel
+from mmengine.optim import OptimWrapper
 
 # DistributedDataParallel
 model_wrapper_cfg = dict(type=MMSeparateDistributedDataParallel)

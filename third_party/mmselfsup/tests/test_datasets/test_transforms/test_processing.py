@@ -2,20 +2,26 @@
 import os.path as osp
 import random
 
+import mmselfsup.datasets.transforms.processing as mmselfsup_transforms
 import numpy as np
 import pytest
 import torch
 import torchvision
-from mmcv import imread
 from mmcv.transforms import Compose
 from mmengine.utils import digit_version
+from mmselfsup.datasets.transforms import (
+    BEiTMaskGenerator,
+    ColorJitter,
+    RandomGaussianBlur,
+    RandomPatchWithLabels,
+    RandomResizedCropAndInterpolationWithTwoPic,
+    RandomSolarize,
+    RotationWithLabels,
+    SimMIMMaskGenerator,
+)
 from PIL import Image
 
-import mmselfsup.datasets.transforms.processing as mmselfsup_transforms
-from mmselfsup.datasets.transforms import (
-    BEiTMaskGenerator, ColorJitter, RandomGaussianBlur, RandomPatchWithLabels,
-    RandomResizedCropAndInterpolationWithTwoPic, RandomSolarize,
-    RotationWithLabels, SimMIMMaskGenerator)
+from mmcv import imread
 
 
 def test_simmim_mask_gen():

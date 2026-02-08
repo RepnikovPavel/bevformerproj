@@ -5,7 +5,6 @@ from os.path import dirname, exists, join
 import numpy as np
 import pytest
 import torch
-
 from mmfewshot.detection.models import build_detector
 
 

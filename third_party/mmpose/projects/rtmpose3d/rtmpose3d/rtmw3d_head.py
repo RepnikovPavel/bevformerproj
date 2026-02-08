@@ -5,16 +5,15 @@ import numpy as np
 import torch
 from mmcv.cnn import ConvModule
 from mmengine.structures import InstanceData
-from torch import Tensor, nn
-
 from mmpose.codecs.utils import get_simcc_maximum as get_2d_simcc_maximum
 from mmpose.evaluation.functional import keypoint_mpjpe
 from mmpose.models.heads import BaseHead
 from mmpose.models.utils.rtmcc_block import RTMCCBlock, ScaleNorm
 from mmpose.registry import KEYPOINT_CODECS, MODELS
 from mmpose.utils.tensor_utils import to_numpy
-from mmpose.utils.typing import (ConfigType, InstanceList, OptConfigType,
-                                 OptSampleList)
+from mmpose.utils.typing import ConfigType, InstanceList, OptConfigType, OptSampleList
+from torch import Tensor, nn
+
 from .utils import get_simcc_maximum
 
 OptIntSeq = Optional[Sequence[int]]

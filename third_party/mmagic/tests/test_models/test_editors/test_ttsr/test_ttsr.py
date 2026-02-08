@@ -4,15 +4,24 @@ from unittest.mock import patch
 
 import pytest
 import torch
-from mmengine.optim import OptimWrapper
-from torch.optim import Adam
-
-from mmagic.models import (LTE, TTSR, DataPreprocessor, SearchTransformer,
-                           TTSRDiscriminator, TTSRNet)
-from mmagic.models.losses import (GANLoss, L1Loss, PerceptualVGG,
-                                  TransferalPerceptualLoss)
+from mmagic.models import (
+    LTE,
+    TTSR,
+    DataPreprocessor,
+    SearchTransformer,
+    TTSRDiscriminator,
+    TTSRNet,
+)
+from mmagic.models.losses import (
+    GANLoss,
+    L1Loss,
+    PerceptualVGG,
+    TransferalPerceptualLoss,
+)
 from mmagic.registry import MODELS
 from mmagic.structures import DataSample
+from mmengine.optim import OptimWrapper
+from torch.optim import Adam
 
 
 @pytest.mark.skipif(

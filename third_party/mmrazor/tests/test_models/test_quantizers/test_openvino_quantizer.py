@@ -12,9 +12,10 @@ except ImportError:
     from mmrazor.utils import get_placeholder
     ObservedGraphModule = get_placeholder('torch>=1.13')
 
-from mmrazor import digit_version
 from mmrazor.models.quantizers import OpenVINOQuantizer
 from mmrazor.testing import ConvBNReLU
+
+from mmrazor import digit_version
 
 
 class TestOpenVINOQuantizer(TestCase):

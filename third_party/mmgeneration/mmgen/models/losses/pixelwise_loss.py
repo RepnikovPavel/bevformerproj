@@ -5,6 +5,7 @@ import torch.nn as nn
 import torch.nn.functional as F
 
 from mmgen.models.builder import MODULES
+
 from .utils import weighted_loss
 
 _reduction_modes = ['none', 'mean', 'sum', 'batchmean', 'flatmean']

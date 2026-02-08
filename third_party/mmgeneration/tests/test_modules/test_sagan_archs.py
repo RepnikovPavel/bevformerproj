@@ -3,7 +3,6 @@ from copy import deepcopy
 
 import pytest
 import torch
-
 from mmgen.models import ProjDiscriminator as SAGANDiscriminator
 from mmgen.models import SNGANGenerator as SAGANGenerator
 from mmgen.models import build_module

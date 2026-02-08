@@ -12,6 +12,7 @@ from mmpretrain.datasets.categories import CIFAR100_CATEGORIES_CN
 from mmpretrain.registry import MODELS, TOKENIZER
 from mmpretrain.structures import DataSample
 from mmpretrain.utils import track_on_main_process
+
 from .utils import OPENAI_PROMPT
 
 PROTOTYPE_MAP = {'cifar100': CIFAR100_CATEGORIES_CN}

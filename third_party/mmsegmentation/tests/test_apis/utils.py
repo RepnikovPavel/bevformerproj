@@ -1,6 +1,5 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import torch.nn as nn
-
 from mmseg.models import EncoderDecoder
 from mmseg.models.decode_heads.decode_head import BaseDecodeHead
 from mmseg.registry import MODELS

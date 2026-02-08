@@ -2,9 +2,8 @@
 import pytest
 import torch
 from mmcv.ops import DeformConv2dPack
-from torch.nn.modules import AvgPool2d
-
 from mmflow.models.utils import BasicBlock, Bottleneck, ResLayer
+from torch.nn.modules import AvgPool2d
 
 
 def test_basicblock():

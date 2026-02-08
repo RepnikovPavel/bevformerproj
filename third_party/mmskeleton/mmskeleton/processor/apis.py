@@ -1,18 +1,16 @@
-import os
+import math
+from collections import OrderedDict
+
 import cv2
+import numpy as np
 import torch
 import torchvision
-import math
-import numpy as np
-
-from mmskeleton.utils import call_obj
-from mmskeleton.utils import load_checkpoint
-from .utils.infernce_utils import get_final_preds
 from mmcv.utils import Config
-from collections import OrderedDict
+
 from mmskeleton.datasets.utils.coco_transform import flip_back
-from mmskeleton.datasets.utils.video_demo import VideoDemo
-from mmskeleton.utils import get_mmskeleton_url
+from mmskeleton.utils import call_obj, load_checkpoint
+
+from .utils.infernce_utils import get_final_preds
 
 flip_pairs = [[1, 2], [3, 4], [5, 6], [7, 8], [9, 10], [11, 12], [13, 14],
               [15, 16]]

@@ -5,13 +5,12 @@ import tempfile
 import pytest
 import torch
 from mmengine.runner import load_checkpoint, save_checkpoint
-from torch import nn
-from torch.nn.modules import GroupNorm
-from torch.nn.modules.batchnorm import _BatchNorm
-
 from mmpretrain.models.backbones import MobileOne
 from mmpretrain.models.backbones.mobileone import MobileOneBlock
 from mmpretrain.models.utils import SELayer
+from torch import nn
+from torch.nn.modules import GroupNorm
+from torch.nn.modules.batchnorm import _BatchNorm
 
 
 def check_norm_state(modules, train_state):

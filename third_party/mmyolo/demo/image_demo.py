@@ -3,16 +3,16 @@ import os
 from argparse import ArgumentParser
 from pathlib import Path
 
-import mmcv
 from mmdet.apis import inference_detector, init_detector
 from mmengine.config import Config, ConfigDict
 from mmengine.logging import print_log
 from mmengine.utils import ProgressBar, path
-
 from mmyolo.registry import VISUALIZERS
 from mmyolo.utils import switch_to_deploy
 from mmyolo.utils.labelme_utils import LabelmeFormat
 from mmyolo.utils.misc import get_file_list, show_data_classes
+
+import mmcv
 
 
 def parse_args():

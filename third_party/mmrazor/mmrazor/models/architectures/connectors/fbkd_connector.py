@@ -6,6 +6,7 @@ import torch.nn as nn
 from mmcv.cnn import NonLocal2d
 
 from mmrazor.registry import MODELS
+
 from .base_connector import BaseConnector
 
 

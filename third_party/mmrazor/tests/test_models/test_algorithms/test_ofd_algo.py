@@ -2,9 +2,10 @@
 import copy
 from unittest import TestCase
 
+from mmrazor.models import OverhaulFeatureDistillation
+
 from mmengine import ConfigDict
 
-from mmrazor.models import OverhaulFeatureDistillation
 from .toy_models import ToyOFDStudent
 
 

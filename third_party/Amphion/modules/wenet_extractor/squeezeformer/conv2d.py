@@ -23,7 +23,7 @@
 """Conv2d Module with Valid Padding"""
 
 import torch.nn.functional as F
-from torch.nn.modules.conv import _ConvNd, _size_2_t, Union, _pair, Tensor, Optional
+from torch.nn.modules.conv import Optional, Tensor, Union, _ConvNd, _pair, _size_2_t
 
 
 class Conv2dValid(_ConvNd):

@@ -2,9 +2,8 @@
 import unittest
 
 import torch
-from parameterized import parameterized
-
 from mmocr.models.textdet.necks import FPNF
+from parameterized import parameterized
 
 
 class TestFPNF(unittest.TestCase):

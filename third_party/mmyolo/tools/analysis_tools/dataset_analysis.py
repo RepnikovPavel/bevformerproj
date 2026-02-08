@@ -9,10 +9,9 @@ import numpy as np
 from mmengine.config import Config
 from mmengine.registry import init_default_scope
 from mmengine.utils import ProgressBar
-from prettytable import PrettyTable
-
 from mmyolo.registry import DATASETS
 from mmyolo.utils.misc import show_data_classes
+from prettytable import PrettyTable
 
 
 def parse_args():

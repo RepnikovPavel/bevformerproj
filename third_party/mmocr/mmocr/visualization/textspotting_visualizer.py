@@ -1,13 +1,14 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 from typing import Optional, Sequence, Union
 
-import mmcv
 import numpy as np
 import torch
 
+import mmcv
 from mmocr.registry import VISUALIZERS
 from mmocr.structures import TextDetDataSample
 from mmocr.utils.polygon_utils import poly2bbox
+
 from .base_visualizer import BaseLocalVisualizer
 
 

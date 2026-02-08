@@ -5,6 +5,7 @@ from mmhuman3d.core.conventions.keypoints_mapping import (
     get_keypoint_idx,
     get_keypoint_idxs_by_part,
 )
+
 from .smplify import OptimizableParameters, SMPLify
 
 

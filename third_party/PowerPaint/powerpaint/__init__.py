@@ -5,7 +5,6 @@ from .pipelines import (
     StableDiffusionPowerPaintBrushNetPipeline,
 )
 
-
 __all__ = [
     "BrushNetModel",
     "UNet2DConditionModel" "StableDiffusionInpaintPipeline",

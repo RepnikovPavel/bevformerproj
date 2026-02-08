@@ -4,10 +4,14 @@ import copy
 import numpy as np
 import pytest
 import torch
-
-from mmgen.datasets.pipelines import (CenterCropLongEdge, Flip, NumpyPad,
-                                      RandomCropLongEdge, RandomImgNoise,
-                                      Resize)
+from mmgen.datasets.pipelines import (
+    CenterCropLongEdge,
+    Flip,
+    NumpyPad,
+    RandomCropLongEdge,
+    RandomImgNoise,
+    Resize,
+)
 
 
 class TestAugmentations(object):

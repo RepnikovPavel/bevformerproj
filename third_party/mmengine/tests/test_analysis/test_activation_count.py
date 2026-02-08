@@ -10,10 +10,9 @@ from typing import Any, Dict, List, Tuple
 
 import torch
 import torch.nn as nn
-from numpy import prod
-
 from mmengine.analysis import ActivationAnalyzer, activation_count
 from mmengine.analysis.jit_handles import Handle
+from numpy import prod
 
 
 class SmallConvNet(nn.Module):

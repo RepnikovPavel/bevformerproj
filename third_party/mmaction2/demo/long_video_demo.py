@@ -7,13 +7,13 @@ from collections import deque
 from operator import itemgetter
 
 import cv2
-import mmengine
 import numpy as np
 import torch
-from mmengine import Config, DictAction
+from mmaction.apis import inference_recognizer, init_recognizer
 from mmengine.dataset import Compose
 
-from mmaction.apis import inference_recognizer, init_recognizer
+import mmengine
+from mmengine import Config, DictAction
 
 FONTFACE = cv2.FONT_HERSHEY_COMPLEX_SMALL
 FONTSCALE = 1

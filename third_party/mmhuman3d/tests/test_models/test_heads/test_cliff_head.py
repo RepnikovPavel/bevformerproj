@@ -1,7 +1,6 @@
 import numpy as np
 import pytest
 import torch
-
 from mmhuman3d.models.heads.builder import CliffHead
 
 

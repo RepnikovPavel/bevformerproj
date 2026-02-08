@@ -3,15 +3,16 @@ import os.path as osp
 from operator import itemgetter
 from typing import Any, Dict, Optional, Sequence, Tuple, Union
 
-import mmengine
 import numpy as np
 import torch
 from mmengine.dataset import pseudo_collate
 from mmengine.model import BaseDataPreprocessor
 
+import mmengine
 from mmdeploy.codebase.base import BaseTask
 from mmdeploy.utils import Task, get_root_logger
 from mmdeploy.utils.config_utils import get_input_shape
+
 from .mmaction import MMACTION_TASK
 
 

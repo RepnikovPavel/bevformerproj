@@ -1,13 +1,15 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import pytest
 import torch
+from mmdet.models.layers.transformer import (
+    AdaptivePadding,
+    DDQTransformerDecoder,
+    DetrTransformerDecoder,
+    DetrTransformerEncoder,
+    PatchEmbed,
+    PatchMerging,
+)
 from mmengine.config import ConfigDict
-
-from mmdet.models.layers.transformer import (AdaptivePadding,
-                                             DDQTransformerDecoder,
-                                             DetrTransformerDecoder,
-                                             DetrTransformerEncoder,
-                                             PatchEmbed, PatchMerging)
 
 
 def test_adaptive_padding():

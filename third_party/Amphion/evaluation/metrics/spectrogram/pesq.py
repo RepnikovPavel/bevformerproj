@@ -4,9 +4,7 @@
 # LICENSE file in the root directory of this source tree.
 
 import librosa
-
 import numpy as np
-
 from pypesq import pesq
 
 

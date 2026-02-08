@@ -1,9 +1,9 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 from typing import List
 
-import mmengine
 from mmengine.dataset import BaseDataset
 
+import mmengine
 from mmpretrain.registry import DATASETS
 
 

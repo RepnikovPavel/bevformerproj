@@ -9,8 +9,7 @@ from .ppm import DAPPM, PAPPM
 from .res_layer import ResLayer
 from .se_layer import SELayer
 from .self_attention_block import SelfAttentionBlock
-from .shape_convert import (nchw2nlc2nchw, nchw_to_nlc, nlc2nchw2nlc,
-                            nlc_to_nchw)
+from .shape_convert import nchw2nlc2nchw, nchw_to_nlc, nlc2nchw2nlc, nlc_to_nchw
 from .up_conv_block import UpConvBlock
 
 # isort: off

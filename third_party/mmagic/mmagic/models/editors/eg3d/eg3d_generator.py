@@ -7,6 +7,7 @@ from mmengine.model import BaseModule
 from torch import Tensor
 
 from mmagic.registry import MODELS
+
 from .eg3d_modules import SuperResolutionModule, TriPlaneBackbone
 from .ray_sampler import sample_rays
 from .renderer import EG3DRenderer

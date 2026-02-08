@@ -5,19 +5,23 @@ import os.path as osp
 import time
 import warnings
 
-import mmcv
 import torch
-from mmcv import Config, DictAction
 from mmcv.cnn import fuse_conv_bn
-from mmcv.runner import (get_dist_info, init_dist, load_checkpoint,
-                         wrap_fp16_model)
+from mmcv.runner import get_dist_info, init_dist, load_checkpoint, wrap_fp16_model
 from mmdet.apis import multi_gpu_test, single_gpu_test
 from mmdet.datasets import build_dataloader, replace_ImageToTensor
-
 from mmrotate.datasets import build_dataset
 from mmrotate.models import build_detector
-from mmrotate.utils import (build_ddp, build_dp, compat_cfg, get_device,
-                            setup_multi_processes)
+from mmrotate.utils import (
+    build_ddp,
+    build_dp,
+    compat_cfg,
+    get_device,
+    setup_multi_processes,
+)
+
+import mmcv
+from mmcv import Config, DictAction
 
 
 def parse_args():

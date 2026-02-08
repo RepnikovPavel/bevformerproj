@@ -3,12 +3,13 @@ from copy import deepcopy
 
 import pytest
 import torch
-
 from mmgen.models.architectures.stylegan import StyleGANv3Generator
-from mmgen.models.architectures.stylegan.modules import (MappingNetwork,
-                                                         SynthesisInput,
-                                                         SynthesisLayer,
-                                                         SynthesisNetwork)
+from mmgen.models.architectures.stylegan.modules import (
+    MappingNetwork,
+    SynthesisInput,
+    SynthesisLayer,
+    SynthesisNetwork,
+)
 
 
 class TestMappingNetwork:

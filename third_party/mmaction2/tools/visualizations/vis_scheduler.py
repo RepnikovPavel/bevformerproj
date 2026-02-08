@@ -9,6 +9,7 @@ from unittest.mock import MagicMock
 import matplotlib.pyplot as plt
 import rich
 import torch.nn as nn
+from mmaction.utils import get_str_type
 from mmengine.config import Config, DictAction
 from mmengine.hooks import Hook
 from mmengine.model import BaseModel
@@ -17,8 +18,6 @@ from mmengine.runner import Runner
 from mmengine.visualization import Visualizer
 from rich.progress import BarColumn, MofNCompleteColumn, Progress, TextColumn
 from torch.utils.data import DataLoader
-
-from mmaction.utils import get_str_type
 
 
 def parse_args():

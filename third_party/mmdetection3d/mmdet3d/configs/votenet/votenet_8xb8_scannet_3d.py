@@ -3,14 +3,14 @@ from mmengine import read_base
 
 with read_base():
     from .._base_.datasets.scannet_3d import *
+    from .._base_.default_runtime import *
     from .._base_.models.votenet import *
     from .._base_.schedules.schedule_3x import *
-    from .._base_.default_runtime import *
 
+from mmdet3d.models.task_modules.coders.partial_bin_based_bbox_coder import (
+    PartialBinBasedBBoxCoder,
+)
 from mmengine.hooks.logger_hook import LoggerHook
-
-from mmdet3d.models.task_modules.coders.partial_bin_based_bbox_coder import \
-    PartialBinBasedBBoxCoder
 
 # model settings
 model.update(

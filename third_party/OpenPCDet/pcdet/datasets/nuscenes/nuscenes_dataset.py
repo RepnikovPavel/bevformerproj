@@ -3,13 +3,13 @@ import pickle
 from pathlib import Path
 
 import numpy as np
+from PIL import Image
+from pyquaternion import Quaternion
 from tqdm import tqdm
 
 from ...ops.roiaware_pool3d import roiaware_pool3d_utils
 from ...utils import common_utils
 from ..dataset import DatasetTemplate
-from pyquaternion import Quaternion
-from PIL import Image
 
 
 class NuScenesDataset(DatasetTemplate):
@@ -255,7 +255,9 @@ class NuScenesDataset(DatasetTemplate):
 
     def evaluation(self, det_annos, class_names, **kwargs):
         import json
+
         from nuscenes.nuscenes import NuScenes
+
         from . import nuscenes_utils
         nusc = NuScenes(version=self.dataset_cfg.VERSION, dataroot=str(self.root_path), verbose=True)
         nusc_annos = nuscenes_utils.transform_det_annos_to_nusc_annos(det_annos, nusc)
@@ -357,6 +359,7 @@ class NuScenesDataset(DatasetTemplate):
 def create_nuscenes_info(version, data_path, save_path, max_sweeps=10, with_cam=False):
     from nuscenes.nuscenes import NuScenes
     from nuscenes.utils import splits
+
     from . import nuscenes_utils
     data_path = data_path / version
     save_path = save_path / version
@@ -402,9 +405,10 @@ def create_nuscenes_info(version, data_path, save_path, max_sweeps=10, with_cam=
 
 
 if __name__ == '__main__':
-    import yaml
     import argparse
     from pathlib import Path
+
+    import yaml
     from easydict import EasyDict
 
     parser = argparse.ArgumentParser(description='arg parser')

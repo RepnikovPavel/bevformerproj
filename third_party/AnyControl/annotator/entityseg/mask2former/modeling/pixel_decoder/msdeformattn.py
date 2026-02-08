@@ -1,21 +1,19 @@
 # Copyright (c) Facebook, Inc. and its affiliates.
-import logging
-import numpy as np
-from typing import Callable, Dict, List, Optional, Tuple, Union
+from typing import Callable, Dict, List, Optional, Union
 
 import fvcore.nn.weight_init as weight_init
+import numpy as np
 import torch
-from torch import nn
-from torch.nn import functional as F
-from torch.nn.init import xavier_uniform_, constant_, uniform_, normal_
-from torch.cuda.amp import autocast
-
 from detectron2.config import configurable
 from detectron2.layers import Conv2d, ShapeSpec, get_norm
 from detectron2.modeling import SEM_SEG_HEADS_REGISTRY
+from torch import nn
+from torch.cuda.amp import autocast
+from torch.nn import functional as F
+from torch.nn.init import normal_
 
 from ..transformer_decoder.position_encoding import PositionEmbeddingSine
-from ..transformer_decoder.transformer import _get_clones, _get_activation_fn
+from ..transformer_decoder.transformer import _get_activation_fn, _get_clones
 from .ops.modules import MSDeformAttn
 
 

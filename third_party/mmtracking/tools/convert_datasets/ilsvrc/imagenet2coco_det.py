@@ -6,8 +6,9 @@ import os.path as osp
 import xml.etree.ElementTree as ET
 from collections import defaultdict
 
-import mmcv
 from tqdm import tqdm
+
+import mmcv
 
 CLASSES = ('airplane', 'antelope', 'bear', 'bicycle', 'bird', 'bus', 'car',
            'cattle', 'dog', 'domestic_cat', 'elephant', 'fox', 'giant_panda',

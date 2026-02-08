@@ -4,11 +4,11 @@ from typing import Optional
 
 import torch
 import torch.nn as nn
-from mmengine import MMLogger
 from mmengine.runner import load_checkpoint
 
 from mmagic.models.editors.dic import LightCNN
 from mmagic.registry import MODELS
+from mmengine import MMLogger
 
 
 class LightCNNFeature(nn.Module):

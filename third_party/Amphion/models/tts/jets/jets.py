@@ -3,27 +3,26 @@
 # This code is modified from https://github.com/imdanboy/jets/blob/main/espnet2/gan_tts/jets/generator.py
 # Licensed under Apache License 2.0
 
+import json
+import os
+from collections import OrderedDict
+
+import numpy as np
 import torch
 import torch.nn as nn
-import numpy as np
 import torch.nn.functional as F
-
-from modules.transformer.Models import Encoder, Decoder
-from modules.transformer.Layers import PostNet
-from collections import OrderedDict
 from models.tts.jets.alignments import (
     AlignmentModule,
-    viterbi_decode,
     average_by_duration,
-    make_pad_mask,
-    make_non_pad_mask,
     get_random_segments,
+    make_non_pad_mask,
+    make_pad_mask,
+    viterbi_decode,
 )
 from models.tts.jets.length_regulator import GaussianUpsampling
 from models.vocoders.gan.generator.hifigan import HiFiGAN
-import os
-import json
-
+from modules.transformer.Layers import PostNet
+from modules.transformer.Models import Decoder, Encoder
 from utils.util import load_config
 
 

@@ -3,11 +3,10 @@ import platform
 
 import pytest
 import torch
-from mmengine.utils import digit_version
-from mmengine.utils.dl_utils import TORCH_VERSION
-
 from mmagic.models.utils import build_module
 from mmagic.registry import MODELS
+from mmengine.utils import digit_version
+from mmengine.utils.dl_utils import TORCH_VERSION
 
 stable_diffusion_v15_url = 'runwayml/stable-diffusion-v1-5'
 unet_cfg = dict(

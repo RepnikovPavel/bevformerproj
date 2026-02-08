@@ -1,10 +1,12 @@
 """Benchmark using opencv's VideoCapture"""
-import time
-import sys
-import os
 import argparse
+import os
+import sys
+import time
 import warnings
+
 import numpy as np
+
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '../../python'))
 import decord as de
 

@@ -4,12 +4,12 @@ import json
 import os
 
 import torch
-from mmengine import Config, fileio
 from mmengine.runner.checkpoint import load_checkpoint
-
 from mmrazor.models import BaseAlgorithm
 from mmrazor.registry import MODELS
 from mmrazor.utils import print_log
+
+from mmengine import Config, fileio
 
 
 def parse_args():

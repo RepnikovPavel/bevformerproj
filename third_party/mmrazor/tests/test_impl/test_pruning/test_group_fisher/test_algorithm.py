@@ -3,11 +3,11 @@ from unittest import TestCase
 
 import torch
 from mmcls.structures import ClsDataSample
+from mmrazor.implementations.pruning.group_fisher.algorithm import GroupFisherAlgorithm
+from mmrazor.implementations.pruning.group_fisher.ops import GroupFisherConv2d
+
 from mmengine import MessageHub
 
-from mmrazor.implementations.pruning.group_fisher.algorithm import \
-    GroupFisherAlgorithm
-from mmrazor.implementations.pruning.group_fisher.ops import GroupFisherConv2d
 from ....data.models import MMClsResNet18
 
 if torch.cuda.is_available():

@@ -3,17 +3,22 @@
 # Original licence: Apache License 2.0.
 # ------------------------------------------------------------------------------
 
-import mmengine
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
 import torch.utils.checkpoint as cp
-from mmcv.cnn import (ConvModule, DepthwiseSeparableConvModule,
-                      build_conv_layer, build_norm_layer)
+from mmcv.cnn import (
+    ConvModule,
+    DepthwiseSeparableConvModule,
+    build_conv_layer,
+    build_norm_layer,
+)
 from mmengine.model import BaseModule
 from torch.nn.modules.batchnorm import _BatchNorm
 
+import mmengine
 from mmpose.registry import MODELS
+
 from .base_backbone import BaseBackbone
 from .utils import channel_shuffle
 

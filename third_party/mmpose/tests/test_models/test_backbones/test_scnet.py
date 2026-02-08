@@ -2,10 +2,9 @@
 from unittest import TestCase
 
 import torch
-from torch.nn.modules.batchnorm import _BatchNorm
-
 from mmpose.models.backbones import SCNet
 from mmpose.models.backbones.scnet import SCBottleneck, SCConv
+from torch.nn.modules.batchnorm import _BatchNorm
 
 
 class TestSCnet(TestCase):

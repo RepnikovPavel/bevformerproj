@@ -2,10 +2,10 @@
 import os.path as osp
 from typing import Callable, List, Union
 
-from mmengine import FileClient
 from mmengine.dataset import BaseDataset
 
 from mmagic.registry import DATASETS
+from mmengine import FileClient
 
 
 @DATASETS.register_module()

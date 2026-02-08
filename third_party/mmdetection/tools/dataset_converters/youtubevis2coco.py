@@ -5,8 +5,9 @@ import os
 import os.path as osp
 from collections import defaultdict
 
-import mmengine
 from tqdm import tqdm
+
+import mmengine
 
 
 def parse_args():

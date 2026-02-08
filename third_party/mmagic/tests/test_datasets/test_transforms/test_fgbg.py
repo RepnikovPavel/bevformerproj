@@ -3,10 +3,14 @@ from pathlib import Path
 
 import numpy as np
 import pytest
+from mmagic.datasets.transforms import (
+    CompositeFg,
+    MergeFgAndBg,
+    PerturbBg,
+    RandomJitter,
+    RandomLoadResizeBg,
+)
 from mmengine.fileio import load
-
-from mmagic.datasets.transforms import (CompositeFg, MergeFgAndBg, PerturbBg,
-                                        RandomJitter, RandomLoadResizeBg)
 
 test_root = Path(__file__).parent.parent.parent
 data_root = test_root / 'data' / 'matting_dataset'

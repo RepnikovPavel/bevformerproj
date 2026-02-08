@@ -4,7 +4,6 @@ from unittest import TestCase
 
 import numpy as np
 from mmengine.fileio import load
-
 from mmpose.codecs import MotionBERTLabel
 from mmpose.registry import KEYPOINT_CODECS
 

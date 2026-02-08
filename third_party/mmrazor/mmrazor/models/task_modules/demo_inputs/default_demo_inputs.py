@@ -6,11 +6,18 @@ from mmengine.model import BaseModel
 
 from mmrazor.registry import TASK_UTILS
 from mmrazor.utils import get_placeholder
+
 from ...algorithms.base import BaseAlgorithm
-from .demo_inputs import (BaseDemoInput, DefaultMMClsDemoInput,
-                          DefaultMMDemoInput, DefaultMMDetDemoInput,
-                          DefaultMMPoseDemoInput, DefaultMMRotateDemoInput,
-                          DefaultMMSegDemoInput, DefaultMMYoloDemoInput)
+from .demo_inputs import (
+    BaseDemoInput,
+    DefaultMMClsDemoInput,
+    DefaultMMDemoInput,
+    DefaultMMDetDemoInput,
+    DefaultMMPoseDemoInput,
+    DefaultMMRotateDemoInput,
+    DefaultMMSegDemoInput,
+    DefaultMMYoloDemoInput,
+)
 
 try:
     from mmdet.models import BaseDetector

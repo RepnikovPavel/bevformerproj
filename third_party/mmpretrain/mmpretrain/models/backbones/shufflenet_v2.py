@@ -9,6 +9,7 @@ from torch.nn.modules.batchnorm import _BatchNorm
 
 from mmpretrain.models.utils import channel_shuffle
 from mmpretrain.registry import MODELS
+
 from .base_backbone import BaseBackbone
 
 

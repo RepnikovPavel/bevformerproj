@@ -13,9 +13,11 @@
 # limitations under the License.
 from typing import Optional
 
+from foleycrafter.models.auffusion.transformer_2d import (
+    Transformer2DModel,
+    Transformer2DModelOutput,
+)
 from torch import nn
-
-from foleycrafter.models.auffusion.transformer_2d import Transformer2DModel, Transformer2DModelOutput
 
 
 class DualTransformer2DModel(nn.Module):

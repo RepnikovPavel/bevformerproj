@@ -1,7 +1,6 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import pytest
 import torch
-
 from mmagic.models.editors.wgan_gp import WGANGPDiscriminator
 from mmagic.registry import MODELS
 

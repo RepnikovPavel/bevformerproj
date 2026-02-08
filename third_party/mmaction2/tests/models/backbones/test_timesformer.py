@@ -1,7 +1,6 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import pytest
 import torch
-
 from mmaction.models import TimeSformer
 from mmaction.testing import generate_backbone_demo_inputs
 
@@ -14,9 +13,11 @@ def test_timesformer_backbone():
     timesformer = TimeSformer(
         8, 64, 16, embed_dims=768, attention_type='divided_space_time')
     timesformer.init_weights()
-    from mmaction.models.common import (DividedSpatialAttentionWithNorm,
-                                        DividedTemporalAttentionWithNorm,
-                                        FFNWithNorm)
+    from mmaction.models.common import (
+        DividedSpatialAttentionWithNorm,
+        DividedTemporalAttentionWithNorm,
+        FFNWithNorm,
+    )
     assert isinstance(timesformer.transformer_layers.layers[0].attentions[0],
                       DividedTemporalAttentionWithNorm)
     assert isinstance(timesformer.transformer_layers.layers[11].attentions[1],

@@ -161,8 +161,12 @@ def get_box_type(box_type: str) -> Tuple[type, int]:
     Returns:
         tuple: Box type and box mode.
     """
-    from .box_3d_mode import (Box3DMode, CameraInstance3DBoxes,
-                              DepthInstance3DBoxes, LiDARInstance3DBoxes)
+    from .box_3d_mode import (
+        Box3DMode,
+        CameraInstance3DBoxes,
+        DepthInstance3DBoxes,
+        LiDARInstance3DBoxes,
+    )
     box_type_lower = box_type.lower()
     if box_type_lower == 'lidar':
         box_type_3d = LiDARInstance3DBoxes

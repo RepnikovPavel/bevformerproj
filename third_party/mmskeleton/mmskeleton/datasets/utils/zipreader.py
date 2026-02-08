@@ -4,13 +4,11 @@
 # Written by Bin Xiao (Bin.Xiao@microsoft.com)
 # ------------------------------------------------------------------------------
 
-from __future__ import absolute_import
-from __future__ import division
-from __future__ import print_function
+from __future__ import absolute_import, division, print_function
 
 import os
-import zipfile
 import xml.etree.ElementTree as ET
+import zipfile
 
 import cv2
 import numpy as np

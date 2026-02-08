@@ -5,11 +5,10 @@ from pathlib import Path
 
 import numpy as np
 import pycocotools.mask as mask_util
+from mmdet.datasets.ade20k import ADE20KPanopticDataset
 from mmengine.utils import ProgressBar, mkdir_or_exist
 from panopticapi.utils import IdGenerator, save_json
 from PIL import Image
-
-from mmdet.datasets.ade20k import ADE20KPanopticDataset
 
 ORIGINAL_CATEGORIES = [
     'wall', 'building', 'sky', 'floor', 'tree', 'ceiling', 'road, route',

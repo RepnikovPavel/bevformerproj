@@ -4,9 +4,10 @@
 # LICENSE file in the root directory of this source tree.
 
 import os
-from tqdm import tqdm
+
 from text.g2p_module import G2PModule, LexiconModule
 from text.symbol_table import SymbolTable
+from tqdm import tqdm
 
 """
     phoneExtractor: extract phone from text

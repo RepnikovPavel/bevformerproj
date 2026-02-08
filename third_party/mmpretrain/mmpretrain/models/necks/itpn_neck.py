@@ -10,6 +10,7 @@ from mmengine.model import BaseModule
 
 from mmpretrain.models.backbones.hivit import BlockWithRPE
 from mmpretrain.registry import MODELS
+
 from ..backbones.vision_transformer import TransformerEncoderLayer
 from ..utils import build_2d_sincos_position_embedding
 

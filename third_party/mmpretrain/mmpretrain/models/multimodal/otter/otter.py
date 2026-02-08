@@ -5,6 +5,7 @@ import torch
 
 from mmpretrain.registry import MODELS, TOKENIZER
 from mmpretrain.structures import DataSample
+
 from ..flamingo.flamingo import ExtendModule, Flamingo, PerceiverResampler
 
 

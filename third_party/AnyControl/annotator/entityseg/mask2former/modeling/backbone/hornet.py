@@ -5,21 +5,18 @@
 # This source code is licensed under the license found in the
 # LICENSE file in the root directory of this source tree.
 
-from functools import partial
-import torch
-import torch.nn as nn
-import torch.nn.functional as F
-from timm.models.layers import trunc_normal_, DropPath
-from timm.models.registry import register_model
 import os
 import sys
-import torch.fft
-import math
-
 import traceback
+from functools import partial
+
+import torch
+import torch.fft
+import torch.nn as nn
+import torch.nn.functional as F
 import torch.utils.checkpoint as checkpoint
 from detectron2.modeling import BACKBONE_REGISTRY, Backbone, ShapeSpec
-
+from timm.models.layers import DropPath, trunc_normal_
 
 if 'DWCONV_IMPL' in os.environ:
     try:

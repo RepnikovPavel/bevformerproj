@@ -3,10 +3,12 @@
 """ctypes library and helper functions """
 from __future__ import absolute_import
 
-import sys
-import os
 import ctypes
+import os
+import sys
+
 import numpy as np
+
 from . import libinfo
 
 #----------------------------

@@ -1,8 +1,8 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 
 import os
-import pytest
 
+import pytest
 from mmeval.core.base_metric import BaseMetric
 from mmeval.utils import try_import
 

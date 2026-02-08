@@ -4,7 +4,6 @@ from unittest import TestCase
 import numpy as np
 import pytest
 import torch
-
 from mmaction.evaluation.metrics import RetrievalMetric, RetrievalRecall
 from mmaction.registry import METRICS
 from mmaction.structures import ActionDataSample

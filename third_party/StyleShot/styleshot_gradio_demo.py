@@ -1,17 +1,16 @@
-from types import MethodType
 
 import os
+
+import cv2
 import gradio as gr
 import torch
-import cv2
-from annotator.util import resize_image
 from annotator.hed import SOFT_HEDdetector
 from annotator.lineart import LineartDetector
-from diffusers import UNet2DConditionModel, ControlNetModel
-from transformers import CLIPVisionModelWithProjection
+from annotator.util import resize_image
+from diffusers import ControlNetModel, UNet2DConditionModel
 from huggingface_hub import snapshot_download
+from ip_adapter import StyleContentStableDiffusionControlNetPipeline, StyleShot
 from PIL import Image
-from ip_adapter import StyleShot, StyleContentStableDiffusionControlNetPipeline
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 

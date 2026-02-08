@@ -2,10 +2,10 @@
 from unittest import TestCase
 
 import torch
-from mmengine import ConfigDict
+from mmdet.models.task_modules.assigners import HungarianAssigner
 from mmengine.structures import InstanceData
 
-from mmdet.models.task_modules.assigners import HungarianAssigner
+from mmengine import ConfigDict
 
 
 class TestHungarianAssigner(TestCase):

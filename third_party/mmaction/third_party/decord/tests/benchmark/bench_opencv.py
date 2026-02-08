@@ -1,10 +1,10 @@
 """Benchmark using opencv's VideoCapture"""
-import time
-import random
-import numpy as np
-import cv2
 import argparse
+import random
+import time
 import warnings
+
+import cv2
 import numpy as np
 
 parser = argparse.ArgumentParser("OpenCV benchmark")

@@ -22,9 +22,9 @@
 
 from typing import Optional
 
+import numpy as np
 import six
 import torch
-import numpy as np
 
 
 def sequence_mask(

@@ -8,6 +8,7 @@ List of affected files:
 """
 import os
 import re
+
 # current version
 # We use the version of the incoming release for code
 # that is under development

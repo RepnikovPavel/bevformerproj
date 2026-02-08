@@ -1,6 +1,5 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import torch
-
 from mmagic.models.editors import PConvDecoder, PConvEncoder
 from mmagic.utils import register_all_modules
 

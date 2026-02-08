@@ -1,28 +1,31 @@
+import logging
 import os
 import os.path as osp
-import logging
-import mmcv
 import time
-import torch
+
 import numpy as np
+import torch
 import torch.distributed as dist
+from mmcv.parallel import collate, scatter
 from mmcv.runner import Hook, obj_from_dict
-from mmcv.parallel import scatter, collate
 from torch.utils.data import Dataset
 
+import mmcv
 from mmaction import datasets
+
 from .accuracy import top_k_accuracy
-from .ava_utils import (results2csv, read_csv, read_labelmap,
-                        read_exclusions)
+from .ava_utils import read_csv, read_exclusions, read_labelmap, results2csv
 
 try:
     import sys
     sys.path.append(
         osp.abspath(osp.join(__file__, '../../../',
                              'third_party/ActivityNet/Evaluation/ava')))
-    from mmaction.third_party.ActivityNet.Evaluation.ava import (
-        object_detection_evaluation as det_eval)
     import standard_fields
+
+    from mmaction.third_party.ActivityNet.Evaluation.ava import (
+        object_detection_evaluation as det_eval,
+    )
 except ImportError:
     print('Failed to import ActivityNet evaluation toolbox. Did you clone with'
           '"--recursive"?')

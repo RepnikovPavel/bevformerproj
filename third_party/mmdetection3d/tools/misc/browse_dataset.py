@@ -2,12 +2,11 @@
 import argparse
 from os import path as osp
 
+from mmdet3d.registry import DATASETS, VISUALIZERS
+from mmdet3d.utils import replace_ceph_backend
 from mmengine.config import Config, DictAction
 from mmengine.registry import init_default_scope
 from mmengine.utils import ProgressBar, mkdir_or_exist
-
-from mmdet3d.registry import DATASETS, VISUALIZERS
-from mmdet3d.utils import replace_ceph_backend
 
 
 def parse_args():

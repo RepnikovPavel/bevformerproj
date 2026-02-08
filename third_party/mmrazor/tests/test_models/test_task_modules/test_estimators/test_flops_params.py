@@ -5,13 +5,12 @@ from unittest import TestCase
 import pytest
 import torch
 from mmcv.cnn.bricks import Conv2dAdaptivePadding
-from torch import Tensor
-from torch.nn import Conv2d, Module, Parameter
-
 from mmrazor.models import OneShotMutableModule, ResourceEstimator
 from mmrazor.models.task_modules.estimators.counters import BaseCounter
 from mmrazor.registry import MODELS, TASK_UTILS
 from mmrazor.structures import export_fix_subnet
+from torch import Tensor
+from torch.nn import Conv2d, Module, Parameter
 
 _FIRST_STAGE_MUTABLE = dict(
     type='OneShotMutableOP',

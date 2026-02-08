@@ -5,14 +5,13 @@
 
 from typing import List, Optional, Tuple, Union
 
+import librosa
+import numpy as np
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-import numpy as np
-import librosa
-
-from models.vocoders.gan.discriminator.mpd import MultiScaleMultiPeriodDiscriminator
 from models.tts.jets.alignments import make_non_pad_mask, make_pad_mask
+from models.vocoders.gan.discriminator.mpd import MultiScaleMultiPeriodDiscriminator
 
 
 class GeneratorAdversarialLoss(torch.nn.Module):

@@ -14,6 +14,7 @@ from mmengine.utils import to_2tuple
 
 from mmpose.registry import MODELS
 from mmpose.utils import get_root_logger
+
 from ..utils.transformer import PatchEmbed, PatchMerging
 from .base_backbone import BaseBackbone
 from .utils import get_state_dict

@@ -1,9 +1,8 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import torch
+from mmdet3d.registry import MODELS
 from torch import Tensor, nn
 from torch.nn import functional as F
-
-from mmdet3d.registry import MODELS
 
 
 def one_hot(label: Tensor,

@@ -2,7 +2,6 @@ import json
 
 from mmgpt.datasets.dolly_dataset import DollyDataset
 
-
 TEMPLATE = {
     "description": "Template used by Alpaca-LoRA.",
     "prompt_choice": "Below is an instruction that describes a task. Write a response that appropriately completes the request.\n\n### Instruction:\n{question}\n\n### Input:\n{options}\n\n### Response:\n",

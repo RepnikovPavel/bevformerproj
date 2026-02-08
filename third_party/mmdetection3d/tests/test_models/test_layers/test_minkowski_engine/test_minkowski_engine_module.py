@@ -1,15 +1,15 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import pytest
 import torch
-
-from mmdet3d.models.layers.minkowski_engine_block import \
-    IS_MINKOWSKI_ENGINE_AVAILABLE
+from mmdet3d.models.layers.minkowski_engine_block import IS_MINKOWSKI_ENGINE_AVAILABLE
 
 if IS_MINKOWSKI_ENGINE_AVAILABLE:
     from MinkowskiEngine import SparseTensor
-
     from mmdet3d.models.layers.minkowski_engine_block import (
-        MinkowskiBasicBlock, MinkowskiBottleneck, MinkowskiConvModule)
+        MinkowskiBasicBlock,
+        MinkowskiBottleneck,
+        MinkowskiConvModule,
+    )
 else:
     pytest.skip('test requires Minkowski Engine.', allow_module_level=True)
 

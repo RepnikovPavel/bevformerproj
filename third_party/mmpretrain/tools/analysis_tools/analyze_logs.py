@@ -6,7 +6,6 @@ from itertools import groupby
 
 import matplotlib.pyplot as plt
 import numpy as np
-
 from mmpretrain.utils import load_json_log
 
 

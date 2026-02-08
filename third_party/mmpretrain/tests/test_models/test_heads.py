@@ -7,10 +7,10 @@ from unittest import TestCase
 
 import numpy as np
 import torch
-from mmengine import is_seq_of
-
 from mmpretrain.registry import MODELS
 from mmpretrain.structures import DataSample, MultiTaskDataSample
+
+from mmengine import is_seq_of
 
 
 def setup_seed(seed):

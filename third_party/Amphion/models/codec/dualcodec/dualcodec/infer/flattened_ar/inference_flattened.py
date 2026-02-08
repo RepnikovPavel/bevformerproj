@@ -2,10 +2,10 @@
 #
 # This source code is licensed under the MIT license found in the
 # LICENSE file in the root directory of this source tree.
-from cv2 import repeat
 import torch
 from einops import rearrange
-from .flatten_patterns import offset_codes, deoffset_codes
+
+from .flatten_patterns import deoffset_codes, offset_codes
 
 
 class Inference:
@@ -22,7 +22,6 @@ class Inference:
         **kwargs,
     ) -> None:
         self.model = model
-        import safetensors.torch
 
         self.model.to(device)
         self.model.eval()

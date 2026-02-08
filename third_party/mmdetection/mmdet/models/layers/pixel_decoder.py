@@ -10,6 +10,7 @@ from torch import Tensor
 
 from mmdet.registry import MODELS
 from mmdet.utils import ConfigType, OptMultiConfig
+
 from .positional_encoding import SinePositionalEncoding
 from .transformer import DetrTransformerEncoder
 

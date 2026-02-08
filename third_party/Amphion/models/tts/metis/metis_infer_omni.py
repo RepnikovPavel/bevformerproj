@@ -5,11 +5,10 @@
 
 import os
 
-from models.tts.metis.metis import Metis
-
-from huggingface_hub import snapshot_download
-from utils.util import load_config
 import soundfile as sf
+from huggingface_hub import snapshot_download
+from models.tts.metis.metis import Metis
+from utils.util import load_config
 
 if __name__ == "__main__":
 

@@ -2,11 +2,12 @@
 #
 # This source code is licensed under the MIT license found in the
 # LICENSE file in the root directory of this source tree.
-import torch
-from cached_path import cached_path
 from functools import partial
-from dualcodec.utils import device, package_dir
+
+import torch
 import torch.nn.functional as F
+from cached_path import cached_path
+from dualcodec.utils import device, package_dir
 
 
 def load_voicebox_300M_model(device="cuda"):
@@ -95,7 +96,6 @@ def voicebox_inference(
 
 if __name__ == "__main__":
     from dualcodec.model_tts.voicebox.voicebox_models import (
-        voicebox_300M,
         extract_normalized_mel_spec_50hz,
     )
 

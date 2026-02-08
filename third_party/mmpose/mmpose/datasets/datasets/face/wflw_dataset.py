@@ -6,6 +6,7 @@ import numpy as np
 
 from mmpose.registry import DATASETS
 from mmpose.structures.bbox import bbox_cs2xyxy
+
 from ..base import BaseCocoStyleDataset
 
 

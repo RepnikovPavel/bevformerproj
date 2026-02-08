@@ -3,13 +3,9 @@
 # This source code is licensed under the MIT license found in the
 # LICENSE file in the root directory of this source tree.
 
-from concurrent.futures import ALL_COMPLETED
 import numpy as np
 import torch
 import torch.nn as nn
-
-from torch.nn import functional as F
-
 from models.codec.amphion_codec.quantize import ResidualVQ
 from models.codec.amphion_codec.vocos import VocosBackbone
 

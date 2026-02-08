@@ -5,6 +5,7 @@ from mmengine.model.weight_init import normal_init
 
 from mmaction.registry import MODELS
 from mmaction.utils import ConfigType
+
 from .base import BaseHead
 
 

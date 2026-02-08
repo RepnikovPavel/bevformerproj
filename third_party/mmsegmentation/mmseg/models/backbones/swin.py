@@ -11,12 +11,12 @@ from mmcv.cnn import build_norm_layer
 from mmcv.cnn.bricks.transformer import FFN, build_dropout
 from mmengine.logging import print_log
 from mmengine.model import BaseModule, ModuleList
-from mmengine.model.weight_init import (constant_init, trunc_normal_,
-                                        trunc_normal_init)
+from mmengine.model.weight_init import constant_init, trunc_normal_, trunc_normal_init
 from mmengine.runner import CheckpointLoader
 from mmengine.utils import to_2tuple
 
 from mmseg.registry import MODELS
+
 from ..utils.embed import PatchEmbed, PatchMerging
 
 

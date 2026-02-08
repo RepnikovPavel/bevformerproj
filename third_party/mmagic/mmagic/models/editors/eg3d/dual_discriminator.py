@@ -10,6 +10,7 @@ from mmengine.utils.dl_utils import TORCH_VERSION
 from torch import Tensor
 
 from mmagic.registry import MODELS
+
 from ..stylegan2 import StyleGAN2Discriminator
 
 

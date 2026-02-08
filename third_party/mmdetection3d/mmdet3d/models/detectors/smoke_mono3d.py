@@ -1,6 +1,7 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 from mmdet3d.registry import MODELS
 from mmdet3d.utils import ConfigType, OptConfigType, OptMultiConfig
+
 from .single_stage_mono3d import SingleStageMono3DDetector
 
 

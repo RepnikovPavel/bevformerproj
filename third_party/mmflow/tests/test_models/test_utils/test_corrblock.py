@@ -3,7 +3,6 @@ from math import sqrt
 
 import pytest
 import torch
-
 from mmflow.models.utils import CorrBlock
 
 

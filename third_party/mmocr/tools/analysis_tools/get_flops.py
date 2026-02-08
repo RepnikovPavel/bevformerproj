@@ -3,10 +3,10 @@ import argparse
 
 import torch
 from fvcore.nn import FlopCountAnalysis, flop_count_table
-from mmengine import Config
 from mmengine.registry import init_default_scope
-
 from mmocr.registry import MODELS
+
+from mmengine import Config
 
 
 def parse_args():

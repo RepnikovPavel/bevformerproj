@@ -4,15 +4,13 @@
 # Written by Bin Xiao (Bin.Xiao@microsoft.com)
 # ------------------------------------------------------------------------------
 
-from __future__ import absolute_import
-from __future__ import division
-from __future__ import print_function
+from __future__ import absolute_import, division, print_function
 
 import math
 
 import numpy as np
 
-from mmskeleton.datasets.utils.coco_transform  import transform_preds
+from mmskeleton.datasets.utils.coco_transform import transform_preds
 
 
 def get_max_preds(batch_heatmaps):

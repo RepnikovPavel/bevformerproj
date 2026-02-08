@@ -6,12 +6,13 @@ from typing import Dict, List, Optional, Union
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-from mmengine import print_log
 
 from mmagic.models.archs import set_lora
 from mmagic.registry import MODELS
 from mmagic.structures import DataSample
 from mmagic.utils.typing import SampleList
+from mmengine import print_log
+
 from ..stable_diffusion.stable_diffusion import StableDiffusion
 
 ModelType = Union[Dict, nn.Module]

@@ -4,14 +4,14 @@
 # All Rights Reserved 2019-2020.
 
 
-import numpy as np
+import argparse
 import pickle
+
+import numpy as np
 import tensorflow as tf
 from google.protobuf import text_format
 from waymo_open_dataset.metrics.python import detection_metrics
 from waymo_open_dataset.protos import metrics_pb2
-import argparse
-
 
 tf.get_logger().setLevel('INFO')
 

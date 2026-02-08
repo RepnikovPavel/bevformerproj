@@ -9,10 +9,9 @@ import numpy as np
 import pandas as pd
 import prettytable
 import skimage.transform
+from onnx_helper import ArcFaceORT
 from sklearn.metrics import roc_curve
 from sklearn.preprocessing import normalize
-
-from onnx_helper import ArcFaceORT
 
 SRC = np.array(
     [

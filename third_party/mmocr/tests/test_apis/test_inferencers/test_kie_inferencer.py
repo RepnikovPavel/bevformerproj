@@ -6,15 +6,15 @@ import tempfile
 from copy import deepcopy
 from unittest import TestCase, mock
 
-import mmcv
-import mmengine
 import numpy as np
 import torch
-
 from mmocr.apis.inferencers import KIEInferencer
 from mmocr.utils.check_argument import is_type_list
 from mmocr.utils.polygon_utils import poly2bbox
 from mmocr.utils.typing_utils import KIEDataSample
+
+import mmcv
+import mmengine
 
 
 class TestKIEInferencer(TestCase):

@@ -7,10 +7,10 @@ from typing import Optional, Sequence
 
 import h5py
 import tqdm
-from mmengine import Config
-
 from mmdeploy.apis.utils import build_task_processor
 from mmdeploy.utils import get_root_logger, load_config
+
+from mmengine import Config
 
 
 def get_tensor_func(model, input_data):

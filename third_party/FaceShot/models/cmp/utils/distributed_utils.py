@@ -1,13 +1,14 @@
+import math
+import multiprocessing as mp
 import os
 import subprocess
-import numpy as np
-import multiprocessing as mp
-import math
 
+import numpy as np
 import torch
 import torch.distributed as dist
-from torch.utils.data.sampler import Sampler
 from torch.nn import Module
+from torch.utils.data.sampler import Sampler
+
 
 class DistModule(Module):
     def __init__(self, module):

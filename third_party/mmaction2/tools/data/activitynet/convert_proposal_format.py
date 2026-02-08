@@ -4,10 +4,10 @@ into the input proposal file of action classifier (Currently supports SSN and
 P-GCN, not including TSN, I3D etc.)."""
 import argparse
 
-import mmengine
 import numpy as np
-
 from mmaction.evaluation import pairwise_temporal_iou
+
+import mmengine
 
 
 def load_annotations(ann_file):

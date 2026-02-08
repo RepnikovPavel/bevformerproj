@@ -11,9 +11,15 @@ from torch import Tensor
 from mmpose.datasets.datasets.utils import parse_pose_metainfo
 from mmpose.models.utils import check_and_update_config
 from mmpose.registry import MODELS
-from mmpose.utils.typing import (ConfigType, ForwardResults, OptConfigType,
-                                 Optional, OptMultiConfig, OptSampleList,
-                                 SampleList)
+from mmpose.utils.typing import (
+    ConfigType,
+    ForwardResults,
+    OptConfigType,
+    Optional,
+    OptMultiConfig,
+    OptSampleList,
+    SampleList,
+)
 
 
 class BasePoseEstimator(BaseModel, metaclass=ABCMeta):

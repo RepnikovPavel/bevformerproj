@@ -11,13 +11,12 @@ from mmcls.structures import ClsDataSample
 from mmengine.model import BaseModel
 from mmengine.optim import build_optim_wrapper
 from mmengine.optim.optimizer import OptimWrapper, OptimWrapperDict
-from torch import Tensor
-from torch.optim import SGD
-
 from mmrazor.models import Darts, DiffMutableOP, NasMutator
 from mmrazor.models.algorithms.nas.darts import DartsDDP
 from mmrazor.registry import MODELS
 from mmrazor.structures import load_fix_subnet
+from torch import Tensor
+from torch.optim import SGD
 
 MODELS.register_module(name='torchConv2d', module=nn.Conv2d, force=True)
 MODELS.register_module(name='torchMaxPool2d', module=nn.MaxPool2d, force=True)

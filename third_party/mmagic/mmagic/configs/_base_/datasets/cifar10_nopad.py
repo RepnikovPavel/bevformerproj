@@ -1,8 +1,7 @@
 # Copyright (c) OpenMMLab. All rights reserved.
-from mmengine.dataset import DefaultSampler, InfiniteSampler
-
 from mmagic.datasets import CIFAR10
 from mmagic.datasets.transforms import Flip, PackInputs
+from mmengine.dataset import DefaultSampler, InfiniteSampler
 
 cifar_pipeline = [
     dict(type=Flip, keys=['gt'], flip_ratio=0.5, direction='horizontal'),

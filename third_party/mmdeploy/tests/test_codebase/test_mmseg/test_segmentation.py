@@ -3,23 +3,25 @@ import copy
 from tempfile import NamedTemporaryFile, TemporaryDirectory
 from typing import Any
 
-import mmcv
+import mmdeploy.backend.onnxruntime as ort_apis
 import pytest
 import torch
-
-import mmdeploy.backend.onnxruntime as ort_apis
 from mmdeploy.apis import build_task_processor
 from mmdeploy.codebase import import_codebase
 from mmdeploy.utils import Codebase, load_config
 from mmdeploy.utils.test import SwitchBackendWrapper
+
+import mmcv
 
 try:
     import_codebase(Codebase.MMSEG)
 except ImportError:
     pytest.skip(f'{Codebase.MMSEG} is not installed.', allow_module_level=True)
 
-from .utils import generate_datasample  # noqa: E402
-from .utils import generate_mmseg_deploy_config  # noqa: E402
+from .utils import (
+    generate_datasample,  # noqa: E402
+    generate_mmseg_deploy_config,  # noqa: E402
+)
 
 model_cfg_path = 'tests/test_codebase/test_mmseg/data/model.py'
 model_cfg = load_config(model_cfg_path)[0]

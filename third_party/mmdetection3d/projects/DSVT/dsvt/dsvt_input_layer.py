@@ -4,9 +4,13 @@ from math import ceil
 import torch
 from torch import nn
 
-from .utils import (PositionEmbeddingLearned, get_continous_inds,
-                    get_inner_win_inds_cuda, get_pooling_index,
-                    get_window_coors)
+from .utils import (
+    PositionEmbeddingLearned,
+    get_continous_inds,
+    get_inner_win_inds_cuda,
+    get_pooling_index,
+    get_window_coors,
+)
 
 
 class DSVTInputLayer(nn.Module):

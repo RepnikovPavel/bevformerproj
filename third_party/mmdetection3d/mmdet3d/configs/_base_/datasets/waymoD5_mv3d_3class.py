@@ -1,14 +1,21 @@
 # Copyright (c) OpenMMLab. All rights reserved.
-from mmengine.dataset.sampler import DefaultSampler
-
 from mmdet3d.datasets.transforms.formating import Pack3DDetInputs
-from mmdet3d.datasets.transforms.loading import (LoadAnnotations3D,
-                                                 LoadMultiViewImageFromFiles)
+from mmdet3d.datasets.transforms.loading import (
+                                                 LoadAnnotations3D,
+                                                 LoadMultiViewImageFromFiles,
+)
 from mmdet3d.datasets.transforms.transforms_3d import (  # noqa
-    MultiViewWrapper, ObjectNameFilter, ObjectRangeFilter,
-    PhotoMetricDistortion3D, RandomCrop3D, RandomFlip3D, RandomResize3D)
+                                                 MultiViewWrapper,
+                                                 ObjectNameFilter,
+                                                 ObjectRangeFilter,
+                                                 PhotoMetricDistortion3D,
+                                                 RandomCrop3D,
+                                                 RandomFlip3D,
+                                                 RandomResize3D,
+)
 from mmdet3d.datasets.waymo_dataset import WaymoDataset
 from mmdet3d.evaluation.metrics.waymo_metric import WaymoMetric
+from mmengine.dataset.sampler import DefaultSampler
 
 # dataset settings
 # D3 in the config name means the whole dataset is divided into 3 folds

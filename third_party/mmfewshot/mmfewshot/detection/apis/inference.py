@@ -1,7 +1,6 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 from typing import Dict, List, Optional, Union
 
-import mmcv
 import numpy as np
 import torch
 import torch.nn as nn
@@ -12,6 +11,7 @@ from mmdet.datasets import replace_ImageToTensor
 from mmdet.datasets.pipelines import Compose
 from mmdet.models import build_detector
 
+import mmcv
 from mmfewshot.detection.models import QuerySupportDetector
 
 

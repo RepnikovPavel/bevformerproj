@@ -3,31 +3,31 @@
 # This source code is licensed under the MIT license found in the
 # LICENSE file in the root directory of this source tree.
 
-import os
-import torch
-import numpy as np
-import yaml
 import copy
-from tqdm import tqdm
-from torchaudio.compliance import kaldi
-from torch.nn.utils.rnn import pad_sequence
-from torch.utils.data import DataLoader
-from fairseq import checkpoint_utils
-from transformers import AutoModel, Wav2Vec2FeatureExtractor
+import os
+
+import joblib
+import numpy as np
+import torch
 import torch.nn as nn
 import torch.nn.functional as F
-import joblib
+import whisper
+import yaml
 from einops import repeat
-
+from fairseq import checkpoint_utils
+from modules.wenet_extractor.utils.checkpoint import load_checkpoint
+from modules.wenet_extractor.utils.init_model import init_model
+from torch.nn.utils.rnn import pad_sequence
+from torch.utils.data import DataLoader
+from torchaudio.compliance import kaldi
+from tqdm import tqdm
+from transformers import AutoModel, Wav2Vec2FeatureExtractor
 from utils.io_optim import (
-    TorchaudioDataset,
-    LibrosaDataset,
     FFmpegDataset,
+    LibrosaDataset,
+    TorchaudioDataset,
     collate_batch,
 )
-import whisper
-from modules.wenet_extractor.utils.init_model import init_model
-from modules.wenet_extractor.utils.checkpoint import load_checkpoint
 
 """
     Extractor for content features

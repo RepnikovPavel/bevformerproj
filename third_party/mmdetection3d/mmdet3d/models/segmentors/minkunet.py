@@ -3,6 +3,7 @@ from torch import Tensor
 
 from mmdet3d.registry import MODELS
 from mmdet3d.structures.det3d_data_sample import OptSampleList, SampleList
+
 from .encoder_decoder import EncoderDecoder3D
 
 

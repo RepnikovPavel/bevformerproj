@@ -2,7 +2,6 @@
 import pytest
 import torch
 import torch.nn as nn
-
 from mmaction.models import ResNetTIN
 from mmaction.testing import generate_backbone_demo_inputs
 
@@ -16,8 +15,7 @@ def test_resnet_tin_backbone():
         resnet_tin = ResNetTIN(50, num_segments=-1)
         resnet_tin.init_weights()
 
-    from mmaction.models.backbones.resnet_tin import (CombineNet,
-                                                      TemporalInterlace)
+    from mmaction.models.backbones.resnet_tin import CombineNet, TemporalInterlace
 
     # resnet_tin with normal config
     resnet_tin = ResNetTIN(50)

@@ -6,12 +6,11 @@ import onnx
 import pytest
 import torch
 import torch.nn as nn
-from mmengine import Config
-
 from mmdeploy.apis.onnx import export
-from mmdeploy.utils.config_utils import (get_backend, get_dynamic_axes,
-                                         get_onnx_config)
+from mmdeploy.utils.config_utils import get_backend, get_dynamic_axes, get_onnx_config
 from mmdeploy.utils.test import get_random_name
+
+from mmengine import Config
 
 onnx_file = tempfile.NamedTemporaryFile(suffix='.onnx').name
 

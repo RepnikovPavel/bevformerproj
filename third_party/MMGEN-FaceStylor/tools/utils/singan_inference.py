@@ -2,11 +2,12 @@ import argparse
 import os
 import sys
 
-import mmcv
 import torch
-from mmcv import Config
 from mmcv.parallel import MMDataParallel
 from mmcv.runner import load_checkpoint
+
+import mmcv
+from mmcv import Config
 
 # yapf: disable
 sys.path.append(os.path.abspath(os.path.join(__file__, '../../..')))  # isort:skip  # noqa

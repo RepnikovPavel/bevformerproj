@@ -2,10 +2,11 @@
 import xml.etree.ElementTree as ET
 from typing import List, Optional, Union
 
-from mmengine import get_file_backend, list_from_file
 from mmengine.logging import MMLogger
 
+from mmengine import get_file_backend, list_from_file
 from mmpretrain.registry import DATASETS
+
 from .base_dataset import expanduser
 from .categories import VOC2007_CATEGORIES
 from .multi_label import MultiLabelDataset

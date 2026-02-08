@@ -7,8 +7,9 @@
 # - https://github.com/pypa/setuptools/issues/3621
 # - https://github.com/open-mmlab/mmclassification/issues/1343
 try:
-    import setuptools  # noqa: F401
     import warnings
+
+    import setuptools  # noqa: F401
     warnings.filterwarnings('ignore', 'Setuptools is replacing distutils')
 except ImportError:
     pass

@@ -1,10 +1,11 @@
 """Customized dataloader for general video classification tasks.
 Code adapted from https://github.com/dmlc/gluon-cv"""
 import os
+
 from ..bridge import use_mxnet
 from ..bridge.mxnet import try_import_mxnet
+from ..ndarray import cpu
 from ..video_reader import VideoReader
-from ..ndarray import cpu, gpu
 
 try_import_mxnet()
 from mxnet import numpy as np

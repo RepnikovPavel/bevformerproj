@@ -3,11 +3,12 @@ import argparse
 import os
 import sys
 
-import mmcv
 import torch
-from mmengine import Config, print_log
 from mmengine.logging import MMLogger
 from mmengine.runner import load_checkpoint, set_random_seed
+
+import mmcv
+from mmengine import Config, print_log
 
 # yapf: disable
 sys.path.append(os.path.abspath(os.path.join(__file__, '../..')))  # isort:skip  # noqa

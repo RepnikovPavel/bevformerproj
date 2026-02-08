@@ -2,9 +2,7 @@
 import numpy as np
 import pytest
 import torch
-
-from mmagic.utils import (all_to_tensor, can_convert_to_image, tensor2img,
-                          to_numpy)
+from mmagic.utils import all_to_tensor, can_convert_to_image, tensor2img, to_numpy
 
 
 def test_all_to_tensor():

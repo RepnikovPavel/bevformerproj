@@ -1,7 +1,6 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 from mmdet3d.models.backbones.minkunet_backbone import MinkUNetBackbone
-from mmdet3d.models.data_preprocessors.data_preprocessor import \
-    Det3DDataPreprocessor
+from mmdet3d.models.data_preprocessors.data_preprocessor import Det3DDataPreprocessor
 from mmdet3d.models.decode_heads.minkunet_head import MinkUNetHead
 from mmdet3d.models.segmentors.minkunet import MinkUNet
 

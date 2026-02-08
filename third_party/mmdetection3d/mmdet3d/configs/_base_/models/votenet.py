@@ -1,12 +1,10 @@
 # Copyright (c) OpenMMLab. All rights reserved.
-from torch.nn.modules.conv import Conv1d
-
 from mmdet3d.models.backbones.pointnet2_sa_ssg import PointNet2SASSG
-from mmdet3d.models.data_preprocessors.data_preprocessor import \
-    Det3DDataPreprocessor
+from mmdet3d.models.data_preprocessors.data_preprocessor import Det3DDataPreprocessor
 from mmdet3d.models.dense_heads.vote_head import VoteHead
 from mmdet3d.models.detectors.votenet import VoteNet
 from mmdet3d.models.losses.chamfer_distance import ChamferDistance
+from torch.nn.modules.conv import Conv1d
 
 model = dict(
     type=VoteNet,

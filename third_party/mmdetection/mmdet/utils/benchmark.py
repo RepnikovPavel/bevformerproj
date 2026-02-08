@@ -8,9 +8,6 @@ import numpy as np
 import torch
 import torch.nn as nn
 from mmcv.cnn import fuse_conv_bn
-# TODO need update
-# from mmcv.runner import wrap_fp16_model
-from mmengine import MMLogger
 from mmengine.config import Config
 from mmengine.device import get_max_cuda_memory
 from mmengine.dist import get_world_size
@@ -19,6 +16,10 @@ from mmengine.utils.dl_utils import set_multi_processing
 from torch.nn.parallel import DistributedDataParallel
 
 from mmdet.registry import DATASETS, MODELS
+
+# TODO need update
+# from mmcv.runner import wrap_fp16_model
+from mmengine import MMLogger
 
 try:
     import psutil

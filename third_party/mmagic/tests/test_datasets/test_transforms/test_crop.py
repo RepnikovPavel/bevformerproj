@@ -7,10 +7,15 @@ import cv2
 import numpy as np
 import pytest
 import torch
-
-from mmagic.datasets.transforms import (Crop, CropLike, FixedCrop,
-                                        InstanceCrop, ModCrop,
-                                        PairedRandomCrop, RandomResizedCrop)
+from mmagic.datasets.transforms import (
+    Crop,
+    CropLike,
+    FixedCrop,
+    InstanceCrop,
+    ModCrop,
+    PairedRandomCrop,
+    RandomResizedCrop,
+)
 
 
 class TestAugmentations:

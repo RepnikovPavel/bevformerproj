@@ -5,7 +5,6 @@ import numpy as np
 import pytest
 import torch
 from mmengine.visualization import Visualizer
-
 from mmrazor.visualization.local_visualizer import modify
 
 

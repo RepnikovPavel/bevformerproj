@@ -21,31 +21,61 @@ import mmengine
 from mmengine.config import Config, ConfigDict
 from mmengine.dataset import worker_init_fn as default_worker_init_fn
 from mmengine.device import get_device
-from mmengine.dist import (broadcast, get_dist_info, get_rank, get_world_size,
-                           init_dist, is_distributed, master_only)
+from mmengine.dist import (
+    broadcast,
+    get_dist_info,
+    get_rank,
+    get_world_size,
+    init_dist,
+    is_distributed,
+    master_only,
+)
 from mmengine.evaluator import Evaluator
 from mmengine.fileio import FileClient, join_path
 from mmengine.hooks import Hook
 from mmengine.logging import MessageHub, MMLogger, print_log
-from mmengine.model import (MMDistributedDataParallel, convert_sync_batchnorm,
-                            is_model_wrapper, revert_sync_batchnorm)
-from mmengine.model.efficient_conv_bn_eval import \
-    turn_on_efficient_conv_bn_eval
-from mmengine.optim import (OptimWrapper, OptimWrapperDict, _ParamScheduler,
-                            build_optim_wrapper)
-from mmengine.registry import (DATA_SAMPLERS, DATASETS, EVALUATOR, FUNCTIONS,
-                               HOOKS, LOG_PROCESSORS, LOOPS, MODEL_WRAPPERS,
-                               MODELS, OPTIM_WRAPPERS, PARAM_SCHEDULERS,
-                               RUNNERS, VISUALIZERS, DefaultScope)
+from mmengine.model import (
+    MMDistributedDataParallel,
+    convert_sync_batchnorm,
+    is_model_wrapper,
+    revert_sync_batchnorm,
+)
+from mmengine.model.efficient_conv_bn_eval import turn_on_efficient_conv_bn_eval
+from mmengine.optim import (
+    OptimWrapper,
+    OptimWrapperDict,
+    _ParamScheduler,
+    build_optim_wrapper,
+)
+from mmengine.registry import (
+    DATA_SAMPLERS,
+    DATASETS,
+    EVALUATOR,
+    FUNCTIONS,
+    HOOKS,
+    LOG_PROCESSORS,
+    LOOPS,
+    MODEL_WRAPPERS,
+    MODELS,
+    OPTIM_WRAPPERS,
+    PARAM_SCHEDULERS,
+    RUNNERS,
+    VISUALIZERS,
+    DefaultScope,
+)
 from mmengine.utils import apply_to, digit_version, get_git_hash, is_seq_of
-from mmengine.utils.dl_utils import (TORCH_VERSION, collect_env,
-                                     set_multi_processing)
+from mmengine.utils.dl_utils import TORCH_VERSION, collect_env, set_multi_processing
 from mmengine.visualization import Visualizer
+
 from .activation_checkpointing import turn_on_activation_checkpointing
 from .base_loop import BaseLoop
-from .checkpoint import (_load_checkpoint, _load_checkpoint_to_model,
-                         find_latest_checkpoint, save_checkpoint,
-                         weights_to_cpu)
+from .checkpoint import (
+    _load_checkpoint,
+    _load_checkpoint_to_model,
+    find_latest_checkpoint,
+    save_checkpoint,
+    weights_to_cpu,
+)
 from .log_processor import LogProcessor
 from .loops import EpochBasedTrainLoop, IterBasedTrainLoop, TestLoop, ValLoop
 from .priority import Priority, get_priority

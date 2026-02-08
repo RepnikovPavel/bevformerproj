@@ -20,10 +20,10 @@
 # }
 #
 
-from typing import Union
-
 import math
 import warnings
+from typing import Union
+
 import torch
 from torch.optim.lr_scheduler import _LRScheduler
 

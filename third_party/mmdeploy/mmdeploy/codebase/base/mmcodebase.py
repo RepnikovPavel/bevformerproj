@@ -1,10 +1,11 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 from abc import ABCMeta
 
-from mmengine import Config
 from mmengine.registry import Registry
 
 from mmdeploy.utils import Codebase, Task, get_task_type
+from mmengine import Config
+
 from .task import BaseTask
 
 

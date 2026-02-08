@@ -3,6 +3,7 @@ from typing import Dict, List, Optional
 
 from mmrazor.models.mutables import SlimmableChannelUnit
 from mmrazor.registry import MODELS
+
 from .channel_mutator import ChannelMutator
 
 

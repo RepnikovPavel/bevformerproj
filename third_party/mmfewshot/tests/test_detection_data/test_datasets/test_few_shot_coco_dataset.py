@@ -5,9 +5,7 @@ import tempfile
 
 import numpy as np
 from mmdet.apis.train import set_random_seed
-
-from mmfewshot.detection.datasets.coco import (FewShotCocoCopyDataset,
-                                               FewShotCocoDataset)
+from mmfewshot.detection.datasets.coco import FewShotCocoCopyDataset, FewShotCocoDataset
 
 
 def test_few_shot_coco_dataset():

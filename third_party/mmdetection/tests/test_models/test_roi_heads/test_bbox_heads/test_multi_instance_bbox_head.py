@@ -2,10 +2,9 @@
 from unittest import TestCase
 
 import torch
+from mmdet.models.roi_heads.bbox_heads import MultiInstanceBBoxHead
 from mmengine.config import ConfigDict
 from mmengine.structures import InstanceData
-
-from mmdet.models.roi_heads.bbox_heads import MultiInstanceBBoxHead
 
 
 class TestMultiInstanceBBoxHead(TestCase):

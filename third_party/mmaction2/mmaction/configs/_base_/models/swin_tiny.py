@@ -1,6 +1,10 @@
 # Copyright (c) OpenMMLab. All rights reserved.
-from mmaction.models import (ActionDataPreprocessor, I3DHead, Recognizer3D,
-                             SwinTransformer3D)
+from mmaction.models import (
+                             ActionDataPreprocessor,
+                             I3DHead,
+                             Recognizer3D,
+                             SwinTransformer3D,
+)
 
 model = dict(
     type=Recognizer3D,

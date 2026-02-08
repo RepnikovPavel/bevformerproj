@@ -1,9 +1,8 @@
-from torch import nn
-import torch.nn.functional as F
 import torch
-from src.facerender.modules.util import Hourglass, make_coordinate_grid, kp2gaussian
-
+import torch.nn.functional as F
+from src.facerender.modules.util import Hourglass, kp2gaussian, make_coordinate_grid
 from src.facerender.sync_batchnorm import SynchronizedBatchNorm3d as BatchNorm3d
+from torch import nn
 
 
 class DenseMotionNetwork(nn.Module):

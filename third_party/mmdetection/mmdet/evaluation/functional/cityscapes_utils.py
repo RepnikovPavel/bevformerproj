@@ -8,17 +8,18 @@ import sys
 from pathlib import Path
 from typing import Optional, Union
 
-import mmcv
 import numpy as np
 from mmengine.fileio import get
 
+import mmcv
+
 try:
     import cityscapesscripts.evaluation.evalInstanceLevelSemanticLabeling as CSEval  # noqa: E501
-    from cityscapesscripts.evaluation.evalInstanceLevelSemanticLabeling import \
-        CArgs  # noqa: E501
+    from cityscapesscripts.evaluation.evalInstanceLevelSemanticLabeling import (
+        CArgs,  # noqa: E501
+    )
     from cityscapesscripts.evaluation.instance import Instance
-    from cityscapesscripts.helpers.csHelpers import (id2label, labels,
-                                                     writeDict2JSON)
+    from cityscapesscripts.helpers.csHelpers import id2label, labels, writeDict2JSON
     HAS_CITYSCAPESAPI = True
 except ImportError:
     CArgs = object

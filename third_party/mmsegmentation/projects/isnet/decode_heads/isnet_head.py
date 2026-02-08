@@ -4,13 +4,12 @@ from typing import List
 import torch
 import torch.nn as nn
 from mmcv.cnn import ConvModule
-from torch import Tensor
-
 from mmseg.models.decode_heads.decode_head import BaseDecodeHead
 from mmseg.models.losses import accuracy
 from mmseg.models.utils import SelfAttentionBlock, resize
 from mmseg.registry import MODELS
 from mmseg.utils import SampleList
+from torch import Tensor
 
 
 class ImageLevelContext(nn.Module):

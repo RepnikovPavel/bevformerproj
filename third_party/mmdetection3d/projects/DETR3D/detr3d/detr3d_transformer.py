@@ -4,12 +4,13 @@ import numpy as np
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-from mmcv.cnn.bricks.transformer import (TransformerLayerSequence,
-                                         build_transformer_layer_sequence)
+from mmcv.cnn.bricks.transformer import (
+    TransformerLayerSequence,
+    build_transformer_layer_sequence,
+)
 from mmcv.ops.multi_scale_deform_attn import MultiScaleDeformableAttention
-from mmengine.model import BaseModule, constant_init, xavier_init
-
 from mmdet3d.registry import MODELS
+from mmengine.model import BaseModule, constant_init, xavier_init
 
 
 def inverse_sigmoid(x, eps=1e-5):

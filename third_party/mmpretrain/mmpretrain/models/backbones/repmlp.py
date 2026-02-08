@@ -3,8 +3,12 @@
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-from mmcv.cnn import (ConvModule, build_activation_layer, build_conv_layer,
-                      build_norm_layer)
+from mmcv.cnn import (
+    ConvModule,
+    build_activation_layer,
+    build_conv_layer,
+    build_norm_layer,
+)
 from mmcv.cnn.bricks.transformer import PatchEmbed as _PatchEmbed
 from mmengine.model import BaseModule, ModuleList, Sequential
 

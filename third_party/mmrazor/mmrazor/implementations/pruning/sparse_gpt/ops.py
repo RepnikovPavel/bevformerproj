@@ -11,8 +11,8 @@ import torch.distributed as dist
 import torch.nn as nn
 import torch.nn.functional as F
 
-from mmrazor.models.architectures.dynamic_ops import (DynamicConv2d,
-                                                      DynamicLinear)
+from mmrazor.models.architectures.dynamic_ops import DynamicConv2d, DynamicLinear
+
 from .utils import ModuleProtocol, torch_setting
 
 

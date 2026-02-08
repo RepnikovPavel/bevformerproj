@@ -1,10 +1,8 @@
 import pickle
 import time
 
-import numpy as np
 import torch
 import tqdm
-
 from pcdet.models import load_data_to_gpu
 from pcdet.utils import common_utils
 

@@ -1,6 +1,5 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import torch
-
 from mmflow.models.decoders.raft_decoder import CorrelationPyramid
 from mmflow.ops.builder import build_operators
 from mmflow.ops.corr_lookup import bilinear_sample, coords_grid

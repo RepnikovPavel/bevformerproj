@@ -5,13 +5,12 @@ import numpy as np
 import torch
 from mmengine.evaluator import BaseMetric
 from mmengine.logging import MMLogger
-from scipy.sparse import csr_matrix
-from scipy.sparse.csgraph import maximum_bipartite_matching
-from shapely.geometry import Polygon
-
 from mmocr.evaluation.functional import compute_hmean
 from mmocr.registry import METRICS
 from mmocr.utils import poly_intersection, poly_iou, polys2shapely
+from scipy.sparse import csr_matrix
+from scipy.sparse.csgraph import maximum_bipartite_matching
+from shapely.geometry import Polygon
 
 
 @METRICS.register_module()

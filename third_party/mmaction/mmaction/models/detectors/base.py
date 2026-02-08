@@ -1,10 +1,10 @@
 import logging
 from abc import ABCMeta, abstractmethod
 
-import mmcv
 import numpy as np
 import torch.nn as nn
 
+import mmcv
 from mmaction.core import get_classes
 from mmaction.utils.misc import tensor2video_snaps
 

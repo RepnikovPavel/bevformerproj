@@ -3,28 +3,21 @@
 # This source code is licensed under the MIT license found in the
 # LICENSE file in the root directory of this source tree.
 
-from .cnn import ConvNeXtBlock
-from .dac_model import DAC
-import torch.nn as nn
-import math
-from typing import List
-from typing import Union
+import random
+from typing import List, Union
 
-import numpy as np
 import torch
-from audiotools import AudioSignal
-from audiotools.ml import BaseModel
+import torch.nn as nn
+from easydict import EasyDict as edict
+from einops import rearrange
 from torch import nn
 
+from .cnn import ConvNeXtBlock
+
 # from .base import CodecMixin
-from .dac_layers import Snake1d
 from .dac_layers import WNConv1d
-from .dac_layers import WNConvTranspose1d
+from .dac_model import DAC
 from .dac_quantize import ResidualVectorQuantize
-from easydict import EasyDict as edict
-import torch.nn.functional as F
-import random
-from einops import rearrange
 
 
 class DualCodec(nn.Module):

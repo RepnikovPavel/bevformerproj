@@ -2,7 +2,6 @@ import os
 import os.path as osp
 
 import numpy as np
-
 from mmhuman3d.data.data_converters import build_data_converter
 
 

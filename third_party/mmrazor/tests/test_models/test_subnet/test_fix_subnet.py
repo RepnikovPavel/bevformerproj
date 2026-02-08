@@ -3,7 +3,6 @@ from unittest import TestCase
 
 import pytest
 import torch.nn as nn
-
 from mmrazor.models import *  # noqa:F403,F401
 from mmrazor.models.architectures.dynamic_ops import BigNasConv2d
 from mmrazor.models.mutables import OneShotMutableOP, OneShotMutableValue

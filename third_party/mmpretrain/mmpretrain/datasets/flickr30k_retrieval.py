@@ -4,8 +4,8 @@ from typing import List
 
 import mmengine
 from mmengine import get_file_backend
-
 from mmpretrain.registry import DATASETS
+
 from .base_dataset import BaseDataset
 
 

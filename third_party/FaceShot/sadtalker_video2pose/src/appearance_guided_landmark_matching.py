@@ -1,14 +1,13 @@
-import json
-from scipy.ndimage import gaussian_filter
-from PIL import Image
-from skimage.measure import EllipseModel, CircleModel
-import numpy as np
-import matplotlib.pyplot as plt
-import torch
-import torch.nn.functional as F
-import torch.nn as nn
 import gc
 import os
+
+import matplotlib.pyplot as plt
+import numpy as np
+import torch
+import torch.nn as nn
+import torch.nn.functional as F
+from PIL import Image
+from skimage.measure import CircleModel, EllipseModel
 
 
 def get_angle_and_distance(x, y, xc, yc, a, b, theta):
@@ -156,9 +155,13 @@ def rearrangement(points):
 
 
 def Appearance_Matching(img_path, img_size):
-    from transformers import AutoModelForCausalLM, AutoTokenizer
+    from transformers import (
+        AutoModelForCausalLM,
+        AutoTokenizer,
+        CLIPImageProcessor,
+        CLIPVisionModelWithProjection,
+    )
     from transformers.generation import GenerationConfig
-    from transformers import CLIPImageProcessor, CLIPVisionModelWithProjection
     
     tokenizer = AutoTokenizer.from_pretrained("Qwen/Qwen-VL-Chat", trust_remote_code=True)
     model = AutoModelForCausalLM.from_pretrained("Qwen/Qwen-VL-Chat", device_map="cuda", trust_remote_code=True).eval()

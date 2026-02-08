@@ -1,5 +1,6 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 from mmdet3d.registry import MODELS
+
 from .votenet import VoteNet
 
 

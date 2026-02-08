@@ -2,9 +2,10 @@
 from typing import List
 
 import mat4py
-from mmengine import get_file_backend
 
+from mmengine import get_file_backend
 from mmpretrain.registry import DATASETS
+
 from .base_dataset import BaseDataset
 from .categories import DTD_CATEGORIES
 

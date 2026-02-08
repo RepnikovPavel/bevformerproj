@@ -1,12 +1,13 @@
 from __future__ import division
+
 import argparse
 
 import torch
-from mmcv import Config
 from mmcv.runner import load_checkpoint
-
 from mmfashion.models import build_landmark_detector
 from mmfashion.utils import draw_landmarks, get_img_tensor
+
+from mmcv import Config
 
 
 def parse_args():

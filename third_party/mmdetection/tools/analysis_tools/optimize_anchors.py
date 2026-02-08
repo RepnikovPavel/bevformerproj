@@ -23,17 +23,19 @@ import os.path as osp
 
 import numpy as np
 import torch
+from mmdet.registry import DATASETS
+from mmdet.structures.bbox import (
+    bbox_cxcywh_to_xyxy,
+    bbox_overlaps,
+    bbox_xyxy_to_cxcywh,
+)
+from mmdet.utils import replace_cfg_vals, update_data_root
 from mmengine.config import Config
 from mmengine.fileio import dump
 from mmengine.logging import MMLogger
 from mmengine.registry import init_default_scope
 from mmengine.utils import ProgressBar
 from scipy.optimize import differential_evolution
-
-from mmdet.registry import DATASETS
-from mmdet.structures.bbox import (bbox_cxcywh_to_xyxy, bbox_overlaps,
-                                   bbox_xyxy_to_cxcywh)
-from mmdet.utils import replace_cfg_vals, update_data_root
 
 
 def parse_args():

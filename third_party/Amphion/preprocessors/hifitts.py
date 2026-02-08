@@ -3,13 +3,11 @@
 # This source code is licensed under the MIT license found in the
 # LICENSE file in the root directory of this source tree.
 
-import os
 import json
-import torchaudio
-from tqdm import tqdm
+import os
 from glob import glob
-from collections import defaultdict
 
+from tqdm import tqdm
 from utils.util import has_existed
 
 

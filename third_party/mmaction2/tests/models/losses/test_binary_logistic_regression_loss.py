@@ -1,8 +1,7 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import torch
-from numpy.testing import assert_array_almost_equal
-
 from mmaction.models import BinaryLogisticRegressionLoss, BMNLoss
+from numpy.testing import assert_array_almost_equal
 
 
 def test_binary_logistic_regression_loss():

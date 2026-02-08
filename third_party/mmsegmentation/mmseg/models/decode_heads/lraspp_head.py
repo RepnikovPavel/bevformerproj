@@ -5,6 +5,7 @@ from mmcv.cnn import ConvModule
 from mmengine.utils import is_tuple_of
 
 from mmseg.registry import MODELS
+
 from ..utils import resize
 from .decode_head import BaseDecodeHead
 

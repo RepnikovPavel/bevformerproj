@@ -4,9 +4,8 @@ from copy import deepcopy
 import pytest
 import torch
 import torch.nn as nn
-from torch.nn.parallel import DataParallel
-
 from mmgen.core.hooks import ExponentialMovingAverageHook
+from torch.nn.parallel import DataParallel
 
 
 class SimpleModule(nn.Module):

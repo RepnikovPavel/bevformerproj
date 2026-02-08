@@ -3,18 +3,18 @@
 # This source code is licensed under the MIT license found in the
 # LICENSE file in the root directory of this source tree.
 
-import os
+import glob
 import json
 import os
-import glob
-from tqdm import tqdm
-import torchaudio
-import pandas as pd
-from glob import glob
 from collections import defaultdict
+from glob import glob
 
+import pandas as pd
+import torchaudio
+from tqdm import tqdm
 from utils.io import save_audio
 from utils.util import has_existed
+
 from preprocessors import GOLDEN_TEST_SAMPLES
 
 

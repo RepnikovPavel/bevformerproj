@@ -7,17 +7,25 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 from transformers.models.beit import BeitConfig, BeitModel
-from transformers.models.beit.modeling_beit import BeitAttention, BeitDropPath
-from transformers.models.beit.modeling_beit import \
-    BeitEmbeddings as BeitEmbeddings2D
+from transformers.models.beit.modeling_beit import (
+    BeitAttention,
+    BeitDropPath,
+    BeitRelativePositionBias,
+)
+from transformers.models.beit.modeling_beit import BeitEmbeddings as BeitEmbeddings2D
 from transformers.models.beit.modeling_beit import BeitLayer as BeitLayer2D
-from transformers.models.beit.modeling_beit import BeitRelativePositionBias
-from transformers.models.beit.modeling_beit import \
-    BeitRelativePositionBias as BeitRelativePositionBias2D
+from transformers.models.beit.modeling_beit import (
+    BeitRelativePositionBias as BeitRelativePositionBias2D,
+)
 
 from mmaction.registry import MODELS
-from .temporal_model import (X_CLIP, STAdapter, TemporalAttention,
-                             WindowTemporalAttention)
+
+from .temporal_model import (
+    X_CLIP,
+    STAdapter,
+    TemporalAttention,
+    WindowTemporalAttention,
+)
 
 
 def interpolate_temporal_pos_embed(temp_embed_old, num_frames_new):

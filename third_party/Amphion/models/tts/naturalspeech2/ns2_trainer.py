@@ -3,34 +3,28 @@
 # This source code is licensed under the MIT license found in the
 # LICENSE file in the root directory of this source tree.
 
+import json
 import os
 import shutil
-import json
 import time
-import torch
-import numpy as np
-from utils.util import Logger, ValueWindow
-from torch.utils.data import ConcatDataset, DataLoader
-from models.tts.base.tts_trainer import TTSTrainer
-from models.base.base_trainer import BaseTrainer
-from models.base.base_sampler import VariableSampler
-from models.tts.naturalspeech2.ns2_dataset import NS2Dataset, NS2Collator, batch_by_size
-from models.tts.naturalspeech2.ns2_loss import (
-    log_pitch_loss,
-    log_dur_loss,
-    diff_loss,
-    diff_ce_loss,
-)
-from torch.utils.data.sampler import BatchSampler, SequentialSampler
-from models.tts.naturalspeech2.ns2 import NaturalSpeech2
-from torch.optim import Adam, AdamW
-from torch.nn import MSELoss, L1Loss
-import torch.nn.functional as F
-from diffusers import get_scheduler
 
 import accelerate
-from accelerate.logging import get_logger
+import numpy as np
+import torch
 from accelerate.utils import ProjectConfiguration
+from diffusers import get_scheduler
+from models.base.base_sampler import VariableSampler
+from models.tts.base.tts_trainer import TTSTrainer
+from models.tts.naturalspeech2.ns2 import NaturalSpeech2
+from models.tts.naturalspeech2.ns2_dataset import NS2Collator, NS2Dataset, batch_by_size
+from models.tts.naturalspeech2.ns2_loss import (
+    diff_ce_loss,
+    diff_loss,
+    log_dur_loss,
+    log_pitch_loss,
+)
+from torch.utils.data import DataLoader
+from utils.util import Logger, ValueWindow
 
 
 class NS2Trainer(TTSTrainer):

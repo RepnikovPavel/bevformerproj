@@ -4,11 +4,11 @@ import random
 from typing import Dict, List, Optional, Tuple
 
 import cv2
-import mmcv
 import numpy as np
 from mmcv.transforms.base import BaseTransform
 from mmcv.transforms.utils import cache_randomness
 
+import mmcv
 from mmocr.registry import TRANSFORMS
 
 

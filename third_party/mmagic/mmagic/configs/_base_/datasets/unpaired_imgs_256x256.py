@@ -1,7 +1,6 @@
 # Copyright (c) OpenMMLab. All rights reserved.
+from mmagic.datasets.transforms import Crop, Flip, Resize
 from mmengine.dataset import DefaultSampler, InfiniteSampler
-
-from mmagic.datasets.transforms import Crop, Flip, PackInputs, Resize
 
 dataset_type = 'UnpairedImageDataset'
 domain_a = None  # set by user

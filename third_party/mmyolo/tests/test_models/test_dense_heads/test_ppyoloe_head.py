@@ -2,13 +2,13 @@
 from unittest import TestCase
 
 import torch
-from mmengine import ConfigDict, MessageHub
 from mmengine.config import Config
 from mmengine.model import bias_init_with_prob
 from mmengine.testing import assert_allclose
-
 from mmyolo.models import PPYOLOEHead
 from mmyolo.utils import register_all_modules
+
+from mmengine import ConfigDict, MessageHub
 
 register_all_modules()
 

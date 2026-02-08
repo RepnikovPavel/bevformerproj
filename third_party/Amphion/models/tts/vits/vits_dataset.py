@@ -3,17 +3,18 @@
 # This source code is licensed under the MIT license found in the
 # LICENSE file in the root directory of this source tree.
 
-import os
 import json
+import os
+
 import numpy as np
+from models.tts.base.tts_dataset import (
+    TTSCollator,
+    TTSDataset,
+    TTSTestCollator,
+    TTSTestDataset,
+)
 from text import text_to_sequence
 from text.text_token_collation import phoneIDCollation
-from models.tts.base.tts_dataset import (
-    TTSDataset,
-    TTSCollator,
-    TTSTestDataset,
-    TTSTestCollator,
-)
 
 
 class VITSDataset(TTSDataset):

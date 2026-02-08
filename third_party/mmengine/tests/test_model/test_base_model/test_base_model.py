@@ -5,13 +5,12 @@ from unittest import TestCase
 
 import torch
 import torch.nn as nn
-from parameterized import parameterized
-from torch.optim import SGD
-
 from mmengine.model import BaseDataPreprocessor, BaseModel
 from mmengine.optim import OptimWrapper
 from mmengine.registry import MODELS
 from mmengine.testing import assert_allclose
+from parameterized import parameterized
+from torch.optim import SGD
 
 dtypes_to_test = [torch.float16, torch.float32, torch.float64, torch.half]
 

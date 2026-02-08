@@ -4,10 +4,8 @@
 # LICENSE file in the root directory of this source tree.
 
 import argparse
-import os
 
 import torch
-
 from models.vocoders.vocoder_inference import VocoderInference
 from utils.util import load_config
 

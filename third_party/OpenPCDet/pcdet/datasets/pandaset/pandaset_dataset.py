@@ -2,19 +2,19 @@
     Dataset from Pandaset (Hesai)
 """
 
-import pickle
 import os
+import pickle
+
 try:
     import pandas as pd
     import pandaset as ps
 except:
     pass 
 import numpy as np
-
-from ..dataset import DatasetTemplate
-from ...ops.roiaware_pool3d import roiaware_pool3d_utils
-
 import torch
+
+from ...ops.roiaware_pool3d import roiaware_pool3d_utils
+from ..dataset import DatasetTemplate
 
 
 def pose_dict_to_numpy(pose):
@@ -472,8 +472,9 @@ def create_pandaset_infos(dataset_cfg, class_names, data_path, save_path):
 if __name__ == '__main__':
     import sys
     if sys.argv.__len__() > 1 and sys.argv[1] == 'create_pandaset_infos':
-        import yaml
         from pathlib import Path
+
+        import yaml
         from easydict import EasyDict
         dataset_cfg = EasyDict(yaml.safe_load(open(sys.argv[2])))
         ROOT_DIR = (Path(__file__).resolve().parent / '../../../').resolve()

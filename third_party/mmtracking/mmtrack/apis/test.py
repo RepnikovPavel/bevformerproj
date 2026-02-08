@@ -6,12 +6,13 @@ import tempfile
 import time
 from collections import defaultdict
 
-import mmcv
 import torch
 import torch.distributed as dist
 from mmcv.image import tensor2imgs
 from mmcv.runner import get_dist_info
 from mmdet.core import encode_mask_results
+
+import mmcv
 
 
 def single_gpu_test(model,

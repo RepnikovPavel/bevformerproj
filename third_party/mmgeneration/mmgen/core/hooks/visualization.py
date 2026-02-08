@@ -1,11 +1,12 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import os.path as osp
 
-import mmcv
 import torch
 from mmcv.runner import HOOKS, Hook
 from mmcv.runner.dist_utils import master_only
 from torchvision.utils import save_image
+
+import mmcv
 
 
 @HOOKS.register_module('MMGenVisualizationHook')

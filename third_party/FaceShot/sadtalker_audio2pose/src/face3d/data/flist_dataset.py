@@ -1,19 +1,22 @@
 """This script defines the custom dataset for Deep3DFaceRecon_pytorch
 """
 
-import os.path
-from data.base_dataset import BaseDataset, get_transform, get_affine_mat, apply_img_affine, apply_lm_affine
-from data.image_folder import make_dataset
-from PIL import Image
-import random
-import util.util as util
-import numpy as np
 import json
+import os.path
+
+import numpy as np
 import torch
-from scipy.io import loadmat, savemat
-import pickle
-from util.preprocess import align_img, estimate_norm
+from PIL import Image
 from util.load_mats import load_lm3d
+from util.preprocess import align_img, estimate_norm
+
+from data.base_dataset import (
+    BaseDataset,
+    apply_img_affine,
+    apply_lm_affine,
+    get_affine_mat,
+    get_transform,
+)
 
 
 def default_flist_reader(flist):

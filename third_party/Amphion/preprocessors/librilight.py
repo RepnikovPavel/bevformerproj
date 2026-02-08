@@ -4,26 +4,24 @@
 # LICENSE file in the root directory of this source tree.
 
 import json
-from tqdm import tqdm
 import os
-import torchaudio
-import torch
-
-
-from utils.mfa_prepare import (
-    process_wav_files,
-    get_wav_files,
-    filter_wav_files_by_length,
-)
-from utils.cut_by_vad import cut_segments
-from utils.whisper_transcription import asr_main
-from utils.util import has_existed
-
-import subprocess
 import random
+import shutil
+import subprocess
 from collections import defaultdict
 from glob import glob
-import shutil
+
+import torch
+import torchaudio
+from tqdm import tqdm
+from utils.cut_by_vad import cut_segments
+from utils.mfa_prepare import (
+    filter_wav_files_by_length,
+    get_wav_files,
+    process_wav_files,
+)
+from utils.util import has_existed
+from utils.whisper_transcription import asr_main
 
 
 def librilight_statistics(data_dir):

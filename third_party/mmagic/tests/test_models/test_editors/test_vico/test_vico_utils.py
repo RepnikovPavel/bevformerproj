@@ -4,10 +4,9 @@ import platform
 
 import pytest
 from diffusers.models.unet_2d_condition import UNet2DConditionModel
+from mmagic.models.editors.vico.vico_utils import set_vico_modules
 from mmengine.utils import digit_version
 from mmengine.utils.dl_utils import TORCH_VERSION
-
-from mmagic.models.editors.vico.vico_utils import set_vico_modules
 
 
 @pytest.mark.skipif(

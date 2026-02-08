@@ -9,10 +9,15 @@ with read_base():
 from mmengine.model import ConstantInit, PretrainedInit, TruncNormalInit
 from mmengine.optim import AmpOptimWrapper, CosineAnnealingLR, LinearLR
 from mmengine.runner import EpochBasedTrainLoop
+from mmpretrain.models import (
+    VQKD,
+    BEiT,
+    BEiTPretrainViT,
+    BEiTV2Head,
+    BEiTV2Neck,
+    CrossEntropyLoss,
+)
 from torch.optim import AdamW
-
-from mmpretrain.models import (VQKD, BEiT, BEiTPretrainViT, BEiTV2Head,
-                               BEiTV2Neck, CrossEntropyLoss)
 
 # model settings
 vqkd_encoder = dict(

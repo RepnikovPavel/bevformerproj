@@ -2,14 +2,18 @@
 import copy
 import os.path as osp
 
-import mmcv
 import numpy as np
+from mmaction.datasets.transforms import (
+    AudioFeatureSelector,
+    DenseSampleFrames,
+    SampleAVAFrames,
+    SampleFrames,
+    UntrimmedSampleFrames,
+)
 from mmengine.testing import assert_dict_has_keys
 from numpy.testing import assert_array_equal
 
-from mmaction.datasets.transforms import (AudioFeatureSelector,
-                                          DenseSampleFrames, SampleAVAFrames,
-                                          SampleFrames, UntrimmedSampleFrames)
+import mmcv
 
 
 class BaseTestLoading:

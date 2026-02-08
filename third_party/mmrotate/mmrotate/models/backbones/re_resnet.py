@@ -9,9 +9,16 @@ from mmcv.runner import BaseModule
 from torch.nn.modules.batchnorm import _BatchNorm
 
 from ..builder import ROTATED_BACKBONES
-from ..utils import (build_enn_divide_feature, build_enn_norm_layer,
-                     build_enn_trivial_feature, ennAvgPool, ennConv,
-                     ennMaxPool, ennReLU, ennTrivialConv)
+from ..utils import (
+    build_enn_divide_feature,
+    build_enn_norm_layer,
+    build_enn_trivial_feature,
+    ennAvgPool,
+    ennConv,
+    ennMaxPool,
+    ennReLU,
+    ennTrivialConv,
+)
 
 
 class BasicBlock(enn.EquivariantModule):

@@ -1,16 +1,15 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import pytest
 import torch
-from mmengine.runner import Runner
-from mmengine.utils.dl_utils import TORCH_VERSION
-from mmengine.utils.version_utils import digit_version
-
 from mmagic.datasets import BasicImageDataset
 from mmagic.datasets.transforms import PackInputs
 from mmagic.evaluation import Equivariance
 from mmagic.models import DataPreprocessor, StyleGAN3
 from mmagic.models.editors.stylegan3 import StyleGAN3Generator
 from mmagic.utils import register_all_modules
+from mmengine.runner import Runner
+from mmengine.utils.dl_utils import TORCH_VERSION
+from mmengine.utils.version_utils import digit_version
 
 register_all_modules()
 

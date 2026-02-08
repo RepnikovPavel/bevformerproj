@@ -2,9 +2,8 @@
 import pytest
 import torch
 from mmcv.cnn import is_norm
-from torch.nn.modules import GroupNorm
-
 from mmdet.models.layers import InvertedResidual, SELayer
+from torch.nn.modules import GroupNorm
 
 
 def test_inverted_residual():

@@ -5,8 +5,6 @@ from mmengine.hooks import CheckpointHook, LoggerHook
 from mmengine.model import PretrainedInit
 from torch.optim.adamw import AdamW
 
-from mmpretrain.models import ImageClassifier
-
 with read_base():
     from .._base_.datasets.cub_bs8_384 import *
     from .._base_.default_runtime import *

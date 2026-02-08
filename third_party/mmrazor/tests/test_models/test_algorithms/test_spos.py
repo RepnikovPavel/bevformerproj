@@ -4,7 +4,6 @@ from unittest import TestCase
 import torch
 import torch.nn as nn
 from mmengine.model import BaseModel
-
 from mmrazor.models import SPOS, NasMutator, OneShotMutableOP
 from mmrazor.registry import MODELS
 from mmrazor.structures import load_fix_subnet

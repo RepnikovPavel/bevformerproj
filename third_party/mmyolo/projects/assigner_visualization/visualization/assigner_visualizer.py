@@ -2,16 +2,16 @@
 import math
 from typing import List, Union
 
-import mmcv
 import numpy as np
 import torch
 from mmdet.structures.bbox import HorizontalBoxes
 from mmdet.visualization import DetLocalVisualizer
 from mmdet.visualization.palette import _get_adaptive_scales, get_palette
 from mmengine.structures import InstanceData
+from mmyolo.registry import VISUALIZERS
 from torch import Tensor
 
-from mmyolo.registry import VISUALIZERS
+import mmcv
 
 
 @VISUALIZERS.register_module()

@@ -1,10 +1,9 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import pytest
 import torch
-from torch.autograd import gradcheck
-
 from mmcv.ops import DynamicScatter
 from mmcv.utils import IS_CUDA_AVAILABLE, IS_MLU_AVAILABLE, IS_MUSA_AVAILABLE
+from torch.autograd import gradcheck
 
 if torch.__version__ == 'parrots':
     pytest.skip('not supported in parrots now', allow_module_level=True)

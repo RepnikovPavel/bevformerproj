@@ -3,7 +3,6 @@ import platform
 
 import decord
 import pytest
-
 from mmaction.structures import ActionDataSample
 from mmaction.visualization import ActionVisualizer
 

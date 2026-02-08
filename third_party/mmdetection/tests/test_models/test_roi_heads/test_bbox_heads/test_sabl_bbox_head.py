@@ -2,11 +2,10 @@
 from unittest import TestCase
 
 import torch
-from mmengine.config import ConfigDict
-from mmengine.structures import InstanceData
-
 from mmdet.models.roi_heads.bbox_heads import SABLHead
 from mmdet.models.task_modules.samplers import SamplingResult
+from mmengine.config import ConfigDict
+from mmengine.structures import InstanceData
 
 
 class TestSABLBboxHead(TestCase):

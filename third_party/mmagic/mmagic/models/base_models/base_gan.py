@@ -5,7 +5,6 @@ from typing import Dict, List, Optional, Union
 
 import torch
 import torch.nn as nn
-from mmengine import Config, MessageHub
 from mmengine.model import BaseModel, is_model_wrapper
 from mmengine.optim import OptimWrapper, OptimWrapperDict
 from torch import Tensor
@@ -13,8 +12,14 @@ from torch import Tensor
 from mmagic.registry import MODELS
 from mmagic.structures import DataSample
 from mmagic.utils.typing import ForwardInputs, NoiseVar, SampleList
-from ..utils import (get_valid_noise_size, get_valid_num_batches,
-                     noise_sample_fn, set_requires_grad)
+from mmengine import Config, MessageHub
+
+from ..utils import (
+    get_valid_noise_size,
+    get_valid_num_batches,
+    noise_sample_fn,
+    set_requires_grad,
+)
 
 ModelType = Union[Dict, nn.Module]
 

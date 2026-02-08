@@ -1,8 +1,6 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import torch
-
-from mmagic.models.editors.ddpm.denoising_unet import (DenoisingUnet,
-                                                       NormWithEmbedding)
+from mmagic.models.editors.ddpm.denoising_unet import DenoisingUnet, NormWithEmbedding
 
 
 def test_DenoisingUnet():

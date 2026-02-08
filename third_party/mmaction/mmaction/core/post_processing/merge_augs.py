@@ -1,8 +1,8 @@
+import numpy as np
 import torch
 
-import numpy as np
-
 from mmaction.ops import nms
+
 from ..bbox2d import bbox_mapping_back
 
 

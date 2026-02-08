@@ -5,7 +5,6 @@ import tempfile
 
 import numpy as np
 import pytest
-
 from mmtrack.core.utils import visualization as vis
 
 

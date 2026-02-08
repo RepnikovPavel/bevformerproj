@@ -4,10 +4,9 @@ from typing import Any, Dict
 import numpy as np
 import torch
 from mmcv.transforms import BaseTransform
-from PIL import Image
-
 from mmdet3d.datasets import GlobalRotScaleTrans
 from mmdet3d.registry import TRANSFORMS
+from PIL import Image
 
 
 @TRANSFORMS.register_module()

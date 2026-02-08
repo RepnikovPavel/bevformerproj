@@ -6,7 +6,6 @@ import torch.nn as nn
 import torch.nn.functional as F
 from mmaction.models import MViT
 from mmaction.models.backbones.mvit import resize_pos_embed
-
 from mmselfsup.registry import MODELS
 
 

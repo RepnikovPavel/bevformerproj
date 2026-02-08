@@ -7,6 +7,7 @@ from mmcv.cnn import ConvModule
 from mmdet.utils import ConfigType, OptMultiConfig
 
 from mmyolo.registry import MODELS
+
 from ..layers import BepC3StageBlock, BiFusion, RepStageBlock
 from ..utils import make_round
 from .base_yolo_neck import BaseYOLONeck

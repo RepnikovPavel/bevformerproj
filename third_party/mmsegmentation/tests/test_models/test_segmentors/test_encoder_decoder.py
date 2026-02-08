@@ -1,10 +1,11 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import torch
-from mmengine import ConfigDict
 from mmengine.structures import PixelData
-
 from mmseg.models import build_segmentor
 from mmseg.structures import SegDataSample
+
+from mmengine import ConfigDict
+
 from .utils import _segmentor_forward_train_test
 
 

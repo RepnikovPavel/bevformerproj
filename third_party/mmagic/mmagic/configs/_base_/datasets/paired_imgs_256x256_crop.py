@@ -1,9 +1,6 @@
 # Copyright (c) OpenMMLab. All rights reserved.
+from mmagic.datasets.transforms import FixedCrop, Flip, LoadPairedImageFromFile, Resize
 from mmengine.dataset import DefaultSampler, InfiniteSampler
-
-from mmagic.datasets.transforms import (FixedCrop, Flip,
-                                        LoadPairedImageFromFile, PackInputs,
-                                        Resize)
 
 dataset_type = 'PairedImageDataset'
 # domain_a = None  # set by user

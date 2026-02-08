@@ -4,7 +4,6 @@ import tempfile
 
 import numpy as np
 from mmdet.apis.train import set_random_seed
-
 from mmfewshot.detection.datasets.builder import build_dataset
 
 

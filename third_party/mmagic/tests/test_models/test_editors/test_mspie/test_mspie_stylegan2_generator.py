@@ -5,7 +5,6 @@ from copy import deepcopy
 import pytest
 import torch
 import torch.nn as nn
-
 from mmagic.models.editors.mspie import MSStyleGANv2Generator
 from mmagic.registry import MODELS
 from mmagic.utils import register_all_modules

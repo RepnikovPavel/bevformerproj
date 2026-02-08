@@ -1,2 +1,2 @@
-from .tools import wav_to_fbank, read_wav_file
 from .stft import TacotronSTFT
+from .tools import read_wav_file, wav_to_fbank

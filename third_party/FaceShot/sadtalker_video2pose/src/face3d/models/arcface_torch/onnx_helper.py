@@ -1,16 +1,17 @@
 from __future__ import division
+
+import argparse
 import datetime
 import os
 import os.path as osp
-import glob
-import numpy as np
+
 import cv2
-import sys
-import onnxruntime
+import numpy as np
 import onnx
-import argparse
-from onnx import numpy_helper
+import onnxruntime
 from insightface.data import get_image
+from onnx import numpy_helper
+
 
 class ArcFaceORT:
     def __init__(self, model_path, cpu=False):

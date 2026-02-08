@@ -4,7 +4,6 @@ import os.path as osp
 
 from mmengine.config import Config, DictAction
 from mmengine.utils import ProgressBar
-
 from mmseg.registry import DATASETS, VISUALIZERS
 from mmseg.utils import register_all_modules
 

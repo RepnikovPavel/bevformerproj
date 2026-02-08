@@ -7,6 +7,7 @@ from torch import Tensor
 
 from mmdet3d.registry import TASK_UTILS
 from mmdet3d.structures.bbox_3d import BaseInstance3DBoxes
+
 from .partial_bin_based_bbox_coder import PartialBinBasedBBoxCoder
 
 

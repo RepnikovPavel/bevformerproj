@@ -1,10 +1,10 @@
 from typing import Sequence, Union
 
 import torch.nn as nn
-
 from mmdet.models.backbones.swin import SwinBlock
-from mmdet.models.layers.transformer.deformable_detr_layers import \
-    DeformableDetrTransformerEncoderLayer
+from mmdet.models.layers.transformer.deformable_detr_layers import (
+    DeformableDetrTransformerEncoderLayer,
+)
 
 
 # TODO: The new version of configs does not support passing a module list,

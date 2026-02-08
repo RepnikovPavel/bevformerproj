@@ -3,8 +3,7 @@ import warnings
 from collections import OrderedDict
 from typing import Sequence, Union
 
-from mmengine.dist import (broadcast_object_list, collect_results,
-                           is_main_process)
+from mmengine.dist import broadcast_object_list, collect_results, is_main_process
 from mmengine.evaluator import BaseMetric, Evaluator
 from mmengine.evaluator.metric import _to_cpu
 from mmengine.registry import EVALUATOR

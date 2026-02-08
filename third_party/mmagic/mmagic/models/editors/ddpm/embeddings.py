@@ -1,11 +1,12 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import math
 
-import mmengine
 import torch
 from mmengine.utils.dl_utils import TORCH_VERSION
 from mmengine.utils.version_utils import digit_version
 from torch import nn
+
+import mmengine
 
 
 class TimestepEmbedding(nn.Module):

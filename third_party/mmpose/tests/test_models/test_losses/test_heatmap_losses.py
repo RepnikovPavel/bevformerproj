@@ -2,10 +2,12 @@
 from unittest import TestCase
 
 import torch
-
-from mmpose.models.losses.heatmap_loss import (AdaptiveWingLoss,
-                                               FocalHeatmapLoss,
-                                               KeypointMSELoss, MLECCLoss)
+from mmpose.models.losses.heatmap_loss import (
+    AdaptiveWingLoss,
+    FocalHeatmapLoss,
+    KeypointMSELoss,
+    MLECCLoss,
+)
 
 
 class TestAdaptiveWingLoss(TestCase):

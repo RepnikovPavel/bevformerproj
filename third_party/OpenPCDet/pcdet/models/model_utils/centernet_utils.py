@@ -1,9 +1,9 @@
 # This file is modified from https://github.com/tianweiy/CenterPoint
 
+import numba
+import numpy as np
 import torch
 import torch.nn.functional as F
-import numpy as np
-import numba
 
 
 def gaussian_radius(height, width, min_overlap=0.5):

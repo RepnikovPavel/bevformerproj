@@ -9,6 +9,7 @@ from mmengine.model.weight_init import trunc_normal_
 from mmpretrain.models.backbones.hivit import BlockWithRPE, HiViT, PatchMerge
 from mmpretrain.registry import MODELS
 from mmpretrain.structures import DataSample
+
 from ..utils import build_2d_sincos_position_embedding
 from .base import BaseSelfSupervisor
 

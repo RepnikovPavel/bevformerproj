@@ -2,17 +2,15 @@ import os
 
 import pytest
 import torch
-from pytorch3d.renderer.mesh import TexturesVertex
-from pytorch3d.utils import torus
-
 from mmhuman3d.core.renderer.torch3d_renderer.builder import build_renderer
 from mmhuman3d.core.renderer.torch3d_renderer.meshes import (
     ParametricMeshes,
     join_batch_meshes_as_scene,
 )
 from mmhuman3d.models.body_models.builder import build_body_model
-from mmhuman3d.utils.mesh_utils import \
-    join_batch_meshes_as_scene as join_batch_meshes_as_scene_
+from mmhuman3d.utils.mesh_utils import (
+    join_batch_meshes_as_scene as join_batch_meshes_as_scene_,
+)
 from mmhuman3d.utils.mesh_utils import (
     load_plys_as_meshes,
     mesh_to_pointcloud_vc,
@@ -20,6 +18,8 @@ from mmhuman3d.utils.mesh_utils import (
     save_meshes_as_plys,
     texture_uv2vc,
 )
+from pytorch3d.renderer.mesh import TexturesVertex
+from pytorch3d.utils import torus
 
 output_dir = 'tests/data/mesh_utils_output'
 os.makedirs(output_dir, exist_ok=True)

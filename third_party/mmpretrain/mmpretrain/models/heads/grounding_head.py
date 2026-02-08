@@ -5,8 +5,7 @@ import torch
 import torch.nn.functional as F
 from mmengine.model import BaseModule
 
-from mmpretrain.models.utils.box_utils import (box_cxcywh_to_xyxy,
-                                               generalized_box_iou)
+from mmpretrain.models.utils.box_utils import box_cxcywh_to_xyxy, generalized_box_iou
 from mmpretrain.registry import MODELS, TOKENIZER
 
 

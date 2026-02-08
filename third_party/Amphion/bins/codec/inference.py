@@ -4,12 +4,10 @@
 # LICENSE file in the root directory of this source tree.
 
 import argparse
-from argparse import ArgumentParser
-import os
 
+import torch
 from models.codec.facodec.facodec_inference import FAcodecInference
 from utils.util import load_config
-import torch
 
 
 def build_inference(args, cfg):

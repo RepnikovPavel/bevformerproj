@@ -3,7 +3,6 @@ from unittest import TestCase
 
 import pytest
 import torch
-
 from mmrazor.models.architectures.dynamic_ops import DynamicRelativePosition2D
 from mmrazor.models.architectures.ops import RelativePosition2D
 from mmrazor.models.mutables import SquentialMutableChannel

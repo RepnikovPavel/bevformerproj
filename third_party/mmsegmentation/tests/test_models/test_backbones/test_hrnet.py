@@ -2,7 +2,6 @@
 import pytest
 import torch
 from mmengine.utils.dl_utils.parrots_wrapper import _BatchNorm
-
 from mmseg.models.backbones.hrnet import HRModule, HRNet
 from mmseg.models.backbones.resnet import BasicBlock, Bottleneck
 

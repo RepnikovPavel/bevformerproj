@@ -1,7 +1,6 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import pytest
 import torch
-
 from mmseg.models.decode_heads import FCNHead
 from mmseg.structures import OHEMPixelSampler
 

@@ -11,6 +11,7 @@ from torch import Tensor
 from mmdet.registry import MODELS
 from mmdet.structures import SampleList
 from mmdet.utils import InstanceList, OptInstanceList
+
 from ..layers import inverse_sigmoid
 from .detr_head import DETRHead
 

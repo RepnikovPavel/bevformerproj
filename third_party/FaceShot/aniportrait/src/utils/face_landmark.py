@@ -15,29 +15,35 @@
 
 import dataclasses
 import enum
-from typing import Callable, Mapping, Optional, List
+from typing import Callable, List, Mapping, Optional
 
 import numpy as np
-
-from mediapipe.framework.formats import classification_pb2
-from mediapipe.framework.formats import landmark_pb2
-from mediapipe.framework.formats import matrix_data_pb2
-from mediapipe.python import packet_creator
-from mediapipe.python import packet_getter
+from mediapipe.framework.formats import (
+  classification_pb2,
+  landmark_pb2,
+  matrix_data_pb2,
+)
+from mediapipe.python import packet_creator, packet_getter
 from mediapipe.python._framework_bindings import image as image_module
 from mediapipe.python._framework_bindings import packet as packet_module
+
 # pylint: disable=unused-import
-from mediapipe.tasks.cc.vision.face_geometry.proto import face_geometry_pb2
 # pylint: enable=unused-import
-from mediapipe.tasks.cc.vision.face_landmarker.proto import face_landmarker_graph_options_pb2
+from mediapipe.tasks.cc.vision.face_landmarker.proto import (
+  face_landmarker_graph_options_pb2,
+)
 from mediapipe.tasks.python.components.containers import category as category_module
 from mediapipe.tasks.python.components.containers import landmark as landmark_module
 from mediapipe.tasks.python.core import base_options as base_options_module
 from mediapipe.tasks.python.core import task_info as task_info_module
 from mediapipe.tasks.python.core.optional_dependencies import doc_controls
 from mediapipe.tasks.python.vision.core import base_vision_task_api
-from mediapipe.tasks.python.vision.core import image_processing_options as image_processing_options_module
-from mediapipe.tasks.python.vision.core import vision_task_running_mode as running_mode_module
+from mediapipe.tasks.python.vision.core import (
+  image_processing_options as image_processing_options_module,
+)
+from mediapipe.tasks.python.vision.core import (
+  vision_task_running_mode as running_mode_module,
+)
 
 _BaseOptions = base_options_module.BaseOptions
 _FaceLandmarkerGraphOptionsProto = (

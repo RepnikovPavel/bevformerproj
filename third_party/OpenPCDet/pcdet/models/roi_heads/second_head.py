@@ -3,8 +3,9 @@ from functools import partial
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-from .roi_head_template import RoIHeadTemplate
+
 from ...utils import common_utils, loss_utils
+from .roi_head_template import RoIHeadTemplate
 
 
 class SECONDHead(RoIHeadTemplate):

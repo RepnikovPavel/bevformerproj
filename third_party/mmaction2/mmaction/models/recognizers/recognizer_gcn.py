@@ -4,6 +4,7 @@ from typing import Tuple
 import torch
 
 from mmaction.registry import MODELS
+
 from .base import BaseRecognizer
 
 

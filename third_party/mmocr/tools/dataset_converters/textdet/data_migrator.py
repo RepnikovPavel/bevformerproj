@@ -4,9 +4,9 @@ from collections import defaultdict
 from copy import deepcopy
 from typing import Dict, List
 
-import mmengine
-
 from mmocr.utils import dump_ocr_data
+
+import mmengine
 
 
 def parse_coco_json(in_path: str) -> List[Dict]:

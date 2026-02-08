@@ -1,11 +1,13 @@
 # Copyright (c) OpenMMLab. All rights reserved.
+from mmagic.engine import VisualizationHook
+from mmagic.evaluation import (
+    FrechetInceptionDistance,
+    PerceptualPathLength,
+    PrecisionAndRecall,
+)
+from mmagic.models import BaseGAN
 from mmengine.config import read_base
 from torch.optim import Adam
-
-from mmagic.engine import VisualizationHook
-from mmagic.evaluation import (FrechetInceptionDistance, PerceptualPathLength,
-                               PrecisionAndRecall)
-from mmagic.models import BaseGAN
 
 with read_base():
     from .._base_.datasets.lsun_stylegan import *  # noqa: F403,F405

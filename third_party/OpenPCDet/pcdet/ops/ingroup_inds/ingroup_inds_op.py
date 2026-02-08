@@ -10,6 +10,8 @@ except ImportError:
 ingroup_indices = ingroup_inds_cuda
 
 from torch.autograd import Function
+
+
 class IngroupIndicesFunction(Function):
 
     @staticmethod

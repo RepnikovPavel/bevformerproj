@@ -2,8 +2,9 @@
 from typing import Optional, Sequence, Union
 
 import torch
-from mmdet.models.task_modules.coders import \
-    DistancePointBBoxCoder as MMDET_DistancePointBBoxCoder
+from mmdet.models.task_modules.coders import (
+    DistancePointBBoxCoder as MMDET_DistancePointBBoxCoder,
+)
 from mmdet.structures.bbox import bbox2distance, distance2bbox
 
 from mmyolo.registry import TASK_UTILS

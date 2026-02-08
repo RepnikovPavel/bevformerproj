@@ -2,10 +2,9 @@
 from unittest import TestCase
 
 import torch
+from mmdet.models.task_modules.assigners import SimOTAAssigner
 from mmengine.structures import InstanceData
 from mmengine.testing import assert_allclose
-
-from mmdet.models.task_modules.assigners import SimOTAAssigner
 
 
 class TestSimOTAAssigner(TestCase):

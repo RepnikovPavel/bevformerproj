@@ -2,11 +2,11 @@
 import sys
 from unittest import TestCase
 
-import mmcv
 import mmdet
-import mmengine
-
 from mmyolo.utils import collect_env
+
+import mmcv
+import mmengine
 
 
 class TestCollectEnv(TestCase):

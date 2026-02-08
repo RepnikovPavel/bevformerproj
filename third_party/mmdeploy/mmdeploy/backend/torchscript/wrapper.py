@@ -7,6 +7,7 @@ import torch
 
 from mmdeploy.utils import Backend, get_root_logger
 from mmdeploy.utils.timer import TimeCounter
+
 from ..base import BACKEND_WRAPPER, BaseWrapper
 from .init_plugins import get_ops_path
 

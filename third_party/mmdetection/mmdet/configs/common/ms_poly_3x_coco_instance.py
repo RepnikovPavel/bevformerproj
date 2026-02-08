@@ -9,23 +9,17 @@ from mmengine.config import read_base
 with read_base():
     from .._base_.default_runtime import *
 
-from mmcv.transforms import RandomChoiceResize
-from mmengine.dataset import RepeatDataset
-from mmengine.dataset.sampler import DefaultSampler, InfiniteSampler
-from mmengine.optim import OptimWrapper
-from mmengine.optim.scheduler.lr_scheduler import LinearLR, MultiStepLR
-from mmengine.runner.loops import IterBasedTrainLoop, TestLoop, ValLoop
-from torch.optim import SGD
-
 from mmdet.datasets import AspectRatioBatchSampler, CocoDataset
 from mmdet.datasets.transforms.formatting import PackDetInputs
-from mmdet.datasets.transforms.loading import (FilterAnnotations,
-                                               LoadAnnotations,
-                                               LoadImageFromFile)
-from mmdet.datasets.transforms.transforms import (CachedMixUp, CachedMosaic,
-                                                  Pad, RandomCrop, RandomFlip,
-                                                  RandomResize, Resize)
+from mmdet.datasets.transforms.loading import LoadAnnotations, LoadImageFromFile
+from mmdet.datasets.transforms.transforms import RandomFlip, Resize
 from mmdet.evaluation import CocoMetric
+from mmengine.dataset import RepeatDataset
+from mmengine.dataset.sampler import DefaultSampler
+from mmengine.optim import OptimWrapper
+from mmengine.optim.scheduler.lr_scheduler import LinearLR, MultiStepLR
+from mmengine.runner.loops import TestLoop, ValLoop
+from torch.optim import SGD
 
 # dataset settings
 dataset_type = CocoDataset

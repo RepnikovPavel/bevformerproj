@@ -21,13 +21,18 @@ except ImportError:
     QConfigMapping = get_placeholder('torch>=1.13')
     QuantType = get_placeholder('torch>=1.13')
 
-from mmrazor import digit_version
 from mmrazor.models.quantizers import AcademicQuantizer
 from mmrazor.models.quantizers.academic_quantizer import (
-    FLOAT_TO_OBSERVED_DICT_KEY, GLOBAL_DICT_KEY, MODULE_NAME_DICT_KEY,
-    OBJECT_TYPE_DICT_KEY, PRESERVED_ATTRIBUTES_DICT_KEY)
+    FLOAT_TO_OBSERVED_DICT_KEY,
+    GLOBAL_DICT_KEY,
+    MODULE_NAME_DICT_KEY,
+    OBJECT_TYPE_DICT_KEY,
+    PRESERVED_ATTRIBUTES_DICT_KEY,
+)
 from mmrazor.registry import MODELS
 from mmrazor.testing import ConvBNReLU
+
+from mmrazor import digit_version
 
 
 @MODELS.register_module()

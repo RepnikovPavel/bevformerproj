@@ -4,6 +4,7 @@ from torch import Tensor
 
 from mmaction.registry import MODELS
 from mmaction.utils import OptSampleList
+
 from .base import BaseRecognizer
 
 

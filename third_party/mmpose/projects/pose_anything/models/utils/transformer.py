@@ -1,9 +1,11 @@
 import torch
 import torch.nn as nn
 from mmcv.cnn import build_activation_layer, build_norm_layer
-from mmcv.cnn.bricks.transformer import (BaseTransformerLayer,
-                                         TransformerLayerSequence,
-                                         build_transformer_layer_sequence)
+from mmcv.cnn.bricks.transformer import (
+    BaseTransformerLayer,
+    TransformerLayerSequence,
+    build_transformer_layer_sequence,
+)
 from mmengine.model import BaseModule, xavier_init
 from mmengine.registry import MODELS
 

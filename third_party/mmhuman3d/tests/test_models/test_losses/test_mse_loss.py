@@ -1,5 +1,4 @@
 import torch
-
 from mmhuman3d.models.losses.builder import build_loss
 
 

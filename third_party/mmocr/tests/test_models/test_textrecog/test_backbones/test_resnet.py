@@ -3,7 +3,6 @@ from unittest import TestCase
 
 import torch
 from mmengine.registry import init_default_scope
-
 from mmocr.models.textrecog.backbones import ResNet
 
 

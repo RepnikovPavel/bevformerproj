@@ -11,9 +11,11 @@ from torch import nn as nn
 from mmdet3d.models.layers import nms_bev, nms_normal_bev
 from mmdet3d.registry import MODELS, TASK_UTILS
 from mmdet3d.structures import xywhr2xyxyr
-from mmdet3d.structures.bbox_3d import (BaseInstance3DBoxes,
-                                        DepthInstance3DBoxes,
-                                        LiDARInstance3DBoxes)
+from mmdet3d.structures.bbox_3d import (
+    BaseInstance3DBoxes,
+    DepthInstance3DBoxes,
+    LiDARInstance3DBoxes,
+)
 from mmdet3d.structures.det3d_data_sample import SampleList
 from mmdet3d.utils.typing_utils import InstanceList
 

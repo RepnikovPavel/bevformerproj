@@ -1,21 +1,16 @@
-from glob import glob
-import shutil
-import torch
-from time import  strftime
-import os, sys, time
-from argparse import ArgumentParser
+import os
 import platform
-import scipy
-import numpy as np
+import sys
+from argparse import ArgumentParser
+
+import torch
+from src.facerender.animate import AnimateFromCoeff
+from src.facerender.pirender_animate import AnimateFromCoeff_PIRender
+from src.test_audio2coeff import Audio2Coeff
+from src.utils.init_path import init_path
 
 # from src.utils.preprocess import CropAndExtract
 from src.utils.preprocess_fromvideo import CropAndExtract
-from src.test_audio2coeff import Audio2Coeff
-from src.facerender.animate import AnimateFromCoeff
-from src.facerender.pirender_animate import AnimateFromCoeff_PIRender
-from src.generate_batch import get_data
-from src.generate_facerender_batch import get_facerender_data
-from src.utils.init_path import init_path
 
 
 def main(args):

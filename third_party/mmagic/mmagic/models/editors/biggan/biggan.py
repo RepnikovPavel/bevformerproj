@@ -4,12 +4,13 @@ from typing import Dict, Optional, Tuple, Union
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-from mmengine import Config
 from mmengine.optim import OptimWrapper
 from torch import Tensor
 
 from mmagic.registry import MODELS
 from mmagic.structures import DataSample
+from mmengine import Config
+
 from ...base_models import BaseConditionalGAN
 
 ModelType = Union[Dict, nn.Module]

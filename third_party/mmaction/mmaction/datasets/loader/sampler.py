@@ -1,12 +1,12 @@
 from __future__ import division
 
 import math
-import torch
-import numpy as np
 
-from torch.distributed import get_world_size, get_rank
-from torch.utils.data.sampler import Sampler
+import numpy as np
+import torch
+from torch.distributed import get_rank, get_world_size
 from torch.utils.data import DistributedSampler as _DistributedSampler
+from torch.utils.data.sampler import Sampler
 
 
 class GroupSampler(Sampler):

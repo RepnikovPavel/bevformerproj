@@ -3,9 +3,8 @@ from dataclasses import dataclass
 
 import torch
 from mmengine.model import BaseModel
-from torch import nn
-
 from mmrazor.registry import MODELS
+from torch import nn
 
 
 @MODELS.register_module()

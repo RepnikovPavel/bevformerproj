@@ -3,8 +3,9 @@ from logging import ERROR
 from typing import Optional
 
 import torch.nn as nn
-from mmengine import print_log
 from mmengine.runner import save_checkpoint
+
+from mmengine import print_log
 
 
 def change_base_model(controlnet: nn.Module,

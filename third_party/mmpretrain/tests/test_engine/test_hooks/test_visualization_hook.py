@@ -6,7 +6,6 @@ from unittest.mock import ANY, MagicMock, patch
 
 import torch
 from mmengine.runner import EpochBasedTrainLoop, IterBasedTrainLoop
-
 from mmpretrain.engine import VisualizationHook
 from mmpretrain.registry import HOOKS
 from mmpretrain.structures import DataSample

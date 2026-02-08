@@ -5,7 +5,6 @@ import sys
 from typing import Tuple
 
 import cv2
-import mmcv
 import numpy as np
 from mmdet.models.utils import mask2ndarray
 from mmdet.structures.bbox import BaseBoxes
@@ -14,8 +13,9 @@ from mmengine.dataset import Compose
 from mmengine.registry import init_default_scope
 from mmengine.utils import ProgressBar
 from mmengine.visualization import Visualizer
-
 from mmyolo.registry import DATASETS, VISUALIZERS
+
+import mmcv
 
 
 # TODO: Support for printing the change in key of results

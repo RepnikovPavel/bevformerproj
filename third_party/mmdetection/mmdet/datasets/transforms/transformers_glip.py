@@ -1,10 +1,11 @@
 # Copyright (c) OpenMMLab. All rights reserved.
-import mmcv
 import numpy as np
 from mmcv.transforms import BaseTransform
 
+import mmcv
 from mmdet.registry import TRANSFORMS
 from mmdet.structures.bbox import HorizontalBoxes, autocast_box_type
+
 from .transforms import RandomFlip
 
 

@@ -6,7 +6,6 @@ from unittest.mock import patch
 
 import numpy as np
 import torch
-
 from mmpretrain.structures import DataSample
 from mmpretrain.visualization import UniversalVisualizer
 

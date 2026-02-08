@@ -6,14 +6,21 @@ from unittest.mock import MagicMock
 
 import pytest
 import torch
+from mmrazor.models.architectures.dynamic_ops import (
+    BigNasConv2d,
+    DynamicConv2d,
+    DynamicConv2dAdaptivePadding,
+    FuseConv2d,
+    OFAConv2d,
+)
+from mmrazor.models.mutables import (
+    OneShotMutableValue,
+    SimpleMutableChannel,
+    SquentialMutableChannel,
+)
+from mmrazor.structures.subnet import export_fix_subnet, load_fix_subnet
 from torch import nn
 
-from mmrazor.models.architectures.dynamic_ops import (
-    BigNasConv2d, DynamicConv2d, DynamicConv2dAdaptivePadding, FuseConv2d,
-    OFAConv2d)
-from mmrazor.models.mutables import (OneShotMutableValue, SimpleMutableChannel,
-                                     SquentialMutableChannel)
-from mmrazor.structures.subnet import export_fix_subnet, load_fix_subnet
 from ..utils import fix_dynamic_op
 
 
@@ -259,8 +266,7 @@ def test_kernel_dynamic_conv2d(dynamic_class: Type[nn.Conv2d],
 @pytest.mark.parametrize('dynamic_class', [OFAConv2d, BigNasConv2d])
 def test_mutable_kernel_dynamic_conv2d_grad(
         dynamic_class: Type[nn.Conv2d]) -> None:
-    from mmrazor.models.architectures.dynamic_ops.mixins import \
-        dynamic_conv_mixins
+    from mmrazor.models.architectures.dynamic_ops.mixins import dynamic_conv_mixins
 
     kernel_size_list = [3, 5, 7]
     d_conv2d = dynamic_class(

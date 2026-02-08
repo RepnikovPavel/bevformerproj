@@ -3,8 +3,8 @@ import torch
 import torch.nn as nn
 from mmengine.model.utils import _BatchNormXd
 
-from mmrazor.models.mutables import (L1MutableChannelUnit,
-                                     MutableChannelContainer)
+from mmrazor.models.mutables import L1MutableChannelUnit, MutableChannelContainer
+
 from .ops import ExpandableBatchNorm2d, ExpandableConv2d, ExpandLinear
 
 

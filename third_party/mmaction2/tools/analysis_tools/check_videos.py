@@ -6,10 +6,10 @@ from functools import partial
 from multiprocessing import Manager, cpu_count
 
 import numpy as np
-from mmengine import Config, DictAction, track_parallel_progress
+from mmaction.registry import DATASETS, TRANSFORMS
 from mmengine.registry import init_default_scope
 
-from mmaction.registry import DATASETS, TRANSFORMS
+from mmengine import Config, DictAction, track_parallel_progress
 
 
 def parse_args():

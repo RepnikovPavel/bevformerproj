@@ -4,17 +4,14 @@
 # LICENSE file in the root directory of this source tree.
 
 import torch
-import torch.nn as nn
-import os
-from utils.io import save_audio
-from tqdm import tqdm
 from models.tts.base import TTSTrainer
 from models.tts.jets.jets import Jets
-from models.tts.jets.jets_loss import GeneratorLoss, DiscriminatorLoss
-from models.tts.jets.jets_dataset import JetsDataset, JetsCollator
+from models.tts.jets.jets_dataset import JetsCollator, JetsDataset
+from models.tts.jets.jets_loss import DiscriminatorLoss, GeneratorLoss
+from models.vocoders.gan.discriminator.mpd import MultiScaleMultiPeriodDiscriminator
 from optimizer.optimizers import NoamLR
 from torch.optim.lr_scheduler import ExponentialLR
-from models.vocoders.gan.discriminator.mpd import MultiScaleMultiPeriodDiscriminator
+from tqdm import tqdm
 
 
 def get_segments(

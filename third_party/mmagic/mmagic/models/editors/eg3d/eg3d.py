@@ -4,13 +4,14 @@ from typing import Dict, List, Optional, Union
 
 import torch
 import torch.nn as nn
-from mmengine import Config
 from mmengine.utils import ProgressBar
 from torch import Tensor
 
 from mmagic.registry import MODELS
 from mmagic.structures import DataSample
 from mmagic.utils.typing import ForwardInputs, SampleList
+from mmengine import Config
+
 from ...base_models import BaseConditionalGAN
 from ...utils import get_valid_num_batches
 

@@ -1,20 +1,20 @@
 import argparse
 import os
+
 # import ffmpeg
 import random
-import numpy as np
+
 import cv2
+import numpy as np
 import torch
 import torchvision
 from omegaconf import OmegaConf
 from PIL import Image
-
 from src.audio_models.model import Audio2MeshModel
 from src.audio_models.pose_model import Audio2PoseModel
 from src.utils.audio_util import prepare_audio_feature
-from src.utils.mp_utils  import LMKExtractor
+from src.utils.mp_utils import LMKExtractor
 from src.utils.pose_util import project_points, smooth_pose_seq
-
 
 PARTS = [
     ('FACE', [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17], (10, 200, 10)),

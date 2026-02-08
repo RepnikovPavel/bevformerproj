@@ -6,6 +6,7 @@ import torch
 from torch import Tensor
 
 from mmdet3d.structures.points import BasePoints
+
 from .base_box3d import BaseInstance3DBoxes
 from .utils import rotation_3d_in_axis
 

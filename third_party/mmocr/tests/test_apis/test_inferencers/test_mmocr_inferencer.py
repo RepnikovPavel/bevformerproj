@@ -4,12 +4,12 @@ import random
 import tempfile
 from unittest import TestCase, mock
 
-import mmcv
-import mmengine
 import numpy as np
 import torch
-
 from mmocr.apis.inferencers import MMOCRInferencer
+
+import mmcv
+import mmengine
 
 
 class TestMMOCRInferencer(TestCase):

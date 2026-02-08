@@ -3,13 +3,14 @@
 # This source code is licensed under the MIT license found in the
 # LICENSE file in the root directory of this source tree.
 
-import os
 import json
-import librosa
-from tqdm import tqdm
+import os
 from collections import defaultdict
 
+import librosa
+from tqdm import tqdm
 from utils.util import has_existed
+
 from preprocessors import GOLDEN_TEST_SAMPLES
 
 

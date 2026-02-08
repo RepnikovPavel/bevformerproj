@@ -5,6 +5,7 @@ import torch
 from torch import nn
 
 from mmselfsup.registry import MODELS
+
 from ..utils import PromptTransformerEncoderLayer
 from .mae_neck import MAEPretrainDecoder
 

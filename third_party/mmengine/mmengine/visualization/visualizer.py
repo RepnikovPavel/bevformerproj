@@ -17,11 +17,17 @@ from mmengine.dist import master_only
 from mmengine.registry import VISBACKENDS, VISUALIZERS
 from mmengine.structures import BaseDataElement
 from mmengine.utils import ManagerMixin, is_seq_of
-from mmengine.visualization.utils import (check_type, check_type_and_length,
-                                          color_str2rgb, color_val_matplotlib,
-                                          convert_overlay_heatmap,
-                                          img_from_canvas, tensor2ndarray,
-                                          value2list, wait_continue)
+from mmengine.visualization.utils import (
+    check_type,
+    check_type_and_length,
+    color_str2rgb,
+    color_val_matplotlib,
+    convert_overlay_heatmap,
+    img_from_canvas,
+    tensor2ndarray,
+    value2list,
+    wait_continue,
+)
 from mmengine.visualization.vis_backend import BaseVisBackend
 
 VisBackendsType = Union[List[Union[List, BaseDataElement]], BaseDataElement,

@@ -9,7 +9,6 @@ import torch
 import torch.nn as nn
 import torch.utils.checkpoint
 
-
 try:
     from diffusers.models.cross_attention import AttnProcessor
 except ImportError:

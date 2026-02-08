@@ -22,7 +22,6 @@ import os
 from argparse import ArgumentParser
 from datetime import datetime
 
-
 parser = ArgumentParser()
 parser.add_argument("--job-name", default="powerpaint")
 parser.add_argument(

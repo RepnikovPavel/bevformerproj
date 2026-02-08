@@ -3,23 +3,19 @@
 # This source code is licensed under the MIT license found in the
 # LICENSE file in the root directory of this source tree.
 
-import os
-import sys
-import numpy as np
-import json
 import argparse
-import whisper
-import torch
-
-from glob import glob
-from tqdm import tqdm
+import json
+import os
 from collections import defaultdict
+from glob import glob
 
-
-from evaluation.metrics.energy.energy_rmse import extract_energy_rmse
+import numpy as np
+import torch
+import whisper
 from evaluation.metrics.energy.energy_pearson_coefficients import (
     extract_energy_pearson_coeffcients,
 )
+from evaluation.metrics.energy.energy_rmse import extract_energy_rmse
 from evaluation.metrics.f0.f0_pearson_coefficients import extract_fpc
 from evaluation.metrics.f0.f0_periodicity_rmse import extract_f0_periodicity_rmse
 from evaluation.metrics.f0.f0_rmse import extract_f0rmse
@@ -40,6 +36,7 @@ from evaluation.metrics.spectrogram.scale_invariant_signal_to_noise_ratio import
 from evaluation.metrics.spectrogram.short_time_objective_intelligibility import (
     extract_stoi,
 )
+from tqdm import tqdm
 
 METRIC_FUNC = {
     "energy_rmse": extract_energy_rmse,

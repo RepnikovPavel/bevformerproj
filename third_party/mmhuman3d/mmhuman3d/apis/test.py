@@ -4,10 +4,11 @@ import shutil
 import tempfile
 import time
 
-import mmcv
 import torch
 import torch.distributed as dist
 from mmcv.runner import get_dist_info
+
+import mmcv
 
 
 def single_gpu_test(model, data_loader):

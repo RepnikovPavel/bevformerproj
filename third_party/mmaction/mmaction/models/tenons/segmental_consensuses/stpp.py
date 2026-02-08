@@ -1,8 +1,8 @@
+import numpy as np
 import torch
 import torch.nn as nn
-import torch.nn.functional as F
+
 from ...registry import SEGMENTAL_CONSENSUSES
-import numpy as np
 
 
 def parse_stage_config(stage_cfg):

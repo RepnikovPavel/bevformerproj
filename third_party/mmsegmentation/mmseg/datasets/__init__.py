@@ -26,19 +26,40 @@ from .potsdam import PotsdamDataset
 from .refuge import REFUGEDataset
 from .stare import STAREDataset
 from .synapse import SynapseDataset
+
 # yapf: disable
-from .transforms import (CLAHE, AdjustGamma, Albu, BioMedical3DPad,
-                         BioMedical3DRandomCrop, BioMedical3DRandomFlip,
-                         BioMedicalGaussianBlur, BioMedicalGaussianNoise,
-                         BioMedicalRandomGamma, ConcatCDInput, GenerateEdge,
-                         LoadAnnotations, LoadBiomedicalAnnotation,
-                         LoadBiomedicalData, LoadBiomedicalImageFromFile,
-                         LoadImageFromNDArray, LoadMultipleRSImageFromFile,
-                         LoadSingleRSImageFromFile, PackSegInputs,
-                         PhotoMetricDistortion, RandomCrop, RandomCutOut,
-                         RandomMosaic, RandomRotate, RandomRotFlip, Rerange,
-                         ResizeShortestEdge, ResizeToMultiple, RGB2Gray,
-                         SegRescale)
+from .transforms import (
+                         CLAHE,
+                         AdjustGamma,
+                         Albu,
+                         BioMedical3DPad,
+                         BioMedical3DRandomCrop,
+                         BioMedical3DRandomFlip,
+                         BioMedicalGaussianBlur,
+                         BioMedicalGaussianNoise,
+                         BioMedicalRandomGamma,
+                         ConcatCDInput,
+                         GenerateEdge,
+                         LoadAnnotations,
+                         LoadBiomedicalAnnotation,
+                         LoadBiomedicalData,
+                         LoadBiomedicalImageFromFile,
+                         LoadImageFromNDArray,
+                         LoadMultipleRSImageFromFile,
+                         LoadSingleRSImageFromFile,
+                         PackSegInputs,
+                         PhotoMetricDistortion,
+                         RandomCrop,
+                         RandomCutOut,
+                         RandomMosaic,
+                         RandomRotate,
+                         RandomRotFlip,
+                         Rerange,
+                         ResizeShortestEdge,
+                         ResizeToMultiple,
+                         RGB2Gray,
+                         SegRescale,
+)
 from .voc import PascalVOCDataset
 
 # yapf: enable

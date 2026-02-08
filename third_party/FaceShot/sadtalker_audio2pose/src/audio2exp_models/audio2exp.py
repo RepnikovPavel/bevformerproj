@@ -1,6 +1,6 @@
-from tqdm import tqdm
 import torch
 from torch import nn
+from tqdm import tqdm
 
 
 class Audio2Exp(nn.Module):

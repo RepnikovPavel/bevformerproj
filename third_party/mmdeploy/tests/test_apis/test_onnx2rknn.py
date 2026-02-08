@@ -2,13 +2,13 @@
 import os.path as osp
 import tempfile
 
-import mmengine
 import pytest
 import torch
 import torch.nn as nn
-
 from mmdeploy.utils import Backend
 from mmdeploy.utils.test import backend_checker
+
+import mmengine
 
 onnx_file = tempfile.NamedTemporaryFile(suffix='.onnx').name
 test_img = torch.rand([1, 3, 8, 8])

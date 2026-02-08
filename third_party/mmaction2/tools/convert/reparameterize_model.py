@@ -3,7 +3,6 @@ import argparse
 from pathlib import Path
 
 import torch
-
 from mmaction.apis import init_recognizer
 from mmaction.models.recognizers import BaseRecognizer
 

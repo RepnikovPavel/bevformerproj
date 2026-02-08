@@ -1,9 +1,9 @@
-import mmcv
-import numpy as np
-import random
 import math
-import cv2
-import random as rd
+import random
+
+import numpy as np
+
+import mmcv
 
 __all__ = ['GroupImageTransform', 'ImageTransform', 'BboxTransform']
 

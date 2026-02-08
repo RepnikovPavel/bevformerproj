@@ -3,11 +3,11 @@ from itertools import product
 from typing import Optional, Tuple, Union
 
 import numpy as np
-from numpy import ndarray
-
 from mmpose.codecs.base import BaseKeypointCodec
 from mmpose.codecs.utils.refinement import refine_simcc_dark
 from mmpose.registry import KEYPOINT_CODECS
+from numpy import ndarray
+
 from .utils import get_simcc_maximum
 
 

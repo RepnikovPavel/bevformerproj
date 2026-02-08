@@ -4,13 +4,13 @@ from typing import List, Optional, Tuple
 import torch.nn.functional as F
 from mmdet.structures.bbox import get_box_tensor
 from mmdet.utils import InstanceList
-from mmengine import ConfigDict
 from mmrotate.structures.bbox import QuadriBoxes
 from torch import Tensor
 
 from mmdeploy.codebase.mmdet.deploy import get_post_processing_params
 from mmdeploy.core import FUNCTION_REWRITER
 from mmdeploy.mmcv.ops import multiclass_nms
+from mmengine import ConfigDict
 
 
 @FUNCTION_REWRITER.register_rewriter(

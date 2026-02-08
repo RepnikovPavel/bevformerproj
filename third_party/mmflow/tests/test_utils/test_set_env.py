@@ -5,12 +5,12 @@ import platform
 import sys
 
 import cv2
-import mmcv
 import pytest
-from mmcv import Config
-
-import mmflow
 from mmflow.utils import setup_multi_processes
+
+import mmcv
+import mmflow
+from mmcv import Config
 
 
 @pytest.mark.parametrize('workers_per_gpu', (0, 2))

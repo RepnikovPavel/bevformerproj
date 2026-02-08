@@ -7,22 +7,27 @@ from unittest.mock import MagicMock
 
 import torch
 import torch.nn as nn
-from torch.distributed.rpc import is_available
-
 from mmengine.dist import get_rank
 from mmengine.logging import MMLogger
-from mmengine.optim import (OPTIM_WRAPPER_CONSTRUCTORS, OPTIMIZERS,
-                            DefaultOptimWrapperConstructor, OptimWrapper,
-                            build_optim_wrapper)
-from mmengine.optim.optimizer.builder import (BITSANDBYTES_OPTIMIZERS,
-                                              DADAPTATION_OPTIMIZERS,
-                                              LION_OPTIMIZERS,
-                                              TORCH_OPTIMIZERS,
-                                              TRANSFORMERS_OPTIMIZERS)
+from mmengine.optim import (
+    OPTIM_WRAPPER_CONSTRUCTORS,
+    OPTIMIZERS,
+    DefaultOptimWrapperConstructor,
+    OptimWrapper,
+    build_optim_wrapper,
+)
+from mmengine.optim.optimizer.builder import (
+    BITSANDBYTES_OPTIMIZERS,
+    DADAPTATION_OPTIMIZERS,
+    LION_OPTIMIZERS,
+    TORCH_OPTIMIZERS,
+    TRANSFORMERS_OPTIMIZERS,
+)
 from mmengine.registry import DefaultScope, Registry, build_from_cfg
 from mmengine.testing._internal import MultiProcessTestCase
 from mmengine.utils.dl_utils import TORCH_VERSION, mmcv_full_available
 from mmengine.utils.version_utils import digit_version
+from torch.distributed.rpc import is_available
 
 MMCV_FULL_AVAILABLE = mmcv_full_available()
 if not MMCV_FULL_AVAILABLE:

@@ -4,9 +4,8 @@ import json
 import os.path as osp
 
 import numpy as np
-from shapely.geometry import Polygon
-
 from mmocr.utils import dump_ocr_data
+from shapely.geometry import Polygon
 
 
 def collect_level_info(annotation):

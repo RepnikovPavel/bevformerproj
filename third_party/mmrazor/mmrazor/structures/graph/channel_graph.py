@@ -5,11 +5,17 @@ from typing import Callable, Dict, List
 from torch.nn import Module
 
 from mmrazor.utils import print_log
+
 from .base_graph import BaseGraph
 from .channel_flow import ChannelTensor
-from .channel_nodes import (ChannelDismatchError, ChannelNode, EndNode,
-                            ExpandChannelNode, InputChannelNode,
-                            default_channel_node_converter)
+from .channel_nodes import (
+    ChannelDismatchError,
+    ChannelNode,
+    EndNode,
+    ExpandChannelNode,
+    InputChannelNode,
+    default_channel_node_converter,
+)
 from .module_graph import ModuleGraph, NoInputError, NoOutputError
 
 

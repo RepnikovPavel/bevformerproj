@@ -14,8 +14,9 @@ except ImportError:
     from mmrazor.utils import get_placeholder
     GraphModule = get_placeholder('torch>=1.13')
 
-from mmengine import ConfigDict
 from mmengine.model import BaseModel
+
+from mmengine import ConfigDict
 
 try:
     import mmdeploy
@@ -23,9 +24,10 @@ except ImportError:
     from mmrazor.utils import get_package_placeholder
     mmdeploy = get_package_placeholder('mmdeploy')
 
-from mmrazor import digit_version
 from mmrazor.models.algorithms import MMArchitectureQuant
 from mmrazor.registry import MODELS
+
+from mmrazor import digit_version
 
 
 class BasicBlock(nn.Module):

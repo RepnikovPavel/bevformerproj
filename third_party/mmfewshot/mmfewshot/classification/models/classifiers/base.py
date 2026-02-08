@@ -6,8 +6,7 @@ from typing import Dict, Optional, Tuple
 
 import torch
 import torch.distributed as dist
-from mmcls.models.builder import (CLASSIFIERS, build_backbone, build_head,
-                                  build_neck)
+from mmcls.models.builder import CLASSIFIERS, build_backbone, build_head, build_neck
 from mmcls.models.utils import Augments
 from mmcv.runner import BaseModule
 from torch import Tensor

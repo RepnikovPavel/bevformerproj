@@ -5,7 +5,6 @@ from unittest import TestCase
 from unittest.mock import MagicMock
 
 from mmengine.registry import init_default_scope
-
 from mmocr.datasets import ConcatDataset, OCRDataset
 from mmocr.registry import TRANSFORMS
 

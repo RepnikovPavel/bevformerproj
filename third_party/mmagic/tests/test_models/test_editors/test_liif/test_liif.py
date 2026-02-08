@@ -2,11 +2,10 @@
 from typing import List
 
 import torch
-from mmengine.optim import OptimWrapper
-from torch.optim import Adam
-
 from mmagic.models import LIIF, DataPreprocessor
 from mmagic.structures import DataSample
+from mmengine.optim import OptimWrapper
+from torch.optim import Adam
 
 
 def test_liif():

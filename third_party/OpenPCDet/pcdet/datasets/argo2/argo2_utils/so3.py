@@ -1,9 +1,10 @@
 """SO(3) group transformations."""
 
+from math import pi as PI
+
 import kornia.geometry.conversions as C
 import torch
 from torch import Tensor
-from math import pi as PI
 
 
 @torch.jit.script

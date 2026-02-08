@@ -7,8 +7,11 @@ from typing import Dict, Optional
 from mmcv.runner import Hook, Runner, get_dist_info
 from torch.utils.data import DataLoader
 
-from mmfewshot.classification.apis import (Z_SCORE, multi_gpu_meta_test,
-                                           single_gpu_meta_test)
+from mmfewshot.classification.apis import (
+    Z_SCORE,
+    multi_gpu_meta_test,
+    single_gpu_meta_test,
+)
 
 
 class MetaTestEvalHook(Hook):

@@ -2,7 +2,6 @@
 from unittest import TestCase
 
 import numpy as np
-
 from mmpose.evaluation.evaluators import MultiDatasetEvaluator
 from mmpose.testing import get_coco_sample
 from mmpose.utils import register_all_modules

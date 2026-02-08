@@ -3,11 +3,12 @@ import sys
 from collections import defaultdict
 from typing import Any, Dict, Optional, Sequence, Union
 
-import mmcv
 import numpy as np
 import torch
 from mmcv.parallel import MMDistributedDataParallel
 from mmcv.runner import get_dist_info
+
+import mmcv
 
 from .metrics import eval_metrics
 

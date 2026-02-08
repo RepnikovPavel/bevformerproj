@@ -1,7 +1,9 @@
 import torch
 import torch.nn as nn
+
 from .basic_blocks import BasicBlock2D
 from .sem_deeplabv3 import SemDeepLabV3
+
 
 class PyramidFeat2D(nn.Module):
 

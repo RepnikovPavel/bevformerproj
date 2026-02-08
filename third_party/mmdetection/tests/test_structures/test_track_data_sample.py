@@ -1,7 +1,6 @@
 from unittest import TestCase
 
 import pytest
-
 from mmdet.structures import DetDataSample, TrackDataSample
 
 

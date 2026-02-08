@@ -1,11 +1,12 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 from typing import Callable, List, Optional, Union
 
-import mmengine
 from mmengine.fileio import exists
 
+import mmengine
 from mmaction.registry import DATASETS
 from mmaction.utils import ConfigType
+
 from .base import BaseActionDataset
 
 

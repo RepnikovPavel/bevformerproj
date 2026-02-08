@@ -8,8 +8,8 @@ from pytorch3d.renderer.mesh.textures import TexturesBase
 from pytorch3d.structures import Meshes, list_to_padded, padded_to_list
 
 from mmhuman3d.models.body_models.builder import SMPL, SMPLX, STAR
-from mmhuman3d.utils.mesh_utils import \
-    join_meshes_as_batch as _join_meshes_as_batch
+from mmhuman3d.utils.mesh_utils import join_meshes_as_batch as _join_meshes_as_batch
+
 from .builder import build_renderer
 from .textures.textures import TexturesNearest
 from .utils import align_input_to_padded

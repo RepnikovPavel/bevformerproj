@@ -2,7 +2,6 @@
 # This is a BETA new format config file, and the usage may change recently.
 from mmengine.config import read_base
 from mmengine.model import ConstantInit, TruncNormalInit
-
 from mmpretrain.models import CutMix, LabelSmoothLoss, Mixup
 
 with read_base():

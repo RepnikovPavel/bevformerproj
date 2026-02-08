@@ -12,9 +12,8 @@ import gradio as gr
 import numpy as np
 import torch
 import yaml
-from mmengine.registry import init_default_scope
-
 from mmagic.apis.inferencers.inpainting_inferencer import InpaintingInferencer
+from mmengine.registry import init_default_scope
 
 
 class InpaintingGradio:

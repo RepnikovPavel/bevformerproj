@@ -4,8 +4,10 @@ import torch
 from torch import Tensor
 from torch import nn as nn
 
-from .furthest_point_sample import (furthest_point_sample,
-                                    furthest_point_sample_with_dist)
+from .furthest_point_sample import (
+    furthest_point_sample,
+    furthest_point_sample_with_dist,
+)
 
 
 def calc_square_dist(point_feat_a: Tensor,

@@ -36,8 +36,9 @@ def test_tversky_lose():
     import os
     import tempfile
 
-    import mmengine
     import numpy as np
+
+    import mmengine
     tmp_file = tempfile.NamedTemporaryFile()
 
     mmengine.dump([1.0, 2.0, 3.0], f'{tmp_file.name}.pkl',

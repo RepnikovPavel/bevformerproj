@@ -8,6 +8,7 @@ from mmengine.model import BaseModule
 from mmengine.utils.dl_utils.parrots_wrapper import _BatchNorm
 
 from mmseg.registry import MODELS
+
 from ..utils import ResLayer
 
 

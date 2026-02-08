@@ -3,7 +3,6 @@ import copy
 
 import numpy as np
 import pytest
-
 from mmgen.datasets.pipelines import Crop, FixedCrop
 
 

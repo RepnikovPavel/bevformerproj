@@ -8,9 +8,8 @@ import math
 
 import torch
 import torch.nn as nn
-from mmengine.model import BaseModule
-
 from mmdet3d.registry import MODELS, TASK_UTILS
+from mmengine.model import BaseModule
 
 
 @TASK_UTILS.register_module()

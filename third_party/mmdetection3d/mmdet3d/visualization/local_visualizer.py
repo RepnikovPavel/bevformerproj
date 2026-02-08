@@ -7,7 +7,6 @@ import time
 from typing import List, Optional, Sequence, Tuple, Union
 
 import matplotlib.pyplot as plt
-import mmcv
 import numpy as np
 from matplotlib.collections import PatchCollection
 from matplotlib.patches import PathPatch
@@ -17,18 +16,34 @@ from mmengine.dist import master_only
 from mmengine.logging import print_log
 from mmengine.structures import InstanceData
 from mmengine.visualization import Visualizer as MMENGINE_Visualizer
-from mmengine.visualization.utils import (check_type, color_val_matplotlib,
-                                          tensor2ndarray)
+from mmengine.visualization.utils import (
+    check_type,
+    color_val_matplotlib,
+    tensor2ndarray,
+)
 from torch import Tensor
 
+import mmcv
 from mmdet3d.registry import VISUALIZERS
-from mmdet3d.structures import (BaseInstance3DBoxes, Box3DMode,
-                                CameraInstance3DBoxes, Coord3DMode,
-                                DepthInstance3DBoxes, DepthPoints,
-                                Det3DDataSample, LiDARInstance3DBoxes,
-                                PointData, points_cam2img)
-from .vis_utils import (proj_camera_bbox3d_to_img, proj_depth_bbox3d_to_img,
-                        proj_lidar_bbox3d_to_img, to_depth_mode)
+from mmdet3d.structures import (
+    BaseInstance3DBoxes,
+    Box3DMode,
+    CameraInstance3DBoxes,
+    Coord3DMode,
+    DepthInstance3DBoxes,
+    DepthPoints,
+    Det3DDataSample,
+    LiDARInstance3DBoxes,
+    PointData,
+    points_cam2img,
+)
+
+from .vis_utils import (
+    proj_camera_bbox3d_to_img,
+    proj_depth_bbox3d_to_img,
+    proj_lidar_bbox3d_to_img,
+    to_depth_mode,
+)
 
 try:
     import open3d as o3d

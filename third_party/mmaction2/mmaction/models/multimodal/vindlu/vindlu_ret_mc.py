@@ -4,6 +4,7 @@ import torch.nn.functional as F
 from einops import rearrange
 
 from mmaction.registry import MODELS
+
 from .vindlu_ret import VindLURetrieval
 
 

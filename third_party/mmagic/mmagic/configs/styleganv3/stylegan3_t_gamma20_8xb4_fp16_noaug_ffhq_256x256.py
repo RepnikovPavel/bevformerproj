@@ -2,12 +2,9 @@
 from mmengine.config import read_base
 
 with read_base():
-    from .._base_.datasets.unconditional_imgs_flip_lanczos_resize_256x256 \
-        import *
+    from .._base_.datasets.unconditional_imgs_flip_lanczos_resize_256x256 import *
     from .._base_.gen_default_runtime import *
     from .._base_.models.base_styleganv3 import *
-
-from torch.optim import Adam
 
 from mmagic.engine.hooks.visualization_hook import VisualizationHook
 from mmagic.evaluation.metrics.equivariance import Equivariance
@@ -15,6 +12,7 @@ from mmagic.evaluation.metrics.fid import FrechetInceptionDistance
 from mmagic.models.base_models.average_model import RampUpEMA
 from mmagic.models.base_models.base_gan import BaseGAN
 from mmagic.models.editors.stylegan3.stylegan3_modules import SynthesisNetwork
+from torch.optim import Adam
 
 synthesis_cfg = {
     'type': SynthesisNetwork,

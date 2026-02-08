@@ -9,9 +9,8 @@ from mmengine.config import read_base
 with read_base():
     from .mask_rcnn_r101_fpn_1x_coco import *
 
-from mmengine.model.weight_init import PretrainedInit
-
 from mmdet.models.backbones.resnext import ResNeXt
+from mmengine.model.weight_init import PretrainedInit
 
 model = dict(
     backbone=dict(

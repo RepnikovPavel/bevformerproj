@@ -1,11 +1,11 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import os.path as osp
 
-import mmcv
 import pytest
-
 from mmseg.datasets.transforms import *  # noqa
 from mmseg.registry import TRANSFORMS
+
+import mmcv
 
 
 def test_multi_scale_flip_aug():

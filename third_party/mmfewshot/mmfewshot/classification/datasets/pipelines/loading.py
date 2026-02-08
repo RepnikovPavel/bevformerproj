@@ -2,10 +2,11 @@
 import os.path as osp
 from typing import Dict
 
-import mmcv
 import numpy as np
 from mmcls.datasets.builder import PIPELINES
 from mmcls.datasets.pipelines import LoadImageFromFile
+
+import mmcv
 
 
 @PIPELINES.register_module()

@@ -2,9 +2,9 @@
 import argparse
 import json
 
-import mmengine
-
 from mmocr.utils import list_to_file
+
+import mmengine
 
 
 def parse_coco_json(in_path):

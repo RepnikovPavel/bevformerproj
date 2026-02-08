@@ -3,12 +3,12 @@ from typing import Callable, Dict, Optional, Union
 
 import onnx
 from tvm.relay.frontend import from_onnx as relay_from_onnx
-from tvm.relay.quantize import QConfig
+from tvm.relay.quantize import QConfig, quantize
 from tvm.relay.quantize import qconfig as create_qconfig
-from tvm.relay.quantize import quantize
 from tvm.target import Target
 
 from mmdeploy.utils import get_root_logger
+
 from .tuner import TVMTunerBase, build_tvm_tuner
 
 

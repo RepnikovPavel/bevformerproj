@@ -4,18 +4,24 @@ import os.path as osp
 from copy import deepcopy
 from unittest import TestCase
 
-import mmcv
 import numpy as np
 from mmcv.transforms import Compose, LoadImageFromFile
 from mmengine.utils import is_list_of
-
-from mmpose.datasets.transforms import (Albumentation, FilterAnnotations,
-                                        GenerateTarget, GetBBoxCenterScale,
-                                        PhotometricDistortion,
-                                        RandomBBoxTransform, RandomFlip,
-                                        RandomHalfBody, TopdownAffine,
-                                        YOLOXHSVRandomAug)
+from mmpose.datasets.transforms import (
+    Albumentation,
+    FilterAnnotations,
+    GenerateTarget,
+    GetBBoxCenterScale,
+    PhotometricDistortion,
+    RandomBBoxTransform,
+    RandomFlip,
+    RandomHalfBody,
+    TopdownAffine,
+    YOLOXHSVRandomAug,
+)
 from mmpose.testing import get_coco_sample
+
+import mmcv
 
 
 class TestGetBBoxCenterScale(TestCase):

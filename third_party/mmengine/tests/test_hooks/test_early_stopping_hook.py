@@ -7,8 +7,6 @@ from unittest.mock import Mock
 
 import torch
 import torch.nn as nn
-from torch.utils.data import Dataset
-
 from mmengine.evaluator import BaseMetric
 from mmengine.hooks import EarlyStoppingHook
 from mmengine.logging import MMLogger
@@ -16,6 +14,7 @@ from mmengine.model import BaseModel
 from mmengine.optim import OptimWrapper
 from mmengine.runner import Runner
 from mmengine.testing import RunnerTestCase
+from torch.utils.data import Dataset
 
 
 class ToyModel(BaseModel):

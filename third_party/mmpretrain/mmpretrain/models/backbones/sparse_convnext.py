@@ -7,8 +7,14 @@ import torch.utils.checkpoint as cp
 from mmengine.model import ModuleList, Sequential
 
 from mmpretrain.registry import MODELS
-from ..utils import (SparseAvgPooling, SparseConv2d, SparseHelper,
-                     SparseMaxPooling, build_norm_layer)
+
+from ..utils import (
+    SparseAvgPooling,
+    SparseConv2d,
+    SparseHelper,
+    SparseMaxPooling,
+    build_norm_layer,
+)
 from .convnext import ConvNeXt, ConvNeXtBlock
 
 

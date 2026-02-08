@@ -4,11 +4,12 @@ import tempfile
 from collections import defaultdict
 from unittest.mock import MagicMock, patch
 
-import mmcv
 import numpy as np
 import pytest
-
 from mmtrack.datasets import DATASETS as DATASETS
+
+import mmcv
+
 from .utils import _create_coco_gt_results
 
 PREFIX = osp.join(osp.dirname(__file__), '../../data')

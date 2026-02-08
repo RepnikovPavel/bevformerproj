@@ -8,7 +8,6 @@ from contextlib import contextmanager
 from unittest.mock import patch
 
 import pytest
-
 from mmengine.logging import MMLogger, print_log
 from mmengine.logging.logger import _get_device_id
 from mmengine.utils import is_installed

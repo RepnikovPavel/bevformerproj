@@ -1,9 +1,10 @@
-import os
 import logging
-import numpy as np
+import os
 
+import numpy as np
 import torch
 from torch.nn import init
+
 
 def init_weights(net, init_type='normal', init_gain=0.02):
     """Initialize network weights.

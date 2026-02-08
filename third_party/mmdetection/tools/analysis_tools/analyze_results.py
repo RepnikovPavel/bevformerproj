@@ -3,8 +3,13 @@ import argparse
 import os.path as osp
 from multiprocessing import Pool
 
-import mmcv
 import numpy as np
+from mmdet.datasets import get_loading_pipeline
+from mmdet.evaluation import eval_map
+from mmdet.registry import DATASETS, RUNNERS
+from mmdet.structures import DetDataSample
+from mmdet.utils import replace_cfg_vals, update_data_root
+from mmdet.visualization import DetLocalVisualizer
 from mmengine.config import Config, DictAction
 from mmengine.fileio import load
 from mmengine.registry import init_default_scope
@@ -12,12 +17,7 @@ from mmengine.runner import Runner
 from mmengine.structures import InstanceData, PixelData
 from mmengine.utils import ProgressBar, check_file_exist, mkdir_or_exist
 
-from mmdet.datasets import get_loading_pipeline
-from mmdet.evaluation import eval_map
-from mmdet.registry import DATASETS, RUNNERS
-from mmdet.structures import DetDataSample
-from mmdet.utils import replace_cfg_vals, update_data_root
-from mmdet.visualization import DetLocalVisualizer
+import mmcv
 
 
 def bbox_map_eval(det_result, annotation, nproc=4):

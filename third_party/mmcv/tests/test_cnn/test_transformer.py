@@ -3,14 +3,17 @@ import copy
 
 import pytest
 import torch
-from mmengine.model import ModuleList
-
 from mmcv.cnn.bricks.drop import DropPath
-from mmcv.cnn.bricks.transformer import (FFN, AdaptivePadding,
-                                         BaseTransformerLayer,
-                                         MultiheadAttention, PatchEmbed,
-                                         PatchMerging,
-                                         TransformerLayerSequence)
+from mmcv.cnn.bricks.transformer import (
+    FFN,
+    AdaptivePadding,
+    BaseTransformerLayer,
+    MultiheadAttention,
+    PatchEmbed,
+    PatchMerging,
+    TransformerLayerSequence,
+)
+from mmengine.model import ModuleList
 
 
 def test_adaptive_padding():

@@ -2,10 +2,9 @@
 from unittest import TestCase
 
 import torch
-from mmengine.registry import init_default_scope
-
 from mmdet.registry import METRICS
 from mmdet.structures import ReIDDataSample
+from mmengine.registry import init_default_scope
 
 
 class TestReIDMetrics(TestCase):

@@ -1,5 +1,4 @@
 import torch
-
 from mmhuman3d.models.necks.temporal_encoder import TemporalGRUEncoder
 
 

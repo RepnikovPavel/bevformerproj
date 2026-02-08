@@ -5,10 +5,9 @@ import numpy as np
 import torch
 import torch.nn as nn
 from mmengine.structures import InstanceData
-from parameterized import parameterized
-
 from mmocr.models.textdet.module_losses import PSEModuleLoss
 from mmocr.structures import TextDetDataSample
+from parameterized import parameterized
 
 
 class TestPSEModuleLoss(TestCase):

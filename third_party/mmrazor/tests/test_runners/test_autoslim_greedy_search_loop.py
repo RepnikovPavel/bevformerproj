@@ -11,11 +11,10 @@ import torch.nn as nn
 import torch.nn.functional as F
 from mmcls.structures import ClsDataSample
 from mmengine.config import Config
-from torch.utils.data import DataLoader, Dataset
-
 from mmrazor.engine import AutoSlimGreedySearchLoop
 from mmrazor.models.algorithms import AutoSlim
 from mmrazor.registry import LOOPS
+from torch.utils.data import DataLoader, Dataset
 
 MUTATOR_TYPE = Union[torch.nn.Module, Dict]
 DISTILLER_TYPE = Union[torch.nn.Module, Dict]

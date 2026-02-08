@@ -1,31 +1,28 @@
 import argparse
 import os
-import cv2
 
+import cv2
 import numpy as np
-from PIL import Image
 import torch
-import torchvision
 import torch.nn.functional as F
 import torch.utils.checkpoint
-from tqdm import tqdm
-
-from packaging import version
-
+import torchvision
 from accelerate.utils import set_seed
-from transformers import CLIPVisionModelWithProjection
-
 from diffusers import AutoencoderKLTemporalDecoder
 from diffusers.utils import check_min_version
 from diffusers.utils.import_utils import is_xformers_available
-from torchvision import transforms
-
-from models.unet_spatio_temporal_condition_controlnet import UNetSpatioTemporalConditionControlNetModel
+from models.ldmk_ctrlnet import CMP_demo, FlowControlNet
+from models.unet_spatio_temporal_condition_controlnet import (
+    UNetSpatioTemporalConditionControlNetModel,
+)
+from packaging import version
+from PIL import Image
 from pipeline.svdxt_pipeline_ctrlnet_loop import FlowControlNetPipeline
-from models.ldmk_ctrlnet import FlowControlNet, CMP_demo
-
+from torchvision import transforms
+from tqdm import tqdm
+from transformers import CLIPVisionModelWithProjection
 from utils.flow_viz import flow_to_image
-from utils.utils import get_sparse_flow, get_cmp_flow, draw_landmarks
+from utils.utils import draw_landmarks, get_cmp_flow, get_sparse_flow
 
 transform = transforms.Compose([
     transforms.ToTensor(),

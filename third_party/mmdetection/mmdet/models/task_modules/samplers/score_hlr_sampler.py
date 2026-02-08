@@ -9,6 +9,7 @@ from torch import Tensor
 
 from mmdet.registry import TASK_UTILS
 from mmdet.structures.bbox import bbox2roi
+
 from ..assigners import AssignResult
 from .base_sampler import BaseSampler
 from .sampling_result import SamplingResult

@@ -5,9 +5,9 @@ import random
 
 import numpy as np
 import torch
-from mmengine import build_from_cfg, is_seq_of
 from mmengine.dataset import ConcatDataset, RepeatDataset
 
+from mmengine import build_from_cfg, is_seq_of
 from mmpose.registry import DATASETS
 
 if platform.system() != 'Windows':

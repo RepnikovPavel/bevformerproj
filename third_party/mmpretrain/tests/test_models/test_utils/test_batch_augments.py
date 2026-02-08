@@ -4,7 +4,6 @@ from unittest.mock import MagicMock, patch
 
 import numpy as np
 import torch
-
 from mmpretrain.models import Mixup, RandomBatchAugment
 from mmpretrain.registry import BATCH_AUGMENTS
 

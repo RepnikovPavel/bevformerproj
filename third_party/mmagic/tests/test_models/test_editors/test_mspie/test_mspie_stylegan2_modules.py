@@ -5,9 +5,10 @@ from unittest import TestCase
 
 import pytest
 import torch
-
 from mmagic.models.editors.mspie.mspie_stylegan2_modules import (
-    ModulatedPEConv2d, ModulatedPEStyleConv)
+    ModulatedPEConv2d,
+    ModulatedPEStyleConv,
+)
 
 
 class TestModulatedPEStyleConv(TestCase):

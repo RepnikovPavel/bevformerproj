@@ -6,17 +6,14 @@
 """
 Based on: https://github.com/crowsonkb/k-diffusion
 """
-import random
 
 import numpy as np
 import torch as th
-import torch.nn as nn
 import torch.nn.functional as F
+from modules.diffusion.karras.random_utils import get_generator
 
 # from piq import LPIPS
 from utils.ssim import SSIM
-
-from modules.diffusion.karras.random_utils import get_generator
 
 
 def mean_flat(tensor):

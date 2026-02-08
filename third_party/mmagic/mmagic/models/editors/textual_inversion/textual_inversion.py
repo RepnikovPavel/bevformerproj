@@ -9,6 +9,7 @@ from mmengine.logging import MMLogger
 from mmagic.registry import MODELS
 from mmagic.structures import DataSample
 from mmagic.utils.typing import SampleList
+
 from ..stable_diffusion.stable_diffusion import StableDiffusion
 
 logger = MMLogger.get_current_instance()

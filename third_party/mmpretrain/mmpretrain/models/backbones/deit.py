@@ -4,6 +4,7 @@ import torch.nn as nn
 from mmengine.model.weight_init import trunc_normal_
 
 from mmpretrain.registry import MODELS
+
 from .vision_transformer import VisionTransformer
 
 

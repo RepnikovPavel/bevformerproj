@@ -4,7 +4,6 @@ from unittest.mock import MagicMock
 
 import pytest
 import torch
-
 from mmaction.registry import MODELS
 from mmaction.structures import ActionDataSample
 from mmaction.testing import get_similarity_cfg

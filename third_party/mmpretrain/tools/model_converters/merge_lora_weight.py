@@ -4,7 +4,6 @@ from pathlib import Path
 
 import torch
 from mmengine.config import Config
-
 from mmpretrain.registry import MODELS
 
 

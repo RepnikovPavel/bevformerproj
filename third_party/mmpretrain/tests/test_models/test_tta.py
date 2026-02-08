@@ -3,12 +3,12 @@ from copy import deepcopy
 from unittest import TestCase
 
 import torch
-from mmengine import ConfigDict
 from mmengine.registry import init_default_scope
-
 from mmpretrain.models import AverageClsScoreTTA, ImageClassifier
 from mmpretrain.registry import MODELS
 from mmpretrain.structures import DataSample
+
+from mmengine import ConfigDict
 
 init_default_scope('mmpretrain')
 

@@ -14,6 +14,7 @@ from mmdet.models.task_modules import SamplingResult
 from mmdet.models.utils import multi_apply
 from mmdet.registry import MODELS
 from mmdet.utils import ConfigType, OptConfigType, reduce_mean
+
 from .bbox_head import BBoxHead
 
 

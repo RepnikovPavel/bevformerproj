@@ -2,6 +2,7 @@
 from mmcv.cnn import DepthwiseSeparableConvModule
 
 from mmseg.registry import MODELS
+
 from .fcn_head import FCNHead
 
 

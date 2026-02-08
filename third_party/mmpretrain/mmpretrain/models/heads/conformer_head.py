@@ -7,6 +7,7 @@ import torch.nn as nn
 from mmpretrain.evaluation.metrics import Accuracy
 from mmpretrain.registry import MODELS
 from mmpretrain.structures import DataSample
+
 from .cls_head import ClsHead
 
 

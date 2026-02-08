@@ -12,11 +12,9 @@ from pathlib import Path
 import torch
 from torch.utils.data import DataLoader
 from tqdm import tqdm
+from utils.util import load_config, set_all_random_seed
 
 from models.vocoders.vocoder_inference import synthesis
-from torch.utils.data import DataLoader
-from utils.util import set_all_random_seed
-from utils.util import load_config
 
 
 def parse_vocoder(vocoder_dir):

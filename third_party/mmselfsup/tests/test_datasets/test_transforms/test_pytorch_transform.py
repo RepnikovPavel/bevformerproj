@@ -1,9 +1,8 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import numpy as np
 import torch
-from PIL import Image
-
 from mmselfsup.datasets.transforms import MAERandomResizedCrop
+from PIL import Image
 
 
 def test_mae_random_resized_crop():

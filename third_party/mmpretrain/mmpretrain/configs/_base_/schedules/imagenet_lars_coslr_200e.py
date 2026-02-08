@@ -3,7 +3,6 @@
 from mmengine.optim.optimizer.optimizer_wrapper import OptimWrapper
 from mmengine.optim.scheduler.lr_scheduler import CosineAnnealingLR, LinearLR
 from mmengine.runner.loops import EpochBasedTrainLoop
-
 from mmpretrain.engine.optimizers.lars import LARS
 
 # optimizer wrapper

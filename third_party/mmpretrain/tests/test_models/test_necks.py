@@ -1,10 +1,12 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import pytest
 import torch
-
-from mmpretrain.models.necks import (GeneralizedMeanPooling,
-                                     GlobalAveragePooling, HRFuseScales,
-                                     LinearNeck)
+from mmpretrain.models.necks import (
+    GeneralizedMeanPooling,
+    GlobalAveragePooling,
+    HRFuseScales,
+    LinearNeck,
+)
 
 
 def test_gap_neck():

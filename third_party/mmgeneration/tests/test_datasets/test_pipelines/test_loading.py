@@ -1,10 +1,10 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 from pathlib import Path
 
-import mmcv
 import numpy as np
-
 from mmgen.datasets import LoadImageFromFile
+
+import mmcv
 
 
 def test_load_image_from_file():

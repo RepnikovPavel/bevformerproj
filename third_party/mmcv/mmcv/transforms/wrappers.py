@@ -2,8 +2,9 @@
 
 from typing import Any, Callable, Dict, List, Optional, Sequence, Union
 
-import mmengine
 import numpy as np
+
+import mmengine
 
 from .base import BaseTransform
 from .builder import TRANSFORMS

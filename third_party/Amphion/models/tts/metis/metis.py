@@ -5,20 +5,17 @@
 
 import os
 
+import langid
+import librosa
 import numpy as np
+import safetensors
 import torch
 import torch.nn.functional as F
-import safetensors
-import librosa
-
+from huggingface_hub import snapshot_download
+from models.tts.maskgct.maskgct_utils import build_s2a_model, g2p_
 from models.tts.metis.audio_tokenizer import AudioTokenizer
-from models.tts.maskgct.maskgct_utils import build_t2s_model, build_s2a_model, g2p_
 from models.tts.metis.metis_model import MetisStage1
-from peft import LoraModel, LoraConfig
-
-from huggingface_hub import hf_hub_download, snapshot_download
-
-import langid
+from peft import LoraConfig, LoraModel
 
 
 def build_metis_stage1(cfg, device, ft_type=None):

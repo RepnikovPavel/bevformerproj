@@ -2,7 +2,6 @@
 import unittest
 
 import torch
-
 from mmocr.models.textrecog.encoders import ChannelReductionEncoder
 from mmocr.structures import TextRecogDataSample
 

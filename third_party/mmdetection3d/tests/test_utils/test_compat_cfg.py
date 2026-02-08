@@ -1,8 +1,11 @@
 import pytest
-from mmengine import ConfigDict
+from mmdet3d.utils.compat_cfg import (
+    compat_imgs_per_gpu,
+    compat_loader_args,
+    compat_runner_args,
+)
 
-from mmdet3d.utils.compat_cfg import (compat_imgs_per_gpu, compat_loader_args,
-                                      compat_runner_args)
+from mmengine import ConfigDict
 
 
 def test_compat_runner_args():

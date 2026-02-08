@@ -10,9 +10,10 @@ import argparse
 import json
 import os
 
-import mmcv
 import numpy as np
 from terminaltables import AsciiTable
+
+import mmcv
 
 try:
     import cv2

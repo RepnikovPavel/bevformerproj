@@ -2,13 +2,18 @@
 import os.path as osp
 from tempfile import TemporaryDirectory
 
-import mmcv
 import numpy as np
 import pytest
+from mmflow.datasets.utils import (
+    adjust_gamma,
+    adjust_hue,
+    flow_from_bytes,
+    visualize_flow,
+    write_flow,
+)
 from PIL import Image
 
-from mmflow.datasets.utils import (adjust_gamma, adjust_hue, flow_from_bytes,
-                                   visualize_flow, write_flow)
+import mmcv
 
 img1_ = '../data/0000000-img_0.png'
 

@@ -1,9 +1,13 @@
 import torch
 import torch.nn as nn
-from pcdet.utils.spconv_utils import spconv
+from pcdet.models.backbones_3d.focal_sparse_conv.focal_sparse_utils import (
+    FocalLoss,
+    check_repeat,
+    split_voxels,
+)
 from pcdet.ops.roiaware_pool3d.roiaware_pool3d_utils import points_in_boxes_gpu
-from pcdet.models.backbones_3d.focal_sparse_conv.focal_sparse_utils import split_voxels, check_repeat, FocalLoss
 from pcdet.utils import common_utils
+from pcdet.utils.spconv_utils import spconv
 
 
 class FocalSparseConv(spconv.SparseModule):

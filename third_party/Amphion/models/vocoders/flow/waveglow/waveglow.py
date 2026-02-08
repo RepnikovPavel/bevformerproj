@@ -4,8 +4,8 @@
 # LICENSE file in the root directory of this source tree.
 
 import torch
-from torch.autograd import Variable
 import torch.nn.functional as F
+from torch.autograd import Variable
 
 
 @torch.jit.script

@@ -1,11 +1,13 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import numpy as np
 import pytest
-from numpy.testing import assert_array_almost_equal
-
 from mmeval.metrics.utils.bbox_overlaps_rotated import (
-    calculate_bboxes_area_rotated, calculate_overlaps_rotated, le90_to_oc,
-    qbox_to_rbox)
+    calculate_bboxes_area_rotated,
+    calculate_overlaps_rotated,
+    le90_to_oc,
+    qbox_to_rbox,
+)
+from numpy.testing import assert_array_almost_equal
 
 
 def test_qbox_to_rbox():

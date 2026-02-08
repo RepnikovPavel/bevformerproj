@@ -3,10 +3,10 @@ import argparse
 import tempfile
 
 import torch
-from mmengine import Config
+from mmdet3d.registry import MODELS
 from mmengine.runner import load_state_dict
 
-from mmdet3d.registry import MODELS
+from mmengine import Config
 
 
 def parse_args():

@@ -3,10 +3,10 @@ Open3d visualization tool box
 Written by Jihan YANG
 All rights preserved from 2021 - present.
 """
-import open3d
-import torch
 import matplotlib
 import numpy as np
+import open3d
+import torch
 
 box_colormap = [
     [1, 1, 1],

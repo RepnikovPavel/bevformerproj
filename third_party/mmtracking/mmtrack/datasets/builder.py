@@ -8,12 +8,16 @@ import torch
 from mmcv.parallel import collate
 from mmcv.runner import get_dist_info
 from mmcv.utils import TORCH_VERSION, digit_version
-from mmdet.datasets.samplers import (DistributedGroupSampler,
-                                     DistributedSampler, GroupSampler)
+from mmdet.datasets.samplers import (
+    DistributedGroupSampler,
+    DistributedSampler,
+    GroupSampler,
+)
 from torch.utils.data import DataLoader
 from torch.utils.data.sampler import RandomSampler
 
 from mmtrack.datasets.samplers.quota_sampler import DistributedQuotaSampler
+
 from .base_sot_dataset import BaseSOTDataset
 from .samplers import DistributedVideoSampler, SOTVideoSampler
 

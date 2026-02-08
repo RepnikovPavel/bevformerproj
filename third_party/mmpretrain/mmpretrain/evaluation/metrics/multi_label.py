@@ -8,6 +8,7 @@ from mmengine.logging import MMLogger
 
 from mmpretrain.registry import METRICS
 from mmpretrain.structures import label_to_onehot
+
 from .single_label import _precision_recall_f1_support, to_tensor
 
 

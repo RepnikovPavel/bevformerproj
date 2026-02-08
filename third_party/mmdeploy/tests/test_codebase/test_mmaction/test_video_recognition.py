@@ -1,15 +1,15 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 from tempfile import NamedTemporaryFile, TemporaryDirectory
 
+import mmdeploy.backend.onnxruntime as ort_apis
 import pytest
 import torch
-from mmengine import Config
-
-import mmdeploy.backend.onnxruntime as ort_apis
 from mmdeploy.apis import build_task_processor
 from mmdeploy.codebase import import_codebase
 from mmdeploy.utils import Codebase, load_config
 from mmdeploy.utils.test import SwitchBackendWrapper
+
+from mmengine import Config
 
 try:
     import_codebase(Codebase.MMACTION)

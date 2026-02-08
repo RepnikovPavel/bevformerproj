@@ -5,6 +5,7 @@ from abc import abstractmethod
 import torch
 
 from mmrazor.utils.typing import DumpChosen
+
 from ..base_mutable import BaseMutable
 from ..derived_mutable import DerivedMethodMixin
 

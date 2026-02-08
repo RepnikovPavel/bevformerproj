@@ -6,19 +6,20 @@ from queue import Queue
 from threading import Event, Lock, Thread
 
 import cv2
-import mmcv
 import numpy as np
 import torch
-
 from mmhuman3d.apis import inference_image_based_model, init_model
-from mmhuman3d.core.renderer.mpr_renderer.smpl_realrender import \
-    VisualizerMeshSMPL  # noqa: E501
+from mmhuman3d.core.renderer.mpr_renderer.smpl_realrender import (
+    VisualizerMeshSMPL,  # noqa: E501
+)
 from mmhuman3d.models.body_models.builder import build_body_model
 from mmhuman3d.utils.demo_utils import (
     StopWatch,
     convert_verts_to_cam_coord,
     process_mmdet_results,
 )
+
+import mmcv
 
 try:
     from mmdet.apis import inference_detector, init_detector

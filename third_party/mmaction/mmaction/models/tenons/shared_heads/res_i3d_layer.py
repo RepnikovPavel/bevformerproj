@@ -4,9 +4,9 @@ import torch.nn as nn
 from mmcv.cnn import constant_init, kaiming_init
 from mmcv.runner import load_checkpoint
 
+from ...registry import HEADS
 from ..backbones import ResNet_I3D
 from ..backbones.resnet_i3d import make_res_layer
-from ...registry import HEADS
 
 
 @HEADS.register_module

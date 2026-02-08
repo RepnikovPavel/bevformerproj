@@ -3,7 +3,6 @@ import os.path as osp
 
 import pytest
 from mmengine.registry import init_default_scope
-
 from mmselfsup.datasets import DeepClusterImageNet
 
 # dataset settings

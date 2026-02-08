@@ -10,9 +10,10 @@ import matplotlib.pyplot as plt
 import rich
 import torch.nn as nn
 from mmcls.utils import register_all_modules
-from mmengine import Config, DictAction, Hook, Runner, Visualizer
 from mmengine.model import BaseModel
 from rich.progress import BarColumn, MofNCompleteColumn, Progress, TextColumn
+
+from mmengine import Config, DictAction, Hook, Runner, Visualizer
 
 
 class SimpleModel(BaseModel):

@@ -5,6 +5,7 @@ from typing import Dict, Optional
 from torch import nn
 
 from mmrazor.registry import TASK_UTILS
+
 from .base_recorder import BaseRecorder
 
 

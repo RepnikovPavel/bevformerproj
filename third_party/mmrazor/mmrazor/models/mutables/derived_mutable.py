@@ -16,6 +16,7 @@ from mmengine.logging import print_log
 from torch import Tensor
 
 from mmrazor.utils.typing import DumpChosen
+
 from ..utils import make_divisible
 from .base_mutable import BaseMutable
 

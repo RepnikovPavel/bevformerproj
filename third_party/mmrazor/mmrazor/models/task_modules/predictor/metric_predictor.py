@@ -12,6 +12,7 @@ except ImportError:
 from mmrazor.registry import TASK_UTILS
 from mmrazor.structures import export_fix_subnet
 from mmrazor.utils.typing import DumpChosen
+
 from .handler import RBFHandler
 
 

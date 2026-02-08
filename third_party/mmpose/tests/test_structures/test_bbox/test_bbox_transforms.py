@@ -2,10 +2,13 @@
 from unittest import TestCase
 
 import numpy as np
-
-from mmpose.structures.bbox import (bbox_clip_border, bbox_corner2xyxy,
-                                    bbox_xyxy2corner, get_pers_warp_matrix,
-                                    get_warp_matrix)
+from mmpose.structures.bbox import (
+    bbox_clip_border,
+    bbox_corner2xyxy,
+    bbox_xyxy2corner,
+    get_pers_warp_matrix,
+    get_warp_matrix,
+)
 
 
 class TestBBoxClipBorder(TestCase):

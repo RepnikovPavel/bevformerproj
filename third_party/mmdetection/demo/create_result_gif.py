@@ -5,9 +5,10 @@ import os.path as osp
 
 import matplotlib.patches as mpatches
 import matplotlib.pyplot as plt
-import mmcv
 import numpy as np
 from mmengine.utils import scandir
+
+import mmcv
 
 try:
     import imageio

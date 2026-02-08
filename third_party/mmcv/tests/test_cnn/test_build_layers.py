@@ -6,19 +6,27 @@ import numpy as np
 import pytest
 import torch
 import torch.nn as nn
-from mmengine.registry import MODELS
-from mmengine.utils.dl_utils.parrots_wrapper import _BatchNorm
-from torch.nn import ReflectionPad2d, Upsample
-
-from mmcv.cnn.bricks import (ContextBlock, ConvModule, ConvTranspose2d,
-                             GeneralizedAttention, NonLocal2d,
-                             build_activation_layer, build_conv_layer,
-                             build_norm_layer, build_padding_layer,
-                             build_plugin_layer, build_upsample_layer, is_norm)
+from mmcv.cnn.bricks import (
+    ContextBlock,
+    ConvModule,
+    ConvTranspose2d,
+    GeneralizedAttention,
+    NonLocal2d,
+    build_activation_layer,
+    build_conv_layer,
+    build_norm_layer,
+    build_padding_layer,
+    build_plugin_layer,
+    build_upsample_layer,
+    is_norm,
+)
 from mmcv.cnn.bricks.activation import Clamp
 from mmcv.cnn.bricks.norm import infer_abbr as infer_norm_abbr
 from mmcv.cnn.bricks.plugin import infer_abbr as infer_plugin_abbr
 from mmcv.cnn.bricks.upsample import PixelShufflePack
+from mmengine.registry import MODELS
+from mmengine.utils.dl_utils.parrots_wrapper import _BatchNorm
+from torch.nn import ReflectionPad2d, Upsample
 
 
 def test_build_conv_layer():

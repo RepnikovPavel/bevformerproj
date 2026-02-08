@@ -3,10 +3,10 @@ import argparse
 import os
 import os.path as osp
 
-import mmengine
 import numpy as np
-
 from mmaction.evaluation import ActivityNetLocalization
+
+import mmengine
 
 args = None
 

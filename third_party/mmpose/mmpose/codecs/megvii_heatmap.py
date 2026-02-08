@@ -6,6 +6,7 @@ import cv2
 import numpy as np
 
 from mmpose.registry import KEYPOINT_CODECS
+
 from .base import BaseKeypointCodec
 from .utils import gaussian_blur, get_heatmap_maximum
 

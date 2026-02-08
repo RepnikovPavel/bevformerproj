@@ -7,6 +7,7 @@ from mmengine.dist import get_dist_info, sync_random_seed
 from torch.utils.data import Sampler
 
 from mmdet.registry import DATA_SAMPLERS
+
 from .class_aware_sampler import RandomCycleIter
 
 

@@ -6,10 +6,14 @@ One need to make sure all slaves machines are ssh-able.
 """
 from __future__ import absolute_import
 
-from multiprocessing import Pool, Process
-import os, subprocess, logging
+import logging
+import os
+import subprocess
+from multiprocessing import Pool
 from threading import Thread
+
 from . import tracker
+
 
 def sync_dir(local_dir, slave_node, slave_dir):
     """

@@ -7,7 +7,6 @@ import numpy as np
 import torch
 from mmdet.structures.bbox import HorizontalBoxes
 from mmdet.structures.mask import BitmapMasks, PolygonMasks
-
 from mmyolo.datasets import YOLOv5CocoDataset
 from mmyolo.datasets.transforms import Mosaic, Mosaic9, YOLOv5MixUp, YOLOXMixUp
 from mmyolo.utils import register_all_modules

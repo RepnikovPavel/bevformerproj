@@ -2,9 +2,8 @@
 import os.path as osp
 from typing import Callable, List, Union
 
-from mmengine.dataset import BaseDataset
-
 from mmdet3d.registry import DATASETS
+from mmengine.dataset import BaseDataset
 
 
 @DATASETS.register_module()

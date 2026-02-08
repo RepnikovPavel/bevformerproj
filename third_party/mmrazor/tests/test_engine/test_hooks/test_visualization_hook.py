@@ -10,13 +10,14 @@ from unittest.mock import Mock
 
 import torch
 import torch.nn as nn
+
 # TODO: The argument `out_file` has not been supported in MMEngine yet.
 #  Temporarily, we use `ClsVisualizer` here
 from mmcls.visualization import ClsVisualizer
-from mmengine import ConfigDict
 from mmengine.model import BaseModel
-
 from mmrazor.engine.hooks import RazorVisualizationHook
+
+from mmengine import ConfigDict
 
 
 def get_data_info(idx):

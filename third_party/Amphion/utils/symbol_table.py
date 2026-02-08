@@ -6,14 +6,8 @@
 # This code is modified from
 # https://github.com/lifeiteng/vall-e/blob/9c69096d603ce13174fb5cb025f185e2e9b36ac7/valle/utils/symbol_table.py
 
-from dataclasses import dataclass
-from dataclasses import field
-from typing import Dict
-from typing import Generic
-from typing import List
-from typing import Optional
-from typing import TypeVar
-from typing import Union
+from dataclasses import dataclass, field
+from typing import Dict, Generic, List, Optional, TypeVar, Union
 
 Symbol = TypeVar("Symbol")
 

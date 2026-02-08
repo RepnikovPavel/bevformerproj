@@ -1,6 +1,7 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 
 from mmagic.registry import MODELS
+
 from ..global_local import GLEncoderDecoder
 
 

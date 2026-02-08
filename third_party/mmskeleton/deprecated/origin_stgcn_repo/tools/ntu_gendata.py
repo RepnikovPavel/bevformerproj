@@ -1,11 +1,9 @@
-import os
-import sys
-import pickle
-
 import argparse
-import numpy as np
-from numpy.lib.format import open_memmap
+import os
+import pickle
+import sys
 
+from numpy.lib.format import open_memmap
 from utils.ntu_read_skeleton import read_xyz
 
 training_subjects = [

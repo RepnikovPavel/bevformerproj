@@ -1,10 +1,11 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 from typing import List, Optional, Union
 
-from mmengine import fileio
 from mmengine.logging import MMLogger
 
+from mmengine import fileio
 from mmpretrain.registry import DATASETS
+
 from .categories import IMAGENET_CATEGORIES
 from .custom import CustomDataset
 

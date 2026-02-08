@@ -4,9 +4,9 @@ import os
 import os.path as osp
 
 import yaml
-from mmengine import Config
-
 from mmdeploy.utils import get_backend, get_task_type, load_config
+
+from mmengine import Config
 
 
 def parse_args():

@@ -2,7 +2,6 @@
 import os.path as osp
 
 import torch
-
 from mmaction.models import FBOHead
 
 

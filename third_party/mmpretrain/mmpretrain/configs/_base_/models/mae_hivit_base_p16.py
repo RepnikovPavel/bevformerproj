@@ -1,7 +1,12 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 # This is a BETA new format config file, and the usage may change recently.
-from mmpretrain.models import (MAE, MAEHiViT, MAEPretrainDecoder,
-                               MAEPretrainHead, PixelReconstructionLoss)
+from mmpretrain.models import (
+                               MAE,
+                               MAEHiViT,
+                               MAEPretrainDecoder,
+                               MAEPretrainHead,
+                               PixelReconstructionLoss,
+)
 
 # model settings
 model = dict(

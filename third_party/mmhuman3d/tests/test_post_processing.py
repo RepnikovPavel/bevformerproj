@@ -1,6 +1,5 @@
 import numpy as np
 import torch
-
 from mmhuman3d.core.post_processing.builder import build_post_processing
 
 

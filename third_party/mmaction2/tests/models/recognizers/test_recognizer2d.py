@@ -4,12 +4,11 @@ from unittest.mock import MagicMock
 
 import pytest
 import torch
-from mmengine.utils import digit_version
-
 from mmaction.registry import MODELS
 from mmaction.structures import ActionDataSample
 from mmaction.testing import get_recognizer_cfg
 from mmaction.utils import register_all_modules
+from mmengine.utils import digit_version
 
 
 def train_test_step(cfg, input_shape):

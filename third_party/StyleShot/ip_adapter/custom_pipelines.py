@@ -3,7 +3,9 @@ from typing import Any, Callable, Dict, List, Optional, Tuple, Union
 import torch
 from diffusers import StableDiffusionXLPipeline
 from diffusers.pipelines.stable_diffusion_xl import StableDiffusionXLPipelineOutput
-from diffusers.pipelines.stable_diffusion_xl.pipeline_stable_diffusion_xl import rescale_noise_cfg
+from diffusers.pipelines.stable_diffusion_xl.pipeline_stable_diffusion_xl import (
+    rescale_noise_cfg,
+)
 
 from .utils import is_torch2_available
 

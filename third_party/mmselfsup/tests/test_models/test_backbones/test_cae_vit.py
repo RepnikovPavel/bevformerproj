@@ -3,7 +3,6 @@ import platform
 
 import pytest
 import torch
-
 from mmselfsup.models.backbones import CAEViT
 
 backbone = dict(arch='b', patch_size=16, init_values=0.1)

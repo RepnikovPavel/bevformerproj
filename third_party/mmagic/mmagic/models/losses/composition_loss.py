@@ -5,6 +5,7 @@ import torch
 import torch.nn as nn
 
 from mmagic.registry import MODELS
+
 from .pixelwise_loss import charbonnier_loss, l1_loss, mse_loss
 
 _reduction_modes = ['none', 'mean', 'sum']

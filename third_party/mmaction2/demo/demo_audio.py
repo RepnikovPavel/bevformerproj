@@ -3,9 +3,9 @@ import argparse
 from operator import itemgetter
 
 import torch
-from mmengine import Config, DictAction
-
 from mmaction.apis import inference_recognizer, init_recognizer
+
+from mmengine import Config, DictAction
 
 
 def parse_args():

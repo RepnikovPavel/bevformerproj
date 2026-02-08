@@ -1,7 +1,8 @@
-from .detector3d_template import Detector3DTemplate
 from .. import backbones_image, view_transforms
-from ..backbones_image import img_neck
 from ..backbones_2d import fuser
+from ..backbones_image import img_neck
+from .detector3d_template import Detector3DTemplate
+
 
 class BevFusion(Detector3DTemplate):
     def __init__(self, model_cfg, num_class, dataset):

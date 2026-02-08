@@ -8,8 +8,8 @@ from torch import Tensor
 
 from mmdet.registry import MODELS
 from mmdet.structures.bbox import bbox_overlaps
-from mmdet.utils import (ConfigType, InstanceList, OptConfigType,
-                         OptInstanceList)
+from mmdet.utils import ConfigType, InstanceList, OptConfigType, OptInstanceList
+
 from ..layers import multiclass_nms
 from ..utils import levels_to_images, multi_apply
 from . import ATSSHead

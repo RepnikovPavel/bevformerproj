@@ -4,12 +4,11 @@ from typing import Dict, Sequence, Union
 
 import numpy as np
 import torch
-from torch import nn
-
 from mmocr.models.common.dictionary import Dictionary
 from mmocr.models.textrecog.module_losses import CEModuleLoss
 from mmocr.registry import MODELS
 from mmocr.structures import TextSpottingDataSample
+from torch import nn
 
 
 @MODELS.register_module()

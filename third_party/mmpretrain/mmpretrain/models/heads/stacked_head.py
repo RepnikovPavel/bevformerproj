@@ -7,6 +7,7 @@ from mmcv.cnn import build_activation_layer, build_norm_layer
 from mmengine.model import BaseModule, ModuleList
 
 from mmpretrain.registry import MODELS
+
 from .cls_head import ClsHead
 
 

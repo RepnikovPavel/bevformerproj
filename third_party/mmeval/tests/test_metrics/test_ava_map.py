@@ -1,10 +1,10 @@
 # Copyright (c) OpenMMLab. All rights reserved.
-import numpy as np
 import os.path as osp
-import pytest
-from numpy.testing import assert_array_almost_equal
 
+import numpy as np
+import pytest
 from mmeval.metrics import AVAMeanAP
+from numpy.testing import assert_array_almost_equal
 
 
 @pytest.mark.parametrize(

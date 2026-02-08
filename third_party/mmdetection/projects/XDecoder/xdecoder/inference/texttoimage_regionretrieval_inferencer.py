@@ -2,11 +2,10 @@ import copy
 from typing import Iterable, Optional, Union
 
 import torch
-from mmengine.dataset import Compose
-from rich.progress import track
-
 from mmdet.apis.det_inferencer import DetInferencer, InputsType
 from mmdet.utils import ConfigType
+from mmengine.dataset import Compose
+from rich.progress import track
 
 
 class TextToImageRegionRetrievalInferencer(DetInferencer):

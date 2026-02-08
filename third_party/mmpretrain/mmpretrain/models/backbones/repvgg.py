@@ -2,13 +2,18 @@
 import torch
 import torch.nn.functional as F
 import torch.utils.checkpoint as cp
-from mmcv.cnn import (ConvModule, build_activation_layer, build_conv_layer,
-                      build_norm_layer)
+from mmcv.cnn import (
+    ConvModule,
+    build_activation_layer,
+    build_conv_layer,
+    build_norm_layer,
+)
 from mmengine.model import BaseModule, Sequential
 from mmengine.utils.dl_utils.parrots_wrapper import _BatchNorm
 from torch import nn
 
 from mmpretrain.registry import MODELS
+
 from ..utils.se_layer import SELayer
 from .base_backbone import BaseBackbone
 

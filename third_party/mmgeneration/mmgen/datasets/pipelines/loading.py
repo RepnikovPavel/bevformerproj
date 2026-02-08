@@ -1,7 +1,8 @@
 # Copyright (c) OpenMMLab. All rights reserved.
-import mmcv
 import numpy as np
 from mmcv.fileio import FileClient
+
+import mmcv
 
 from ..builder import PIPELINES
 

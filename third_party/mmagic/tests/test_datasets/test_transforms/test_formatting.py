@@ -1,10 +1,9 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import numpy as np
 import torch
-from mmcv.transforms import to_tensor
-
 from mmagic.datasets.transforms import PackInputs
 from mmagic.structures.data_sample import DataSample
+from mmcv.transforms import to_tensor
 
 
 def assert_tensor_equal(img, ref_img, ratio_thr=0.999):

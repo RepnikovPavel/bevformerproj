@@ -5,11 +5,11 @@ from contextlib import contextmanager
 from functools import partial
 from pathlib import Path
 
-import mmcv
 import numpy as np
-from mmcv import Timer
 from scipy import interpolate
 
+import mmcv
+from mmcv import Timer
 from mmhuman3d.core.post_processing import build_post_processing
 
 try:

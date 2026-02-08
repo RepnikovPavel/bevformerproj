@@ -3,11 +3,10 @@
 import numpy as np
 import torch
 from mmcv.transforms.base import BaseTransform
-from mmengine.registry import TRANSFORMS
-from mmengine.structures import InstanceData
-
 from mmdet3d.datasets import KittiDataset
 from mmdet3d.structures import Det3DDataSample, LiDARInstance3DBoxes
+from mmengine.registry import TRANSFORMS
+from mmengine.structures import InstanceData
 
 
 def _generate_kitti_dataset_config():

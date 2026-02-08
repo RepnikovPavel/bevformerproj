@@ -11,6 +11,7 @@ from mmengine.model import BaseModel
 
 from mmpretrain.registry import MODELS, TOKENIZER
 from mmpretrain.structures import DataSample
+
 from .bert import BertConfig, BertLMHeadModel, BertModel
 from .openset_utils import build_openset_label_embedding
 from .utils import tie_encoder_decoder_weights

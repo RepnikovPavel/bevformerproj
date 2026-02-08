@@ -1,11 +1,12 @@
 """Deep Learning Framework bridges."""
 from __future__ import absolute_import
+
 import threading
 
-from .mxnet import to_mxnet, from_mxnet
-from .torchdl import to_torch, from_torch
-from .tf import to_tensorflow, from_tensorflow
-from .tvm import to_tvm, from_tvm
+from .mxnet import from_mxnet, to_mxnet
+from .tf import from_tensorflow, to_tensorflow
+from .torchdl import from_torch, to_torch
+from .tvm import from_tvm, to_tvm
 
 _BRIDGE_TYPES = {
     'native': (lambda x: x, lambda x: x),

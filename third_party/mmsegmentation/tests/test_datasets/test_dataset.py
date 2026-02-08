@@ -4,14 +4,26 @@ import os.path as osp
 import tempfile
 
 import pytest
-
-from mmseg.datasets import (ADE20KDataset, BaseSegDataset, BDD100KDataset,
-                            CityscapesDataset, COCOStuffDataset,
-                            DecathlonDataset, DSDLSegDataset, ISPRSDataset,
-                            LIPDataset, LoveDADataset, MapillaryDataset_v1,
-                            MapillaryDataset_v2, NYUDataset, PascalVOCDataset,
-                            PotsdamDataset, REFUGEDataset, SynapseDataset,
-                            iSAIDDataset)
+from mmseg.datasets import (
+    ADE20KDataset,
+    BaseSegDataset,
+    BDD100KDataset,
+    CityscapesDataset,
+    COCOStuffDataset,
+    DecathlonDataset,
+    DSDLSegDataset,
+    ISPRSDataset,
+    LIPDataset,
+    LoveDADataset,
+    MapillaryDataset_v1,
+    MapillaryDataset_v2,
+    NYUDataset,
+    PascalVOCDataset,
+    PotsdamDataset,
+    REFUGEDataset,
+    SynapseDataset,
+    iSAIDDataset,
+)
 from mmseg.registry import DATASETS
 from mmseg.utils import get_classes, get_palette
 

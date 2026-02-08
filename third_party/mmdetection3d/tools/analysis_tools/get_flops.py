@@ -2,10 +2,10 @@
 import argparse
 
 import torch
-from mmengine import Config, DictAction
+from mmdet3d.registry import MODELS
 from mmengine.registry import init_default_scope
 
-from mmdet3d.registry import MODELS
+from mmengine import Config, DictAction
 
 try:
     from mmcv.cnn import get_model_complexity_info

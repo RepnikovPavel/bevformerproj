@@ -4,6 +4,7 @@ from typing import Dict, Optional, Tuple, Union
 import torch.nn
 
 from mmrazor.registry import TASK_UTILS
+
 from .base_estimator import BaseEstimator
 from .counters import get_model_flops_params, get_model_latency
 

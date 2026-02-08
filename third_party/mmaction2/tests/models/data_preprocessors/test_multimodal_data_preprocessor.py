@@ -3,11 +3,10 @@ import copy
 
 import pytest
 import torch
-from numpy.testing import assert_array_equal
-
 from mmaction.models import MultiModalDataPreprocessor
 from mmaction.structures import ActionDataSample
 from mmaction.utils import register_all_modules
+from numpy.testing import assert_array_equal
 
 
 def generate_dummy_data(batch_size, input_keys, input_shapes):

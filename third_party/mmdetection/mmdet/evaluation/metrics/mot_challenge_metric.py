@@ -13,12 +13,18 @@ try:
     import trackeval
 except ImportError:
     trackeval = None
-from mmengine.dist import (all_gather_object, barrier, broadcast,
-                           broadcast_object_list, get_dist_info,
-                           is_main_process)
+from mmengine.dist import (
+    all_gather_object,
+    barrier,
+    broadcast,
+    broadcast_object_list,
+    get_dist_info,
+    is_main_process,
+)
 from mmengine.logging import MMLogger
 
 from mmdet.registry import METRICS, TASK_UTILS
+
 from .base_video_metric import BaseVideoMetric
 
 

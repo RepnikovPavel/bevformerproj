@@ -3,9 +3,8 @@ from abc import ABCMeta, abstractmethod
 from typing import Tuple
 
 from mmengine.model import BaseModule
-from torch import Tensor
-
 from mmocr.utils import DetSampleList
+from torch import Tensor
 
 
 class BaseRoIHead(BaseModule, metaclass=ABCMeta):

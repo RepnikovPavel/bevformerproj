@@ -4,11 +4,11 @@ from typing import List, Optional
 
 import mmengine.dist as dist
 import numpy as np
-from mmengine.fileio import (LocalBackend, exists, get, get_file_backend,
-                             join_path)
+from mmengine.fileio import LocalBackend, exists, get, get_file_backend, join_path
 from mmengine.logging import MMLogger
 
 from mmpretrain.registry import DATASETS
+
 from .base_dataset import BaseDataset
 from .categories import CIFAR10_CATEGORIES, CIFAR100_CATEGORIES
 from .utils import check_md5, download_and_extract_archive

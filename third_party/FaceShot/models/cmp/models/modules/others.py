@@ -1,5 +1,6 @@
 import torch.nn as nn
 
+
 class FixModule(nn.Module):
 
     def __init__(self, m):

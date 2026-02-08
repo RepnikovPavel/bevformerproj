@@ -4,14 +4,13 @@
 # LICENSE file in the root directory of this source tree.
 
 import re
-import os
-from typing import List, Pattern, Union
-from phonemizer.utils import list2str, str2list
+from typing import List, Union
+
 from phonemizer.backend import EspeakBackend
 from phonemizer.backend.espeak.language_switch import LanguageSwitch
 from phonemizer.backend.espeak.words_mismatch import WordMismatch
-from phonemizer.punctuation import Punctuation
 from phonemizer.separator import Separator
+from phonemizer.utils import list2str, str2list
 
 
 class TextTokenizer:

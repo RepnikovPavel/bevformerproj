@@ -1,12 +1,13 @@
 # Modified from MMPretrain
 import gradio as gr
 import torch
-from mmengine.logging import MMLogger
-
 from mmdet.apis import DetInferencer
+from mmengine.logging import MMLogger
 from projects.XDecoder.xdecoder.inference import (
-    ImageCaptionInferencer, RefImageCaptionInferencer,
-    TextToImageRegionRetrievalInferencer)
+    ImageCaptionInferencer,
+    RefImageCaptionInferencer,
+    TextToImageRegionRetrievalInferencer,
+)
 
 logger = MMLogger('mmdetection', logger_name='mmdet')
 if torch.cuda.is_available():

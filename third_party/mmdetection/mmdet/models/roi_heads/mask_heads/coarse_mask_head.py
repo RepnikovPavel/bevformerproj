@@ -5,6 +5,7 @@ from torch import Tensor
 
 from mmdet.registry import MODELS
 from mmdet.utils import MultiConfig
+
 from .fcn_mask_head import FCNMaskHead
 
 

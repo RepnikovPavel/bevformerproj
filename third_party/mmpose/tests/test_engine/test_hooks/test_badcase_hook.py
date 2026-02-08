@@ -9,7 +9,6 @@ from unittest.mock import MagicMock
 import numpy as np
 from mmengine.config import ConfigDict
 from mmengine.structures import InstanceData
-
 from mmpose.engine.hooks import BadCaseAnalysisHook
 from mmpose.structures import PoseDataSample
 from mmpose.visualization import PoseLocalVisualizer

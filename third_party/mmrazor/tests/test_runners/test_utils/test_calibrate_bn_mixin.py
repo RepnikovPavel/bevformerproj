@@ -4,10 +4,9 @@ from typing import Sequence
 from unittest import TestCase
 
 import torch
+from mmrazor.engine.runner.utils import CalibrateBNMixin
 from torch import Tensor, nn
 from torch.utils.data import DataLoader, Dataset
-
-from mmrazor.engine.runner.utils import CalibrateBNMixin
 
 
 class ToyModel(nn.Module):

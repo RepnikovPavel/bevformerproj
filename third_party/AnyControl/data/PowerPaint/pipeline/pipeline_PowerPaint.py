@@ -18,19 +18,33 @@ from typing import Any, Callable, Dict, List, Optional, Union
 import numpy as np
 import PIL
 import torch
-from packaging import version
-from transformers import CLIPImageProcessor, CLIPTextModel, CLIPTokenizer
 from diffusers.configuration_utils import FrozenDict
 from diffusers.image_processor import VaeImageProcessor
-from diffusers.loaders import FromSingleFileMixin, LoraLoaderMixin, TextualInversionLoaderMixin
-from diffusers.models import AsymmetricAutoencoderKL, AutoencoderKL, UNet2DConditionModel
-from diffusers.schedulers import KarrasDiffusionSchedulers
-from diffusers.utils import deprecate, is_accelerate_available, is_accelerate_version, logging
-from diffusers.utils.torch_utils import randn_tensor
+from diffusers.loaders import (
+    FromSingleFileMixin,
+    LoraLoaderMixin,
+    TextualInversionLoaderMixin,
+)
+from diffusers.models import (
+    AsymmetricAutoencoderKL,
+    AutoencoderKL,
+    UNet2DConditionModel,
+)
 from diffusers.pipelines.pipeline_utils import DiffusionPipeline
 from diffusers.pipelines.stable_diffusion import StableDiffusionPipelineOutput
-from diffusers.pipelines.stable_diffusion.safety_checker import StableDiffusionSafetyChecker
-
+from diffusers.pipelines.stable_diffusion.safety_checker import (
+    StableDiffusionSafetyChecker,
+)
+from diffusers.schedulers import KarrasDiffusionSchedulers
+from diffusers.utils import (
+    deprecate,
+    is_accelerate_available,
+    is_accelerate_version,
+    logging,
+)
+from diffusers.utils.torch_utils import randn_tensor
+from packaging import version
+from transformers import CLIPImageProcessor, CLIPTextModel, CLIPTokenizer
 
 logger = logging.get_logger(__name__)  # pylint: disable=invalid-name
 

@@ -5,7 +5,6 @@ import numpy as np
 import torch
 from mmengine.config import Config
 from mmengine.structures import InstanceData
-
 from mmyolo.models import RTMDetInsSepBNHead
 from mmyolo.models.dense_heads import RTMDetHead
 from mmyolo.utils import register_all_modules

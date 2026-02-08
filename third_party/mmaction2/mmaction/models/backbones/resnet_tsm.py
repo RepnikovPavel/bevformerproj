@@ -7,6 +7,7 @@ from mmengine.runner.checkpoint import _load_checkpoint
 from torch.nn.modules.utils import _ntuple
 
 from mmaction.registry import MODELS
+
 from .resnet import ResNet
 
 

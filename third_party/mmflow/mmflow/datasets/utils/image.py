@@ -1,6 +1,7 @@
 # Copyright (c) OpenMMLab. All rights reserved.
-import mmcv
 import numpy as np
+
+import mmcv
 
 
 def adjust_hue(img, hue_factor):

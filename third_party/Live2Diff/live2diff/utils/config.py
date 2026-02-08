@@ -3,7 +3,6 @@ import os.path as osp
 
 from omegaconf import OmegaConf
 
-
 config_suffix = [".yaml"]
 
 

@@ -1,8 +1,9 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import os.path as osp
 
-from mmagic.apis.inferencers.video_restoration_inferencer import \
-    VideoRestorationInferencer
+from mmagic.apis.inferencers.video_restoration_inferencer import (
+    VideoRestorationInferencer,
+)
 from mmagic.utils import register_all_modules
 
 register_all_modules()

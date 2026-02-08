@@ -1,11 +1,12 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import torch
 import torch.nn as nn
+from mmaction.models.common import (
+    DividedSpatialAttentionWithNorm,
+    DividedTemporalAttentionWithNorm,
+    FFNWithNorm,
+)
 from mmengine.testing import assert_params_all_zeros
-
-from mmaction.models.common import (DividedSpatialAttentionWithNorm,
-                                    DividedTemporalAttentionWithNorm,
-                                    FFNWithNorm)
 
 
 def test_divided_temporal_attention_with_norm():

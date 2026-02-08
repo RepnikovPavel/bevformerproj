@@ -5,9 +5,12 @@ from unittest import TestCase
 from unittest.mock import ANY, MagicMock, patch
 
 from mmcv.image import imread
-
-from mmpretrain.apis import (ImageClassificationInferencer, ModelHub,
-                             get_model, inference_model)
+from mmpretrain.apis import (
+    ImageClassificationInferencer,
+    ModelHub,
+    get_model,
+    inference_model,
+)
 from mmpretrain.models import MobileNetV3
 from mmpretrain.structures import DataSample
 from mmpretrain.visualization import UniversalVisualizer

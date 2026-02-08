@@ -5,9 +5,7 @@ except ImportError:
     from collections.abc import Iterable
 import pytest
 import torch
-
-from mmagic.models import (DepthwiseIndexBlock, HolisticIndexBlock,
-                           IndexNetEncoder)
+from mmagic.models import DepthwiseIndexBlock, HolisticIndexBlock, IndexNetEncoder
 
 
 def test_indexnet_encoder():

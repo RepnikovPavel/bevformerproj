@@ -1,13 +1,14 @@
+import copy
+
 import numpy as np
 import torch
 import torch.nn as nn
-from torch.nn.init import kaiming_normal_
-from ..model_utils import centernet_utils
-from ..model_utils import model_nms_utils
-from ...utils import loss_utils
-from ...utils.spconv_utils import replace_feature, spconv
-import copy
 from easydict import EasyDict
+from torch.nn.init import kaiming_normal_
+
+from ...utils import loss_utils
+from ...utils.spconv_utils import spconv
+from ..model_utils import centernet_utils, model_nms_utils
 
 
 class SeparateHead(nn.Module):

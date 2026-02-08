@@ -9,8 +9,14 @@ from torch import Tensor
 
 from mmdet.registry import MODELS
 from mmdet.structures.bbox import bbox2distance
-from mmdet.utils import (ConfigType, InstanceList, OptConfigType,
-                         OptInstanceList, reduce_mean)
+from mmdet.utils import (
+    ConfigType,
+    InstanceList,
+    OptConfigType,
+    OptInstanceList,
+    reduce_mean,
+)
+
 from ..utils import multi_apply
 from .anchor_free_head import AnchorFreeHead
 

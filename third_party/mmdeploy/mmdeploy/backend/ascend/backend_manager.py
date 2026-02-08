@@ -77,6 +77,7 @@ class AscendManager(BaseBackendManager):
             Sequence[str]: Backend files.
         """
         from mmdeploy.utils import get_model_inputs
+
         from .onnx2ascend import from_onnx
 
         model_inputs = get_model_inputs(deploy_cfg)

@@ -3,9 +3,8 @@ import unittest
 from unittest import TestCase
 
 import torch
-from parameterized import parameterized
-
 from mmdet.models.roi_heads.bbox_heads import DoubleConvFCBBoxHead
+from parameterized import parameterized
 
 
 class TestDoubleBboxHead(TestCase):

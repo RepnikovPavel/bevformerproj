@@ -1,10 +1,25 @@
 # Copyright (c) OpenMMLab. All rights reserved.
-from .registry import (DATA_SAMPLERS, DATASETS, HOOKS, LOOPS, METRICS,
-                       MODEL_WRAPPERS, MODELS, OPTIM_WRAPPER_CONSTRUCTORS,
-                       OPTIM_WRAPPERS, OPTIMIZERS, PARAM_SCHEDULERS,
-                       RUNNER_CONSTRUCTORS, RUNNERS, TASK_UTILS, TRANSFORMS,
-                       VISBACKENDS, VISUALIZERS, WEIGHT_INITIALIZERS,
-                       sub_model)
+from .registry import (
+                       DATA_SAMPLERS,
+                       DATASETS,
+                       HOOKS,
+                       LOOPS,
+                       METRICS,
+                       MODEL_WRAPPERS,
+                       MODELS,
+                       OPTIM_WRAPPER_CONSTRUCTORS,
+                       OPTIM_WRAPPERS,
+                       OPTIMIZERS,
+                       PARAM_SCHEDULERS,
+                       RUNNER_CONSTRUCTORS,
+                       RUNNERS,
+                       TASK_UTILS,
+                       TRANSFORMS,
+                       VISBACKENDS,
+                       VISUALIZERS,
+                       WEIGHT_INITIALIZERS,
+                       sub_model,
+)
 
 __all__ = [
     'RUNNERS', 'RUNNER_CONSTRUCTORS', 'HOOKS', 'DATASETS', 'DATA_SAMPLERS',

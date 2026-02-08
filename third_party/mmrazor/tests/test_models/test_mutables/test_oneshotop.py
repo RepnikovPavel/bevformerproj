@@ -1,11 +1,10 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 from unittest import TestCase
 
+import mmrazor.models  # noqa:F401
 import pytest
 import torch
 import torch.nn as nn
-
-import mmrazor.models  # noqa:F401
 from mmrazor.registry import MODELS
 
 

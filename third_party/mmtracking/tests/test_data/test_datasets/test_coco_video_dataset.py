@@ -2,8 +2,8 @@
 import os.path as osp
 
 import pytest
-
 from mmtrack.datasets import DATASETS as DATASETS
+
 from .utils import _create_coco_gt_results
 
 PREFIX = osp.join(osp.dirname(__file__), '../../data')

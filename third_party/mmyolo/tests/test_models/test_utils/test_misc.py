@@ -3,10 +3,9 @@ import numpy as np
 import pytest
 import torch
 from mmengine.structures import InstanceData
-from torch import Tensor
-
 from mmyolo.models.utils import gt_instances_preprocess
 from mmyolo.utils import register_all_modules
+from torch import Tensor
 
 register_all_modules()
 

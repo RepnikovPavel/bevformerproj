@@ -10,6 +10,7 @@ from mmcv.cnn.bricks import ConvModule, DropPath
 from mmengine.model import BaseModule, Sequential
 
 from mmdet.registry import MODELS
+
 from ..layers import InvertedResidual, SELayer
 from ..utils import make_divisible
 

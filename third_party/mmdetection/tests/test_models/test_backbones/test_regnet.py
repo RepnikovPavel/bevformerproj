@@ -1,7 +1,6 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import pytest
 import torch
-
 from mmdet.models.backbones import RegNet
 
 regnet_test_data = [

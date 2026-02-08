@@ -5,6 +5,7 @@ import torch
 from mmcls.models import VisionTransformer
 
 from mmselfsup.registry import MODELS
+
 from ..utils import build_2d_sincos_position_embedding
 
 

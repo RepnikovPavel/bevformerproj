@@ -1,7 +1,6 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import pytest
 import torch
-
 from mmagic.models.archs import MultiLayerDiscriminator
 from mmagic.models.editors import DeepFillv1Discriminators
 

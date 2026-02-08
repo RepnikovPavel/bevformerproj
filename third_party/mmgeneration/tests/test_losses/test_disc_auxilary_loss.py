@@ -3,14 +3,18 @@ from functools import partial
 
 import pytest
 import torch
-
 from mmgen.models.architectures import DCGANDiscriminator
-from mmgen.models.architectures.pggan.generator_discriminator import \
-    PGGANDiscriminator
-from mmgen.models.losses import (DiscShiftLoss, GradientPenaltyLoss,
-                                 disc_shift_loss, gradient_penalty_loss)
-from mmgen.models.losses.disc_auxiliary_loss import (R1GradientPenalty,
-                                                     r1_gradient_penalty_loss)
+from mmgen.models.architectures.pggan.generator_discriminator import PGGANDiscriminator
+from mmgen.models.losses import (
+    DiscShiftLoss,
+    GradientPenaltyLoss,
+    disc_shift_loss,
+    gradient_penalty_loss,
+)
+from mmgen.models.losses.disc_auxiliary_loss import (
+    R1GradientPenalty,
+    r1_gradient_penalty_loss,
+)
 
 
 class TestDiscShiftLoss(object):

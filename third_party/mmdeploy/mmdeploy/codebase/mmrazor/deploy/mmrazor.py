@@ -4,13 +4,13 @@ from typing import Dict, Optional, Tuple, Union
 
 import numpy as np
 import torch
-from mmengine import Config
-from mmengine.model import BaseDataPreprocessor
-from mmengine.registry import Registry
-
 from mmdeploy.apis.utils import build_task_processor
 from mmdeploy.codebase.base import CODEBASE, BaseTask, MMCodebase
 from mmdeploy.utils import Codebase, Task
+from mmengine.model import BaseDataPreprocessor
+from mmengine.registry import Registry
+
+from mmengine import Config
 
 MMRAZOR_TASK = Registry('mmrazor_tasks')
 

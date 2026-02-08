@@ -5,7 +5,6 @@ from unittest.mock import MagicMock
 
 import pytest
 import torch
-
 from mmselfsup.models.algorithms import EVA
 from mmselfsup.structures import SelfSupDataSample
 

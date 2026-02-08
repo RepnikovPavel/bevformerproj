@@ -4,21 +4,17 @@
 # LICENSE file in the root directory of this source tree.
 
 import json
-from tqdm import tqdm
 import os
-import torchaudio
-from utils import audio
-import csv
 import random
-
-from utils.util import has_existed
-from text import _clean_text
-import librosa
-import soundfile as sf
-from scipy.io import wavfile
-
 from pathlib import Path
+
+import librosa
 import numpy as np
+import torchaudio
+from scipy.io import wavfile
+from text import _clean_text
+from tqdm import tqdm
+from utils.util import has_existed
 
 
 def textgird_extract(

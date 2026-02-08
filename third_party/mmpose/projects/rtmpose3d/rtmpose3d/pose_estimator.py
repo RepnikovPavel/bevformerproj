@@ -2,7 +2,6 @@ from itertools import zip_longest
 from typing import Optional
 
 import numpy as np
-
 from mmpose.models.pose_estimators import TopdownPoseEstimator
 from mmpose.registry import MODELS
 from mmpose.utils.typing import InstanceList, PixelDataList, SampleList

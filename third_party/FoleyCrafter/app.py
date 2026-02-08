@@ -8,16 +8,14 @@ import gradio as gr
 import soundfile as sf
 import torch
 import torchvision
-from huggingface_hub import snapshot_download
-from moviepy.editor import AudioFileClip, VideoFileClip
-from transformers import CLIPImageProcessor, CLIPVisionModelWithProjection
-
 from diffusers import DDIMScheduler, EulerDiscreteScheduler, PNDMScheduler
 from foleycrafter.models.onset import torch_utils
 from foleycrafter.models.time_detector.model import VideoOnsetNet
 from foleycrafter.pipelines.auffusion_pipeline import Generator, denormalize_spectrogram
 from foleycrafter.utils.util import build_foleycrafter, read_frames_with_moviepy
-
+from huggingface_hub import snapshot_download
+from moviepy.editor import AudioFileClip, VideoFileClip
+from transformers import CLIPImageProcessor, CLIPVisionModelWithProjection
 
 os.environ["GRADIO_TEMP_DIR"] = "./tmp"
 

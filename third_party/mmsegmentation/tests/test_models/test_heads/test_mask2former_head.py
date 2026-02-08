@@ -1,11 +1,12 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import torch
-from mmengine import Config
 from mmengine.structures import PixelData
-
 from mmseg.models.decode_heads import Mask2FormerHead
 from mmseg.structures import SegDataSample
 from mmseg.utils import SampleList
+
+from mmengine import Config
+
 from .utils import to_cuda
 
 

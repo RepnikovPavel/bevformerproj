@@ -1,14 +1,16 @@
 """This script contains basic utilities for Deep3DFaceRecon_pytorch
 """
 from __future__ import print_function
+
+import argparse
+import importlib
+import os
+from argparse import Namespace
+
 import numpy as np
 import torch
-from PIL import Image
-import os
-import importlib
-import argparse
-from argparse import Namespace
 import torchvision
+from PIL import Image
 
 
 def str2bool(v):

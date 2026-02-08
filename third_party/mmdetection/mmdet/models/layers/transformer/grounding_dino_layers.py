@@ -9,9 +9,12 @@ from torch import Tensor
 
 from mmdet.models.utils.vlfuse_helper import SingleScaleBiAttentionBlock
 from mmdet.utils import ConfigType, OptConfigType
-from .deformable_detr_layers import (DeformableDetrTransformerDecoderLayer,
-                                     DeformableDetrTransformerEncoder,
-                                     DeformableDetrTransformerEncoderLayer)
+
+from .deformable_detr_layers import (
+    DeformableDetrTransformerDecoderLayer,
+    DeformableDetrTransformerEncoder,
+    DeformableDetrTransformerEncoderLayer,
+)
 from .detr_layers import DetrTransformerEncoderLayer
 from .dino_layers import DinoTransformerDecoder
 from .utils import MLP, get_text_sine_pos_embed

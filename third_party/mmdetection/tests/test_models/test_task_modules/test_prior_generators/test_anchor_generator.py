@@ -231,8 +231,7 @@ def test_sparse_prior():
         assert (sparse_prior == grid_anchors[1][prior_indexs]).all()
 
         # for ssd
-        from mmdet.models.task_modules.prior_generators import \
-            SSDAnchorGenerator
+        from mmdet.models.task_modules.prior_generators import SSDAnchorGenerator
         featmap_sizes = [(38, 38), (19, 19), (10, 10)]
         anchor_generator = SSDAnchorGenerator(
             scale_major=False,
@@ -251,8 +250,7 @@ def test_sparse_prior():
             assert (sparse_ssd_anchors == ssd_anchors[i][prior_indexs]).all()
 
         # for yolo
-        from mmdet.models.task_modules.prior_generators import \
-            YOLOAnchorGenerator
+        from mmdet.models.task_modules.prior_generators import YOLOAnchorGenerator
         featmap_sizes = [(38, 38), (19, 19), (10, 10)]
         anchor_generator = YOLOAnchorGenerator(
             strides=[32, 16, 8],

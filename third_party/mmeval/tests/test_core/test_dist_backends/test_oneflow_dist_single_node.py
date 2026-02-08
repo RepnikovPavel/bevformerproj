@@ -1,8 +1,9 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 
 import multiprocessing as mp
-import numpy as np
 import os
+
+import numpy as np
 import pytest
 
 # check if current process is launch via mpirun

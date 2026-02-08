@@ -8,9 +8,17 @@ from torch import Tensor
 from mmpose.models.utils import check_and_update_config
 from mmpose.models.utils.tta import flip_coordinates
 from mmpose.registry import MODELS
-from mmpose.utils.typing import (ConfigType, InstanceList, OptConfigType,
-                                 Optional, OptMultiConfig, OptSampleList,
-                                 PixelDataList, SampleList)
+from mmpose.utils.typing import (
+    ConfigType,
+    InstanceList,
+    OptConfigType,
+    Optional,
+    OptMultiConfig,
+    OptSampleList,
+    PixelDataList,
+    SampleList,
+)
+
 from .base import BasePoseEstimator
 
 

@@ -3,10 +3,10 @@ import argparse
 import copy
 from typing import Dict
 
-from mmengine import Config, fileio
-
 from mmrazor.models.mutators import ChannelMutator
 from mmrazor.registry import MODELS
+
+from mmengine import Config, fileio
 
 
 def parse_args():

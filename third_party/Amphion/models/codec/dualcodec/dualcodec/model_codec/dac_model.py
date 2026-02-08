@@ -6,22 +6,19 @@
 From DAC: https://github.com/descriptinc/descript-audio-codec/blob/main/dac/model
 """
 import math
-from typing import List
-from typing import Union
+from typing import List, Union
 
 import numpy as np
 import torch
+import torch.nn.functional as F
 from audiotools import AudioSignal
 from audiotools.ml import BaseModel
+from easydict import EasyDict as edict
 from torch import nn
 
-from .dac_layers import Snake1d
-from .dac_layers import WNConv1d
-from .dac_layers import WNConvTranspose1d
-from .dac_quantize import ResidualVectorQuantize
-from easydict import EasyDict as edict
-import torch.nn.functional as F
 from .cnn import ConvNeXtBlock
+from .dac_layers import Snake1d, WNConv1d, WNConvTranspose1d
+from .dac_quantize import ResidualVectorQuantize
 
 
 def init_weights(m):
@@ -414,8 +411,9 @@ class DAC(BaseModel):
 
 
 if __name__ == "__main__":
-    import numpy as np
     from functools import partial
+
+    import numpy as np
 
     model = DAC().to("cpu")
 

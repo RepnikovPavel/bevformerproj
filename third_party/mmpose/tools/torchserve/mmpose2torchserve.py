@@ -4,9 +4,10 @@ import warnings
 from argparse import ArgumentParser, Namespace
 from tempfile import TemporaryDirectory
 
-import mmcv
 import torch
 from mmengine.runner import CheckpointLoader
+
+import mmcv
 
 try:
     from model_archiver.model_packaging import package_model

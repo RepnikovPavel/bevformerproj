@@ -1,6 +1,5 @@
 import pytest
 import torch
-
 from mmhuman3d.models.losses.builder import (
     CrossEntropyLoss,
     L1Loss,

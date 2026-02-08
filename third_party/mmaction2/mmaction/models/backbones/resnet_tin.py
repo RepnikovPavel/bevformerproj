@@ -3,6 +3,7 @@ import torch
 import torch.nn as nn
 
 from mmaction.registry import MODELS
+
 from .resnet_tsm import ResNetTSM
 
 

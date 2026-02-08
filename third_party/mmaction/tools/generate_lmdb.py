@@ -1,6 +1,7 @@
 import argparse
 import glob
 import os.path as osp
+
 from mmcv.lmdb.io import create_rawimage_dataset
 
 

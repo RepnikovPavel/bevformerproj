@@ -5,9 +5,9 @@ import numpy as np
 import torch
 import torch.nn.functional as F
 import torch.optim as optim
-from mmengine import MessageHub
-
 from mmagic.engine.schedulers import LinearLrInterval
+
+from mmengine import MessageHub
 
 
 class ToyModel(torch.nn.Module):

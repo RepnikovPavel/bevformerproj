@@ -8,7 +8,6 @@ import torch
 import torch.nn as nn
 from mmengine.config import Config
 from mmengine.registry import init_default_scope
-
 from mmselfsup.apis import inference_model
 from mmselfsup.models import BaseModel
 from mmselfsup.structures import SelfSupDataSample

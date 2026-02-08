@@ -3,8 +3,7 @@ from copy import deepcopy
 from unittest import TestCase
 from unittest.mock import MagicMock, patch
 
-from mmagic.evaluation import (Evaluator, FrechetInceptionDistance,
-                               InceptionScore)
+from mmagic.evaluation import Evaluator, FrechetInceptionDistance, InceptionScore
 from mmagic.structures import DataSample
 from mmagic.utils import register_all_modules
 

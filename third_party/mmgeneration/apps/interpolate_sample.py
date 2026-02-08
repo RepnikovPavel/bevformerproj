@@ -3,12 +3,13 @@ import os
 import sys
 
 import imageio
-import mmcv
 import numpy as np
 import torch
-from mmcv import Config, DictAction
 from mmcv.runner import load_checkpoint
 from torchvision.utils import save_image
+
+import mmcv
+from mmcv import Config, DictAction
 
 # yapf: disable
 sys.path.append(os.path.abspath(os.path.join(__file__, '../..')))  # isort:skip  # noqa

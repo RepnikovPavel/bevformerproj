@@ -14,12 +14,11 @@ from torch import Tensor
 try:
     from transformers import BertConfig, BertPreTrainedModel
     from transformers.modeling_utils import apply_chunking_to_forward
-    from transformers.models.bert.modeling_bert import \
-        BertAttention as HFBertAttention
-    from transformers.models.bert.modeling_bert import \
-        BertIntermediate as HFBertIntermediate
-    from transformers.models.bert.modeling_bert import \
-        BertOutput as HFBertOutput
+    from transformers.models.bert.modeling_bert import BertAttention as HFBertAttention
+    from transformers.models.bert.modeling_bert import (
+        BertIntermediate as HFBertIntermediate,
+    )
+    from transformers.models.bert.modeling_bert import BertOutput as HFBertOutput
 except ImportError:
     BertConfig = None
     BertPreTrainedModel = object

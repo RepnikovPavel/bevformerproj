@@ -14,15 +14,17 @@ import time
 from os import path as osp
 from pathlib import Path
 
-import mmengine
 import numpy as np
-from nuscenes.nuscenes import NuScenes
-
-from mmdet3d.datasets.convert_utils import (convert_annos,
-                                            get_kitti_style_2d_boxes,
-                                            get_nuscenes_2d_boxes)
+from mmdet3d.datasets.convert_utils import (
+    convert_annos,
+    get_kitti_style_2d_boxes,
+    get_nuscenes_2d_boxes,
+)
 from mmdet3d.datasets.utils import convert_quaternion_to_matrix
 from mmdet3d.structures import points_cam2img
+from nuscenes.nuscenes import NuScenes
+
+import mmengine
 
 
 def get_empty_instance():

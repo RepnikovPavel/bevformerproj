@@ -2,23 +2,21 @@ import torch
 import torch as th
 import torch.nn as nn
 import torch.nn.functional as F
-
+from ldm.modules.attention import SpatialTransformer
+from ldm.modules.diffusionmodules.openaimodel import (
+    AttentionBlock,
+    Downsample,
+    ResBlock,
+    TimestepBlock,
+    UNetModel,
+)
 from ldm.modules.diffusionmodules.util import (
     checkpoint,
     conv_nd,
     linear,
-    zero_module,
     timestep_embedding,
+    zero_module,
 )
-from ldm.modules.diffusionmodules.openaimodel import (
-    UNetModel, 
-    TimestepBlock, 
-    TimestepEmbedSequential, 
-    ResBlock, 
-    Downsample, 
-    AttentionBlock
-)
-from ldm.modules.attention import SpatialTransformer
 from ldm.util import exists
 
 

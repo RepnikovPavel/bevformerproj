@@ -1,10 +1,10 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 
 from mmcv.utils import collect_env as collect_base_env
+from mmdeploy.utils import get_codebase_version, get_root_logger
 from mmengine.utils import get_git_hash
 
 import mmdeploy
-from mmdeploy.utils import get_codebase_version, get_root_logger
 
 
 def collect_env():

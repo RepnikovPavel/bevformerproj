@@ -42,9 +42,9 @@ from pathlib import Path
 from typing import Optional
 
 import numpy as np
-from mmengine import track_iter_progress
-
 from mmyolo.utils.misc import IMG_EXTENSIONS
+
+from mmengine import track_iter_progress
 
 
 def parse_args():

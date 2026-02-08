@@ -2,6 +2,7 @@
 from typing import Dict, List, Optional
 
 from mmocr.registry import CFG_GENERATORS
+
 from .base import BaseDatasetConfigGenerator
 
 

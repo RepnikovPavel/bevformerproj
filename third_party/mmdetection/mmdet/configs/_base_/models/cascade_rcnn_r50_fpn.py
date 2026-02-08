@@ -1,26 +1,22 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 from mmcv.ops import RoIAlign, nms
-from torch.nn import BatchNorm2d
-
 from mmdet.models.backbones.resnet import ResNet
-from mmdet.models.data_preprocessors.data_preprocessor import \
-    DetDataPreprocessor
+from mmdet.models.data_preprocessors.data_preprocessor import DetDataPreprocessor
 from mmdet.models.dense_heads.rpn_head import RPNHead
 from mmdet.models.detectors.cascade_rcnn import CascadeRCNN
 from mmdet.models.losses.cross_entropy_loss import CrossEntropyLoss
 from mmdet.models.losses.smooth_l1_loss import SmoothL1Loss
 from mmdet.models.necks.fpn import FPN
-from mmdet.models.roi_heads.bbox_heads.convfc_bbox_head import \
-    Shared2FCBBoxHead
+from mmdet.models.roi_heads.bbox_heads.convfc_bbox_head import Shared2FCBBoxHead
 from mmdet.models.roi_heads.cascade_roi_head import CascadeRoIHead
-from mmdet.models.roi_heads.roi_extractors.single_level_roi_extractor import \
-    SingleRoIExtractor
+from mmdet.models.roi_heads.roi_extractors.single_level_roi_extractor import (
+    SingleRoIExtractor,
+)
 from mmdet.models.task_modules.assigners.max_iou_assigner import MaxIoUAssigner
-from mmdet.models.task_modules.coders.delta_xywh_bbox_coder import \
-    DeltaXYWHBBoxCoder
-from mmdet.models.task_modules.prior_generators.anchor_generator import \
-    AnchorGenerator
+from mmdet.models.task_modules.coders.delta_xywh_bbox_coder import DeltaXYWHBBoxCoder
+from mmdet.models.task_modules.prior_generators.anchor_generator import AnchorGenerator
 from mmdet.models.task_modules.samplers.random_sampler import RandomSampler
+from torch.nn import BatchNorm2d
 
 # model settings
 model = dict(

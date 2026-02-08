@@ -10,6 +10,7 @@ from torch import Tensor
 
 from mmrazor.registry import MODELS
 from mmrazor.utils.typing import DumpChosen
+
 from .mutable_module import MutableModule
 
 PartialType = Callable[[Any, Optional[nn.Parameter]], Any]

@@ -6,13 +6,19 @@ import torch.nn as nn
 from mmcv.cnn import ConvModule, is_norm
 from mmdet.models.task_modules.samplers import PseudoSampler
 from mmdet.structures.bbox import distance2bbox
-from mmdet.utils import (ConfigType, InstanceList, OptConfigType,
-                         OptInstanceList, OptMultiConfig, reduce_mean)
-from mmengine.model import (BaseModule, bias_init_with_prob, constant_init,
-                            normal_init)
+from mmdet.utils import (
+    ConfigType,
+    InstanceList,
+    OptConfigType,
+    OptInstanceList,
+    OptMultiConfig,
+    reduce_mean,
+)
+from mmengine.model import BaseModule, bias_init_with_prob, constant_init, normal_init
 from torch import Tensor
 
 from mmyolo.registry import MODELS, TASK_UTILS
+
 from ..utils import gt_instances_preprocess
 from .yolov5_head import YOLOv5Head
 

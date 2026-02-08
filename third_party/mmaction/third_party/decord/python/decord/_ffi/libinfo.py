@@ -1,7 +1,8 @@
 """Library information."""
 from __future__ import absolute_import
-import sys
+
 import os
+import sys
 
 
 def find_lib_path(name=None, search_path=None, optional=False):

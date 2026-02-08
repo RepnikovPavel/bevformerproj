@@ -1,7 +1,6 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 from mmagic.models import DataPreprocessor
-from mmagic.models.editors.sagan import (SAGAN, ProjDiscriminator,
-                                         SNGANGenerator)
+from mmagic.models.editors.sagan import SAGAN, ProjDiscriminator, SNGANGenerator
 
 # define GAN model
 model = dict(

@@ -2,21 +2,23 @@
 """
 
 import os
-import numpy as np
-import torch.nn.functional as F
-from torch.nn import init
-import functools
-from torch.optim import lr_scheduler
+
 import torch
-from torch import Tensor
 import torch.nn as nn
+import torch.nn.functional as F
+from torch import Tensor
+from torch.optim import lr_scheduler
+
 try:
     from torch.hub import load_state_dict_from_url
 except ImportError:
     from torch.utils.model_zoo import load_url as load_state_dict_from_url
-from typing import Type, Any, Callable, Union, List, Optional
-from .arcface_torch.backbones import get_model
+from typing import Any, Callable, List, Optional, Type, Union
+
 from kornia.geometry import warp_affine
+
+from .arcface_torch.backbones import get_model
+
 
 def resize_n_crop(image, M, dsize=112):
     # image: (b, c, h, w)

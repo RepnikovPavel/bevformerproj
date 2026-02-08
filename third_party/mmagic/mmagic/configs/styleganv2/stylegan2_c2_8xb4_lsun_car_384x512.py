@@ -1,14 +1,15 @@
 # Copyright (c) OpenMMLab. All rights reserved.
+from mmagic.datasets.transforms import Flip, LoadImageFromFile, NumpyPad, PackInputs
+from mmagic.engine import VisualizationHook
+from mmagic.evaluation import (
+    FrechetInceptionDistance,
+    PerceptualPathLength,
+    PrecisionAndRecall,
+)
+from mmagic.models import BaseGAN
 from mmengine.config import read_base
 from mmengine.dataset import DefaultSampler, InfiniteSampler
 from torch.optim import Adam
-
-from mmagic.datasets.transforms import (Flip, LoadImageFromFile, NumpyPad,
-                                        PackInputs)
-from mmagic.engine import VisualizationHook
-from mmagic.evaluation import (FrechetInceptionDistance, PerceptualPathLength,
-                               PrecisionAndRecall)
-from mmagic.models import BaseGAN
 
 with read_base():
     from .._base_.gen_default_runtime import *  # noqa: F403,F405

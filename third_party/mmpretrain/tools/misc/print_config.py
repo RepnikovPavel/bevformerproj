@@ -2,6 +2,7 @@
 import argparse
 
 import rich.console
+
 from mmengine import Config, DictAction
 
 console = rich.console.Console()

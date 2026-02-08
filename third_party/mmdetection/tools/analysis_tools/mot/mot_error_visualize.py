@@ -4,17 +4,17 @@ import os
 import os.path as osp
 import re
 
-import mmcv
 import motmetrics as mm
 import numpy as np
 import pandas as pd
-from mmengine import Config
+from mmdet.registry import DATASETS
+from mmdet.utils import imshow_mot_errors
 from mmengine.logging import print_log
 from mmengine.registry import init_default_scope
 from torch.utils.data import Dataset
 
-from mmdet.registry import DATASETS
-from mmdet.utils import imshow_mot_errors
+import mmcv
+from mmengine import Config
 
 
 def parse_args():

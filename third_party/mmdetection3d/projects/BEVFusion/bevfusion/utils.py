@@ -7,9 +7,8 @@ try:
 except ImportError:
     linear_sum_assignment = None
 
-from mmengine.structures import InstanceData
-
 from mmdet3d.registry import TASK_UTILS
+from mmengine.structures import InstanceData
 
 
 @TASK_UTILS.register_module()

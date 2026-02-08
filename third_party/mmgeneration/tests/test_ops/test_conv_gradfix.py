@@ -4,9 +4,8 @@ from functools import partial
 import pytest
 import torch
 import torch.nn as nn
-from torch.autograd import gradgradcheck
-
 from mmgen.ops import conv2d, conv_transpose2d
+from torch.autograd import gradgradcheck
 
 
 class TestCond2d:

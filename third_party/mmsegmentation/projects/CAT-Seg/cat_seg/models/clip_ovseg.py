@@ -7,12 +7,11 @@ import torch
 import torch.nn.functional as F
 from huggingface_hub.utils._errors import LocalEntryNotFoundError
 from mmengine.model import BaseModule
-
 from mmseg.registry import MODELS
 from mmseg.utils import ConfigType
+
 from ..utils import clip_wrapper
-from ..utils.clip_templates import (IMAGENET_TEMPLATES,
-                                    IMAGENET_TEMPLATES_SELECT)
+from ..utils.clip_templates import IMAGENET_TEMPLATES, IMAGENET_TEMPLATES_SELECT
 
 
 @MODELS.register_module()

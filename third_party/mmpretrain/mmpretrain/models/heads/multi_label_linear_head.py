@@ -5,6 +5,7 @@ import torch
 import torch.nn as nn
 
 from mmpretrain.registry import MODELS
+
 from .multi_label_cls_head import MultiLabelClsHead
 
 

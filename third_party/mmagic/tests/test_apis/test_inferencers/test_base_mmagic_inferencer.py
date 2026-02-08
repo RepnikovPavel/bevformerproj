@@ -2,7 +2,6 @@
 import os.path as osp
 
 import pytest
-
 from mmagic.apis.inferencers.base_mmagic_inferencer import BaseMMagicInferencer
 from mmagic.utils import register_all_modules
 

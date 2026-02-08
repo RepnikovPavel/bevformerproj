@@ -3,9 +3,7 @@ from unittest import TestCase
 
 import torch
 from mmengine.logging import MessageHub
-
-from mmpose.models.data_preprocessors import (BatchSyncRandomResize,
-                                              PoseDataPreprocessor)
+from mmpose.models.data_preprocessors import BatchSyncRandomResize, PoseDataPreprocessor
 from mmpose.structures import PoseDataSample
 
 

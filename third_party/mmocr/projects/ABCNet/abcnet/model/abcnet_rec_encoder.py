@@ -2,7 +2,6 @@
 from typing import Dict, Optional, Sequence
 
 import torch
-
 from mmocr.models.textrecog.encoders.base import BaseEncoder
 from mmocr.models.textrecog.layers import BidirectionalLSTM
 from mmocr.registry import MODELS

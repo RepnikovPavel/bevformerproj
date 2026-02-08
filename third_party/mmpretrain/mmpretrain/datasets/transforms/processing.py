@@ -8,8 +8,6 @@ from enum import EnumMeta
 from numbers import Number
 from typing import Dict, List, Optional, Sequence, Tuple, Union
 
-import mmcv
-import mmengine
 import numpy as np
 import torch
 import torchvision
@@ -20,6 +18,8 @@ from PIL import Image
 from torchvision import transforms
 from torchvision.transforms.transforms import InterpolationMode
 
+import mmcv
+import mmengine
 from mmpretrain.registry import TRANSFORMS
 
 try:

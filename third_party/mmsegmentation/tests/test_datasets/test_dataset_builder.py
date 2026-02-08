@@ -3,7 +3,6 @@ import os.path as osp
 
 from mmengine.dataset import ConcatDataset, RepeatDataset
 from mmengine.registry import init_default_scope
-
 from mmseg.datasets import MultiImageMixDataset
 from mmseg.registry import DATASETS
 

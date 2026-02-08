@@ -2,12 +2,14 @@
 # pylint: disable=invalid-name
 from __future__ import absolute_import
 
-import sys
+import logging
 import os
 import subprocess
-import logging
+import sys
 from threading import Thread
+
 from . import tracker
+
 
 def exec_cmd(cmd, role, taskid, pass_env):
     """Execute the command line command."""

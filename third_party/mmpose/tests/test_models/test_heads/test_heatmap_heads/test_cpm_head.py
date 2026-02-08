@@ -4,10 +4,9 @@ from unittest import TestCase
 
 import torch
 from mmengine.structures import InstanceData, PixelData
-from torch import nn
-
 from mmpose.models.heads import CPMHead
 from mmpose.testing import get_packed_inputs
+from torch import nn
 
 
 class TestCPMHead(TestCase):

@@ -5,15 +5,15 @@ from unittest import TestCase
 
 import pytest
 import torch
-from mmengine import MessageHub
-from mmengine.optim import OptimWrapper, OptimWrapperDict
-from torch.optim import Adam
-
 from mmagic.models import DataPreprocessor, DeblurGanV2
 from mmagic.models.losses import PerceptualLoss
 from mmagic.models.losses.adv_loss import DiscLossWGANGP
 from mmagic.registry import MODELS
 from mmagic.structures import DataSample
+from mmengine.optim import OptimWrapper, OptimWrapperDict
+from torch.optim import Adam
+
+from mmengine import MessageHub
 
 generator = dict(
     type='DeblurGanV2Generator',

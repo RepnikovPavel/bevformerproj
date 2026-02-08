@@ -1,9 +1,9 @@
 # Copyright (c) OpenMMLab. All rights reserved.
-import cv2
-import numpy as np
 from pathlib import Path
 from unittest import TestCase
 
+import cv2
+import numpy as np
 from mmeval.fileio.backends import HTTPBackend
 
 

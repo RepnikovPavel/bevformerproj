@@ -5,7 +5,6 @@ import tempfile
 import numpy as np
 import pytest
 import torch
-
 from mmhuman3d.core.conventions.keypoints_mapping import get_flip_pairs
 from mmhuman3d.data.data_structures.human_data import HumanData
 from mmhuman3d.data.datasets.builder import DATASETS

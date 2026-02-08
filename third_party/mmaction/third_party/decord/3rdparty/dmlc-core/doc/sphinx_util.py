@@ -1,9 +1,8 @@
 # -*- coding: utf-8 -*-
 """Helper utilty function for customization."""
-import sys
 import os
-import docutils
 import subprocess
+import sys
 
 if os.environ.get('READTHEDOCS', None) == 'True':
     subprocess.call('cd ..; rm -rf recommonmark;' +

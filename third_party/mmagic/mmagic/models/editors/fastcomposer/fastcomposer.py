@@ -11,6 +11,7 @@ from tqdm import tqdm
 from transformers import CLIPTokenizer
 
 from mmagic.registry import MODELS
+
 from ..stable_diffusion import StableDiffusion
 from .fastcomposer_util import FastComposerModel, get_object_transforms
 

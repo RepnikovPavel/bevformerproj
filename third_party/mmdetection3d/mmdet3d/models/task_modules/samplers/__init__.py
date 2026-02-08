@@ -1,9 +1,13 @@
 # Copyright (c) OpenMMLab. All rights reserved.
-from mmdet.models.task_modules.samplers import (BaseSampler, CombinedSampler,
+from mmdet.models.task_modules.samplers import (
+                                                BaseSampler,
+                                                CombinedSampler,
                                                 InstanceBalancedPosSampler,
                                                 IoUBalancedNegSampler,
-                                                OHEMSampler, RandomSampler,
-                                                SamplingResult)
+                                                OHEMSampler,
+                                                RandomSampler,
+                                                SamplingResult,
+)
 
 from .iou_neg_piecewise_sampler import IoUNegPiecewiseSampler
 from .pseudosample import PseudoSampler

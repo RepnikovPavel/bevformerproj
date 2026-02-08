@@ -8,8 +8,14 @@ from numpy import ndarray
 from torch import Tensor
 
 from mmdet.registry import MODELS, TASK_UTILS
-from mmdet.utils import (ConfigType, InstanceList, MultiConfig, OptConfigType,
-                         OptInstanceList)
+from mmdet.utils import (
+    ConfigType,
+    InstanceList,
+    MultiConfig,
+    OptConfigType,
+    OptInstanceList,
+)
+
 from ..task_modules.prior_generators import MlvlPointGenerator
 from ..utils import multi_apply
 from .base_dense_head import BaseDenseHead

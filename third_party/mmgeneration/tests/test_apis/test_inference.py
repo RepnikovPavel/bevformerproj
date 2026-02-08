@@ -1,12 +1,16 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import os
 
-import mmcv
 import pytest
 import torch
+from mmgen.apis import (
+    init_model,
+    sample_ddpm_model,
+    sample_img2img_model,
+    sample_unconditional_model,
+)
 
-from mmgen.apis import (init_model, sample_ddpm_model, sample_img2img_model,
-                        sample_unconditional_model)
+import mmcv
 
 
 class TestSampleUnconditionalModel:

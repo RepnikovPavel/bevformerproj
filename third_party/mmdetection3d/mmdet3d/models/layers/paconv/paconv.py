@@ -11,6 +11,7 @@ from torch import nn as nn
 from torch.nn import functional as F
 
 from mmdet3d.utils import ConfigType
+
 from .utils import assign_kernel_withoutk, assign_score, calc_euclidian_dist
 
 

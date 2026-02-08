@@ -1,7 +1,4 @@
-import os
-import torch
 import torch.nn as nn
-import torch.nn.functional as F
 from transformers import Wav2Vec2Config
 
 from .torch_utils import get_mask_from_lengths

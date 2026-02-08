@@ -1,10 +1,20 @@
-import mmcv
 from torch import nn
 
-from .registry import (BACKBONES, FLOWNETS, SPATIAL_TEMPORAL_MODULES,
-                       SEGMENTAL_CONSENSUSES, HEADS,
-                       RECOGNIZERS, DETECTORS, LOCALIZERS, ARCHITECTURES,
-                       NECKS, ROI_EXTRACTORS)
+import mmcv
+
+from .registry import (
+    ARCHITECTURES,
+    BACKBONES,
+    DETECTORS,
+    FLOWNETS,
+    HEADS,
+    LOCALIZERS,
+    NECKS,
+    RECOGNIZERS,
+    ROI_EXTRACTORS,
+    SEGMENTAL_CONSENSUSES,
+    SPATIAL_TEMPORAL_MODULES,
+)
 
 
 def _build_module(cfg, registry, default_args):

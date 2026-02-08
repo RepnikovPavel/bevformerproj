@@ -4,10 +4,13 @@ DMLC submission script, MPI version
 # pylint: disable=invalid-name
 from __future__ import absolute_import
 
+import logging
+import subprocess
 import sys
-import subprocess, logging
 from threading import Thread
+
 from . import tracker
+
 
 def get_mpi_env(envs):
     """get the mpirun command for setting the envornment

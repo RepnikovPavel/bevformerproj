@@ -2,12 +2,11 @@
 from unittest.mock import patch
 
 import torch
-from mmengine.optim import OptimWrapper
-from torch.optim import Adam
-
 from mmagic.models import ESRGAN, DataPreprocessor, ModifiedVGG, RRDBNet
 from mmagic.models.losses import GANLoss, L1Loss, PerceptualLoss, PerceptualVGG
 from mmagic.structures import DataSample
+from mmengine.optim import OptimWrapper
+from torch.optim import Adam
 
 
 @patch.object(PerceptualVGG, 'init_weights')

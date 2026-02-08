@@ -6,8 +6,7 @@ from mmengine.registry import MODELS
 def register_torchsparse() -> bool:
     """This func registers torchsparse modules."""
     try:
-        from torchsparse.nn import (BatchNorm, Conv3d, GroupNorm, LeakyReLU,
-                                    ReLU)
+        from torchsparse.nn import BatchNorm, Conv3d, GroupNorm, LeakyReLU, ReLU
         from torchsparse.nn.utils import fapply
         from torchsparse.tensor import SparseTensor
     except ImportError:

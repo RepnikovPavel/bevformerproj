@@ -1,6 +1,9 @@
 import torch
 import torch.nn as nn
-from ...ops.pointnet2.pointnet2_stack import voxel_pool_modules as voxelpool_stack_modules
+
+from ...ops.pointnet2.pointnet2_stack import (
+    voxel_pool_modules as voxelpool_stack_modules,
+)
 from ...utils import common_utils
 from .roi_head_template import RoIHeadTemplate
 

@@ -1,9 +1,8 @@
 # modify from https://github.com/TuSimple/centerformer/blob/master/det3d/models/losses/centernet_loss.py # noqa
 
 import torch
-from torch import nn
-
 from mmdet3d.registry import MODELS
+from torch import nn
 
 
 def _gather_feat(feat, ind, mask=None):

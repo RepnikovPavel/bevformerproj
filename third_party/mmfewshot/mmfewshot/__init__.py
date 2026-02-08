@@ -1,7 +1,8 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import mmcls  # noqa: F401, F403
-import mmcv
 import mmdet  # noqa: F401, F403
+
+import mmcv
 
 from .classification import *  # noqa: F401, F403
 from .detection import *  # noqa: F401, F403

@@ -4,7 +4,6 @@ from unittest import TestCase
 
 import torch
 import torch.nn as nn
-
 from mmpretrain.models.backbones import RIFormer
 from mmpretrain.models.backbones.riformer import RIFormerBlock
 

@@ -3,10 +3,12 @@
 import cv2
 import numpy as np
 import pytest
-
-from mmagic.datasets.transforms import (FormatTrimap, GenerateTrimap,
-                                        GenerateTrimapWithDistTransform,
-                                        TransformTrimap)
+from mmagic.datasets.transforms import (
+    FormatTrimap,
+    GenerateTrimap,
+    GenerateTrimapWithDistTransform,
+    TransformTrimap,
+)
 
 
 def assert_keys_contain(result_keys, target_keys):

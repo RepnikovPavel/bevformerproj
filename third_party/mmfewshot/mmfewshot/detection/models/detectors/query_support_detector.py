@@ -5,8 +5,7 @@ from typing import Dict, List, Optional, Union
 
 from mmcv.runner import auto_fp16
 from mmcv.utils import ConfigDict
-from mmdet.models.builder import (DETECTORS, build_backbone, build_head,
-                                  build_neck)
+from mmdet.models.builder import DETECTORS, build_backbone, build_head, build_neck
 from mmdet.models.detectors import BaseDetector
 from torch import Tensor
 from typing_extensions import Literal

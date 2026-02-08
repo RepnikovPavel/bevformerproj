@@ -7,6 +7,7 @@ from mmcv.cnn.bricks.transformer import FFN, PatchEmbed
 from mmengine.model import BaseModule, ModuleList
 
 from mmpretrain.registry import MODELS
+
 from ..utils import to_2tuple
 from .base_backbone import BaseBackbone
 

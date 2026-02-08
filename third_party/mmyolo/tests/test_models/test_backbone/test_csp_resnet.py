@@ -3,10 +3,10 @@ from unittest import TestCase
 
 import pytest
 import torch
-from torch.nn.modules.batchnorm import _BatchNorm
-
 from mmyolo.models import PPYOLOECSPResNet
 from mmyolo.utils import register_all_modules
+from torch.nn.modules.batchnorm import _BatchNorm
+
 from .utils import check_norm_state, is_norm
 
 register_all_modules()

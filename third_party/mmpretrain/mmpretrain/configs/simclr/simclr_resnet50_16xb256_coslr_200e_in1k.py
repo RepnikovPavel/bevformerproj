@@ -4,12 +4,11 @@ from mmengine.config import read_base
 
 with read_base():
     from .._base_.datasets.imagenet_bs32_simclr import *
-    from .._base_.schedules.imagenet_lars_coslr_200e import *
     from .._base_.default_runtime import *
+    from .._base_.schedules.imagenet_lars_coslr_200e import *
 
 from mmengine.hooks.checkpoint_hook import CheckpointHook
 from mmengine.optim.optimizer.optimizer_wrapper import OptimWrapper
-
 from mmpretrain.engine.optimizers.lars import LARS
 from mmpretrain.models.backbones.resnet import ResNet
 from mmpretrain.models.heads.contrastive_head import ContrastiveHead

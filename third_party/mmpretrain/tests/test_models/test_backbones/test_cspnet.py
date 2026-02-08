@@ -6,11 +6,13 @@ from unittest import TestCase
 import torch
 from mmcv.cnn import ConvModule
 from mmengine.utils.dl_utils.parrots_wrapper import _BatchNorm
-
 from mmpretrain.models.backbones import CSPDarkNet, CSPResNet, CSPResNeXt
-from mmpretrain.models.backbones.cspnet import (CSPNet, DarknetBottleneck,
-                                                ResNetBottleneck,
-                                                ResNeXtBottleneck)
+from mmpretrain.models.backbones.cspnet import (
+    CSPNet,
+    DarknetBottleneck,
+    ResNetBottleneck,
+    ResNeXtBottleneck,
+)
 
 
 class TestCSPNet(TestCase):

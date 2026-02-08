@@ -1,9 +1,10 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import warnings
 
-import mmcv
 import mmdet
 from packaging.version import parse
+
+import mmcv
 
 from .version import __version__, version_info
 

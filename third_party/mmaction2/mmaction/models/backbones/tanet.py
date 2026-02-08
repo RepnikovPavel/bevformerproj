@@ -7,6 +7,7 @@ import torch.nn as nn
 from torch.utils import checkpoint as cp
 
 from mmaction.registry import MODELS
+
 from ..common import TAM
 from .resnet import Bottleneck, ResNet
 

@@ -10,6 +10,7 @@ from torch.nn import Module
 from mmrazor.models.architectures.dynamic_ops.mixins import DynamicChannelMixin
 from mmrazor.models.mutables.mutable_module import MutableModule
 from mmrazor.registry import MODELS
+
 from .base_mutator import MUTABLE_TYPE, BaseMutator
 from .group_mixin import GroupMixin
 

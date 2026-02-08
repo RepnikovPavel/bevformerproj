@@ -16,6 +16,7 @@ from terminaltables import AsciiTable
 from mmdet.datasets.api_wrappers import COCO, COCOeval, COCOevalMP
 from mmdet.registry import METRICS
 from mmdet.structures.mask import encode_mask_results
+
 from ..functional import eval_recalls
 
 

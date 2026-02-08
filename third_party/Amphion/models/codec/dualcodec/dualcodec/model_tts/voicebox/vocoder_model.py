@@ -7,17 +7,15 @@ from typing import Optional, Tuple
 import numpy as np
 import scipy
 import torch
-from torch import nn, view_as_real, view_as_complex
-from torch import nn
+from torch import nn, view_as_complex, view_as_real
 
 try:
-    from torch.nn.utils import weight_norm, remove_weight_norm
+    from torch.nn.utils import remove_weight_norm, weight_norm
 except:
-    from torch.nn.utils.parameterizations import weight_norm, remove_weight_norm
-from torchaudio.functional.functional import _hz_to_mel, _mel_to_hz
-from dualcodec.utils.melspec import MelSpectrogram
+    from torch.nn.utils.parameterizations import remove_weight_norm, weight_norm
 import librosa
 from cached_path import cached_path
+from torchaudio.functional.functional import _hz_to_mel, _mel_to_hz
 
 
 def safe_log(x: torch.Tensor, clip_val: float = 1e-7) -> torch.Tensor:

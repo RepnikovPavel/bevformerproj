@@ -2,19 +2,27 @@
 from mmengine.config import read_base
 
 with read_base():
-    from ..._base_.models.slowfast_r50 import *
     from ..._base_.default_runtime import *
+    from ..._base_.models.slowfast_r50 import *
 
+from mmaction.datasets import (
+    CenterCrop,
+    DecordDecode,
+    DecordInit,
+    Flip,
+    FormatShape,
+    PackActionInputs,
+    RandomResizedCrop,
+    Resize,
+    SampleFrames,
+    ThreeCrop,
+    VideoDataset,
+)
+from mmaction.evaluation import AccMetric
 from mmengine.dataset import DefaultSampler
 from mmengine.optim import CosineAnnealingLR, LinearLR
 from mmengine.runner import EpochBasedTrainLoop, TestLoop, ValLoop
 from torch.optim import SGD
-
-from mmaction.datasets import (CenterCrop, DecordDecode, DecordInit, Flip,
-                               FormatShape, PackActionInputs,
-                               RandomResizedCrop, Resize, SampleFrames,
-                               ThreeCrop, VideoDataset)
-from mmaction.evaluation import AccMetric
 
 data_root = 'data/kinetics400/videos_train'
 data_root_val = 'data/kinetics400/videos_val'

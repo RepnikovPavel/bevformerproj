@@ -6,6 +6,7 @@ from mmengine.model import BaseModule
 from torch import Tensor
 
 from mmdet.utils import ConfigType, OptConfigType, OptMultiConfig
+
 from .se_layer import ChannelAttention
 
 

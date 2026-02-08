@@ -2,10 +2,9 @@
 from unittest import TestCase
 
 import torch
-from mmengine.structures import InstanceData
-
 from mmdet import *  # noqa
 from mmdet.models.dense_heads import FreeAnchorRetinaHead
+from mmengine.structures import InstanceData
 
 
 class TestFreeAnchorRetinaHead(TestCase):

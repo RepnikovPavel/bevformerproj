@@ -2,10 +2,11 @@
 from unittest.mock import MagicMock, patch
 
 import numpy as np
-
-from mmfewshot.classification.datasets import (BaseFewShotDataset,
-                                               EpisodicDataset,
-                                               MetaTestDataset)
+from mmfewshot.classification.datasets import (
+    BaseFewShotDataset,
+    EpisodicDataset,
+    MetaTestDataset,
+)
 
 
 @patch.multiple(BaseFewShotDataset, __abstractmethods__=set())

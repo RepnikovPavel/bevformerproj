@@ -1,10 +1,11 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import os.path as osp
 
-import mmengine
 import torch
 import torch.distributed as dist
 import torch.nn as nn
+
+import mmengine
 
 # Note: All these heads take 5D Tensors as input (N, C, T, H, W)
 

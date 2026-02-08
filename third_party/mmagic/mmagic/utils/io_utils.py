@@ -3,11 +3,12 @@ import hashlib
 import os
 
 import click
-import mmengine
 import requests
 import torch.distributed as dist
 from mmengine.dist import get_dist_info
 from requests.exceptions import InvalidURL, RequestException, Timeout
+
+import mmengine
 
 MMAGIC_CACHE_DIR = os.path.expanduser('~') + '/.cache/openmmlab/mmagic/'
 

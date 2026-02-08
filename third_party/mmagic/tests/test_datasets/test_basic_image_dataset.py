@@ -2,10 +2,10 @@
 import os
 from pathlib import Path
 
-import mmcv
-
 from mmagic.datasets import BasicImageDataset
 from mmagic.datasets.transforms import LoadImageFromFile
+
+import mmcv
 
 
 class TestImageDatasets:

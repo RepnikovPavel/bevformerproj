@@ -2,13 +2,14 @@
 import os
 from typing import Callable, List, Optional, Union
 
-import mmengine
 import numpy as np
 import torch
 from mmengine.fileio import exists
 
+import mmengine
 from mmaction.registry import DATASETS
 from mmaction.utils import ConfigType
+
 from .base import BaseActionDataset
 
 try:

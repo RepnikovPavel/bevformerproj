@@ -8,8 +8,12 @@ from torch import Tensor
 
 from mmyolo.models.losses import bbox_overlaps
 from mmyolo.registry import TASK_UTILS
-from .utils import (select_candidates_in_gts, select_highest_overlaps,
-                    yolov6_iou_calculator)
+
+from .utils import (
+    select_candidates_in_gts,
+    select_highest_overlaps,
+    yolov6_iou_calculator,
+)
 
 
 @TASK_UTILS.register_module()

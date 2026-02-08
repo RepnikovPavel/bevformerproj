@@ -1,11 +1,16 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import torch
 import torch.nn as nn
-from mmcv.cnn import (ConvModule, DepthwiseSeparableConvModule,
-                      build_activation_layer, build_norm_layer)
+from mmcv.cnn import (
+    ConvModule,
+    DepthwiseSeparableConvModule,
+    build_activation_layer,
+    build_norm_layer,
+)
 from mmengine.model import BaseModule
 
 from mmseg.registry import MODELS
+
 from ..utils import resize
 
 

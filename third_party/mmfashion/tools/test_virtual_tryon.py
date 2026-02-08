@@ -1,13 +1,18 @@
 from __future__ import division
+
 import argparse
 
-from mmcv import Config
 from mmcv.runner import load_checkpoint
-
-from mmfashion.apis import (get_root_logger, init_dist,
-                            test_geometric_matching, test_tryon)
+from mmfashion.apis import (
+    get_root_logger,
+    init_dist,
+    test_geometric_matching,
+    test_tryon,
+)
 from mmfashion.datasets.utils import get_dataset
 from mmfashion.models import build_geometric_matching, build_tryon
+
+from mmcv import Config
 
 
 def parse_args():

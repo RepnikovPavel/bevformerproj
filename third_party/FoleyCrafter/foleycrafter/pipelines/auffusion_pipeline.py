@@ -25,6 +25,32 @@ import PIL
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
+from diffusers import PNDMScheduler
+from diffusers.configuration_utils import FrozenDict
+from diffusers.image_processor import PipelineImageInput, VaeImageProcessor
+from diffusers.loaders import (
+    FromSingleFileMixin,
+    LoraLoaderMixin,
+    TextualInversionLoaderMixin,
+)
+from diffusers.models import AutoencoderKL, ImageProjection
+from diffusers.models.attention_processor import FusedAttnProcessor2_0
+from diffusers.pipelines.pipeline_utils import DiffusionPipeline
+from diffusers.pipelines.stable_diffusion import StableDiffusionPipelineOutput
+from diffusers.pipelines.stable_diffusion.safety_checker import (
+    StableDiffusionSafetyChecker,
+)
+from diffusers.schedulers import KarrasDiffusionSchedulers
+from diffusers.utils import (
+    deprecate,
+    is_accelerate_available,
+    is_accelerate_version,
+    logging,
+)
+from diffusers.utils.outputs import BaseOutput
+from diffusers.utils.torch_utils import randn_tensor
+from foleycrafter.models.auffusion.loaders.ip_adapter import IPAdapterMixin
+from foleycrafter.models.auffusion_unet import UNet2DConditionModel
 from huggingface_hub import snapshot_download
 from packaging import version
 from torch.nn import Conv1d, ConvTranspose1d
@@ -37,28 +63,6 @@ from transformers import (
     CLIPVisionModelWithProjection,
     PretrainedConfig,
 )
-
-from diffusers import PNDMScheduler
-from diffusers.configuration_utils import FrozenDict
-from diffusers.image_processor import PipelineImageInput, VaeImageProcessor
-from diffusers.loaders import FromSingleFileMixin, LoraLoaderMixin, TextualInversionLoaderMixin
-from diffusers.models import AutoencoderKL, ImageProjection
-from diffusers.models.attention_processor import FusedAttnProcessor2_0
-from diffusers.pipelines.pipeline_utils import DiffusionPipeline
-from diffusers.pipelines.stable_diffusion import StableDiffusionPipelineOutput
-from diffusers.pipelines.stable_diffusion.safety_checker import StableDiffusionSafetyChecker
-from diffusers.schedulers import KarrasDiffusionSchedulers
-from diffusers.utils import (
-    deprecate,
-    is_accelerate_available,
-    is_accelerate_version,
-    logging,
-)
-from diffusers.utils.outputs import BaseOutput
-from diffusers.utils.torch_utils import randn_tensor
-from foleycrafter.models.auffusion.loaders.ip_adapter import IPAdapterMixin
-from foleycrafter.models.auffusion_unet import UNet2DConditionModel
-
 
 logger = logging.get_logger(__name__)  # pylint: disable=invalid-name
 

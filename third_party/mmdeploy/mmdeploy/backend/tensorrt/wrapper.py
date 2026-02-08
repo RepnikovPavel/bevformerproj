@@ -6,6 +6,7 @@ import torch
 
 from mmdeploy.utils import Backend
 from mmdeploy.utils.timer import TimeCounter
+
 from ..base import BACKEND_WRAPPER, BaseWrapper
 from .init_plugins import load_tensorrt_plugin
 from .torch_allocator import TorchAllocator

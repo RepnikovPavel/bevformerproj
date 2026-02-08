@@ -4,10 +4,9 @@ import unittest
 import numpy as np
 import torch
 from mmengine.structures import InstanceData
-from parameterized import parameterized
-
 from mmocr.models.textdet.postprocessors import FCEPostprocessor
 from mmocr.structures import TextDetDataSample
+from parameterized import parameterized
 
 
 class TestFCEPostProcessor(unittest.TestCase):

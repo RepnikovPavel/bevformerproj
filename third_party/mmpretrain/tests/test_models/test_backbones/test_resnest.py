@@ -1,7 +1,6 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import pytest
 import torch
-
 from mmpretrain.models.backbones import ResNeSt
 from mmpretrain.models.backbones.resnest import Bottleneck as BottleneckS
 

@@ -9,6 +9,7 @@ from mmengine.model import BaseModule, ModuleList, Sequential
 
 from mmpretrain.models.backbones.base_backbone import BaseBackbone
 from mmpretrain.registry import MODELS
+
 from ..utils import build_norm_layer
 
 

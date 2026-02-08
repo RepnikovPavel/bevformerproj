@@ -3,12 +3,12 @@ import platform
 
 import pytest
 import torch
-from mmengine import MODELS, Config
+from mmagic.structures import DataSample
+from mmagic.utils import register_all_modules
 from mmengine.optim import OptimWrapper
 from torch.optim import SGD
 
-from mmagic.structures import DataSample
-from mmagic.utils import register_all_modules
+from mmengine import MODELS, Config
 
 register_all_modules()
 

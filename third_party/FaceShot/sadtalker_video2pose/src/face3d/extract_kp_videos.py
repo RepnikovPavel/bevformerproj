@@ -1,15 +1,16 @@
-import os
-import cv2
-import time
-import glob
 import argparse
+import glob
+import os
+import time
+from itertools import cycle
+
+import cv2
 import face_alignment
 import numpy as np
 from PIL import Image
+from torch.multiprocessing import Pool, set_start_method
 from tqdm import tqdm
-from itertools import cycle
 
-from torch.multiprocessing import Pool, Process, set_start_method
 
 class KeypointExtractor():
     def __init__(self, device):

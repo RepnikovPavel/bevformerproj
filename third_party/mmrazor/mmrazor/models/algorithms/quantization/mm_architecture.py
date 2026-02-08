@@ -13,12 +13,16 @@ from torch import nn
 from mmrazor.models.utils import pop_rewriter_function_record
 from mmrazor.registry import MODEL_WRAPPERS, MODELS
 from mmrazor.structures.quantization import QConfigHandler
+
 from ..base import BaseAlgorithm, BaseModel
 
 try:
-    from torch.ao.quantization import (FakeQuantizeBase, MinMaxObserver,
-                                       PerChannelMinMaxObserver,
-                                       disable_observer)
+    from torch.ao.quantization import (
+        FakeQuantizeBase,
+        MinMaxObserver,
+        PerChannelMinMaxObserver,
+        disable_observer,
+    )
 except ImportError:
     from mmrazor.utils import get_placeholder
 
@@ -161,9 +165,15 @@ class MMArchitectureQuant(BaseAlgorithm):
         from mmdeploy.apis.onnx.passes import optimize_onnx
         from mmdeploy.codebase import import_codebase
         from mmdeploy.core import RewriterContext
-        from mmdeploy.utils import (IR, Backend, get_backend, get_codebase,
-                                    get_dynamic_axes, get_ir_config,
-                                    get_onnx_config)
+        from mmdeploy.utils import (
+            IR,
+            Backend,
+            get_backend,
+            get_codebase,
+            get_dynamic_axes,
+            get_ir_config,
+            get_onnx_config,
+        )
         from mmdeploy.utils.config_utils import get_codebase_external_module
 
         codebase = get_codebase(deploy_cfg)

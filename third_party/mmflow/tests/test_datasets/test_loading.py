@@ -3,7 +3,6 @@ import copy
 import os.path as osp
 
 import numpy as np
-
 from mmflow.datasets.pipelines import LoadAnnotations, LoadImageFromFile
 
 img1_ = osp.join(osp.dirname(__file__), '../data/00001_img1.ppm')

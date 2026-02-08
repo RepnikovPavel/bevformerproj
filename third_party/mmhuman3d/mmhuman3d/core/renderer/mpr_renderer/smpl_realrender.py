@@ -3,10 +3,10 @@ import numpy as np
 import torch
 
 from mmhuman3d.core.renderer.mpr_renderer.camera import Pinhole2D
-from mmhuman3d.core.renderer.mpr_renderer.rasterizer import \
-    estimate_normals  # noqa: E501
-from mmhuman3d.core.renderer.mpr_renderer.utils import \
-    vis_normals  # noqa: E501
+from mmhuman3d.core.renderer.mpr_renderer.rasterizer import (
+    estimate_normals,  # noqa: E501
+)
+from mmhuman3d.core.renderer.mpr_renderer.utils import vis_normals  # noqa: E501
 
 
 class VisualizerMeshSMPL:

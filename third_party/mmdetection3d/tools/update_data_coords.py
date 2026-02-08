@@ -2,10 +2,10 @@ import argparse
 import time
 from os import path as osp
 
-import mmengine
 import numpy as np
-
 from mmdet3d.structures import limit_period
+
+import mmengine
 
 
 def update_sunrgbd_infos(root_dir, out_dir, pkl_files):

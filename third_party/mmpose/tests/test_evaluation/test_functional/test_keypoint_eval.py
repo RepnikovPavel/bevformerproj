@@ -2,13 +2,16 @@
 from unittest import TestCase
 
 import numpy as np
+from mmpose.evaluation.functional import (
+    keypoint_auc,
+    keypoint_epe,
+    keypoint_mpjpe,
+    keypoint_nme,
+    keypoint_pck_accuracy,
+    multilabel_classification_accuracy,
+    pose_pck_accuracy,
+)
 from numpy.testing import assert_array_almost_equal
-
-from mmpose.evaluation.functional import (keypoint_auc, keypoint_epe,
-                                          keypoint_mpjpe, keypoint_nme,
-                                          keypoint_pck_accuracy,
-                                          multilabel_classification_accuracy,
-                                          pose_pck_accuracy)
 
 
 class TestKeypointEval(TestCase):

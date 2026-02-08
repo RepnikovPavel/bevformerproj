@@ -1,18 +1,18 @@
 import argparse
 
-import mmcv
 import torch
 from demo.pymafx_estimate_smplx import prepare_data_with_pifpaf_detection
+from mmhuman3d.apis import init_model
+from mmhuman3d.data.datasets import build_dataset
+from mmhuman3d.utils.demo_utils import prepare_frames
+from mmhuman3d.utils.keypoint_utils import transform_kps2d
 from openpifpaf import decoder as ppdecoder
 from openpifpaf import network as ppnetwork
 from openpifpaf.predictor import Predictor
 from openpifpaf.stream import Stream
 from torch.utils.data import DataLoader
 
-from mmhuman3d.apis import init_model
-from mmhuman3d.data.datasets import build_dataset
-from mmhuman3d.utils.demo_utils import prepare_frames
-from mmhuman3d.utils.keypoint_utils import transform_kps2d
+import mmcv
 
 
 def _init_openpifpaf(parser):

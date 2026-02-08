@@ -2,9 +2,9 @@
 from unittest import TestCase
 
 import numpy as np
-from mmcv import imread
-
 from mmpose.datasets.transforms.loading import LoadImage
+
+from mmcv import imread
 
 
 class TestLoadImage(TestCase):

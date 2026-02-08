@@ -6,7 +6,6 @@ import sklearn.metrics
 import torch
 from mmengine.evaluator import Evaluator
 from mmengine.registry import init_default_scope
-
 from mmpretrain.evaluation.metrics import AveragePrecision, MultiLabelMetric
 from mmpretrain.structures import DataSample
 

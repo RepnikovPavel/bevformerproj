@@ -13,8 +13,13 @@ from mmengine.model.weight_init import trunc_normal_
 from mmengine.utils.dl_utils.parrots_wrapper import _BatchNorm
 
 from mmpretrain.registry import MODELS
-from ..utils import (ShiftWindowMSA, resize_pos_embed,
-                     resize_relative_position_bias_table, to_2tuple)
+
+from ..utils import (
+    ShiftWindowMSA,
+    resize_pos_embed,
+    resize_relative_position_bias_table,
+    to_2tuple,
+)
 from .base_backbone import BaseBackbone
 
 

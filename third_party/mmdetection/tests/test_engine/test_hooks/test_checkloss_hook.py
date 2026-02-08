@@ -3,7 +3,6 @@ from unittest import TestCase
 from unittest.mock import Mock
 
 import torch
-
 from mmdet.engine.hooks import CheckInvalidLossHook
 
 

@@ -3,7 +3,6 @@ from unittest import TestCase
 
 import numpy as np
 import torch
-
 from mmpose.evaluation.functional.nms import nearby_joints_nms, nms_torch
 
 

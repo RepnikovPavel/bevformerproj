@@ -2,11 +2,10 @@
 #
 # This source code is licensed under the MIT license found in the
 # LICENSE file in the root directory of this source tree.
-from typing import Optional, Tuple
-import numpy as np
+from typing import Optional
+
 import torch
 import torch.nn as nn
-import torch.nn.functional as F
 
 
 class ConvNeXtBlock(nn.Module):

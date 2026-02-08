@@ -1,7 +1,8 @@
-import torch
 import torch.nn as nn
 import torch.nn.functional as F
+
 from ...registry import HEADS
+
 
 @HEADS.register_module
 class ClsHead(nn.Module):

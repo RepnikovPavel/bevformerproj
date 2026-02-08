@@ -3,12 +3,13 @@ import os
 import os.path as osp
 import time
 
-import mmcv
 import numpy as np
 from mmcv.utils import print_log
 from mmdet.datasets import DATASETS
 
+import mmcv
 from mmtrack.core.evaluation import eval_sot_accuracy_robustness, eval_sot_eao
+
 from .base_sot_dataset import BaseSOTDataset
 
 

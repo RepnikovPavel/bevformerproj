@@ -2,12 +2,12 @@
 from itertools import product
 from typing import List, Optional, Sequence, Union
 
-import mmengine
 import numpy as np
 import torch
 import torch.nn.functional as F
 from mmengine.evaluator import BaseMetric
 
+import mmengine
 from mmpretrain.registry import METRICS
 
 

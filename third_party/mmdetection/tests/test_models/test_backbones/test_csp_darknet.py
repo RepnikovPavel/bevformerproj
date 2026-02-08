@@ -1,9 +1,9 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import pytest
 import torch
+from mmdet.models.backbones.csp_darknet import CSPDarknet
 from torch.nn.modules.batchnorm import _BatchNorm
 
-from mmdet.models.backbones.csp_darknet import CSPDarknet
 from .utils import check_norm_state, is_norm
 
 

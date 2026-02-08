@@ -1,8 +1,9 @@
 # Copyright (c) OpenMMLab. All rights reserved.
-import mmcv
 import numpy as np
 import torch
 from torch.utils.data import Dataset
+
+import mmcv
 
 from .builder import DATASETS
 

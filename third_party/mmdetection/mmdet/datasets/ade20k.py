@@ -2,9 +2,9 @@
 import os.path as osp
 from typing import List
 
+from mmdet.registry import DATASETS
 from mmengine import fileio
 
-from mmdet.registry import DATASETS
 from .base_semseg_dataset import BaseSegDataset
 from .coco import CocoDataset
 from .coco_panoptic import CocoPanopticDataset

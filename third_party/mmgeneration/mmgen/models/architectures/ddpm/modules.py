@@ -2,7 +2,6 @@
 from copy import deepcopy
 from functools import partial
 
-import mmcv
 import numpy as np
 import torch
 import torch.nn as nn
@@ -12,6 +11,7 @@ from mmcv.cnn.bricks import build_activation_layer, build_norm_layer
 from mmcv.cnn.utils import constant_init
 from mmcv.utils import digit_version
 
+import mmcv
 from mmgen.models.builder import MODULES, build_module
 
 

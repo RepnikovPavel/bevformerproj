@@ -1,10 +1,8 @@
 import logging
 
-from omegaconf import OmegaConf
-from lavis.models import registry
-from lavis.models import load_preprocess
-
+from lavis.models import load_preprocess, registry
 from ldm.util import instantiate_from_config
+from omegaconf import OmegaConf
 
 
 def load_blip2_model(cfg, is_eval=False, device="cpu"):

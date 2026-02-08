@@ -1,33 +1,27 @@
 import os
-import uuid
-import cv2
-from tqdm import tqdm
-import yaml
-import numpy as np
 import warnings
+
+import cv2
+import numpy as np
 from skimage import img_as_ubyte
-import safetensors
-import safetensors.torch
+from tqdm import tqdm
+
 warnings.filterwarnings('ignore')
 
 
 import imageio
 import torch
 import torchvision
-
+from pydub import AudioSegment
+from scipy.io import loadmat
 from src.facerender.pirender.config import Config
 from src.facerender.pirender.face_model import FaceGenerator
-
-from pydub import AudioSegment
 from src.utils.face_enhancer import enhancer_generator_with_len, enhancer_list
+from src.utils.flow_util import vis_flow
 from src.utils.paste_pic import paste_pic
 from src.utils.videoio import save_video_with_watermark
-from src.utils.flow_util import vis_flow
-
-from scipy.io import savemat,loadmat
 
 try:
-    import webui  # in webui
     in_webui = True
 except:
     in_webui = False

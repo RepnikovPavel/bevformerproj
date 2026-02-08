@@ -4,9 +4,8 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 from mmcv.cnn import build_conv_layer
-from torch import Tensor
-
 from mmseg.registry import MODELS
+from torch import Tensor
 
 
 class PatchTransformerEncoder(nn.Module):

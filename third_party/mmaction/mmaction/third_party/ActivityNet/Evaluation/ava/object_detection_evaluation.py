@@ -27,16 +27,15 @@ It supports the following operations:
 Note: This module operates on numpy boxes and box lists.
 """
 
-from abc import ABCMeta
-from abc import abstractmethod
 import collections
 import logging
-import numpy as np
+from abc import ABCMeta, abstractmethod
 
-import standard_fields
 import label_map_util
 import metrics
+import numpy as np
 import per_image_evaluation
+import standard_fields
 
 
 class DetectionEvaluator(object):

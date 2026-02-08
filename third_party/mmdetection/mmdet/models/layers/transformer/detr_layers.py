@@ -4,11 +4,11 @@ from typing import Union
 import torch
 from mmcv.cnn import build_norm_layer
 from mmcv.cnn.bricks.transformer import FFN, MultiheadAttention
-from mmengine import ConfigDict
 from mmengine.model import BaseModule, ModuleList
 from torch import Tensor
 
 from mmdet.utils import ConfigType, OptConfigType
+from mmengine import ConfigDict
 
 try:
     from fairscale.nn.checkpoint import checkpoint_wrapper

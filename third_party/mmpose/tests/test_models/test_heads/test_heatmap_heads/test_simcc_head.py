@@ -5,7 +5,6 @@ from unittest import TestCase
 
 import torch
 from mmengine.structures import InstanceData
-
 from mmpose.models.heads import SimCCHead
 from mmpose.testing import get_packed_inputs
 

@@ -12,14 +12,13 @@ except ImportError:
 
 import torch
 from mmcv.ops import nms3d, nms3d_normal
-from mmengine.model import bias_init_with_prob
-from mmengine.structures import InstanceData
-from torch import Tensor, nn
-
 from mmdet3d.models import Base3DDenseHead
 from mmdet3d.registry import MODELS
 from mmdet3d.structures import BaseInstance3DBoxes
 from mmdet3d.utils import InstanceList, OptInstanceList
+from mmengine.model import bias_init_with_prob
+from mmengine.structures import InstanceData
+from torch import Tensor, nn
 
 
 @MODELS.register_module()

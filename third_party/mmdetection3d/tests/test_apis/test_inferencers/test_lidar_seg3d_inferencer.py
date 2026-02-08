@@ -4,14 +4,14 @@ import os.path as osp
 import tempfile
 from unittest import TestCase
 
-import mmengine
 import numpy as np
 import pytest
 import torch
-from mmengine.utils import is_list_of
-
 from mmdet3d.apis import LidarSeg3DInferencer
 from mmdet3d.structures import Det3DDataSample
+from mmengine.utils import is_list_of
+
+import mmengine
 
 
 class TestLiDARSeg3DInferencer(TestCase):

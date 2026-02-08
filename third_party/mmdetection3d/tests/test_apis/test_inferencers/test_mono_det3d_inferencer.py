@@ -3,14 +3,14 @@ import os.path as osp
 import tempfile
 from unittest import TestCase
 
-import mmcv
-import mmengine
 import numpy as np
+from mmdet3d.apis import MonoDet3DInferencer
+from mmdet3d.structures import Det3DDataSample
 from mmengine.utils import is_list_of
 from parameterized import parameterized
 
-from mmdet3d.apis import MonoDet3DInferencer
-from mmdet3d.structures import Det3DDataSample
+import mmcv
+import mmengine
 
 
 class TestMonoDet3DInferencer(TestCase):

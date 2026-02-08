@@ -4,10 +4,8 @@ import unittest
 from typing import Dict, List, Optional
 
 import numpy as np
+from mmocr.datasets.transforms import ConditionApply, ImgAugWrapper, TorchVisionWrapper
 from shapely.geometry import Polygon
-
-from mmocr.datasets.transforms import (ConditionApply, ImgAugWrapper,
-                                       TorchVisionWrapper)
 
 
 class TestImgAug(unittest.TestCase):

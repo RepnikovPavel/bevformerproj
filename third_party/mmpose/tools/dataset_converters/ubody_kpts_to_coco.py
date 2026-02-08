@@ -4,9 +4,10 @@ import os
 from copy import deepcopy
 from multiprocessing import Pool
 
-import mmengine
 import numpy as np
 from pycocotools.coco import COCO
+
+import mmengine
 
 
 def findAllFile(base):

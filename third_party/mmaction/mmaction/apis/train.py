@@ -3,13 +3,17 @@ from __future__ import division
 from collections import OrderedDict
 
 import torch
-from mmcv.runner import EpochBasedRunner, DistSamplerSeedHook, build_optimizer
 from mmcv.parallel import MMDataParallel
 from mmcv.parallel.distributed import MMDistributedDataParallel
+from mmcv.runner import DistSamplerSeedHook, EpochBasedRunner, build_optimizer
 
-from mmaction.core import (DistOptimizerHook, DistEvalTopKAccuracyHook,
-                           AVADistEvalmAPHook)
+from mmaction.core import (
+    AVADistEvalmAPHook,
+    DistEvalTopKAccuracyHook,
+    DistOptimizerHook,
+)
 from mmaction.datasets import build_dataloader
+
 from .env import get_root_logger
 
 

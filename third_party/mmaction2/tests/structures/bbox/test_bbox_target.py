@@ -2,7 +2,6 @@
 from abc import abstractproperty
 
 import torch
-
 from mmaction.structures import bbox_target
 
 

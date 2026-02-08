@@ -2,6 +2,7 @@
 import numpy as np
 
 from mmrazor.registry import TASK_UTILS
+
 from ..flops_params_counter import get_model_parameters_number
 from .base_counter import BaseCounter
 

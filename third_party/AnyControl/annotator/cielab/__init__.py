@@ -1,12 +1,18 @@
 import os
 import sys
+
 sys.path.append(os.getcwd())
 sys.path.append(os.path.join(os.getcwd(), 'rayleigh'))
 
 import numpy as np
 from skimage.color import rgb2lab
+
 from .rayleigh import Palette
-from .rayleigh.util import histogram_colors_strict, smooth_histogram, color_hist_to_palette_image
+from .rayleigh.util import (
+    color_hist_to_palette_image,
+    histogram_colors_strict,
+    smooth_histogram,
+)
 
 
 class CIELabDetector:

@@ -1,7 +1,6 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import pytest
 import torch
-
 from mmrotate.core.bbox import rbbox_overlaps
 
 predict = [[903.34, 1034.4, 1.81e-7, 1e-7, -0.312],

@@ -2,7 +2,6 @@
 from unittest import TestCase
 
 import numpy as np
-
 from mmpose.codecs import DecoupledHeatmap
 from mmpose.registry import KEYPOINT_CODECS
 from mmpose.testing import get_coco_sample

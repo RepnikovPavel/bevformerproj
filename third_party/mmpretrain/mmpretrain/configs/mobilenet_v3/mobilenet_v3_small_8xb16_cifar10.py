@@ -3,10 +3,10 @@
 from mmengine.config import read_base
 
 with read_base():
-    from .._base_.models.mobilenet_v3_small import *
     from .._base_.datasets.cifar10_bs16 import *
-    from .._base_.schedules.cifar10_bs128 import *
     from .._base_.default_runtime import *
+    from .._base_.models.mobilenet_v3_small import *
+    from .._base_.schedules.cifar10_bs128 import *
 
 from mmengine.optim import MultiStepLR
 

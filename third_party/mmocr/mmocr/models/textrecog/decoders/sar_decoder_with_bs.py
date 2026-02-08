@@ -6,6 +6,7 @@ import torch.nn.functional as F
 
 import mmocr.utils as utils
 from mmocr.registry import MODELS
+
 from . import ParallelSARDecoder
 
 

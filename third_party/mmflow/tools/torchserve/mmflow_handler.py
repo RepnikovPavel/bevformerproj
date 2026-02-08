@@ -3,13 +3,13 @@ import base64
 import os
 
 import cv2
-import mmcv
 import torch
 from mmcv.cnn.utils.sync_bn import revert_sync_batchnorm
-from ts.torch_handler.base_handler import BaseHandler
-
 from mmflow.apis import inference_model, init_model
 from mmflow.datasets import visualize_flow
+from ts.torch_handler.base_handler import BaseHandler
+
+import mmcv
 
 
 class MMFlowHandler(BaseHandler):

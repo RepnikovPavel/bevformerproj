@@ -6,8 +6,9 @@ import torch
 from mmyolo.registry import TASK_UTILS
 
 try:
-    from mmrotate.models.task_modules.coders import \
-        DistanceAnglePointCoder as MMROTATE_DistanceAnglePointCoder
+    from mmrotate.models.task_modules.coders import (
+        DistanceAnglePointCoder as MMROTATE_DistanceAnglePointCoder,
+    )
     MMROTATE_AVAILABLE = True
 except ImportError:
     from mmdet.models.task_modules.coders import BaseBBoxCoder

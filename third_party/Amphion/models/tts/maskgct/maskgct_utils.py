@@ -3,23 +3,15 @@
 # This source code is licensed under the MIT license found in the
 # LICENSE file in the root directory of this source tree.
 
-import torch
-import torch.nn as nn
-import torch.nn.functional as F
-import numpy as np
 import librosa
-from utils.util import load_config
-from tqdm import tqdm
-
+import numpy as np
+import torch
+from models.codec.amphion_codec.codec import CodecDecoder, CodecEncoder
 from models.codec.kmeans.repcodec_model import RepCodec
+from models.tts.maskgct.g2p.g2p_generation import chn_eng_g2p, g2p
 from models.tts.maskgct.maskgct_s2a import MaskGCT_S2A
 from models.tts.maskgct.maskgct_t2s import MaskGCT_T2S
-from models.codec.amphion_codec.codec import CodecEncoder, CodecDecoder
-from transformers import Wav2Vec2BertModel
-
-from models.tts.maskgct.g2p.g2p_generation import g2p, chn_eng_g2p
-
-from transformers import SeamlessM4TFeatureExtractor
+from transformers import SeamlessM4TFeatureExtractor, Wav2Vec2BertModel
 
 
 def g2p_(text, language):

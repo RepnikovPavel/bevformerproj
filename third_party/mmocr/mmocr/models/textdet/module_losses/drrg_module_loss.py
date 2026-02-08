@@ -18,6 +18,7 @@ from torch import Tensor
 from mmocr.registry import MODELS
 from mmocr.structures import TextDetDataSample
 from mmocr.utils import check_argument
+
 from .textsnake_module_loss import TextSnakeModuleLoss
 
 

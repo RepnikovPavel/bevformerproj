@@ -2,6 +2,7 @@
 import torch
 
 from mmrazor import digit_version
+
 from .academic import get_academic_backend_config
 from .native import get_native_backend_config
 from .openvino import get_openvino_backend_config

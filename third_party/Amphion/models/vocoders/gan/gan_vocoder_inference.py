@@ -4,8 +4,7 @@
 # LICENSE file in the root directory of this source tree.
 
 import torch
-
-from utils.util import pad_mels_to_tensors, pad_f0_to_tensors
+from utils.util import pad_f0_to_tensors, pad_mels_to_tensors
 
 
 def vocoder_inference(cfg, model, mels, f0s=None, device=None, fast_inference=False):

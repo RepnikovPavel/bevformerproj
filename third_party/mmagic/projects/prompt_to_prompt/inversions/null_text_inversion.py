@@ -1,8 +1,9 @@
 import torch
 import torch.nn.functional as F
-from inversions.ddim_inversion import DDIMInversion
 from torch.optim import Adam
 from tqdm import tqdm
+
+from inversions.ddim_inversion import DDIMInversion
 
 
 class NullTextInversion(DDIMInversion):

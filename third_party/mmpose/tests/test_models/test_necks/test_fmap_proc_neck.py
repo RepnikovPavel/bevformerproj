@@ -3,7 +3,6 @@ from typing import List, Tuple
 from unittest import TestCase
 
 import torch
-
 from mmpose.models.necks import FeatureMapProcessor
 
 

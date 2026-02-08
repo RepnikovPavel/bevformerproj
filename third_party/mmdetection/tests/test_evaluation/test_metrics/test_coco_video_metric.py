@@ -6,11 +6,10 @@ from unittest import TestCase
 import numpy as np
 import pycocotools.mask as mask_util
 import torch
-from mmengine.fileio import dump
-from mmengine.structures import BaseDataElement, InstanceData
-
 from mmdet.evaluation import CocoVideoMetric
 from mmdet.structures import DetDataSample, TrackDataSample
+from mmengine.fileio import dump
+from mmengine.structures import BaseDataElement, InstanceData
 
 
 class TestCocoVideoMetric(TestCase):

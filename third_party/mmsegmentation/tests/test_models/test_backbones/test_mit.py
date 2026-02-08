@@ -1,10 +1,12 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import pytest
 import torch
-
 from mmseg.models.backbones import MixVisionTransformer
-from mmseg.models.backbones.mit import (EfficientMultiheadAttention, MixFFN,
-                                        TransformerEncoderLayer)
+from mmseg.models.backbones.mit import (
+    EfficientMultiheadAttention,
+    MixFFN,
+    TransformerEncoderLayer,
+)
 
 
 def test_mit():

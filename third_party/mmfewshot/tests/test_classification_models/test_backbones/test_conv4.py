@@ -1,10 +1,11 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import torch
-
-from mmfewshot.classification.models.backbones.conv4 import (Conv4,
-                                                             Conv4NoPool,
-                                                             ConvBlock,
-                                                             ConvNet)
+from mmfewshot.classification.models.backbones.conv4 import (
+    Conv4,
+    Conv4NoPool,
+    ConvBlock,
+    ConvNet,
+)
 
 
 def test_convblock():

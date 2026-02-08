@@ -2,7 +2,6 @@
 import copy
 from typing import List, Optional, Sequence, Tuple, Union
 
-import mmcv
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
@@ -16,7 +15,9 @@ from mmengine.model import BaseModule
 from mmengine.structures import InstanceData
 from torch import Tensor
 
+import mmcv
 from mmyolo.registry import MODELS
+
 from ..utils import make_divisible
 from .yolov5_head import YOLOv5Head, YOLOv5HeadModule
 

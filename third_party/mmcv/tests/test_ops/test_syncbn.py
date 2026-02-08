@@ -7,7 +7,6 @@ import pytest
 import torch
 import torch.distributed as dist
 import torch.nn as nn
-
 from mmcv.utils import IS_CUDA_AVAILABLE, IS_MUSA_AVAILABLE
 
 if platform.system() == 'Windows':

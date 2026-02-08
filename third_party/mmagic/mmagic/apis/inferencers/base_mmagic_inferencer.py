@@ -4,7 +4,6 @@ from typing import Any, Dict, List, Optional, Sequence, Tuple, Union
 
 import numpy as np
 import torch
-from mmengine import mkdir_or_exist
 from mmengine.dataset import Compose
 from mmengine.infer import BaseInferencer
 from mmengine.runner import load_checkpoint
@@ -13,6 +12,8 @@ from torchvision import utils
 
 from mmagic.registry import MODELS
 from mmagic.utils import ConfigType, SampleList, register_all_modules
+from mmengine import mkdir_or_exist
+
 from .inference_functions import set_random_seed
 
 InputType = Union[str, int, np.ndarray]

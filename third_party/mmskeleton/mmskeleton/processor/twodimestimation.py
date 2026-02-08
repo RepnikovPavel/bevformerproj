@@ -1,16 +1,16 @@
-import torch
-import numpy as np
 from collections import OrderedDict
-from mmskeleton.utils import call_obj, import_obj, load_checkpoint, get_mmskeleton_url
-from mmcv import ProgressBar
-from mmcv.parallel import MMDataParallel
-from mmskeleton.datasets.utils.coco_transform import flip_back
-from .utils.infernce_utils import get_final_preds
+
+import numpy as np
+import torch
 import torchvision.transforms as transforms
-from mmdet.apis import init_detector, inference_detector, show_result_pyplot
-from mmskeleton.processor.apis import init_twodimestimator, inference_twodimestimator
-from mmskeleton.datasets.utils.coco_transform import xywh2cs, get_affine_transform
-import cv2
+from mmcv.parallel import MMDataParallel
+from mmdet.apis import inference_detector, init_detector
+
+from mmcv import ProgressBar
+from mmskeleton.datasets.utils.coco_transform import flip_back
+from mmskeleton.utils import call_obj, load_checkpoint
+
+from .utils.infernce_utils import get_final_preds
 
 
 # parse loss

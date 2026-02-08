@@ -8,9 +8,9 @@ import time
 from concurrent.futures import ThreadPoolExecutor
 
 import numpy as np
-from sklearn.cluster import KMeans
-from flask import Flask, request, send_from_directory, jsonify, abort
+from flask import Flask, abort, jsonify, request, send_from_directory
 from flask_cors import CORS
+from sklearn.cluster import KMeans
 
 
 def select_step_range(start, end, embeddings_section):

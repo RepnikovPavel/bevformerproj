@@ -1,10 +1,10 @@
 import argparse
-import sys
+import glob
 import os
 import os.path as osp
-import glob
-from pipes import quote
+import sys
 from multiprocessing import Pool, current_process
+from pipes import quote
 
 import mmcv
 

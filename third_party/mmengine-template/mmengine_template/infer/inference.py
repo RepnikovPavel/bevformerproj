@@ -11,11 +11,12 @@ import os.path as osp
 
 import numpy as np
 import torch
-from mmcv import imread
 from mmengine.device import get_device
 from mmengine.infer import BaseInferencer
 from mmengine.registry import INFERENCERS
 from mmengine.visualization import Visualizer
+
+from mmcv import imread
 
 
 @INFERENCERS.register_module()

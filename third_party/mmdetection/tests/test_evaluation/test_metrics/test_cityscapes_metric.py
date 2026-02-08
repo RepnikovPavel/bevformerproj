@@ -5,9 +5,8 @@ import unittest
 
 import numpy as np
 import torch
-from PIL import Image
-
 from mmdet.evaluation import CityScapesMetric
+from PIL import Image
 
 try:
     import cityscapesscripts

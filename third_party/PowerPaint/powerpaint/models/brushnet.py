@@ -5,8 +5,6 @@ from dataclasses import dataclass
 from typing import Any, Dict, List, Optional, Tuple, Union
 
 import torch
-from torch import nn
-
 from diffusers.configuration_utils import ConfigMixin, register_to_config
 from diffusers.models.attention_processor import (
     ADDED_KV_ATTENTION_PROCESSORS,
@@ -25,10 +23,10 @@ from diffusers.models.embeddings import (
 from diffusers.models.modeling_utils import ModelMixin
 from diffusers.models.unets.unet_2d_blocks import CrossAttnDownBlock2D
 from diffusers.utils import BaseOutput, logging
+from torch import nn
 
 from .unet_2d_blocks import DownBlock2D, get_down_block, get_mid_block, get_up_block
 from .unet_2d_condition import UNet2DConditionModel
-
 
 logger = logging.get_logger(__name__)  # pylint: disable=invalid-name
 

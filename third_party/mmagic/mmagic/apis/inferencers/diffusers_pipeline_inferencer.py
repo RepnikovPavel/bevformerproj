@@ -3,9 +3,10 @@ import os
 from typing import Dict, List
 
 import numpy as np
-from mmengine import mkdir_or_exist
 from PIL.Image import Image
 from torchvision.utils import save_image
+
+from mmengine import mkdir_or_exist
 
 from .base_mmagic_inferencer import BaseMMagicInferencer, InputsType, PredType
 

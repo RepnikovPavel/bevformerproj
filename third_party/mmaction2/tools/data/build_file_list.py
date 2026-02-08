@@ -6,15 +6,19 @@ import os.path as osp
 import random
 
 from mmengine.runner import set_random_seed
-
 from tools.data.anno_txt2json import lines2dictlist
-from tools.data.parse_file_list import (parse_directory, parse_diving48_splits,
-                                        parse_hmdb51_split,
-                                        parse_jester_splits,
-                                        parse_kinetics_splits,
-                                        parse_mit_splits, parse_mmit_splits,
-                                        parse_sthv1_splits, parse_sthv2_splits,
-                                        parse_ucf101_splits)
+from tools.data.parse_file_list import (
+    parse_directory,
+    parse_diving48_splits,
+    parse_hmdb51_split,
+    parse_jester_splits,
+    parse_kinetics_splits,
+    parse_mit_splits,
+    parse_mmit_splits,
+    parse_sthv1_splits,
+    parse_sthv2_splits,
+    parse_ucf101_splits,
+)
 
 
 def parse_args():

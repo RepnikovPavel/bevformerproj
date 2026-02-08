@@ -7,12 +7,11 @@ from unittest.mock import MagicMock
 import pytest
 import torch
 import torch.nn as nn
-from mmengine.utils import digit_version
-from mmengine.utils.dl_utils import TORCH_VERSION
-
 from mmagic.registry import MODELS
 from mmagic.structures import DataSample
 from mmagic.utils import register_all_modules
+from mmengine.utils import digit_version
+from mmengine.utils.dl_utils import TORCH_VERSION
 
 test_dir = osp.join(osp.dirname(__file__), '../../../..', 'tests')
 config_path = osp.join(test_dir, 'configs', 'diffuser_wrapper_cfg')

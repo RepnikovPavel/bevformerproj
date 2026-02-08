@@ -1,10 +1,10 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 from copy import deepcopy
 
-import mmcv
 import numpy as np
 from mmengine.dataset import BaseDataset
 
+import mmcv
 from mmagic.registry import DATASETS
 
 

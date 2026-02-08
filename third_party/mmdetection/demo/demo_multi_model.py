@@ -18,16 +18,16 @@ Example:
 import argparse
 import os.path as osp
 
-import mmcv
-import mmengine
-from mmengine.fileio import isdir, join_path, list_dir_or_file
-from mmengine.logging import print_log
-from mmengine.structures import InstanceData
-
 from mmdet.apis import DetInferencer
 from mmdet.models.utils import weighted_boxes_fusion
 from mmdet.registry import VISUALIZERS
 from mmdet.structures import DetDataSample
+from mmengine.fileio import isdir, join_path, list_dir_or_file
+from mmengine.logging import print_log
+from mmengine.structures import InstanceData
+
+import mmcv
+import mmengine
 
 IMG_EXTENSIONS = ('.jpg', '.jpeg', '.png', '.ppm', '.bmp', '.pgm', '.tif',
                   '.tiff', '.webp')

@@ -3,9 +3,9 @@ import random
 from collections import OrderedDict
 
 import numpy as np
+from mmpose.datasets import DATASETS
 from xtcocotools.coco import COCO
 
-from mmpose.datasets import DATASETS
 from .transformer_base_dataset import TransformerBaseDataset
 
 

@@ -4,6 +4,7 @@ from mmcv.cnn.bricks import ConvModule
 from mmengine.model import BaseModule
 
 from mmpretrain.registry import MODELS
+
 from ..backbones.resnet import Bottleneck, ResLayer
 
 

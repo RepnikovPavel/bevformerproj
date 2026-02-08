@@ -10,8 +10,8 @@ from torch import nn
 
 from mmaction.registry import MODELS, TOKENIZER
 from mmaction.utils import ForwardResults, SampleList
-from .utils import (interpolate_pos_embed_beit,
-                    interpolate_pos_relative_bias_beit)
+
+from .utils import interpolate_pos_embed_beit, interpolate_pos_relative_bias_beit
 
 
 class VindLUBase(BaseModel):

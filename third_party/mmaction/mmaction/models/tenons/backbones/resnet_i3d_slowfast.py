@@ -1,18 +1,15 @@
 import logging
+
 import torch
 import torch.nn as nn
-import torch.utils.checkpoint as cp
-
-from ....utils.misc import rgetattr, rhasattr
-from .resnet import ResNet
 from mmcv.cnn import constant_init, kaiming_init
 from mmcv.runner import load_checkpoint
 
-from ..utils.nonlocal_block import build_nonlocal_block
-from ..spatial_temporal_modules.non_local import NonLocalModule
-
+from ....utils.misc import rgetattr, rhasattr
 from ...registry import BACKBONES
-from .resnet_i3d import conv3x3x3, conv1x3x3, BasicBlock, Bottleneck
+from ..spatial_temporal_modules.non_local import NonLocalModule
+from .resnet import ResNet
+from .resnet_i3d import BasicBlock, Bottleneck
 
 
 def make_res_layer(block,

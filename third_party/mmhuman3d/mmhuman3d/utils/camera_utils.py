@@ -11,8 +11,9 @@ from mmhuman3d.core.conventions.cameras.convert_convention import (
     convert_camera_matrix,
     convert_world_view,
 )
-from mmhuman3d.core.conventions.cameras.convert_projection import \
-    convert_perspective_to_weakperspective  # prevent yapf isort conflict
+from mmhuman3d.core.conventions.cameras.convert_projection import (
+    convert_perspective_to_weakperspective,  # prevent yapf isort conflict
+)
 from mmhuman3d.models.body_models.builder import build_body_model
 from mmhuman3d.utils.transforms import aa_to_rotmat, rotmat_to_aa
 

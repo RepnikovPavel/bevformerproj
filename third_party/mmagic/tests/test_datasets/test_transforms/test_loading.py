@@ -1,13 +1,16 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 from pathlib import Path
 
-import mmcv
 import numpy as np
 import pytest
+from mmagic.datasets.transforms import (
+    GetSpatialDiscountMask,
+    LoadImageFromFile,
+    LoadMask,
+)
 from mmengine.fileio.backends import LocalBackend
 
-from mmagic.datasets.transforms import (GetSpatialDiscountMask,
-                                        LoadImageFromFile, LoadMask)
+import mmcv
 
 
 def test_load_image_from_file():

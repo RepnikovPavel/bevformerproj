@@ -4,9 +4,9 @@ import tempfile
 import onnx
 import pytest
 import torch
-from mmengine import Config
-
 from mmdeploy.core import RewriterContext
+
+from mmengine import Config
 
 onnx_file = tempfile.NamedTemporaryFile(suffix='onnx').name
 

@@ -9,12 +9,18 @@ from functools import partial
 from typing import Callable, Dict, List, Optional, Sequence, Union
 
 import torch.nn as nn
-from torch.distributed.fsdp import (FullStateDictConfig,
-                                    FullyShardedDataParallel,
-                                    LocalStateDictConfig, StateDictType)
+from torch.distributed.fsdp import (
+    FullStateDictConfig,
+    FullyShardedDataParallel,
+    LocalStateDictConfig,
+    StateDictType,
+)
 from torch.distributed.fsdp.fully_sharded_data_parallel import (
-    FullOptimStateDictConfig, LocalOptimStateDictConfig, OptimStateDictConfig,
-    StateDictConfig)
+    FullOptimStateDictConfig,
+    LocalOptimStateDictConfig,
+    OptimStateDictConfig,
+    StateDictConfig,
+)
 from torch.optim import Optimizer
 from torch.optim.lr_scheduler import LRScheduler
 
@@ -23,12 +29,24 @@ from mmengine.config import Config, ConfigDict
 from mmengine.device import get_device
 from mmengine.dist import get_rank, is_main_process
 from mmengine.model import BaseDataPreprocessor, is_model_wrapper
-from mmengine.optim import (AmpOptimWrapper, BaseOptimWrapper, OptimWrapper,
-                            OptimWrapperDict, _ParamScheduler,
-                            build_optim_wrapper)
-from mmengine.registry import (FUNCTIONS, MODEL_WRAPPERS, OPTIM_WRAPPERS,
-                               PARAM_SCHEDULERS, STRATEGIES, Registry)
+from mmengine.optim import (
+    AmpOptimWrapper,
+    BaseOptimWrapper,
+    OptimWrapper,
+    OptimWrapperDict,
+    _ParamScheduler,
+    build_optim_wrapper,
+)
+from mmengine.registry import (
+    FUNCTIONS,
+    MODEL_WRAPPERS,
+    OPTIM_WRAPPERS,
+    PARAM_SCHEDULERS,
+    STRATEGIES,
+    Registry,
+)
 from mmengine.utils import get_git_hash, mkdir_or_exist
+
 from .distributed import DDPStrategy
 from .utils import MetaTensorContext
 
@@ -136,8 +154,9 @@ class FSDPStrategy(DDPStrategy):
             or subclass of ``FullyShardedDataParallel``.
         """
         try:
-            from torch.distributed.algorithms._checkpoint.checkpoint_wrapper import \
-                apply_activation_checkpointing  # noqa: E501
+            from torch.distributed.algorithms._checkpoint.checkpoint_wrapper import (
+                apply_activation_checkpointing,  # noqa: E501
+            )
         except ImportError:
             apply_activation_checkpointing = None
 

@@ -8,6 +8,7 @@ from torch import Tensor
 from mmdet.evaluation.functional import INSTANCE_OFFSET
 from mmdet.registry import MODELS
 from mmdet.utils import InstanceList, OptConfigType, OptMultiConfig, PixelList
+
 from .base_panoptic_fusion_head import BasePanopticFusionHead
 
 

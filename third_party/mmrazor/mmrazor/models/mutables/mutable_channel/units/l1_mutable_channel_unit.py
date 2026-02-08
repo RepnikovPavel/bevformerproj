@@ -5,6 +5,7 @@ import torch
 import torch.nn as nn
 
 from mmrazor.registry import MODELS
+
 from ..simple_mutable_channel import SimpleMutableChannel
 from .sequential_mutable_channel_unit import SequentialMutableChannelUnit
 

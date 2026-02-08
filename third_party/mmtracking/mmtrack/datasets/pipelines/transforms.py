@@ -2,12 +2,12 @@
 import math
 
 import cv2
-import mmcv
 import numpy as np
 from mmcv.utils import print_log
 from mmdet.datasets.builder import PIPELINES
 from mmdet.datasets.pipelines import Normalize, Pad, RandomFlip, Resize
 
+import mmcv
 from mmtrack.core import crop_image
 
 

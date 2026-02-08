@@ -1,9 +1,11 @@
 # Copyright (c) OpenMMLab. All rights reserved.
-import cv2
-import numpy as np
 from typing import Dict, List, Optional, Sequence
 
+import cv2
+import numpy as np
+
 from mmeval.core import BaseMetric
+
 from .utils import reorder_and_crop
 
 

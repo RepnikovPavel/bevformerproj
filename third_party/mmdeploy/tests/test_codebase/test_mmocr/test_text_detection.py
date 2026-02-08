@@ -2,16 +2,16 @@
 import os
 from tempfile import NamedTemporaryFile, TemporaryDirectory
 
-import mmengine
+import mmdeploy.backend.onnxruntime as ort_apis
 import numpy as np
 import pytest
 import torch
-
-import mmdeploy.backend.onnxruntime as ort_apis
 from mmdeploy.apis import build_task_processor
 from mmdeploy.codebase import import_codebase
 from mmdeploy.utils import Codebase, load_config
 from mmdeploy.utils.test import SwitchBackendWrapper
+
+import mmengine
 
 model_cfg_path = 'tests/test_codebase/test_mmocr/data/dbnet.py'
 model_cfg = load_config(model_cfg_path)[0]
@@ -48,8 +48,9 @@ def init_task_processor():
 def test_build_pytorch_model():
     from mmocr.utils.setup_env import register_all_modules
     register_all_modules()
-    from mmocr.models.textdet.detectors.single_stage_text_detector import \
-        SingleStageTextDetector
+    from mmocr.models.textdet.detectors.single_stage_text_detector import (
+        SingleStageTextDetector,
+    )
     model = task_processor.build_pytorch_model(None)
     assert isinstance(model, SingleStageTextDetector)
 

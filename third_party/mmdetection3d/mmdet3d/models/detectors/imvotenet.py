@@ -8,6 +8,7 @@ from torch import Tensor
 
 from mmdet3d.registry import MODELS
 from mmdet3d.structures import Det3DDataSample
+
 from ..layers import MLP
 from .base import Base3DDetector
 

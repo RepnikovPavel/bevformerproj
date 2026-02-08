@@ -6,12 +6,13 @@ import numpy as np
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-from mmengine import print_log
 from torch.utils.data.dataloader import DataLoader
 from torchvision import models as torchvision_models
 
 from mmagic.models.utils import get_module_device
 from mmagic.registry import METRICS
+from mmengine import print_log
+
 from ..functional import prepare_vgg_feat
 from .base_gen_metric import GenerativeMetric
 

@@ -3,17 +3,17 @@
 # This source code is licensed under the MIT license found in the
 # LICENSE file in the root directory of this source tree.
 
+import copy
+import math
+
+import numpy as np
 import torch
 import torch.nn as nn
-import copy
-import numpy as np
-import math
 from tqdm.auto import tqdm
-
 from utils.ssim import SSIM
 
-from models.svc.transformer.conformer import Conformer, BaseModule
 from models.svc.diffusion.diffusion_wrapper import DiffusionWrapper
+from models.svc.transformer.conformer import BaseModule, Conformer
 
 
 class Consistency(nn.Module):

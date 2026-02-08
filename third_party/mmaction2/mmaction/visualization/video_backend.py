@@ -5,8 +5,11 @@ from typing import Optional
 
 import cv2
 import numpy as np
-from mmengine.visualization import (LocalVisBackend, TensorboardVisBackend,
-                                    WandbVisBackend)
+from mmengine.visualization import (
+    LocalVisBackend,
+    TensorboardVisBackend,
+    WandbVisBackend,
+)
 from mmengine.visualization.vis_backend import force_init_env
 
 from mmaction.registry import VISBACKENDS

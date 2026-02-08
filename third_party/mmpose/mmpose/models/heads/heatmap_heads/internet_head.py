@@ -12,8 +12,15 @@ from mmpose.models.necks import GlobalAveragePooling
 from mmpose.models.utils.tta import flip_heatmaps
 from mmpose.registry import KEYPOINT_CODECS, MODELS
 from mmpose.utils.tensor_utils import to_numpy
-from mmpose.utils.typing import (ConfigType, Features, InstanceList,
-                                 OptConfigType, OptSampleList, Predictions)
+from mmpose.utils.typing import (
+    ConfigType,
+    Features,
+    InstanceList,
+    OptConfigType,
+    OptSampleList,
+    Predictions,
+)
+
 from ..base_head import BaseHead
 from .heatmap_head import HeatmapHead
 

@@ -1,13 +1,10 @@
 import json
-import urllib.request, urllib.error, urllib.parse
 
 import numpy as np
 import pandas as pd
 from joblib import Parallel, delayed
+from utils import get_blocked_videos, interpolated_prec_rec, segment_iou
 
-from utils import get_blocked_videos
-from utils import interpolated_prec_rec
-from utils import segment_iou
 
 class ANETdetection(object):
 
@@ -224,7 +221,7 @@ def compute_average_precision_detection(ground_truth, prediction, tiou_threshold
         try:
             # Check if there is at least one ground truth in the video associated.
             ground_truth_videoid = ground_truth_gbvn.get_group(this_pred['video-id'])
-        except Exception as e:
+        except Exception:
             fp[:, idx] = 1
             continue
 

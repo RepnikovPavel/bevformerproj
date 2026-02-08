@@ -10,6 +10,7 @@ from torch.nn.modules.batchnorm import _BatchNorm
 
 from mmrazor.models.utils import add_prefix
 from mmrazor.registry import MODELS
+
 from ...base import BaseAlgorithm, LossResults
 
 

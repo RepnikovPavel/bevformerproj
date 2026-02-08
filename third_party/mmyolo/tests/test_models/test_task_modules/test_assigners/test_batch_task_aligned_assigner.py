@@ -2,7 +2,6 @@
 from unittest import TestCase
 
 import torch
-
 from mmyolo.models.task_modules.assigners import BatchTaskAlignedAssigner
 
 

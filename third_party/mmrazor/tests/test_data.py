@@ -4,13 +4,18 @@ import unittest
 
 import torch
 
-from .data.model_library import (DefaultModelLibrary, MMClsModelLibrary,
-                                 MMDetModelLibrary, MMModelLibrary,
-                                 MMPoseModelLibrary, MMSegModelLibrary,
-                                 ModelGenerator, TorchModelLibrary)
+from .data.model_library import (
+    DefaultModelLibrary,
+    MMClsModelLibrary,
+    MMDetModelLibrary,
+    MMModelLibrary,
+    MMPoseModelLibrary,
+    MMSegModelLibrary,
+    ModelGenerator,
+    TorchModelLibrary,
+)
 from .data.models import SingleLineModel
-from .data.tracer_passed_models import (BackwardPassedModelManager,
-                                        FxPassedModelManager)
+from .data.tracer_passed_models import BackwardPassedModelManager, FxPassedModelManager
 
 TEST_DATA = os.getenv('TEST_DATA') == 'true'
 

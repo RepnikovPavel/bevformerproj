@@ -2,10 +2,10 @@
 from copy import deepcopy
 from typing import Union
 
-import mmcv
 import numpy as np
 from mmengine.structures import InstanceData
 
+import mmcv
 from mmpose.datasets.datasets.utils import parse_pose_metainfo
 from mmpose.structures import PoseDataSample
 from mmpose.visualization import PoseLocalVisualizer

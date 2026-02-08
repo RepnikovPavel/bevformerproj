@@ -8,7 +8,6 @@ with read_base():
     from .._base_.schedules.schedule_3x import *
 
 from mmcv.transforms.wrappers import RandomChoice
-
 from mmdet3d.datasets.transforms.transforms_3d import LaserMix, PolarMix
 
 train_pipeline = [

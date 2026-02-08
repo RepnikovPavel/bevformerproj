@@ -4,9 +4,11 @@ from __future__ import absolute_import
 
 import ctypes
 import json
+
 import numpy as np
-from .base import _LIB, check_call
+
 from .. import _api_internal
+from .base import _LIB, check_call
 
 decord_shape_index_t = ctypes.c_int64
 

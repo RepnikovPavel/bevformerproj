@@ -1,12 +1,16 @@
 # Copyright (c) OpenMMLab. All rights reserved.
-import mmcv
 import pytest
 import torch
 from mmengine.utils import digit_version
 from mmengine.utils.dl_utils import TORCH_VERSION
+from mmseg.models.utils import (
+    InvertedResidual,
+    InvertedResidualV3,
+    SELayer,
+    make_divisible,
+)
 
-from mmseg.models.utils import (InvertedResidual, InvertedResidualV3, SELayer,
-                                make_divisible)
+import mmcv
 
 
 def test_make_divisible():

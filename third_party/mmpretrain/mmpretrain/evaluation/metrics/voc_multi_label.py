@@ -3,6 +3,7 @@ from typing import Optional, Sequence
 
 from mmpretrain.registry import METRICS
 from mmpretrain.structures import label_to_onehot
+
 from .multi_label import AveragePrecision, MultiLabelMetric
 
 

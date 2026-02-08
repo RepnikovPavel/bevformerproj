@@ -8,10 +8,9 @@ import numpy as np
 import torch
 from mmengine.evaluator import BaseMetric
 from mmengine.logging import MMLogger
+from mmocr.registry import METRICS
 from rapidfuzz.distance import Levenshtein
 from shapely.geometry import Point
-
-from mmocr.registry import METRICS
 
 # TODO: CTW1500 read pair
 

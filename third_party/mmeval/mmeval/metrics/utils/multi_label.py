@@ -1,7 +1,8 @@
 # Copyright (c) OpenMMLab. All rights reserved.
-import numpy as np
 import warnings
 from typing import TYPE_CHECKING, Optional, Sequence, Tuple, Union
+
+import numpy as np
 
 from mmeval.utils import try_import
 

@@ -1,11 +1,16 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import torch.nn as nn
 
-from mmgen.models.architectures.pggan import (EqualizedLRConvModule,
-                                              EqualizedLRConvUpModule,
-                                              EqualizedLRLinearModule)
-from mmgen.models.architectures.stylegan.modules import (Blur, ConstantInput,
-                                                         NoiseInjection)
+from mmgen.models.architectures.pggan import (
+    EqualizedLRConvModule,
+    EqualizedLRConvUpModule,
+    EqualizedLRLinearModule,
+)
+from mmgen.models.architectures.stylegan.modules import (
+    Blur,
+    ConstantInput,
+    NoiseInjection,
+)
 
 
 class AdaptiveInstanceNorm(nn.Module):

@@ -3,7 +3,6 @@ import copy
 
 import pytest
 from mmcls.models.backbones.base_backbone import BaseBackbone
-
 from mmyolo.testing import get_detector_cfg
 
 

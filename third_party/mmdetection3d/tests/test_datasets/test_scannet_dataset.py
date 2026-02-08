@@ -3,11 +3,10 @@ import unittest
 
 import numpy as np
 import torch
-from mmengine.testing import assert_allclose
-
 from mmdet3d.datasets import ScanNetDataset, ScanNetSegDataset
 from mmdet3d.structures import DepthInstance3DBoxes
 from mmdet3d.utils import register_all_modules
+from mmengine.testing import assert_allclose
 
 
 def _generate_scannet_seg_dataset_config():

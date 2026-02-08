@@ -1,8 +1,4 @@
-import random
-import cv2
-import numpy as np
 import torch
-from PIL import Image
 
 
 def crop_4_patches(image):

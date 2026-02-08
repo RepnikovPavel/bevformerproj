@@ -2,12 +2,13 @@
 import logging
 from functools import partial
 
-import mmcv
 import numpy as np
 import torch
 import torch.distributed as dist
 import torch.nn.functional as F
 from torch.nn.parallel.distributed import _find_tensors
+
+import mmcv
 
 from ..builder import MODELS
 from ..common import set_requires_grad

@@ -3,9 +3,9 @@ from typing import Optional
 
 import torch
 import torch.nn as nn
-from mmcv import ops
 from torch import Tensor
 
+from mmcv import ops
 from mmdet3d.registry import MODELS
 from mmdet3d.structures.bbox_3d import rotation_3d_in_axis
 

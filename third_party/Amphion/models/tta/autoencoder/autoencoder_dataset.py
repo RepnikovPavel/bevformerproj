@@ -3,17 +3,16 @@
 # This source code is licensed under the MIT license found in the
 # LICENSE file in the root directory of this source tree.
 
-import random
+import librosa
 import torch
-from torch.nn.utils.rnn import pad_sequence
-from utils.data_utils import *
 from models.base.base_dataset import (
     BaseOfflineCollator,
     BaseOfflineDataset,
-    BaseTestDataset,
     BaseTestCollator,
+    BaseTestDataset,
 )
-import librosa
+from torch.nn.utils.rnn import pad_sequence
+from utils.data_utils import *
 
 
 class AutoencoderKLDataset(BaseOfflineDataset):

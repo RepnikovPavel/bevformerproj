@@ -1,6 +1,5 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import gradio as gr
-
 from mmagic.apis import MMagicInferencer
 
 editor = MMagicInferencer(model_name='controlnet_animation')

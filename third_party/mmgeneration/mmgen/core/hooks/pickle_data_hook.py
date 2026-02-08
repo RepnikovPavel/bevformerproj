@@ -3,10 +3,11 @@ import logging
 import os
 import pickle
 
-import mmcv
 import torch
 from mmcv.runner import HOOKS, Hook
 from mmcv.runner.dist_utils import master_only
+
+import mmcv
 
 
 @HOOKS.register_module()

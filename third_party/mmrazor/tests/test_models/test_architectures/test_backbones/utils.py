@@ -1,10 +1,9 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 from typing import Dict, List
 
+from mmrazor.registry import MODELS
 from torch import Tensor
 from torch.nn import Conv2d, Module
-
-from mmrazor.registry import MODELS
 
 
 @MODELS.register_module()

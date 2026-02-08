@@ -4,7 +4,6 @@
 # LICENSE file in the root directory of this source tree.
 
 import torch.nn as nn
-
 from modules.diffusion import BiDilConv
 from modules.encoder.position_encoder import PositionEncoder
 

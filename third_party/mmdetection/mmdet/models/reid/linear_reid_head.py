@@ -6,8 +6,9 @@ import torch
 import torch.nn as nn
 
 try:
-    import mmpretrain
     from mmpretrain.evaluation.metrics import Accuracy
+
+    import mmpretrain
 except ImportError:
     mmpretrain = None
 
@@ -15,6 +16,7 @@ from mmengine.model import BaseModule
 
 from mmdet.registry import MODELS
 from mmdet.structures import ReIDDataSample
+
 from .fc_module import FcModule
 
 

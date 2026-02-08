@@ -1,7 +1,6 @@
 import os
 import sys
 
-
 sys.path.append(
     os.path.join(
         os.path.dirname(__file__),
@@ -11,12 +10,10 @@ sys.path.append(
 
 import torch
 from config import Args
-from PIL import Image
-from pydantic import BaseModel, Field
-
 from live2diff.utils.config import load_config
 from live2diff.utils.wrapper import StreamAnimateDiffusionDepthWrapper
-
+from PIL import Image
+from pydantic import BaseModel, Field
 
 default_prompt = "masterpiece, best quality, felted, 1man with glasses, glasses, play with his pen"
 

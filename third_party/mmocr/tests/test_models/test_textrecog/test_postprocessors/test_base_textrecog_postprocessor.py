@@ -4,7 +4,6 @@ import tempfile
 from unittest import TestCase, mock
 
 import torch
-
 from mmocr.models.common.dictionary import Dictionary
 from mmocr.models.textrecog.postprocessors import BaseTextRecogPostprocessor
 from mmocr.structures import TextRecogDataSample

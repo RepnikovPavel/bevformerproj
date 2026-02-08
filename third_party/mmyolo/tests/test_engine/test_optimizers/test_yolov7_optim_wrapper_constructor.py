@@ -6,7 +6,6 @@ from unittest import TestCase
 import torch
 import torch.nn as nn
 from mmengine.optim import build_optim_wrapper
-
 from mmyolo.engine import YOLOv7OptimWrapperConstructor
 from mmyolo.utils import register_all_modules
 

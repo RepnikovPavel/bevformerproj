@@ -2,12 +2,13 @@
 import os
 from typing import Dict, Optional
 
-import mmengine
 import torch  # noqa
 import torch.nn as nn
 from mmengine.hooks import Hook
 from mmengine.logging import print_log
 from mmengine.registry import HOOKS
+
+import mmengine
 
 from .operator import BaseConvRFSearchOp, Conv2dRFSearchOp  # noqa
 from .utils import get_single_padding, write_to_json

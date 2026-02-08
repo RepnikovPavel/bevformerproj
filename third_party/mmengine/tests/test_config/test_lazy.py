@@ -10,13 +10,13 @@ from unittest import TestCase
 import numpy
 import numpy.fft
 import numpy.linalg as linalg
-from rich.progress import Progress
-
-import mmengine
 from mmengine.config import Config
 from mmengine.config.lazy import LazyAttr, LazyObject
 from mmengine.config.utils import ImportTransformer, _gather_abs_import_lazyobj
 from mmengine.fileio import LocalBackend, PetrelBackend
+from rich.progress import Progress
+
+import mmengine
 
 
 class TestImportTransformer(TestCase):

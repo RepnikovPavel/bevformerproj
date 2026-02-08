@@ -1,7 +1,9 @@
 # Copyright (c) OpenMMLab. All rights reserved.
-from .batch_sampler import (AspectRatioBatchSampler,
+from .batch_sampler import (
+                            AspectRatioBatchSampler,
                             MultiDataAspectRatioBatchSampler,
-                            TrackAspectRatioBatchSampler)
+                            TrackAspectRatioBatchSampler,
+)
 from .class_aware_sampler import ClassAwareSampler
 from .custom_sample_size_sampler import CustomSampleSizeSampler
 from .multi_data_sampler import MultiDataSampler

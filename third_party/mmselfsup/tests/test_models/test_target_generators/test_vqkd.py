@@ -3,7 +3,6 @@ import platform
 
 import pytest
 import torch
-
 from mmselfsup.models.target_generators import VQKD
 
 vqkd_encoder = dict(

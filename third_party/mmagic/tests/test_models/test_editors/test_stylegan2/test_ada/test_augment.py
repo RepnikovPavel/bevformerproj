@@ -4,10 +4,10 @@ from unittest import TestCase
 
 import pytest
 import torch
-from mmengine import digit_version
+from mmagic.models.editors.stylegan2.ada.augment import AugmentPipe
 from mmengine.utils.dl_utils import TORCH_VERSION
 
-from mmagic.models.editors.stylegan2.ada.augment import AugmentPipe
+from mmengine import digit_version
 
 
 class TestAuementPipe(TestCase):

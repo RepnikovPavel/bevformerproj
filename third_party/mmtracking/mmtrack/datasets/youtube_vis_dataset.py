@@ -5,12 +5,13 @@ import tempfile
 import zipfile
 from collections import defaultdict
 
-import mmcv
 import numpy as np
 from mmcv.utils import print_log
 from mmdet.datasets import DATASETS
 
+import mmcv
 from mmtrack.core import eval_vis, results2outs
+
 from .coco_video_dataset import CocoVideoDataset
 
 

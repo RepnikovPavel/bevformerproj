@@ -9,29 +9,32 @@ from functools import partial
 from pathlib import Path
 from typing import List, Optional, Tuple, Union
 
-import mmcv
 import numpy as np
 import torch
 import torch.nn as nn
 from colormap import Color
 
+import mmcv
 from mmhuman3d.core.cameras import (
     WeakPerspectiveCameras,
     compute_orbit_cameras,
 )
 from mmhuman3d.core.cameras.builder import build_cameras
-from mmhuman3d.core.conventions.cameras.convert_convention import \
-    convert_camera_matrix  # prevent yapf isort conflict
+from mmhuman3d.core.conventions.cameras.convert_convention import (
+    convert_camera_matrix,  # prevent yapf isort conflict
+)
 from mmhuman3d.core.conventions.segmentation import body_segmentation
 from mmhuman3d.core.renderer.torch3d_renderer import render_runner
-from mmhuman3d.core.renderer.torch3d_renderer.meshes import \
-    ParametricMeshes  # noqa: E501
+from mmhuman3d.core.renderer.torch3d_renderer.meshes import (
+    ParametricMeshes,  # noqa: E501
+)
 from mmhuman3d.core.renderer.torch3d_renderer.render_smpl_config import (
     RENDER_CONFIGS,
 )
 from mmhuman3d.core.renderer.torch3d_renderer.smpl_renderer import SMPLRenderer
-from mmhuman3d.core.renderer.torch3d_renderer.utils import \
-    align_input_to_padded  # noqa: E501
+from mmhuman3d.core.renderer.torch3d_renderer.utils import (
+    align_input_to_padded,  # noqa: E501
+)
 from mmhuman3d.models.body_models.builder import build_body_model
 from mmhuman3d.utils.demo_utils import (
     convert_bbox_to_intrinsic,

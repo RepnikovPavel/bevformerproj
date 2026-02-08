@@ -2,7 +2,6 @@
 from unittest import TestCase
 
 import torch
-
 from mmpose.structures.bbox import bbox_overlaps  # Import your function here
 
 

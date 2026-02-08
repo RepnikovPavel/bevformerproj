@@ -1,17 +1,52 @@
 # Copyright (c) OpenMMLab. All rights reserved.
-from .builder import (COMPONENTS, DECODERS, ENCODERS, FLOW_ESTIMATORS,
-                      build_components, build_decoder, build_encoder,
-                      build_flow_estimator)
-from .decoders import (FlowNetCDecoder, FlowNetSDecoder, FlowRefine,
-                       GMADecoder, IRRPWCDecoder, MaskFlowNetDecoder,
-                       MaskFlowNetSDecoder, NetE, OccRefine,
-                       OccShuffleUpsample, PWCNetDecoder)
-from .encoders import (CorrEncoder, FlowNetEncoder, FlowNetSDEncoder, NetC,
-                       PWCNetEncoder, RAFTEncoder)
-from .flow_estimators import (IRRPWC, FlowNet2, FlowNetC, FlowNetCSS, FlowNetS,
-                              LiteFlowNet, MaskFlowNet, MaskFlowNetS, PWCNet)
-from .losses import (MultiLevelBCE, MultiLevelCharbonnierLoss, MultiLevelEPE,
-                     SequenceLoss)
+from .builder import (
+                      COMPONENTS,
+                      DECODERS,
+                      ENCODERS,
+                      FLOW_ESTIMATORS,
+                      build_components,
+                      build_decoder,
+                      build_encoder,
+                      build_flow_estimator,
+)
+from .decoders import (
+                      FlowNetCDecoder,
+                      FlowNetSDecoder,
+                      FlowRefine,
+                      GMADecoder,
+                      IRRPWCDecoder,
+                      MaskFlowNetDecoder,
+                      MaskFlowNetSDecoder,
+                      NetE,
+                      OccRefine,
+                      OccShuffleUpsample,
+                      PWCNetDecoder,
+)
+from .encoders import (
+                      CorrEncoder,
+                      FlowNetEncoder,
+                      FlowNetSDEncoder,
+                      NetC,
+                      PWCNetEncoder,
+                      RAFTEncoder,
+)
+from .flow_estimators import (
+                      IRRPWC,
+                      FlowNet2,
+                      FlowNetC,
+                      FlowNetCSS,
+                      FlowNetS,
+                      LiteFlowNet,
+                      MaskFlowNet,
+                      MaskFlowNetS,
+                      PWCNet,
+)
+from .losses import (
+                      MultiLevelBCE,
+                      MultiLevelCharbonnierLoss,
+                      MultiLevelEPE,
+                      SequenceLoss,
+)
 
 __all__ = [
     'FlowNetEncoder', 'PWCNetEncoder', 'RAFTEncoder', 'NetC',

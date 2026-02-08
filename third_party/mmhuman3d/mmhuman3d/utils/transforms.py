@@ -7,6 +7,7 @@ from mmhuman3d.core.conventions.joints_mapping.standard_joint_angles import (
     TRANSFORMATION_AA_TO_SJA,
     TRANSFORMATION_SJA_TO_AA,
 )
+
 from .logger import get_root_logger
 
 try:

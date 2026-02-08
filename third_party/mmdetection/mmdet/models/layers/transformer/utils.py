@@ -5,8 +5,7 @@ from typing import Optional, Sequence, Tuple, Union
 
 import torch
 import torch.nn.functional as F
-from mmcv.cnn import (Linear, build_activation_layer, build_conv_layer,
-                      build_norm_layer)
+from mmcv.cnn import Linear, build_activation_layer, build_conv_layer, build_norm_layer
 from mmcv.cnn.bricks.drop import Dropout
 from mmengine.model import BaseModule, ModuleList
 from mmengine.utils import to_2tuple

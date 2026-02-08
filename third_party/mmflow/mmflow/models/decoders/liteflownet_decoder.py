@@ -10,6 +10,7 @@ from mmcv.cnn.bricks.conv_module import ConvModule
 from mmcv.runner import BaseModule
 
 from mmflow.ops import build_operators
+
 from ..builder import DECODERS, build_loss
 from ..utils import CorrBlock
 from .base_decoder import BaseDecoder

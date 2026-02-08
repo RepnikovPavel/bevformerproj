@@ -4,12 +4,11 @@ import pickle
 import random
 import shutil
 import subprocess
-import SharedArray
 
 import numpy as np
+import SharedArray
 import torch
 import torch.distributed as dist
-import torch.multiprocessing as mp
 
 
 def check_numpy_to_torch(x):

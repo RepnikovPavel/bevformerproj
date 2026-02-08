@@ -1,12 +1,11 @@
 import argparse
 
+from mmdet.models.utils import weighted_boxes_fusion
 from mmengine.fileio import dump, load
 from mmengine.logging import print_log
 from mmengine.utils import ProgressBar
 from pycocotools.coco import COCO
 from pycocotools.cocoeval import COCOeval
-
-from mmdet.models.utils import weighted_boxes_fusion
 
 
 def parse_args():

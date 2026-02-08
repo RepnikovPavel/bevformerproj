@@ -6,13 +6,14 @@ import time
 import warnings
 from functools import partial
 
-import mmcv
 import torch
 import torch.distributed as dist
 from mmcv.parallel import collate, is_module_wrapper
 from mmcv.runner import HOOKS, RUNNERS, IterBasedRunner, get_host_info
 from torch.optim import Optimizer
 from torch.utils.data import DataLoader
+
+import mmcv
 
 from .checkpoint import save_checkpoint
 

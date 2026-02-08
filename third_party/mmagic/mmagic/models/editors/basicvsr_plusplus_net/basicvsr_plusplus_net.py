@@ -9,6 +9,7 @@ from mmengine.model.weight_init import constant_init
 from mmagic.models.archs import PixelShufflePack
 from mmagic.models.utils import flow_warp
 from mmagic.registry import MODELS
+
 from ..basicvsr.basicvsr_net import ResidualBlocksWithInputConv, SPyNet
 
 

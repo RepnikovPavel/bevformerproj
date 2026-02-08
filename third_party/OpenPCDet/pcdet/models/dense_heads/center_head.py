@@ -1,12 +1,13 @@
 import copy
+from functools import partial
+
 import numpy as np
 import torch
 import torch.nn as nn
 from torch.nn.init import kaiming_normal_
-from ..model_utils import model_nms_utils
-from ..model_utils import centernet_utils
+
 from ...utils import loss_utils
-from functools import partial
+from ..model_utils import centernet_utils, model_nms_utils
 
 
 class SeparateHead(nn.Module):

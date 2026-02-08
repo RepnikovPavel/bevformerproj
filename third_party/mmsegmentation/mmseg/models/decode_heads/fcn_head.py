@@ -4,6 +4,7 @@ import torch.nn as nn
 from mmcv.cnn import ConvModule
 
 from mmseg.registry import MODELS
+
 from .decode_head import BaseDecodeHead
 
 

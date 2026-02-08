@@ -4,21 +4,14 @@
 # LICENSE file in the root directory of this source tree.
 
 import math
-import numpy as np
+
 import torch
 import torch.nn as nn
-import torch.nn.functional as F
-from einops import rearrange
-from torch.nn.utils import weight_norm
-
 from models.codec.amphion_codec.quantize import (
     ResidualVQ,
-    VectorQuantize,
-    FactorizedVectorQuantize,
-    LookupFreeQuantize,
 )
-
 from models.codec.amphion_codec.vocos import Vocos
+from torch.nn.utils import weight_norm
 
 
 def WNConv1d(*args, **kwargs):

@@ -18,10 +18,9 @@ from mmdet.models.dense_heads.anchor_free_head import AnchorFreeHead
 from mmdet.models.layers import NormedLinear
 from mmdet.models.layers.transformer import inverse_sigmoid
 from mmdet.models.utils import multi_apply
+from mmdet3d.registry import MODELS, TASK_UTILS
 from mmengine.model.weight_init import bias_init_with_prob
 from mmengine.structures import InstanceData
-
-from mmdet3d.registry import MODELS, TASK_UTILS
 from projects.PETR.petr.utils import normalize_bbox
 
 

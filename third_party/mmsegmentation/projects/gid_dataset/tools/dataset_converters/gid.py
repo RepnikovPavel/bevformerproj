@@ -4,9 +4,10 @@ import math
 import os
 import os.path as osp
 
-import mmcv
 import numpy as np
 from mmengine.utils import ProgressBar, mkdir_or_exist
+
+import mmcv
 
 
 def parse_args():

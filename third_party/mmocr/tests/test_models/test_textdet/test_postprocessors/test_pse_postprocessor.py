@@ -2,10 +2,9 @@
 import unittest
 
 import torch
-from parameterized import parameterized
-
 from mmocr.models.textdet.postprocessors import PSEPostprocessor
 from mmocr.structures import TextDetDataSample
+from parameterized import parameterized
 
 
 class TestPSEPostprocessor(unittest.TestCase):

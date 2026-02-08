@@ -2,6 +2,7 @@
 """Evaluation metrics based on pixels."""
 
 from mmagic.registry import METRICS
+
 from .base_sample_wise_metric import BaseSampleWiseMetric
 
 

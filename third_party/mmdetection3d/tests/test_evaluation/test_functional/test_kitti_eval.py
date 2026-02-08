@@ -2,7 +2,6 @@
 import numpy as np
 import pytest
 import torch
-
 from mmdet3d.evaluation import do_eval, eval_class, kitti_eval
 
 

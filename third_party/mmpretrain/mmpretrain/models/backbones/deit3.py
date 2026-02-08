@@ -11,8 +11,14 @@ from mmengine.utils import deprecated_api_warning
 from torch import nn
 
 from mmpretrain.registry import MODELS
-from ..utils import (LayerScale, MultiheadAttention, build_norm_layer,
-                     resize_pos_embed, to_2tuple)
+
+from ..utils import (
+    LayerScale,
+    MultiheadAttention,
+    build_norm_layer,
+    resize_pos_embed,
+    to_2tuple,
+)
 from .vision_transformer import VisionTransformer
 
 

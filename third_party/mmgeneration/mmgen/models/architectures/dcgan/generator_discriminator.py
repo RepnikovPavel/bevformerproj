@@ -8,6 +8,7 @@ from mmcv.utils.parrots_wrapper import _BatchNorm
 
 from mmgen.models.builder import MODULES
 from mmgen.utils import get_root_logger
+
 from ..common import get_module_device
 
 

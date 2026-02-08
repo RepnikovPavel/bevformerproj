@@ -1,6 +1,7 @@
 """Bridge utils."""
 from __future__ import absolute_import
 
+
 def try_import(package, message=None):
     """Try import specified package, with custom message support.
     Parameters

@@ -6,7 +6,6 @@ import torch
 import torch.nn as nn
 from mmengine.logging import MessageHub
 from mmengine.testing import assert_allclose
-
 from mmselfsup.models.utils import CosineEMA
 
 

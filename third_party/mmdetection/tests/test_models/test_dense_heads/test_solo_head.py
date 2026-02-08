@@ -3,14 +3,12 @@ from unittest import TestCase
 
 import numpy as np
 import torch
+from mmdet import *  # noqa
+from mmdet.models.dense_heads import DecoupledSOLOHead, DecoupledSOLOLightHead, SOLOHead
+from mmdet.structures.mask import BitmapMasks
 from mmengine.config import ConfigDict
 from mmengine.structures import InstanceData
 from parameterized import parameterized
-
-from mmdet import *  # noqa
-from mmdet.models.dense_heads import (DecoupledSOLOHead,
-                                      DecoupledSOLOLightHead, SOLOHead)
-from mmdet.structures.mask import BitmapMasks
 
 
 def _rand_masks(num_items, bboxes, img_w, img_h):

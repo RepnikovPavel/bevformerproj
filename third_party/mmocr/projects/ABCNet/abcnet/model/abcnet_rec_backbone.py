@@ -2,7 +2,6 @@
 import torch.nn as nn
 from mmcv.cnn import ConvModule
 from mmengine.model import BaseModule, Sequential
-
 from mmocr.registry import MODELS
 
 

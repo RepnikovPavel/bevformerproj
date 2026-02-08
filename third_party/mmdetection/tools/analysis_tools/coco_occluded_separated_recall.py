@@ -1,11 +1,11 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 from argparse import ArgumentParser
 
-import mmengine
-from mmengine.logging import print_log
-
 from mmdet.datasets import CocoDataset
 from mmdet.evaluation import CocoOccludedSeparatedMetric
+from mmengine.logging import print_log
+
+import mmengine
 
 
 def main():

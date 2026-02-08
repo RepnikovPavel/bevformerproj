@@ -2,12 +2,12 @@
 import base64
 import os
 
-import mmcv
 import numpy as np
 import torch
+from mmdet.apis import inference_detector, init_detector
 from ts.torch_handler.base_handler import BaseHandler
 
-from mmdet.apis import inference_detector, init_detector
+import mmcv
 
 
 class MMdetHandler(BaseHandler):

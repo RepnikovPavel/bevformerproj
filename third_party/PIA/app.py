@@ -9,13 +9,11 @@ from glob import glob
 import gradio as gr
 import numpy as np
 import torch
-from omegaconf import OmegaConf
-from PIL import Image
-
 from animatediff.pipelines import I2VPipeline
 from animatediff.utils.util import save_videos_grid
 from diffusers import DDIMScheduler, EulerDiscreteScheduler, PNDMScheduler
-
+from omegaconf import OmegaConf
+from PIL import Image
 
 sample_idx = 0
 scheduler_dict = {

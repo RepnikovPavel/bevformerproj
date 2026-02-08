@@ -1,7 +1,6 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import torch
 import torch.nn.functional as F
-
 from mmseg.models.losses import CrossEntropyLoss, weight_reduce_loss
 
 

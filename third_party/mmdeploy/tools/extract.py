@@ -5,7 +5,6 @@ import os.path as osp
 
 import onnx
 import onnx.helper
-
 from mmdeploy.apis.onnx import extract_partition
 from mmdeploy.utils import get_root_logger
 

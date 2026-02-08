@@ -1,9 +1,7 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import pytest
 import torch
-
-from mmagic.models.editors.edvr.edvr_net import (EDVRNet, PCDAlignment,
-                                                 TSAFusion)
+from mmagic.models.editors.edvr.edvr_net import EDVRNet, PCDAlignment, TSAFusion
 
 
 def test_pcd_alignment():

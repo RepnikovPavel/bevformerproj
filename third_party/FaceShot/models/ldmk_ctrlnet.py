@@ -1,22 +1,19 @@
-from typing import Any, Dict, List, Optional, Tuple, Union
+import os
 from dataclasses import dataclass
+from typing import Optional, Tuple, Union
 
+import models.cmp.models as cmp_models
+import models.cmp.utils as cmp_utils
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-
+import torchvision.transforms as transforms
+import yaml
 from diffusers.configuration_utils import register_to_config
 from diffusers.utils import BaseOutput
-
 from models.controlnet_sdv import ControlNetSDVModel, zero_module
-from models.softsplat import softsplat
-import models.cmp.models as cmp_models
-import models.cmp.utils as cmp_utils
 from models.occlusion.hourglass import ForegroundMatting
-
-import yaml
-import os
-import torchvision.transforms as transforms
+from models.softsplat import softsplat
 
 
 class ArgObj(object):

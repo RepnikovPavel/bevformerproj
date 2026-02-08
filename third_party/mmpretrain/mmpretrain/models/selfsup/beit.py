@@ -12,6 +12,7 @@ from mmpretrain.models.backbones import BEiTViT
 from mmpretrain.models.utils import NormEMAVectorQuantizer, resize_pos_embed
 from mmpretrain.registry import MODELS
 from mmpretrain.structures import DataSample
+
 from .base import BaseSelfSupervisor
 
 

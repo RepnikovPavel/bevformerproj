@@ -11,6 +11,7 @@ from numpy import ndarray
 
 from mmocr.registry import MODELS
 from mmocr.structures import TextDetDataSample
+
 from .base import BaseTextDetPostProcessor
 
 

@@ -1,7 +1,7 @@
 import torch
 import torch.nn as nn
-import torch.nn.functional as F
 from mmcv.cnn import constant_init, kaiming_init
+
 from ...registry import SPATIAL_TEMPORAL_MODULES
 
 

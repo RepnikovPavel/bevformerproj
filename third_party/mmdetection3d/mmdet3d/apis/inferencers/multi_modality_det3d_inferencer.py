@@ -3,17 +3,17 @@ import os.path as osp
 import warnings
 from typing import Dict, List, Optional, Sequence, Union
 
-import mmcv
-import mmengine
 import numpy as np
 from mmengine.dataset import Compose
-from mmengine.fileio import (get_file_backend, isdir, join_path,
-                             list_dir_or_file)
+from mmengine.fileio import get_file_backend, isdir, join_path, list_dir_or_file
 from mmengine.infer.infer import ModelType
 from mmengine.structures import InstanceData
 
+import mmcv
+import mmengine
 from mmdet3d.registry import INFERENCERS
 from mmdet3d.utils import ConfigType
+
 from .base_3d_inferencer import Base3DInferencer
 
 InstanceList = List[InstanceData]

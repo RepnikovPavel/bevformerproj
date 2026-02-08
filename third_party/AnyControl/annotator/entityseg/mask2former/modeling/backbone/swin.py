@@ -13,9 +13,8 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 import torch.utils.checkpoint as checkpoint
-from timm.models.layers import DropPath, to_2tuple, trunc_normal_
-
 from detectron2.modeling import BACKBONE_REGISTRY, Backbone, ShapeSpec
+from timm.models.layers import DropPath, to_2tuple, trunc_normal_
 
 
 class Mlp(nn.Module):

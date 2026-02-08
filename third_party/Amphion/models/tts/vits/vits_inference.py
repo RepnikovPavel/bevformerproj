@@ -3,17 +3,18 @@
 # This source code is licensed under the MIT license found in the
 # LICENSE file in the root directory of this source tree.
 
+import json
 import os
 import time
+
 import numpy as np
-from tqdm import tqdm
 import torch
-import json
 from models.tts.base.tts_inferece import TTSInference
-from models.tts.vits.vits_dataset import VITSTestDataset, VITSTestCollator
 from models.tts.vits.vits import SynthesizerTrn
+from models.tts.vits.vits_dataset import VITSTestCollator, VITSTestDataset
 from processors.phone_extractor import phoneExtractor
 from text.text_token_collation import phoneIDCollation
+from tqdm import tqdm
 from utils.data_utils import *
 
 

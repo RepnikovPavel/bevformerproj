@@ -2,10 +2,9 @@
 from unittest import TestCase
 
 import torch
+from mmdet.models.task_modules.assigners import RegionAssigner
 from mmengine.config import ConfigDict
 from mmengine.structures import InstanceData
-
-from mmdet.models.task_modules.assigners import RegionAssigner
 
 
 class TestRegionAssigner(TestCase):

@@ -69,8 +69,11 @@ def _get_extension():
         CppExtension = partial(Extension, cuda=False)
         CUDAExtension = partial(Extension, cuda=True)
     else:
-        from torch.utils.cpp_extension import (BuildExtension, CppExtension,
-                                               CUDAExtension)
+        from torch.utils.cpp_extension import (
+            BuildExtension,
+            CppExtension,
+            CUDAExtension,
+        )
     return BuildExtension, CppExtension, CUDAExtension
 
 
@@ -78,13 +81,19 @@ def _get_pool() -> tuple:
     """A wrapper to obtain base classes of pooling layers from PyTorch or
     Parrots."""
     if TORCH_VERSION == 'parrots':
-        from parrots.nn.modules.pool import (_AdaptiveAvgPoolNd,
-                                             _AdaptiveMaxPoolNd, _AvgPoolNd,
-                                             _MaxPoolNd)
+        from parrots.nn.modules.pool import (
+            _AdaptiveAvgPoolNd,
+            _AdaptiveMaxPoolNd,
+            _AvgPoolNd,
+            _MaxPoolNd,
+        )
     else:
-        from torch.nn.modules.pooling import (_AdaptiveAvgPoolNd,
-                                              _AdaptiveMaxPoolNd, _AvgPoolNd,
-                                              _MaxPoolNd)
+        from torch.nn.modules.pooling import (
+            _AdaptiveAvgPoolNd,
+            _AdaptiveMaxPoolNd,
+            _AvgPoolNd,
+            _MaxPoolNd,
+        )
     return _AdaptiveAvgPoolNd, _AdaptiveMaxPoolNd, _AvgPoolNd, _MaxPoolNd
 
 

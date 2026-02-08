@@ -10,9 +10,9 @@ from typing import Any, Optional, Tuple, Type
 
 import numpy as np
 import torch
+from mmseg.registry import MODELS
 from torch import nn
 
-from mmseg.registry import MODELS
 from .common import LayerNorm2d
 
 

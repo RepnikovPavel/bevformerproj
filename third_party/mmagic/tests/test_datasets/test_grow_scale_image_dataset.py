@@ -2,7 +2,6 @@
 import os.path as osp
 
 import pytest
-
 from mmagic.datasets import GrowScaleImgDataset
 from mmagic.utils import register_all_modules
 

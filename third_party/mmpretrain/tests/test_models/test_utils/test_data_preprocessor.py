@@ -3,10 +3,13 @@ from unittest import TestCase
 
 import pytest
 import torch
-
-from mmpretrain.models import (ClsDataPreprocessor, RandomBatchAugment,
-                               SelfSupDataPreprocessor,
-                               TwoNormDataPreprocessor, VideoDataPreprocessor)
+from mmpretrain.models import (
+    ClsDataPreprocessor,
+    RandomBatchAugment,
+    SelfSupDataPreprocessor,
+    TwoNormDataPreprocessor,
+    VideoDataPreprocessor,
+)
 from mmpretrain.registry import MODELS
 from mmpretrain.structures import DataSample
 

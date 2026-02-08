@@ -3,9 +3,9 @@ import datetime
 import sys
 from unittest import TestCase
 
-from mmengine import DefaultScope
-
 from mmpose.utils import register_all_modules
+
+from mmengine import DefaultScope
 
 
 class TestSetupEnv(TestCase):

@@ -3,11 +3,10 @@ import platform
 
 import pytest
 import torch
-from mmengine.utils.dl_utils import TORCH_VERSION
-from mmengine.utils.version_utils import digit_version
-
 from mmagic.models.editors.stylegan2 import StyleGAN2Generator
 from mmagic.models.losses import GeneratorPathRegularizerComps
+from mmengine.utils.dl_utils import TORCH_VERSION
+from mmengine.utils.version_utils import digit_version
 
 
 @pytest.mark.skipif(

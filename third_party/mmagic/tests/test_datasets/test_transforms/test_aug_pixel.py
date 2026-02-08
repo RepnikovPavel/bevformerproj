@@ -3,10 +3,14 @@ import copy
 
 import numpy as np
 import pytest
-
-from mmagic.datasets.transforms import (BinarizeImage, Clip, ColorJitter,
-                                        RandomAffine, RandomMaskDilation,
-                                        UnsharpMasking)
+from mmagic.datasets.transforms import (
+    BinarizeImage,
+    Clip,
+    ColorJitter,
+    RandomAffine,
+    RandomMaskDilation,
+    UnsharpMasking,
+)
 
 
 class TestAugmentations:

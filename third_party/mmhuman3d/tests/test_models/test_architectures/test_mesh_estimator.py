@@ -1,5 +1,4 @@
 import torch
-
 from mmhuman3d.core.cameras import build_cameras
 from mmhuman3d.models.architectures.mesh_estimator import (
     ImageBodyModelEstimator,

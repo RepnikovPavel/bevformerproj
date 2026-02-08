@@ -6,11 +6,12 @@ import os.path as osp
 from functools import partial
 from typing import Dict, List
 
-import mmengine
 import numpy as np
 import smplx
 import torch
 from pycocotools.coco import COCO
+
+import mmengine
 
 
 class SMPLX(object):

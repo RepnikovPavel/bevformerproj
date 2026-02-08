@@ -7,7 +7,6 @@ with read_base():
 
 from mmcv.transforms import RandomResize
 from mmcv.transforms.loading import LoadImageFromFile
-
 from mmdet.datasets.transforms.formatting import PackDetInputs
 from mmdet.datasets.transforms.loading import LoadPanopticAnnotations
 from mmdet.datasets.transforms.transforms import RandomFlip

@@ -5,6 +5,7 @@ import torch
 
 from mmselfsup.registry import MODELS
 from mmselfsup.structures import SelfSupDataSample
+
 from ..utils import GatherLayer
 from .base import BaseModel
 

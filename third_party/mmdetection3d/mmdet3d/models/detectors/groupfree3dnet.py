@@ -1,6 +1,7 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 
 from mmdet3d.registry import MODELS
+
 from ...structures.det3d_data_sample import SampleList
 from .single_stage import SingleStage3DDetector
 

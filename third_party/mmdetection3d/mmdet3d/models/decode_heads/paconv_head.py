@@ -6,6 +6,7 @@ from torch import Tensor
 
 from mmdet3d.registry import MODELS
 from mmdet3d.utils.typing_utils import ConfigType
+
 from .pointnet2_head import PointNet2Head
 
 

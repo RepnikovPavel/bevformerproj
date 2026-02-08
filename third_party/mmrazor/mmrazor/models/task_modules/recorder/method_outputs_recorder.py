@@ -7,6 +7,7 @@ from mmengine.utils import import_modules_from_strings
 from torch import nn
 
 from mmrazor.registry import TASK_UTILS
+
 from .base_recorder import BaseRecorder
 
 

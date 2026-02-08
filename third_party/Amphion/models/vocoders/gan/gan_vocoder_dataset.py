@@ -3,16 +3,13 @@
 # This source code is licensed under the MIT license found in the
 # LICENSE file in the root directory of this source tree.
 
-import torch
 import random
 
 import numpy as np
-
-from torch.nn import functional as F
-
+import torch
+from models.vocoders.vocoder_dataset import VocoderDataset
 from torch.nn.utils.rnn import pad_sequence
 from utils.data_utils import *
-from models.vocoders.vocoder_dataset import VocoderDataset
 
 
 class GANVocoderDataset(VocoderDataset):

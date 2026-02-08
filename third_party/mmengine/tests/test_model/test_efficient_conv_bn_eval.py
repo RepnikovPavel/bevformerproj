@@ -3,14 +3,14 @@ import unittest
 from unittest import TestCase
 
 import torch
-from torch import nn
-
-from mmengine.model.efficient_conv_bn_eval import \
-    turn_on_efficient_conv_bn_eval_for_single_model
+from mmengine.model.efficient_conv_bn_eval import (
+    turn_on_efficient_conv_bn_eval_for_single_model,
+)
 from mmengine.testing import assert_allclose
 from mmengine.utils import is_installed
 from mmengine.utils.dl_utils import TORCH_VERSION
 from mmengine.utils.version_utils import digit_version
+from torch import nn
 
 mmcv_is_installed = is_installed('mmcv')
 

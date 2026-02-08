@@ -6,13 +6,14 @@ One need to make sure all slaves machines are ssh-able.
 """
 from __future__ import absolute_import
 
-import os
-import sys
 import json
-import uuid
 import logging
+import os
+import uuid
 from threading import Thread
+
 from . import tracker
+
 try:
     import pymesos.subprocess
     logging.getLogger('pymesos').setLevel(logging.WARNING)

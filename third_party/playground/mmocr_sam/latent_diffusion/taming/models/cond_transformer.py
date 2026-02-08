@@ -1,8 +1,6 @@
-import os, math
+import pytorch_lightning as pl
 import torch
 import torch.nn.functional as F
-import pytorch_lightning as pl
-
 from main import instantiate_from_config
 from taming.modules.util import SOSProvider
 

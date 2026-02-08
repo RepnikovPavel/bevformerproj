@@ -5,9 +5,11 @@
 
 # This code is modified from https://github.com/jaywalnut310/vits/blob/main/models.pyimport torch
 
+import math
+
 from torch import nn
 from torch.nn import functional as F
-import math
+
 from modules.flow.modules import *
 
 

@@ -2,8 +2,9 @@ import argparse
 import json
 import os.path as osp
 
-import mmengine
 from pycocotools.coco import COCO
+
+import mmengine
 
 
 def diff_image_id(coco2017_train_ids, ref_ids):

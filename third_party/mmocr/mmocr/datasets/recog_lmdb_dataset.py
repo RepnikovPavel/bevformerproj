@@ -1,9 +1,9 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 from typing import Any, Callable, List, Optional, Sequence, Tuple, Union
 
-import mmcv
 from mmengine.dataset import BaseDataset
 
+import mmcv
 from mmocr.registry import DATASETS
 
 

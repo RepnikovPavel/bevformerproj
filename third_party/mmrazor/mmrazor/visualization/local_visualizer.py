@@ -8,8 +8,7 @@ import numpy as np
 import torch
 import torch.nn.functional as F
 from mmengine.dist import master_only
-from mmengine.visualization.utils import (convert_overlay_heatmap,
-                                          img_from_canvas)
+from mmengine.visualization.utils import convert_overlay_heatmap, img_from_canvas
 
 
 @master_only

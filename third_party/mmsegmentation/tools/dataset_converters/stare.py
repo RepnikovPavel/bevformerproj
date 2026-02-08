@@ -6,8 +6,9 @@ import os.path as osp
 import tarfile
 import tempfile
 
-import mmcv
 from mmengine.utils import mkdir_or_exist
+
+import mmcv
 
 STARE_LEN = 20
 TRAINING_LEN = 10

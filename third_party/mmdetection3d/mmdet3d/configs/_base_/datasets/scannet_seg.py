@@ -1,19 +1,22 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 from mmcv.transforms.processing import TestTimeAug
-from mmengine.dataset.sampler import DefaultSampler
-from mmengine.visualization.vis_backend import LocalVisBackend
-
 from mmdet3d.datasets.scannet_dataset import ScanNetSegDataset
 from mmdet3d.datasets.transforms.formating import Pack3DDetInputs
-from mmdet3d.datasets.transforms.loading import (LoadAnnotations3D,
+from mmdet3d.datasets.transforms.loading import (
+                                                 LoadAnnotations3D,
                                                  LoadPointsFromFile,
                                                  NormalizePointsColor,
-                                                 PointSegClassMapping)
-from mmdet3d.datasets.transforms.transforms_3d import (IndoorPatchPointSample,
-                                                       RandomFlip3D)
+                                                 PointSegClassMapping,
+)
+from mmdet3d.datasets.transforms.transforms_3d import (
+                                                 IndoorPatchPointSample,
+                                                 RandomFlip3D,
+)
 from mmdet3d.evaluation.metrics.seg_metric import SegMetric
 from mmdet3d.models.segmentors.seg3d_tta import Seg3DTTAModel
 from mmdet3d.visualization.local_visualizer import Det3DLocalVisualizer
+from mmengine.dataset.sampler import DefaultSampler
+from mmengine.visualization.vis_backend import LocalVisBackend
 
 # For ScanNet seg we usually do 20-class segmentation
 class_names = ('wall', 'floor', 'cabinet', 'bed', 'chair', 'sofa', 'table',

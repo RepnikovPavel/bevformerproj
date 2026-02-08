@@ -1,9 +1,11 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import torch
-
-from mmagic.models.editors.swinir.swinir_utils import (drop_path, to_2tuple,
-                                                       window_partition,
-                                                       window_reverse)
+from mmagic.models.editors.swinir.swinir_utils import (
+    drop_path,
+    to_2tuple,
+    window_partition,
+    window_reverse,
+)
 
 
 def test_drop_path():

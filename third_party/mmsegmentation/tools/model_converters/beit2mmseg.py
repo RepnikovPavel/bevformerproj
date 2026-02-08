@@ -3,9 +3,10 @@ import argparse
 import os.path as osp
 from collections import OrderedDict
 
-import mmengine
 import torch
 from mmengine.runner import CheckpointLoader
+
+import mmengine
 
 
 def convert_beit(ckpt):

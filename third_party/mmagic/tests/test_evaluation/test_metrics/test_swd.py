@@ -4,7 +4,6 @@ from unittest.mock import MagicMock
 
 import numpy as np
 import torch
-
 from mmagic.evaluation import SlicedWassersteinDistance
 from mmagic.models import DataPreprocessor
 from mmagic.structures import DataSample

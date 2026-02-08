@@ -3,7 +3,6 @@ from unittest import TestCase
 
 import numpy as np
 import torch
-
 from mmengine.dataset import default_collate, pseudo_collate
 from mmengine.structures import BaseDataElement
 from mmengine.utils import is_list_of

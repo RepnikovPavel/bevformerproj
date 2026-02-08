@@ -1,12 +1,18 @@
 # Copyright (c) OpenMMLab. All rights reserved.
-import mmcv
 import pytest
 import torch
+from mmrotate.models.losses import (
+    BCConvexGIoULoss,
+    ConvexGIoULoss,
+    GDLoss,
+    GDLoss_v1,
+    KFLoss,
+    KLDRepPointsLoss,
+    RotatedIoULoss,
+)
 
+import mmcv
 from mmrotate import digit_version
-from mmrotate.models.losses import (BCConvexGIoULoss, ConvexGIoULoss, GDLoss,
-                                    GDLoss_v1, KFLoss, KLDRepPointsLoss,
-                                    RotatedIoULoss)
 
 
 @pytest.mark.skipif(

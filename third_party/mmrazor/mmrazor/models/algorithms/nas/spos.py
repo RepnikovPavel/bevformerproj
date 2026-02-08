@@ -9,6 +9,7 @@ from torch.nn.modules.batchnorm import _BatchNorm
 
 from mmrazor.models.mutators import NasMutator
 from mmrazor.registry import MODELS
+
 from ..base import BaseAlgorithm, LossResults
 
 VALID_MUTATOR_TYPE = Union[NasMutator, Dict]

@@ -4,16 +4,16 @@ from copy import deepcopy
 from typing import Dict, List, Optional, Sequence, Tuple, Union
 
 import cv2
-import mmcv
-import mmengine
 import numpy as np
 from mmcv.image import imflip
 from mmcv.transforms import BaseTransform
 from mmcv.transforms.utils import avoid_cache_randomness, cache_randomness
-from mmengine import is_list_of
 from mmengine.dist import get_dist_info
 from scipy.stats import truncnorm
 
+import mmcv
+import mmengine
+from mmengine import is_list_of
 from mmpose.codecs import *  # noqa: F401, F403
 from mmpose.registry import KEYPOINT_CODECS, TRANSFORMS
 from mmpose.structures.bbox import bbox_xyxy2cs, flip_bbox

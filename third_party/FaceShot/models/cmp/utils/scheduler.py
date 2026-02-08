@@ -1,5 +1,7 @@
-import torch
 from bisect import bisect_right
+
+import torch
+
 
 class _LRScheduler(object):
     def __init__(self, optimizer, last_iter=-1):

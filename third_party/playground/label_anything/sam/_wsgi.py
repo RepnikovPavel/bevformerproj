@@ -1,11 +1,13 @@
 # Copyright (c) OpenMMLab. All rights reserved.
-from label_studio_ml.api import init_app
-from mmdetection import MMDetection
 import argparse
 import json
 import logging
 import logging.config
 import os
+
+from label_studio_ml.api import init_app
+
+from mmdetection import MMDetection
 
 logging.config.dictConfig({
     'version': 1,

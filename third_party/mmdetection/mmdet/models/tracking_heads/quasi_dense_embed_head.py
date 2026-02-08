@@ -10,6 +10,7 @@ from torch.nn.modules.utils import _pair
 
 from mmdet.models.task_modules import SamplingResult
 from mmdet.registry import MODELS
+
 from ..task_modules.tracking import embed_similarity
 
 

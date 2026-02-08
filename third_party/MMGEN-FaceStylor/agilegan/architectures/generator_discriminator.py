@@ -1,11 +1,13 @@
 import random
 
-import mmcv
 import torch
 from mmgen.models.architectures.common import get_module_device
-from mmgen.models.architectures.stylegan.generator_discriminator_v2 import \
-    StyleGANv2Generator
+from mmgen.models.architectures.stylegan.generator_discriminator_v2 import (
+    StyleGANv2Generator,
+)
 from mmgen.models.builder import MODULES
+
+import mmcv
 
 
 @MODULES.register_module()

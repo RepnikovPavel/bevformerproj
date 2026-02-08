@@ -7,9 +7,7 @@ from datetime import timedelta
 from pathlib import Path
 
 import torch
-from torch.nn.parallel import DataParallel, DistributedDataParallel
-
-from openunreid.apis import BaseRunner, batch_processor, test_reid, set_random_seed
+from openunreid.apis import BaseRunner, batch_processor, set_random_seed, test_reid
 from openunreid.core.solvers import build_lr_scheduler, build_optimizer
 from openunreid.data import (
     build_test_dataloader,
@@ -28,6 +26,7 @@ from openunreid.utils.config import (
 from openunreid.utils.dist_utils import init_dist, synchronize
 from openunreid.utils.file_utils import mkdir_if_missing
 from openunreid.utils.logger import Logger
+from torch.nn.parallel import DataParallel, DistributedDataParallel
 
 
 class SpCLRunner(BaseRunner):

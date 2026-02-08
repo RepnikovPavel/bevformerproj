@@ -5,13 +5,14 @@ import os.path as osp
 from collections import OrderedDict
 from typing import Dict, List, Optional, Sequence, Union
 
-import mmcv
 import numpy as np
 from mmcv.utils import print_log
 from mmdet.datasets.api_wrappers import COCO, COCOeval
 from mmdet.datasets.builder import DATASETS
 from mmdet.datasets.coco import CocoDataset
 from terminaltables import AsciiTable
+
+import mmcv
 
 from .base import BaseFewShotDataset
 

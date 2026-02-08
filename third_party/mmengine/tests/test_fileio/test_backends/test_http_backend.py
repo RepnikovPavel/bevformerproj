@@ -4,7 +4,6 @@ from unittest import TestCase
 
 import cv2
 import numpy as np
-
 from mmengine.fileio.backends import HTTPBackend
 
 

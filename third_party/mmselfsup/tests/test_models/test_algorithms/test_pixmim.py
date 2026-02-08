@@ -4,7 +4,6 @@ import platform
 
 import pytest
 import torch
-
 from mmselfsup.models.algorithms.pixmim import PixMIM
 from mmselfsup.structures import SelfSupDataSample
 from mmselfsup.utils import register_all_modules

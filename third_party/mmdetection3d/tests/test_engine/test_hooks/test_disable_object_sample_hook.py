@@ -2,10 +2,9 @@
 from unittest import TestCase
 from unittest.mock import Mock
 
-from mmengine.dataset import BaseDataset
-
 from mmdet3d.datasets.transforms import ObjectSample
 from mmdet3d.engine.hooks import DisableObjectSampleHook
+from mmengine.dataset import BaseDataset
 
 
 class TestDisableObjectSampleHook(TestCase):

@@ -1,10 +1,13 @@
 # Copyright (c) OpenMMLab. All rights reserved.
-import mmcv
 import torch
+from mmtrack.models.track_heads.stark_head import (
+    CornerPredictorHead,
+    ScoreHead,
+    StarkHead,
+    StarkTransformer,
+)
 
-from mmtrack.models.track_heads.stark_head import (CornerPredictorHead,
-                                                   ScoreHead, StarkHead,
-                                                   StarkTransformer)
+import mmcv
 
 
 def test_corner_predictor_head():

@@ -8,6 +8,7 @@ from mmengine.model import BaseModule
 from torch.nn.modules.batchnorm import _BatchNorm
 
 from mmpose.registry import MODELS
+
 from ..utils import CSPLayer
 
 

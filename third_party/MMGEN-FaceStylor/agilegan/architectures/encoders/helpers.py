@@ -2,8 +2,17 @@ from collections import namedtuple
 
 # yapf: disable
 import torch
-from torch.nn import (AdaptiveAvgPool2d, BatchNorm2d, Conv2d, MaxPool2d,
-                      Module, PReLU, ReLU, Sequential, Sigmoid)
+from torch.nn import (
+    AdaptiveAvgPool2d,
+    BatchNorm2d,
+    Conv2d,
+    MaxPool2d,
+    Module,
+    PReLU,
+    ReLU,
+    Sequential,
+    Sigmoid,
+)
 
 """
 ArcFace implementation from [TreB1eN](https://github.com/TreB1eN/InsightFace_Pytorch) # isort:skip  # noqa

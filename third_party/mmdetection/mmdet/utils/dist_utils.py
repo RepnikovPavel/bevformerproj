@@ -8,8 +8,7 @@ import numpy as np
 import torch
 import torch.distributed as dist
 from mmengine.dist import get_dist_info
-from torch._utils import (_flatten_dense_tensors, _take_tensors,
-                          _unflatten_dense_tensors)
+from torch._utils import _flatten_dense_tensors, _take_tensors, _unflatten_dense_tensors
 
 
 def _allreduce_coalesced(tensors, world_size, bucket_size_mb=-1):

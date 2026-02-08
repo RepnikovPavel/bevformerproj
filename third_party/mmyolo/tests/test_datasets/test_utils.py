@@ -6,7 +6,6 @@ import torch
 from mmdet.structures import DetDataSample
 from mmdet.structures.bbox import HorizontalBoxes
 from mmengine.structures import InstanceData
-
 from mmyolo.datasets import BatchShapePolicy, yolov5_collate
 
 

@@ -11,8 +11,15 @@ from torch import Tensor
 
 from mmseg.registry import MODELS
 from mmseg.structures import SegDataSample
-from mmseg.utils import (ConfigType, OptConfigType, OptMultiConfig,
-                         OptSampleList, SampleList, add_prefix)
+from mmseg.utils import (
+    ConfigType,
+    OptConfigType,
+    OptMultiConfig,
+    OptSampleList,
+    SampleList,
+    add_prefix,
+)
+
 from ..utils import resize
 from .encoder_decoder import EncoderDecoder
 

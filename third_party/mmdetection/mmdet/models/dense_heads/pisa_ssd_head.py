@@ -6,6 +6,7 @@ from torch import Tensor
 
 from mmdet.registry import MODELS
 from mmdet.utils import InstanceList, OptInstanceList
+
 from ..losses import CrossEntropyLoss, SmoothL1Loss, carl_loss, isr_p
 from ..utils import multi_apply
 from .ssd_head import SSDHead

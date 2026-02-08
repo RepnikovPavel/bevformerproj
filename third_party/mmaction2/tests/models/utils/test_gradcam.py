@@ -3,7 +3,6 @@ import platform
 
 import pytest
 import torch
-
 from mmaction.registry import MODELS
 from mmaction.structures import ActionDataSample
 from mmaction.testing import get_recognizer_cfg

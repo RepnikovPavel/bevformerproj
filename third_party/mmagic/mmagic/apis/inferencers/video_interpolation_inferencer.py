@@ -5,8 +5,6 @@ import os.path as osp
 from typing import Dict, List, Optional, Tuple, Union
 
 import cv2
-import mmcv
-import mmengine
 import numpy as np
 import torch
 from mmengine.dataset import Compose
@@ -14,8 +12,10 @@ from mmengine.dataset.utils import default_collate as collate
 from mmengine.logging import MMLogger
 from mmengine.utils import ProgressBar
 
-from .base_mmagic_inferencer import (BaseMMagicInferencer, InputsType,
-                                     PredType, ResType)
+import mmcv
+import mmengine
+
+from .base_mmagic_inferencer import BaseMMagicInferencer, InputsType, PredType, ResType
 from .inference_functions import VIDEO_EXTENSIONS, read_frames, read_image
 
 

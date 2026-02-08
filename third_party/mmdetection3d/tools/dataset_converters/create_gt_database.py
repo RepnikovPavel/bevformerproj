@@ -2,17 +2,17 @@
 import pickle
 from os import path as osp
 
-import mmcv
-import mmengine
 import numpy as np
 from mmcv.ops import roi_align
 from mmdet.evaluation import bbox_overlaps
-from mmengine import print_log, track_iter_progress
+from mmdet3d.registry import DATASETS
+from mmdet3d.structures.ops import box_np_ops as box_np_ops
 from pycocotools import mask as maskUtils
 from pycocotools.coco import COCO
 
-from mmdet3d.registry import DATASETS
-from mmdet3d.structures.ops import box_np_ops as box_np_ops
+import mmcv
+import mmengine
+from mmengine import print_log, track_iter_progress
 
 
 def _poly2mask(mask_ann, img_h, img_w):

@@ -1,12 +1,14 @@
 # Copyright (c) OpenMMLab. All rights reserved.
-from mmengine.dataset import DefaultSampler
-
 from mmagic.datasets import BasicImageDataset
-from mmagic.datasets.transforms import (GenerateCoordinateAndCell,
-                                        LoadImageFromFile, PackInputs,
-                                        RandomDownSampling)
+from mmagic.datasets.transforms import (
+                                        GenerateCoordinateAndCell,
+                                        LoadImageFromFile,
+                                        PackInputs,
+                                        RandomDownSampling,
+)
 from mmagic.engine.runner import MultiTestLoop
 from mmagic.evaluation import PSNR, SSIM
+from mmengine.dataset import DefaultSampler
 
 scale_test_list = [2, 3, 4, 6, 18, 30]
 

@@ -1,6 +1,7 @@
 # Copyright (c) OpenMMLab. All rights reserved.
-import mmengine
 import numpy as np
+
+import mmengine
 
 
 def write_to_json(config: dict, filename: str):

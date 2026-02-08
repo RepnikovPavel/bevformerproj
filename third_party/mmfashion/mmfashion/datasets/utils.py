@@ -1,9 +1,11 @@
 from __future__ import division
+
 from collections.abc import Sequence
 
-import mmcv
 import numpy as np
 import torch
+
+import mmcv
 
 from .Attr_Pred import AttrDataset
 from .Consumer_to_shop import ConsumerToShopDataset

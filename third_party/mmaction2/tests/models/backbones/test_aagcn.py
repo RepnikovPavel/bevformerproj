@@ -1,6 +1,5 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import torch
-
 from mmaction.models import AAGCN
 from mmaction.utils import register_all_modules
 

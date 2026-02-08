@@ -3,7 +3,6 @@ import copy
 import unittest
 
 import numpy as np
-
 from mmocr.utils import remove_pipeline_elements
 
 

@@ -1,10 +1,8 @@
 # Copyright (c) OpenMMLab. All rights reserved.
-from mmengine.model import ExponentialMovingAverage
-
 from mmagic.models import DataPreprocessor
 from mmagic.models.editors import StyleGAN2
-from mmagic.models.editors.stylegan2 import (StyleGAN2Discriminator,
-                                             StyleGAN2Generator)
+from mmagic.models.editors.stylegan2 import StyleGAN2Discriminator, StyleGAN2Generator
+from mmengine.model import ExponentialMovingAverage
 
 # define GAN model
 

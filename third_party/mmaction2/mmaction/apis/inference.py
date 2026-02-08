@@ -3,7 +3,6 @@ import os.path as osp
 from pathlib import Path
 from typing import List, Optional, Tuple, Union
 
-import mmengine
 import numpy as np
 import torch
 import torch.nn as nn
@@ -13,6 +12,7 @@ from mmengine.runner import load_checkpoint
 from mmengine.structures import InstanceData
 from mmengine.utils import track_iter_progress
 
+import mmengine
 from mmaction.registry import MODELS
 from mmaction.structures import ActionDataSample
 

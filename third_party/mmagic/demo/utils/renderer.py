@@ -16,10 +16,9 @@ import numpy as np
 import torch
 import torch.fft
 import torch.nn.functional as F
-from PIL import Image, ImageDraw, ImageFont
-
 from demo.utils.gradio_utils import EasyDict
 from mmagic.apis import MMagicInferencer
+from PIL import Image, ImageDraw, ImageFont
 
 
 class CapturedException(Exception):

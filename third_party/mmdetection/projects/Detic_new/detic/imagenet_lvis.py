@@ -5,10 +5,9 @@ import pickle
 import warnings
 from typing import List, Union
 
-from mmengine.fileio import get_local_path
-
 from mmdet.datasets import LVISV1Dataset
 from mmdet.registry import DATASETS
+from mmengine.fileio import get_local_path
 
 
 @DATASETS.register_module()

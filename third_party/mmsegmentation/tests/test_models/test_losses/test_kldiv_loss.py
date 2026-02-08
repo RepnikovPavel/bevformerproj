@@ -1,6 +1,5 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import torch
-
 from mmseg.models.losses.kldiv_loss import KLDivLoss
 
 

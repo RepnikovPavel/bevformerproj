@@ -9,6 +9,7 @@ from mmengine.model import BaseModule
 
 from mmselfsup.registry import MODELS
 from mmselfsup.utils import distributed_sinkhorn
+
 from ..utils import MultiPrototypes
 
 

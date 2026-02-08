@@ -8,8 +8,9 @@ from mmengine.utils import digit_version
 from mmengine.utils.dl_utils import TORCH_VERSION
 
 try:
-    from torch.distributed.optim import \
-        ZeroRedundancyOptimizer as _ZeroRedundancyOptimizer
+    from torch.distributed.optim import (
+        ZeroRedundancyOptimizer as _ZeroRedundancyOptimizer,
+    )
 except ImportError:
     _ZeroRedundancyOptimizer = object
 

@@ -1,9 +1,9 @@
 # Copyright (c) OpenMMLab. All rights reserved.
-import mmcv
 import pytest
 import torch
-
 from mmrotate.models.dense_heads import SAMRepPointsHead
+
+import mmcv
 
 
 @pytest.mark.skipif(

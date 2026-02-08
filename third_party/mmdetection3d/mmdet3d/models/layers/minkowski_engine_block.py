@@ -9,9 +9,14 @@ from torch import nn
 from mmdet3d.utils import ConfigType, OptConfigType, OptMultiConfig
 
 try:
-    from MinkowskiEngine import (MinkowskiBatchNorm, MinkowskiConvolution,
-                                 MinkowskiConvolutionTranspose, MinkowskiReLU,
-                                 MinkowskiSyncBatchNorm, SparseTensor)
+    from MinkowskiEngine import (
+        MinkowskiBatchNorm,
+        MinkowskiConvolution,
+        MinkowskiConvolutionTranspose,
+        MinkowskiReLU,
+        MinkowskiSyncBatchNorm,
+        SparseTensor,
+    )
     from MinkowskiEngine.modules.resnet_block import BasicBlock, Bottleneck
 except ImportError:
     SparseTensor = None

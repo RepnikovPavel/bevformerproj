@@ -7,10 +7,10 @@ import torch
 
 
 def test_clip_wrapper():
+    from mmagic.models.editors.stable_diffusion.clip_wrapper import (
+        StableDiffusionSafetyChecker,
+    )
     from transformers import CLIPConfig
-
-    from mmagic.models.editors.stable_diffusion.clip_wrapper import \
-        StableDiffusionSafetyChecker
     clipconfig = CLIPConfig()
     safety_checker = StableDiffusionSafetyChecker(clipconfig)
 
@@ -22,8 +22,7 @@ def test_clip_wrapper():
 
 
 def test_load_clip_submodels():
-    from mmagic.models.editors.stable_diffusion.clip_wrapper import \
-        load_clip_submodels
+    from mmagic.models.editors.stable_diffusion.clip_wrapper import load_clip_submodels
     init_cfg = dict(
         type='Pretrained',
         pretrained_model_path='tem',
@@ -39,8 +38,7 @@ def test_load_clip_submodels_transformers_none():
     sys.modules['transformers'] = None
     importlib.reload(
         sys.modules['mmagic.models.editors.stable_diffusion.clip_wrapper'])
-    from mmagic.models.editors.stable_diffusion.clip_wrapper import \
-        load_clip_submodels
+    from mmagic.models.editors.stable_diffusion.clip_wrapper import load_clip_submodels
 
     init_cfg = dict(
         type='Pretrained',

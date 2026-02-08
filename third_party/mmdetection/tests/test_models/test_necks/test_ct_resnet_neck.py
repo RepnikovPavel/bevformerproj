@@ -2,7 +2,6 @@
 import unittest
 
 import torch
-
 from mmdet.models.necks import CTResNetNeck
 
 

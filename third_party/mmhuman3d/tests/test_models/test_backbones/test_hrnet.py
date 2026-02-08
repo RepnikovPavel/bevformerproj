@@ -1,6 +1,5 @@
 import pytest
 import torch
-
 from mmhuman3d.models.backbones.hrnet import (
     HRModule,
     PoseHighResolutionNet,

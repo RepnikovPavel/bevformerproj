@@ -9,6 +9,7 @@ from mmengine.utils import track_iter_progress
 
 from mmpretrain.registry import MODELS, TOKENIZER
 from mmpretrain.structures import DataSample
+
 from ..blip.blip_retrieval import BlipRetrieval, all_gather_concat
 
 

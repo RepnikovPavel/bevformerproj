@@ -19,10 +19,9 @@ Example box operations that are supported:
   * Areas: compute bounding box areas
   * IOU: pairwise intersection-over-union scores
 """
-import numpy as np
-
 import np_box_list
 import np_box_ops
+import numpy as np
 
 
 class SortOrder(object):

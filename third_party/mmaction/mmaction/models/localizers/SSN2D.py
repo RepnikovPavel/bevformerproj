@@ -1,8 +1,9 @@
 import torch
 import torch.nn as nn
-from .base import BaseLocalizer
+
 from .. import builder
 from ..registry import LOCALIZERS
+from .base import BaseLocalizer
 
 
 @LOCALIZERS.register_module

@@ -3,6 +3,7 @@ import json
 from typing import List
 
 from mmocr.registry import DATA_PACKERS
+
 from .base import BasePacker
 
 

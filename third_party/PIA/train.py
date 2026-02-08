@@ -14,24 +14,27 @@ import torch
 import torch.distributed as dist
 import torch.nn.functional as F
 import torchvision
+import wandb
+from animatediff.data.dataset import WebVid10M
+from animatediff.models.resnet import InflatedConv3d
+from animatediff.models.unet import UNet3DConditionModel
+from animatediff.pipelines.validation_pipeline import ValidationPipeline
+from animatediff.utils.util import (
+    prepare_mask_coef_by_score,
+    save_videos_grid,
+    zero_rank_print,
+)
+from diffusers import AutoencoderKL, DDIMScheduler
+from diffusers.models import UNet2DConditionModel
+from diffusers.optimization import get_scheduler
+from diffusers.utils import check_min_version
+from diffusers.utils.import_utils import is_xformers_available
 from einops import rearrange
 from omegaconf import OmegaConf
 from torch.nn.parallel import DistributedDataParallel as DDP
 from torch.utils.data.distributed import DistributedSampler
 from tqdm.auto import tqdm
 from transformers import CLIPTextModel, CLIPTokenizer
-
-import wandb
-from animatediff.data.dataset import WebVid10M
-from animatediff.models.resnet import InflatedConv3d
-from animatediff.models.unet import UNet3DConditionModel
-from animatediff.pipelines.validation_pipeline import ValidationPipeline
-from animatediff.utils.util import prepare_mask_coef_by_score, save_videos_grid, zero_rank_print
-from diffusers import AutoencoderKL, DDIMScheduler
-from diffusers.models import UNet2DConditionModel
-from diffusers.optimization import get_scheduler
-from diffusers.utils import check_min_version
-from diffusers.utils.import_utils import is_xformers_available
 
 
 def init_dist(launcher="slurm", backend="nccl", port=29500, **kwargs):

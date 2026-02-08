@@ -5,7 +5,6 @@ from unittest import TestCase
 import numpy as np
 import torch
 from mmengine.structures import InstanceData, PixelData
-
 from mmpose.datasets.transforms import PackPoseInputs
 from mmpose.structures import PoseDataSample
 

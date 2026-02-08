@@ -5,8 +5,15 @@ import torch.nn.functional as F
 from torch import Tensor
 
 from mmseg.registry import MODELS
-from mmseg.utils import (ConfigType, OptConfigType, OptMultiConfig,
-                         OptSampleList, SampleList, add_prefix)
+from mmseg.utils import (
+    ConfigType,
+    OptConfigType,
+    OptMultiConfig,
+    OptSampleList,
+    SampleList,
+    add_prefix,
+)
+
 from .base import BaseSegmentor
 
 

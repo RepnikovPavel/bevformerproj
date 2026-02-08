@@ -1,6 +1,7 @@
 # Copyright (c) OpenMMLab. All rights reserved.
-import numpy as np
 from typing import Dict, List, Optional, Sequence
+
+import numpy as np
 
 from mmeval.core import BaseMetric
 

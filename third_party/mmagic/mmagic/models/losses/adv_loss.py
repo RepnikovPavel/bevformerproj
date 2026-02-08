@@ -6,6 +6,7 @@ import torch
 import torch.nn as nn
 
 from mmagic.registry import MODELS
+
 from .gan_loss import GANLoss, gradient_penalty_loss
 
 

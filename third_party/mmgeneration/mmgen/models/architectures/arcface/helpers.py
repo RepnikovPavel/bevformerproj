@@ -2,8 +2,17 @@
 from collections import namedtuple
 
 import torch
-from torch.nn import (AdaptiveAvgPool2d, BatchNorm2d, Conv2d, MaxPool2d,
-                      Module, PReLU, ReLU, Sequential, Sigmoid)
+from torch.nn import (
+    AdaptiveAvgPool2d,
+    BatchNorm2d,
+    Conv2d,
+    MaxPool2d,
+    Module,
+    PReLU,
+    ReLU,
+    Sequential,
+    Sigmoid,
+)
 
 # yapf: disable
 """

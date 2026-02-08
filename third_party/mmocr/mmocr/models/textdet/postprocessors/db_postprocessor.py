@@ -11,6 +11,7 @@ from torch import Tensor
 from mmocr.registry import MODELS
 from mmocr.structures import TextDetDataSample
 from mmocr.utils import offset_polygon
+
 from .base import BaseTextDetPostProcessor
 
 

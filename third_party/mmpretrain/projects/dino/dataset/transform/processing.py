@@ -1,11 +1,19 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import random
 
-from mmcv.transforms import RandomApply  # noqa: E501
-from mmcv.transforms import BaseTransform, Compose, RandomFlip, RandomGrayscale
-
-from mmpretrain.datasets.transforms import (ColorJitter, GaussianBlur,
-                                            RandomResizedCrop, Solarize)
+from mmcv.transforms import (
+    BaseTransform,
+    Compose,
+    RandomApply,  # noqa: E501
+    RandomFlip,
+    RandomGrayscale,
+)
+from mmpretrain.datasets.transforms import (
+    ColorJitter,
+    GaussianBlur,
+    RandomResizedCrop,
+    Solarize,
+)
 from mmpretrain.registry import TRANSFORMS
 
 

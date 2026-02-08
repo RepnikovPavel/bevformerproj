@@ -6,6 +6,7 @@ import torch.nn as nn
 import torch.nn.functional as F
 
 from mmseg.registry import MODELS
+
 from .utils import get_class_weight, weight_reduce_loss
 
 

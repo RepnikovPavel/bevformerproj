@@ -1,6 +1,8 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 from mmrazor.models.task_modules.estimators.counters import (
-    DynamicConv2dCounter, DynamicLinearCounter)
+    DynamicConv2dCounter,
+    DynamicLinearCounter,
+)
 from mmrazor.registry import TASK_UTILS
 
 

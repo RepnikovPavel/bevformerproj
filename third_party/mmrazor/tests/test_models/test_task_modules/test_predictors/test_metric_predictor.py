@@ -5,7 +5,6 @@ from unittest import TestCase
 import numpy as np
 import torch.nn as nn
 from mmengine.model import BaseModel
-
 from mmrazor.models import OneShotMutableOP
 from mmrazor.registry import TASK_UTILS
 

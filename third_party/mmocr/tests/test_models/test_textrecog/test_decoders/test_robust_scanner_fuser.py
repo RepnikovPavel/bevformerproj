@@ -3,10 +3,11 @@ from unittest import TestCase
 
 import torch
 from mmengine.structures import LabelData
-
-from mmocr.models.textrecog.decoders import (PositionAttentionDecoder,
-                                             RobustScannerFuser,
-                                             SequenceAttentionDecoder)
+from mmocr.models.textrecog.decoders import (
+    PositionAttentionDecoder,
+    RobustScannerFuser,
+    SequenceAttentionDecoder,
+)
 from mmocr.structures import TextRecogDataSample
 
 

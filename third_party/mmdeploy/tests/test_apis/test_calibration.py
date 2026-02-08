@@ -3,9 +3,9 @@ import os.path as osp
 import tempfile
 from multiprocessing import Process
 
-from mmengine import Config
-
 from mmdeploy.apis import create_calib_input_data
+
+from mmengine import Config
 
 calib_file = tempfile.NamedTemporaryFile(suffix='.h5').name
 ann_file = 'tests/data/annotation.json'

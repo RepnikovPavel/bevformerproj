@@ -2,11 +2,11 @@
 import argparse
 import os.path as osp
 
-from mmengine import Config, DictAction
 from mmengine.registry import init_default_scope
 from mmengine.utils import ProgressBar
-
 from mmseg.registry import DATASETS, VISUALIZERS
+
+from mmengine import Config, DictAction
 
 
 def parse_args():

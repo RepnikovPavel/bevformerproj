@@ -1,8 +1,6 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 from mmengine.config import read_base
 
-from mmpretrain.engine import EMAHook
-
 with read_base():
     from .._base_.datasets.imagenet21k_bs128 import *
     from .._base_.default_runtime import *

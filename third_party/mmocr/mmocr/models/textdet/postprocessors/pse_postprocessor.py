@@ -10,6 +10,7 @@ from mmengine.structures import InstanceData
 
 from mmocr.registry import MODELS
 from mmocr.structures import TextDetDataSample
+
 from .pan_postprocessor import PANPostprocessor
 
 

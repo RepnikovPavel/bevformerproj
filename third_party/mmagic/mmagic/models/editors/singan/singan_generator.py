@@ -10,6 +10,7 @@ from mmengine.model import BaseModule
 from mmengine.runner import load_state_dict
 
 from mmagic.registry import MODELS
+
 from .singan_modules import GeneratorBlock
 
 

@@ -3,11 +3,11 @@ import copy
 import os.path as osp
 from typing import Callable, Dict, List, Optional, Sequence, Union
 
-import mmengine
 import mmengine.fileio as fileio
 import numpy as np
 from mmengine.dataset import BaseDataset, Compose
 
+import mmengine
 from mmseg.registry import DATASETS
 
 

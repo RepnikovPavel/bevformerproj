@@ -13,7 +13,6 @@ from einops import rearrange
 from PIL import Image
 from tqdm import tqdm
 
-
 # We recommend to use the following affinity score(motion magnitude)
 # Also encourage to try to construct different score by yourself
 RANGE_LIST = [

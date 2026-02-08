@@ -1,7 +1,6 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import random
 
-import mmengine
 import numpy as np
 import torch
 import torch.nn as nn
@@ -9,11 +8,17 @@ from mmengine.model import BaseModule
 from mmengine.runner.amp import autocast
 from mmengine.runner.checkpoint import _load_checkpoint_with_prefix
 
+import mmengine
 from mmagic.registry import MODELS
+
 from ...utils import get_module_device
 from ..pggan import PixelNorm
-from ..stylegan1 import (ConstantInput, EqualLinearActModule, get_mean_latent,
-                         style_mixing)
+from ..stylegan1 import (
+    ConstantInput,
+    EqualLinearActModule,
+    get_mean_latent,
+    style_mixing,
+)
 from .stylegan2_modules import ModulatedStyleConv, ModulatedToRGB
 
 

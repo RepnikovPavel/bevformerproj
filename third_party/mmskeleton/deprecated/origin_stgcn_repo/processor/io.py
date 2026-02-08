@@ -1,19 +1,15 @@
 #!/usr/bin/env python
 # pylint: disable=W0201
-import sys
 import argparse
-import yaml
-import numpy as np
 
 # torch
-import torch
 import torch.nn as nn
 
 # torchlight
 import torchlight
-from torchlight import str2bool
-from torchlight import DictAction
-from torchlight import import_class
+import yaml
+from torchlight import DictAction, str2bool
+
 
 class IO():
     """

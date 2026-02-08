@@ -2,22 +2,20 @@
 # Copied from: https://github.com/facebookresearch/detectron2/blob/master/demo/predictor.py
 import atexit
 import bisect
-import multiprocessing as mp
-from collections import deque
-
-import pdb
-import cv2
 import copy
-import torch
-import numpy as np
+import multiprocessing as mp
 
 import detectron2.data.transforms as T
+import numpy as np
+import torch
 from detectron2.data import MetadataCatalog
 from detectron2.engine.defaults import DefaultPredictor
-from detectron2.utils.video_visualizer import VideoVisualizer
-from detectron2.utils.visualizer import ColorMode, Visualizer
-
-from mask2former.data.dataset_mappers.crop_augmentations import BatchResizeShortestEdge, EntityCrop, EntityCropTransform
+from detectron2.utils.visualizer import ColorMode
+from mask2former.data.dataset_mappers.crop_augmentations import (
+    BatchResizeShortestEdge,
+    EntityCrop,
+    EntityCropTransform,
+)
 
 
 class VisualizationDemo(object):

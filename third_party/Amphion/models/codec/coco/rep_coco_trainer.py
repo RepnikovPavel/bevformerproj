@@ -3,20 +3,16 @@
 # This source code is licensed under the MIT license found in the
 # LICENSE file in the root directory of this source tree.
 
-import os
-import random
-import torch
-import numpy as np
 import math
+import random
+
+import torch
 import torch.nn.functional as F
-
-
-from models.base.base_trainer import BaseTrainer
-from models.codec.coco.coco_dataset import CocoDataset, CocoCollator
-from models.codec.coco.rep_coco_model import CocoContentStyle, CocoContent, CocoStyle
-
-import whisper
 import torchvision
+import whisper
+from models.base.base_trainer import BaseTrainer
+from models.codec.coco.coco_dataset import CocoCollator, CocoDataset
+from models.codec.coco.rep_coco_model import CocoContent, CocoContentStyle, CocoStyle
 
 
 class RepCocoTrainer(BaseTrainer):

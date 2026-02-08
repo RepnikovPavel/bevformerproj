@@ -2,8 +2,15 @@
 import copy
 from typing import Callable, Dict
 
-from .path import (Path, PathConcatNode, PathConvNode, PathDepthWiseConvNode,
-                   PathLinearNode, PathList, PathNormNode)
+from .path import (
+    Path,
+    PathConcatNode,
+    PathConvNode,
+    PathDepthWiseConvNode,
+    PathLinearNode,
+    PathList,
+    PathNormNode,
+)
 
 
 def _is_leaf_grad_fn(grad_fn):

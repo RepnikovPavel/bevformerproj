@@ -2,9 +2,8 @@
 from unittest import TestCase
 
 import torch
-from mmengine.structures import InstanceData
-
 from mmdet.models.dense_heads import CentripetalHead
+from mmengine.structures import InstanceData
 
 
 class TestCentripetalHead(TestCase):

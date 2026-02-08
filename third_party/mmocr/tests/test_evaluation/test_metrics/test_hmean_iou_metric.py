@@ -4,7 +4,6 @@ import unittest
 import numpy as np
 import torch
 from mmengine.structures import InstanceData
-
 from mmocr.evaluation import HmeanIOUMetric
 from mmocr.structures import TextDetDataSample
 

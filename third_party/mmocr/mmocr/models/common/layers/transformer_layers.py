@@ -2,8 +2,7 @@
 import torch.nn as nn
 from mmengine.model import BaseModule
 
-from mmocr.models.common.modules import (MultiHeadAttention,
-                                         PositionwiseFeedForward)
+from mmocr.models.common.modules import MultiHeadAttention, PositionwiseFeedForward
 
 
 class TFEncoderLayer(BaseModule):

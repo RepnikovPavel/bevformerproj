@@ -9,9 +9,8 @@ from pathlib import Path
 from shutil import SameFileError
 from unittest.mock import MagicMock, patch
 
-import pytest
-
 import mmengine.fileio as fileio
+import pytest
 
 sys.modules['petrel_client'] = MagicMock()
 sys.modules['petrel_client.client'] = MagicMock()

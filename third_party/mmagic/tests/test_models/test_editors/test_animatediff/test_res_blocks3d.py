@@ -3,10 +3,11 @@ import platform
 
 import pytest
 import torch
-
-from mmagic.models.editors.animatediff.unet_block import (Downsample3D,
-                                                          ResnetBlock3D,
-                                                          Upsample3D)
+from mmagic.models.editors.animatediff.unet_block import (
+    Downsample3D,
+    ResnetBlock3D,
+    Upsample3D,
+)
 
 
 @pytest.mark.skipif(

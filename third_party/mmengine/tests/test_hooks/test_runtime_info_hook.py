@@ -5,12 +5,11 @@ from unittest.mock import Mock
 import numpy as np
 import torch
 import torch.nn as nn
-from torch.optim import SGD
-
 from mmengine.hooks import RuntimeInfoHook
 from mmengine.optim import OptimWrapper, OptimWrapperDict
 from mmengine.registry import DATASETS
 from mmengine.testing import RunnerTestCase
+from torch.optim import SGD
 
 
 class DatasetWithoutMetainfo:

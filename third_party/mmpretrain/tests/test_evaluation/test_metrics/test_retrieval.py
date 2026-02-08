@@ -3,9 +3,7 @@ from unittest import TestCase
 
 import numpy as np
 import torch
-
-from mmpretrain.evaluation.metrics import (RetrievalAveragePrecision,
-                                           RetrievalRecall)
+from mmpretrain.evaluation.metrics import RetrievalAveragePrecision, RetrievalRecall
 from mmpretrain.registry import METRICS
 from mmpretrain.structures import DataSample
 

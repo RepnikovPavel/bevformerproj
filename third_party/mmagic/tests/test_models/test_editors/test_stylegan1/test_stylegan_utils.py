@@ -2,7 +2,6 @@
 from unittest.mock import MagicMock, patch
 
 import torch
-
 from mmagic.models.editors.stylegan1 import get_mean_latent, style_mixing
 
 get_module_device_str = 'mmagic.models.editors.stylegan1.stylegan_utils.get_module_device'  # noqa

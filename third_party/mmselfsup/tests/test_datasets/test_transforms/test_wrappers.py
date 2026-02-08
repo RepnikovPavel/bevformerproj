@@ -1,9 +1,7 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import numpy as np
 from mmcv.transforms import Resize
-
-from mmselfsup.datasets.transforms import (MultiView, RandomGaussianBlur,
-                                           RandomSolarize)
+from mmselfsup.datasets.transforms import MultiView, RandomGaussianBlur, RandomSolarize
 
 
 def test_multi_view():

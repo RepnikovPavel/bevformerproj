@@ -2,12 +2,11 @@
 import copy
 
 import torch
-from torch.utils.data import DataLoader, Dataset
-
 from mmengine.dataset.utils import pseudo_collate
 from mmengine.model import BaseModel, BaseTTAModel
 from mmengine.registry import DATASETS, MODELS, TRANSFORMS
 from mmengine.testing import RunnerTestCase
+from torch.utils.data import DataLoader, Dataset
 
 
 class ToyTTAPipeline:

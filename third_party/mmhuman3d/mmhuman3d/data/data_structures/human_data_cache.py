@@ -7,6 +7,7 @@ from mmhuman3d.utils.path_utils import (
     check_path_existence,
     check_path_suffix,
 )
+
 from .human_data import HumanData
 
 

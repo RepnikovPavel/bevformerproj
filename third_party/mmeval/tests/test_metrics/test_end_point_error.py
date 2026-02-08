@@ -4,7 +4,6 @@
 
 import numpy as np
 import pytest
-
 from mmeval.core.base_metric import BaseMetric
 from mmeval.metrics import EndPointError
 from mmeval.utils import try_import

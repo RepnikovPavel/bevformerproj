@@ -2,14 +2,17 @@
 import os.path as osp
 import unittest
 
-from mmengine import Config
-
 from mmocr.datasets.preparers import DatasetPreparer
-from mmocr.datasets.preparers.data_preparer import (CFG_GENERATORS,
-                                                    DATA_DUMPERS,
-                                                    DATA_GATHERERS,
-                                                    DATA_OBTAINERS,
-                                                    DATA_PACKERS, DATA_PARSERS)
+from mmocr.datasets.preparers.data_preparer import (
+    CFG_GENERATORS,
+    DATA_DUMPERS,
+    DATA_GATHERERS,
+    DATA_OBTAINERS,
+    DATA_PACKERS,
+    DATA_PARSERS,
+)
+
+from mmengine import Config
 
 
 class Fake:

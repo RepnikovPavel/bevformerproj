@@ -1,6 +1,10 @@
 import torch.nn as nn
-from .base import BaseEstimator
+
 from mmskeleton.utils.importer import call_obj
+
+from .base import BaseEstimator
+
+
 class TwoDimPoseEstimator(BaseEstimator):
     def __init__(self,
                  backbone,

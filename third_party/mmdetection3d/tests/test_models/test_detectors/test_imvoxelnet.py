@@ -1,11 +1,10 @@
 import unittest
 
 import torch
-from mmengine import DefaultScope
-
 from mmdet3d.registry import MODELS
-from mmdet3d.testing import (create_detector_inputs, get_detector_cfg,
-                             setup_seed)
+from mmdet3d.testing import create_detector_inputs, get_detector_cfg, setup_seed
+
+from mmengine import DefaultScope
 
 
 class TestImVoxelNet(unittest.TestCase):

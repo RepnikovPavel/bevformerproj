@@ -2,7 +2,6 @@
 from unittest import TestCase
 
 import torch
-
 from mmocr.models.textdet.data_preprocessors import TextDetDataPreprocessor
 from mmocr.registry import MODELS
 from mmocr.structures import TextDetDataSample

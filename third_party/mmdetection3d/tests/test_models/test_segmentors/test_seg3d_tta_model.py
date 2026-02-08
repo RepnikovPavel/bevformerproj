@@ -2,12 +2,12 @@
 from unittest import TestCase
 
 import torch
-from mmengine import ConfigDict, DefaultScope
-
 from mmdet3d.models import Seg3DTTAModel
 from mmdet3d.registry import MODELS
 from mmdet3d.structures import Det3DDataSample
 from mmdet3d.testing import get_detector_cfg
+
+from mmengine import ConfigDict, DefaultScope
 
 
 class TestSeg3DTTAModel(TestCase):

@@ -2,6 +2,7 @@
 from typing import Dict
 
 from mmocr.structures import TextSpottingDataSample
+
 from .base_mmocr_inferencer import BaseMMOCRInferencer
 
 

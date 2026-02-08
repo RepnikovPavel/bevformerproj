@@ -1,9 +1,22 @@
 # Copyright (c) OpenMMLab. All rights reserved.
-from torch.nn import (BatchNorm1d, BatchNorm2d, Conv2d, Dropout, Linear,
-                      Module, PReLU, Sequential)
+from torch.nn import (
+    BatchNorm1d,
+    BatchNorm2d,
+    Conv2d,
+    Dropout,
+    Linear,
+    Module,
+    PReLU,
+    Sequential,
+)
 
-from .arcface_modules import (Flatten, bottleneck_IR, bottleneck_IR_SE,
-                              get_blocks, l2_norm)
+from .arcface_modules import (
+    Flatten,
+    bottleneck_IR,
+    bottleneck_IR_SE,
+    get_blocks,
+    l2_norm,
+)
 
 # yapf: disable
 """

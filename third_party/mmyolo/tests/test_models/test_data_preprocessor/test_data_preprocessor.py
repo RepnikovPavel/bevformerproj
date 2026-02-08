@@ -3,12 +3,14 @@ from unittest import TestCase
 
 import torch
 from mmdet.structures import DetDataSample
-from mmengine import MessageHub
-
 from mmyolo.models import PPYOLOEBatchRandomResize, PPYOLOEDetDataPreprocessor
-from mmyolo.models.data_preprocessors import (YOLOv5DetDataPreprocessor,
-                                              YOLOXBatchSyncRandomResize)
+from mmyolo.models.data_preprocessors import (
+    YOLOv5DetDataPreprocessor,
+    YOLOXBatchSyncRandomResize,
+)
 from mmyolo.utils import register_all_modules
+
+from mmengine import MessageHub
 
 register_all_modules()
 

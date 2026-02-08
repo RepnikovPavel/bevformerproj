@@ -3,11 +3,11 @@ import os
 import os.path as osp
 import tempfile
 
-import mmcv
 import numpy as np
 import pytest
-
 from mmtrack.datasets import DATASETS as DATASETS
+
+import mmcv
 
 PREFIX = osp.join(osp.dirname(__file__), '../../data')
 SOT_DATA_PREFIX = f'{PREFIX}/demo_sot_data'

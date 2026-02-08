@@ -1,10 +1,13 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import pytest
 import torch
-
-from mmflow.models.decoders.raft_decoder import (ConvGRU, CorrelationPyramid,
-                                                 MotionEncoder, RAFTDecoder,
-                                                 XHead)
+from mmflow.models.decoders.raft_decoder import (
+    ConvGRU,
+    CorrelationPyramid,
+    MotionEncoder,
+    RAFTDecoder,
+    XHead,
+)
 
 
 def test_correlation_pyramid():

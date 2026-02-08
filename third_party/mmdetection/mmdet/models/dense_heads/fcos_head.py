@@ -9,8 +9,15 @@ from torch import Tensor
 
 from mmdet.models.layers import NormedConv2d
 from mmdet.registry import MODELS
-from mmdet.utils import (ConfigType, InstanceList, MultiConfig,
-                         OptInstanceList, RangeType, reduce_mean)
+from mmdet.utils import (
+    ConfigType,
+    InstanceList,
+    MultiConfig,
+    OptInstanceList,
+    RangeType,
+    reduce_mean,
+)
+
 from ..utils import multi_apply
 from .anchor_free_head import AnchorFreeHead
 

@@ -4,9 +4,11 @@ from unittest import TestCase
 
 import numpy as np
 import torch
-
-from mmocr.datasets.transforms import (PackKIEInputs, PackTextDetInputs,
-                                       PackTextRecogInputs)
+from mmocr.datasets.transforms import (
+    PackKIEInputs,
+    PackTextDetInputs,
+    PackTextRecogInputs,
+)
 
 
 class TestPackTextDetInputs(TestCase):

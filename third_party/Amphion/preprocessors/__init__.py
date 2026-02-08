@@ -7,9 +7,9 @@
 For source datasets' standard samples
 """
 
-from collections import defaultdict
-import os
 import json
+import os
+from collections import defaultdict
 
 SPEECH_DATASETS = ["vctk", "vctksample"]
 

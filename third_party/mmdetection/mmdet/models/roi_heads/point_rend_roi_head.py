@@ -10,6 +10,7 @@ from torch import Tensor
 from mmdet.registry import MODELS
 from mmdet.structures.bbox import bbox2roi
 from mmdet.utils import ConfigType, InstanceList
+
 from ..task_modules.samplers import SamplingResult
 from ..utils import empty_instances
 from .standard_roi_head import StandardRoIHead

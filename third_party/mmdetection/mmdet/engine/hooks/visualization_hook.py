@@ -3,7 +3,6 @@ import os.path as osp
 import warnings
 from typing import Optional, Sequence
 
-import mmcv
 import numpy as np
 from mmengine.fileio import get
 from mmengine.hooks import Hook
@@ -11,6 +10,7 @@ from mmengine.runner import Runner
 from mmengine.utils import mkdir_or_exist
 from mmengine.visualization import Visualizer
 
+import mmcv
 from mmdet.datasets.samplers import TrackImgSampler
 from mmdet.registry import HOOKS
 from mmdet.structures import DetDataSample, TrackDataSample

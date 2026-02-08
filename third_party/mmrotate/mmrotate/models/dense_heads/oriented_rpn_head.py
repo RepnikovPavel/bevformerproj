@@ -7,6 +7,7 @@ from mmcv.ops import batched_nms
 from mmdet.core import anchor_inside_flags, unmap
 
 from mmrotate.core import obb2xyxy
+
 from ..builder import ROTATED_HEADS
 from .rotated_rpn_head import RotatedRPNHead
 

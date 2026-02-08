@@ -3,9 +3,10 @@
 # This source code is licensed under the MIT license found in the
 # LICENSE file in the root directory of this source tree.
 
+from typing import List, Optional, Union
+
 import torch
 from torch.optim import Optimizer
-from typing import List, Optional, Tuple, Union
 
 
 def calc_lr(step, dim_embed, warmup_steps):

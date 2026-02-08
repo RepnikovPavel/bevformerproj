@@ -2,10 +2,13 @@
 import numpy as np
 import pytest
 import torch
-
 from mmdet3d.models import draw_heatmap_gaussian
-from mmdet3d.models.utils import (filter_outside_objs, get_edge_indices,
-                                  get_keypoints, handle_proj_objs)
+from mmdet3d.models.utils import (
+    filter_outside_objs,
+    get_edge_indices,
+    get_keypoints,
+    handle_proj_objs,
+)
 from mmdet3d.structures import CameraInstance3DBoxes, points_img2cam
 from mmdet3d.utils import array_converter
 

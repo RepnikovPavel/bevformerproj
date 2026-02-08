@@ -5,15 +5,13 @@ import fire
 import numpy as np
 import torch
 from decord import VideoReader
+from live2diff.utils.config import load_config
+from live2diff.utils.io import read_video_frames, save_videos_grid
+from live2diff.utils.wrapper import StreamAnimateDiffusionDepthWrapper
 from PIL import Image
 from torchvision import transforms
 from torchvision.io import write_video
 from tqdm import tqdm
-
-from live2diff.utils.config import load_config
-from live2diff.utils.io import read_video_frames, save_videos_grid
-from live2diff.utils.wrapper import StreamAnimateDiffusionDepthWrapper
-
 
 CURRENT_DIR = os.path.dirname(os.path.abspath(__file__))
 

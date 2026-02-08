@@ -1,12 +1,14 @@
 from typing import List
 
 import torch
-from mmdet.models.task_modules.assigners import AssignResult  # check
-from mmdet.models.task_modules.assigners import BaseAssigner
+from mmdet.models.task_modules.assigners import (
+    AssignResult,  # check
+    BaseAssigner,
+)
+from mmdet3d.registry import TASK_UTILS
 from mmengine.structures import InstanceData
 from torch import Tensor
 
-from mmdet3d.registry import TASK_UTILS
 from .util import normalize_bbox
 
 try:

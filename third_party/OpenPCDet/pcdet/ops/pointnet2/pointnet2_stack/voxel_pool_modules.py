@@ -1,8 +1,10 @@
+from typing import List
+
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
+
 from . import voxel_query_utils
-from typing import List
 
 
 class NeighborVoxelSAModuleMSG(nn.Module):

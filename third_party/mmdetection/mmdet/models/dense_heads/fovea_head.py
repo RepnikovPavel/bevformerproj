@@ -12,6 +12,7 @@ from torch import Tensor
 
 from mmdet.registry import MODELS
 from mmdet.utils import InstanceList, OptInstanceList, OptMultiConfig
+
 from ..utils import filter_scores_and_topk, multi_apply
 from .anchor_free_head import AnchorFreeHead
 

@@ -1,8 +1,9 @@
 # Copyright (c) OpenMMLab. All rights reserved.
-import numpy as np
 import warnings
 from multiprocessing.pool import Pool
 from typing import Dict, List, Optional, Sequence, Tuple, Union
+
+import numpy as np
 
 from mmeval.core.base_metric import BaseMetric
 from mmeval.metrics.utils import calculate_bboxes_area, calculate_overlaps

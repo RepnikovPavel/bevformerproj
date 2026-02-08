@@ -3,12 +3,12 @@ import argparse
 import os
 import os.path as osp
 
-import mmengine
+from mmagic.utils import print_colored_log
 from mmengine.config import Config, DictAction
 from mmengine.hooks import Hook
 from mmengine.runner import Runner
 
-from mmagic.utils import print_colored_log
+import mmengine
 
 
 # TODO: support fuse_conv_bn, visualization, and format_only

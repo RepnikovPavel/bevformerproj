@@ -4,7 +4,6 @@ import os
 import platform
 
 import cv2
-
 from mmengine.utils.dl_utils import set_multi_processing
 
 

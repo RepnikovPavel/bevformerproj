@@ -1,7 +1,8 @@
 import os
 import random
+
 import numpy as np
-from decord import VideoReader, cpu, gpu
+from decord import VideoReader, cpu
 from decord.base import DECORDError
 
 CTX = cpu(0)

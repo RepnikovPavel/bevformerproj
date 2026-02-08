@@ -2,12 +2,12 @@
 from os.path import dirname, join
 
 import torch
-from mmengine import Config
-from mmengine.optim import OptimWrapper
-
 from mmagic.registry import MODELS
 from mmagic.structures import DataSample
 from mmagic.utils import register_all_modules
+from mmengine.optim import OptimWrapper
+
+from mmengine import Config
 
 
 def test_gl_inpaintor():

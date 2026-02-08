@@ -1,9 +1,12 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import torch
-
 from mmfewshot.detection.models.roi_heads.bbox_heads import (
-    ContrastiveBBoxHead, CosineSimBBoxHead, MetaBBoxHead,
-    MultiRelationBBoxHead, TwoBranchBBoxHead)
+    ContrastiveBBoxHead,
+    CosineSimBBoxHead,
+    MetaBBoxHead,
+    MultiRelationBBoxHead,
+    TwoBranchBBoxHead,
+)
 
 
 def test_cosine_sim_bbox_head():

@@ -1,11 +1,10 @@
 import unittest
 
 import torch
-from mmengine.structures import PixelData
-from mmengine.testing import assert_allclose
-
 from mmdet.models.seg_heads import PanopticFPNHead
 from mmdet.structures import DetDataSample
+from mmengine.structures import PixelData
+from mmengine.testing import assert_allclose
 
 
 class TestPanopticFPNHead(unittest.TestCase):

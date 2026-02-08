@@ -7,9 +7,10 @@
 import multiprocessing
 import os
 
-import mmcv
 import numpy as np
 from mmengine.fileio import get
+
+import mmcv
 
 # A custom value to distinguish instance ID and category ID; need to
 # be greater than the number of categories.

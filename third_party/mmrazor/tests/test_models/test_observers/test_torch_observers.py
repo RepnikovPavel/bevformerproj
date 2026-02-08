@@ -1,10 +1,10 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import pytest
 import torch
-
-from mmrazor import digit_version
 from mmrazor.models.observers import register_torch_observers
 from mmrazor.registry import MODELS
+
+from mmrazor import digit_version
 
 
 @pytest.mark.skipif(

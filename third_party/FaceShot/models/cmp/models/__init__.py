@@ -1,4 +1,3 @@
-from .single_stage_model import *
+from . import backbone, modules
 from .cmp import *
-from . import modules
-from . import backbone
+from .single_stage_model import *

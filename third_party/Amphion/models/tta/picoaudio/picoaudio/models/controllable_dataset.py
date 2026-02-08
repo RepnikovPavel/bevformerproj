@@ -1,6 +1,6 @@
 import numpy as np
-import torch
 import pandas as pd
+import torch
 from data.filter_data import get_event_list
 
 
@@ -126,14 +126,11 @@ class Clap_Onset_2_Audio_Dataset(Text_Onset_2_Audio_Dataset):
 
 
 if __name__ == "__main__":
-    import torch
-    from torch.utils.data import Dataset, DataLoader
-    import datasets
     import argparse
-    import sys
 
-    import models.controllable_dataset as ConDataset
+    import torch
     from data_utils.filter_data import get_event_list
+    from torch.utils.data import DataLoader
 
     parser = argparse.ArgumentParser(description=".")
     args = parser.parse_args()

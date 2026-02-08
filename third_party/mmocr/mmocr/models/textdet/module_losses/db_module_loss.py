@@ -12,6 +12,7 @@ from mmocr.registry import MODELS
 from mmocr.structures import TextDetDataSample
 from mmocr.utils import offset_polygon
 from mmocr.utils.typing_utils import ArrayLike
+
 from .seg_based_module_loss import SegBasedModuleLoss
 
 

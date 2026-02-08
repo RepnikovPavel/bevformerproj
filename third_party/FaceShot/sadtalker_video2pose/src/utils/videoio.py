@@ -1,9 +1,9 @@
+import os
 import shutil
 import uuid
 
-import os
-
 import cv2
+
 
 def load_video_to_cv2(input_path):
     video_stream = cv2.VideoCapture(input_path)
@@ -28,7 +28,6 @@ def save_video_with_watermark(video, audio, save_path, watermark=False):
         # watermark
         try:
             ##### check if stable-diffusion-webui
-            import webui
             from modules import paths
             watarmark_path = paths.script_path+"/extensions/SadTalker/docs/sadtalker_logo.png"
         except:

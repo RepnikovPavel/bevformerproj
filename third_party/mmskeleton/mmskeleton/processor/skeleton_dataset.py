@@ -1,14 +1,13 @@
-import os
 import json
-import mmcv
+import os
+from multiprocessing import Manager, Process, current_process
+
 import numpy as np
-import ntpath
-from mmskeleton.apis.estimation import init_pose_estimator, inference_pose_estimator
-from mmskeleton.utils import call_obj
-from mmskeleton.datasets import skeleton
-from multiprocessing import current_process, Process, Manager
-from mmskeleton.utils import cache_checkpoint
 from mmcv.utils import ProgressBar
+
+import mmcv
+from mmskeleton.apis.estimation import inference_pose_estimator, init_pose_estimator
+from mmskeleton.utils import cache_checkpoint, call_obj
 
 pose_estimators = dict()
 

@@ -2,7 +2,6 @@
 import numpy as np
 import pytest
 import torch
-
 from mmcv.ops import active_rotated_filter
 from mmcv.utils import IS_CUDA_AVAILABLE, IS_MUSA_AVAILABLE, IS_NPU_AVAILABLE
 

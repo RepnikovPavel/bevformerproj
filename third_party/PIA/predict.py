@@ -5,13 +5,11 @@ import os.path as osp
 
 import numpy as np
 import torch
+from animatediff.pipelines import I2VPipeline
+from animatediff.utils.util import save_videos_grid
 from cog import BasePredictor, Input, Path
 from omegaconf import OmegaConf
 from PIL import Image
-
-from animatediff.pipelines import I2VPipeline
-from animatediff.utils.util import save_videos_grid
-
 
 N_PROMPT = (
     "wrong white balance, dark, sketches,worst quality,low quality, "

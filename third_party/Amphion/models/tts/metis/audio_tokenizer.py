@@ -4,22 +4,18 @@
 # LICENSE file in the root directory of this source tree.
 
 import os
-import torch
-import numpy as np
+
 import librosa
-
+import numpy as np
 import safetensors
-from utils.util import load_config
-
-from transformers import SeamlessM4TFeatureExtractor
-
+import torch
+from huggingface_hub import snapshot_download
 from models.tts.maskgct.maskgct_utils import (
-    build_semantic_model,
-    build_semantic_codec,
     build_acoustic_codec,
+    build_semantic_codec,
+    build_semantic_model,
 )
-
-from huggingface_hub import hf_hub_download, snapshot_download
+from transformers import SeamlessM4TFeatureExtractor
 
 
 class AudioTokenizer:

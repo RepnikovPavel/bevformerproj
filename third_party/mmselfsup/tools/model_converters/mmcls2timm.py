@@ -4,9 +4,10 @@ import os.path as osp
 from collections import OrderedDict
 from typing import Union
 
-import mmengine
 import torch
 from mmengine.runner.checkpoint import _load_checkpoint
+
+import mmengine
 
 
 def convert_mmcls_to_timm(state_dict: Union[OrderedDict, dict]) -> OrderedDict:

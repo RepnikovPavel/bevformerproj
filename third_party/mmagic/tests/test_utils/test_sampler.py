@@ -1,9 +1,8 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 from unittest.mock import MagicMock
 
-from torch.utils.data import DataLoader
-
 from mmagic.utils.sampler import ArgumentsSampler, ValDataSampler
+from torch.utils.data import DataLoader
 
 
 def test_argument_sampler():

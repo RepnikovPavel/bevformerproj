@@ -1,7 +1,9 @@
 import torch
 
-from ..bbox2d import assign_and_sample, build_assigner, PseudoSampler, bbox2delta
 from mmaction.utils.misc import multi_apply
+
+from ..bbox2d import PseudoSampler, assign_and_sample, bbox2delta, build_assigner
+
 
 def anchor_target(anchor_list,
                   valid_flag_list,

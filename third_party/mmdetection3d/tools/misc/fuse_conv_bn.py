@@ -2,10 +2,9 @@
 import argparse
 
 import torch
+from mmdet3d.apis import init_model
 from mmengine.runner import save_checkpoint
 from torch import nn as nn
-
-from mmdet3d.apis import init_model
 
 
 def fuse_conv_bn(conv, bn):

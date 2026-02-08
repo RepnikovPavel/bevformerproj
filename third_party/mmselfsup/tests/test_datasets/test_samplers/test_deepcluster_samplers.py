@@ -3,7 +3,6 @@ from unittest import TestCase
 from unittest.mock import patch
 
 from mmengine.dataset.sampler import DefaultSampler
-
 from mmselfsup.datasets.samplers import DeepClusterSampler
 
 

@@ -3,8 +3,13 @@ from copy import deepcopy
 
 import numpy as np
 import torch.nn as nn
-from mmcv.cnn import (build_activation_layer, build_norm_layer,
-                      build_upsample_layer, constant_init, xavier_init)
+from mmcv.cnn import (
+    build_activation_layer,
+    build_norm_layer,
+    build_upsample_layer,
+    constant_init,
+    xavier_init,
+)
 from torch.nn.init import xavier_uniform_
 from torch.nn.utils import spectral_norm
 

@@ -15,8 +15,11 @@ import mmengine
 
 from ...tools.dataset_converters import indoor_converter as indoor
 from ...tools.dataset_converters.update_infos_to_v2 import (
-    clear_data_info_unused_keys, clear_instance_unused_keys,
-    get_empty_instance, get_empty_standard_data_info)
+    clear_data_info_unused_keys,
+    clear_instance_unused_keys,
+    get_empty_instance,
+    get_empty_standard_data_info,
+)
 
 
 def update_scannet_infos_nerfdet(pkl_path, out_dir):

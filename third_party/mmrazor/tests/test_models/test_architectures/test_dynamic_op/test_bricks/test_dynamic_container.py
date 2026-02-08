@@ -3,10 +3,9 @@ from unittest import TestCase
 
 import pytest
 import torch.nn as nn
-from torch.nn import Sequential
-
 from mmrazor.models.architectures.dynamic_ops import DynamicSequential
 from mmrazor.models.mutables import OneShotMutableValue
+from torch.nn import Sequential
 
 
 class TestDynamicSequential(TestCase):

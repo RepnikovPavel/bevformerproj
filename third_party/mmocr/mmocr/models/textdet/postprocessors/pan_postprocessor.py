@@ -9,6 +9,7 @@ from mmengine.structures import InstanceData
 
 from mmocr.registry import MODELS
 from mmocr.structures import TextDetDataSample
+
 from .base import BaseTextDetPostProcessor
 
 

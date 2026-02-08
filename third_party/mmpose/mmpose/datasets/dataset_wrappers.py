@@ -8,6 +8,7 @@ from mmengine.dataset import BaseDataset
 from mmengine.registry import build_from_cfg
 
 from mmpose.registry import DATASETS
+
 from .datasets.utils import parse_pose_metainfo
 
 

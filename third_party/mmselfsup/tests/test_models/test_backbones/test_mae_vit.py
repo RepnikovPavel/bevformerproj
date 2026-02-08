@@ -3,7 +3,6 @@ import platform
 
 import pytest
 import torch
-
 from mmselfsup.models.backbones import MAEViT
 
 backbone = dict(arch='b', patch_size=16, mask_ratio=0.75)

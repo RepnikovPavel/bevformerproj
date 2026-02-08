@@ -9,10 +9,10 @@ from mmengine.model import BaseModule
 from mmengine.structures import InstanceData
 from torch import Tensor, nn
 
-from mmdet3d.models.utils import (clip_sigmoid, draw_heatmap_gaussian,
-                                  gaussian_radius)
+from mmdet3d.models.utils import clip_sigmoid, draw_heatmap_gaussian, gaussian_radius
 from mmdet3d.registry import MODELS, TASK_UTILS
 from mmdet3d.structures import Det3DDataSample, xywhr2xyxyr
+
 from ..layers import circle_nms, nms_bev
 
 

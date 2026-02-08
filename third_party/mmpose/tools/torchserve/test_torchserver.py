@@ -5,10 +5,12 @@ import warnings
 from argparse import ArgumentParser
 
 import requests
-
-from mmpose.apis import (inference_bottom_up_pose_model,
-                         inference_top_down_pose_model, init_pose_model,
-                         vis_pose_result)
+from mmpose.apis import (
+    inference_bottom_up_pose_model,
+    inference_top_down_pose_model,
+    init_pose_model,
+    vis_pose_result,
+)
 from mmpose.models import AssociativeEmbedding, TopDown
 
 

@@ -1,12 +1,12 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 from copy import deepcopy
 
-import mmcv
 import numpy as np
 import pytest
 import torch
-
 from mmagic.evaluation.metrics import NIQE, niqe
+
+import mmcv
 
 
 def test_niqe():

@@ -4,7 +4,6 @@ from unittest import TestCase
 
 import pytest
 import torch
-
 from mmpretrain.models import MoCoV3, MoCoV3ViT
 from mmpretrain.structures import DataSample
 

@@ -3,13 +3,13 @@ import os
 import warnings
 from typing import Optional, Sequence
 
-import mmcv
-import mmengine
 import mmengine.fileio as fileio
 from mmengine.hooks import Hook
 from mmengine.runner import Runner
 from mmengine.visualization import Visualizer
 
+import mmcv
+import mmengine
 from mmpose.registry import HOOKS
 from mmpose.structures import PoseDataSample, merge_data_samples
 

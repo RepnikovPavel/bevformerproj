@@ -3,14 +3,14 @@ import argparse
 import os
 from typing import Sequence
 
-import mmcv
 from mmdet.apis import inference_detector, init_detector
-from mmengine import Config, DictAction
 from mmengine.registry import init_default_scope
 from mmengine.utils import ProgressBar
-
 from mmyolo.registry import VISUALIZERS
 from mmyolo.utils.misc import auto_arrange_images, get_file_list
+
+import mmcv
+from mmengine import Config, DictAction
 
 
 def parse_args():

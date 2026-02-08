@@ -3,9 +3,13 @@
 # https://github.com/pytorch/pytorch/blob/9ade03959392e5a90b74261012de1d806cab2253/torch/onnx/symbolic_opset9.py
 
 import torch
-from torch.onnx.symbolic_helper import (_get_tensor_dim_size, _get_tensor_rank,
-                                        _unimplemented, _unsqueeze_helper,
-                                        parse_args)
+from torch.onnx.symbolic_helper import (
+    _get_tensor_dim_size,
+    _get_tensor_rank,
+    _unimplemented,
+    _unsqueeze_helper,
+    parse_args,
+)
 
 from mmdeploy.core import SYMBOLIC_REWRITER
 

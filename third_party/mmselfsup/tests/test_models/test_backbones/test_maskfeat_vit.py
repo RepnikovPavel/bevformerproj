@@ -3,7 +3,6 @@ import platform
 
 import pytest
 import torch
-
 from mmselfsup.models.backbones import MaskFeatViT
 
 backbone = dict(arch='b', patch_size=16)

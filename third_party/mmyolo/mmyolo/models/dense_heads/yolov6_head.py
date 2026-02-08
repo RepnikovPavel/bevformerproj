@@ -5,15 +5,15 @@ import torch
 import torch.nn as nn
 from mmcv.cnn import ConvModule
 from mmdet.models.utils import multi_apply
-from mmdet.utils import (ConfigType, OptConfigType, OptInstanceList,
-                         OptMultiConfig)
-from mmengine import MessageHub
+from mmdet.utils import ConfigType, OptConfigType, OptInstanceList, OptMultiConfig
 from mmengine.dist import get_dist_info
 from mmengine.model import BaseModule, bias_init_with_prob
 from mmengine.structures import InstanceData
 from torch import Tensor
 
+from mmengine import MessageHub
 from mmyolo.registry import MODELS, TASK_UTILS
+
 from ..utils import gt_instances_preprocess
 from .yolov5_head import YOLOv5Head
 

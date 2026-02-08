@@ -3,11 +3,12 @@ import os.path as osp
 import time
 from tempfile import TemporaryDirectory
 
-import mmcv
 import torch
 from mmcv.parallel import is_module_wrapper
 from mmcv.runner.checkpoint import get_state_dict, weights_to_cpu
 from torch.optim import Optimizer
+
+import mmcv
 
 
 def save_checkpoint(model,

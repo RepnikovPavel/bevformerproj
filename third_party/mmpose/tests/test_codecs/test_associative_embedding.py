@@ -4,11 +4,10 @@ from unittest import TestCase
 
 import numpy as np
 import torch
-from munkres import Munkres
-
 from mmpose.codecs import AssociativeEmbedding
 from mmpose.registry import KEYPOINT_CODECS
 from mmpose.testing import get_coco_sample
+from munkres import Munkres
 
 
 class TestAssociativeEmbedding(TestCase):

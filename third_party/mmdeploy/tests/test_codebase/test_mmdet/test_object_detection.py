@@ -4,18 +4,18 @@ import os
 from tempfile import NamedTemporaryFile, TemporaryDirectory
 from typing import Any
 
+import mmdeploy.backend.onnxruntime as ort_apis
 import numpy as np
 import pytest
 import torch
-from mmengine import Config
-from torch.utils.data import DataLoader
-from torch.utils.data.dataset import Dataset
-
-import mmdeploy.backend.onnxruntime as ort_apis
 from mmdeploy.apis import build_task_processor
 from mmdeploy.codebase import import_codebase
 from mmdeploy.utils import Codebase, load_config
 from mmdeploy.utils.test import DummyModel, SwitchBackendWrapper
+from torch.utils.data import DataLoader
+from torch.utils.data.dataset import Dataset
+
+from mmengine import Config
 
 try:
     import_codebase(Codebase.MMDET)
@@ -139,14 +139,12 @@ def backend_model():
 
 
 def test_build_backend_model(backend_model):
-    from mmdeploy.codebase.mmdet.deploy.object_detection_model import \
-        End2EndModel
+    from mmdeploy.codebase.mmdet.deploy.object_detection_model import End2EndModel
     assert isinstance(backend_model, End2EndModel)
 
 
 def test_can_postprocess_masks():
-    from mmdeploy.codebase.mmdet.deploy.object_detection_model import \
-        End2EndModel
+    from mmdeploy.codebase.mmdet.deploy.object_detection_model import End2EndModel
     num_dets = [0, 1, 5]
     for num_det in num_dets:
         det_bboxes = np.random.randn(num_det, 4)
@@ -184,8 +182,7 @@ def test_visualize(backend_model):
 @pytest.mark.parametrize('partition_type', ['single_stage', 'two_stage'])
 # Currently only mmdet implements get_partition_cfg
 def test_get_partition_cfg(partition_type):
-    from mmdeploy.codebase.mmdet.deploy.model_partition_cfg import \
-        MMDET_PARTITION_CFG
+    from mmdeploy.codebase.mmdet.deploy.model_partition_cfg import MMDET_PARTITION_CFG
     partition_cfg = task_processor.get_partition_cfg(
         partition_type=partition_type)
     assert partition_cfg == MMDET_PARTITION_CFG[partition_type]

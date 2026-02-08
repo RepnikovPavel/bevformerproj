@@ -12,9 +12,11 @@ import os
 from argparse import ArgumentParser
 
 from mmdet.apis import show_result_pyplot
-
-from mmfewshot.detection.apis import (inference_detector, init_detector,
-                                      process_support_images)
+from mmfewshot.detection.apis import (
+    inference_detector,
+    init_detector,
+    process_support_images,
+)
 
 
 def parse_args():

@@ -7,11 +7,10 @@ from unittest.mock import Mock
 
 import numpy as np
 import torch
-from mmengine.structures import InstanceData
-
 from mmdet3d.engine.hooks import Det3DVisualizationHook
 from mmdet3d.structures import Det3DDataSample, LiDARInstance3DBoxes
 from mmdet3d.visualization import Det3DLocalVisualizer
+from mmengine.structures import InstanceData
 
 
 class TestVisualizationHook(TestCase):

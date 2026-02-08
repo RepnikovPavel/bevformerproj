@@ -4,9 +4,7 @@ from unittest import TestCase
 
 import numpy as np
 import torch
-
-from mmpretrain.evaluation.metrics import (Accuracy, ConfusionMatrix,
-                                           SingleLabelMetric)
+from mmpretrain.evaluation.metrics import Accuracy, ConfusionMatrix, SingleLabelMetric
 from mmpretrain.registry import METRICS
 from mmpretrain.structures import DataSample
 

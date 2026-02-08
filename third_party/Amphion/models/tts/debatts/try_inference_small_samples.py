@@ -3,48 +3,33 @@
 # This source code is licensed under the MIT license found in the
 # LICENSE file in the root directory of this source tree.
 
-import sys
 import os
+import sys
 
 os.chdir("./models/tts/debatts")
 sys.path.append("./models/tts/debatts")
-from utils.g2p_new.g2p_new import new_g2p
-
-from transformers import Wav2Vec2Model
-from cgitb import text
-import torch
-import torch.nn as nn
-import torch.nn.functional as F
-import numpy as np
-import librosa
-import os
-from IPython.display import Audio
-import matplotlib.pyplot as plt
-import soundfile as sf
-import pickle
-import math
 import json
-import accelerate
-from IPython.display import Audio
+import math
+import os
 
+import accelerate
+import librosa
+import numpy as np
+import safetensors
+import soundfile as sf
+import torch
+from models.codec.amphion_codec.codec import CodecDecoder, CodecEncoder
 from models.codec.kmeans.kmeans_model import KMeans, KMeansEMA
 from models.codec.kmeans.repcodec_model import RepCodec
 from models.tts.soundstorm.soundstorm_model import SoundStorm
-from models.codec.amphion_codec.codec import CodecEncoder, CodecDecoder
-from transformers import Wav2Vec2BertModel
-import safetensors
+from transformers import SeamlessM4TFeatureExtractor, Wav2Vec2BertModel
+from utils.g2p_new.g2p_new import new_g2p
 from utils.util import load_config
-from tqdm import tqdm
-
-from transformers import SeamlessM4TFeatureExtractor
 
 processor = SeamlessM4TFeatureExtractor.from_pretrained("./ckpt/w2v-bert-2")
 
-from transformers import AutoProcessor, AutoModel
-
-from models.tts.text2semantic.t2s_model import T2SLlama
 from models.tts.text2semantic.t2s_model_new import T2SLlama_new
-from models.tts.text2semantic.t2s_sft_dataset_new import DownsampleWithMask
+from transformers import AutoModel
 
 
 def new_g2p_(text, language):
@@ -371,6 +356,7 @@ def adjust_punctuation(text):
 
 
 import random
+
 import zhconv
 
 
@@ -592,13 +578,8 @@ def infer_small(
 
 
 ##################################### EVALUATION ################################################################
-from funasr import AutoModel
-import torch.nn.functional as F
 import torch
-
-from models.tts.soundstorm.try_inference_new import evaluation
-from models.tts.soundstorm.try_inference_new import evaluation_new
-from models.tts.soundstorm.try_inference_new import extract_emotion_similarity
+from funasr import AutoModel
 
 prompt0_wav_path = "./speech_examples/87_SPEAKER01_2_part03_213.wav"
 prompt0_text = generate_text_data(prompt0_wav_path)[1]

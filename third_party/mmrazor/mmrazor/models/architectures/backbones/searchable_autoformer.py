@@ -7,12 +7,18 @@ import torch.nn as nn
 from mmcv.cnn import build_activation_layer, build_norm_layer
 
 from mmrazor.models.architectures.dynamic_ops.bricks import (
-    DynamicLinear, DynamicMultiheadAttention, DynamicPatchEmbed,
-    DynamicSequential)
-from mmrazor.models.mutables import (BaseMutable, BaseMutableChannel,
-                                     MutableChannelContainer,
-                                     OneShotMutableChannel,
-                                     OneShotMutableValue)
+    DynamicLinear,
+    DynamicMultiheadAttention,
+    DynamicPatchEmbed,
+    DynamicSequential,
+)
+from mmrazor.models.mutables import (
+    BaseMutable,
+    BaseMutableChannel,
+    MutableChannelContainer,
+    OneShotMutableChannel,
+    OneShotMutableValue,
+)
 from mmrazor.models.mutables.mutable_channel import OneShotMutableChannelUnit
 from mmrazor.registry import MODELS
 

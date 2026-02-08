@@ -2,7 +2,6 @@
 import numpy as np
 import pytest
 import torch
-
 from mmgen.models import build_model
 
 # from mmgen.models.gans import StyleGANV1

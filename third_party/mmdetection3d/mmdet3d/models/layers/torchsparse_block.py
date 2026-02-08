@@ -6,6 +6,7 @@ from mmengine.model import BaseModule
 from torch import nn
 
 from mmdet3d.utils import ConfigType, OptConfigType
+
 from .torchsparse import IS_TORCHSPARSE_AVAILABLE
 
 if IS_TORCHSPARSE_AVAILABLE:

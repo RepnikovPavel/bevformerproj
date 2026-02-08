@@ -2,7 +2,6 @@
 from unittest import TestCase
 
 import torch
-
 from mmocr.models.textrecog.plugins import Maxpool2d
 
 

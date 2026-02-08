@@ -5,7 +5,6 @@ from unittest.mock import patch
 
 import torch
 from mmengine.logging import MMLogger
-
 from mmocr.datasets import BatchAugSampler
 
 file = 'mmocr.datasets.samplers.batch_aug.'

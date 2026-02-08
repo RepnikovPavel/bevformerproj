@@ -3,7 +3,6 @@ from unittest import TestCase
 
 import torch
 from mmengine.structures import LabelData
-
 from mmocr.models.textrecog.module_losses import CEModuleLoss
 from mmocr.structures import TextRecogDataSample
 

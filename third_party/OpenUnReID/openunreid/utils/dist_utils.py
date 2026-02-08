@@ -2,10 +2,10 @@ import os
 import subprocess
 import warnings
 
+import multiprocess as mp
 import numpy as np
 import torch
 import torch.distributed as dist
-import multiprocess as mp
 import torch.utils.data.distributed
 from torch import nn
 

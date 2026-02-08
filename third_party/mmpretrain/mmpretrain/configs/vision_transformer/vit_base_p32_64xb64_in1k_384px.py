@@ -1,9 +1,14 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 # This is a BETA new format config file, and the usage may change recently.
 from mmengine.config import read_base
-
-from mmpretrain.datasets import (CenterCrop, LoadImageFromFile, PackInputs,
-                                 RandomFlip, RandomResizedCrop, ResizeEdge)
+from mmpretrain.datasets import (
+    CenterCrop,
+    LoadImageFromFile,
+    PackInputs,
+    RandomFlip,
+    RandomResizedCrop,
+    ResizeEdge,
+)
 from mmpretrain.models import CrossEntropyLoss
 
 with read_base():

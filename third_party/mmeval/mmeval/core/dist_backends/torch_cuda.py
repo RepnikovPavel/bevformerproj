@@ -3,6 +3,7 @@
 from typing import TYPE_CHECKING, Any, Tuple, TypeVar, Union
 
 from mmeval.utils import try_import
+
 from .torch_cpu import TorchCPUDist
 
 if TYPE_CHECKING:

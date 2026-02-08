@@ -4,8 +4,13 @@ import sys
 import time
 from pathlib import Path
 
-from ubuntu_utils import (cmd_result, cu_version_name, ensure_base_env,
-                          get_job, pytorch_version)
+from ubuntu_utils import (
+    cmd_result,
+    cu_version_name,
+    ensure_base_env,
+    get_job,
+    pytorch_version,
+)
 
 g_jobs = 2
 

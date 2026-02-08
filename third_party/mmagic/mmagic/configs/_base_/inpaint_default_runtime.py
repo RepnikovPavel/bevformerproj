@@ -1,11 +1,15 @@
 # Copyright (c) OpenMMLab. All rights reserved.
-from mmengine.hooks import (CheckpointHook, DistSamplerSeedHook, IterTimerHook,
-                            LoggerHook, ParamSchedulerHook)
-from mmengine.runner import LogProcessor
-from mmengine.visualization import LocalVisBackend
-
 from mmagic.engine.hooks import BasicVisualizationHook
 from mmagic.visualization import ConcatImageVisualizer
+from mmengine.hooks import (
+                            CheckpointHook,
+                            DistSamplerSeedHook,
+                            IterTimerHook,
+                            LoggerHook,
+                            ParamSchedulerHook,
+)
+from mmengine.runner import LogProcessor
+from mmengine.visualization import LocalVisBackend
 
 default_scope = 'mmagic'
 save_dir = './work_dirs'

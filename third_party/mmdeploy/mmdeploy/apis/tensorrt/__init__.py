@@ -1,5 +1,6 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 from mmdeploy.backend.tensorrt import is_available
+
 from ..core import PIPELINE_MANAGER
 
 __all__ = ['is_available']
@@ -10,8 +11,9 @@ if is_available():
     from_onnx = PIPELINE_MANAGER.register_pipeline()(_from_onnx)
     __all__ += ['from_onnx', 'save', 'load']
     try:
-        from mmdeploy.backend.tensorrt.onnx2tensorrt import \
-            onnx2tensorrt as _onnx2tensorrt
+        from mmdeploy.backend.tensorrt.onnx2tensorrt import (
+            onnx2tensorrt as _onnx2tensorrt,
+        )
 
         onnx2tensorrt = PIPELINE_MANAGER.register_pipeline()(_onnx2tensorrt)
         __all__ += ['onnx2tensorrt']

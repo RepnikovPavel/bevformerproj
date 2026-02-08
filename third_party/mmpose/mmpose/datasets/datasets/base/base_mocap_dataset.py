@@ -14,6 +14,7 @@ from mmengine.logging import print_log
 from mmengine.utils import is_abs
 
 from mmpose.registry import DATASETS
+
 from ..utils import parse_pose_metainfo
 
 

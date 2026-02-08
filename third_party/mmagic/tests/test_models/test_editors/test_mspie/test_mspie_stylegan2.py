@@ -4,12 +4,12 @@ from unittest import TestCase
 
 import pytest
 import torch
-from mmengine import MessageHub
-from mmengine.optim import OptimWrapper, OptimWrapperDict
-
 from mmagic.models import DataPreprocessor, MSPIEStyleGAN2
 from mmagic.structures import DataSample
 from mmagic.utils import register_all_modules
+from mmengine.optim import OptimWrapper, OptimWrapperDict
+
+from mmengine import MessageHub
 
 register_all_modules()
 

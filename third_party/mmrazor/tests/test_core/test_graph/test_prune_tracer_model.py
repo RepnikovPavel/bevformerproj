@@ -10,13 +10,16 @@ from functools import partial
 from unittest import TestCase
 
 import torch
+from mmrazor.models.task_modules.tracer.channel_analyzer import ChannelAnalyzer
+
 from mmengine import MMLogger
 
-from mmrazor.models.task_modules.tracer.channel_analyzer import ChannelAnalyzer
 from ...data.model_library import ModelGenerator
-from ...data.tracer_passed_models import (PassedModelManager,
-                                          backward_passed_library,
-                                          fx_passed_library)
+from ...data.tracer_passed_models import (
+    PassedModelManager,
+    backward_passed_library,
+    fx_passed_library,
+)
 from ...utils import SetTorchThread
 
 sys.setrecursionlimit(int(pow(2, 20)))

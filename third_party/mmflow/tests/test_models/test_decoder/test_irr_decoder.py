@@ -1,11 +1,12 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import pytest
 import torch
-
-from mmflow.models.decoders.irrpwc_decoder import (IRRCorrBlock,
-                                                   IRRFlowDecoder,
-                                                   IRROccDecoder,
-                                                   IRRPWCDecoder)
+from mmflow.models.decoders.irrpwc_decoder import (
+    IRRCorrBlock,
+    IRRFlowDecoder,
+    IRROccDecoder,
+    IRRPWCDecoder,
+)
 
 
 def _get_test_data(

@@ -4,17 +4,17 @@ import tempfile
 from unittest import TestCase, mock
 from unittest.mock import Mock, patch
 
-import mmcv
-import mmengine
 import numpy as np
 import torch
+from mmdet.apis import DetInferencer
+from mmdet.evaluation.functional import get_classes
+from mmdet.structures import DetDataSample
 from mmengine.structures import InstanceData
 from mmengine.utils import is_list_of
 from parameterized import parameterized
 
-from mmdet.apis import DetInferencer
-from mmdet.evaluation.functional import get_classes
-from mmdet.structures import DetDataSample
+import mmcv
+import mmengine
 
 
 class TestDetInferencer(TestCase):

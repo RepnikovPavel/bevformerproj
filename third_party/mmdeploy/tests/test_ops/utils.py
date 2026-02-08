@@ -3,14 +3,14 @@ import os
 import subprocess
 import tempfile
 
+import mmdeploy.apis.tensorrt as trt_apis
 import onnx
 import pytest
 import torch
-from mmengine import Config
-
-import mmdeploy.apis.tensorrt as trt_apis
 from mmdeploy.utils import Backend
 from mmdeploy.utils.test import assert_allclose, check_backend
+
+from mmengine import Config
 
 
 @pytest.mark.skip(reason='This a not test class but a utility class.')

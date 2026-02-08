@@ -5,6 +5,7 @@ import torch.utils.checkpoint as cp
 from mmcv.cnn import ConvModule, DepthwiseSeparableConvModule
 
 from mmrazor.registry import MODELS
+
 from .base import BaseOP
 
 try:

@@ -1,13 +1,13 @@
 # Copyright (c) OpenMMLab. All rights reserved.
-import mmengine
 import numpy as np
 import pytest
 import torch
-
 from mmdeploy.apis import build_task_processor
 from mmdeploy.codebase import import_codebase
 from mmdeploy.utils import Backend, Codebase, Task, load_config
 from mmdeploy.utils.test import WrapModel, check_backend, get_rewrite_outputs
+
+import mmengine
 
 try:
     import_codebase(Codebase.MMDET3D)

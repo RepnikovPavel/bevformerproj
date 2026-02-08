@@ -3,23 +3,19 @@
 # This source code is licensed under the MIT license found in the
 # LICENSE file in the root directory of this source tree.
 
-import os
-import time
-import numpy as np
-import torch
-from tqdm import tqdm
-import torch.nn as nn
-from collections import OrderedDict
 import json
-
-from models.tta.autoencoder.autoencoder import AutoencoderKL
-from models.tta.ldm.inference_utils.vocoder import Generator
-from models.tta.ldm.audioldm import AudioLDM
-from transformers import T5EncoderModel, AutoTokenizer
-from diffusers import PNDMScheduler
+import os
 
 import matplotlib.pyplot as plt
+import numpy as np
+import torch
+from diffusers import PNDMScheduler
+from models.tta.autoencoder.autoencoder import AutoencoderKL
+from models.tta.ldm.audioldm import AudioLDM
+from models.tta.ldm.inference_utils.vocoder import Generator
 from scipy.io.wavfile import write
+from tqdm import tqdm
+from transformers import AutoTokenizer, T5EncoderModel
 
 
 class AttrDict(dict):

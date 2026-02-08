@@ -3,7 +3,6 @@ import copy
 from unittest import TestCase
 
 import torch
-
 from mmrazor.models import Autoformer, NasMutator
 from mmrazor.registry import MODELS
 

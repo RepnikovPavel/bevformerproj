@@ -5,12 +5,15 @@ from copy import deepcopy
 import pytest
 import torch
 import torch.nn as nn
-from mmengine import digit_version
+from mmagic.models.editors.stylegan2 import (
+    ADAAug,
+    ADAStyleGAN2Discriminator,
+    StyleGAN2Discriminator,
+)
+from mmagic.models.utils import get_module_device
 from mmengine.utils.dl_utils import TORCH_VERSION
 
-from mmagic.models.editors.stylegan2 import (ADAAug, ADAStyleGAN2Discriminator,
-                                             StyleGAN2Discriminator)
-from mmagic.models.utils import get_module_device
+from mmengine import digit_version
 
 
 @pytest.mark.skipif(

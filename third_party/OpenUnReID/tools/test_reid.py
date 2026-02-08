@@ -5,7 +5,6 @@ from datetime import timedelta
 from pathlib import Path
 
 import torch
-
 from openunreid.apis import test_reid
 from openunreid.data import build_test_dataloader
 from openunreid.models import build_model

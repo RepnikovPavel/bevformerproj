@@ -3,11 +3,10 @@ import argparse
 
 import torch
 from datasets import load_dataset
-from transformers import BertForSequenceClassification, BertTokenizer
-
 from mmengine.evaluator import BaseMetric
 from mmengine.model import BaseModel
 from mmengine.runner import Runner
+from transformers import BertForSequenceClassification, BertTokenizer
 
 
 class MMBertForClassify(BaseModel):

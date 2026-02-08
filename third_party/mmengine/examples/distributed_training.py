@@ -4,11 +4,10 @@ import argparse
 import torch.nn.functional as F
 import torchvision
 import torchvision.transforms as transforms
-from torch.optim import SGD
-
 from mmengine.evaluator import BaseMetric
 from mmengine.model import BaseModel
 from mmengine.runner import Runner
+from torch.optim import SGD
 
 
 class MMResNet50(BaseModel):

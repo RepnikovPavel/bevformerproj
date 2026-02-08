@@ -16,7 +16,6 @@ import numpy as np
 import torch
 from PIL import Image
 from torch.utils.data import ConcatDataset, Dataset
-from torch.utils.data.dataloader import default_collate
 from transformers import LlamaTokenizer
 
 TEMPLATE = {

@@ -2,27 +2,26 @@
 import argparse
 import copy
 import math
-import pkg_resources
 from functools import partial
 from pathlib import Path
 
-import mmcv
 import numpy as np
+import pkg_resources
 import torch.nn as nn
 from mmcv.transforms import Compose
 from mmengine.config import Config, DictAction
 from mmengine.dataset import default_collate
 from mmengine.utils import to_2tuple
 from mmengine.utils.dl_utils import is_norm
-
-from mmpretrain import digit_version
 from mmpretrain.apis import get_model
 from mmpretrain.registry import TRANSFORMS
 
+import mmcv
+from mmpretrain import digit_version
+
 try:
     import pytorch_grad_cam as cam
-    from pytorch_grad_cam.activations_and_gradients import \
-        ActivationsAndGradients
+    from pytorch_grad_cam.activations_and_gradients import ActivationsAndGradients
     from pytorch_grad_cam.utils.image import show_cam_on_image
 except ImportError:
     raise ImportError('Please run `pip install "grad-cam>=1.3.6"` to install '
@@ -254,8 +253,7 @@ def main():
     if args.target_category:
         grad_cam_v = pkg_resources.get_distribution('grad_cam').version
         if digit_version(grad_cam_v) >= digit_version('1.3.7'):
-            from pytorch_grad_cam.utils.model_targets import \
-                ClassifierOutputTarget
+            from pytorch_grad_cam.utils.model_targets import ClassifierOutputTarget
             targets = [ClassifierOutputTarget(c) for c in args.target_category]
         else:
             targets = args.target_category

@@ -1,7 +1,9 @@
 from mmaction.core.bbox2d import bbox2roi, bbox_mapping
-from mmaction.core.post_processing import (merge_aug_proposals,
-                                           merge_aug_bboxes,
-                                           multiclass_nms)
+from mmaction.core.post_processing import (
+    merge_aug_bboxes,
+    merge_aug_proposals,
+    multiclass_nms,
+)
 
 
 class RPNTestMixin(object):

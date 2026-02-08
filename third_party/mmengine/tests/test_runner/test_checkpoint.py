@@ -10,15 +10,19 @@ import pytest
 import torch
 import torch.nn as nn
 import torch.optim as optim
-from torch.nn.parallel import DataParallel
-
 from mmengine.fileio.file_client import PetrelBackend
 from mmengine.registry import MODEL_WRAPPERS
-from mmengine.runner.checkpoint import (CheckpointLoader,
-                                        _load_checkpoint_with_prefix,
-                                        get_state_dict, load_checkpoint,
-                                        load_from_local, load_from_pavi,
-                                        load_state_dict, save_checkpoint)
+from mmengine.runner.checkpoint import (
+    CheckpointLoader,
+    _load_checkpoint_with_prefix,
+    get_state_dict,
+    load_checkpoint,
+    load_from_local,
+    load_from_pavi,
+    load_state_dict,
+    save_checkpoint,
+)
+from torch.nn.parallel import DataParallel
 
 
 @MODEL_WRAPPERS.register_module()

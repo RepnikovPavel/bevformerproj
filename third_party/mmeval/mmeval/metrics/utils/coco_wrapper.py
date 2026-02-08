@@ -1,10 +1,11 @@
 # Copyright (c) OpenMMLab. All rights reserved.
-import pycocotools.mask as _mask_util
 from collections import defaultdict
 from pathlib import Path
+from typing import Dict, Optional, Sequence, Union
+
+import pycocotools.mask as _mask_util
 from pycocotools.coco import COCO as _COCO
 from pycocotools.cocoeval import COCOeval as _COCOeval
-from typing import Dict, Optional, Sequence, Union
 
 
 class COCO(_COCO):

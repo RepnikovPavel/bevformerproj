@@ -2,6 +2,7 @@
 from typing import Dict, List, Optional, Union
 
 from mmocr.registry import MODELS
+
 from . import PANHead
 
 

@@ -1,7 +1,6 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 
 import torch
-
 from mmagic.models.editors.inst_colorization import color_utils
 
 

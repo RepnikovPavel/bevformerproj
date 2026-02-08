@@ -7,6 +7,7 @@ from mmengine.model import BaseModule
 from torch.nn.modules.batchnorm import _BatchNorm
 
 from mmdet.registry import MODELS
+
 from ..layers import InvertedResidual
 from ..utils import make_divisible
 

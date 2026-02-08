@@ -1,9 +1,12 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import pytest
 import torch
-
-from mmflow.models.decoders.gma_decoder import (Aggregate, Attention,
-                                                GMADecoder, RelPosEmb)
+from mmflow.models.decoders.gma_decoder import (
+    Aggregate,
+    Attention,
+    GMADecoder,
+    RelPosEmb,
+)
 
 
 def test_relposemb():

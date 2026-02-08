@@ -2,11 +2,10 @@
 from unittest import TestCase
 
 import torch
-from torch.nn.modules.batchnorm import _BatchNorm
-
 from mmpose.models.backbones import LiteHRNet
 from mmpose.models.backbones.litehrnet import LiteHRModule
 from mmpose.models.backbones.resnet import Bottleneck
+from torch.nn.modules.batchnorm import _BatchNorm
 
 
 class TestLiteHrnet(TestCase):

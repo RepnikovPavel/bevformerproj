@@ -1,12 +1,11 @@
 import argparse
 import os
 import sys
-import logging
 
-import torch
-import mmskeleton
+from mmskeleton.utils import call_obj, get_attr, set_attr
+
 from mmcv import Config
-from mmskeleton.utils import call_obj, set_attr, get_attr
+
 """ Configuration Structure
 
 argparse_cfg:

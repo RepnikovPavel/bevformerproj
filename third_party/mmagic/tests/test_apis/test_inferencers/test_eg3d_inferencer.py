@@ -5,10 +5,10 @@ import shutil
 
 import numpy as np
 import pytest
-from mmengine import Config
-
 from mmagic.apis.inferencers.eg3d_inferencer import EG3DInferencer
 from mmagic.utils import register_all_modules
+
+from mmengine import Config
 
 register_all_modules()
 

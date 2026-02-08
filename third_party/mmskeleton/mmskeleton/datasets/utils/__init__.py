@@ -1,5 +1,3 @@
-from . import skeleton
-from . import coco_transform
-from . import zipreader
+from . import coco_transform, skeleton, zipreader
 
 __all__ = [skeleton, coco_transform, zipreader]

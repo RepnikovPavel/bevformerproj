@@ -6,7 +6,6 @@ CommandLine:
 """
 
 import torch
-
 from mmdet3d.models.layers.fusion_layers import PointFusion
 
 

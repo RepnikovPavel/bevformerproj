@@ -7,6 +7,7 @@ from mmengine.model import BaseModel
 
 from mmpretrain.registry import MODELS, TOKENIZER
 from mmpretrain.structures import DataSample
+
 from ...utils import no_load_hf_pretrained_model
 from .modules import LlavaLlamaForCausalLM
 

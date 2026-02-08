@@ -1,9 +1,9 @@
 import cv2
 import torch
 import utils
-from torchvision.transforms import Compose
 from midas.dpt_depth import DPTDepthModel
-from midas.transforms import Resize, NormalizeImage, PrepareForNet
+from midas.transforms import NormalizeImage, PrepareForNet, Resize
+from torchvision.transforms import Compose
 
 
 def compose2(f1, f2):

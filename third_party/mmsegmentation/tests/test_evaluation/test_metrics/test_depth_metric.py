@@ -5,7 +5,6 @@ from unittest import TestCase
 
 import torch
 from mmengine.structures import PixelData
-
 from mmseg.evaluation import DepthMetric
 from mmseg.structures import SegDataSample
 

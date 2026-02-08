@@ -1,12 +1,9 @@
-from torch import nn
-
-import torch.nn.functional as F
 import torch
-
+import torch.nn.functional as F
+import torch.nn.utils.spectral_norm as spectral_norm
 from src.facerender.sync_batchnorm import SynchronizedBatchNorm2d as BatchNorm2d
 from src.facerender.sync_batchnorm import SynchronizedBatchNorm3d as BatchNorm3d
-
-import torch.nn.utils.spectral_norm as spectral_norm
+from torch import nn
 
 
 def kp2gaussian(kp, spatial_size, kp_variance):

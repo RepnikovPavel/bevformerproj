@@ -5,8 +5,7 @@ from pathlib import Path
 
 import cv2
 import onnxruntime
-from config import (CLASS_COLORS, CLASS_NAMES, ModelType, YOLOv5_ANCHORS,
-                    YOLOv7_ANCHORS)
+from config import CLASS_COLORS, CLASS_NAMES, ModelType, YOLOv5_ANCHORS, YOLOv7_ANCHORS
 from cv2_nms import non_max_suppression
 from numpy_coder import Decoder
 from preprocess import Preprocess

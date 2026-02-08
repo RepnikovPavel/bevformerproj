@@ -7,9 +7,8 @@ import subprocess
 import uuid
 from collections import OrderedDict
 
-from joblib import delayed
-from joblib import Parallel
 import pandas as pd
+from joblib import Parallel, delayed
 
 
 def create_video_folders(dataset, output_dir, tmp_dir):

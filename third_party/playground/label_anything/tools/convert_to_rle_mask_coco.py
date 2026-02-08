@@ -1,17 +1,17 @@
+import argparse
 import json
 import os
-import sys
-import cv2
-import argparse
-import numpy as np
-from tqdm import tqdm
-from itertools import groupby
-from label_studio_converter.brush import decode_rle
-import urllib.parse
-
-import jinja2
-
 import shutil
+import sys
+import urllib.parse
+from itertools import groupby
+
+import cv2
+import jinja2
+import numpy as np
+from label_studio_converter.brush import decode_rle
+from tqdm import tqdm
+
 
 def parse_args():
     parser = argparse.ArgumentParser(description='Label studio convert to Coco fomat')

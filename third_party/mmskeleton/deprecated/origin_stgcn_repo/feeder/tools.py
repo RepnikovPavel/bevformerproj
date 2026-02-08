@@ -1,5 +1,6 @@
-import numpy as np
 import random
+
+import numpy as np
 
 
 def downsample(data_numpy, step, random_sample=True):

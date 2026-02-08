@@ -2,9 +2,10 @@
 from unittest import TestCase
 
 import torch
+from mmrazor.models.task_modules.tracer import ChannelAnalyzer
 
 from mmrazor import digit_version
-from mmrazor.models.task_modules.tracer import ChannelAnalyzer
+
 from ...data.models import SingleLineModel
 
 

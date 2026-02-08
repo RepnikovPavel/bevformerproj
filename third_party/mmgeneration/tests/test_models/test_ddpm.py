@@ -4,10 +4,8 @@ from copy import deepcopy
 import numpy as np
 import pytest
 import torch
-
 from mmgen.models.builder import build_model
-from mmgen.models.diffusions import (BasicGaussianDiffusion,
-                                     UniformTimeStepSampler)
+from mmgen.models.diffusions import BasicGaussianDiffusion, UniformTimeStepSampler
 from mmgen.models.diffusions.utils import _get_label_batch, _get_noise_batch
 
 

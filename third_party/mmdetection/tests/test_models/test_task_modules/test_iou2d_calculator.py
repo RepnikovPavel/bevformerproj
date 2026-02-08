@@ -2,7 +2,6 @@
 import numpy as np
 import pytest
 import torch
-
 from mmdet.evaluation import bbox_overlaps as recall_overlaps
 from mmdet.models.task_modules import BboxOverlaps2D
 from mmdet.structures.bbox import bbox_overlaps

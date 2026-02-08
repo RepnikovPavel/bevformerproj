@@ -14,13 +14,13 @@ import time
 from abc import ABCMeta, abstractmethod
 
 import cv2
-import mmcv
 import numpy as np
 import torch
-from mmengine import Config, DictAction
+from mmaction.structures import ActionDataSample
 from mmengine.structures import InstanceData
 
-from mmaction.structures import ActionDataSample
+import mmcv
+from mmengine import Config, DictAction
 
 try:
     from mmdet.apis import inference_detector, init_detector

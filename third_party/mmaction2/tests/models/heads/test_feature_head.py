@@ -3,7 +3,6 @@ from unittest import TestCase
 
 import pytest
 import torch
-
 from mmaction.models import FeatureHead
 from mmaction.registry import MODELS
 from mmaction.structures import ActionDataSample

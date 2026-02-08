@@ -4,15 +4,17 @@ import os
 import pytest
 import torch
 import torch.nn as nn
-from torch.distributed import destroy_process_group, init_process_group
-from torch.nn.parallel import DataParallel, DistributedDataParallel
-
-from mmengine.model import (MMDistributedDataParallel,
-                            MMSeparateDistributedDataParallel,
-                            convert_sync_batchnorm, is_model_wrapper,
-                            revert_sync_batchnorm)
+from mmengine.model import (
+    MMDistributedDataParallel,
+    MMSeparateDistributedDataParallel,
+    convert_sync_batchnorm,
+    is_model_wrapper,
+    revert_sync_batchnorm,
+)
 from mmengine.registry import MODEL_WRAPPERS, Registry
 from mmengine.utils import is_installed
+from torch.distributed import destroy_process_group, init_process_group
+from torch.nn.parallel import DataParallel, DistributedDataParallel
 
 
 class ToyModule(nn.Module):

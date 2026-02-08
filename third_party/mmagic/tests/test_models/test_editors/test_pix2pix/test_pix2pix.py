@@ -5,13 +5,12 @@ import sys
 
 import pytest
 import torch
-from mmengine.logging import MessageHub
-from mmengine.optim import OptimWrapper, OptimWrapperDict
-
 from mmagic.models import DataPreprocessor, Pix2Pix
 from mmagic.models.archs import PatchDiscriminator
 from mmagic.models.editors.pix2pix import UnetGenerator
 from mmagic.utils import register_all_modules
+from mmengine.logging import MessageHub
+from mmengine.optim import OptimWrapper, OptimWrapperDict
 
 register_all_modules()
 

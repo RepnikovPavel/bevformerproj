@@ -5,7 +5,6 @@ import numpy as np
 import pytest
 import torch
 from mmengine.structures import PixelData
-
 from mmseg.structures import SegDataSample
 
 

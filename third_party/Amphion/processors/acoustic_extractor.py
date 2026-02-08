@@ -3,26 +3,26 @@
 # This source code is licensed under the MIT license found in the
 # LICENSE file in the root directory of this source tree.
 
-import os
-import torch
-import numpy as np
-
 import json
-from tqdm import tqdm
-from sklearn.preprocessing import StandardScaler
-from utils.io import save_feature, save_txt, save_torch_audio
-from utils.util import has_existed
-from utils.tokenizer import extract_encodec_token
-from utils.stft import TacotronSTFT
-from utils.dsp import compress, audio_to_label
-from utils.data_utils import remove_outlier
+import os
+
+import numpy as np
+import torch
 from preprocessors.metadata import replace_augment_name
 from scipy.interpolate import interp1d
+from sklearn.preprocessing import StandardScaler
+from tqdm import tqdm
+from utils.data_utils import remove_outlier
+from utils.dsp import audio_to_label, compress
+from utils.io import save_feature, save_torch_audio, save_txt
 from utils.mel import (
-    extract_mel_features,
     extract_linear_features,
+    extract_mel_features,
     extract_mel_features_tts,
 )
+from utils.stft import TacotronSTFT
+from utils.tokenizer import extract_encodec_token
+from utils.util import has_existed
 
 ZERO = 1e-12
 
@@ -104,7 +104,7 @@ def __extract_utt_acoustic_features(dataset_output, cfg, utt):
                     path to utternace, duration, utternace index
 
     """
-    from utils import audio, f0, world, duration
+    from utils import audio, duration, f0
 
     uid = utt["Uid"]
     wav_path = utt["Path"]
@@ -232,7 +232,7 @@ def extract_utt_acoustic_features_tts(dataset_output, cfg, utt):
                     path to utternace, duration, utternace index
 
     """
-    from utils import audio, f0, world, duration
+    from utils import audio, duration, f0
 
     uid = utt["Uid"]
     wav_path = utt["Path"]
@@ -383,7 +383,7 @@ def extract_utt_acoustic_features_vocoder(dataset_output, cfg, utt):
                     path to utternace, duration, utternace index
 
     """
-    from utils import audio, f0, world, duration
+    from utils import audio, f0
 
     uid = utt["Uid"]
     wav_path = utt["Path"]

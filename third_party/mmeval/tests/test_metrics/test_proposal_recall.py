@@ -1,7 +1,6 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import numpy as np
 import pytest
-
 from mmeval.core.base_metric import BaseMetric
 from mmeval.metrics import ProposalRecall
 

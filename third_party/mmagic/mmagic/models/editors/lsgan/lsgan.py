@@ -8,6 +8,7 @@ from torch import Tensor
 
 from mmagic.registry import MODELS
 from mmagic.structures import DataSample
+
 from ...base_models import BaseGAN
 
 

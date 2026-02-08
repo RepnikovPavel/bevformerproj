@@ -4,10 +4,10 @@ import os.path as osp
 from operator import itemgetter
 from typing import Optional, Tuple
 
-from mmengine import Config, DictAction
-
 from mmaction.apis import inference_recognizer, init_recognizer
 from mmaction.visualization import ActionVisualizer
+
+from mmengine import Config, DictAction
 
 
 def parse_args():

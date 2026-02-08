@@ -2,10 +2,9 @@
 import numpy as np
 import pytest
 import torch
+from mmaction.models import OHEMHingeLoss
 from numpy.testing import assert_array_almost_equal
 from torch.autograd import Variable
-
-from mmaction.models import OHEMHingeLoss
 
 
 def test_ohem_hinge_loss():

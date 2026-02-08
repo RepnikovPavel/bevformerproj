@@ -3,7 +3,6 @@ import copy
 
 import pytest
 import torch
-
 from mmfewshot.classification.models import CLASSIFIERS
 from mmfewshot.classification.utils import MetaTestParallel
 

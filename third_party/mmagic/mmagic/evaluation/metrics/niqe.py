@@ -4,14 +4,15 @@ import os
 from typing import Optional
 
 import cv2
-import mmcv
 import numpy as np
 from scipy.ndimage import convolve
 from scipy.special import gamma
 
+import mmcv
 from mmagic.datasets.transforms import MATLABLikeResize
 from mmagic.registry import METRICS
 from mmagic.utils import reorder_image, to_numpy
+
 from .base_sample_wise_metric import BaseSampleWiseMetric
 
 

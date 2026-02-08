@@ -9,6 +9,7 @@ from mmengine.logging import MMLogger
 from shapely.geometry import Polygon
 
 from mmocr.utils.polygon_utils import offset_polygon
+
 from .base import BaseTextDetModuleLoss
 
 

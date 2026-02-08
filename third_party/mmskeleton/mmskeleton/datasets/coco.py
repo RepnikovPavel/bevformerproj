@@ -4,21 +4,18 @@
 # Written by Bin Xiao (Bin.Xiao@microsoft.com)
 # ------------------------------------------------------------------------------
 
-from __future__ import absolute_import
-from __future__ import division
-from __future__ import print_function
+from __future__ import absolute_import, division, print_function
 
-from collections import defaultdict
-from collections import OrderedDict
+import json
 import logging
 import os
-import json
-import numpy as np
+from collections import OrderedDict, defaultdict
 
-from .estimation import EstiamtionDataset
-from ..ops.nms.nms import oks_nms
-from ..ops.nms.nms import soft_oks_nms
+import numpy as np
 from pycocotools import COCO, COCOeval
+
+from ..ops.nms.nms import oks_nms, soft_oks_nms
+from .estimation import EstiamtionDataset
 
 logger = logging.getLogger(__name__)
 

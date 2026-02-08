@@ -5,10 +5,13 @@ import torch
 import torch.nn as nn
 from mmcv.cnn import ConvModule
 from mmengine.utils.dl_utils.parrots_wrapper import _BatchNorm
-
 from mmpose.models.backbones import ResNet, ResNetV1d
-from mmpose.models.backbones.resnet import (BasicBlock, Bottleneck, ResLayer,
-                                            get_expansion)
+from mmpose.models.backbones.resnet import (
+    BasicBlock,
+    Bottleneck,
+    ResLayer,
+    get_expansion,
+)
 
 
 class TestResnet(TestCase):

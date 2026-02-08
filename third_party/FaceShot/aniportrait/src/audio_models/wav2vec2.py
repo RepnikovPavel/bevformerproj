@@ -3,6 +3,7 @@ from transformers.modeling_outputs import BaseModelOutput
 
 from .torch_utils import linear_interpolation
 
+
 # the implementation of Wav2Vec2Model is borrowed from
 # https://github.com/huggingface/transformers/blob/HEAD/src/transformers/models/wav2vec2/modeling_wav2vec2.py
 # initialize our encoder with the pre-trained wav2vec 2.0 weights.

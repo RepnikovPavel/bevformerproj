@@ -3,6 +3,7 @@ import torch
 import torch.nn as nn
 
 from mmocr.registry import MODELS
+
 from .base import BaseEncoder
 
 

@@ -5,6 +5,7 @@ import numpy as np
 
 from mmpose.registry import KEYPOINT_CODECS
 from mmpose.structures import bbox_cs2xyxy, bbox_xyxy2cs
+
 from .base import BaseKeypointCodec
 
 

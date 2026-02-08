@@ -3,9 +3,8 @@ from unittest import TestCase
 
 import numpy as np
 import torch
-from mmengine.structures import LabelData
-
 from mmdet.structures import ReIDDataSample
+from mmengine.structures import LabelData
 
 
 def _equal(a, b):

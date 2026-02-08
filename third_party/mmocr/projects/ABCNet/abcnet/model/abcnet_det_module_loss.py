@@ -5,12 +5,12 @@ import torch
 from mmdet.models.task_modules.prior_generators import MlvlPointGenerator
 from mmdet.models.utils import multi_apply
 from mmdet.utils import reduce_mean
-from torch import Tensor
-
 from mmocr.models.textdet.module_losses.base import BaseTextDetModuleLoss
 from mmocr.registry import MODELS, TASK_UTILS
 from mmocr.structures import TextDetDataSample
 from mmocr.utils import ConfigType, DetSampleList, RangeType
+from torch import Tensor
+
 from ..utils import poly2bezier
 
 INF = 1e8

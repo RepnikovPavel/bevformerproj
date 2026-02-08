@@ -8,8 +8,7 @@ except ImportError:
     BackendConfig = get_placeholder('torch>=1.13')
     DTypeConfig = get_placeholder('torch>=1.13')
 
-from .common_operator_config_utils import (_get_conv_configs,
-                                           _get_linear_configs)
+from .common_operator_config_utils import _get_conv_configs, _get_linear_configs
 
 # =====================
 # |  BACKEND CONFIGS  |

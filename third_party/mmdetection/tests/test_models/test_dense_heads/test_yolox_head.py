@@ -3,12 +3,11 @@ from unittest import TestCase
 
 import torch
 from mmcv.cnn import ConvModule, DepthwiseSeparableConvModule
+from mmdet.models.dense_heads import YOLOXHead
 from mmengine.config import Config
 from mmengine.model import bias_init_with_prob
 from mmengine.structures import InstanceData
 from mmengine.testing import assert_allclose
-
-from mmdet.models.dense_heads import YOLOXHead
 
 
 class TestYOLOXHead(TestCase):

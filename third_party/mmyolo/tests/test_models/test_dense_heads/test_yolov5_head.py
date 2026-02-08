@@ -5,7 +5,6 @@ import numpy as np
 import torch
 from mmengine.config import Config
 from mmengine.structures import InstanceData
-
 from mmyolo.models.dense_heads import YOLOv5Head, YOLOv5InsHead
 from mmyolo.utils import register_all_modules
 

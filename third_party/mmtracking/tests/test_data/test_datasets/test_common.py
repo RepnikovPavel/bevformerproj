@@ -7,9 +7,8 @@ import pytest
 import torch
 import torch.nn as nn
 from mmcv.runner import EpochBasedRunner
-from torch.utils.data import DataLoader
-
 from mmtrack.core.evaluation import DistEvalHook, EvalHook
+from torch.utils.data import DataLoader
 
 
 @patch('mmtrack.apis.single_gpu_test', MagicMock)

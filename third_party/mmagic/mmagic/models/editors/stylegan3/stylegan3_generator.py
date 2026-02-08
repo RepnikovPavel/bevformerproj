@@ -1,12 +1,13 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 from copy import deepcopy
 
-import mmengine
 import torch
 from mmengine.model import BaseModule
 from mmengine.runner.checkpoint import _load_checkpoint_with_prefix
 
+import mmengine
 from mmagic.registry import MODELS
+
 from ...utils import get_module_device
 from ..stylegan1 import get_mean_latent
 

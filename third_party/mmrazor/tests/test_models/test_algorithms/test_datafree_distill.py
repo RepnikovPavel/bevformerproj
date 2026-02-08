@@ -3,10 +3,10 @@ import copy
 from unittest import TestCase
 
 import torch
-from mmengine import ConfigDict
 from mmengine.optim import build_optim_wrapper
-
 from mmrazor.models import DAFLDataFreeDistillation, DataFreeDistillation
+
+from mmengine import ConfigDict
 
 
 class TestDataFreeDistill(TestCase):

@@ -3,12 +3,11 @@
 import numpy as np
 import pytest
 import torch
-from mmengine import Config
-
 from mmdeploy.codebase import import_codebase
 from mmdeploy.utils import Backend, Codebase
-from mmdeploy.utils.test import (WrapFunction, check_backend,
-                                 get_rewrite_outputs)
+from mmdeploy.utils.test import WrapFunction, check_backend, get_rewrite_outputs
+
+from mmengine import Config
 
 try:
     import_codebase(Codebase.MMDET)

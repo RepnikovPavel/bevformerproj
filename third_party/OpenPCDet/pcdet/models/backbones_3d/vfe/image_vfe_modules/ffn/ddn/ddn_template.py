@@ -1,10 +1,10 @@
 from collections import OrderedDict
 from pathlib import Path
-from torch import hub
 
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
+from torch import hub
 
 try:
     from kornia.enhance.normalize import normalize

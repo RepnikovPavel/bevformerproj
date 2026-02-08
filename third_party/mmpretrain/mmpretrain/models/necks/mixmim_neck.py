@@ -5,6 +5,7 @@ import torch
 import torch.nn as nn
 
 from mmpretrain.registry import MODELS
+
 from ..utils import build_2d_sincos_position_embedding
 from .mae_neck import MAEPretrainDecoder
 

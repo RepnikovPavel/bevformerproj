@@ -5,8 +5,6 @@ import os
 import warnings
 from typing import Dict, Optional, Sequence
 
-import mmcv
-import mmengine
 import mmengine.fileio as fileio
 import torch
 from mmengine.config import ConfigDict
@@ -15,6 +13,8 @@ from mmengine.logging import print_log
 from mmengine.runner import Runner
 from mmengine.visualization import Visualizer
 
+import mmcv
+import mmengine
 from mmpose.registry import HOOKS, METRICS, MODELS
 from mmpose.structures import PoseDataSample, merge_data_samples
 

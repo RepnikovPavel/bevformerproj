@@ -3,13 +3,14 @@
 # This source code is licensed under the MIT license found in the
 # LICENSE file in the root directory of this source tree.
 
-from typing import Dict, Optional, Union
+from typing import Dict, Optional
+
 import torch
 from torch.nn.utils.rnn import pad_sequence, unpad_sequence
 
 IGNORE_ID = -100  # ignored by llama
 
-from transformers.models.llama.modeling_llama import LlamaForCausalLM, LlamaConfig
+from transformers.models.llama.modeling_llama import LlamaConfig, LlamaForCausalLM
 
 
 class LLM(torch.nn.Module):

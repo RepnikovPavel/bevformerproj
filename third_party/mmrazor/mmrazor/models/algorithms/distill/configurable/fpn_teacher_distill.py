@@ -6,6 +6,7 @@ from mmengine.structures import BaseDataElement
 
 from mmrazor.models.utils import add_prefix
 from mmrazor.registry import MODELS
+
 from ...base import LossResults
 from .single_teacher_distill import SingleTeacherDistill
 

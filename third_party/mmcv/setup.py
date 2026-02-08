@@ -2,6 +2,7 @@ import glob
 import os
 import platform
 import re
+
 from pkg_resources import DistributionNotFound, get_distribution, parse_version
 from setuptools import find_packages, setup
 
@@ -230,8 +231,9 @@ def get_extensions():
             pass
 
         if os.getenv('MMCV_WITH_DIOPI', '0') == '1':
-            import mmengine  # NOQA: F401
             from mmengine.utils.version_utils import digit_version
+
+            import mmengine  # NOQA: F401
             assert digit_version(mmengine.__version__) >= digit_version(
                 '0.7.4'), f'mmengine >= 0.7.4 is required \
                 but {mmengine.__version__} is installed'

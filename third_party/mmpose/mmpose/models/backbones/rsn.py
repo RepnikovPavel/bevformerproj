@@ -8,6 +8,7 @@ from mmcv.cnn import ConvModule, MaxPool2d
 from mmengine.model import BaseModule
 
 from mmpose.registry import MODELS
+
 from .base_backbone import BaseBackbone
 
 

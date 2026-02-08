@@ -10,13 +10,20 @@ except ImportError:
     fit = get_placeholder('pydacefit')
 
 from mmrazor.registry import TASK_UTILS
+
 from .base_handler import BaseHandler
 
 
 def get_pydacefit_func():
     """Build a function map from pydacefit."""
-    from pydacefit.corr import (corr_cubic, corr_exp, corr_expg, corr_gauss,
-                                corr_spherical, corr_spline)
+    from pydacefit.corr import (
+        corr_cubic,
+        corr_exp,
+        corr_expg,
+        corr_gauss,
+        corr_spherical,
+        corr_spline,
+    )
     from pydacefit.dace import regr_linear, regr_quadratic
     from pydacefit.regr import regr_constant
 

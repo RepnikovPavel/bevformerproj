@@ -10,11 +10,19 @@ def register_spconv2() -> bool:
     """This func registers spconv2.0 spconv ops to overwrite the default mmcv
     spconv ops."""
     try:
-        from spconv.pytorch import (SparseConv2d, SparseConv3d, SparseConv4d,
-                                    SparseConvTranspose2d,
-                                    SparseConvTranspose3d, SparseInverseConv2d,
-                                    SparseInverseConv3d, SparseModule,
-                                    SubMConv2d, SubMConv3d, SubMConv4d)
+        from spconv.pytorch import (
+            SparseConv2d,
+            SparseConv3d,
+            SparseConv4d,
+            SparseConvTranspose2d,
+            SparseConvTranspose3d,
+            SparseInverseConv2d,
+            SparseInverseConv3d,
+            SparseModule,
+            SubMConv2d,
+            SubMConv3d,
+            SubMConv4d,
+        )
     except ImportError:
         return False
     else:

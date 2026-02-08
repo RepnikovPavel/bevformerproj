@@ -1,7 +1,6 @@
 import torch
 import torch.nn as nn
 
-
 try:
     from ...MiDaS.midas.dpt_depth import DPTDepthModel
 except ImportError:

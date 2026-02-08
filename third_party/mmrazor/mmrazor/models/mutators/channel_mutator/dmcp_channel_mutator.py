@@ -8,6 +8,7 @@ from torch.nn import Module
 
 from mmrazor.models.mutables import DMCPChannelUnit
 from mmrazor.registry import MODELS
+
 from ...architectures import DMCPBatchNorm2d
 from .channel_mutator import ChannelMutator, ChannelUnitType
 

@@ -1,12 +1,11 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 from typing import Dict, List
 
-from torch import Tensor
-
 from mmdet3d.models import EncoderDecoder3D
 from mmdet3d.registry import MODELS
 from mmdet3d.structures import PointData
 from mmdet3d.structures.det3d_data_sample import OptSampleList, SampleList
+from torch import Tensor
 
 
 @MODELS.register_module()

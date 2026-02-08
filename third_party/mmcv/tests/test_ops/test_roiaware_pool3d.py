@@ -2,11 +2,18 @@
 import numpy as np
 import pytest
 import torch
-
-from mmcv.ops import (RoIAwarePool3d, points_in_boxes_all, points_in_boxes_cpu,
-                      points_in_boxes_part)
-from mmcv.utils import (IS_CUDA_AVAILABLE, IS_MLU_AVAILABLE, IS_MUSA_AVAILABLE,
-                        IS_NPU_AVAILABLE)
+from mmcv.ops import (
+    RoIAwarePool3d,
+    points_in_boxes_all,
+    points_in_boxes_cpu,
+    points_in_boxes_part,
+)
+from mmcv.utils import (
+    IS_CUDA_AVAILABLE,
+    IS_MLU_AVAILABLE,
+    IS_MUSA_AVAILABLE,
+    IS_NPU_AVAILABLE,
+)
 
 
 @pytest.mark.parametrize('dtype', [

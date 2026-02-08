@@ -4,10 +4,10 @@ import numpy as np
 import torch
 import torch.nn as nn
 from mmdet.models.losses.utils import weighted_loss
-from torch import Tensor
-
 from mmdet3d.models.task_modules import CenterPointBBoxCoder
 from mmdet3d.registry import MODELS, TASK_UTILS
+from torch import Tensor
+
 from .ops.ingroup_inds.ingroup_inds_op import ingroup_inds
 
 get_inner_win_inds_cuda = ingroup_inds

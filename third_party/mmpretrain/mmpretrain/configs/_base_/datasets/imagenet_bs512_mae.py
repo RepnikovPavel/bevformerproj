@@ -2,7 +2,6 @@
 # This is a BETA new format config file, and the usage may change recently.
 from mmcv.transforms import LoadImageFromFile, RandomFlip
 from mmengine.dataset.sampler import DefaultSampler
-
 from mmpretrain.datasets import ImageNet, PackInputs, RandomResizedCrop
 from mmpretrain.models import SelfSupDataPreprocessor
 

@@ -2,12 +2,12 @@
 from abc import ABCMeta, abstractmethod
 from collections import OrderedDict
 
-import mmcv
 import numpy as np
 import torch
 import torch.distributed as dist
 from mmcv.runner import BaseModule, auto_fp16
 
+import mmcv
 from mmtrack.utils import get_root_logger
 
 

@@ -10,6 +10,7 @@ from torch import Tensor, nn
 from torch.nn.modules.conv import _ConvNd
 
 from mmrazor.models.mutables.base_mutable import BaseMutable
+
 from .dynamic_mixins import DynamicChannelMixin
 
 PartialType = Callable[[Any, Optional[nn.Parameter]], Any]

@@ -2,8 +2,9 @@
 from typing import Dict, List, Optional, Tuple, Union
 
 import cv2
-import mmcv
 import numpy as np
+
+import mmcv
 
 try:
     import seaborn as sns

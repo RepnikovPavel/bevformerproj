@@ -4,7 +4,6 @@ from unittest.mock import MagicMock
 
 import pytest
 import torch
-
 from mmpretrain.models import EVA
 from mmpretrain.structures import DataSample
 

@@ -3,7 +3,6 @@ from typing import Dict, List
 
 import torch
 import torch.nn.functional as F
-
 from mmselfsup.models import BaseModel
 from mmselfsup.registry import MODELS
 from mmselfsup.structures import SelfSupDataSample

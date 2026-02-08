@@ -1,7 +1,8 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 
-import pytest
 import re
+
+import pytest
 
 import mmeval
 

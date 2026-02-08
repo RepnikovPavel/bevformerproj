@@ -2,10 +2,14 @@
 import numpy as np
 import pytest
 import torch
-
-from mmagic.models.editors.gca import (ResGCADecoder, ResGCAEncoder, ResNetDec,
-                                       ResNetEnc, ResShortcutDec,
-                                       ResShortcutEnc)
+from mmagic.models.editors.gca import (
+    ResGCADecoder,
+    ResGCAEncoder,
+    ResNetDec,
+    ResNetEnc,
+    ResShortcutDec,
+    ResShortcutEnc,
+)
 
 
 def assert_tensor_with_shape(tensor, shape):

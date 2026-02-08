@@ -6,7 +6,6 @@ from os.path import dirname, exists, join
 import torch
 from mmengine.config import Config, ConfigDict
 from mmengine.structures import InstanceData
-
 from mmocr.registry import MODELS
 from mmocr.structures import KIEDataSample
 

@@ -1,9 +1,9 @@
 import sys
+
 sys.path.append(os.getcwd())
 import torch
-
-from utils.share import *
 from models.util import create_model
+from utils.share import *
 
 
 def init_local(sd_weights_path, config_path, output_path):

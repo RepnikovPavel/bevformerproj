@@ -2,11 +2,10 @@
 from typing import List, Optional, Union
 
 import torch
-from torch import nn
-
 from mmpretrain.models import BaseSelfSupervisor, CosineEMA
 from mmpretrain.registry import MODELS
 from mmpretrain.structures import DataSample
+from torch import nn
 
 
 @MODELS.register_module()

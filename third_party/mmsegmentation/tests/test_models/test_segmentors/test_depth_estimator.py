@@ -3,13 +3,13 @@ from copy import deepcopy
 from os.path import dirname, join
 from unittest import TestCase
 
-import torch
-from mmengine import Config, ConfigDict
-from mmengine.structures import PixelData
-
 import mmseg
+import torch
+from mmengine.structures import PixelData
 from mmseg.models.segmentors import DepthEstimator
 from mmseg.structures import SegDataSample
+
+from mmengine import Config, ConfigDict
 
 
 class TestDepthEstimator(TestCase):

@@ -12,8 +12,11 @@ from torch import nn as nn
 
 from mmdet3d.models.layers import nms_bev, nms_normal_bev
 from mmdet3d.registry import MODELS, TASK_UTILS
-from mmdet3d.structures.bbox_3d import (LiDARInstance3DBoxes,
-                                        rotation_3d_in_axis, xywhr2xyxyr)
+from mmdet3d.structures.bbox_3d import (
+    LiDARInstance3DBoxes,
+    rotation_3d_in_axis,
+    xywhr2xyxyr,
+)
 from mmdet3d.utils import InstanceList
 
 

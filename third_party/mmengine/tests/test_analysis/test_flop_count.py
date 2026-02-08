@@ -11,12 +11,11 @@ from typing import Any, Dict, Tuple
 
 import torch
 import torch.nn as nn
-from torch.autograd.function import Function
-from torch.nn import functional as F
-
 from mmengine.analysis import FlopAnalyzer, flop_count
 from mmengine.analysis.complexity_analysis import _DEFAULT_SUPPORTED_FLOP_OPS
 from mmengine.analysis.jit_handles import Handle
+from torch.autograd.function import Function
+from torch.nn import functional as F
 
 
 class _CustomOp(Function):

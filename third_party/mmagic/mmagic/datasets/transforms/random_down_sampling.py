@@ -3,10 +3,10 @@ import math
 
 import numpy as np
 import torch
-from mmcv import imresize
 from mmcv.transforms import BaseTransform
 
 from mmagic.registry import TRANSFORMS
+from mmcv import imresize
 
 
 @TRANSFORMS.register_module()

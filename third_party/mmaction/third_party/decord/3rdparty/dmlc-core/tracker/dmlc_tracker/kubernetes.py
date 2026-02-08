@@ -6,14 +6,10 @@ One need to make sure kubectl-able.
 """
 from __future__ import absolute_import
 
-import os
-from os import path
-import sys
-import uuid
-import logging
-from kubernetes import client, config
-from . import tracker
 import yaml
+from kubernetes import client, config
+
+from . import tracker
 
 template_volume = {
         "name":""

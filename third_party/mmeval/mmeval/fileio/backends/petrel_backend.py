@@ -7,6 +7,7 @@ from pathlib import Path
 from typing import Generator, Iterator, Optional, Tuple, Union
 
 from mmeval.utils import has_method
+
 from .base import BaseStorageBackend
 
 

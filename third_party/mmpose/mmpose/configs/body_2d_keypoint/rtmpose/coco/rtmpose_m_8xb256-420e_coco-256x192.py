@@ -12,19 +12,31 @@ from mmengine.dataset import DefaultSampler
 from mmengine.hooks import EMAHook
 from mmengine.model import PretrainedInit
 from mmengine.optim import CosineAnnealingLR, LinearLR, OptimWrapper
-from torch.nn import SiLU, SyncBatchNorm
-from torch.optim import AdamW
-
 from mmpose.codecs import SimCCLabel
-from mmpose.datasets import (CocoDataset, GenerateTarget, GetBBoxCenterScale,
-                             LoadImage, PackPoseInputs, RandomFlip,
-                             RandomHalfBody, TopdownAffine)
-from mmpose.datasets.transforms.common_transforms import (Albumentation,
-                                                          RandomBBoxTransform)
+from mmpose.datasets import (
+    CocoDataset,
+    GenerateTarget,
+    GetBBoxCenterScale,
+    LoadImage,
+    PackPoseInputs,
+    RandomFlip,
+    RandomHalfBody,
+    TopdownAffine,
+)
+from mmpose.datasets.transforms.common_transforms import (
+    Albumentation,
+    RandomBBoxTransform,
+)
 from mmpose.engine.hooks import ExpMomentumEMA
 from mmpose.evaluation import CocoMetric
-from mmpose.models import (KLDiscretLoss, PoseDataPreprocessor, RTMCCHead,
-                           TopdownPoseEstimator)
+from mmpose.models import (
+    KLDiscretLoss,
+    PoseDataPreprocessor,
+    RTMCCHead,
+    TopdownPoseEstimator,
+)
+from torch.nn import SiLU, SyncBatchNorm
+from torch.optim import AdamW
 
 # runtime
 max_epochs = 420

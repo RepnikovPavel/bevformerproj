@@ -17,14 +17,12 @@ from typing import Callable, List, Optional, Union
 
 import torch
 import torch.nn.functional as F
-from einops import rearrange
-from torch import nn
-
 from diffusers.models.lora import LoRACompatibleLinear, LoRALinearLayer
 from diffusers.utils import USE_PEFT_BACKEND, deprecate, logging
 from diffusers.utils.import_utils import is_xformers_available
 from diffusers.utils.torch_utils import maybe_allow_in_graph
-
+from einops import rearrange
+from torch import nn
 
 logger = logging.get_logger(__name__)  # pylint: disable=invalid-name
 

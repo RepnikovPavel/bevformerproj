@@ -4,7 +4,6 @@ import os.path as osp
 import numpy as np
 import pytest
 from mmengine.registry import init_default_scope
-
 from mmselfsup.datasets import ImageList
 
 # dataset settings

@@ -3,11 +3,11 @@ import copy
 import math
 from typing import Dict, List, Tuple
 
-import mmcv
 import numpy as np
 from mmdet.datasets import PIPELINES
-from mmdet.datasets.pipelines import (Normalize, Pad, RandomCrop, RandomFlip,
-                                      Resize)
+from mmdet.datasets.pipelines import Normalize, Pad, RandomCrop, RandomFlip, Resize
+
+import mmcv
 
 
 # TODO: Simplify pipelines by decoupling operation.

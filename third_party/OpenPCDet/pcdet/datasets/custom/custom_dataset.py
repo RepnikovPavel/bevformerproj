@@ -1,11 +1,11 @@
 import copy
-import pickle
 import os
+import pickle
 
 import numpy as np
 
 from ...ops.roiaware_pool3d import roiaware_pool3d_utils
-from ...utils import box_utils, common_utils
+from ...utils import common_utils
 from ..dataset import DatasetTemplate
 
 
@@ -115,8 +115,8 @@ class CustomDataset(DatasetTemplate):
             return 'No ground-truth boxes for evaluation', {}
 
         def kitti_eval(eval_det_annos, eval_gt_annos, map_name_to_kitti):
-            from ..kitti.kitti_object_eval_python import eval as kitti_eval
             from ..kitti import kitti_utils
+            from ..kitti.kitti_object_eval_python import eval as kitti_eval
 
             kitti_utils.transform_annotations_to_kitti_format(eval_det_annos, map_name_to_kitti=map_name_to_kitti)
             kitti_utils.transform_annotations_to_kitti_format(
@@ -269,8 +269,9 @@ if __name__ == '__main__':
     import sys
 
     if sys.argv.__len__() > 1 and sys.argv[1] == 'create_custom_infos':
-        import yaml
         from pathlib import Path
+
+        import yaml
         from easydict import EasyDict
 
         dataset_cfg = EasyDict(yaml.safe_load(open(sys.argv[2])))

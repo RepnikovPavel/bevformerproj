@@ -5,11 +5,11 @@ import os.path as osp
 from collections import defaultdict
 from tempfile import TemporaryDirectory
 
-import mmengine
 import numpy as np
-
 from mmaction.apis import detection_inference, pose_inference
 from mmaction.utils import frame_extract
+
+import mmengine
 
 args = abc.abstractproperty()
 args.det_config = 'demo/demo_configs/faster-rcnn_r50-caffe_fpn_ms-1x_coco-person.py'  # noqa: E501

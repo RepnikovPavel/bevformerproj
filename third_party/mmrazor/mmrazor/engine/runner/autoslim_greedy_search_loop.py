@@ -5,13 +5,14 @@ import warnings
 from typing import Any, Dict, List, Optional, Tuple, Union
 
 import torch
-from mmengine import fileio
 from mmengine.evaluator import Evaluator
 from mmengine.runner import TestLoop
 from torch.utils.data import DataLoader
 
+from mmengine import fileio
 from mmrazor.registry import LOOPS, TASK_UTILS
 from mmrazor.structures import convert_fix_subnet, export_fix_subnet
+
 from .utils import check_subnet_resources
 
 

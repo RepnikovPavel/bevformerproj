@@ -3,14 +3,14 @@ import os.path as osp
 import tempfile
 from typing import Dict, List, Optional
 
-import mmengine
 import onnx
 import pytest
 import torch
-
 from mmdeploy.codebase import import_codebase
 from mmdeploy.core import RewriterContext
 from mmdeploy.utils import Backend, Codebase, get_onnx_config
+
+import mmengine
 
 try:
     import_codebase(Codebase.MMAGIC)
@@ -52,7 +52,6 @@ deploy_cfg = mmengine.Config(
 def test_base_edit_model_forward():
     from mmagic.models.base_models.base_edit_model import BaseEditModel
     from mmagic.structures import DataSample
-
     from mmdeploy.codebase.mmagic import models  # noqa
 
     class DummyBaseEditModel(BaseEditModel):

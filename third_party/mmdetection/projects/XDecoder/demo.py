@@ -1,13 +1,14 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 from argparse import ArgumentParser
 
+from mmdet.apis import DetInferencer
 from mmengine.config import Config
 from mmengine.logging import print_log
-
-from mmdet.apis import DetInferencer
 from projects.XDecoder.xdecoder.inference import (
-    ImageCaptionInferencer, RefImageCaptionInferencer,
-    TextToImageRegionRetrievalInferencer)
+    ImageCaptionInferencer,
+    RefImageCaptionInferencer,
+    TextToImageRegionRetrievalInferencer,
+)
 
 TASKINFOS = {
     'semseg': DetInferencer,

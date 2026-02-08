@@ -2,7 +2,6 @@
 import logging
 from typing import Dict, List, Optional, Sequence, Tuple, Union
 
-import mmcv
 import numpy as np
 import torch
 from mmengine.config import Config, ConfigDict
@@ -12,9 +11,11 @@ from mmengine.model import revert_sync_batchnorm
 from mmengine.registry import init_default_scope
 from mmengine.structures import InstanceData
 
+import mmcv
 from mmpose.evaluation.functional import nearby_joints_nms, nms
 from mmpose.registry import INFERENCERS
 from mmpose.structures import merge_data_samples
+
 from .base_mmpose_inferencer import BaseMMPoseInferencer
 
 InstanceList = List[InstanceData]

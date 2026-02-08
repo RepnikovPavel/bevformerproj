@@ -1,7 +1,6 @@
 """Modified from https://github.com/mlfoundations/open_flamingo"""
 
 import argparse
-import copy
 import glob
 import os
 import random
@@ -10,7 +9,6 @@ import time
 import numpy as np
 import torch
 import wandb
-from mmengine import Config
 from torch.nn.parallel import DistributedDataParallel as DDP
 from torch.utils.data import DataLoader, DistributedSampler
 from tqdm import tqdm
@@ -20,11 +18,16 @@ from transformers import (
     get_linear_schedule_with_warmup,
 )
 
+from mmengine import Config
 from mmgpt import create_model_and_transforms
-from mmgpt.models.builder import create_toy_model_and_transforms
 from mmgpt.datasets import InfiniteSampler, build_dataset
 from mmgpt.train.distributed import init_distributed_device, world_info_from_env
-from mmgpt.train.train_utils import AverageMeter, get_autocast, get_cast_dtype, get_checkpoint
+from mmgpt.train.train_utils import (
+    AverageMeter,
+    get_autocast,
+    get_cast_dtype,
+    get_checkpoint,
+)
 
 
 def random_seed(seed=42, rank=0):

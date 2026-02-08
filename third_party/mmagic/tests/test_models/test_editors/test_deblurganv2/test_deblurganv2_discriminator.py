@@ -3,10 +3,8 @@ import platform
 
 import pytest
 import torch
-
 from mmagic.models.editors.deblurganv2 import DeblurGanV2Discriminator
-from mmagic.models.editors.deblurganv2.deblurganv2_discriminator import \
-    DoubleGan
+from mmagic.models.editors.deblurganv2.deblurganv2_discriminator import DoubleGan
 from mmagic.registry import MODELS
 
 

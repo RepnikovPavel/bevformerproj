@@ -1,16 +1,16 @@
 import gc
-import random
+import os
+import sys
+
+import numpy as np
 import torch
 import torch.nn as nn
-import numpy as np
 import torch.nn.functional as F
-import os
 from PIL import Image
+from pytorch_lightning import seed_everything
 from torchvision import transforms
 from torchvision.transforms import PILToTensor
-import matplotlib.pyplot as plt
-from pytorch_lightning import seed_everything
-import sys
+
 project_root = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, project_root)
 src_path = os.path.join(project_root, "sadtalker_video2pose")
@@ -57,9 +57,13 @@ if __name__ == "__main__":
     img_size = 512
     ensemble_size = 8
 
-    from transformers import AutoModelForCausalLM, AutoTokenizer
+    from transformers import (
+        AutoModelForCausalLM,
+        AutoTokenizer,
+        CLIPImageProcessor,
+        CLIPVisionModelWithProjection,
+    )
     from transformers.generation import GenerationConfig
-    from transformers import CLIPImageProcessor, CLIPVisionModelWithProjection
     
     tokenizer = AutoTokenizer.from_pretrained("Qwen/Qwen-VL-Chat", trust_remote_code=True)
     model = AutoModelForCausalLM.from_pretrained("Qwen/Qwen-VL-Chat", device_map="cuda", trust_remote_code=True).eval()

@@ -1,6 +1,5 @@
 import numpy as np
 import torch
-
 from mmhuman3d.models.heads.builder import HMRHead
 
 

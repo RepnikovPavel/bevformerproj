@@ -6,10 +6,10 @@ import torch
 import torch.nn as nn
 
 from mmocr.models.common.dictionary import Dictionary
-from mmocr.models.textrecog.layers import (DotProductAttentionLayer,
-                                           PositionAwareLayer)
+from mmocr.models.textrecog.layers import DotProductAttentionLayer, PositionAwareLayer
 from mmocr.registry import MODELS
 from mmocr.structures import TextRecogDataSample
+
 from .base import BaseDecoder
 
 

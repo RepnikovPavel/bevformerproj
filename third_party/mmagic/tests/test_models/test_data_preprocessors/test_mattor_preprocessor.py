@@ -1,10 +1,9 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import pytest
 import torch
-from mmengine.testing import assert_allclose
-
 from mmagic.models.data_preprocessors import MattorPreprocessor
 from mmagic.structures import DataSample
+from mmengine.testing import assert_allclose
 
 
 def test_mattor_preprocessor():

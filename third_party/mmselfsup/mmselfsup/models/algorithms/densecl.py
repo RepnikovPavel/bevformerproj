@@ -8,8 +8,8 @@ from mmengine.structures import BaseDataElement
 
 from mmselfsup.registry import MODELS
 from mmselfsup.structures import SelfSupDataSample
-from mmselfsup.utils import (batch_shuffle_ddp, batch_unshuffle_ddp,
-                             concat_all_gather)
+from mmselfsup.utils import batch_shuffle_ddp, batch_unshuffle_ddp, concat_all_gather
+
 from .base import BaseModel
 
 

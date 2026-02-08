@@ -4,6 +4,7 @@ from typing import Any, Tuple
 from torch import nn
 
 from mmrazor.registry import TASK_UTILS
+
 from .module_outputs_recorder import ModuleOutputsRecorder
 
 

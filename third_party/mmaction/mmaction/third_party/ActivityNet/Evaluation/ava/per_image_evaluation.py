@@ -20,12 +20,9 @@ detection is supported by default.
 Based on the settings, per image evaluation is either performed on boxes or
 on object masks.
 """
-import numpy as np
-
 import np_box_list
 import np_box_list_ops
-import np_box_mask_list
-import np_box_mask_list_ops
+import numpy as np
 
 
 class PerImageEvaluation(object):

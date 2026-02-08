@@ -3,6 +3,7 @@ from typing import List, Union
 
 from mmpose.codecs import *  # noqa: F401, F403
 from mmpose.registry import TRANSFORMS
+
 from .common_transforms import RandomFlip
 
 

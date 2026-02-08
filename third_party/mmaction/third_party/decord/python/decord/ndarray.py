@@ -9,11 +9,17 @@ from __future__ import absolute_import as _abs
 import ctypes
 import functools
 import operator
+
 import numpy as _np
 
-from ._ffi.ndarray import DECORDContext, DECORDType, NDArrayBase
-from ._ffi.ndarray import context, empty, from_dlpack, numpyasarray
-from ._ffi.ndarray import _set_class_ndarray
+from ._ffi.ndarray import (
+    DECORDContext,
+    NDArrayBase,
+    _set_class_ndarray,
+    empty,
+    numpyasarray,
+)
+
 
 class NDArray(NDArrayBase):
     """Lightweight NDArray class for DECORD framework."""

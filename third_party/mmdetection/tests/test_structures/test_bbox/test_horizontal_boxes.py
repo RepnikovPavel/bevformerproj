@@ -5,10 +5,9 @@ from unittest import TestCase
 import cv2
 import numpy as np
 import torch
-from mmengine.testing import assert_allclose
-
 from mmdet.structures.bbox import HorizontalBoxes
 from mmdet.structures.mask import BitmapMasks, PolygonMasks
+from mmengine.testing import assert_allclose
 
 
 class TestHorizontalBoxes(TestCase):

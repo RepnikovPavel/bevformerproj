@@ -3,8 +3,9 @@ import argparse
 import os.path as osp
 from collections import OrderedDict
 
-import mmengine
 import torch
+
+import mmengine
 
 
 def convert_levit(args, ckpt):

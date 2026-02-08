@@ -4,29 +4,22 @@
  SPDX-License-Identifier: BSD-3-Clause
  For full license text, see the LICENSE file in the repo root or https://opensource.org/licenses/BSD-3-Clause
 """
-import logging
+
+from typing import List, Optional
 
 import torch
 import torch.distributed as dist
 import torch.nn as nn
-from typing import Optional, Tuple, List
-from torch.cuda.amp import autocast as autocast
-from torch.nn import functional as F
-
-from lavis.common.registry import registry
 from lavis.models.base_model import all_gather_with_grad, concat_all_gather
 from lavis.models.blip2_models.blip2 import (
     compute_sim_matrix,
-    disabled_train,
 )
 from lavis.models.blip_models.blip_outputs import BlipOutput
-from transformers.modeling_outputs import ModelOutput
-
 from models.q_formers.blip2 import Blip2Base
 from models.q_formers.position_encoding import PositionEmbeddings
-from ldm.modules.diffusionmodules.util import conv_nd
-
-import time
+from torch.cuda.amp import autocast as autocast
+from torch.nn import functional as F
+from transformers.modeling_outputs import ModelOutput
 
 
 class BlipOutputFeatures(ModelOutput):

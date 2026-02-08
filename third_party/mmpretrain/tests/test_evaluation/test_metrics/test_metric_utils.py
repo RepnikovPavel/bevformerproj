@@ -1,7 +1,6 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import pytest
 import torch
-
 from mmpretrain.models.losses.utils import convert_to_one_hot
 
 

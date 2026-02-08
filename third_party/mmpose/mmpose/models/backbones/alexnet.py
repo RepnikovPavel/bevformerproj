@@ -2,6 +2,7 @@
 import torch.nn as nn
 
 from mmpose.registry import MODELS
+
 from .base_backbone import BaseBackbone
 
 

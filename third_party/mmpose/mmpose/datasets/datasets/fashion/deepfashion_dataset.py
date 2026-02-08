@@ -2,6 +2,7 @@
 from typing import Callable, List, Optional, Sequence, Union
 
 from mmpose.registry import DATASETS
+
 from ..base import BaseCocoStyleDataset
 
 

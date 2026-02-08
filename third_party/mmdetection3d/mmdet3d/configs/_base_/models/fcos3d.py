@@ -1,10 +1,8 @@
 # Copyright (c) OpenMMLab. All rights reserved.
-from mmdet3d.models.data_preprocessors.data_preprocessor import \
-    Det3DDataPreprocessor
+from mmdet3d.models.data_preprocessors.data_preprocessor import Det3DDataPreprocessor
 from mmdet3d.models.dense_heads.fcos_mono3d_head import FCOSMono3DHead
 from mmdet3d.models.detectors.fcos_mono3d import FCOSMono3D
-from mmdet3d.models.task_modules.coders.fcos3d_bbox_coder import \
-    FCOS3DBBoxCoder
+from mmdet3d.models.task_modules.coders.fcos3d_bbox_coder import FCOS3DBBoxCoder
 
 # model settings
 model = dict(

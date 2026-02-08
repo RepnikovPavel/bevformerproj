@@ -3,7 +3,6 @@ import platform
 
 import pytest
 import torch
-
 from mmagic.models.editors.inst_colorization.weight_layer import WeightLayer
 
 

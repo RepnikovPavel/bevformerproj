@@ -1,22 +1,22 @@
+import os
+import warnings
+
+import cv2
 import numpy as np
-import cv2, os, sys, torch
-from tqdm import tqdm
-from PIL import Image
 
 # 3dmm extraction
 import safetensors
 import safetensors.torch
-from src.face3d.util.preprocess import align_img
-from src.face3d.util.load_mats import load_lm3d
+import torch
+from PIL import Image
+from scipy.io import savemat
 from src.face3d.models import networks
-
-from scipy.io import loadmat, savemat
+from src.face3d.util.load_mats import load_lm3d
+from src.face3d.util.preprocess import align_img
 from src.utils.croper import Preprocesser
-
-
-import warnings
-
 from src.utils.safetensor_helper import load_x_from_safetensor
+from tqdm import tqdm
+
 warnings.filterwarnings("ignore")
 
 def split_coeff(coeffs):

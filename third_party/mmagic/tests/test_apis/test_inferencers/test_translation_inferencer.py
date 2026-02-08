@@ -1,8 +1,7 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import os.path as osp
 
-from mmagic.apis.inferencers.translation_inferencer import \
-    TranslationInferencer
+from mmagic.apis.inferencers.translation_inferencer import TranslationInferencer
 from mmagic.utils import register_all_modules
 
 register_all_modules()

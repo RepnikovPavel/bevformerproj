@@ -8,8 +8,8 @@ from mmengine.model import normal_init
 from torch import Tensor
 
 from mmdet.registry import MODELS
-from mmdet.utils import (ConfigType, InstanceList, OptInstanceList,
-                         OptMultiConfig)
+from mmdet.utils import ConfigType, InstanceList, OptInstanceList, OptMultiConfig
+
 from ..utils import multi_apply
 from .corner_head import CornerHead
 

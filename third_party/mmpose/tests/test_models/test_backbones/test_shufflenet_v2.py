@@ -2,11 +2,10 @@
 from unittest import TestCase
 
 import torch
-from torch.nn.modules import GroupNorm
-from torch.nn.modules.batchnorm import _BatchNorm
-
 from mmpose.models.backbones import ShuffleNetV2
 from mmpose.models.backbones.shufflenet_v2 import InvertedResidual
+from torch.nn.modules import GroupNorm
+from torch.nn.modules.batchnorm import _BatchNorm
 
 
 class TestShufflenetV2(TestCase):

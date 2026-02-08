@@ -1,20 +1,15 @@
 #!/usr/bin/env python
-import os
-import sys
 import argparse
-import json
-import shutil
+import sys
 import time
 
+import cv2
 import numpy as np
+import tools.utils as utils
 import torch
-import skvideo.io
 
 from .io import IO
-import tools
-import tools.utils as utils
 
-import cv2
 
 class DemoOffline(IO):
 

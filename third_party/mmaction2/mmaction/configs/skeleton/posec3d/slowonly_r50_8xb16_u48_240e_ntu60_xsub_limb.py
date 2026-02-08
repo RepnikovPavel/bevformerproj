@@ -4,17 +4,25 @@ from mmengine.config import read_base
 with read_base():
     from ..._base_.default_runtime import *
 
+from mmaction.datasets import (
+    CenterCrop,
+    Flip,
+    FormatShape,
+    GeneratePoseTarget,
+    PackActionInputs,
+    PoseCompact,
+    PoseDataset,
+    PoseDecode,
+    RandomResizedCrop,
+    Resize,
+    UniformSampleFrames,
+)
+from mmaction.evaluation import AccMetric
+from mmaction.models import I3DHead, Recognizer3D, ResNet3dSlowOnly
 from mmengine.dataset import DefaultSampler, RepeatDataset
 from mmengine.optim import CosineAnnealingLR
 from mmengine.runner import EpochBasedTrainLoop, TestLoop, ValLoop
 from torch.optim import SGD
-
-from mmaction.datasets import (CenterCrop, Flip, FormatShape,
-                               GeneratePoseTarget, PackActionInputs,
-                               PoseCompact, PoseDataset, PoseDecode,
-                               RandomResizedCrop, Resize, UniformSampleFrames)
-from mmaction.evaluation import AccMetric
-from mmaction.models import I3DHead, Recognizer3D, ResNet3dSlowOnly
 
 model = dict(
     type=Recognizer3D,

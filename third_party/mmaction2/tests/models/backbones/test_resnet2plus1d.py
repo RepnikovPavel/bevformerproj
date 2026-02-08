@@ -1,10 +1,9 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import pytest
 import torch
-from mmengine.utils.dl_utils.parrots_wrapper import _BatchNorm
-
 from mmaction.models import ResNet2Plus1d
 from mmaction.testing import generate_backbone_demo_inputs
+from mmengine.utils.dl_utils.parrots_wrapper import _BatchNorm
 
 
 def test_resnet2plus1d_backbone():

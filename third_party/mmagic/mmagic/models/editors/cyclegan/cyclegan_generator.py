@@ -5,6 +5,7 @@ from mmengine.model import BaseModule
 
 from mmagic.models.utils import generation_init_weights
 from mmagic.registry import MODELS
+
 from .cyclegan_modules import ResidualBlockWithDropout
 
 

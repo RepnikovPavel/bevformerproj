@@ -3,7 +3,6 @@
 from unittest import TestCase
 
 import torch
-
 from mmyolo.models.layers import SPPFBottleneck
 from mmyolo.utils import register_all_modules
 

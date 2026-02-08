@@ -9,6 +9,7 @@ from mmcv.cnn import build_conv_layer, build_norm_layer
 from mmengine.model import BaseModule
 
 from mmdet.registry import MODELS
+
 from ..layers import ResLayer
 from .resnet import Bottleneck as _Bottleneck
 from .resnet import ResNetV1d

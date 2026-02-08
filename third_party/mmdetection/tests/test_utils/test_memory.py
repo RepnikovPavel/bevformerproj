@@ -1,7 +1,6 @@
 import numpy as np
 import pytest
 import torch
-
 from mmdet.utils import AvoidOOM
 from mmdet.utils.memory import cast_tensor_type
 

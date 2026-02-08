@@ -1,10 +1,8 @@
 import torch
 import torch.nn as nn
-import torch.nn.functional as F
 from torch.autograd import gradcheck
-
 from traj_conv import TrajConv
- 
+
 num_deformable_groups = 2
 
 N, inC, inT, inH, inW = 2, 8, 8, 4, 4

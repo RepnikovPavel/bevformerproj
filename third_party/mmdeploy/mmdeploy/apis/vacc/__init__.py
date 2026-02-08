@@ -1,5 +1,6 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 from mmdeploy.backend.vacc import is_available
+
 from ..core import PIPELINE_MANAGER
 
 __all__ = ['is_available']

@@ -1,12 +1,13 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 from typing import Dict, List, Optional, Sequence, Tuple, Union
 
-import mmcv
 import numpy as np
 import torch
 
+import mmcv
 from mmocr.registry import VISUALIZERS
 from mmocr.structures import TextDetDataSample
+
 from .base_visualizer import BaseLocalVisualizer
 
 

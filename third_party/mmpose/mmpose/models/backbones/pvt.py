@@ -14,6 +14,7 @@ from mmengine.runner import load_state_dict
 from mmengine.utils import to_2tuple
 
 from mmpose.registry import MODELS
+
 from ...utils import get_root_logger
 from ..utils import PatchEmbed, nchw_to_nlc, nlc_to_nchw, pvt_convert
 from .utils import get_state_dict

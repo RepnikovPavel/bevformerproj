@@ -4,16 +4,17 @@ import random
 from typing import Any, Dict, List, Optional, Tuple, Union
 
 import torch
-from mmengine import MessageHub
 from mmengine.model import BaseModel, MMDistributedDataParallel
 from mmengine.optim import OptimWrapper
 from mmengine.structures import BaseDataElement
 from torch import nn
 
+from mmengine import MessageHub
 from mmrazor.models.distillers import ConfigurableDistiller
 from mmrazor.models.mutators import ChannelMutator, DMCPChannelMutator
 from mmrazor.models.utils import add_prefix
 from mmrazor.registry import MODEL_WRAPPERS, MODELS
+
 from ...task_modules.estimators import ResourceEstimator
 from ..base import BaseAlgorithm
 

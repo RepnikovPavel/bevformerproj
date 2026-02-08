@@ -2,9 +2,8 @@
 from unittest import TestCase
 
 import torch
-from mmengine.structures import InstanceData
-
 from mmdet.models.dense_heads import FoveaHead
+from mmengine.structures import InstanceData
 
 
 class TestFOVEAHead(TestCase):

@@ -4,7 +4,7 @@ import os
 import torch
 import torch.distributed as dist
 from torch.nn import Module
-from torch.nn.functional import normalize, linear
+from torch.nn.functional import linear, normalize
 from torch.nn.parameter import Parameter
 
 

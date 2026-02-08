@@ -1,7 +1,6 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 
 import pytest
-
 from mmeval.utils import try_import
 
 

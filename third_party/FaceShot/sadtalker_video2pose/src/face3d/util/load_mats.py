@@ -1,11 +1,12 @@
 """This script is to load 3D face model for Deep3DFaceRecon_pytorch
 """
 
-import numpy as np
-from PIL import Image
-from scipy.io import loadmat, savemat
-from array import array
 import os.path as osp
+from array import array
+
+import numpy as np
+from scipy.io import loadmat, savemat
+
 
 # load expression basis
 def LoadExpBasis(bfm_folder='BFM'):

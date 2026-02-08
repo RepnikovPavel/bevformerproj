@@ -1,13 +1,13 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import os.path as osp
 
-import mmengine
 import numpy as np
+from mmaction.datasets import AVADataset, AVAKineticsDataset
+from mmaction.utils import register_all_modules
 from mmengine.testing import assert_dict_has_keys
 from numpy.testing import assert_array_almost_equal, assert_array_equal
 
-from mmaction.datasets import AVADataset, AVAKineticsDataset
-from mmaction.utils import register_all_modules
+import mmengine
 
 
 class TestAVADataset:

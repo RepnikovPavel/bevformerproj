@@ -11,6 +11,7 @@ from torch import Tensor
 
 from mmseg.registry import MODELS
 from mmseg.utils import OptConfigType
+
 from ..utils import DAPPM, PAPPM, BasicBlock, Bottleneck
 
 

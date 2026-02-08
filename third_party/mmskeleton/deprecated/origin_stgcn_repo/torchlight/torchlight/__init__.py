@@ -1,8 +1,2 @@
-from .io import IO
-from .io import str2bool
-from .io import str2dict
-from .io import DictAction
-from .io import import_class
-from .gpu import visible_gpu
-from .gpu import occupy_gpu
-from .gpu import ngpu
+from .gpu import ngpu, occupy_gpu, visible_gpu
+from .io import IO, DictAction, import_class, str2bool, str2dict

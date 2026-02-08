@@ -4,16 +4,16 @@ from collections import OrderedDict
 from os import path as osp
 from typing import List, Tuple, Union
 
-import mmcv
-import mmengine
 import numpy as np
+from mmdet3d.datasets.convert_utils import NuScenesNameMapping
+from mmdet3d.structures import points_cam2img
 from nuscenes.nuscenes import NuScenes
 from nuscenes.utils.geometry_utils import view_points
 from pyquaternion import Quaternion
 from shapely.geometry import MultiPoint, box
 
-from mmdet3d.datasets.convert_utils import NuScenesNameMapping
-from mmdet3d.structures import points_cam2img
+import mmcv
+import mmengine
 
 nus_categories = ('car', 'truck', 'trailer', 'bus', 'construction_vehicle',
                   'bicycle', 'motorcycle', 'pedestrian', 'traffic_cone',

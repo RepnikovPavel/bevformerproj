@@ -5,13 +5,16 @@ from tempfile import TemporaryDirectory
 from unittest import TestCase
 
 import torch
-from mmengine.testing import assert_dict_has_keys
-from parameterized import parameterized
-
-from mmaction.apis import (detection_inference, inference_recognizer,
-                           init_recognizer, pose_inference)
+from mmaction.apis import (
+    detection_inference,
+    inference_recognizer,
+    init_recognizer,
+    pose_inference,
+)
 from mmaction.structures import ActionDataSample
 from mmaction.utils import frame_extract, get_str_type
+from mmengine.testing import assert_dict_has_keys
+from parameterized import parameterized
 
 
 class TestInference(TestCase):

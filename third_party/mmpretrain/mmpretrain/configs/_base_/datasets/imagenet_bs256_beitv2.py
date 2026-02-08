@@ -1,10 +1,15 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 # This is a BETA new format config file, and the usage may change recently.
 from mmengine.dataset import DefaultSampler, default_collate
-
-from mmpretrain.datasets import (BEiTMaskGenerator, ColorJitter, ImageNet,
-                                 LoadImageFromFile, PackInputs, RandomFlip,
-                                 RandomResizedCropAndInterpolationWithTwoPic)
+from mmpretrain.datasets import (
+                                 BEiTMaskGenerator,
+                                 ColorJitter,
+                                 ImageNet,
+                                 LoadImageFromFile,
+                                 PackInputs,
+                                 RandomFlip,
+                                 RandomResizedCropAndInterpolationWithTwoPic,
+)
 from mmpretrain.models import TwoNormDataPreprocessor
 
 dataset_type = ImageNet

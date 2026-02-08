@@ -3,16 +3,16 @@ import os.path as osp
 from copy import deepcopy
 from typing import Callable, Dict, Optional, Sequence, Tuple, Union
 
-import mmcv
 import numpy as np
 import torch
-from mmengine import Config
 from mmengine.model import BaseDataPreprocessor
 from mmengine.registry import Registry
 
+import mmcv
 from mmdeploy.codebase.base import CODEBASE, BaseTask, MMCodebase
 from mmdeploy.utils import Codebase, Task, get_root_logger
 from mmdeploy.utils.config_utils import get_input_shape
+from mmengine import Config
 
 MMPRETRAIN_TASK = Registry('mmpretrain_tasks')
 

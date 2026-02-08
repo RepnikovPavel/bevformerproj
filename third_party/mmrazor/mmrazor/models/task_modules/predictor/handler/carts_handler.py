@@ -10,6 +10,7 @@ except ImportError:
     DecisionTreeRegressor = get_placeholder('sklearn')
 
 from mmrazor.registry import TASK_UTILS
+
 from .base_handler import BaseHandler
 
 

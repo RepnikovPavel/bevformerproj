@@ -5,10 +5,11 @@ from typing import Dict, List
 
 import cv2
 import lmdb
-import mmengine
 import numpy as np
 
+import mmengine
 from mmocr.registry import DATA_DUMPERS
+
 from .base import BaseDumper
 
 

@@ -7,9 +7,11 @@ from .pipeline_switch_hook import PipelineSwitchHook
 from .set_epoch_info_hook import SetEpochInfoHook
 from .sync_norm_hook import SyncNormHook
 from .utils import trigger_visualization_hook
-from .visualization_hook import (DetVisualizationHook,
+from .visualization_hook import (
+                                 DetVisualizationHook,
                                  GroundingVisualizationHook,
-                                 TrackVisualizationHook)
+                                 TrackVisualizationHook,
+)
 from .yolox_mode_switch_hook import YOLOXModeSwitchHook
 
 __all__ = [

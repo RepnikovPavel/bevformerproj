@@ -5,8 +5,9 @@ import os.path as osp
 import time
 
 import cv2
-import mmengine
 import numpy as np
+
+import mmengine
 
 
 def default_dump(obj):

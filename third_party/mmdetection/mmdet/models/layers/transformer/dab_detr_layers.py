@@ -8,10 +8,13 @@ from mmcv.cnn.bricks.transformer import FFN
 from mmengine.model import ModuleList
 from torch import Tensor
 
-from .detr_layers import (DetrTransformerDecoder, DetrTransformerDecoderLayer,
-                          DetrTransformerEncoder, DetrTransformerEncoderLayer)
-from .utils import (MLP, ConditionalAttention, coordinate_to_encoding,
-                    inverse_sigmoid)
+from .detr_layers import (
+    DetrTransformerDecoder,
+    DetrTransformerDecoderLayer,
+    DetrTransformerEncoder,
+    DetrTransformerEncoderLayer,
+)
+from .utils import MLP, ConditionalAttention, coordinate_to_encoding, inverse_sigmoid
 
 
 class DABDetrTransformerDecoderLayer(DetrTransformerDecoderLayer):

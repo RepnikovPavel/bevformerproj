@@ -5,9 +5,14 @@ from tempfile import TemporaryDirectory
 from unittest import TestCase, skipIf
 
 from mmengine.logging import MMLogger
-from mmengine.registry import (DefaultScope, Registry,
-                               count_registered_modules, init_default_scope,
-                               root, traverse_registry_tree)
+from mmengine.registry import (
+    DefaultScope,
+    Registry,
+    count_registered_modules,
+    init_default_scope,
+    root,
+    traverse_registry_tree,
+)
 from mmengine.utils import is_installed
 
 

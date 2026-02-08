@@ -1,10 +1,12 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import pytest
 import torch
-
-from mmagic.models.editors.ddpm.attention import (ApproximateGELU,
-                                                  CrossAttention, FeedForward,
-                                                  Transformer2DModel)
+from mmagic.models.editors.ddpm.attention import (
+    ApproximateGELU,
+    CrossAttention,
+    FeedForward,
+    Transformer2DModel,
+)
 
 
 def test_ApproximateGELU():

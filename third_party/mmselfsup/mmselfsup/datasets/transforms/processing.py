@@ -6,14 +6,13 @@ import warnings
 from typing import List, Optional, Sequence, Tuple, Union
 
 import cv2
-import mmcv
 import numpy as np
 import torch
-from mmcv.image import (adjust_brightness, adjust_color, adjust_contrast,
-                        adjust_hue)
+from mmcv.image import adjust_brightness, adjust_color, adjust_contrast, adjust_hue
 from mmcv.transforms import BaseTransform
 from PIL import Image, ImageFilter
 
+import mmcv
 from mmselfsup.registry import TRANSFORMS
 
 

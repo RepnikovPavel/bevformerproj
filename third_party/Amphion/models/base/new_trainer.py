@@ -17,11 +17,11 @@ import numpy as np
 import torch
 from accelerate.logging import get_logger
 from accelerate.utils import ProjectConfiguration
+from optimizer.optimizers import NoamLR
 from torch.utils.data import ConcatDataset, DataLoader
 from tqdm import tqdm
 
 from models.base.base_sampler import build_samplers
-from optimizer.optimizers import NoamLR
 
 
 class BaseTrainer(object):

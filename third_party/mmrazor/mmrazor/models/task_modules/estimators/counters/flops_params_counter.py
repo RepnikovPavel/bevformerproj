@@ -3,10 +3,10 @@ import sys
 from functools import partial
 from typing import Dict, List
 
-import mmcv
 import torch
 import torch.nn as nn
 
+import mmcv
 from mmrazor.registry import TASK_UTILS
 
 no_positional_input_warned = False

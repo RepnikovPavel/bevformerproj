@@ -7,6 +7,7 @@ from torch.nn.modules.batchnorm import _BatchNorm
 
 from mmpretrain.models.utils import make_divisible
 from mmpretrain.registry import MODELS
+
 from .base_backbone import BaseBackbone
 
 

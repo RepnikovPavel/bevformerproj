@@ -45,9 +45,10 @@ support of ``typing.ForwardRef``.
 
 import importlib
 import inspect
-import plum
 import sys
 from typing import Any, Callable, Dict, Hashable, Optional, Type
+
+import plum
 
 from mmeval.utils import DEFAULT_LOGGER
 

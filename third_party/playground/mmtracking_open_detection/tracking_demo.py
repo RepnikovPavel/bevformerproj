@@ -25,7 +25,6 @@ except ImportError:
 
 # mmdet
 try:
-    import mmcv
     import mmdet
     from mmdet.apis import inference_detector, init_detector
     from mmdet.models.trackers import ByteTracker
@@ -33,6 +32,8 @@ try:
     from mmdet.visualization.local_visualizer import TrackLocalVisualizer
     from mmengine.config import Config
     from mmengine.structures import InstanceData
+
+    import mmcv
 except ImportError:
     mmdet = None
 
@@ -51,7 +52,6 @@ from mmtracking_open_detection.utils import apply_exif_orientation  # noqa
 # GLIP inflect
 try:
     import maskrcnn_benchmark
-
     from mmtracking_open_detection.predictor_glip import GLIPDemo
 except ImportError:
     maskrcnn_benchmark = None
@@ -390,8 +390,10 @@ def main():
             det_model = det_model.to(args.det_device)
 
     if 'Detic' in args.det_config:
-        from projects.Detic.detic.utils import (get_text_embeddings,
-                                                reset_cls_layer_weight)
+        from projects.Detic.detic.utils import (
+            get_text_embeddings,
+            reset_cls_layer_weight,
+        )
         det_model.dataset_meta['classes'] = label_name
         embedding = get_text_embeddings(custom_vocabulary=custom_vocabulary)
         reset_cls_layer_weight(det_model, embedding)

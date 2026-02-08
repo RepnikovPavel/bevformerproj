@@ -10,6 +10,7 @@ from scipy.stats import mode
 from torch.nn.modules.utils import _pair
 
 from mmaction.registry import TRANSFORMS
+
 from .loading import DecordDecode, DecordInit
 from .processing import _combine_quadruple
 

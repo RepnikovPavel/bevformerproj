@@ -2,7 +2,6 @@ import os
 
 import numpy as np
 import pytest
-
 from mmhuman3d.core.cameras import build_cameras
 from mmhuman3d.core.conventions.keypoints_mapping import convert_kps
 from mmhuman3d.core.visualization.visualize_keypoints2d import visualize_kp2d

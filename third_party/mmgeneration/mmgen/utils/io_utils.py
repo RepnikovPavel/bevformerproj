@@ -3,11 +3,12 @@ import hashlib
 import os
 
 import click
-import mmcv
 import requests
 import torch.distributed as dist
 from mmcv.runner import get_dist_info
 from requests.exceptions import InvalidURL, RequestException, Timeout
+
+import mmcv
 
 MMGEN_CACHE_DIR = os.path.expanduser('~') + '/.cache/openmmlab/mmgen/'
 

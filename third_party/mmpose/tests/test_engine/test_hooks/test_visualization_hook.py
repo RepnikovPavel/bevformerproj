@@ -7,7 +7,6 @@ from unittest.mock import MagicMock
 
 import numpy as np
 from mmengine.structures import InstanceData
-
 from mmpose.engine.hooks import PoseVisualizationHook
 from mmpose.structures import PoseDataSample
 from mmpose.visualization import PoseLocalVisualizer

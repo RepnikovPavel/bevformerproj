@@ -25,7 +25,6 @@ from ..models.depth_utils import MidasDetector
 from ..models.unet_depth_streaming import UNet3DConditionStreamingModel
 from .loader import LoraLoaderWithWarmup
 
-
 logger = logging.get_logger(__name__)  # pylint: disable=invalid-name
 
 

@@ -4,6 +4,7 @@ import torch
 from mmdet.models import build_detector
 
 from mmtrack.core import outs2results, results2outs
+
 from ..builder import MODELS, build_motion, build_tracker
 from .base import BaseMultiObjectTracker
 

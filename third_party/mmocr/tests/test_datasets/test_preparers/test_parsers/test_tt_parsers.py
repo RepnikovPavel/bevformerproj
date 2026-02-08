@@ -3,8 +3,7 @@ import os.path as osp
 import tempfile
 import unittest
 
-from mmocr.datasets.preparers.parsers.totaltext_parser import \
-    TotaltextTextDetAnnParser
+from mmocr.datasets.preparers.parsers.totaltext_parser import TotaltextTextDetAnnParser
 from mmocr.utils import list_to_file
 
 

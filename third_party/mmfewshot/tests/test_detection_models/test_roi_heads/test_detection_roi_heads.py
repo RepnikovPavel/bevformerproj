@@ -1,12 +1,14 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import torch
-from mmcv import ConfigDict
+from mmfewshot.detection.models.roi_heads import (
+    ContrastiveRoIHead,
+    FSDetViewRoIHead,
+    MetaRCNNRoIHead,
+    MultiRelationRoIHead,
+    TwoBranchRoIHead,
+)
 
-from mmfewshot.detection.models.roi_heads import (ContrastiveRoIHead,
-                                                  FSDetViewRoIHead,
-                                                  MetaRCNNRoIHead,
-                                                  MultiRelationRoIHead,
-                                                  TwoBranchRoIHead)
+from mmcv import ConfigDict
 
 
 def test_contrastive_roi_head():

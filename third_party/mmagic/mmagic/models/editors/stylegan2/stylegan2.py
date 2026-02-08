@@ -5,13 +5,14 @@ from typing import Dict, Optional, Tuple, Union
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-from mmengine import Config, MessageHub
 from mmengine.model import BaseModel, is_model_wrapper
 from mmengine.optim import OptimWrapper, OptimWrapperDict
 from torch import Tensor
 
 from mmagic.registry import MODELS
 from mmagic.structures import DataSample
+from mmengine import Config, MessageHub
+
 from ...base_models import BaseGAN
 from ...losses import gen_path_regularizer, r1_gradient_penalty_loss
 from ...utils import set_requires_grad

@@ -5,36 +5,12 @@
 import argparse
 import os
 from datetime import datetime
-from importlib.resources import files
-from pathlib import Path
-
-import numpy as np
-import soundfile as sf
-from cached_path import cached_path
-from omegaconf import OmegaConf
-from loguru import logger
-from cached_path import cached_path
-import hydra
-from pathlib import Path
 
 from dualcodec.utils.utils_infer import (
-    mel_spec_type,
-    target_rms,
-    cross_fade_duration,
-    nfe_step,
-    cfg_strength,
-    sway_sampling_coef,
-    speed,
-    fix_duration,
-    load_model,
-    load_vocoder,
-    load_checkpoint,
-    instantiate_model,
-    preprocess_ref_audio_text,
-    remove_silence_for_generated_wav,
     device,
     package_dir,
 )
+from loguru import logger
 
 parser = argparse.ArgumentParser(
     prog="python3 infer-cli.py",
@@ -86,15 +62,14 @@ args.output_file = args.output_file or config.get(
 
 
 def main():
-    from dualcodec.model_tts.voicebox.voicebox_models import (
-        voicebox_300M,
-        extract_normalized_mel_spec_50hz,
-    )
     from dualcodec.infer.voicebox.utils_voicebox_infer import (
-        load_voicebox_300M_model,
         get_vocoder_decode_func_and_mel_spec,
         load_dualcodec_12hzv1_model,
+        load_voicebox_300M_model,
         voicebox_inference,
+    )
+    from dualcodec.model_tts.voicebox.voicebox_models import (
+        extract_normalized_mel_spec_50hz,
     )
 
     voicebox_model_obj = load_voicebox_300M_model(device=device)

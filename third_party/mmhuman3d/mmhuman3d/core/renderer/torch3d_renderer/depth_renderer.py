@@ -4,6 +4,7 @@ import torch
 from pytorch3d.structures import Meshes
 
 from mmhuman3d.core.cameras import MMCamerasBase
+
 from .base_renderer import BaseRenderer
 from .shader import build_shader
 from .utils import normalize

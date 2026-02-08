@@ -3,10 +3,13 @@ from unittest import TestCase
 
 import torch
 import torch.nn as nn
-
 from mmselfsup.models.utils.transformer_blocks import (
-    CAETransformerRegressorLayer, CrossMultiheadAttention, MultiheadAttention,
-    MultiheadAttentionWithRPE, TransformerEncoderLayer)
+    CAETransformerRegressorLayer,
+    CrossMultiheadAttention,
+    MultiheadAttention,
+    MultiheadAttentionWithRPE,
+    TransformerEncoderLayer,
+)
 
 
 class TestTransformerBlocks(TestCase):

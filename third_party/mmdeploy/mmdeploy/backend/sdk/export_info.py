@@ -4,12 +4,20 @@ import re
 from typing import Dict, List, Tuple, Union
 
 import mmengine
-
 from mmdeploy.apis import build_task_processor
-from mmdeploy.utils import (Backend, Task, get_backend, get_codebase,
-                            get_ir_config, get_partition_config, get_precision,
-                            get_root_logger, get_task_type, is_dynamic_batch,
-                            load_config)
+from mmdeploy.utils import (
+    Backend,
+    Task,
+    get_backend,
+    get_codebase,
+    get_ir_config,
+    get_partition_config,
+    get_precision,
+    get_root_logger,
+    get_task_type,
+    is_dynamic_batch,
+    load_config,
+)
 from mmdeploy.utils.config_utils import get_backend_config
 from mmdeploy.utils.constants import SDK_TASK_MAP as task_map
 

@@ -4,12 +4,13 @@ from typing import Dict, List, Optional, Tuple, Union
 
 import torch
 import torch.nn as nn
-from mmengine import MMLogger
 from mmengine.model import BaseModel
 from mmengine.structures import BaseDataElement
 
+from mmengine import MMLogger
 from mmrazor.models.mutators import DCFFChannelMutator
 from mmrazor.registry import MODELS
+
 from .ite_prune_algorithm import ItePruneAlgorithm, ItePruneConfigManager
 
 LossResults = Dict[str, torch.Tensor]

@@ -5,6 +5,7 @@ import numpy as np
 import torch
 
 from mmpretrain.registry import BATCH_AUGMENTS
+
 from .mixup import Mixup
 
 

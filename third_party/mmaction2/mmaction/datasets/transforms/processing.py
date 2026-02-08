@@ -5,13 +5,13 @@ from numbers import Number
 from typing import Sequence
 
 import cv2
-import mmcv
-import mmengine
 import numpy as np
 from mmcv.transforms import BaseTransform
 from mmcv.transforms.utils import cache_randomness
 from torch.nn.modules.utils import _pair
 
+import mmcv
+import mmengine
 from mmaction.registry import TRANSFORMS
 
 

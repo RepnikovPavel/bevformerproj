@@ -2,14 +2,13 @@ import os
 from argparse import ArgumentParser
 
 import torch
+from mmagic.apis.inferencers.inference_functions import init_model
 from mmengine.registry import init_default_scope
+from projects.flow_style_vton.models import FlowStyleVTON
 from torch.utils.data import DataLoader
 from torchvision.utils import save_image
 from tqdm import tqdm
 from vton_dataset import AlignedDataset
-
-from mmagic.apis.inferencers.inference_functions import init_model
-from projects.flow_style_vton.models import FlowStyleVTON
 
 init_default_scope('mmagic')
 

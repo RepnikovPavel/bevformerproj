@@ -6,7 +6,6 @@ import torch.nn.functional as F
 import torch.optim as optim
 from mmengine.optim.scheduler import _ParamScheduler
 from mmengine.testing import assert_allclose
-
 from mmpose.engine.schedulers import ConstantLR
 
 

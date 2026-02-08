@@ -1,7 +1,6 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import pytest
 import torch
-
 from mmpretrain.models.backbones import VGG
 from mmpretrain.models.utils import HybridEmbed, PatchEmbed, PatchMerging
 

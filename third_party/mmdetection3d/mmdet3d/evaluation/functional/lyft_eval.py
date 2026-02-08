@@ -1,15 +1,19 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 from os import path as osp
 
-import mmengine
 import numpy as np
-from lyft_dataset_sdk.eval.detection.mAP_evaluation import (Box3D, get_ap,
-                                                            get_class_names,
-                                                            get_ious,
-                                                            group_by_key,
-                                                            wrap_in_box)
+from lyft_dataset_sdk.eval.detection.mAP_evaluation import (
+    Box3D,
+    get_ap,
+    get_class_names,
+    get_ious,
+    group_by_key,
+    wrap_in_box,
+)
 from mmengine.logging import print_log
 from terminaltables import AsciiTable
+
+import mmengine
 
 
 def load_lyft_gts(lyft, data_root, eval_split, logger=None):

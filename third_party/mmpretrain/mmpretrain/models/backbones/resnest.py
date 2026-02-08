@@ -6,6 +6,7 @@ import torch.utils.checkpoint as cp
 from mmcv.cnn import build_conv_layer, build_norm_layer
 
 from mmpretrain.registry import MODELS
+
 from .resnet import Bottleneck as _Bottleneck
 from .resnet import ResLayer, ResNetV1d
 

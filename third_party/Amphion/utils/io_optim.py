@@ -3,12 +3,12 @@
 # This source code is licensed under the MIT license found in the
 # LICENSE file in the root directory of this source tree.
 
-import torch
-import torchaudio
 import json
 import os
-import numpy as np
+
 import librosa
+import torch
+import torchaudio
 import whisper
 from torch.nn.utils.rnn import pad_sequence
 

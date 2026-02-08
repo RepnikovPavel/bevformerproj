@@ -4,14 +4,14 @@ import random
 import tempfile
 from unittest import TestCase, mock
 
-import mmcv
-import mmengine
 import numpy as np
 import torch
-
 from mmocr.apis.inferencers import TextRecInferencer
 from mmocr.utils.check_argument import is_type_list
 from mmocr.utils.typing_utils import TextRecogDataSample
+
+import mmcv
+import mmengine
 
 
 class TestTextRecinferencer(TestCase):

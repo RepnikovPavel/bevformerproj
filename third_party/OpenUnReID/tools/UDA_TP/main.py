@@ -6,8 +6,7 @@ from datetime import timedelta
 from pathlib import Path
 
 import torch
-
-from openunreid.apis import BaseRunner, test_reid, set_random_seed
+from openunreid.apis import BaseRunner, set_random_seed, test_reid
 from openunreid.core.solvers import build_lr_scheduler, build_optimizer
 from openunreid.data import build_test_dataloader, build_train_dataloader
 from openunreid.models import build_model

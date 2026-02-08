@@ -11,7 +11,6 @@ with read_base():
 
 from mmcv.transforms import RandomChoiceResize, RandomFlip
 from mmcv.transforms.loading import LoadImageFromFile
-
 from mmdet.datasets.transforms.formatting import PackDetInputs
 from mmdet.datasets.transforms.loading import LoadAnnotations
 from mmdet.models.backbones import ResNeXt

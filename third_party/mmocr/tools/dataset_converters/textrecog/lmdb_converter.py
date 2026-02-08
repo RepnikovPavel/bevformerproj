@@ -7,7 +7,6 @@ import os.path as osp
 import cv2
 import lmdb
 import numpy as np
-
 from mmocr.utils import list_from_file
 
 

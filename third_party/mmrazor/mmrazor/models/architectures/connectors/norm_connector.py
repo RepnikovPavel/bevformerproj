@@ -5,6 +5,7 @@ import torch
 from mmcv.cnn import build_norm_layer
 
 from mmrazor.registry import MODELS
+
 from .base_connector import BaseConnector
 
 

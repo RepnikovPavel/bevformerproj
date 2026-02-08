@@ -2,15 +2,15 @@
 import argparse
 import os
 
-import mmcv
 import torch
 from mmengine.config import Config
 from mmengine.registry import VISUALIZERS
 from mmengine.utils import import_modules_from_strings
-
 from mmrazor.models.task_modules import RecorderManager
 from mmrazor.utils import register_all_modules
 from mmrazor.visualization.local_visualizer import modify
+
+import mmcv
 
 
 def parse_args():

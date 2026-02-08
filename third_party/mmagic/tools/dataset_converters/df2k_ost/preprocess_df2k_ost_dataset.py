@@ -7,9 +7,10 @@ from multiprocessing import Pool
 
 import cv2
 import lmdb
+import numpy as np
+
 import mmcv
 import mmengine
-import numpy as np
 
 
 def generate_anno_file(args):

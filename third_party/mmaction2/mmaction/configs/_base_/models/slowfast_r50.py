@@ -1,6 +1,10 @@
 # Copyright (c) OpenMMLab. All rights reserved.
-from mmaction.models import (ActionDataPreprocessor, Recognizer3D,
-                             ResNet3dSlowFast, SlowFastHead)
+from mmaction.models import (
+                             ActionDataPreprocessor,
+                             Recognizer3D,
+                             ResNet3dSlowFast,
+                             SlowFastHead,
+)
 
 # model settings
 model = dict(

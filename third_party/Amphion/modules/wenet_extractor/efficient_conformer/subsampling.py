@@ -26,6 +26,7 @@
 from typing import Tuple, Union
 
 import torch
+
 from modules.wenet_extractor.transformer.subsampling import BaseSubsampling
 
 

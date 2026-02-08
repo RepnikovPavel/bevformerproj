@@ -5,8 +5,9 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 from mmengine.model import xavier_init
-from models.utils.builder import TRANSFORMER
 from torch import Tensor
+
+from models.utils.builder import TRANSFORMER
 
 
 def inverse_sigmoid(x, eps=1e-3):

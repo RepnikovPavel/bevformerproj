@@ -1,9 +1,8 @@
 # Copyright (c) OpenMMLab. All rights reserved.
-from mmengine.config import read_base
-from mmengine.optim.scheduler import LinearLR
-
 from mmdet.models.backbones import SwinTransformer
 from mmdet.models.layers import PixelDecoder
+from mmengine.config import read_base
+from mmengine.optim.scheduler import LinearLR
 
 with read_base():
     from .maskformer_r50_ms_16xb1_75e_coco import *

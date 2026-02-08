@@ -2,8 +2,9 @@
 from logging import WARNING
 from typing import Any, Dict, List, Union
 
-from mmengine import is_list_of, print_log
 from mmengine.evaluator import Evaluator
+
+from mmengine import is_list_of, print_log
 
 EVALUATOR_TYPE = Union[Evaluator, Dict, List]
 

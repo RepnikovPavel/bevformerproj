@@ -5,6 +5,7 @@ import random
 import numpy as np
 import pytest
 import torch
+
 from mmengine import Config
 
 try:
@@ -16,8 +17,12 @@ except ImportError:
 from mmdeploy.codebase import import_codebase
 from mmdeploy.utils import Backend
 from mmdeploy.utils.config_utils import register_codebase
-from mmdeploy.utils.test import (WrapModel, check_backend, get_model_outputs,
-                                 get_rewrite_outputs)
+from mmdeploy.utils.test import (
+    WrapModel,
+    check_backend,
+    get_model_outputs,
+    get_rewrite_outputs,
+)
 
 try:
     codebase = register_codebase('mmyolo')

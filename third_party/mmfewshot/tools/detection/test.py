@@ -3,17 +3,19 @@ import argparse
 import os
 import warnings
 
-import mmcv
 import torch
-from mmcv import Config, DictAction
 from mmcv.parallel import MMDataParallel, MMDistributedDataParallel
-from mmcv.runner import (get_dist_info, init_dist, load_checkpoint,
-                         wrap_fp16_model)
-
-from mmfewshot.detection.datasets import (build_dataloader, build_dataset,
-                                          get_copy_dataset_type)
+from mmcv.runner import get_dist_info, init_dist, load_checkpoint, wrap_fp16_model
+from mmfewshot.detection.datasets import (
+    build_dataloader,
+    build_dataset,
+    get_copy_dataset_type,
+)
 from mmfewshot.detection.models import build_detector
 from mmfewshot.utils import compat_cfg
+
+import mmcv
+from mmcv import Config, DictAction
 
 
 def parse_args():
@@ -205,8 +207,7 @@ def main():
         model = MMDataParallel(model, device_ids=cfg.gpu_ids)
         show_kwargs = dict(show_score_thr=args.show_score_thr)
         if cfg.data.get('model_init', None) is not None:
-            from mmfewshot.detection.apis import (single_gpu_model_init,
-                                                  single_gpu_test)
+            from mmfewshot.detection.apis import single_gpu_model_init, single_gpu_test
             single_gpu_model_init(model, model_init_dataloader)
         else:
             from mmdet.apis.test import single_gpu_test
@@ -218,8 +219,7 @@ def main():
             device_ids=[torch.cuda.current_device()],
             broadcast_buffers=False)
         if cfg.data.get('model_init', None) is not None:
-            from mmfewshot.detection.apis import (multi_gpu_model_init,
-                                                  multi_gpu_test)
+            from mmfewshot.detection.apis import multi_gpu_model_init, multi_gpu_test
             multi_gpu_model_init(model, model_init_dataloader)
         else:
             from mmdet.apis.test import multi_gpu_test

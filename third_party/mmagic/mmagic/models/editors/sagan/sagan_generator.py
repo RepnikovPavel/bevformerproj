@@ -5,7 +5,6 @@ import numpy as np
 import torch
 import torch.nn as nn
 from mmcv.cnn import ConvModule
-from mmengine import is_list_of
 from mmengine.dist import is_distributed
 from mmengine.logging import MMLogger
 from mmengine.model import BaseModule, constant_init, xavier_init
@@ -16,6 +15,7 @@ from torch.nn.utils import spectral_norm
 
 from mmagic.models.utils import get_module_device
 from mmagic.registry import MODELS
+from mmengine import is_list_of
 
 
 @MODELS.register_module('SAGANGenerator')

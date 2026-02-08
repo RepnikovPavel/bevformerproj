@@ -10,6 +10,7 @@ from mmdet.structures import SampleList
 from mmdet.structures.bbox import BaseBoxes
 from mmdet.structures.mask import BitmapMasks, PolygonMasks
 from mmdet.utils import ConfigType
+
 from .base import BaseDetector
 
 try:

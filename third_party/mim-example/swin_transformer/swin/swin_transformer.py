@@ -10,9 +10,8 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 import torch.utils.checkpoint as checkpoint
-
-from mmdet.utils import get_root_logger
 from mmcv.cnn import MODELS
+from mmdet.utils import get_root_logger
 from timm.models.layers import DropPath, to_2tuple, trunc_normal_
 
 from .swin_checkpoint import load_checkpoint

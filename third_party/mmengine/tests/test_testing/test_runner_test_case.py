@@ -1,11 +1,12 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import os
 
-from mmengine import Config
 from mmengine.logging import MessageHub, MMLogger
 from mmengine.registry import DefaultScope
 from mmengine.testing import RunnerTestCase
 from mmengine.visualization import Visualizer
+
+from mmengine import Config
 
 
 class TestRunnerTestCase(RunnerTestCase):

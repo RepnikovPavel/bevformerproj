@@ -5,9 +5,10 @@ import os.path as osp
 import tempfile
 import zipfile
 
-import mmcv
 import numpy as np
 from mmengine.utils import mkdir_or_exist
+
+import mmcv
 
 
 def parse_args():

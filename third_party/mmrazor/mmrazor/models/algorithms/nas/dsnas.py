@@ -18,6 +18,7 @@ from mmrazor.models.mutators import NasMutator
 from mmrazor.models.utils import add_prefix
 from mmrazor.registry import MODEL_WRAPPERS, MODELS, TASK_UTILS
 from mmrazor.structures import export_fix_subnet, load_fix_subnet
+
 from ..base import BaseAlgorithm
 
 VALID_MUTATOR_TYPE = Union[NasMutator, Dict]

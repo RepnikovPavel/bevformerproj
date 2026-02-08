@@ -2,9 +2,9 @@
 from unittest import TestCase
 
 import torch
-from mmengine import ConfigDict
-
 from mmrazor.models import SelfDistill
+
+from mmengine import ConfigDict
 
 
 class TestSelfDistill(TestCase):

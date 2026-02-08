@@ -4,15 +4,18 @@ import tempfile
 import unittest
 
 import torch
-from mmengine import Config, MMLogger
+from mmdet.registry import DATASETS, MODELS
+from mmdet.utils import register_all_modules
+from mmdet.utils.benchmark import (
+    DataLoaderBenchmark,
+    DatasetBenchmark,
+    InferenceBenchmark,
+)
 from mmengine.dataset import Compose
 from mmengine.model import BaseModel
 from torch.utils.data import Dataset
 
-from mmdet.registry import DATASETS, MODELS
-from mmdet.utils import register_all_modules
-from mmdet.utils.benchmark import (DataLoaderBenchmark, DatasetBenchmark,
-                                   InferenceBenchmark)
+from mmengine import Config, MMLogger
 
 
 @MODELS.register_module()

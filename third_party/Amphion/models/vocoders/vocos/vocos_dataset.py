@@ -4,9 +4,9 @@
 # LICENSE file in the root directory of this source tree.
 
 import logging
-import numpy as np
 import random
 
+import numpy as np
 from models.codec.coco.coco_dataset import CocoDataset
 
 logger = logging.getLogger(__name__)

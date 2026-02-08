@@ -4,7 +4,6 @@ from copy import deepcopy
 
 import pytest
 import torch
-
 from mmagic.models.editors.cyclegan import ResnetGenerator
 
 

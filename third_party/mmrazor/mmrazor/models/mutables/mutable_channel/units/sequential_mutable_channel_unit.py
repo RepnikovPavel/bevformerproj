@@ -4,13 +4,13 @@ from typing import Dict, Union
 
 import torch.nn as nn
 from mmcv.cnn.bricks import Conv2dAdaptivePadding
-from mmengine import MMLogger
 from mmengine.model.utils import _BatchNormXd
-from mmengine.utils.dl_utils.parrots_wrapper import \
-    SyncBatchNorm as EngineSyncBatchNorm
+from mmengine.utils.dl_utils.parrots_wrapper import SyncBatchNorm as EngineSyncBatchNorm
 
+from mmengine import MMLogger
 from mmrazor.models.architectures import dynamic_ops
 from mmrazor.registry import MODELS
+
 from ..mutable_channel_container import MutableChannelContainer
 from ..sequential_mutable_channel import SquentialMutableChannel
 from .mutable_channel_unit import MutableChannelUnit

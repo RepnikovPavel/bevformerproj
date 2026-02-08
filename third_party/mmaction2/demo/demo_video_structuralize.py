@@ -5,18 +5,23 @@ import tempfile
 import warnings
 
 import cv2
-import mmcv
-import mmengine
 import numpy as np
 import torch
-from mmengine import DictAction
-from mmengine.structures import InstanceData
-
-from mmaction.apis import (detection_inference, inference_recognizer,
-                           inference_skeleton, init_recognizer, pose_inference)
+from mmaction.apis import (
+    detection_inference,
+    inference_recognizer,
+    inference_skeleton,
+    init_recognizer,
+    pose_inference,
+)
 from mmaction.registry import VISUALIZERS
 from mmaction.structures import ActionDataSample
 from mmaction.utils import frame_extract
+from mmengine.structures import InstanceData
+
+import mmcv
+import mmengine
+from mmengine import DictAction
 
 try:
     from mmdet.apis import init_detector

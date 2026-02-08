@@ -2,7 +2,6 @@
 from unittest.mock import MagicMock
 
 import torch
-
 from mmaction.registry import MODELS
 from mmaction.structures import ActionDataSample
 from mmaction.testing import get_skeletongcn_cfg

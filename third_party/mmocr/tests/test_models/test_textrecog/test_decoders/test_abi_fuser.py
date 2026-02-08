@@ -4,7 +4,6 @@ import tempfile
 from unittest import TestCase
 
 import torch
-
 from mmocr.models.textrecog.decoders import ABIFuser
 from mmocr.testing import create_dummy_dict_file
 

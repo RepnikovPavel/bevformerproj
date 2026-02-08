@@ -4,6 +4,7 @@ from mmdet.core.anchor.point_generator import MlvlPointGenerator
 from mmdet.models.dense_heads import AnchorFreeHead
 
 from mmrotate.core import build_bbox_coder
+
 from ..builder import ROTATED_HEADS, build_loss
 
 

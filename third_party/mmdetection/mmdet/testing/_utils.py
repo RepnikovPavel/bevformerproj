@@ -9,6 +9,7 @@ from mmengine.dataset import pseudo_collate
 from mmengine.structures import InstanceData, PixelData
 
 from mmdet.utils.util_random import ensure_rng
+
 from ..registry import TASK_UTILS
 from ..structures import DetDataSample, TrackDataSample
 from ..structures.bbox import HorizontalBoxes

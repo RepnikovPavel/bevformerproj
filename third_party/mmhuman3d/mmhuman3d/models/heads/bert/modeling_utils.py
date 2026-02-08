@@ -21,8 +21,9 @@ import logging
 import os
 from io import open
 
-import mmcv
 from torch import nn
+
+import mmcv
 
 logger = logging.getLogger(__name__)
 

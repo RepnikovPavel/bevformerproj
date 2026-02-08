@@ -2,20 +2,25 @@
 import random
 from copy import deepcopy
 
-import mmcv
 import numpy as np
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
 
+import mmcv
 from mmgen.models.architectures import PixelNorm
 from mmgen.models.architectures.common import get_module_device
 from mmgen.models.builder import MODULES, build_module
-from .modules.styleganv2_modules import (ConstantInput, ConvDownLayer,
-                                         EqualLinearActModule,
-                                         ModMBStddevLayer,
-                                         ModulatedPEStyleConv, ModulatedToRGB,
-                                         ResBlock)
+
+from .modules.styleganv2_modules import (
+    ConstantInput,
+    ConvDownLayer,
+    EqualLinearActModule,
+    ModMBStddevLayer,
+    ModulatedPEStyleConv,
+    ModulatedToRGB,
+    ResBlock,
+)
 from .utils import get_mean_latent, style_mixing
 
 

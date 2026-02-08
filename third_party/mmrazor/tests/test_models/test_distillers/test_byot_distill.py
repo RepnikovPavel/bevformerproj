@@ -2,9 +2,9 @@
 import copy
 from unittest import TestCase
 
-from mmengine import ConfigDict
-
 from mmrazor.models import BYOTDistiller
+
+from mmengine import ConfigDict
 
 
 class TestBYOTDistiller(TestCase):

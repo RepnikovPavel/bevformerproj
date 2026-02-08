@@ -2,14 +2,16 @@
 from unittest import TestCase
 
 import torch
+from mmrazor.models import LearnableFakeQuantize
 from torch.nn.parameter import Parameter
 
 from mmrazor import digit_version
-from mmrazor.models import LearnableFakeQuantize
 
 try:
-    from torch.ao.quantization import (MovingAverageMinMaxObserver,
-                                       MovingAveragePerChannelMinMaxObserver)
+    from torch.ao.quantization import (
+        MovingAverageMinMaxObserver,
+        MovingAveragePerChannelMinMaxObserver,
+    )
 except ImportError:
     from mmrazor.utils import get_placeholder
     MovingAverageMinMaxObserver = get_placeholder('torch>=1.13')

@@ -4,6 +4,7 @@ import torch.nn as nn
 from mmcv.cnn import ConvModule, DepthwiseSeparableConvModule
 
 from mmseg.registry import MODELS
+
 from ..utils import resize
 from .aspp_head import ASPPHead, ASPPModule
 

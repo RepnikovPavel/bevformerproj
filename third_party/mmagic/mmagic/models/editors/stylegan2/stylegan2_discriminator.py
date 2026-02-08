@@ -1,7 +1,6 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 from typing import Optional
 
-import mmengine
 import numpy as np
 import torch
 import torch.nn as nn
@@ -10,7 +9,9 @@ from mmengine.runner.amp import autocast
 from mmengine.runner.checkpoint import _load_checkpoint_with_prefix
 from torch import Tensor
 
+import mmengine
 from mmagic.registry import MODELS
+
 from ..stylegan1 import EqualLinearActModule
 from ..stylegan3.stylegan3_modules import MappingNetwork
 from .ada.augment import AugmentPipe

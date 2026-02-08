@@ -10,6 +10,7 @@ from mmdet.registry import MODELS
 from mmdet.structures import SampleList
 from mmdet.structures.bbox import bbox2roi
 from mmdet.utils import InstanceList, OptConfigType
+
 from ..layers import adaptive_avg_pool2d
 from ..task_modules.samplers import SamplingResult
 from ..utils import empty_instances, unpack_gt_instances

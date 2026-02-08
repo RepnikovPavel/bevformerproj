@@ -7,6 +7,7 @@ import torch.nn as nn
 from mmengine.model import BaseModule, ModuleList
 
 from mmaction.registry import MODELS
+
 from ..utils import Graph, mstcn, unit_gcn, unit_tcn
 
 EPS = 1e-4

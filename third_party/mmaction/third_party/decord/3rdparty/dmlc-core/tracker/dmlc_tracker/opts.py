@@ -1,7 +1,8 @@
 # pylint: disable=invalid-name
 """Command line options of job submission script."""
-import os
 import argparse
+import os
+
 
 def get_cache_file_set(args):
     """Get the list of files to be cached.

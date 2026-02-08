@@ -6,6 +6,7 @@ from typing import Optional, Tuple
 import numpy as np
 
 from mmpose.registry import KEYPOINT_CODECS
+
 from .base import BaseKeypointCodec
 from .utils import camera_to_image_coord
 

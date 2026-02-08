@@ -4,6 +4,7 @@ from mmcv.cnn import ConvModule
 from mmengine.model.weight_init import xavier_init
 
 from mmseg.registry import MODELS
+
 from ..utils import resize
 
 

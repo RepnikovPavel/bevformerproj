@@ -12,6 +12,7 @@ import vacl_stream
 import vaststream
 
 from mmdeploy.utils import Backend, get_root_logger
+
 from ..base import BACKEND_WRAPPER, BaseWrapper
 
 

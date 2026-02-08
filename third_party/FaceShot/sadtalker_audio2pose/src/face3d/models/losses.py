@@ -1,8 +1,9 @@
 import numpy as np
 import torch
 import torch.nn as nn
-from kornia.geometry import warp_affine
 import torch.nn.functional as F
+from kornia.geometry import warp_affine
+
 
 def resize_n_crop(image, M, dsize=112):
     # image: (b, c, h, w)

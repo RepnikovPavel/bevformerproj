@@ -3,9 +3,8 @@ import os
 
 import numpy as np
 import torch
-from ts.torch_handler.base_handler import BaseHandler
-
 from mmgen.apis import init_model
+from ts.torch_handler.base_handler import BaseHandler
 
 
 class MMGenUnconditionalHandler(BaseHandler):

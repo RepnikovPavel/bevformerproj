@@ -3,7 +3,6 @@ import platform
 
 import pytest
 import torch
-
 from mmagic.models.editors.stylegan3.stylegan3_modules import MappingNetwork
 
 

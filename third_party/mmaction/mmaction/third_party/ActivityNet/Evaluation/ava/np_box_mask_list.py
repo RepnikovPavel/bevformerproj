@@ -15,8 +15,8 @@
 
 """Numpy BoxMaskList classes and functions."""
 
-import numpy as np
 import np_box_list
+import numpy as np
 
 
 class BoxMaskList(np_box_list.BoxList):

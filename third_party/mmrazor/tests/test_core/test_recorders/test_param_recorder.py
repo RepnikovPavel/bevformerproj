@@ -2,9 +2,8 @@
 from unittest import TestCase
 
 import torch
-from torch import nn
-
 from mmrazor.models.task_modules import ParameterRecorder
+from torch import nn
 
 
 class ToyModel(nn.Module):

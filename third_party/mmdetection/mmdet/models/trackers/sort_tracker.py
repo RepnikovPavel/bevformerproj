@@ -16,6 +16,7 @@ from mmdet.registry import MODELS, TASK_UTILS
 from mmdet.structures import DetDataSample
 from mmdet.structures.bbox import bbox_overlaps, bbox_xyxy_to_cxcyah
 from mmdet.utils import OptConfigType
+
 from ..utils import imrenormalize
 from .base_tracker import BaseTracker
 

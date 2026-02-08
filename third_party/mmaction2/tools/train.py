@@ -3,10 +3,9 @@ import argparse
 import os
 import os.path as osp
 
+from mmaction.registry import RUNNERS
 from mmengine.config import Config, DictAction
 from mmengine.runner import Runner
-
-from mmaction.registry import RUNNERS
 
 
 def parse_args():

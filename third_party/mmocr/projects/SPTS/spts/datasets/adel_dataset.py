@@ -4,7 +4,6 @@ from typing import List, Union
 
 import numpy as np
 from mmdet.datasets.coco import CocoDataset
-
 from mmocr.registry import DATASETS
 
 

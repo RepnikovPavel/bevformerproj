@@ -10,6 +10,7 @@ from mmengine.model import BaseModule, Sequential
 from torch.nn.modules.batchnorm import _BatchNorm
 
 from mmpretrain.registry import MODELS
+
 from ..utils import to_ntuple
 from .resnet import Bottleneck as ResNetBottleneck
 from .resnext import Bottleneck as ResNeXtBottleneck

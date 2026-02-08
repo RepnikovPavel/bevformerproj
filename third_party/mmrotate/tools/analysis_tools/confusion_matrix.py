@@ -3,15 +3,15 @@ import argparse
 import os
 
 import matplotlib.pyplot as plt
-import mmcv
 import numpy as np
 import torch
 from matplotlib.ticker import MultipleLocator
-from mmcv import Config, DictAction
 from mmcv.ops import nms_rotated
 from mmdet.datasets import build_dataset
-
 from mmrotate.core.bbox import rbbox_overlaps
+
+import mmcv
+from mmcv import Config, DictAction
 
 
 def parse_args():

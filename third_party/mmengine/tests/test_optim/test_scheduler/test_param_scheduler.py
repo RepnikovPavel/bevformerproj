@@ -7,19 +7,23 @@ from unittest import TestCase
 import torch
 import torch.nn.functional as F
 import torch.optim as optim
-
 from mmengine.optim import OptimWrapper
+
 # yapf: disable
-from mmengine.optim.scheduler import (ConstantParamScheduler,
-                                      CosineAnnealingParamScheduler,
-                                      CosineRestartParamScheduler,
-                                      ExponentialParamScheduler,
-                                      LinearParamScheduler,
-                                      MultiStepParamScheduler,
-                                      OneCycleParamScheduler,
-                                      PolyParamScheduler,
-                                      ReduceOnPlateauParamScheduler,
-                                      StepParamScheduler, _ParamScheduler)
+from mmengine.optim.scheduler import (
+    ConstantParamScheduler,
+    CosineAnnealingParamScheduler,
+    CosineRestartParamScheduler,
+    ExponentialParamScheduler,
+    LinearParamScheduler,
+    MultiStepParamScheduler,
+    OneCycleParamScheduler,
+    PolyParamScheduler,
+    ReduceOnPlateauParamScheduler,
+    StepParamScheduler,
+    _ParamScheduler,
+)
+
 # yapf: enable
 from mmengine.testing import assert_allclose
 

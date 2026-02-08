@@ -4,14 +4,12 @@
 # LICENSE file in the root directory of this source tree.
 
 import math
+
 import librosa
-import torch
-
 import numpy as np
-
-from utils.util import JsonHParams
+import torch
 from utils.f0 import get_f0_features_using_parselmouth, get_pitch_sub_median
-
+from utils.util import JsonHParams
 
 ZERO = 1e-8
 

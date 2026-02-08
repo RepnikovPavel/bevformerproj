@@ -1,16 +1,24 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import copy
 
-import mmcv
 import numpy as np
 import pytest
+from mmaction.datasets.transforms import (
+    CenterCrop,
+    ColorJitter,
+    Flip,
+    Fuse,
+    MultiScaleCrop,
+    RandomCrop,
+    RandomResizedCrop,
+    Resize,
+    TenCrop,
+    ThreeCrop,
+)
 from mmengine.testing import assert_dict_has_keys
 from numpy.testing import assert_array_almost_equal
 
-from mmaction.datasets.transforms import (CenterCrop, ColorJitter, Flip, Fuse,
-                                          MultiScaleCrop, RandomCrop,
-                                          RandomResizedCrop, Resize, TenCrop,
-                                          ThreeCrop)
+import mmcv
 
 
 def check_crop(origin_imgs, result_imgs, result_bbox, num_crops=1):
@@ -513,8 +521,9 @@ class TestLazy:
 
     @staticmethod
     def test_init_lazy():
-        from mmaction.datasets.transforms.processing import \
-            _init_lazy_if_proper  # noqa: E501
+        from mmaction.datasets.transforms.processing import (
+            _init_lazy_if_proper,  # noqa: E501
+        )
         with pytest.raises(AssertionError):
             # use lazy operation but "lazy" not in results
             result = dict(lazy=dict(), img_shape=[64, 64])

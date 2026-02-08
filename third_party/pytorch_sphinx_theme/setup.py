@@ -1,5 +1,5 @@
 from setuptools import setup
-from io import open
+
 from pytorch_sphinx_theme import __version__
 
 setup(

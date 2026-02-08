@@ -11,10 +11,10 @@ from torch import nn
 
 from mmrazor.models.mutables import BaseMutable
 from mmrazor.models.mutators import SlimmableChannelMutator
-from mmrazor.models.utils import (add_prefix,
-                                  reinitialize_optim_wrapper_count_status)
+from mmrazor.models.utils import add_prefix, reinitialize_optim_wrapper_count_status
 from mmrazor.registry import MODEL_WRAPPERS, MODELS
 from mmrazor.structures.subnet.fix_subnet import _dynamic_to_static
+
 from ..base import BaseAlgorithm
 
 VALID_MUTATOR_TYPE = Union[SlimmableChannelMutator, Dict]

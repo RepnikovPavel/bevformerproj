@@ -4,17 +4,28 @@ from typing import Any, Dict, List, Optional, Tuple
 import numpy as np
 import torch
 from mmengine.runner.checkpoint import load_checkpoint
-# yapf: disable
-from sam.utils import (MaskData, area_from_rle, batch_iterator,
-                       batched_mask_to_box, box_xyxy_to_xywh,
-                       build_all_layer_point_grids, calculate_stability_score,
-                       coco_encode_rle, generate_crop_boxes,
-                       is_box_near_crop_edge, mask_to_rle_pytorch,
-                       remove_small_regions, rle_to_mask, uncrop_boxes_xyxy,
-                       uncrop_masks, uncrop_points)
+from mmseg.registry import MODELS, TRANSFORMS
 from torchvision.ops.boxes import batched_nms, box_area
 
-from mmseg.registry import MODELS, TRANSFORMS
+# yapf: disable
+from sam.utils import (
+    MaskData,
+    area_from_rle,
+    batch_iterator,
+    batched_mask_to_box,
+    box_xyxy_to_xywh,
+    build_all_layer_point_grids,
+    calculate_stability_score,
+    coco_encode_rle,
+    generate_crop_boxes,
+    is_box_near_crop_edge,
+    mask_to_rle_pytorch,
+    remove_small_regions,
+    rle_to_mask,
+    uncrop_boxes_xyxy,
+    uncrop_masks,
+    uncrop_points,
+)
 
 # yapf: enable
 
@@ -413,8 +424,7 @@ class SamAutomaticMaskGenerator:
             'coco_rle',
         ], f'Unknown output_mode {output_mode}.'
         if output_mode == 'coco_rle':
-            from pycocotools import \
-                mask as mask_utils  # type: ignore # noqa: F401
+            from pycocotools import mask as mask_utils  # type: ignore # noqa: F401
 
         if min_mask_region_area > 0:
             import cv2  # type: ignore # noqa: F401

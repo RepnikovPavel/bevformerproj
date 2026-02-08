@@ -5,6 +5,7 @@ __all__ = ['is_available']
 
 if is_available():
     from mmdeploy.backend.pplnn.onnx2pplnn import from_onnx as _from_onnx
+
     from ..core import PIPELINE_MANAGER
     from_onnx = PIPELINE_MANAGER.register_pipeline()(_from_onnx)
 

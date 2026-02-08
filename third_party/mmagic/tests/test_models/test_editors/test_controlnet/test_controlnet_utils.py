@@ -5,7 +5,6 @@ from unittest.mock import MagicMock
 
 import pytest
 import torch
-
 from mmagic.models.editors.controlnet.controlnet_utils import change_base_model
 
 

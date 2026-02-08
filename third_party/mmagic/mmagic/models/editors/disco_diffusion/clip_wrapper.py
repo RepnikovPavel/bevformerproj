@@ -3,9 +3,9 @@ from typing import List, Optional, Union
 
 import torch
 import torch.nn as nn
-from mmengine import print_log
 
 from mmagic.registry import MODELS
+from mmengine import print_log
 
 
 @MODELS.register_module()

@@ -3,6 +3,12 @@ import copy
 from functools import partial
 
 import torch
+from mmengine._strategy import FSDPStrategy
+from mmengine.dataset import DefaultSampler
+from mmengine.dist.utils import is_main_process
+from mmengine.optim import StepLR
+from mmengine.utils import apply_to
+from mmengine.visualization import Visualizer, WandbVisBackend
 from torch.distributed.fsdp.wrap import transformer_auto_wrap_policy
 from torch.optim import AdamW
 from torch.utils.data import DataLoader, Dataset
@@ -11,12 +17,6 @@ from transformers.data import default_data_collator
 from transformers.models.llama.modeling_llama import LlamaDecoderLayer
 
 from mmengine import load
-from mmengine._strategy import FSDPStrategy
-from mmengine.dataset import DefaultSampler
-from mmengine.dist.utils import is_main_process
-from mmengine.optim import StepLR
-from mmengine.utils import apply_to
-from mmengine.visualization import Visualizer, WandbVisBackend
 
 ORI_BATCH_SIZE = 4
 PROMPT_DICT = {

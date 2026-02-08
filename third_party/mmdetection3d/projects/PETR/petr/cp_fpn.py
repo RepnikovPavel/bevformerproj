@@ -7,9 +7,8 @@
 import torch.nn as nn
 import torch.nn.functional as F
 from mmcv.cnn import ConvModule
-from mmengine.model import BaseModule
-
 from mmdet3d.registry import MODELS
+from mmengine.model import BaseModule
 
 
 # This FPN remove unused parameters which can used with checkpoint

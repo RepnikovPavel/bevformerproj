@@ -6,10 +6,15 @@ import onnx.helper
 import onnx.utils
 
 from mmdeploy.apis.core import PIPELINE_MANAGER
-from mmdeploy.core.optimizers import (attribute_to_dict, create_extractor,
-                                      get_new_name, parse_extractor_io_string,
-                                      remove_identity, remove_imports,
-                                      rename_value)
+from mmdeploy.core.optimizers import (
+    attribute_to_dict,
+    create_extractor,
+    get_new_name,
+    parse_extractor_io_string,
+    remove_identity,
+    remove_imports,
+    rename_value,
+)
 from mmdeploy.utils import get_root_logger
 
 

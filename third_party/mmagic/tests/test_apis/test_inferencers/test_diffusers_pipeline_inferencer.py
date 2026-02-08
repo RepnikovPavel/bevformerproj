@@ -2,12 +2,12 @@
 import platform
 
 import pytest
+from mmagic.apis.inferencers.diffusers_pipeline_inferencer import (
+    DiffusersPipelineInferencer,
+)
+from mmagic.utils import register_all_modules
 from mmengine.utils import digit_version
 from mmengine.utils.dl_utils import TORCH_VERSION
-
-from mmagic.apis.inferencers.diffusers_pipeline_inferencer import \
-    DiffusersPipelineInferencer
-from mmagic.utils import register_all_modules
 
 register_all_modules()
 

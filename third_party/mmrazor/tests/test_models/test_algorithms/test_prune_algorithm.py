@@ -5,12 +5,15 @@ import unittest
 
 import torch
 from mmcls.structures import ClsDataSample
-from mmengine import MessageHub
 from mmengine.model import BaseModel
-
 from mmrazor.models.algorithms.pruning.ite_prune_algorithm import (
-    ItePruneAlgorithm, ItePruneConfigManager)
+    ItePruneAlgorithm,
+    ItePruneConfigManager,
+)
 from mmrazor.registry import MODELS
+
+from mmengine import MessageHub
+
 from ...utils.set_dist_env import SetDistEnv
 
 

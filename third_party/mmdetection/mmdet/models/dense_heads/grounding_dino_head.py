@@ -15,6 +15,7 @@ from mmdet.registry import MODELS
 from mmdet.structures import SampleList
 from mmdet.structures.bbox import bbox_cxcywh_to_xyxy, bbox_xyxy_to_cxcywh
 from mmdet.utils import InstanceList, reduce_mean
+
 from ..layers import inverse_sigmoid
 from .atss_vlfusion_head import convert_grounding_to_cls_scores
 from .dino_head import DINOHead

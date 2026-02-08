@@ -4,11 +4,11 @@
 import numbers
 import os.path as osp
 
-import mmcv
 import numpy as np
 from mmcv.transforms import BaseTransform
 from mmengine.fileio import get_file_backend
 
+import mmcv
 from mmagic.registry import TRANSFORMS
 from mmagic.utils import add_gaussian_noise, adjust_gamma
 

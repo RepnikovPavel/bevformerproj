@@ -4,16 +4,16 @@
 # LICENSE file in the root directory of this source tree.
 
 import glob
-import os
 import json
-import torchaudio
-from tqdm import tqdm
+import os
 from collections import defaultdict
 
-
+import torchaudio
+from tqdm import tqdm
+from utils.audio_slicer import Slicer
 from utils.io import save_audio
 from utils.util import has_existed, remove_and_create
-from utils.audio_slicer import Slicer
+
 from preprocessors import GOLDEN_TEST_SAMPLES
 
 

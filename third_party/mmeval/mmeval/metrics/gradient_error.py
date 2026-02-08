@@ -1,7 +1,8 @@
 # Copyright (c) OpenMMLab. All rights reserved.Dict
+from typing import Dict, List, Sequence
+
 import cv2
 import numpy as np
-from typing import Dict, List, Sequence
 
 from mmeval.core import BaseMetric
 

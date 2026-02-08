@@ -3,10 +3,12 @@ import itertools
 from unittest import TestCase
 
 import torch
-
 from mmengine.logging import MMLogger
-from mmengine.model import (ExponentialMovingAverage, MomentumAnnealingEMA,
-                            StochasticWeightAverage)
+from mmengine.model import (
+    ExponentialMovingAverage,
+    MomentumAnnealingEMA,
+    StochasticWeightAverage,
+)
 from mmengine.testing import assert_allclose
 
 

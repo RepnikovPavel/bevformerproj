@@ -2,10 +2,11 @@
 """
 
 import os
-import numpy as np
-import torch
-from collections import OrderedDict
 from abc import ABC, abstractmethod
+from collections import OrderedDict
+
+import torch
+
 from . import networks
 
 

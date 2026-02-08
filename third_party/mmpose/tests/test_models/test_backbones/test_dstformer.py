@@ -2,7 +2,6 @@
 from unittest import TestCase
 
 import torch
-
 from mmpose.models.backbones import DSTFormer
 from mmpose.models.backbones.dstformer import AttentionBlock
 

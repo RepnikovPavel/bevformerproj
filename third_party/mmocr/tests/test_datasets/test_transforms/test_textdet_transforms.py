@@ -5,12 +5,16 @@ import unittest.mock as mock
 
 import numpy as np
 from mmcv.transforms import Pad, RandomResize
-
-from mmocr.datasets.transforms import (BoundedScaleAspectJitter, RandomCrop,
-                                       RandomFlip, Resize,
-                                       ShortScaleAspectJitter, SourceImagePad,
-                                       TextDetRandomCrop,
-                                       TextDetRandomCropFlip)
+from mmocr.datasets.transforms import (
+    BoundedScaleAspectJitter,
+    RandomCrop,
+    RandomFlip,
+    Resize,
+    ShortScaleAspectJitter,
+    SourceImagePad,
+    TextDetRandomCrop,
+    TextDetRandomCropFlip,
+)
 from mmocr.utils import bbox2poly, poly2shapely
 
 

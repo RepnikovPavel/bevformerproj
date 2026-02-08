@@ -1,9 +1,16 @@
 # yapf: disable
-from torch.nn import (BatchNorm1d, BatchNorm2d, Conv2d, Dropout, Linear,
-                      Module, PReLU, Sequential)
+from torch.nn import (
+    BatchNorm1d,
+    BatchNorm2d,
+    Conv2d,
+    Dropout,
+    Linear,
+    Module,
+    PReLU,
+    Sequential,
+)
 
-from .helpers import (Flatten, bottleneck_IR, bottleneck_IR_SE, get_blocks,
-                      l2_norm)
+from .helpers import Flatten, bottleneck_IR, bottleneck_IR_SE, get_blocks, l2_norm
 
 """
 Modified Backbone implementation from [TreB1eN](https://github.com/TreB1eN/InsightFace_Pytorch) # isort:skip  # noqa

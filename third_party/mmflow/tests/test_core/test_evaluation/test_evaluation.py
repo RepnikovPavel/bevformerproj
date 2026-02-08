@@ -3,7 +3,6 @@ from unittest.mock import MagicMock, patch
 
 import pytest
 import torch.nn as nn
-
 from mmflow.core.evaluation import online_evaluation
 
 

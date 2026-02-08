@@ -2,17 +2,17 @@
 import os.path as osp
 from unittest.mock import patch
 
-import mmcv
 import numpy as np
 import torch
-from mmengine.config import ConfigDict
-
 from mmagic.datasets.transforms import PackInputs
 from mmagic.models.base_models import BaseMattor
 from mmagic.models.editors import DIM
 from mmagic.registry import MODELS
 from mmagic.structures import DataSample
 from mmagic.utils import register_all_modules
+from mmengine.config import ConfigDict
+
+import mmcv
 
 register_all_modules()
 

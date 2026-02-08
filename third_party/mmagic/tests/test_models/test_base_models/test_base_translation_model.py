@@ -3,9 +3,8 @@ from unittest import TestCase
 from unittest.mock import MagicMock
 
 import torch
-from mmengine.model import MMDistributedDataParallel
-
 from mmagic.models import BaseTranslationModel
+from mmengine.model import MMDistributedDataParallel
 
 
 class ToyTranslationModel(BaseTranslationModel):

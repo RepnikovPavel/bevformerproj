@@ -5,7 +5,6 @@ import unittest
 
 import torch
 import torch.nn as nn
-
 from mmengine.config import ConfigDict
 from mmengine.device import is_musa_available
 from mmengine.hooks import EMAHook

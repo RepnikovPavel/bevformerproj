@@ -2,10 +2,10 @@
 from abc import ABCMeta
 from typing import Optional, Sequence, Union
 
-import mmengine
 from mmengine.model import BaseModel
 from torch import nn
 
+import mmengine
 from mmdeploy.utils import Backend, get_ir_config
 
 

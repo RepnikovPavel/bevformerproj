@@ -1,10 +1,10 @@
 # Copyright (c) OpenMMLab. All rights reserved.
-import mmcv
 import torch
 from mmcv.parallel import collate, scatter
 from mmcv.runner import load_checkpoint
 from mmcv.utils import is_list_of
 
+import mmcv
 from mmgen.datasets.pipelines import Compose
 from mmgen.models import BaseTranslationModel, build_model
 

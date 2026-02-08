@@ -4,11 +4,12 @@
 # LICENSE file in the root directory of this source tree.
 
 """This code is modified from https://github.com/facebookresearch/libri-light/blob/main/data_preparation/cut_by_vad.py"""
-import pathlib
-import soundfile as sf
-import numpy as np
 import json
 import multiprocessing
+import pathlib
+
+import numpy as np
+import soundfile as sf
 import tqdm
 
 

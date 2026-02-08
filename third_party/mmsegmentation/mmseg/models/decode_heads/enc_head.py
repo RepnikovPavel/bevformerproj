@@ -9,6 +9,7 @@ from torch import Tensor
 
 from mmseg.registry import MODELS
 from mmseg.utils import ConfigType, SampleList
+
 from ..utils import Encoding, resize
 from .decode_head import BaseDecodeHead
 

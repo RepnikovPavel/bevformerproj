@@ -10,6 +10,7 @@ from numpy.fft import ifft
 from mmocr.registry import MODELS
 from mmocr.structures import TextDetDataSample
 from mmocr.utils import fill_hole
+
 from .base import BaseTextDetPostProcessor
 
 

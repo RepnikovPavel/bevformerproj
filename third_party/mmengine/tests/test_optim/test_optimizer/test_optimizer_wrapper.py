@@ -7,19 +7,22 @@ from unittest.mock import MagicMock
 import torch
 import torch.distributed as torch_dist
 import torch.nn as nn
-from parameterized import parameterized
-from torch.cuda.amp import GradScaler
-from torch.nn.parallel.distributed import DistributedDataParallel
-from torch.optim import SGD, Adam, Optimizer
-
 from mmengine.dist import all_gather
 from mmengine.logging import MessageHub, MMLogger
-from mmengine.optim import (AmpOptimWrapper, ApexOptimWrapper,
-                            DefaultOptimWrapperConstructor, OptimWrapper)
+from mmengine.optim import (
+    AmpOptimWrapper,
+    ApexOptimWrapper,
+    DefaultOptimWrapperConstructor,
+    OptimWrapper,
+)
 from mmengine.testing import assert_allclose
 from mmengine.testing._internal import MultiProcessTestCase
 from mmengine.utils.dl_utils import TORCH_VERSION
 from mmengine.utils.version_utils import digit_version
+from parameterized import parameterized
+from torch.cuda.amp import GradScaler
+from torch.nn.parallel.distributed import DistributedDataParallel
+from torch.optim import SGD, Adam, Optimizer
 
 is_apex_available = False
 try:

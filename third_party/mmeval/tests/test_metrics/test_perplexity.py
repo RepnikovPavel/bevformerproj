@@ -1,6 +1,5 @@
 import numpy as np
 import pytest
-
 from mmeval.metrics import Perplexity
 from mmeval.utils import try_import
 

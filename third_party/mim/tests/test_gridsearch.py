@@ -3,7 +3,6 @@
 import pytest
 import torch
 from click.testing import CliRunner
-
 from mim.commands.gridsearch import cli as gridsearch
 from mim.commands.install import cli as install
 from mim.commands.uninstall import cli as uninstall

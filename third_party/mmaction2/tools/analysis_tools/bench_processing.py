@@ -12,12 +12,12 @@ $ snakeviz program.prof
 import argparse
 import os
 
-import mmcv
-from mmcv import Config
-
-from mmaction import __version__
 from mmaction.datasets import build_dataloader, build_dataset
 from mmaction.utils import get_root_logger
+
+import mmcv
+from mmaction import __version__
+from mmcv import Config
 
 
 def main():

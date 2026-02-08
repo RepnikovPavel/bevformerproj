@@ -3,15 +3,16 @@
 # This source code is licensed under the MIT license found in the
 # LICENSE file in the root directory of this source tree.
 
-import os
 import json
+import os
+
 import numpy as np
-from tqdm import tqdm
 import torch
 import torchaudio
+from tqdm import tqdm
 
-from utils.io import save_audio
 from utils.audio import load_audio_torch
+from utils.io import save_audio
 
 
 # This function is obtained from librosa.

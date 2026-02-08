@@ -7,6 +7,7 @@ from mmdet.core import bbox2result
 from mmdet.models import build_detector
 
 from mmtrack.core.motion import flow_warp_feats
+
 from ..builder import MODELS, build_motion
 from .base import BaseVideoDetector
 

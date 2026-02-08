@@ -7,6 +7,7 @@ from mmdet.models.backbones.csp_darknet import Focus
 from mmdet.utils import ConfigType, OptMultiConfig
 
 from mmyolo.registry import MODELS
+
 from ..layers import MaxPoolAndStrideConvBlock
 from .base_backbone import BaseBackbone
 

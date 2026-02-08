@@ -3,11 +3,15 @@ import copy
 import os.path as osp
 from unittest import TestCase
 
-import mmcv
 import numpy as np
+from mmocr.datasets.transforms import (
+    InferencerLoader,
+    LoadImageFromFile,
+    LoadKIEAnnotations,
+    LoadOCRAnnotations,
+)
 
-from mmocr.datasets.transforms import (InferencerLoader, LoadImageFromFile,
-                                       LoadKIEAnnotations, LoadOCRAnnotations)
+import mmcv
 
 
 class TestLoadImageFromFile(TestCase):

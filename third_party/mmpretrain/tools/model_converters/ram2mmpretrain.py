@@ -4,9 +4,10 @@ import os.path as osp
 from collections import OrderedDict
 from copy import deepcopy
 
-import mmengine
 import torch
 from mmengine.runner import CheckpointLoader
+
+import mmengine
 
 
 def convert_swin(ckpt):

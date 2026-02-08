@@ -5,23 +5,24 @@ import os.path as osp
 import sys
 import warnings
 
-import mmcv
 import numpy as np
 import torch
-from mmengine import ProgressBar
 from mmengine.config import Config, DictAction
 from mmengine.dataset import COLLATE_FUNCTIONS
 from mmengine.runner.checkpoint import load_checkpoint
-from numpy import random
-
 from mmyolo.registry import DATASETS, MODELS
 from mmyolo.utils import register_all_modules
-from projects.assigner_visualization.dense_heads import (RTMHeadAssigner,
-                                                         YOLOv5HeadAssigner,
-                                                         YOLOv7HeadAssigner,
-                                                         YOLOv8HeadAssigner)
-from projects.assigner_visualization.visualization import \
-    YOLOAssignerVisualizer
+from numpy import random
+from projects.assigner_visualization.dense_heads import (
+    RTMHeadAssigner,
+    YOLOv5HeadAssigner,
+    YOLOv7HeadAssigner,
+    YOLOv8HeadAssigner,
+)
+from projects.assigner_visualization.visualization import YOLOAssignerVisualizer
+
+import mmcv
+from mmengine import ProgressBar
 
 
 def parse_args():

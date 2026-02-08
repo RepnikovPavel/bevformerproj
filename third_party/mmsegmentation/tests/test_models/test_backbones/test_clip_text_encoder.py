@@ -1,10 +1,10 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import torch
-from mmengine import Config
 from mmengine.registry import init_default_scope
-
 from mmseg.models.text_encoder import CLIPTextEncoder
 from mmseg.utils import get_classes
+
+from mmengine import Config
 
 
 def test_clip_text_encoder():

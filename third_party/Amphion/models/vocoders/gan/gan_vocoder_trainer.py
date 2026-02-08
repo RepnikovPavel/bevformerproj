@@ -3,58 +3,36 @@
 # This source code is licensed under the MIT license found in the
 # LICENSE file in the root directory of this source tree.
 
-import os
-import sys
-import time
-import torch
 import json
-import itertools
-import accelerate
-import torch.distributed as dist
-import torch.nn.functional as F
-from tqdm import tqdm
-from torch.nn.parallel import DistributedDataParallel
-from torch.utils.data import DataLoader
-from torch.utils.data.distributed import DistributedSampler
-from torch.utils.tensorboard import SummaryWriter
-
-from torch.optim import AdamW
-from torch.optim.lr_scheduler import ExponentialLR
-
-from librosa.filters import mel as librosa_mel_fn
-
-from accelerate.logging import get_logger
+import os
+import time
 from pathlib import Path
 
-from utils.io import save_audio
-from utils.data_utils import *
-from utils.util import (
-    Logger,
-    ValueWindow,
-    remove_older_ckpt,
-    set_all_random_seed,
-    save_config,
-)
-from utils.mel import extract_mel_features
-from models.vocoders.vocoder_trainer import VocoderTrainer
+import accelerate
+import torch
+from accelerate.logging import get_logger
+from models.vocoders.gan.discriminator.mpd import MultiPeriodDiscriminator
+from models.vocoders.gan.discriminator.mrd import MultiResolutionDiscriminator
+from models.vocoders.gan.discriminator.msd import MultiScaleDiscriminator
+from models.vocoders.gan.discriminator.mssbcqtd import MultiScaleSubbandCQTDiscriminator
+from models.vocoders.gan.discriminator.msstftd import MultiScaleSTFTDiscriminator
 from models.vocoders.gan.gan_vocoder_dataset import (
-    GANVocoderDataset,
     GANVocoderCollator,
+    GANVocoderDataset,
 )
-
+from models.vocoders.gan.gan_vocoder_inference import vocoder_inference
+from models.vocoders.gan.generator.apnet import APNet
 from models.vocoders.gan.generator.bigvgan import BigVGAN
 from models.vocoders.gan.generator.hifigan import HiFiGAN
 from models.vocoders.gan.generator.melgan import MelGAN
 from models.vocoders.gan.generator.nsfhifigan import NSFHiFiGAN
-from models.vocoders.gan.generator.apnet import APNet
-
-from models.vocoders.gan.discriminator.mpd import MultiPeriodDiscriminator
-from models.vocoders.gan.discriminator.mrd import MultiResolutionDiscriminator
-from models.vocoders.gan.discriminator.mssbcqtd import MultiScaleSubbandCQTDiscriminator
-from models.vocoders.gan.discriminator.msd import MultiScaleDiscriminator
-from models.vocoders.gan.discriminator.msstftd import MultiScaleSTFTDiscriminator
-
-from models.vocoders.gan.gan_vocoder_inference import vocoder_inference
+from models.vocoders.vocoder_trainer import VocoderTrainer
+from torch.optim import AdamW
+from torch.optim.lr_scheduler import ExponentialLR
+from tqdm import tqdm
+from utils.data_utils import *
+from utils.io import save_audio
+from utils.mel import extract_mel_features
 
 supported_generators = {
     "bigvgan": BigVGAN,

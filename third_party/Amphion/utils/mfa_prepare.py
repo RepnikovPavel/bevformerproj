@@ -8,9 +8,10 @@
 import os
 import subprocess
 from multiprocessing import Pool
-from tqdm import tqdm
-import torchaudio
 from pathlib import Path
+
+import torchaudio
+from tqdm import tqdm
 
 
 def remove_empty_dirs(path):

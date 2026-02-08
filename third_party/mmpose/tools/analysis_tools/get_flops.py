@@ -5,7 +5,6 @@ import numpy as np
 import torch
 from mmengine.config import DictAction
 from mmengine.logging import MMLogger
-
 from mmpose.apis.inference import init_model
 
 try:

@@ -4,12 +4,11 @@
 # LICENSE file in the root directory of this source tree.
 
 import torch
-import torch.nn.functional as F
 import torch.nn as nn
-from torch.nn import Conv1d, ConvTranspose1d
-from torch.nn.utils import weight_norm, remove_weight_norm
+import torch.nn.functional as F
 from modules.vocoder_blocks import *
-
+from torch.nn import Conv1d, ConvTranspose1d
+from torch.nn.utils import remove_weight_norm, weight_norm
 
 LRELU_SLOPE = 0.1
 

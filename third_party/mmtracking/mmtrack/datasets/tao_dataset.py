@@ -2,11 +2,12 @@
 import os
 import tempfile
 
-import mmcv
 import numpy as np
 from mmcv.utils import print_log
 from mmdet.datasets import DATASETS
 from mmdet.datasets.api_wrappers import COCO
+
+import mmcv
 
 from .coco_video_dataset import CocoVideoDataset
 from .parsers import CocoVID

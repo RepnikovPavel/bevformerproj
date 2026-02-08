@@ -107,7 +107,7 @@ lr_config = dict(
     policy='step',
     step=[40, 80])
 checkpoint_config = dict(interval=1)
-workflow = [('train', 1))]
+workflow = [('train', 1)]
 # yapf:disable
 log_config = dict(
     interval=20,

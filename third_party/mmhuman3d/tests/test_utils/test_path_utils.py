@@ -1,7 +1,6 @@
 import os
 
 import pytest
-
 from mmhuman3d.utils.path_utils import (
     Existence,
     check_input_path,

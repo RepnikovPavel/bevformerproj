@@ -2,7 +2,6 @@
 from copy import deepcopy
 
 import torch
-
 from mmgen.models.gans.mspie_stylegan2 import MSPIEStyleGAN2
 
 

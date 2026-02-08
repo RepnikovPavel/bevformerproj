@@ -1,10 +1,10 @@
 # Copyright (c) OpenMMLab. All rights reserved.
-import mmcv
 import numpy as np
 from mmcv.transforms import BaseTransform, Compose
+from mmdet3d.registry import TRANSFORMS
 from PIL import Image
 
-from mmdet3d.registry import TRANSFORMS
+import mmcv
 
 
 def get_dtu_raydir(pixelcoords, intrinsic, rot, dir_norm=None):

@@ -1,8 +1,10 @@
 # Copyright (c) OpenMMLab. All rights reserved.
-import numpy as np
 from typing import Dict, List
 
+import numpy as np
+
 from mmeval.core.base_metric import BaseMetric
+
 from .pck_accuracy import keypoint_pck_accuracy
 
 

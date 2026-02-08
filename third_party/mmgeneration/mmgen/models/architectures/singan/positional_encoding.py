@@ -7,13 +7,14 @@ More details can be found in: https://arxiv.org/pdf/2012.05217.pdf
 """
 from functools import partial
 
-import mmcv
 import numpy as np
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
 
+import mmcv
 from mmgen.models.builder import MODULES, build_module
+
 from .generator_discriminator import SinGANMultiScaleGenerator
 from .modules import GeneratorBlock
 

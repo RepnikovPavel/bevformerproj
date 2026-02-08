@@ -2,9 +2,7 @@
 from unittest import TestCase
 
 import torch
-
-from mmrazor.models.mutables import (OneShotMutableValue,
-                                     SquentialMutableChannel)
+from mmrazor.models.mutables import OneShotMutableValue, SquentialMutableChannel
 
 
 class TestSquentialMutableChannel(TestCase):

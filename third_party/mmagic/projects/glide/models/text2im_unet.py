@@ -1,9 +1,9 @@
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-
 from mmagic.models import DenoisingUnet
 from mmagic.registry import MODELS
+
 from .glide_modules import Transformer
 from .glide_tokenizer import get_encoder
 

@@ -1,11 +1,9 @@
 import cv2
 import numpy as np
-from PIL import Image
-
 import torch
-from transformers import AutoProcessor, CLIPModel
-
 from annotator.util import annotator_ckpts_path
+from PIL import Image
+from transformers import AutoProcessor, CLIPModel
 
 
 class ContentDetector:

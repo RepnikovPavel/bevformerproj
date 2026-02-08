@@ -2,10 +2,10 @@
 import copy
 import os.path as osp
 
-import mmcv
 import numpy as np
-
 from mmfewshot.detection.datasets.pipelines.transforms import PIPELINES
+
+import mmcv
 
 
 def test_crop_resize_instance():

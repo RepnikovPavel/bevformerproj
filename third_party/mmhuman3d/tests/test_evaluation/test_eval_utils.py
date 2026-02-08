@@ -1,6 +1,5 @@
 import numpy as np
 import pytest
-
 from mmhuman3d.core.evaluation import (
     fg_vertices_to_mesh_distance,
     keypoint_3d_auc,

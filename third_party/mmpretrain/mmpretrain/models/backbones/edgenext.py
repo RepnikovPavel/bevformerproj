@@ -9,8 +9,8 @@ from mmcv.cnn.bricks import DropPath
 from mmengine.model import BaseModule, ModuleList, Sequential
 
 from mmpretrain.registry import MODELS
-from ..utils import (ChannelMultiheadAttention, PositionEncodingFourier,
-                     build_norm_layer)
+
+from ..utils import ChannelMultiheadAttention, PositionEncodingFourier, build_norm_layer
 from .base_backbone import BaseBackbone
 from .convnext import ConvNeXtBlock
 

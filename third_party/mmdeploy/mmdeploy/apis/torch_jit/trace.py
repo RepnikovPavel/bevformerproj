@@ -7,6 +7,7 @@ import torch
 
 from mmdeploy.core import RewriterContext, patch_model
 from mmdeploy.utils import IR, Backend, get_ir_config, get_root_logger
+
 from ..core import PIPELINE_MANAGER
 
 

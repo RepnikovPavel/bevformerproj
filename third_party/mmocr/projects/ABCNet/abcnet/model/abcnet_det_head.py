@@ -2,7 +2,6 @@
 import torch.nn as nn
 from mmcv.cnn import ConvModule, Scale
 from mmdet.models.utils import multi_apply
-
 from mmocr.models.textdet.heads.base import BaseTextDetHead
 from mmocr.registry import MODELS
 

@@ -11,10 +11,9 @@ from datasets.pipelines import TopDownGenerateTargetFewShot
 from mmcv.cnn import fuse_conv_bn
 from mmengine.config import Config, DictAction
 from mmengine.runner import load_checkpoint
-from torchvision import transforms
-
 from mmpose.models import build_pose_estimator
 from tools.visualization import COLORS, plot_results
+from torchvision import transforms
 
 
 class ResizePad:

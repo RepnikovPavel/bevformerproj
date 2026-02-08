@@ -7,6 +7,7 @@ import torch.nn as nn
 from mmengine.model import BaseModule, ModuleList
 
 from mmpretrain.registry import MODELS
+
 from .multi_label_cls_head import MultiLabelClsHead
 
 

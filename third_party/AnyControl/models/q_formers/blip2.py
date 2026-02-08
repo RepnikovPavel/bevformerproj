@@ -5,29 +5,28 @@
  For full license text, see the LICENSE file in the repo root or https://opensource.org/licenses/BSD-3-Clause
 """
 import contextlib
+import datetime
 import logging
 import os
 import time
-import datetime
-
-import torch
-import torch.nn as nn
-import torch.distributed as dist
-import torch.nn.functional as F
 
 import lavis.common.dist_utils as dist_utils
+import torch
+import torch.distributed as dist
+import torch.nn as nn
+import torch.nn.functional as F
 from lavis.common.dist_utils import download_cached_file
-from lavis.common.utils import is_url
 from lavis.common.logger import MetricLogger
+from lavis.common.utils import is_url
 from lavis.models.base_model import BaseModel
 from lavis.models.blip2_models.Qformer import BertConfig
+from models.q_formers.clip_vit import create_clip_vit_L
+from models.q_formers.eva_vit import create_eva_vit_g
+from models.q_formers.Qformer import BertLMHeadModel
+
 # from lavis.models.eva_vit import create_eva_vit_g
 # from lavis.models.clip_vit import create_clip_vit_L
 from transformers import BertTokenizer
-
-from models.q_formers.Qformer import BertLMHeadModel
-from models.q_formers.eva_vit import create_eva_vit_g
-from models.q_formers.clip_vit import create_clip_vit_L
 
 
 class Blip2Base(BaseModel):

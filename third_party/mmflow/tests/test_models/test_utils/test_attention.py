@@ -1,9 +1,8 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import pytest
 import torch
-from torch import Tensor
-
 from mmflow.models.utils.attention1d import Attention1D, AttentionLayer
+from torch import Tensor
 
 _feature1 = Tensor([[[[0., 1.], [2., 3.]]]])
 _feature2 = Tensor([[[[1., 2.], [3., 4.]]]])

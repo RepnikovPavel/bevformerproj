@@ -13,6 +13,7 @@ from mmengine.structures import InstanceData
 from torch import Tensor
 
 from mmyolo.registry import MODELS
+
 from ..utils import OutputSaveFunctionWrapper, OutputSaveObjectWrapper
 from .yolox_head import YOLOXHead, YOLOXHeadModule
 

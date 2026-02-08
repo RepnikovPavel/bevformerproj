@@ -11,8 +11,9 @@ transformers = try_import('transformers')
 
 if transformers is not None:
     from transformers import CLIPConfig, CLIPVisionModel, PreTrainedModel
-    from transformers.models.clip.feature_extraction_clip import \
-        CLIPFeatureExtractor  # noqa
+    from transformers.models.clip.feature_extraction_clip import (
+        CLIPFeatureExtractor,  # noqa
+    )
     from transformers.models.clip.modeling_clip import CLIPTextModel
     from transformers.models.clip.tokenization_clip import CLIPTokenizer
 

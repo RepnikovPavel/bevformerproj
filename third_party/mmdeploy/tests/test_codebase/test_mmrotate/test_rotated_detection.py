@@ -2,18 +2,18 @@
 import os
 from tempfile import NamedTemporaryFile, TemporaryDirectory
 
+import mmdeploy.backend.onnxruntime as ort_apis
 import numpy as np
 import pytest
 import torch
-from mmengine import Config
-from torch.utils.data import DataLoader
-from torch.utils.data.dataset import Dataset
-
-import mmdeploy.backend.onnxruntime as ort_apis
 from mmdeploy.apis import build_task_processor
 from mmdeploy.codebase import import_codebase
 from mmdeploy.utils import Codebase, load_config
 from mmdeploy.utils.test import SwitchBackendWrapper
+from torch.utils.data import DataLoader
+from torch.utils.data.dataset import Dataset
+
+from mmengine import Config
 
 try:
     import_codebase(Codebase.MMROTATE)
@@ -76,8 +76,7 @@ def backend_model():
 
 
 def test_build_backend_model(backend_model):
-    from mmdeploy.codebase.mmrotate.deploy.rotated_detection_model import \
-        End2EndModel
+    from mmdeploy.codebase.mmrotate.deploy.rotated_detection_model import End2EndModel
     assert isinstance(backend_model, End2EndModel)
 
 

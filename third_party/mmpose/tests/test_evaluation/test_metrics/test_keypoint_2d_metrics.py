@@ -3,10 +3,15 @@ from unittest import TestCase
 
 import numpy as np
 from mmengine.structures import InstanceData
-
 from mmpose.datasets.datasets.utils import parse_pose_metainfo
-from mmpose.evaluation.metrics import (AUC, EPE, NME, JhmdbPCKAccuracy,
-                                       MpiiPCKAccuracy, PCKAccuracy)
+from mmpose.evaluation.metrics import (
+    AUC,
+    EPE,
+    NME,
+    JhmdbPCKAccuracy,
+    MpiiPCKAccuracy,
+    PCKAccuracy,
+)
 
 
 class TestPCKAccuracy(TestCase):

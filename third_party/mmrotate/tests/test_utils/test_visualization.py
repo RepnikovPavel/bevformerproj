@@ -3,7 +3,6 @@ import os
 import os.path as osp
 
 import numpy as np
-
 from mmrotate.core import visualization as vis
 from mmrotate.datasets import DOTADataset, HRSCDataset, SARDataset
 

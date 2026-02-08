@@ -1,11 +1,11 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 from typing import List
 
-import mmengine
 from mmengine.dataset import BaseDataset
 from mmengine.fileio import list_dir_or_file
 from mmengine.utils import check_file_exist
 
+import mmengine
 from mmpretrain.registry import DATASETS
 
 

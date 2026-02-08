@@ -3,9 +3,8 @@ import tempfile
 from copy import deepcopy
 
 import pytest
-from mmengine.config import Config
-
 from mmdet.utils import replace_cfg_vals
+from mmengine.config import Config
 
 
 def test_replace_cfg_vals():

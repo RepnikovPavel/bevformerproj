@@ -4,8 +4,9 @@ import os.path as osp
 from typing import Sequence
 
 import cv2
-import mmcv
 from numpy import ndarray
+
+import mmcv
 
 try:
     import imageio

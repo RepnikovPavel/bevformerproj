@@ -3,13 +3,14 @@ import random
 
 import numpy as np
 import pytest
+from mmaction.evaluation.functional import (
+    average_recall_at_avg_proposals,
+    confusion_matrix,
+    get_weighted_score,
+    pairwise_temporal_iou,
+    top_k_classes,
+)
 from numpy.testing import assert_array_almost_equal, assert_array_equal
-
-from mmaction.evaluation.functional import (average_recall_at_avg_proposals,
-                                            confusion_matrix,
-                                            get_weighted_score,
-                                            pairwise_temporal_iou,
-                                            top_k_classes)
 
 
 def test_top_k_accurate_classes():

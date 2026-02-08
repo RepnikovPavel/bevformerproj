@@ -10,6 +10,7 @@ from torch.utils.data.dataloader import DataLoader
 
 from mmagic.models.utils import get_module_device, normalize_vecs
 from mmagic.registry import METRICS
+
 from .base_gen_metric import GenerativeMetric
 
 

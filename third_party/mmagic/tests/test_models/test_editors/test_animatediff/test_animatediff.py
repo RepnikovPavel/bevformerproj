@@ -3,11 +3,10 @@ import platform
 from unittest import TestCase
 
 import pytest
-from mmengine.utils import digit_version
-from mmengine.utils.dl_utils import TORCH_VERSION
-
 from mmagic.registry import MODELS
 from mmagic.utils import register_all_modules
+from mmengine.utils import digit_version
+from mmengine.utils.dl_utils import TORCH_VERSION
 
 # from mmengine.utils import digit_version
 

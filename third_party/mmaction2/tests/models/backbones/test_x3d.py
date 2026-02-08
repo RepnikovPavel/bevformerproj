@@ -1,10 +1,9 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import pytest
 import torch
-from mmengine.utils.dl_utils.parrots_wrapper import _BatchNorm
-
 from mmaction.models import X3D
 from mmaction.testing import check_norm_state, generate_backbone_demo_inputs
+from mmengine.utils.dl_utils.parrots_wrapper import _BatchNorm
 
 
 def test_x3d_backbone():

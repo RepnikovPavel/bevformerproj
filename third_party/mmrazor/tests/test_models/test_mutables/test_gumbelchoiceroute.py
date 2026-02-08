@@ -4,7 +4,6 @@ from unittest import TestCase
 import pytest
 import torch
 import torch.nn as nn
-
 from mmrazor.models import *  # noqa:F403,F401
 from mmrazor.registry import MODELS
 

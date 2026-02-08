@@ -5,7 +5,6 @@ import os.path as osp
 from mmengine.config import Config, DictAction
 from mmengine.evaluator import DumpResults
 from mmengine.runner import Runner
-
 from mmengine_template.registry import RUNNERS
 
 

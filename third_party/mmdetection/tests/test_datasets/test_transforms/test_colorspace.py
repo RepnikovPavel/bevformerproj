@@ -2,10 +2,20 @@
 import copy
 import unittest
 
-from mmdet.datasets.transforms import (AutoContrast, Brightness, Color,
-                                       ColorTransform, Contrast, Equalize,
-                                       Invert, Posterize, Sharpness, Solarize,
-                                       SolarizeAdd)
+from mmdet.datasets.transforms import (
+    AutoContrast,
+    Brightness,
+    Color,
+    ColorTransform,
+    Contrast,
+    Equalize,
+    Invert,
+    Posterize,
+    Sharpness,
+    Solarize,
+    SolarizeAdd,
+)
+
 from .utils import check_result_same, construct_toy_data
 
 

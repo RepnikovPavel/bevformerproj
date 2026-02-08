@@ -9,6 +9,7 @@ import torch.nn.functional as F
 from mmengine.utils import is_list_of
 
 from mmseg.registry import MODELS
+
 from .utils import get_class_weight, weight_reduce_loss
 
 

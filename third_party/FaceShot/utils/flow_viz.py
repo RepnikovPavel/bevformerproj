@@ -12,13 +12,11 @@
 # Author: Tom Runia
 # Date Created: 2018-08-03
 
-from __future__ import absolute_import
-from __future__ import division
-from __future__ import print_function
+from __future__ import absolute_import, division, print_function
 
 import numpy as np
-from PIL import Image
 import torch
+from PIL import Image
 
 
 def make_colorwheel():

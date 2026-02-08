@@ -1,6 +1,7 @@
-import mmcv
 import numpy as np
 import torch
+
+import mmcv
 
 
 def bbox2delta(proposals, gt, means=[0, 0, 0, 0], stds=[1, 1, 1, 1]):

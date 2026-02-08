@@ -5,6 +5,7 @@ import torch.nn.functional as F
 from mmcv.cnn import ConvModule, build_activation_layer, build_norm_layer
 
 from mmseg.registry import MODELS
+
 from .decode_head import BaseDecodeHead
 
 

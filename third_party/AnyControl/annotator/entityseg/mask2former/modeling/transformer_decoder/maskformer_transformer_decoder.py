@@ -2,16 +2,14 @@
 # Modified by Bowen Cheng from: https://github.com/facebookresearch/detr/blob/master/models/detr.py
 import fvcore.nn.weight_init as weight_init
 import torch
-from torch import nn
-from torch.nn import functional as F
-
 from detectron2.config import configurable
 from detectron2.layers import Conv2d
 from detectron2.utils.registry import Registry
+from torch import nn
+from torch.nn import functional as F
 
 from .position_encoding import PositionEmbeddingSine
 from .transformer import Transformer
-
 
 TRANSFORMER_DECODER_REGISTRY = Registry("TRANSFORMER_MODULE")
 TRANSFORMER_DECODER_REGISTRY.__doc__ = """

@@ -7,8 +7,7 @@ import torch.distributed as dist
 from mmrazor.registry import MODELS
 
 try:
-    from torch.ao.quantization.observer import (MinMaxObserver,
-                                                PerChannelMinMaxObserver)
+    from torch.ao.quantization.observer import MinMaxObserver, PerChannelMinMaxObserver
 except ImportError:
     from mmrazor.utils import get_placeholder
     MinMaxObserver = get_placeholder('torch>=1.13')

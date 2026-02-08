@@ -9,6 +9,7 @@ from torch import Tensor
 from mmdet.models.backbones.resnet import Bottleneck
 from mmdet.registry import MODELS
 from mmdet.utils import ConfigType, MultiConfig, OptConfigType, OptMultiConfig
+
 from .bbox_head import BBoxHead
 
 

@@ -3,10 +3,11 @@ import os.path as osp
 from typing import List, Optional, Tuple, Union
 
 import numpy as np
-from mmengine import track_parallel_progress
 from scipy.io import loadmat
 
+from mmengine import track_parallel_progress
 from mmocr.utils import is_type_list
+
 from ..data_preparer import DATA_PARSERS
 from .base import BaseParser
 

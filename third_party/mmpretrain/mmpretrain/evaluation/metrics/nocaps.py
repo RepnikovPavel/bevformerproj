@@ -2,9 +2,9 @@
 from typing import List, Optional
 
 import mmengine
-
 from mmpretrain.registry import METRICS
 from mmpretrain.utils import require
+
 from .caption import COCOCaption, save_result
 
 try:

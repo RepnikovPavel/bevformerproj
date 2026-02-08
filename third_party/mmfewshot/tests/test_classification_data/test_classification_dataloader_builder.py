@@ -3,10 +3,12 @@ from unittest.mock import MagicMock, patch
 
 import numpy as np
 from mmcv.utils import ConfigDict
-
-from mmfewshot.classification.datasets import (CUBDataset, MetaTestDataset,
-                                               build_dataloader,
-                                               build_meta_test_dataloader)
+from mmfewshot.classification.datasets import (
+    CUBDataset,
+    MetaTestDataset,
+    build_dataloader,
+    build_meta_test_dataloader,
+)
 
 
 @patch.multiple(CUBDataset, __abstractmethods__=set())

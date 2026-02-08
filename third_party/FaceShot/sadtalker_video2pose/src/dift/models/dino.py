@@ -1,5 +1,6 @@
 import torch
 
+
 class DINOFeaturizer:
     def __init__(self, dino_id='dino_vitb8'):
         self.model = torch.hub.load('facebookresearch/dino:main', dino_id).eval().cuda()

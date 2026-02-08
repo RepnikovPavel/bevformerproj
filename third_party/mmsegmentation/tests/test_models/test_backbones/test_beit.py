@@ -1,8 +1,8 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import pytest
 import torch
-
 from mmseg.models.backbones.beit import BEiT
+
 from .utils import check_norm_state
 
 

@@ -6,6 +6,7 @@ import torch
 import torch.nn.functional as F
 
 from mmpretrain.registry import BATCH_AUGMENTS
+
 from .cutmix import CutMix
 
 

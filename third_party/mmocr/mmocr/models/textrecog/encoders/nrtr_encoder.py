@@ -9,6 +9,7 @@ from mmengine.model import ModuleList
 from mmocr.models.common import TFEncoderLayer
 from mmocr.registry import MODELS
 from mmocr.structures import TextRecogDataSample
+
 from .base import BaseEncoder
 
 

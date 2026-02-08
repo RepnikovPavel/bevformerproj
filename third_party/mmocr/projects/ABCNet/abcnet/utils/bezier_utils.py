@@ -1,8 +1,7 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import numpy as np
-from scipy.special import comb as n_over_k
-
 from mmocr.utils.typing_utils import ArrayLike
+from scipy.special import comb as n_over_k
 
 
 def bezier_coefficient(n, t, k):

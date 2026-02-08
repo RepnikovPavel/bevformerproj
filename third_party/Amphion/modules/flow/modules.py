@@ -6,18 +6,17 @@
 # This code is modified from https://github.com/jaywalnut310/vits/
 
 import math
+
 import torch
-from torch import nn
-from torch.nn import functional as F
-
-from torch.nn import Conv1d
-from torch.nn.utils import weight_norm, remove_weight_norm
-
-from utils.util import *
+from modules.base.base_module import LayerNorm
 from modules.transformer.transforms import (
     piecewise_rational_quadratic_transform,
 )
-from modules.base.base_module import LayerNorm
+from torch import nn
+from torch.nn import Conv1d
+from torch.nn import functional as F
+from torch.nn.utils import remove_weight_norm, weight_norm
+from utils.util import *
 
 LRELU_SLOPE = 0.1
 

@@ -1,12 +1,13 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 from typing import Optional
 
-import mmengine
 import torch
 import torch.nn.functional as F
 from einops import rearrange
 
+import mmengine
 from mmaction.registry import MODELS
+
 from .vindlu import VindLUBase
 
 

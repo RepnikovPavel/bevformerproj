@@ -3,9 +3,8 @@ import logging
 import os
 from argparse import ArgumentParser
 
-from mmengine.logging import print_log
-
 from mmdet3d.apis import LidarDet3DInferencer
+from mmengine.logging import print_log
 
 
 def parse_args():

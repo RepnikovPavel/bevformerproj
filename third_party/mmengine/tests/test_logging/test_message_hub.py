@@ -4,7 +4,6 @@ from collections import OrderedDict
 
 import numpy as np
 import pytest
-
 from mmengine.logging import HistoryBuffer, MessageHub
 from mmengine.utils import is_installed
 

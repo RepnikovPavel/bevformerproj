@@ -1,8 +1,9 @@
 # Copyright (c) OpenMMLab. All rights reserved.
-import mmcv
 import numpy as np
 import torch
 from mmdet.core.bbox.coder.base_bbox_coder import BaseBBoxCoder
+
+import mmcv
 
 from ..builder import ROTATED_BBOX_CODERS
 from ..transforms import norm_angle

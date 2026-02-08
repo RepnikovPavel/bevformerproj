@@ -4,8 +4,8 @@ from collections import defaultdict
 
 import pytest
 import torch
-
 from mmtrack.datasets.pipelines.processing import MatchInstances
+
 from .utils import _demo_mm_inputs, _get_config_module
 
 

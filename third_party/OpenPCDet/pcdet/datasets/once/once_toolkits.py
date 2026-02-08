@@ -1,8 +1,10 @@
 import json
 import os.path as osp
 from collections import defaultdict
+
 import cv2
 import numpy as np
+
 
 class Octopus(object):
     """

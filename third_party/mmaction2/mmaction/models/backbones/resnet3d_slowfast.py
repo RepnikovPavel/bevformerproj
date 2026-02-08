@@ -12,6 +12,7 @@ from mmengine.model.weight_init import kaiming_init
 from mmengine.runner.checkpoint import _load_checkpoint, load_checkpoint
 
 from mmaction.registry import MODELS
+
 from .resnet3d import ResNet3d
 
 

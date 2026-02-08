@@ -2,7 +2,6 @@
 import unittest
 
 import numpy as np
-
 from mmdet3d.datasets import SemanticKittiDataset
 from mmdet3d.utils import register_all_modules
 

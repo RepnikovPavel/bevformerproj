@@ -1,10 +1,11 @@
 import os
+from shutil import move
+
 import cv2
 import numpy as np
-from scipy.io import loadmat
 import tensorflow as tf
+
 from util.preprocess import align_for_lm
-from shutil import move
 
 mean_face = np.loadtxt('util/test_mean_face.txt')
 mean_face = mean_face.reshape([68, 2])

@@ -82,10 +82,13 @@ class OpenVINOManager(BaseBackendManager):
         assert is_available(), \
             'OpenVINO is not available, please install OpenVINO first.'
 
-        from mmdeploy.apis.openvino import (get_input_info_from_cfg,
-                                            get_mo_options_from_cfg,
-                                            get_output_model_file)
+        from mmdeploy.apis.openvino import (
+            get_input_info_from_cfg,
+            get_mo_options_from_cfg,
+            get_output_model_file,
+        )
         from mmdeploy.utils import get_ir_config
+
         from .onnx2openvino import from_onnx
 
         openvino_files = []

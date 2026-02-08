@@ -3,6 +3,7 @@ import numpy as np
 
 from mmrazor.models.architectures.dynamic_ops import DynamicConv2d
 from mmrazor.registry import TASK_UTILS
+
 from .base_counter import BaseCounter
 
 

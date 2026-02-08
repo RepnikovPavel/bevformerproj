@@ -7,6 +7,7 @@ from torch import nn as nn
 
 from mmdet3d.models.layers.paconv import PAConv, PAConvCUDA
 from mmdet3d.utils import ConfigType
+
 from .builder import SA_MODULES
 from .point_sa_module import BasePointSAModule
 

@@ -2,9 +2,11 @@
 """
 
 import math
-import numpy as np
 import os
+
 import cv2
+import numpy as np
+
 
 class GMM:
     def __init__(self, dim, num, w, mu, cov, cov_det, cov_inv):

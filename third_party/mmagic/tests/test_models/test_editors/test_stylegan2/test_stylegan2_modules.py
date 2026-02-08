@@ -4,12 +4,15 @@ from copy import deepcopy
 
 import pytest
 import torch
-
 from mmagic.models.editors.stylegan1 import get_mean_latent, style_mixing
 from mmagic.models.editors.stylegan2 import StyleGAN2Generator
 from mmagic.models.editors.stylegan2.stylegan2_modules import (
-    Blur, DownsampleUpFIRDn, ModulatedConv2d, ModulatedStyleConv,
-    ModulatedToRGB)
+    Blur,
+    DownsampleUpFIRDn,
+    ModulatedConv2d,
+    ModulatedStyleConv,
+    ModulatedToRGB,
+)
 from mmagic.models.utils import get_module_device
 
 

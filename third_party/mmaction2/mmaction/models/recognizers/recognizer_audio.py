@@ -2,6 +2,7 @@
 from torch import Tensor
 
 from mmaction.registry import MODELS
+
 from .base import BaseRecognizer
 
 

@@ -4,7 +4,6 @@ import platform
 
 import pytest
 import torch
-
 from mmselfsup.models import MoCoV3
 from mmselfsup.structures import SelfSupDataSample
 

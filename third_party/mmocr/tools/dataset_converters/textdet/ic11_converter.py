@@ -3,11 +3,11 @@ import argparse
 import os
 import os.path as osp
 
-import mmcv
-import mmengine
+from mmocr.utils import dump_ocr_data
 from PIL import Image
 
-from mmocr.utils import dump_ocr_data
+import mmcv
+import mmengine
 
 
 def convert_gif(img_path):

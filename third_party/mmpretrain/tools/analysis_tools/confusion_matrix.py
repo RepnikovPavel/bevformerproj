@@ -2,14 +2,14 @@
 import argparse
 import tempfile
 
-import mmengine
 from mmengine.config import Config, DictAction
 from mmengine.evaluator import Evaluator
 from mmengine.runner import Runner
-
 from mmpretrain.evaluation import ConfusionMatrix
 from mmpretrain.registry import DATASETS
 from mmpretrain.utils import register_all_modules
+
+import mmengine
 
 
 def parse_args():

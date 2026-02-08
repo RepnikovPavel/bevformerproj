@@ -21,6 +21,13 @@
 #
 
 import torch
+
+from modules.wenet_extractor.cif.predictor import Predictor
+from modules.wenet_extractor.efficient_conformer.encoder import (
+    EfficientConformerEncoder,
+)
+from modules.wenet_extractor.paraformer.paraformer import Paraformer
+from modules.wenet_extractor.squeezeformer.encoder import SqueezeformerEncoder
 from modules.wenet_extractor.transducer.joint import TransducerJoint
 from modules.wenet_extractor.transducer.predictor import (
     ConvPredictor,
@@ -39,12 +46,6 @@ from modules.wenet_extractor.transformer.encoder import (
     ConformerEncoder,
     TransformerEncoder,
 )
-from modules.wenet_extractor.squeezeformer.encoder import SqueezeformerEncoder
-from modules.wenet_extractor.efficient_conformer.encoder import (
-    EfficientConformerEncoder,
-)
-from modules.wenet_extractor.paraformer.paraformer import Paraformer
-from modules.wenet_extractor.cif.predictor import Predictor
 from modules.wenet_extractor.utils.cmvn import load_cmvn
 
 

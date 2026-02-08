@@ -2,9 +2,8 @@
 import numpy as np
 import pytest
 import torch
-from torchvision.utils import make_grid
-
 from mmgen.models.misc import tensor2img
+from torchvision.utils import make_grid
 
 
 def test_tensor2img():

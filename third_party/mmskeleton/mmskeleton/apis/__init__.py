@@ -1,1 +1,1 @@
-from .estimation import init_pose_estimator, inference_pose_estimator
+from .estimation import inference_pose_estimator, init_pose_estimator

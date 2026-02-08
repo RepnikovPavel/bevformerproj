@@ -23,9 +23,10 @@
 """ScorerInterface implementation for CTC."""
 import numpy as np
 import torch
-
-from modules.wenet_extractor.paraformer.search.ctc_prefix_score import CTCPrefixScore
-from modules.wenet_extractor.paraformer.search.ctc_prefix_score import CTCPrefixScoreTH
+from modules.wenet_extractor.paraformer.search.ctc_prefix_score import (
+    CTCPrefixScore,
+    CTCPrefixScoreTH,
+)
 from modules.wenet_extractor.paraformer.search.scorer_interface import (
     BatchPartialScorerInterface,
 )

@@ -4,9 +4,7 @@ from unittest.mock import ANY, MagicMock
 
 import pytest
 import torch
-
-from mmpretrain.models.utils.attention import (ShiftWindowMSA, WindowMSA,
-                                               torch_meshgrid)
+from mmpretrain.models.utils.attention import ShiftWindowMSA, WindowMSA, torch_meshgrid
 
 
 def get_relative_position_index(window_size):

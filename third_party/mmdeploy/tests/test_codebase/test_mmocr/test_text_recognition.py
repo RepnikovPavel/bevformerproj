@@ -2,16 +2,16 @@
 import os
 from tempfile import NamedTemporaryFile, TemporaryDirectory
 
-import mmengine
+import mmdeploy.backend.onnxruntime as ort_apis
 import numpy as np
 import pytest
 import torch
-
-import mmdeploy.backend.onnxruntime as ort_apis
 from mmdeploy.apis import build_task_processor
 from mmdeploy.codebase import import_codebase
 from mmdeploy.utils import Codebase, load_config
 from mmdeploy.utils.test import SwitchBackendWrapper
+
+import mmengine
 
 model_cfg_path = 'tests/test_codebase/test_mmocr/data/crnn.py'
 model_cfg = load_config(model_cfg_path)[0]

@@ -4,13 +4,10 @@
 # LICENSE file in the root directory of this source tree.
 
 import argparse
-from argparse import ArgumentParser
-import os
 
-from models.tta.ldm.audioldm_inference import AudioLDMInference
-from utils.util import save_config, load_model_config, load_config
-import numpy as np
 import torch
+from models.tta.ldm.audioldm_inference import AudioLDMInference
+from utils.util import load_config
 
 
 def build_inference(args, cfg):

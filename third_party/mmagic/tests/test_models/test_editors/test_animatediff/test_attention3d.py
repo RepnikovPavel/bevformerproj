@@ -3,9 +3,10 @@ import platform
 
 import pytest
 import torch
-
-from mmagic.models.editors.animatediff.attention_3d import (CrossAttention,
-                                                            Transformer3DModel)
+from mmagic.models.editors.animatediff.attention_3d import (
+    CrossAttention,
+    Transformer3DModel,
+)
 
 
 def test_crossattention():

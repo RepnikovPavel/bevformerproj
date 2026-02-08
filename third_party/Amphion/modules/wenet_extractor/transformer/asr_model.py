@@ -24,7 +24,6 @@ from collections import defaultdict
 from typing import Dict, List, Optional, Tuple
 
 import torch
-import torch.nn.functional as F
 from torch.nn.utils.rnn import pad_sequence
 
 from modules.wenet_extractor.transformer.ctc import CTC
@@ -36,8 +35,8 @@ from modules.wenet_extractor.utils.common import (
     add_sos_eos,
     log_add,
     remove_duplicates_and_blank,
-    th_accuracy,
     reverse_pad_list,
+    th_accuracy,
 )
 from modules.wenet_extractor.utils.mask import (
     make_pad_mask,

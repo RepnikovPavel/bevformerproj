@@ -7,12 +7,11 @@
 from mmengine.config import read_base
 
 with read_base():
-    from ..common.ms_poly_3x_coco_instance import *
     from .._base_.models.mask_rcnn_r50_fpn import *
-
-from mmengine.model.weight_init import PretrainedInit
+    from ..common.ms_poly_3x_coco_instance import *
 
 from mmdet.models.backbones import ResNeXt
+from mmengine.model.weight_init import PretrainedInit
 
 model = dict(
     backbone=dict(

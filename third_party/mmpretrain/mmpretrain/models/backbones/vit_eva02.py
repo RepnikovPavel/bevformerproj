@@ -6,8 +6,8 @@ from mmcv.cnn.bricks.drop import build_dropout
 from mmengine.model import BaseModule, ModuleList
 
 from mmpretrain.registry import MODELS
-from ..utils import (RotaryEmbeddingFast, SwiGLUFFN, build_norm_layer,
-                     resize_pos_embed)
+
+from ..utils import RotaryEmbeddingFast, SwiGLUFFN, build_norm_layer, resize_pos_embed
 from .vision_transformer import VisionTransformer
 
 

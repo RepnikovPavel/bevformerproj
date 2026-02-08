@@ -9,9 +9,13 @@ from torch import nn as nn
 from torch.nn import functional as F
 
 from mmdet3d.registry import MODELS
-from mmdet3d.structures.bbox_3d import (get_proj_mat_by_coord_type,
-                                        points_cam2img, points_img2cam)
+from mmdet3d.structures.bbox_3d import (
+    get_proj_mat_by_coord_type,
+    points_cam2img,
+    points_img2cam,
+)
 from mmdet3d.utils import OptConfigType, OptMultiConfig
+
 from . import apply_3d_transformation
 
 

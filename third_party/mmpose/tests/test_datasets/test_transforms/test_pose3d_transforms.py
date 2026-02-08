@@ -5,7 +5,6 @@ from unittest import TestCase
 
 import numpy as np
 from mmengine.fileio import load
-
 from mmpose.datasets.transforms import RandomFlipAroundRoot
 
 

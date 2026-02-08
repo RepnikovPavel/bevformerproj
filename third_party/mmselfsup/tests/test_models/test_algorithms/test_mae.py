@@ -4,7 +4,6 @@ import platform
 
 import pytest
 import torch
-
 from mmselfsup.models.algorithms.mae import MAE
 from mmselfsup.structures import SelfSupDataSample
 

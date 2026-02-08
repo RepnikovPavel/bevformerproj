@@ -3,9 +3,10 @@ import argparse
 import os
 import os.path as osp
 
-from mmengine import dump, list_from_file, load
 from mmengine.config import Config, DictAction
 from mmengine.runner import Runner
+
+from mmengine import dump, list_from_file, load
 
 
 def parse_args():

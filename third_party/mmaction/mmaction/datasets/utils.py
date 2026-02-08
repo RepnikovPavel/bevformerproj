@@ -1,15 +1,18 @@
 import copy
-from collections import Sequence
-import torch
-import numpy as np
-import os
-import glob
-import fnmatch
-import mmcv
-from mmcv.runner import obj_from_dict
-from .. import datasets
 import csv
+import fnmatch
+import glob
+import os
 import random
+from collections import Sequence
+
+import numpy as np
+import torch
+from mmcv.runner import obj_from_dict
+
+import mmcv
+
+from .. import datasets
 
 
 def to_tensor(data):

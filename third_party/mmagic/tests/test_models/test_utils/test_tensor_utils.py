@@ -1,6 +1,5 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import torch
-
 from mmagic.models.utils.tensor_utils import get_unknown_tensor, normalize_vecs
 
 

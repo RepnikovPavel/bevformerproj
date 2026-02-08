@@ -2,15 +2,17 @@
 from typing import List, Optional
 
 import torch
-from mmengine import ConfigDict
 from torch import Tensor
 
-from mmdeploy.codebase.mmdet.deploy import (gather_topk,
-                                            get_post_processing_params,
-                                            pad_with_value_if_necessary)
+from mmdeploy.codebase.mmdet.deploy import (
+    gather_topk,
+    get_post_processing_params,
+    pad_with_value_if_necessary,
+)
 from mmdeploy.core import FUNCTION_REWRITER
 from mmdeploy.mmcv.ops import multiclass_nms
 from mmdeploy.utils import Backend, is_dynamic_shape
+from mmengine import ConfigDict
 
 
 @FUNCTION_REWRITER.register_rewriter(

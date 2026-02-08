@@ -3,11 +3,14 @@ from copy import deepcopy
 
 import pytest
 import torch
-
-from mmgen.models.architectures.stylegan import (StyleGAN1Discriminator,
-                                                 StyleGANv1Generator)
+from mmgen.models.architectures.stylegan import (
+    StyleGAN1Discriminator,
+    StyleGANv1Generator,
+)
 from mmgen.models.architectures.stylegan.modules.styleganv1_modules import (
-    AdaptiveInstanceNorm, StyleConv)
+    AdaptiveInstanceNorm,
+    StyleConv,
+)
 
 
 class TestAdaptiveInstanceNorm:

@@ -2,13 +2,14 @@
 from unittest import TestCase
 
 import torch
-
 from mmrazor.models.architectures.dynamic_ops import DynamicMultiheadAttention
 from mmrazor.models.architectures.ops import MultiheadAttention
-from mmrazor.models.mutables import (MutableChannelContainer,
-                                     OneShotMutableChannel,
-                                     OneShotMutableChannelUnit,
-                                     OneShotMutableValue)
+from mmrazor.models.mutables import (
+    MutableChannelContainer,
+    OneShotMutableChannel,
+    OneShotMutableChannelUnit,
+    OneShotMutableValue,
+)
 
 
 class TestDynamicMHA(TestCase):

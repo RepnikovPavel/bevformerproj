@@ -8,8 +8,8 @@ import os
 
 import numpy as np
 from scipy.interpolate import interp1d
-from tqdm import tqdm
 from sklearn.preprocessing import StandardScaler
+from tqdm import tqdm
 
 
 def intersperse(lst, item):

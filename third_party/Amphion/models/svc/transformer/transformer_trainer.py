@@ -4,12 +4,12 @@
 # LICENSE file in the root directory of this source tree.
 
 import torch
+from modules.encoder.condition_encoder import ConditionEncoder
+from utils.ssim import SSIM
 
 from models.svc.base import SVCTrainer
-from modules.encoder.condition_encoder import ConditionEncoder
-from models.svc.transformer.transformer import Transformer
 from models.svc.transformer.conformer import Conformer
-from utils.ssim import SSIM
+from models.svc.transformer.transformer import Transformer
 
 
 class TransformerTrainer(SVCTrainer):

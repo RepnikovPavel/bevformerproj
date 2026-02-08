@@ -2,10 +2,9 @@
 from unittest import TestCase
 
 import torch
-from mmengine.structures import InstanceData
-
 from mmdet.evaluation import bbox_overlaps
 from mmdet.models.dense_heads import CornerHead
+from mmengine.structures import InstanceData
 
 
 class TestCornerHead(TestCase):

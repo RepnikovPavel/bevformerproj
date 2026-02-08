@@ -8,13 +8,13 @@ import pytest
 import torch
 import torch.distributed as dist
 from mmcls.structures import ClsDataSample
-from mmengine import MessageHub
 from mmengine.optim.optimizer import OptimWrapper, OptimWrapperDict
-from torch.optim import SGD
-
 from mmrazor.models.algorithms import DMCP, DMCPDDP
 from mmrazor.models.mutators import DMCPChannelMutator
 from mmrazor.registry import MODELS
+from torch.optim import SGD
+
+from mmengine import MessageHub
 
 MUTATOR_TYPE = Union[torch.nn.Module, Dict]
 DISTILLER_TYPE = Union[torch.nn.Module, Dict]

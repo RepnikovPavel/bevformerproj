@@ -5,7 +5,6 @@ from typing import Optional, Tuple
 
 import numpy as np
 from mmcv.transforms.base import BaseTransform
-
 from mmselfsup.registry import TRANSFORMS
 
 

@@ -2,19 +2,20 @@
 #
 # This source code is licensed under the MIT license found in the
 # LICENSE file in the root directory of this source tree.
+from concurrent.futures import ThreadPoolExecutor
+
+import numpy as np
+from dualcodec.utils import normalize_text
 from dualcodec.utils.utils_infer import (
-    tqdm,
-    device,
+    chunk_text,
     cross_fade_duration,
+    device,
     torch,
     torchaudio,
-    chunk_text,
+    tqdm,
 )
-from dualcodec.utils import normalize_text
-from concurrent.futures import ThreadPoolExecutor
-from loguru import logger
 from einops import rearrange
-import numpy as np
+from loguru import logger
 
 # -----------------------------------------
 

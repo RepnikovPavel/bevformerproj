@@ -4,8 +4,8 @@ from typing import Dict, Optional, Tuple
 import cv2
 import numpy as np
 from mmcv.transforms import BaseTransform
-from mmengine import is_seq_of
 
+from mmengine import is_seq_of
 from mmpose.registry import TRANSFORMS
 from mmpose.structures.bbox import get_udp_warp_matrix, get_warp_matrix
 

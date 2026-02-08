@@ -16,7 +16,6 @@ from scipy.io.wavfile import read
 from torch.nn import Conv1d, ConvTranspose1d
 from torch.nn.utils import remove_weight_norm, weight_norm
 
-
 MAX_WAV_VALUE = 32768.0
 
 

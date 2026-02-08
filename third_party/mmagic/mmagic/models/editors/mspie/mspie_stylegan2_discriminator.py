@@ -4,6 +4,7 @@ import torch.nn as nn
 from mmengine.model import BaseModule
 
 from mmagic.registry import MODELS
+
 from ..stylegan1 import EqualLinearActModule
 from ..stylegan2 import ConvDownLayer, ModMBStddevLayer, ResBlock
 

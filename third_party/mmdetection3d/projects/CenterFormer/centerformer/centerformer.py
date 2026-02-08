@@ -2,12 +2,11 @@
 from typing import Dict, List, Optional
 
 import torch
-from torch import Tensor
-from torch.nn.modules.batchnorm import _BatchNorm
-
 from mmdet3d.models.detectors import Base3DDetector
 from mmdet3d.registry import MODELS
 from mmdet3d.structures import Det3DDataSample
+from torch import Tensor
+from torch.nn.modules.batchnorm import _BatchNorm
 
 
 @MODELS.register_module()

@@ -17,14 +17,20 @@ except ImportError:
     prepare = get_placeholder('torch>=1.13')
     _fuse_fx = get_placeholder('torch>=1.13')
 
-from mmrazor import digit_version
 from mmrazor.models.task_modules.tracer import CustomTracer, build_graphmodule
 from mmrazor.models.task_modules.tracer.fx import (
-    del_fakequant_after_function, del_fakequant_after_method,
-    del_fakequant_after_module, del_fakequant_after_op,
-    del_fakequant_before_function, del_fakequant_before_method,
-    del_fakequant_before_module, del_fakequant_before_op)
+    del_fakequant_after_function,
+    del_fakequant_after_method,
+    del_fakequant_after_module,
+    del_fakequant_after_op,
+    del_fakequant_before_function,
+    del_fakequant_before_method,
+    del_fakequant_before_module,
+    del_fakequant_before_op,
+)
 from mmrazor.structures.quantization import BackendConfigs, QConfigHandler
+
+from mmrazor import digit_version
 
 
 def _get_attrs(target, attrs):

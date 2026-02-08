@@ -2,10 +2,8 @@
 import math
 import os.path as osp
 
-from torch.utils.data import (DistributedSampler, RandomSampler,
-                              SequentialSampler)
-
 from mmflow.datasets import DATASETS, build_dataloader, build_dataset
+from torch.utils.data import DistributedSampler, RandomSampler, SequentialSampler
 
 data_root = osp.join(osp.dirname(__file__), '../data/pseudo_sintel')
 

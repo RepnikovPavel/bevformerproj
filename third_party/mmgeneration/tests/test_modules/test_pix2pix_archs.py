@@ -3,9 +3,7 @@ from copy import deepcopy
 
 import pytest
 import torch
-
-from mmgen.models.architectures.pix2pix import (PatchDiscriminator,
-                                                UnetGenerator)
+from mmgen.models.architectures.pix2pix import PatchDiscriminator, UnetGenerator
 
 
 class TestUnetGenerator:

@@ -3,9 +3,7 @@ import os.path as osp
 import unittest
 
 import torch
-
-from mmagic.apis.inferencers.colorization_inferencer import \
-    ColorizationInferencer
+from mmagic.apis.inferencers.colorization_inferencer import ColorizationInferencer
 from mmagic.utils import register_all_modules
 
 register_all_modules()

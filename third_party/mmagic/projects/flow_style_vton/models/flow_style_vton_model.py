@@ -1,12 +1,12 @@
-import mmengine
 import numpy as np
 import torch
 import torch.nn.functional as F
+from mmagic.registry import MODELS
+from mmagic.utils.typing import ForwardInputs
 from mmengine.model import BaseModel
 from mmengine.runner.checkpoint import _load_checkpoint
 
-from mmagic.registry import MODELS
-from mmagic.utils.typing import ForwardInputs
+import mmengine
 
 
 @MODELS.register_module()

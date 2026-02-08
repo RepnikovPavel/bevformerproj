@@ -14,6 +14,7 @@ from torch.nn.modules.batchnorm import _BatchNorm
 
 from mmpretrain.models.backbones.base_backbone import BaseBackbone
 from mmpretrain.registry import MODELS
+
 from ..utils import build_norm_layer
 
 

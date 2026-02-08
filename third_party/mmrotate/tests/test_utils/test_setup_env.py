@@ -4,9 +4,9 @@ import os
 import platform
 
 import cv2
-from mmcv import Config
-
 from mmrotate.utils import setup_multi_processes
+
+from mmcv import Config
 
 
 def test_setup_multi_processes():

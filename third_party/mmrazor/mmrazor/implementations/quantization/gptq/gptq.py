@@ -9,7 +9,6 @@ else:
 import numpy as np
 import torch
 import torch.distributed as dist
-
 from mmrazor.implementations.pruning.sparse_gpt.utils import torch_setting
 
 

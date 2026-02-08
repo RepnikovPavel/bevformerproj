@@ -1,7 +1,8 @@
 # Copyright (c) OpenMMLab. All rights reserved.
+from typing import TYPE_CHECKING, Dict, List, Sequence, Tuple, Union
+
 import numpy as np
 from scipy import sparse
-from typing import TYPE_CHECKING, Dict, List, Sequence, Tuple, Union
 
 from mmeval.core import BaseMetric
 from mmeval.metrics.utils import poly_intersection, poly_iou, polys2shapely

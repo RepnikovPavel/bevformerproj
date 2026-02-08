@@ -1,9 +1,18 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 from .aggregators import *  # noqa: F401,F403
 from .backbones import *  # noqa: F401,F403
-from .builder import (AGGREGATORS, MODELS, MOTION, REID, TRACKERS,
-                      build_aggregator, build_model, build_motion, build_reid,
-                      build_tracker)
+from .builder import (
+                      AGGREGATORS,
+                      MODELS,
+                      MOTION,
+                      REID,
+                      TRACKERS,
+                      build_aggregator,
+                      build_model,
+                      build_motion,
+                      build_reid,
+                      build_tracker,
+)
 from .losses import *  # noqa: F401,F403
 from .mot import *  # noqa: F401,F403
 from .motion import *  # noqa: F401,F403

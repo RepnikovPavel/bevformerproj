@@ -2,6 +2,7 @@
 import torch
 
 from mmrotate.core import rbbox2roi
+
 from ..builder import ROTATED_HEADS
 from .rotate_standard_roi_head import RotatedStandardRoIHead
 

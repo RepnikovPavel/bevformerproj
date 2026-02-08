@@ -1,10 +1,9 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import pytest
 import torch
+from mmpretrain.models.utils import InvertedResidual, SELayer
 from torch.nn.modules import GroupNorm
 from torch.nn.modules.batchnorm import _BatchNorm
-
-from mmpretrain.models.utils import InvertedResidual, SELayer
 
 
 def is_norm(modules):

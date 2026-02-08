@@ -2,9 +2,10 @@ import glob
 import os
 import shutil
 
-import mmengine
 import numpy as np
 from PIL import Image
+
+import mmengine
 
 root_path = 'data/'
 img_suffix = '.jpg'

@@ -5,6 +5,7 @@ from tempfile import NamedTemporaryFile, TemporaryDirectory
 import numpy as np
 import pytest
 import torch
+
 from mmengine import Config
 
 try:

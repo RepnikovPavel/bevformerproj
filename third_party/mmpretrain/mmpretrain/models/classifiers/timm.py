@@ -10,6 +10,7 @@ import torch.nn.functional as F
 from mmpretrain.registry import MODELS
 from mmpretrain.structures import DataSample
 from mmpretrain.utils import require
+
 from .base import BaseClassifier
 
 

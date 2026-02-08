@@ -3,7 +3,6 @@ import math
 import random
 
 import cv2 as cv
-import mmcv
 import numpy as np
 import torch
 from mmcv.transforms import BaseTransform
@@ -12,6 +11,7 @@ from mmengine.registry import DefaultScope
 from mmengine.utils import is_list_of, is_tuple_of
 from torch.nn.modules.utils import _pair
 
+import mmcv
 from mmagic.registry import TRANSFORMS
 from mmagic.utils import get_box_info, random_choose_unknown, try_import
 

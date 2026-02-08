@@ -1,7 +1,8 @@
-import numpy as np
-import matplotlib.pyplot as plt
 import os
+
 import cv2
+import matplotlib.pyplot as plt
+import numpy as np
 from PIL import Image
 from sadtalker_video2pose.src.face3d.extract_kp_videos_safe import KeypointExtractor
 

@@ -12,8 +12,12 @@ from torch.nn.init import normal_
 from mmdet.registry import MODELS
 from mmdet.structures import OptSampleList
 from mmdet.utils import OptConfigType
-from ..layers import (DeformableDetrTransformerDecoder,
-                      DeformableDetrTransformerEncoder, SinePositionalEncoding)
+
+from ..layers import (
+    DeformableDetrTransformerDecoder,
+    DeformableDetrTransformerEncoder,
+    SinePositionalEncoding,
+)
 from .base_detr import DetectionTransformer
 
 

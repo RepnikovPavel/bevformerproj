@@ -5,13 +5,13 @@ from collections import OrderedDict
 from copy import deepcopy
 
 import cv2
-import mmcv
 import numpy as np
 import torch
 import torchvision.transforms as transforms
+from demo.utils import normal_image
 from torchvision import utils
 
-from demo.utils import normal_image
+import mmcv
 
 # yapf: enable
 # yapf: disable

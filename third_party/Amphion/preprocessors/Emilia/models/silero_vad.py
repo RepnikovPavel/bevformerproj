@@ -7,8 +7,8 @@
 # Note: This code has been modified to fit the context of this repository.
 
 import librosa
-import torch
 import numpy as np
+import torch
 
 VAD_THRESHOLD = 20
 SAMPLING_RATE = 16000

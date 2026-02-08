@@ -7,6 +7,7 @@ import torch.nn as nn
 from mmengine.model.weight_init import normal_init
 
 from mmaction.registry import MODELS
+
 from .base import BaseHead
 
 

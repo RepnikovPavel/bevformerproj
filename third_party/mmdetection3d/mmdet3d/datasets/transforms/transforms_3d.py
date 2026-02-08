@@ -4,20 +4,23 @@ import warnings
 from typing import List, Optional, Sequence, Tuple, Union
 
 import cv2
-import mmcv
 import numpy as np
 import torch
 from mmcv.transforms import BaseTransform, Compose, RandomResize, Resize
-from mmdet.datasets.transforms import (PhotoMetricDistortion, RandomCrop,
-                                       RandomFlip)
-from mmengine import is_list_of, is_tuple_of
+from mmdet.datasets.transforms import PhotoMetricDistortion, RandomCrop, RandomFlip
 
+import mmcv
 from mmdet3d.models.task_modules import VoxelGenerator
 from mmdet3d.registry import TRANSFORMS
-from mmdet3d.structures import (CameraInstance3DBoxes, DepthInstance3DBoxes,
-                                LiDARInstance3DBoxes)
+from mmdet3d.structures import (
+    CameraInstance3DBoxes,
+    DepthInstance3DBoxes,
+    LiDARInstance3DBoxes,
+)
 from mmdet3d.structures.ops import box_np_ops
 from mmdet3d.structures.points import BasePoints
+from mmengine import is_list_of, is_tuple_of
+
 from .data_augment_utils import noise_per_object_v3_
 
 

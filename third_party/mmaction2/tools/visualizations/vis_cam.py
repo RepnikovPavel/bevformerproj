@@ -4,14 +4,14 @@ import os
 import os.path as osp
 from typing import Dict, List, Optional, Tuple
 
-import mmcv
 import numpy as np
 import torch.nn as nn
-from mmengine import Config, DictAction
-from mmengine.dataset import Compose, pseudo_collate
-
 from mmaction.apis import init_recognizer
 from mmaction.utils import GradCAM
+from mmengine.dataset import Compose, pseudo_collate
+
+import mmcv
+from mmengine import Config, DictAction
 
 
 def parse_args():

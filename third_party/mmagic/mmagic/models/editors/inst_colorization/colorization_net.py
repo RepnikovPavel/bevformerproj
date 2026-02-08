@@ -5,6 +5,7 @@ import torch.nn as nn
 from mmengine.model import BaseModule
 
 from mmagic.registry import MODELS
+
 from .weight_layer import get_norm_layer
 
 

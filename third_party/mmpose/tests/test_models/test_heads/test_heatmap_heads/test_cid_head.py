@@ -4,7 +4,6 @@ from unittest import TestCase
 
 import numpy as np
 import torch
-
 from mmpose.models.heads import CIDHead
 from mmpose.testing import get_coco_sample, get_packed_inputs
 from mmpose.utils.tensor_utils import to_tensor

@@ -7,11 +7,11 @@ from collections import defaultdict
 from tempfile import TemporaryDirectory
 from unittest import TestCase
 
-import mmcv
-
 from mmpose.apis.inferencers import MMPoseInferencer
 from mmpose.structures import PoseDataSample
 from mmpose.utils import register_all_modules
+
+import mmcv
 
 
 class TestMMPoseInferencer(TestCase):

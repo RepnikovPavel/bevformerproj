@@ -3,10 +3,11 @@ import os
 import os.path as osp
 from typing import List, Optional, Sequence, Union
 
-import mmcv
 import numpy as np
 from mmcls.datasets.builder import DATASETS
 from typing_extensions import Literal
+
+import mmcv
 
 from .base import BaseFewShotDataset
 

@@ -2,7 +2,6 @@
 import math
 from typing import Optional, Tuple, Union
 
-import mmengine
 import numpy as np
 import torch
 import torch.nn as nn
@@ -11,6 +10,7 @@ from addict import Dict
 from mmengine.utils.dl_utils import TORCH_VERSION
 from mmengine.utils.version_utils import digit_version
 
+import mmengine
 from mmagic.registry import MODELS
 
 

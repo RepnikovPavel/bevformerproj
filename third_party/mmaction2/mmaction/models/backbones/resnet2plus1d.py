@@ -1,6 +1,7 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 from mmaction.registry import MODELS
 from mmaction.utils import get_str_type
+
 from .resnet3d import ResNet3d
 
 

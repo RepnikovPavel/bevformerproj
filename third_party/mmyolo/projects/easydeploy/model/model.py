@@ -8,15 +8,20 @@ import torch.nn as nn
 from mmdet.models.backbones.csp_darknet import Focus
 from mmdet.models.layers import ChannelAttention
 from mmengine.config import ConfigDict
+from mmyolo.models import RepVGGBlock
+from mmyolo.models.dense_heads import (
+    PPYOLOEHead,
+    RTMDetHead,
+    YOLOv5Head,
+    YOLOv7Head,
+    YOLOv8Head,
+    YOLOXHead,
+)
+from mmyolo.models.layers import ImplicitA, ImplicitM
 from torch import Tensor
 
-from mmyolo.models import RepVGGBlock
-from mmyolo.models.dense_heads import (PPYOLOEHead, RTMDetHead, YOLOv5Head,
-                                       YOLOv7Head, YOLOv8Head, YOLOXHead)
-from mmyolo.models.layers import ImplicitA, ImplicitM
 from ..backbone import DeployFocus, GConvFocus, NcnnFocus
-from ..bbox_code import (rtmdet_bbox_decoder, yolov5_bbox_decoder,
-                         yolox_bbox_decoder)
+from ..bbox_code import rtmdet_bbox_decoder, yolov5_bbox_decoder, yolox_bbox_decoder
 from ..nms import batched_nms, efficient_nms, onnx_nms
 from .backend import MMYOLOBackend
 

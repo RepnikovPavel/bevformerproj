@@ -7,8 +7,13 @@ import warnings
 from typing import Optional, Sequence
 
 import torch
-from mmengine.dist import (barrier, broadcast, broadcast_object_list,
-                           get_dist_info, is_main_process)
+from mmengine.dist import (
+    barrier,
+    broadcast,
+    broadcast_object_list,
+    get_dist_info,
+    is_main_process,
+)
 from mmengine.evaluator import BaseMetric
 from mmengine.utils import mkdir_or_exist
 

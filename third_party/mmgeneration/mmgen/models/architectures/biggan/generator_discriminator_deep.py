@@ -1,7 +1,6 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 from copy import deepcopy
 
-import mmcv
 import torch
 import torch.nn as nn
 from mmcv.cnn import normal_init, xavier_init
@@ -10,8 +9,10 @@ from mmcv.runner import load_checkpoint
 from mmcv.runner.checkpoint import _load_checkpoint_with_prefix
 from torch.nn.utils import spectral_norm
 
+import mmcv
 from mmgen.models.builder import MODULES, build_module
 from mmgen.utils import get_root_logger
+
 from ..common import get_module_device
 from .biggan_snmodule import SNEmbedding, SNLinear
 from .modules import SelfAttentionBlock, SNConvModule

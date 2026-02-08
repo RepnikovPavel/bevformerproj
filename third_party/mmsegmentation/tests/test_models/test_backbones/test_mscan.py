@@ -1,9 +1,12 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import torch
-
 from mmseg.models.backbones import MSCAN
-from mmseg.models.backbones.mscan import (MSCAAttention, MSCASpatialAttention,
-                                          OverlapPatchEmbed, StemConv)
+from mmseg.models.backbones.mscan import (
+    MSCAAttention,
+    MSCASpatialAttention,
+    OverlapPatchEmbed,
+    StemConv,
+)
 
 
 def test_mscan_backbone():

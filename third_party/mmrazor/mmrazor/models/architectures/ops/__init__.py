@@ -1,7 +1,12 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 from .common import Identity
-from .darts_series import (DartsDilConv, DartsPoolBN, DartsSepConv,
-                           DartsSkipConnect, DartsZero)
+from .darts_series import (
+                           DartsDilConv,
+                           DartsPoolBN,
+                           DartsSepConv,
+                           DartsSkipConnect,
+                           DartsZero,
+)
 from .efficientnet_series import ConvBnAct, DepthwiseSeparableConv
 from .function import InputResizer
 from .gather_tensors import GatherTensors

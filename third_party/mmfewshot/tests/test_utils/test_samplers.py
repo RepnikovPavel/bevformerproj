@@ -1,12 +1,13 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import numpy as np
 import torch
+from mmfewshot.utils.infinite_sampler import (
+    DistributedInfiniteGroupSampler,
+    DistributedInfiniteSampler,
+    InfiniteGroupSampler,
+    InfiniteSampler,
+)
 from torch.utils.data import DataLoader, Dataset
-
-from mmfewshot.utils.infinite_sampler import (DistributedInfiniteGroupSampler,
-                                              DistributedInfiniteSampler,
-                                              InfiniteGroupSampler,
-                                              InfiniteSampler)
 
 
 class ExampleDataset(Dataset):

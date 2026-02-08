@@ -2,7 +2,6 @@
 from unittest import TestCase
 
 import torch
-
 from mmdet.registry import MODELS, TASK_UTILS
 from mmdet.testing import demo_track_inputs
 from mmdet.utils import register_all_modules

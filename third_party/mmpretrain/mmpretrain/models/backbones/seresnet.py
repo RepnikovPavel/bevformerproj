@@ -2,6 +2,7 @@
 import torch.utils.checkpoint as cp
 
 from mmpretrain.registry import MODELS
+
 from ..utils.se_layer import SELayer
 from .resnet import Bottleneck, ResLayer, ResNet
 

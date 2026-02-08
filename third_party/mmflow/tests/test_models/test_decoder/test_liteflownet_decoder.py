@@ -2,12 +2,14 @@
 import pytest
 import torch
 import torch.nn as nn
-
-from mmflow.models.decoders.liteflownet_decoder import (BasicBlock,
-                                                        MatchingBlock, NetE,
-                                                        RegularizationBlock,
-                                                        SubpixelBlock,
-                                                        Upsample)
+from mmflow.models.decoders.liteflownet_decoder import (
+    BasicBlock,
+    MatchingBlock,
+    NetE,
+    RegularizationBlock,
+    SubpixelBlock,
+    Upsample,
+)
 
 
 def test_uspample():

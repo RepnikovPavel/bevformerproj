@@ -1,19 +1,19 @@
-import copy
-import pickle
 import argparse
+import copy
 import os
+import pickle
+import pickle as pkl
 from os import path as osp
+from pathlib import Path
+
+import numpy as np
+import pandas as pd
 import torch
 from av2.utils.io import read_feather
-import numpy as np
-import multiprocessing as mp
-import pickle as pkl
-from pathlib import Path
-import pandas as pd
 
 from ..dataset import DatasetTemplate
-from .argo2_utils.so3 import yaw_to_quat, quat_to_yaw
 from .argo2_utils.constants import LABEL_ATTR
+from .argo2_utils.so3 import quat_to_yaw, yaw_to_quat
 
 
 def process_single_segment(segment_path, split, info_list, ts2idx, output_dir, save_bin):
@@ -447,8 +447,8 @@ class Argo2Dataset(DatasetTemplate):
             dict[str: float]: results of each evaluation metric
         """
         from av2.evaluation.detection.constants import CompetitionCategories
-        from av2.evaluation.detection.utils import DetectionCfg
         from av2.evaluation.detection.eval import evaluate
+        from av2.evaluation.detection.utils import DetectionCfg
         from av2.utils.io import read_feather
 
         dts = self.format_results(results, class_names, pklfile_prefix, submission_prefix)

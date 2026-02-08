@@ -10,6 +10,7 @@ from torch import nn
 from torch.utils.checkpoint import checkpoint
 
 from mmpretrain.registry import MODELS
+
 from ..utils import WindowMSA, to_2tuple
 from .base_backbone import BaseBackbone
 from .vision_transformer import TransformerEncoderLayer

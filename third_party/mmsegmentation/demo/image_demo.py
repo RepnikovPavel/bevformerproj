@@ -2,7 +2,6 @@
 from argparse import ArgumentParser
 
 from mmengine.model import revert_sync_batchnorm
-
 from mmseg.apis import inference_model, init_model, show_result_pyplot
 
 

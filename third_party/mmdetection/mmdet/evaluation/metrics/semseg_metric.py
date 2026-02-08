@@ -5,12 +5,13 @@ from typing import Dict, Optional, Sequence, Union
 
 import numpy as np
 import torch
-from mmcv import imwrite
 from mmengine.dist import is_main_process
 from mmengine.evaluator import BaseMetric
 from mmengine.logging import MMLogger, print_log
 from mmengine.utils import mkdir_or_exist
 from PIL import Image
+
+from mmcv import imwrite
 
 try:
     from prettytable import PrettyTable

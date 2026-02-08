@@ -1,7 +1,6 @@
 import math
 
 import torch
-
 from mmhuman3d.core.cameras import (
     FoVOrthographicCameras,
     FoVPerspectiveCameras,
@@ -12,8 +11,9 @@ from mmhuman3d.core.cameras import (
     compute_direction_cameras,
 )
 from mmhuman3d.core.cameras.camera_parameters import CameraParameter
-from mmhuman3d.core.conventions.cameras.convert_convention import \
-    convert_camera_matrix  # prevent yapf isort conflict
+from mmhuman3d.core.conventions.cameras.convert_convention import (
+    convert_camera_matrix,  # prevent yapf isort conflict
+)
 
 
 def check_camera_close(cam1, cam2, points=None, eps=1e-3):

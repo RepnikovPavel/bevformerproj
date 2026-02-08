@@ -1,28 +1,21 @@
-import os
-import sys
-import copy
-import json
-import time
-import random
 import argparse
-import soundfile as sf
-import numpy as np
-import librosa
-import torchaudio
-from tqdm import tqdm
+import json
+import os
+import random
+
 import laion_clap
+import librosa
+import models.controllable_dataset as ConDataset
+import models.controllable_diffusion as ConDiffusion
+import numpy as np
+import soundfile as sf
+import torch
+from datasets import load_dataset
+from diffusers import DDPMScheduler
 from laion_clap.clap_module.factory import load_state_dict as clap_load_state_dict
 from sklearn.metrics.pairwise import cosine_similarity
-
-import torch
-from datetime import datetime
-from diffusers import DDPMScheduler
-from datasets import load_dataset
-from torch.utils.data import Dataset, DataLoader
-
-import models.controllable_diffusion as ConDiffusion
-import models.controllable_dataset as ConDataset
-from data.filter_data import get_event_list
+from torch.utils.data import DataLoader
+from tqdm import tqdm
 
 
 class dotdict(dict):

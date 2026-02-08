@@ -8,17 +8,26 @@ from mmcv.transforms import RandomChoice, RandomChoiceResize
 from mmengine.dataset import DefaultSampler
 from mmengine.model import PretrainedInit
 from mmengine.optim import LinearLR, MultiStepLR
+from mmpose.codecs import EDPoseLabel
+from mmpose.datasets import (
+    BottomupRandomChoiceResize,
+    BottomupRandomCrop,
+    CocoDataset,
+    LoadImage,
+    PackPoseInputs,
+    RandomFlip,
+)
+from mmpose.evaluation import CocoMetric
+from mmpose.models import (
+    BottomupPoseEstimator,
+    ChannelMapper,
+    EDPoseHead,
+    PoseDataPreprocessor,
+    ResNet,
+)
+from mmpose.models.utils import FrozenBatchNorm2d
 from torch.nn import GroupNorm
 from torch.optim import Adam
-
-from mmpose.codecs import EDPoseLabel
-from mmpose.datasets import (BottomupRandomChoiceResize, BottomupRandomCrop,
-                             CocoDataset, LoadImage, PackPoseInputs,
-                             RandomFlip)
-from mmpose.evaluation import CocoMetric
-from mmpose.models import (BottomupPoseEstimator, ChannelMapper, EDPoseHead,
-                           PoseDataPreprocessor, ResNet)
-from mmpose.models.utils import FrozenBatchNorm2d
 
 # runtime
 train_cfg.update(max_epochs=50, val_interval=10)  # noqa

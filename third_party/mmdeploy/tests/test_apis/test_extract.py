@@ -3,7 +3,6 @@ import tempfile
 
 import onnx
 import torch
-
 from mmdeploy.apis.onnx import extract_partition
 from mmdeploy.core import mark
 

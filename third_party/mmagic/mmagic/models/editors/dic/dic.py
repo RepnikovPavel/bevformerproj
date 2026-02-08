@@ -6,6 +6,7 @@ from mmengine.optim import OptimWrapperDict
 
 from mmagic.models.utils import set_requires_grad
 from mmagic.registry import MODELS
+
 from ..srgan import SRGAN
 
 

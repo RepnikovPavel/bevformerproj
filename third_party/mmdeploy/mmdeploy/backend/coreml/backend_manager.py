@@ -76,8 +76,13 @@ class CoreMLManager(BaseBackendManager):
         Returns:
             Sequence[str]: Backend files.
         """
-        from mmdeploy.utils import (get_common_config, get_ir_config,
-                                    get_model_inputs, load_config)
+        from mmdeploy.utils import (
+            get_common_config,
+            get_ir_config,
+            get_model_inputs,
+            load_config,
+        )
+
         from .torchscript2coreml import from_torchscript, get_model_suffix
 
         coreml_files = []

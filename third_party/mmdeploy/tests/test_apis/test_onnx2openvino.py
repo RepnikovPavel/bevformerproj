@@ -6,10 +6,10 @@ import numpy as np
 import pytest
 import torch
 import torch.nn as nn
-from mmengine import Config
-
 from mmdeploy.utils import Backend
 from mmdeploy.utils.test import backend_checker, get_random_name
+
+from mmengine import Config
 
 
 @pytest.mark.skip(reason='This a not test class but a utility class.')
@@ -73,8 +73,11 @@ def get_deploy_cfg_with_mo_args():
                          [get_base_deploy_cfg, get_deploy_cfg_with_mo_args])
 @backend_checker(Backend.OPENVINO)
 def test_onnx2openvino(get_deploy_cfg):
-    from mmdeploy.apis.openvino import (from_onnx, get_mo_options_from_cfg,
-                                        get_output_model_file)
+    from mmdeploy.apis.openvino import (
+        from_onnx,
+        get_mo_options_from_cfg,
+        get_output_model_file,
+    )
     pytorch_model = TestModel().eval()
     export_img = torch.rand([1, 3, 8, 8])
     onnx_file = tempfile.NamedTemporaryFile(suffix='.onnx').name

@@ -10,6 +10,7 @@ from torch import Tensor
 from mmdet.registry import MODELS
 from mmdet.structures import SampleList
 from mmdet.utils import ConfigType, OptConfigType, OptMultiConfig
+
 from .single_stage import SingleStageDetector
 
 

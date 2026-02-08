@@ -8,7 +8,6 @@ from tempfile import TemporaryDirectory
 
 import decord
 import pytest
-
 from mmaction.structures import ActionDataSample
 from mmaction.utils import register_all_modules
 from mmaction.visualization import ActionVisualizer

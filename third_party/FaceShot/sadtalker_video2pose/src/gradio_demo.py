@@ -1,15 +1,18 @@
-import torch, uuid
-import os, sys, shutil, platform
-from src.facerender.pirender_animate import AnimateFromCoeff_PIRender
-from src.utils.preprocess import CropAndExtract
-from src.test_audio2coeff import Audio2Coeff  
+import gc
+import os
+import platform
+import shutil
+import uuid
+
+import torch
+from pydub import AudioSegment
 from src.facerender.animate import AnimateFromCoeff
+from src.facerender.pirender_animate import AnimateFromCoeff_PIRender
 from src.generate_batch import get_data
 from src.generate_facerender_batch import get_facerender_data
-
+from src.test_audio2coeff import Audio2Coeff
 from src.utils.init_path import init_path
-
-from pydub import AudioSegment
+from src.utils.preprocess import CropAndExtract
 
 
 def mp3_to_wav(mp3_filename,wav_filename,frame_rate):
@@ -163,7 +166,7 @@ class SadTalker():
             torch.cuda.empty_cache()
             torch.cuda.synchronize()
             
-        import gc; gc.collect()
+        gc.collect()
         
         return return_path
 

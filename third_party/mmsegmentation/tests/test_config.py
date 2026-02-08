@@ -4,12 +4,12 @@ import os
 from os.path import dirname, exists, isdir, join, relpath
 
 import numpy as np
-from mmengine import Config
 from mmengine.dataset import Compose
 from mmengine.registry import init_default_scope
+from mmseg.models import build_segmentor
 from torch import nn
 
-from mmseg.models import build_segmentor
+from mmengine import Config
 
 
 def _get_config_directory():

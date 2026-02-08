@@ -6,16 +6,22 @@ from typing import Any, Iterator, List, Optional
 import numpy as np
 import torch
 import torch.nn as nn
-from mmengine import is_list_of, print_log
 from mmengine.dataset import pseudo_collate
-from mmengine.dist import (all_gather, broadcast_object_list, collect_results,
-                           get_dist_info, get_world_size, is_main_process)
+from mmengine.dist import (
+    all_gather,
+    broadcast_object_list,
+    collect_results,
+    get_dist_info,
+    get_world_size,
+    is_main_process,
+)
 from mmengine.evaluator import BaseMetric
 from mmengine.model import is_model_wrapper
 from torch import Tensor
 from torch.utils.data.dataloader import DataLoader
 
 from mmagic.structures import DataSample
+from mmengine import is_list_of, print_log
 
 
 class GenMetric(BaseMetric):

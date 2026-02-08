@@ -1,18 +1,23 @@
 # Copyright (c) OpenMMLab. All rights reserved.
+from mmagic.datasets import BasicFramesDataset
+from mmagic.datasets.transforms import (
+                                        Flip,
+                                        GenerateFrameIndices,
+                                        GenerateFrameIndiceswithPadding,
+                                        GenerateSegmentIndices,
+                                        LoadImageFromFile,
+                                        PackInputs,
+                                        PairedRandomCrop,
+                                        RandomTransposeHW,
+                                        SetValues,
+                                        TemporalReverse,
+)
+from mmagic.engine.runner import MultiTestLoop, MultiValLoop
+from mmagic.evaluation import PSNR, SSIM
 from mmengine.dataset import DefaultSampler, InfiniteSampler
 from mmengine.hooks import CheckpointHook
 from mmengine.optim import OptimWrapper
 from mmengine.runner import IterBasedTrainLoop
-
-from mmagic.datasets import BasicFramesDataset
-from mmagic.datasets.transforms import (Flip, GenerateFrameIndices,
-                                        GenerateFrameIndiceswithPadding,
-                                        GenerateSegmentIndices,
-                                        LoadImageFromFile, PackInputs,
-                                        PairedRandomCrop, RandomTransposeHW,
-                                        SetValues, TemporalReverse)
-from mmagic.engine.runner import MultiTestLoop, MultiValLoop
-from mmagic.evaluation import PSNR, SSIM
 
 _base_ = '../default_runtime.py'
 

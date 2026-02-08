@@ -5,6 +5,7 @@ from typing import Dict
 import torch.nn as nn
 
 from mmrazor.models.mutators import ChannelMutator
+
 from .ops import ExpandableMixin
 from .unit import ExpandableUnit
 

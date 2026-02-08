@@ -2,7 +2,6 @@
 from unittest import TestCase
 
 import torch
-
 from mmpretrain.evaluation.metrics import MultiTasksMetric
 from mmpretrain.structures import DataSample
 

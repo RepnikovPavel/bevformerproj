@@ -1,5 +1,5 @@
-import json
 import math
+
 
 class NearNeighborRemover:
     def __init__(self,distance_threshold):

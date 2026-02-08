@@ -1,9 +1,9 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import torch
 import torch.nn.functional as F
-from mmengine import ConfigDict
-
 from mmaction.models import OHEMHingeLoss, SSNLoss
+
+from mmengine import ConfigDict
 
 
 def test_ssn_loss():

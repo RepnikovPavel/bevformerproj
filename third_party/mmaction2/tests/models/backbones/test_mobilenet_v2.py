@@ -1,10 +1,9 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import pytest
 import torch
-from mmengine.utils.dl_utils.parrots_wrapper import _BatchNorm
-
 from mmaction.models import MobileNetV2
 from mmaction.testing import check_norm_state, generate_backbone_demo_inputs
+from mmengine.utils.dl_utils.parrots_wrapper import _BatchNorm
 
 
 def test_mobilenetv2_backbone():
@@ -12,9 +11,8 @@ def test_mobilenetv2_backbone():
 
     Modified from mmclassification.
     """
-    from torch.nn.modules import GroupNorm
-
     from mmaction.models.backbones.mobilenet_v2 import InvertedResidual
+    from torch.nn.modules import GroupNorm
 
     def is_norm(modules):
         """Check if is one of the norms."""

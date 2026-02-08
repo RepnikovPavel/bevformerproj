@@ -6,6 +6,7 @@ from mmengine.model import BaseModule
 from mmengine.model.weight_init import trunc_normal_
 
 from mmagic.registry import MODELS
+
 from .swinir_modules import PatchEmbed, PatchUnEmbed, Upsample, UpsampleOneStep
 from .swinir_rstb import RSTB
 

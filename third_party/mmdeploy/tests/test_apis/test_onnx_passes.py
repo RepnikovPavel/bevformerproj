@@ -6,11 +6,9 @@ import onnx
 import pytest
 import torch
 import torch.nn as nn
-from packaging import version
-
-from mmdeploy.apis.onnx.optimizer import \
-    model_to_graph__custom_optimizer  # noqa
+from mmdeploy.apis.onnx.optimizer import model_to_graph__custom_optimizer  # noqa
 from mmdeploy.core import RewriterContext
+from packaging import version
 
 onnx_file = tempfile.NamedTemporaryFile(suffix='.onnx').name
 

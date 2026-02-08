@@ -2,12 +2,10 @@
 from typing import Optional, Tuple, Union
 
 import torch
-from torch import Tensor
-
-from mmdet.models.task_modules.prior_generators.anchor_generator import \
-    AnchorGenerator
+from mmdet.models.task_modules.prior_generators.anchor_generator import AnchorGenerator
 from mmdet.registry import TASK_UTILS
 from mmdet.structures.bbox import HorizontalBoxes
+from torch import Tensor
 
 DeviceType = Union[str, torch.device]
 

@@ -3,12 +3,14 @@ import platform
 
 import pytest
 import torch
+from mmagic.models.editors.stylegan3.stylegan3_utils import (
+    apply_fractional_pseudo_rotation,
+    apply_fractional_rotation,
+    apply_fractional_translation,
+    apply_integer_translation,
+)
 from mmengine.utils.dl_utils import TORCH_VERSION
 from mmengine.utils.version_utils import digit_version
-
-from mmagic.models.editors.stylegan3.stylegan3_utils import (
-    apply_fractional_pseudo_rotation, apply_fractional_rotation,
-    apply_fractional_translation, apply_integer_translation)
 
 
 @pytest.mark.skipif(

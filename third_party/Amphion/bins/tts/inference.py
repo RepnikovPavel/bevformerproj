@@ -4,16 +4,14 @@
 # LICENSE file in the root directory of this source tree.
 
 import argparse
-from argparse import ArgumentParser
-import os
 
-from models.tts.fastspeech2.fs2_inference import FastSpeech2Inference
-from models.tts.vits.vits_inference import VitsInference
-from models.tts.valle.valle_inference import VALLEInference
-from models.tts.naturalspeech2.ns2_inference import NS2Inference
-from models.tts.jets.jets_inference import JetsInference
-from utils.util import load_config
 import torch
+from models.tts.fastspeech2.fs2_inference import FastSpeech2Inference
+from models.tts.jets.jets_inference import JetsInference
+from models.tts.naturalspeech2.ns2_inference import NS2Inference
+from models.tts.valle.valle_inference import VALLEInference
+from models.tts.vits.vits_inference import VitsInference
+from utils.util import load_config
 
 
 def build_inference(args, cfg):

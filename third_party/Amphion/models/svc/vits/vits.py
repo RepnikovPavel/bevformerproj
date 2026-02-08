@@ -5,20 +5,19 @@
 
 # This code is modified from https://github.com/svc-develop-team/so-vits-svc/blob/4.1-Stable/models.py
 import copy
-import torch
-from torch import nn
-from torch.nn import functional as F
 
+import torch
+from modules.encoder.condition_encoder import ConditionEncoder
+from modules.transformer.attentions import Encoder
+from torch import nn
 from utils.util import *
 
-from modules.transformer.attentions import Encoder
-from models.tts.vits.vits import ResidualCouplingBlock, PosteriorEncoder
+from models.tts.vits.vits import PosteriorEncoder, ResidualCouplingBlock
+from models.vocoders.gan.generator.apnet import APNet
 from models.vocoders.gan.generator.bigvgan import BigVGAN
 from models.vocoders.gan.generator.hifigan import HiFiGAN
-from models.vocoders.gan.generator.nsfhifigan import NSFHiFiGAN
 from models.vocoders.gan.generator.melgan import MelGAN
-from models.vocoders.gan.generator.apnet import APNet
-from modules.encoder.condition_encoder import ConditionEncoder
+from models.vocoders.gan.generator.nsfhifigan import NSFHiFiGAN
 
 
 def slice_pitch_segments(x, ids_str, segment_size=4):

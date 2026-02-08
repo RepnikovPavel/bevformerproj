@@ -1,12 +1,11 @@
 import numpy as np
 import torch
 from datasets import load_dataset
-from torchtext.data.metrics import bleu_score
-from transformers import AutoTokenizer, T5ForConditionalGeneration
-
 from mmengine.evaluator import BaseMetric
 from mmengine.model import BaseModel
 from mmengine.runner import Runner
+from torchtext.data.metrics import bleu_score
+from transformers import AutoTokenizer, T5ForConditionalGeneration
 
 tokenizer = AutoTokenizer.from_pretrained('t5-small')
 

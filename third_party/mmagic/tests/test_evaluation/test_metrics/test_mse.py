@@ -3,7 +3,6 @@ from copy import deepcopy
 
 import numpy as np
 import torch
-
 from mmagic.evaluation.metrics import MSE
 
 

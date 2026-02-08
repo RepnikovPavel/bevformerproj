@@ -7,42 +7,24 @@ import codecs
 import os
 import re
 from datetime import datetime
-from importlib.resources import files
 from pathlib import Path
 
 import numpy as np
 import soundfile as sf
-import tomli
-from cached_path import cached_path
-from omegaconf import OmegaConf
-from loguru import logger
-from cached_path import cached_path
-import hydra
-from pathlib import Path
-
-from dualcodec.utils.utils_infer import (
-    mel_spec_type,
-    target_rms,
-    cross_fade_duration,
-    nfe_step,
-    cfg_strength,
-    sway_sampling_coef,
-    speed,
-    fix_duration,
-    load_model,
-    load_vocoder,
-    load_checkpoint,
-    instantiate_model,
-    preprocess_ref_audio_text,
-    remove_silence_for_generated_wav,
-    device,
-    package_dir,
-)
 from dualcodec.infer.valle.utils_valle_infer import (
     infer_process,
-    load_dualcodec_valle_nar_12hzv1,
     load_dualcodec_valle_ar_12hzv1,
+    load_dualcodec_valle_nar_12hzv1,
 )
+from dualcodec.utils.utils_infer import (
+    cross_fade_duration,
+    device,
+    package_dir,
+    preprocess_ref_audio_text,
+    remove_silence_for_generated_wav,
+    target_rms,
+)
+from loguru import logger
 
 parser = argparse.ArgumentParser(
     prog="python3 infer-cli.py",

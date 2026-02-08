@@ -3,13 +3,12 @@ import warnings
 from pathlib import Path
 from typing import Dict, Optional, Union
 
-import mmcv
 import mmengine.fileio as fileio
 import numpy as np
-from mmcv.transforms import BaseTransform
+from mmcv.transforms import BaseTransform, LoadImageFromFile
 from mmcv.transforms import LoadAnnotations as MMCV_LoadAnnotations
-from mmcv.transforms import LoadImageFromFile
 
+import mmcv
 from mmseg.registry import TRANSFORMS
 from mmseg.utils import datafrombytes
 

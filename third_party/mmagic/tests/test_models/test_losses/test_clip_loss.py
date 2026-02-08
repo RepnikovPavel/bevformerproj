@@ -4,10 +4,9 @@ import platform
 import clip
 import pytest
 import torch
+from mmagic.models.losses import CLIPLoss
 from mmengine.utils import digit_version
 from mmengine.utils.dl_utils import TORCH_VERSION
-
-from mmagic.models.losses import CLIPLoss
 
 
 @pytest.mark.skipif(

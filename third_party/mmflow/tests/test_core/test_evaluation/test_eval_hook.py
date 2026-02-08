@@ -7,9 +7,8 @@ import pytest
 import torch
 import torch.nn as nn
 from mmcv.runner import build_runner
-from torch.utils.data import DataLoader
-
 from mmflow.core.evaluation import DistEvalHook, EvalHook
+from torch.utils.data import DataLoader
 
 
 def _build_demo_runner_without_hook(runner_type='IterBasedRunner',

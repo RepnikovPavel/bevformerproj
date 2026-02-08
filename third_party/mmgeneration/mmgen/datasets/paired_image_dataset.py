@@ -3,8 +3,9 @@ import copy
 import os.path as osp
 from pathlib import Path
 
-from mmcv import scandir
 from torch.utils.data import Dataset
+
+from mmcv import scandir
 
 from .builder import DATASETS
 from .pipelines import Compose

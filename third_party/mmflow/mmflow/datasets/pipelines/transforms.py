@@ -5,10 +5,11 @@ from math import ceil
 from typing import List, Sequence, Tuple, Union
 
 import cv2
-import mmcv
 import numpy as np
 from mmcv.image import adjust_brightness, adjust_color, adjust_contrast
 from numpy import random
+
+import mmcv
 
 from ..builder import PIPELINES
 from ..utils import adjust_gamma, adjust_hue

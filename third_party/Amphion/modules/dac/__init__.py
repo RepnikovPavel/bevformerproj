@@ -16,7 +16,5 @@ __model_version__ = "latest"
 # audiotools.ml.BaseModel.EXTERN += ["einops"]
 
 
-from . import nn
-from . import model
-from .model import DAC
-from .model import DACFile
+from . import model, nn
+from .model import DAC, DACFile

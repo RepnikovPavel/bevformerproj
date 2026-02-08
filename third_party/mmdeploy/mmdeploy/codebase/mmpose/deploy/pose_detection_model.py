@@ -2,17 +2,16 @@
 from itertools import zip_longest
 from typing import List, Optional, Sequence, Union
 
-import mmengine
 import torch
 import torch.nn as nn
-from mmengine import Config
 from mmengine.model import BaseDataPreprocessor
 from mmengine.registry import Registry
 from mmengine.structures import BaseDataElement, InstanceData
 
+import mmengine
 from mmdeploy.codebase.base import BaseBackendModel
-from mmdeploy.utils import (Backend, get_backend, get_codebase_config,
-                            load_config)
+from mmdeploy.utils import Backend, get_backend, get_codebase_config, load_config
+from mmengine import Config
 
 __BACKEND_MODEL = Registry('backend_segmentors')
 

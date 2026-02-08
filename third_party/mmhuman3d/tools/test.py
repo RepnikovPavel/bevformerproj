@@ -2,9 +2,7 @@ import argparse
 import os
 import os.path as osp
 
-import mmcv
 import torch
-from mmcv import DictAction
 from mmcv.parallel import MMDataParallel, MMDistributedDataParallel
 from mmcv.runner import (
     get_dist_info,
@@ -12,10 +10,12 @@ from mmcv.runner import (
     load_checkpoint,
     wrap_fp16_model,
 )
-
 from mmhuman3d.apis import multi_gpu_test, single_gpu_test
 from mmhuman3d.data.datasets import build_dataloader, build_dataset
 from mmhuman3d.models.architectures.builder import build_architecture
+
+import mmcv
+from mmcv import DictAction
 
 
 def parse_args():

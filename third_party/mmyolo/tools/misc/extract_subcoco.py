@@ -22,9 +22,10 @@ import argparse
 import os.path as osp
 import shutil
 
-import mmengine
 import numpy as np
 from pycocotools.coco import COCO
+
+import mmengine
 
 
 # TODO: Currently only supports coco2017

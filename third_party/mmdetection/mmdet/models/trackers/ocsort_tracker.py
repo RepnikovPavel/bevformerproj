@@ -12,8 +12,12 @@ from mmengine.structures import InstanceData
 
 from mmdet.registry import MODELS
 from mmdet.structures import DetDataSample
-from mmdet.structures.bbox import (bbox_cxcyah_to_xyxy, bbox_overlaps,
-                                   bbox_xyxy_to_cxcyah)
+from mmdet.structures.bbox import (
+    bbox_cxcyah_to_xyxy,
+    bbox_overlaps,
+    bbox_xyxy_to_cxcyah,
+)
+
 from .sort_tracker import SORTTracker
 
 

@@ -4,7 +4,6 @@
 # LICENSE file in the root directory of this source tree.
 
 from utils.g2p_new import PhonemeBpeTokenizer
-import tqdm
 
 text_tokenizer = PhonemeBpeTokenizer()
 

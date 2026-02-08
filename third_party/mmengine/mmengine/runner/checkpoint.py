@@ -18,8 +18,7 @@ from mmengine.fileio import FileClient, get_file_backend
 from mmengine.fileio import load as load_file
 from mmengine.logging import print_log
 from mmengine.model import BaseTTAModel, is_model_wrapper
-from mmengine.utils import (apply_to, deprecated_function, digit_version,
-                            mkdir_or_exist)
+from mmengine.utils import apply_to, deprecated_function, digit_version, mkdir_or_exist
 from mmengine.utils.dl_utils import load_url
 
 # `MMENGINE_HOME` is the highest priority directory to save checkpoints

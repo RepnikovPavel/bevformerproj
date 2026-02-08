@@ -4,13 +4,12 @@ import platform
 import numpy as np
 import pytest
 import torch
-from mmcv.transforms import to_tensor
-from mmengine.structures import InstanceData
-
 from mmaction.registry import MODELS
 from mmaction.structures import ActionDataSample
 from mmaction.testing import get_localizer_cfg
 from mmaction.utils import register_all_modules
+from mmcv.transforms import to_tensor
+from mmengine.structures import InstanceData
 
 register_all_modules()
 

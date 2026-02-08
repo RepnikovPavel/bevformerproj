@@ -6,12 +6,12 @@ import tempfile
 from collections import OrderedDict
 from typing import Dict, Optional, Sequence
 
-import mmcv
 import numpy as np
 from mmengine.dist import is_main_process
 from mmengine.evaluator import BaseMetric
 from mmengine.logging import MMLogger
 
+import mmcv
 from mmdet.registry import METRICS
 
 try:

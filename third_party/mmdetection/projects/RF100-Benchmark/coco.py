@@ -3,11 +3,10 @@ import copy
 import os.path as osp
 from typing import List, Union
 
-from mmengine.fileio import get_local_path
-
 from mmdet.datasets.api_wrappers import COCO
 from mmdet.datasets.coco import CocoDataset
 from mmdet.registry import DATASETS
+from mmengine.fileio import get_local_path
 
 
 @DATASETS.register_module()

@@ -6,9 +6,14 @@ import numpy as np
 import torch
 import trimesh
 
-from mmdet3d.structures import (BaseInstance3DBoxes, Box3DMode,
-                                CameraInstance3DBoxes, Coord3DMode,
-                                DepthInstance3DBoxes, LiDARInstance3DBoxes)
+from mmdet3d.structures import (
+    BaseInstance3DBoxes,
+    Box3DMode,
+    CameraInstance3DBoxes,
+    Coord3DMode,
+    DepthInstance3DBoxes,
+    LiDARInstance3DBoxes,
+)
 
 
 def write_obj(points: np.ndarray, out_filename: str) -> None:

@@ -3,6 +3,7 @@ import torch.nn as nn
 
 from mmrazor.models.architectures import dynamic_ops
 from mmrazor.registry import MODELS
+
 from ..mutable_channel_container import MutableChannelContainer
 from .sequential_mutable_channel_unit import SequentialMutableChannelUnit
 

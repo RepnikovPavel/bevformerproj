@@ -1,11 +1,11 @@
 from collections import OrderedDict
 from pathlib import Path
-from torch import hub
 
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
 import torchvision
+from torch import hub
 
 
 class SegTemplate(nn.Module):

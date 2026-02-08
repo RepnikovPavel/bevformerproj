@@ -5,10 +5,10 @@
 
 import librosa
 import numpy as np
-import torch
 import parselmouth
-import torchcrepe
 import pyworld as pw
+import torch
+import torchcrepe
 
 
 def f0_to_coarse(f0, pitch_bin, f0_min, f0_max):

@@ -5,11 +5,11 @@ import os
 import os.path as osp
 
 import cv2
-import mmcv
-import mmengine
+from mmocr.utils import crop_img, dump_ocr_data
 from PIL import Image
 
-from mmocr.utils import crop_img, dump_ocr_data
+import mmcv
+import mmengine
 
 
 def collect_files(img_dir, gt_dir, ratio):

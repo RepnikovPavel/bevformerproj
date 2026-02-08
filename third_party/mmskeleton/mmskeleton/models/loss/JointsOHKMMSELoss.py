@@ -1,6 +1,7 @@
 import torch
 import torch.nn as nn
 
+
 class JointsOHKMMSELoss(nn.Module):
     def __init__(self, use_target_weight, topk=8):
         super(JointsOHKMMSELoss, self).__init__()

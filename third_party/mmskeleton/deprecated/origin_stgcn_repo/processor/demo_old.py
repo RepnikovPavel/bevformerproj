@@ -1,16 +1,15 @@
 #!/usr/bin/env python
-import os
 import argparse
 import json
+import os
 import shutil
 
-import numpy as np
-import torch
 import skvideo.io
+import tools.utils as utils
+import torch
 
 from .io import IO
-import tools
-import tools.utils as utils
+
 
 class Demo(IO):
     """

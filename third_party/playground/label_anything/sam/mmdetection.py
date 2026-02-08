@@ -10,15 +10,13 @@ from urllib.parse import urlparse
 import boto3
 import cv2
 import numpy as np
-import torch
 from botocore.exceptions import ClientError
+from filter_poly import NearNeighborRemover
 from label_studio_converter import brush
 from label_studio_ml.model import LabelStudioMLBase
-from label_studio_ml.utils import (DATA_UNDEFINED_NAME, get_image_size,
-                                   get_single_tag_keys)
+from label_studio_ml.utils import DATA_UNDEFINED_NAME, get_single_tag_keys
 from label_studio_tools.core.utils.io import get_data_dir
-from filter_poly import NearNeighborRemover
-import pdb
+
 # from mmdet.apis import inference_detector, init_detector
 
 logger = logging.getLogger(__name__)
@@ -44,7 +42,7 @@ def load_my_model(
         predictor = SamPredictor(sam)
         return predictor
     elif model_name == "sam_hq":
-        from segment_anything_hq import sam_model_registry, SamPredictor
+        from segment_anything_hq import SamPredictor, sam_model_registry
         sam = sam_model_registry[sam_config](checkpoint=sam_checkpoint_file)
         sam.to(device=device)
         predictor = SamPredictor(sam)

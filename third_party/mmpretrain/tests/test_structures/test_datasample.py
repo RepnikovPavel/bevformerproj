@@ -3,7 +3,6 @@ from unittest import TestCase
 
 import numpy as np
 import torch
-
 from mmpretrain.structures import DataSample, MultiTaskDataSample
 
 

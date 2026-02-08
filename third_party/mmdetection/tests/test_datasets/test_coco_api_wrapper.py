@@ -2,9 +2,8 @@ import os.path as osp
 import tempfile
 import unittest
 
-from mmengine.fileio import dump
-
 from mmdet.datasets.api_wrappers import COCOPanoptic
+from mmengine.fileio import dump
 
 
 class TestCOCOPanoptic(unittest.TestCase):

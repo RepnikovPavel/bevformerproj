@@ -5,10 +5,10 @@ import gradio as gr
 import numpy as np
 import PIL
 import torch
-from mmengine import Config
-
 from mmagic.registry import MODELS
 from mmagic.utils import register_all_modules
+
+from mmengine import Config
 
 gc.collect()
 torch.cuda.empty_cache()

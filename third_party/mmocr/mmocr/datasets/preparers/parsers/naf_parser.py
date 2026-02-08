@@ -5,6 +5,7 @@ from typing import List, Tuple
 import numpy as np
 
 from mmocr.registry import DATA_PARSERS
+
 from .base import BaseParser
 
 

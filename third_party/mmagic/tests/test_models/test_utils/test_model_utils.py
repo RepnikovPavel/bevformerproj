@@ -5,10 +5,13 @@ from collections import defaultdict
 import pytest
 import torch
 import torch.nn as nn
-
-from mmagic.models.utils import (build_module, generation_init_weights,
-                                 get_module_device, get_valid_num_batches,
-                                 set_requires_grad)
+from mmagic.models.utils import (
+    build_module,
+    generation_init_weights,
+    get_module_device,
+    get_valid_num_batches,
+    set_requires_grad,
+)
 from mmagic.registry import MODELS
 
 

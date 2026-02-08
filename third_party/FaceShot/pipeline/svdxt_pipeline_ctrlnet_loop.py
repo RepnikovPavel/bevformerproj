@@ -5,18 +5,17 @@ from typing import Callable, Dict, List, Optional, Union
 import numpy as np
 import PIL.Image
 import torch
-from transformers import CLIPImageProcessor, CLIPVisionModelWithProjection
-
 from diffusers.image_processor import VaeImageProcessor
 from diffusers.models import AutoencoderKLTemporalDecoder
+from diffusers.pipelines.pipeline_utils import DiffusionPipeline
 from diffusers.utils import BaseOutput, logging
 from diffusers.utils.torch_utils import randn_tensor
-from diffusers.pipelines.pipeline_utils import DiffusionPipeline
-from utils.scheduling_euler_discrete_karras_fix import EulerDiscreteScheduler
-
-from models.unet_spatio_temporal_condition_controlnet import UNetSpatioTemporalConditionControlNetModel
 from models.ldmk_ctrlnet import FlowControlNet
-
+from models.unet_spatio_temporal_condition_controlnet import (
+        UNetSpatioTemporalConditionControlNetModel,
+)
+from transformers import CLIPImageProcessor, CLIPVisionModelWithProjection
+from utils.scheduling_euler_discrete_karras_fix import EulerDiscreteScheduler
 
 logger = logging.get_logger(__name__)  # pylint: disable=invalid-name
 

@@ -5,6 +5,7 @@ from typing import Union
 import torch
 
 from mmrazor.registry import MODELS
+
 from ..derived_mutable import DerivedMutable
 from .base_mutable_channel import BaseMutableChannel
 

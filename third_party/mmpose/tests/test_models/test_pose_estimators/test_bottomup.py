@@ -3,10 +3,9 @@ import unittest
 from unittest import TestCase
 
 import torch
-from parameterized import parameterized
-
 from mmpose.testing import get_packed_inputs, get_pose_estimator_cfg
 from mmpose.utils import register_all_modules
+from parameterized import parameterized
 
 configs = [
     'body_2d_keypoint/associative_embedding/coco/'

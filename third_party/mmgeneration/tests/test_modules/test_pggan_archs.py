@@ -4,11 +4,17 @@ from copy import deepcopy
 import pytest
 import torch
 import torch.nn as nn
-
-from mmgen.models import (EqualizedLR, EqualizedLRConvDownModule,
-                          EqualizedLRConvModule, EqualizedLRConvUpModule,
-                          EqualizedLRLinearModule, MiniBatchStddevLayer,
-                          PGGANNoiseTo2DFeat, PixelNorm, equalized_lr)
+from mmgen.models import (
+    EqualizedLR,
+    EqualizedLRConvDownModule,
+    EqualizedLRConvModule,
+    EqualizedLRConvUpModule,
+    EqualizedLRLinearModule,
+    MiniBatchStddevLayer,
+    PGGANNoiseTo2DFeat,
+    PixelNorm,
+    equalized_lr,
+)
 from mmgen.models.architectures.pggan import PGGANDiscriminator, PGGANGenerator
 
 

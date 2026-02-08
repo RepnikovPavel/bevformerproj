@@ -1,13 +1,16 @@
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-
-from mmaction.core.bbox2d import delta2bbox, bbox_target
+from mmaction.core.bbox2d import bbox_target, delta2bbox
 from mmaction.core.post_processing import multiclass_nms, singleclass_nms
-from mmaction.losses import (weighted_cross_entropy, weighted_smoothl1,
-                             multilabel_accuracy,
-                             weighted_binary_cross_entropy,
-                             weighted_multilabel_binary_cross_entropy)
+from mmaction.losses import (
+    multilabel_accuracy,
+    weighted_binary_cross_entropy,
+    weighted_cross_entropy,
+    weighted_multilabel_binary_cross_entropy,
+    weighted_smoothl1,
+)
+
 from ...registry import HEADS
 
 

@@ -9,8 +9,8 @@
 
 Relevant transfer tasks: Image Classification VOC07 and COCO2014.
 """
-from __future__ import (absolute_import, division, print_function,
-                        unicode_literals)
+from __future__ import absolute_import, division, print_function, unicode_literals
+
 import argparse
 import json
 import logging

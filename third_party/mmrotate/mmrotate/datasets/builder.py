@@ -20,10 +20,12 @@ if platform.system() != 'Windows':
 
 
 def build_dataset(cfg, default_args=None):
-    from mmdet.datasets.dataset_wrappers import (ClassBalancedDataset,
-                                                 ConcatDataset,
-                                                 MultiImageMixDataset,
-                                                 RepeatDataset)
+    from mmdet.datasets.dataset_wrappers import (
+        ClassBalancedDataset,
+        ConcatDataset,
+        MultiImageMixDataset,
+        RepeatDataset,
+    )
     if isinstance(cfg, (list, tuple)):
         dataset = ConcatDataset([build_dataset(c, default_args) for c in cfg])
     elif cfg['type'] == 'ConcatDataset':

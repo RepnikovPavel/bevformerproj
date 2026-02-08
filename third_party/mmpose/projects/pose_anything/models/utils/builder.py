@@ -1,8 +1,8 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import torch.nn as nn
-from mmengine import build_from_cfg
-
 from mmpose.registry import Registry
+
+from mmengine import build_from_cfg
 
 TRANSFORMER = Registry('Transformer')
 BACKBONES = Registry('BACKBONES')

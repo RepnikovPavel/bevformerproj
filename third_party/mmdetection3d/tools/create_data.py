@@ -2,16 +2,18 @@
 import argparse
 from os import path as osp
 
-from mmengine import print_log
-
 from tools.dataset_converters import indoor_converter as indoor
 from tools.dataset_converters import kitti_converter as kitti
 from tools.dataset_converters import lyft_converter as lyft_converter
 from tools.dataset_converters import nuscenes_converter as nuscenes_converter
 from tools.dataset_converters import semantickitti_converter
 from tools.dataset_converters.create_gt_database import (
-    GTDatabaseCreater, create_groundtruth_database)
+    GTDatabaseCreater,
+    create_groundtruth_database,
+)
 from tools.dataset_converters.update_infos_to_v2 import update_pkl_infos
+
+from mmengine import print_log
 
 
 def kitti_data_prep(root_path,
@@ -238,8 +240,7 @@ def waymo_data_prep(root_path,
             if split == 'validation':
                 converter.merge_trainval_infos()
 
-        from tools.dataset_converters.waymo_converter import \
-            create_ImageSets_img_ids
+        from tools.dataset_converters.waymo_converter import create_ImageSets_img_ids
         create_ImageSets_img_ids(out_dir, splits)
 
     GTDatabaseCreater(

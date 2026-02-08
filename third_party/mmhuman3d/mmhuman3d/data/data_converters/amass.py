@@ -5,6 +5,7 @@ import numpy as np
 from tqdm import tqdm
 
 from mmhuman3d.data.data_structures.human_data import HumanData
+
 from .base_converter import BaseConverter
 from .builder import DATA_CONVERTERS
 

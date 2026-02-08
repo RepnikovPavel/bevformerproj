@@ -3,10 +3,10 @@
 from __future__ import absolute_import
 
 import ctypes
-from ..base import _LIB, check_call, c_str
-from ..runtime_ctypes import DECORDArrayHandle
-from .types import RETURN_SWITCH, C_TO_PY_ARG_SWITCH, _wrap_arg_func, _return_handle
 
+from ..base import _LIB, c_str, check_call
+from ..runtime_ctypes import DECORDArrayHandle
+from .types import C_TO_PY_ARG_SWITCH, RETURN_SWITCH, _return_handle, _wrap_arg_func
 
 DECORDPyCapsuleDestructor = ctypes.CFUNCTYPE(None, ctypes.c_void_p)
 _c_str_dltensor = c_str('dltensor')

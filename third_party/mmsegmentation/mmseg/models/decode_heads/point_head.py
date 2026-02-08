@@ -14,6 +14,7 @@ from typing import List
 
 from mmseg.registry import MODELS
 from mmseg.utils import SampleList
+
 from ..losses import accuracy
 from ..utils import resize
 from .cascade_decode_head import BaseCascadeDecodeHead

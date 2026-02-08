@@ -5,6 +5,7 @@ from typing import Optional
 from mmdet3d.registry import MODELS
 from mmdet3d.structures.det3d_data_sample import SampleList
 from mmdet3d.utils import InstanceList
+
 from .two_stage import TwoStage3DDetector
 
 

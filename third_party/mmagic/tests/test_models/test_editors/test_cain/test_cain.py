@@ -3,14 +3,13 @@ import platform
 
 import pytest
 import torch
-from mmengine.optim import OptimWrapper
-from torch.optim import Adam
-
 from mmagic.models import DataPreprocessor
 from mmagic.models.editors import CAIN, CAINNet
 from mmagic.models.losses import L1Loss
 from mmagic.registry import MODELS
 from mmagic.structures import DataSample
+from mmengine.optim import OptimWrapper
+from torch.optim import Adam
 
 
 @pytest.mark.skipif(

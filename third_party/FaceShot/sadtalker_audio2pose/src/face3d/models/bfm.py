@@ -1,12 +1,14 @@
 """This script defines the parametric 3d face model for Deep3DFaceRecon_pytorch
 """
 
+import os
+
 import numpy as np
-import  torch
+import torch
 import torch.nn.functional as F
 from scipy.io import loadmat
 from src.face3d.util.load_mats import transferBFM09
-import os
+
 
 def perspective_projection(focal, center):
     # return p.T (N, 3) @ (3, 3) 

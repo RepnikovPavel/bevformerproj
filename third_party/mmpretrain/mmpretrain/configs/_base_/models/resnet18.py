@@ -1,7 +1,12 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 # This is a BETA new format config file, and the usage may change recently.
-from mmpretrain.models import (CrossEntropyLoss, GlobalAveragePooling,
-                               ImageClassifier, LinearClsHead, ResNet)
+from mmpretrain.models import (
+                               CrossEntropyLoss,
+                               GlobalAveragePooling,
+                               ImageClassifier,
+                               LinearClsHead,
+                               ResNet,
+)
 
 # model settings
 model = dict(

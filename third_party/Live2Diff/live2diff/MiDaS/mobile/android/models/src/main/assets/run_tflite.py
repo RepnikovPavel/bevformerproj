@@ -5,11 +5,8 @@
 # You must use: tf-nightly
 # pip install tf-nightly
 
-import os
-import glob
 import cv2
 import numpy as np
-
 import tensorflow as tf
 
 width=256

@@ -1,11 +1,13 @@
-import os
-import numpy as np
 import argparse
+import ast
+import os
 import random
+
+import cv2
+import numpy as np
 import torch
 from PIL import Image
-import cv2
-import ast
+
 
 def set_seed(seed):
     random.seed(seed)

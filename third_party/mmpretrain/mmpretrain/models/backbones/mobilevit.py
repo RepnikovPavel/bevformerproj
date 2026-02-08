@@ -8,6 +8,7 @@ from mmcv.cnn import ConvModule, build_norm_layer
 from torch import nn
 
 from mmpretrain.registry import MODELS
+
 from .base_backbone import BaseBackbone
 from .mobilenet_v2 import InvertedResidual
 from .vision_transformer import TransformerEncoderLayer

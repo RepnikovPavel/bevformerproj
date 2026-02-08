@@ -1,10 +1,10 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import argparse
 
-from mmengine import Config
+from mmaction.registry import MODELS
 from mmengine.registry import init_default_scope
 
-from mmaction.registry import MODELS
+from mmengine import Config
 
 try:
     from mmengine.analysis import get_model_complexity_info

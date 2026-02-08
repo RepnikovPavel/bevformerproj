@@ -4,9 +4,7 @@ from unittest.mock import patch
 
 import pytest
 import torch
-
-from mmagic.models import (PerceptualLoss, PerceptualVGG,
-                           TransferalPerceptualLoss)
+from mmagic.models import PerceptualLoss, PerceptualVGG, TransferalPerceptualLoss
 
 
 @pytest.mark.skipif(

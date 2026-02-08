@@ -1,7 +1,6 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 from mmcv.transforms.loading import LoadImageFromFile
 from mmcv.transforms.processing import TestTimeAug
-
 from mmdet.datasets.transforms.formatting import PackDetInputs
 from mmdet.datasets.transforms.loading import LoadAnnotations
 from mmdet.datasets.transforms.transforms import RandomFlip, Resize

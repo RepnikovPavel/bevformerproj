@@ -3,10 +3,8 @@ from unittest.mock import MagicMock, patch
 
 import pytest
 import torch
+from mmagic.evaluation.metrics.base_gen_metric import GenerativeMetric, GenMetric
 from mmengine.model import MMDistributedDataParallel
-
-from mmagic.evaluation.metrics.base_gen_metric import (GenerativeMetric,
-                                                       GenMetric)
 
 
 def mock_collect_fn(results, *args, **kwargs):

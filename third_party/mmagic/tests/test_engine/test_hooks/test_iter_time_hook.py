@@ -2,9 +2,8 @@
 from unittest import TestCase
 from unittest.mock import MagicMock, Mock, patch
 
-from mmengine.logging import MessageHub
-
 from mmagic.engine import IterTimerHook
+from mmengine.logging import MessageHub
 
 
 def time_patch():

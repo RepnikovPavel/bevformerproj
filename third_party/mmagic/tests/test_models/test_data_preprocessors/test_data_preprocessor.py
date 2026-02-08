@@ -3,10 +3,9 @@ from unittest import TestCase
 
 import torch
 import torch.nn.functional as F
-from mmengine.testing import assert_allclose
-
 from mmagic.models.data_preprocessors import DataPreprocessor
 from mmagic.structures import DataSample
+from mmengine.testing import assert_allclose
 
 
 class TestBaseDataPreprocessor(TestCase):

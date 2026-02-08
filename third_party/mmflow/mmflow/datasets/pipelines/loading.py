@@ -1,8 +1,9 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import os.path as osp
 
-import mmcv
 import numpy as np
+
+import mmcv
 from mmcv import sparse_flow_from_bytes
 
 from ..builder import PIPELINES

@@ -1,9 +1,8 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import torch
 from mmcv.cnn import Scale
-from torch import nn as nn
-
 from mmdet3d.registry import TASK_UTILS
+from torch import nn as nn
 
 
 def test_pgd_bbox_coder():

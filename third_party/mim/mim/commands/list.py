@@ -1,11 +1,11 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import importlib
 import os.path as osp
-import pkg_resources
 from email.parser import FeedParser
 from typing import List, Tuple
 
 import click
+import pkg_resources
 from tabulate import tabulate
 
 

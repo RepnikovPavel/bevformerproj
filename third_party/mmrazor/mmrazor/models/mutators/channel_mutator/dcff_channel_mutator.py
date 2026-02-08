@@ -4,6 +4,7 @@ from typing import Type, Union
 from mmrazor.models.architectures.dynamic_ops import FuseConv2d
 from mmrazor.models.mutables import DCFFChannelUnit
 from mmrazor.registry import MODELS
+
 from .channel_mutator import ChannelMutator, ChannelUnitType
 
 

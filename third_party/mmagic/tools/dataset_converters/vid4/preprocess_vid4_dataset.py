@@ -4,12 +4,12 @@ import os
 import os.path as osp
 from multiprocessing import Pool
 
-import mmengine
 import numpy as np
+from mmagic.datasets.transforms import MATLABLikeResize
 from skimage import img_as_float
 from skimage.io import imread, imsave
 
-from mmagic.datasets.transforms import MATLABLikeResize
+import mmengine
 
 
 def imresize(img_path, output_path, scale=None, output_shape=None):

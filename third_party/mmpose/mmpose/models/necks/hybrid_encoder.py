@@ -8,8 +8,11 @@ from mmcv.cnn import ConvModule
 from mmengine.model import BaseModule, ModuleList
 from torch import Tensor
 
-from mmpose.models.utils import (DetrTransformerEncoder, RepVGGBlock,
-                                 SinePositionalEncoding)
+from mmpose.models.utils import (
+    DetrTransformerEncoder,
+    RepVGGBlock,
+    SinePositionalEncoding,
+)
 from mmpose.registry import MODELS
 from mmpose.utils.typing import ConfigType, OptConfigType
 

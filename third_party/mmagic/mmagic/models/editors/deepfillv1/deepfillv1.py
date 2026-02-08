@@ -6,6 +6,7 @@ import torch
 from mmagic.models.base_models import TwoStageInpaintor
 from mmagic.models.utils import extract_around_bbox, extract_bbox_patch
 from mmagic.registry import MODELS
+
 from ...utils import set_requires_grad
 
 

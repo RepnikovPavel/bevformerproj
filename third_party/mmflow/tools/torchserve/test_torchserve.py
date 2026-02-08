@@ -3,11 +3,11 @@ import tempfile
 from argparse import ArgumentParser
 
 import cv2
-import mmcv
 import requests
-
 from mmflow.apis import inference_model, init_model
 from mmflow.datasets import visualize_flow
+
+import mmcv
 
 
 def parse_args():

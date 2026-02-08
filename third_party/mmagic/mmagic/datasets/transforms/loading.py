@@ -2,14 +2,13 @@
 import os.path as osp
 from typing import List, Optional, Tuple
 
-import mmcv
 import numpy as np
 from mmcv.transforms import BaseTransform
 from mmengine.fileio import get_file_backend, list_from_file
 
+import mmcv
 from mmagic.registry import TRANSFORMS
-from mmagic.utils import (bbox2mask, brush_stroke_mask, get_irregular_mask,
-                          random_bbox)
+from mmagic.utils import bbox2mask, brush_stroke_mask, get_irregular_mask, random_bbox
 
 
 @TRANSFORMS.register_module()

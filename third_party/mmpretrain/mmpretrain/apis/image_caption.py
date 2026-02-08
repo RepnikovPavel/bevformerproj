@@ -9,6 +9,7 @@ from mmengine.dataset import Compose, default_collate
 
 from mmpretrain.registry import TRANSFORMS
 from mmpretrain.structures import DataSample
+
 from .base import BaseInferencer, InputType
 from .model import list_models
 

@@ -11,22 +11,18 @@ python -O get_ava_performance.py \
   -d your_results.csv
 """
 
-from __future__ import absolute_import
-from __future__ import division
-from __future__ import print_function
+from __future__ import absolute_import, division, print_function
 
 import argparse
-from collections import defaultdict
 import csv
 import heapq
 import logging
 import pprint
-import sys
 import time
-import numpy as np
+from collections import defaultdict
 
-from ava import object_detection_evaluation
-from ava import standard_fields
+import numpy as np
+from ava import object_detection_evaluation, standard_fields
 
 
 def print_time(message, start):

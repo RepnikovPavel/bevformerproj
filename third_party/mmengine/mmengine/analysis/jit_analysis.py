@@ -10,8 +10,18 @@ from collections import Counter
 from copy import copy
 from dataclasses import dataclass
 from numbers import Number
-from typing import (Any, Dict, Iterable, Iterator, List, Optional, Set, Tuple,
-                    TypeVar, Union)
+from typing import (
+    Any,
+    Dict,
+    Iterable,
+    Iterator,
+    List,
+    Optional,
+    Set,
+    Tuple,
+    TypeVar,
+    Union,
+)
 
 import numpy as np
 import torch
@@ -20,6 +30,7 @@ from torch import Tensor
 from torch.jit import TracerWarning, _get_trace_graph
 
 from mmengine.logging import print_log
+
 from .jit_handles import Handle
 
 T = TypeVar('T', bound='JitModelAnalysis')

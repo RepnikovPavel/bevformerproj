@@ -3,11 +3,11 @@ from abc import ABCMeta, abstractmethod
 from typing import List, Tuple
 
 import torch.nn as nn
-from mmcv import ops
 from mmengine.model import BaseModule
+from mmocr.utils import ConfigType, OptMultiConfig
 from torch import Tensor
 
-from mmocr.utils import ConfigType, OptMultiConfig
+from mmcv import ops
 
 
 class BaseRoIExtractor(BaseModule, metaclass=ABCMeta):

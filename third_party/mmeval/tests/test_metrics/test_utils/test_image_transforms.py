@@ -3,12 +3,15 @@
 # yapf: disable
 import numpy as np
 import pytest
+from mmeval.metrics.utils.image_transforms import (
+    _convert_input_type_range,
+    _convert_output_type_range,
+    bgr2ycbcr,
+    reorder_and_crop,
+    reorder_image,
+    rgb2ycbcr,
+)
 from numpy.testing import assert_array_almost_equal
-
-from mmeval.metrics.utils.image_transforms import (_convert_input_type_range,
-                                                   _convert_output_type_range,
-                                                   bgr2ycbcr, reorder_and_crop,
-                                                   reorder_image, rgb2ycbcr)
 
 
 def assert_image_almost_equal(x, y, atol=1):

@@ -2,9 +2,9 @@
 import copy
 from typing import Dict, Optional, Tuple
 
-from mmengine import fileio
 from torch import nn
 
+from mmengine import fileio
 from mmrazor.registry import MODELS
 from mmrazor.utils import FixMutable, ValidFixMutable
 from mmrazor.utils.typing import DumpChosen

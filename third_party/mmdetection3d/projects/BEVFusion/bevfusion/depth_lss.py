@@ -2,9 +2,9 @@
 from typing import Tuple
 
 import torch
+from mmdet3d.registry import MODELS
 from torch import nn
 
-from mmdet3d.registry import MODELS
 from .ops import bev_pool
 
 

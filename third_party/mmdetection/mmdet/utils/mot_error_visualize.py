@@ -8,10 +8,11 @@ except ImportError:
     sns = None
 import cv2
 import matplotlib.pyplot as plt
-import mmcv
 import numpy as np
 from matplotlib.patches import Rectangle
 from mmengine.utils import mkdir_or_exist
+
+import mmcv
 
 
 def imshow_mot_errors(*args, backend: str = 'cv2', **kwargs):

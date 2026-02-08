@@ -4,10 +4,10 @@
 # LICENSE file in the root directory of this source tree.
 
 import json
-from tqdm import tqdm
 import os
-import librosa
 
+import librosa
+from tqdm import tqdm
 from utils.util import has_existed
 
 

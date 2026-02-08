@@ -1,5 +1,6 @@
 import torch.nn as nn
 
+
 class BasicBlock1D(nn.Module):
 
     def __init__(self, in_channels, out_channels, **kwargs):

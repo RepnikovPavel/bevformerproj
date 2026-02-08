@@ -2,13 +2,15 @@
 import argparse
 
 import numpy as np
-from mmengine import load
+from mmaction.evaluation.functional import (
+    get_weighted_score,
+    mean_class_accuracy,
+    mmit_mean_average_precision,
+    top_k_accuracy,
+)
 from scipy.special import softmax
 
-from mmaction.evaluation.functional import (get_weighted_score,
-                                            mean_class_accuracy,
-                                            mmit_mean_average_precision,
-                                            top_k_accuracy)
+from mmengine import load
 
 
 def parse_args():

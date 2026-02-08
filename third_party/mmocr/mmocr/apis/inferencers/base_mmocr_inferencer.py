@@ -2,8 +2,6 @@
 import os.path as osp
 from typing import Dict, Iterable, List, Optional, Sequence, Tuple, Union
 
-import mmcv
-import mmengine
 import numpy as np
 from mmengine.dataset import Compose
 from mmengine.infer.infer import BaseInferencer, ModelType
@@ -13,6 +11,8 @@ from mmengine.structures import InstanceData
 from rich.progress import track
 from torch import Tensor
 
+import mmcv
+import mmengine
 from mmocr.utils import ConfigType
 
 InstanceList = List[InstanceData]

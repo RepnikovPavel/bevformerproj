@@ -12,9 +12,15 @@ from mmengine.structures import InstanceData
 from torch import Tensor
 
 from mmdet.registry import MODELS
-from mmdet.structures.bbox import (cat_boxes, empty_box_as, get_box_tensor,
-                                   get_box_wh, scale_boxes)
+from mmdet.structures.bbox import (
+    cat_boxes,
+    empty_box_as,
+    get_box_tensor,
+    get_box_wh,
+    scale_boxes,
+)
 from mmdet.utils import InstanceList, MultiConfig, OptInstanceList
+
 from .anchor_head import AnchorHead
 
 

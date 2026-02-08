@@ -32,8 +32,14 @@ def create_calib_input_data(calib_file: str,
     """
 
     from mmdeploy.core import patch_model
-    from mmdeploy.utils import (IR, cfg_apply_marks, get_backend,
-                                get_ir_config, load_config)
+    from mmdeploy.utils import (
+        IR,
+        cfg_apply_marks,
+        get_backend,
+        get_ir_config,
+        load_config,
+    )
+
     from .utils import create_calib_input_data as create_calib_input_data_impl
     with no_mp():
         if dataset_cfg is None:

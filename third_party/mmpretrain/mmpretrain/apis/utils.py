@@ -173,8 +173,10 @@ def init_empty_weights(include_buffers: bool = False):
     # Patch transformers from pretrained
     try:
         from transformers import PreTrainedModel
-        from transformers.models.auto.auto_factory import (AutoConfig,
-                                                           _BaseAutoModelClass)
+        from transformers.models.auto.auto_factory import (
+            AutoConfig,
+            _BaseAutoModelClass,
+        )
         with_transformers = True
     except ImportError:
         with_transformers = False

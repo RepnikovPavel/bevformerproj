@@ -2,6 +2,7 @@
 import torch
 
 from mmseg.registry import MODELS
+
 from .fcn_head import FCNHead
 
 try:

@@ -6,8 +6,9 @@ from argparse import ArgumentParser
 from functools import partial
 
 import imageio
-import mmengine
 import numpy as np
+
+import mmengine
 
 COMPRESSION_TYPE_COLOR = {-1: 'unknown', 0: 'raw', 1: 'png', 2: 'jpeg'}
 

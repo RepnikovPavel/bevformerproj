@@ -3,27 +3,24 @@
 # This source code is licensed under the MIT license found in the
 # LICENSE file in the root directory of this source tree.
 
-import math
-import random
-import os
 import json
+import math
+import os
+import random
 
 import numpy as np
 import parselmouth
 import torch
 import torchaudio
-from tqdm import tqdm
-
 from audiomentations import TimeStretch
-
 from pedalboard import (
-    Pedalboard,
     HighShelfFilter,
     LowShelfFilter,
     PeakFilter,
+    Pedalboard,
     PitchShift,
 )
-
+from tqdm import tqdm
 from utils.util import has_existed
 
 PRAAT_CHANGEGENDER_PITCHMEDIAN_DEFAULT = 0.0

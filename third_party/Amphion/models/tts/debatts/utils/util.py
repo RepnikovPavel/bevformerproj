@@ -4,30 +4,28 @@
 # LICENSE file in the root directory of this source tree.
 
 
+import argparse
 import collections
 import glob
 import os
 import random
-import time
-import argparse
 from collections import OrderedDict
 
 import json5
 import numpy as np
-import glob
 from torch.nn import functional as F
-
 
 try:
     from ruamel.yaml import YAML as yaml
 except:
     from ruamel_yaml import YAML as yaml
 
+import logging
+from logging import handlers
+
 import torch
 
 from utils.hparam import HParams
-import logging
-from logging import handlers
 
 
 def str2bool(v):

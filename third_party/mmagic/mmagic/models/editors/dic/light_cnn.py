@@ -1,11 +1,11 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import torch
 import torch.nn as nn
-from mmengine import MMLogger
 from mmengine.model import BaseModule
 from mmengine.runner import load_checkpoint
 
 from mmagic.registry import MODELS
+from mmengine import MMLogger
 
 
 @MODELS.register_module()

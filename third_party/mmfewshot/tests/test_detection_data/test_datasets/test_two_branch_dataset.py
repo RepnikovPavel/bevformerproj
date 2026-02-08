@@ -3,7 +3,6 @@ import os
 import tempfile
 
 from mmdet.apis import set_random_seed
-
 from mmfewshot.detection.datasets.builder import build_dataset
 
 

@@ -12,6 +12,7 @@ except ImportError:
     norm = get_placeholder('norm')
 
 from mmrazor.registry import MODELS
+
 from ..architectures.connectors import OFDTeacherConnector
 from ..losses import OFDLoss
 from .configurable_distiller import ConfigurableDistiller

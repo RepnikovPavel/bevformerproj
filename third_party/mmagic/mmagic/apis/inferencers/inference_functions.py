@@ -1,17 +1,17 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import math
 
-import mmcv
 import numpy as np
 import torch
-from mmengine import Config
 from mmengine.config import ConfigDict
 from mmengine.fileio import get_file_backend
 from mmengine.registry import init_default_scope
 from mmengine.runner import load_checkpoint
 from mmengine.runner import set_random_seed as set_random_seed_engine
 
+import mmcv
 from mmagic.registry import MODELS
+from mmengine import Config
 
 VIDEO_EXTENSIONS = ('.mp4', '.mov', '.avi')
 FILE_CLIENT = get_file_backend(backend_args={'backend': 'local'})

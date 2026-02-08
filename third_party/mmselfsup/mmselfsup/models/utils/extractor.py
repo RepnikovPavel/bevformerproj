@@ -8,6 +8,7 @@ from mmengine.runner import Runner
 from torch.utils.data import DataLoader
 
 from mmselfsup.utils import dist_forward_collect, nondist_forward_collect
+
 from .multi_pooling import MultiPooling
 
 

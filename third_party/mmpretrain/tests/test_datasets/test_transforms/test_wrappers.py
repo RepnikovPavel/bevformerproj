@@ -1,7 +1,6 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import numpy as np
 from mmcv.transforms import Resize
-
 from mmpretrain.datasets import GaussianBlur, MultiView, Solarize
 
 

@@ -1,9 +1,8 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import torch
 import torch.nn.functional as F
-from numpy.testing import assert_almost_equal
-
 from mmaction.models import BCELossWithLogits, CrossEntropyLoss
+from numpy.testing import assert_almost_equal
 
 
 def test_bce_loss_with_logits():

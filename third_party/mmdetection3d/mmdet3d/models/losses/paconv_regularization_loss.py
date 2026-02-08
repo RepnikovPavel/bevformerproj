@@ -7,6 +7,7 @@ from torch import Tensor
 from torch import nn as nn
 
 from mmdet3d.registry import MODELS
+
 from ..layers import PAConv, PAConvCUDA
 
 

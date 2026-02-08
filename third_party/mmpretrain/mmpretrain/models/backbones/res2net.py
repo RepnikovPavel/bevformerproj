@@ -8,6 +8,7 @@ from mmcv.cnn import build_conv_layer, build_norm_layer
 from mmengine.model import ModuleList, Sequential
 
 from mmpretrain.registry import MODELS
+
 from .resnet import Bottleneck as _Bottleneck
 from .resnet import ResNet
 

@@ -19,11 +19,10 @@ Example box operations that are supported:
   * Areas: compute bounding box areas
   * IOU: pairwise intersection-over-union scores
 """
-import numpy as np
-
 import np_box_list_ops
 import np_box_mask_list
 import np_mask_ops
+import numpy as np
 
 
 def box_list_to_box_mask_list(boxlist):

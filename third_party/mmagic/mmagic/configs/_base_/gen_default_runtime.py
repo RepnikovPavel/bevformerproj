@@ -1,12 +1,15 @@
 # Copyright (c) OpenMMLab. All rights reserved.
-from mmengine.hooks import CheckpointHook, LoggerHook
-from mmengine.model import MMSeparateDistributedDataParallel
-
-from mmagic.engine import (IterTimerHook, LogProcessor,
-                           MultiOptimWrapperConstructor, MultiTestLoop,
-                           MultiValLoop)
+from mmagic.engine import (
+                           IterTimerHook,
+                           LogProcessor,
+                           MultiOptimWrapperConstructor,
+                           MultiTestLoop,
+                           MultiValLoop,
+)
 from mmagic.evaluation import Evaluator
 from mmagic.visualization import VisBackend, Visualizer
+from mmengine.hooks import CheckpointHook, LoggerHook
+from mmengine.model import MMSeparateDistributedDataParallel
 
 default_scope = 'mmagic'
 

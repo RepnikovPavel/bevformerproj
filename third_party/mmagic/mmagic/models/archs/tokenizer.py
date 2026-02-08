@@ -6,9 +6,8 @@ import random
 from logging import WARNING
 from typing import Any, List, Optional, Union
 
-from mmengine import print_log
-
 from mmagic.utils import try_import
+from mmengine import print_log
 
 
 class TokenizerWrapper:

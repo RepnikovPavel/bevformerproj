@@ -6,8 +6,7 @@ import torch.utils.checkpoint as checkpoint
 from mmengine.model.weight_init import trunc_normal_
 
 from .swinir_modules import PatchEmbed, PatchUnEmbed
-from .swinir_utils import (drop_path, to_2tuple, window_partition,
-                           window_reverse)
+from .swinir_utils import drop_path, to_2tuple, window_partition, window_reverse
 
 
 class DropPath(nn.Module):

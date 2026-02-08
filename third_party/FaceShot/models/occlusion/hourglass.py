@@ -1,7 +1,7 @@
-from torch import nn
-from torch import nn
-import torch.nn.functional as F
 import torch
+import torch.nn.functional as F
+from torch import nn
+
 # from sync_batchnorm import SynchronizedBatchNorm2d as BatchNorm2d
 
 # class ResBlock2d(nn.Module):

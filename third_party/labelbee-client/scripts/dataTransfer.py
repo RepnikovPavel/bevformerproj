@@ -1,5 +1,6 @@
-from PIL import Image
 from pathlib import Path, PurePath
+
+from PIL import Image
 
 folder_path = './img/'  # The folder of your exported data
 

@@ -4,12 +4,12 @@ import os.path as osp
 import tempfile
 from argparse import ArgumentParser
 
-import mmcv
-import mmengine
-from mmengine.registry import init_default_scope
-
 from mmdet.apis import inference_mot, init_track_model
 from mmdet.registry import VISUALIZERS
+from mmengine.registry import init_default_scope
+
+import mmcv
+import mmengine
 
 IMG_EXTENSIONS = ('.jpg', '.jpeg', '.png')
 

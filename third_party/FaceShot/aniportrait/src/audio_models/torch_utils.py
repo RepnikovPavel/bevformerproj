@@ -1,3 +1,6 @@
+import pdb
+
+import numpy as np
 import torch
 import torch.nn.functional as F
 
@@ -20,6 +23,5 @@ def linear_interpolation(features, seq_len):
 
 
 if __name__ == "__main__":
-    import numpy as np
     mask = ~get_mask_from_lengths(torch.from_numpy(np.array([4,6])))
-    import pdb; pdb.set_trace()
+    pdb.set_trace()

@@ -87,8 +87,12 @@ class TVMManager(BaseBackendManager):
         import copy
 
         from mmdeploy.apis.tvm import get_library_ext
-        from mmdeploy.utils import (get_calib_filename, get_model_inputs,
-                                    get_partition_config)
+        from mmdeploy.utils import (
+            get_calib_filename,
+            get_model_inputs,
+            get_partition_config,
+        )
+
         from .onnx2tvm import from_onnx
         model_inputs = get_model_inputs(deploy_cfg)
 

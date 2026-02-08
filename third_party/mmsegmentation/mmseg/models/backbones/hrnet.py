@@ -7,6 +7,7 @@ from mmengine.model import BaseModule, ModuleList, Sequential
 from mmengine.utils.dl_utils.parrots_wrapper import _BatchNorm
 
 from mmseg.registry import MODELS
+
 from ..utils import Upsample, resize
 from .resnet import BasicBlock, Bottleneck
 

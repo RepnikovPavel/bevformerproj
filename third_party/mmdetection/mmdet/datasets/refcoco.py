@@ -4,9 +4,9 @@ import os.path as osp
 import random
 from typing import Dict, List
 
-import mmengine
 from mmengine.dataset import BaseDataset
 
+import mmengine
 from mmdet.registry import DATASETS
 
 

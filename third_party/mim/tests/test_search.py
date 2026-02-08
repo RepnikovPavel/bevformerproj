@@ -1,7 +1,6 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 
 from click.testing import CliRunner
-
 from mim.commands.install import cli as install
 from mim.commands.search import cli as search
 from mim.commands.uninstall import cli as uninstall

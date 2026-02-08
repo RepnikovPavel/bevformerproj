@@ -1,7 +1,8 @@
-from argparse import ArgumentParser
 import glob
 import json
 import os
+from argparse import ArgumentParser
+
 
 def crosscheck_videos(video_path, ann_file):
     # Get existing videos

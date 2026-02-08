@@ -3,7 +3,6 @@ import platform
 
 import pytest
 import torch
-
 from mmpretrain.models import MixMIM, MixMIMPretrainTransformer
 from mmpretrain.structures import DataSample
 

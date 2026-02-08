@@ -4,18 +4,24 @@ from abc import ABCMeta, abstractmethod
 from copy import deepcopy
 from typing import Any, Callable, Dict, Optional, Sequence, Tuple, Union
 
-import mmcv
 import numpy as np
 import torch
-from mmengine import Config
 from mmengine.model import BaseDataPreprocessor
 from torch.utils.data import DataLoader, Dataset
 
-from mmdeploy.utils import (get_backend_config, get_codebase,
-                            get_codebase_config, get_root_logger)
-from mmdeploy.utils.config_utils import (get_codebase_external_module,
-                                         get_rknn_quantization)
+import mmcv
+from mmdeploy.utils import (
+    get_backend_config,
+    get_codebase,
+    get_codebase_config,
+    get_root_logger,
+)
+from mmdeploy.utils.config_utils import (
+    get_codebase_external_module,
+    get_rknn_quantization,
+)
 from mmdeploy.utils.dataset import is_can_sort_dataset, sort_dataset
+from mmengine import Config
 
 
 class BaseTask(metaclass=ABCMeta):

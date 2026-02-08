@@ -3,9 +3,7 @@ import os
 import shutil
 import sys
 
-import mmcv
 import torch
-from mmcv import Config
 from mmcv.parallel import MMDataParallel
 from mmcv.runner import load_checkpoint
 from mmgen.apis import set_random_seed
@@ -16,6 +14,9 @@ from mmgen.models import build_model
 from mmgen.models.gans import CycleGAN, Pix2Pix
 from mmgen.utils import get_root_logger
 from torchvision.utils import save_image
+
+import mmcv
+from mmcv import Config
 
 
 def parse_args():

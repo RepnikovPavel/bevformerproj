@@ -3,12 +3,16 @@ import copy
 import unittest
 
 import numpy as np
+from mmocr.datasets.transforms import (
+    CropHeight,
+    ImageContentJitter,
+    PadToWidth,
+    PyramidRescale,
+    RescaleToHeight,
+    ReversePixels,
+    TextRecogGeneralAug,
+)
 from parameterized import parameterized
-
-from mmocr.datasets.transforms import (CropHeight, ImageContentJitter,
-                                       PadToWidth, PyramidRescale,
-                                       RescaleToHeight, ReversePixels,
-                                       TextRecogGeneralAug)
 
 
 class TestPadToWidth(unittest.TestCase):

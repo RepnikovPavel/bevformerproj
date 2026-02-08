@@ -6,11 +6,10 @@ import torch.nn as nn
 import torch.nn.functional as F
 from mmcv.cnn import build_activation_layer, build_norm_layer
 from mmcv.cnn.bricks import DropPath
+from mmdet.registry import MODELS
 from mmengine.logging import MMLogger
 from mmengine.model import BaseModule
 from mmengine.runner.checkpoint import CheckpointLoader
-
-from mmdet.registry import MODELS
 
 
 @MODELS.register_module()

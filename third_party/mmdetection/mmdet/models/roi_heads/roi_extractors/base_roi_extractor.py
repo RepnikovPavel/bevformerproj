@@ -4,10 +4,10 @@ from typing import List, Optional, Tuple
 
 import torch
 import torch.nn as nn
-from mmcv import ops
 from mmengine.model import BaseModule
 from torch import Tensor
 
+from mmcv import ops
 from mmdet.utils import ConfigType, OptMultiConfig
 
 

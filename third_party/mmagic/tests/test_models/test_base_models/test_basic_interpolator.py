@@ -1,10 +1,9 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import torch
-from torch import nn
-
 from mmagic.models import BasicInterpolator
 from mmagic.models.losses import L1Loss
 from mmagic.registry import MODELS
+from torch import nn
 
 
 @MODELS.register_module()

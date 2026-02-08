@@ -4,10 +4,9 @@ import platform
 import pytest
 import torch
 import torch.nn as nn
-from mmengine.utils.dl_utils.parrots_wrapper import _BatchNorm
-
 from mmaction.models import ResNet3d, ResNet3dLayer
 from mmaction.testing import check_norm_state, generate_backbone_demo_inputs
+from mmengine.utils.dl_utils.parrots_wrapper import _BatchNorm
 
 
 @pytest.mark.skipif(platform.system() == 'Windows', reason='Windows mem limit')

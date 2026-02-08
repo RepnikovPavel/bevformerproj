@@ -3,18 +3,12 @@
 # This source code is licensed under the MIT license found in the
 # LICENSE file in the root directory of this source tree.
 
-import os
-import time
-import numpy as np
 import torch
-from tqdm import tqdm
-import torch.nn as nn
-from collections import OrderedDict
+from modules.encoder.condition_encoder import ConditionEncoder
 
 from models.svc.base import SVCInference
-from modules.encoder.condition_encoder import ConditionEncoder
-from models.svc.transformer.transformer import Transformer
 from models.svc.transformer.conformer import Conformer
+from models.svc.transformer.transformer import Transformer
 
 
 class TransformerInference(SVCInference):

@@ -1,13 +1,14 @@
-import os
 import argparse
-from PIL import Image
-import cv2
+import os
 import re
-import torch
-import openai
+
+import cv2
 import matplotlib.pyplot as plt
-from transformers import BlipProcessor, BlipForConditionalGeneration
+import openai
+import torch
 from mmengine.config import Config
+from PIL import Image
+from transformers import BlipForConditionalGeneration, BlipProcessor
 
 # Grounding DINO
 try:
@@ -15,8 +16,7 @@ try:
     import groundingdino.datasets.transforms as T
     from groundingdino.models import build_model
     from groundingdino.util import get_tokenlizer
-    from groundingdino.util.utils import (clean_state_dict,
-                                          get_phrases_from_posmap)
+    from groundingdino.util.utils import clean_state_dict, get_phrases_from_posmap
 
     grounding_dino_transform = T.Compose([
         T.RandomResize([800], max_size=1333),

@@ -10,6 +10,7 @@ from torch.utils.data import DataLoader
 from mmpretrain.registry import MODELS
 from mmpretrain.structures import DataSample
 from mmpretrain.utils import track_on_main_process
+
 from .base import BaseRetriever
 
 

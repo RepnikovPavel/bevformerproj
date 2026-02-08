@@ -10,6 +10,7 @@ import tensorrt as trt
 from packaging import version
 
 from mmdeploy.utils import get_root_logger
+
 from .init_plugins import load_tensorrt_plugin
 
 

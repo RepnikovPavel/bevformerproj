@@ -1,9 +1,9 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 
-import numpy as np
-import pytest
 from typing import Dict, List, overload
 
+import numpy as np
+import pytest
 from mmeval.core.dispatcher import _MMEvalDispatcher, dispatch
 from mmeval.utils import try_import
 

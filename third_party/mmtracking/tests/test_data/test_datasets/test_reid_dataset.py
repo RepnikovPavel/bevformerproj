@@ -3,7 +3,6 @@ import os.path as osp
 
 import pytest
 import torch
-
 from mmtrack.datasets import DATASETS as DATASETS
 
 PREFIX = osp.join(osp.dirname(__file__), '../../data')

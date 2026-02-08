@@ -3,11 +3,11 @@ import argparse
 import logging
 from copy import deepcopy
 
-from mmengine import Config
-from torch.utils.data import DataLoader
-
 from mmdeploy.apis.utils import build_task_processor
 from mmdeploy.utils import get_root_logger, load_config
+from torch.utils.data import DataLoader
+
+from mmengine import Config
 
 
 def get_table(onnx_path: str,

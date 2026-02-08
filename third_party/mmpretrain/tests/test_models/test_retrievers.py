@@ -7,13 +7,13 @@ from unittest.mock import MagicMock
 
 import numpy as np
 import torch
-from mmengine import ConfigDict
 from mmengine.dataset.utils import default_collate
-from torch.utils.data import DataLoader, Dataset
-
 from mmpretrain.datasets.transforms import PackInputs
 from mmpretrain.registry import MODELS
 from mmpretrain.structures import DataSample
+from torch.utils.data import DataLoader, Dataset
+
+from mmengine import ConfigDict
 
 
 class ExampleDataset(Dataset):

@@ -1,9 +1,12 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import numpy as np
 import pytest
-
-from mmflow.core.evaluation import (end_point_error, end_point_error_map,
-                                    eval_metrics, optical_flow_outliers)
+from mmflow.core.evaluation import (
+    end_point_error,
+    end_point_error_map,
+    eval_metrics,
+    optical_flow_outliers,
+)
 
 
 def test_end_point_error_map():

@@ -2,15 +2,15 @@ import copy
 import os.path as osp
 from typing import Iterable, List, Optional, Tuple, Union
 
-import mmcv
-import mmengine
 import numpy as np
 import torch
+from mmdet.apis.det_inferencer import DetInferencer, InputsType, PredType
+from mmdet.utils import ConfigType
 from mmengine.dataset import Compose
 from rich.progress import track
 
-from mmdet.apis.det_inferencer import DetInferencer, InputsType, PredType
-from mmdet.utils import ConfigType
+import mmcv
+import mmengine
 
 
 def get_adaptive_scale(img_shape: Tuple[int, int],

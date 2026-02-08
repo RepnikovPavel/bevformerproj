@@ -1,13 +1,11 @@
 """Benchmark using opencv's VideoCapture"""
-import time
-import random
-import numpy as np
-import av
 import argparse
+import time
 import warnings
+
+import cv2
 import numpy as np
 import pims
-import cv2
 
 parser = argparse.ArgumentParser("PyAV benchmark")
 parser.add_argument('--file', type=str, default='/tmp/testsrc_h264_100s_default.mp4', help='Test video')

@@ -5,11 +5,11 @@ import os.path as osp
 import subprocess
 from itertools import chain, repeat
 
-import mmengine
 import numpy as np
+from mmagic.utils import modify_args
 from PIL import Image
 
-from mmagic.utils import modify_args
+import mmengine
 
 
 def fix_png_files(directory):

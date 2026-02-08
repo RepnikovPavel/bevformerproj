@@ -6,6 +6,7 @@ from mmcv.cnn import ConvModule, build_conv_layer
 from mmengine.model import BaseModule
 
 from mmpose.registry import MODELS
+
 from ..utils.regularizations import WeightNormClipHook
 from .base_backbone import BaseBackbone
 

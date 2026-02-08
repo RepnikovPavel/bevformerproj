@@ -4,6 +4,7 @@ from typing import Tuple
 import torch
 
 from mmselfsup.registry import MODELS
+
 from .mae_vit import MAEViT
 
 

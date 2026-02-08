@@ -1,9 +1,6 @@
-import os
-import numpy as np
-import json
 import torch
+
 from mmskeleton.utils import call_obj
-from .utils import skeleton
 
 
 class DataPipeline(torch.utils.data.Dataset):

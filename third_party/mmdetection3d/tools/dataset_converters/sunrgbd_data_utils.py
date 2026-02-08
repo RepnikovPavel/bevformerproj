@@ -2,10 +2,11 @@
 from concurrent import futures as futures
 from os import path as osp
 
-import mmcv
-import mmengine
 import numpy as np
 from scipy import io as sio
+
+import mmcv
+import mmengine
 
 
 def random_sampling(points, num_points, replace=None, return_choices=False):

@@ -3,13 +3,13 @@ import copy
 import warnings
 from typing import Optional, Union
 
-import mmcv
 import mmengine.fileio as fileio
 import numpy as np
 from mmcv.transforms import BaseTransform
 from mmcv.transforms import LoadAnnotations as MMCV_LoadAnnotations
 from mmcv.transforms import LoadImageFromFile as MMCV_LoadImageFromFile
 
+import mmcv
 from mmocr.registry import TRANSFORMS
 
 

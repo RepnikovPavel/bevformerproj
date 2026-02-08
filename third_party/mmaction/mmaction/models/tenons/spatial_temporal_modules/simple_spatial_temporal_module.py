@@ -1,6 +1,5 @@
-import torch
 import torch.nn as nn
-import torch.nn.functional as F
+
 from ...registry import SPATIAL_TEMPORAL_MODULES
 
 

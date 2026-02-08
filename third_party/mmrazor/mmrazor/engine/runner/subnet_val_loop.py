@@ -7,6 +7,7 @@ from torch.utils.data import DataLoader
 
 from mmrazor.models.utils import add_prefix
 from mmrazor.registry import LOOPS, TASK_UTILS
+
 from .utils import CalibrateBNMixin
 
 

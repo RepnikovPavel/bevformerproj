@@ -6,12 +6,12 @@ from pathlib import Path
 from subprocess import PIPE, Popen
 from unittest import TestCase
 
-import mmengine
 import torch
 from mmengine.config import Config
-
-from mmpretrain import ModelHub, get_model
 from mmpretrain.structures import DataSample
+
+import mmengine
+from mmpretrain import ModelHub, get_model
 
 MMPRE_ROOT = Path(__file__).parent.parent
 ASSETS_ROOT = Path(__file__).parent / 'data'

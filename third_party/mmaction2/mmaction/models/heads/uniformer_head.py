@@ -8,6 +8,7 @@ from torch import Tensor, nn
 
 from mmaction.registry import MODELS
 from mmaction.utils import ConfigType, get_str_type
+
 from .base import BaseHead
 
 

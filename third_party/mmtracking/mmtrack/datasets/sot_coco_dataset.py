@@ -1,10 +1,11 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import time
 
-import mmcv
 import numpy as np
 from mmdet.datasets import DATASETS
 from pycocotools.coco import COCO
+
+import mmcv
 
 from .base_sot_dataset import BaseSOTDataset
 

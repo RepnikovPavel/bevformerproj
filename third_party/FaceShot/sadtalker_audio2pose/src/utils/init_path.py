@@ -1,5 +1,6 @@
-import os
 import glob
+import os
+
 
 def init_path(checkpoint_dir, config_dir, size=512, old_version=False, preprocess='crop'):
 

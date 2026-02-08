@@ -6,15 +6,14 @@ import torch.distributed as dist
 import torch.multiprocessing as mp
 import torch.nn as nn
 from datautils import build_language_loader, get_loaders
+from mmrazor.implementations.pruning import sparse_gpt
+from mmrazor.utils import print_log
 from opt_sparse_gpt import get_model
 from torch.distributed.fsdp import FullyShardedDataParallel as FSDP
 from torch.distributed.fsdp.api import ShardingStrategy
 from torch.distributed.fsdp.fully_sharded_data_parallel import CPUOffload
 from torch.distributed.fsdp.wrap import size_based_auto_wrap_policy
 from utils import init_on_meta, opt_eval_fsdp, opt_infer_fsdp
-
-from mmrazor.implementations.pruning import sparse_gpt
-from mmrazor.utils import print_log
 
 
 def setup(rank, world_size):

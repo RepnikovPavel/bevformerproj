@@ -6,11 +6,6 @@ from typing import Callable, List, Optional, Union
 
 import numpy as np
 import torch
-from einops import rearrange
-from packaging import version
-from tqdm import tqdm
-from transformers import CLIPTextModel, CLIPTokenizer
-
 from diffusers.configuration_utils import FrozenDict
 from diffusers.models import AutoencoderKL
 from diffusers.pipelines import DiffusionPipeline
@@ -23,9 +18,12 @@ from diffusers.schedulers import (
     PNDMScheduler,
 )
 from diffusers.utils import BaseOutput, deprecate, is_accelerate_available, logging
+from einops import rearrange
+from packaging import version
+from tqdm import tqdm
+from transformers import CLIPTextModel, CLIPTokenizer
 
 from ..models.unet import UNet3DConditionModel
-
 
 logger = logging.get_logger(__name__)  # pylint: disable=invalid-name
 

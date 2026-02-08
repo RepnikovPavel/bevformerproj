@@ -12,6 +12,7 @@ from pytorch3d.structures import Meshes, Pointclouds
 
 from mmhuman3d.core.cameras import MMCamerasBase
 from mmhuman3d.utils.mesh_utils import mesh_to_pointcloud_vc
+
 from .base_renderer import BaseRenderer
 
 

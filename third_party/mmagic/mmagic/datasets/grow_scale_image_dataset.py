@@ -1,11 +1,11 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 from typing import Optional, Union
 
-from mmengine import print_log
 from mmengine.dataset import BaseDataset
 from mmengine.fileio import get_file_backend
 
 from mmagic.registry import DATASETS
+from mmengine import print_log
 
 
 @DATASETS.register_module()

@@ -22,7 +22,6 @@ from .unet_blocks_streaming import (
     get_up_block,
 )
 
-
 logger = logging.get_logger(__name__)  # pylint: disable=invalid-name
 
 

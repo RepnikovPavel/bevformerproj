@@ -1,23 +1,44 @@
 # Copyright (c) OpenMMLab. All rights reserved.
-from .box3d_nms import (aligned_3d_nms, box3d_multiclass_nms, circle_nms,
-                        nms_bev, nms_normal_bev)
+from .box3d_nms import (
+                        aligned_3d_nms,
+                        box3d_multiclass_nms,
+                        circle_nms,
+                        nms_bev,
+                        nms_normal_bev,
+)
 from .dgcnn_modules import DGCNNFAModule, DGCNNFPModule, DGCNNGFModule
 from .edge_fusion_module import EdgeFusionModule
-from .fusion_layers import (PointFusion, VoteFusion, apply_3d_transformation,
-                            bbox_2d_transform, coord_2d_transform)
-from .minkowski_engine_block import (MinkowskiBasicBlock, MinkowskiBottleneck,
-                                     MinkowskiConvModule)
+from .fusion_layers import (
+                        PointFusion,
+                        VoteFusion,
+                        apply_3d_transformation,
+                        bbox_2d_transform,
+                        coord_2d_transform,
+)
+from .minkowski_engine_block import (
+                        MinkowskiBasicBlock,
+                        MinkowskiBottleneck,
+                        MinkowskiConvModule,
+)
 from .mlp import MLP
 from .norm import NaiveSyncBatchNorm1d, NaiveSyncBatchNorm2d
 from .paconv import PAConv, PAConvCUDA
-from .pointnet_modules import (PAConvCUDASAModule, PAConvCUDASAModuleMSG,
-                               PAConvSAModule, PAConvSAModuleMSG,
-                               PointFPModule, PointSAModule, PointSAModuleMSG,
-                               build_sa_module)
-from .sparse_block import (SparseBasicBlock, SparseBottleneck,
-                           make_sparse_convmodule)
-from .torchsparse_block import (TorchSparseBasicBlock, TorchSparseBottleneck,
-                                TorchSparseConvModule)
+from .pointnet_modules import (
+                        PAConvCUDASAModule,
+                        PAConvCUDASAModuleMSG,
+                        PAConvSAModule,
+                        PAConvSAModuleMSG,
+                        PointFPModule,
+                        PointSAModule,
+                        PointSAModuleMSG,
+                        build_sa_module,
+)
+from .sparse_block import SparseBasicBlock, SparseBottleneck, make_sparse_convmodule
+from .torchsparse_block import (
+                        TorchSparseBasicBlock,
+                        TorchSparseBottleneck,
+                        TorchSparseConvModule,
+)
 from .transformer import GroupFree3DMHA
 from .vote_module import VoteModule
 

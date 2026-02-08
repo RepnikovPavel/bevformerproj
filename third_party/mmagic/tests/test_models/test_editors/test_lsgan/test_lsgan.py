@@ -3,13 +3,13 @@ from copy import deepcopy
 from unittest import TestCase
 
 import torch
-from mmengine import MessageHub
-from mmengine.optim import OptimWrapper, OptimWrapperDict
-from torch.optim import SGD
-
 from mmagic.models import LSGAN, DataPreprocessor
 from mmagic.registry import MODELS
 from mmagic.structures import DataSample
+from mmengine.optim import OptimWrapper, OptimWrapperDict
+from torch.optim import SGD
+
+from mmengine import MessageHub
 
 generator = dict(
     type='DCGANGenerator', noise_size=10, output_scale=16, base_channels=16)

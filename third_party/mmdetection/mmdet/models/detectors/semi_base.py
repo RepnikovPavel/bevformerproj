@@ -6,12 +6,12 @@ import torch
 import torch.nn as nn
 from torch import Tensor
 
-from mmdet.models.utils import (filter_gt_instances, rename_loss_dict,
-                                reweight_loss_dict)
+from mmdet.models.utils import filter_gt_instances, rename_loss_dict, reweight_loss_dict
 from mmdet.registry import MODELS
 from mmdet.structures import SampleList
 from mmdet.structures.bbox import bbox_project
 from mmdet.utils import ConfigType, OptConfigType, OptMultiConfig
+
 from .base import BaseDetector
 
 

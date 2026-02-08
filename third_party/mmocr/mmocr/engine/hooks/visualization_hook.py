@@ -2,12 +2,12 @@
 import os.path as osp
 from typing import Optional, Sequence, Union
 
-import mmcv
 import mmengine.fileio as fileio
 from mmengine.hooks import Hook
 from mmengine.runner import Runner
 from mmengine.visualization import Visualizer
 
+import mmcv
 from mmocr.registry import HOOKS
 from mmocr.structures import TextDetDataSample, TextRecogDataSample
 

@@ -5,6 +5,7 @@ import torch
 
 from mmagic.models.base_models import OneStageInpaintor
 from mmagic.registry import MODELS
+
 from ...utils import set_requires_grad
 
 

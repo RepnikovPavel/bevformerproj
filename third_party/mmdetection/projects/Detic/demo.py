@@ -3,14 +3,14 @@ import os
 import urllib
 from argparse import ArgumentParser
 
-import mmcv
 import torch
-from mmengine.logging import print_log
-from mmengine.utils import ProgressBar, scandir
-
 from mmdet.apis import inference_detector, init_detector
 from mmdet.registry import VISUALIZERS
 from mmdet.utils import register_all_modules
+from mmengine.logging import print_log
+from mmengine.utils import ProgressBar, scandir
+
+import mmcv
 
 IMG_EXTENSIONS = ('.jpg', '.jpeg', '.png', '.ppm', '.bmp', '.pgm', '.tif',
                   '.tiff', '.webp')
@@ -94,8 +94,7 @@ def main():
 
     # get file list
     files, source_type = get_file_list(args.img)
-    from detic.utils import (get_class_names, get_text_embeddings,
-                             reset_cls_layer_weight)
+    from detic.utils import get_class_names, get_text_embeddings, reset_cls_layer_weight
 
     # class name embeddings
     if args.class_name:

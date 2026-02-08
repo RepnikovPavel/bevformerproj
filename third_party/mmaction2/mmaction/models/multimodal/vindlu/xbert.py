@@ -1,7 +1,7 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 from mmaction.registry import MODELS
-from .modeling_bert import (BertConfig, BertForMaskedLM, BertLMHeadModel,
-                            BertModel)
+
+from .modeling_bert import BertConfig, BertForMaskedLM, BertLMHeadModel, BertModel
 
 
 @MODELS.register_module()

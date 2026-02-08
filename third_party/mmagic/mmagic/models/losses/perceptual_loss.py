@@ -4,11 +4,11 @@ from typing import List, Optional, Tuple
 import torch
 import torch.nn as nn
 import torchvision.models.vgg as vgg
-from mmengine import MMLogger
 from mmengine.runner import load_checkpoint
 from torch.nn import functional as F
 
 from mmagic.registry import MODELS
+from mmengine import MMLogger
 
 
 class PerceptualVGG(nn.Module):

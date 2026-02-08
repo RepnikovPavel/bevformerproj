@@ -1,10 +1,11 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import numpy as np
 import torch.nn as nn
-from mmengine import print_log
 from mmengine.model import BaseModule
 
 from mmagic.registry import MODELS
+from mmengine import print_log
+
 from .singan_modules import DiscriminatorBlock
 
 

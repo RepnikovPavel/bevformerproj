@@ -9,6 +9,7 @@ from torch import Tensor
 from mmdet.registry import MODELS
 from mmdet.structures import SampleList
 from mmdet.utils import ConfigType, OptConfigType
+
 from ..utils.misc import unpack_gt_instances
 from .kd_one_stage import KnowledgeDistillationSingleStageDetector
 

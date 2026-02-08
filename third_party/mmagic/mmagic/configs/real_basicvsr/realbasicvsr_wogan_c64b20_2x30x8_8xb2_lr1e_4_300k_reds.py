@@ -4,31 +4,47 @@
 # mmcv >= 2.0.1
 # mmengine >= 0.8.0
 
-from mmengine.config import read_base
-from mmengine.dataset.sampler import DefaultSampler, InfiniteSampler
-from mmengine.hooks import (CheckpointHook, DistSamplerSeedHook, LoggerHook,
-                            ParamSchedulerHook)
-from mmengine.optim.optimizer.optimizer_wrapper import OptimWrapper
-from mmengine.runner.loops import IterBasedTrainLoop
-from torch.optim.adam import Adam
-
 from mmagic.datasets import BasicFramesDataset
-from mmagic.datasets.transforms import (Clip, CopyValues,
-                                        DegradationsWithShuffle, FixedCrop,
-                                        Flip, GenerateSegmentIndices,
-                                        LoadImageFromFile, MirrorSequence,
-                                        PackInputs, RandomBlur,
-                                        RandomJPEGCompression, RandomNoise,
-                                        RandomResize, RandomTransposeHW,
-                                        RandomVideoCompression, SetValues,
-                                        UnsharpMasking)
+from mmagic.datasets.transforms import (
+    Clip,
+    CopyValues,
+    DegradationsWithShuffle,
+    FixedCrop,
+    Flip,
+    GenerateSegmentIndices,
+    LoadImageFromFile,
+    MirrorSequence,
+    PackInputs,
+    RandomBlur,
+    RandomJPEGCompression,
+    RandomNoise,
+    RandomResize,
+    RandomTransposeHW,
+    RandomVideoCompression,
+    SetValues,
+    UnsharpMasking,
+)
 from mmagic.engine import MultiOptimWrapperConstructor
-from mmagic.engine.hooks import (BasicVisualizationHook,
-                                 ExponentialMovingAverageHook, IterTimerHook)
+from mmagic.engine.hooks import (
+    BasicVisualizationHook,
+    ExponentialMovingAverageHook,
+    IterTimerHook,
+)
 from mmagic.evaluation import Evaluator
 from mmagic.models.data_preprocessors import DataPreprocessor
 from mmagic.models.editors import RealBasicVSR, RealBasicVSRNet
 from mmagic.models.losses import L1Loss
+from mmengine.config import read_base
+from mmengine.dataset.sampler import DefaultSampler, InfiniteSampler
+from mmengine.hooks import (
+    CheckpointHook,
+    DistSamplerSeedHook,
+    LoggerHook,
+    ParamSchedulerHook,
+)
+from mmengine.optim.optimizer.optimizer_wrapper import OptimWrapper
+from mmengine.runner.loops import IterBasedTrainLoop
+from torch.optim.adam import Adam
 
 with read_base():
     from .._base_.default_runtime import *

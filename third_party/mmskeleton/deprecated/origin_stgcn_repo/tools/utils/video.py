@@ -1,6 +1,6 @@
-import skvideo.io
-import numpy as np
 import cv2
+import numpy as np
+import skvideo.io
 
 
 def video_info_parsing(video_info, num_person_in=5, num_person_out=2):

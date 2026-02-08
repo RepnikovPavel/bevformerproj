@@ -10,6 +10,7 @@ from mmengine.model import BaseModule, ModuleList, Sequential
 from torch.nn.modules.batchnorm import _BatchNorm
 
 from mmpretrain.registry import MODELS
+
 from ..utils.se_layer import SELayer
 from .base_backbone import BaseBackbone
 

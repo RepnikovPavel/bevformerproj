@@ -7,7 +7,6 @@ from unittest import TestCase
 from unittest.mock import MagicMock, patch
 
 import numpy as np
-
 from mmagic.registry import DATASETS
 from mmagic.utils import register_all_modules
 

@@ -11,13 +11,12 @@ from mmengine.model import BaseModule
 from mmengine.optim import OptimWrapper
 from mmengine.runner import Runner
 from mmengine.structures import LabelData
-from torch.utils.data import Dataset
-
 from mmpretrain.engine import DenseCLHook
 from mmpretrain.models.selfsup import BaseSelfSupervisor
 from mmpretrain.registry import MODELS
 from mmpretrain.structures import DataSample
 from mmpretrain.utils import get_ori_model
+from torch.utils.data import Dataset
 
 
 class DummyDataset(Dataset):

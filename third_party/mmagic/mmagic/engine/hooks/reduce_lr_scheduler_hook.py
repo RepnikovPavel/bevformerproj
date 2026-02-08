@@ -1,11 +1,11 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 from typing import Dict, Optional, Sequence
 
-from mmengine import MessageHub
 from mmengine.hooks import ParamSchedulerHook
 from mmengine.runner import Runner
 
 from mmagic.registry import HOOKS
+from mmengine import MessageHub
 
 DATA_BATCH = Optional[Sequence[dict]]
 

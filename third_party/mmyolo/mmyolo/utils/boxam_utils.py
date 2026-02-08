@@ -22,8 +22,7 @@ from torch import Tensor
 from mmyolo.registry import MODELS
 
 try:
-    from pytorch_grad_cam import (AblationCAM, AblationLayer,
-                                  ActivationsAndGradients)
+    from pytorch_grad_cam import AblationCAM, AblationLayer, ActivationsAndGradients
     from pytorch_grad_cam import GradCAM as Base_GradCAM
     from pytorch_grad_cam import GradCAMPlusPlus as Base_GradCAMPlusPlus
     from pytorch_grad_cam.base_cam import BaseCAM

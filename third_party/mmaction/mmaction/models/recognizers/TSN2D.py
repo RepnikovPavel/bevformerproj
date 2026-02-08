@@ -1,7 +1,8 @@
 import torch.nn as nn
-from .base import BaseRecognizer
+
 from .. import builder
 from ..registry import RECOGNIZERS
+from .base import BaseRecognizer
 
 
 @RECOGNIZERS.register_module

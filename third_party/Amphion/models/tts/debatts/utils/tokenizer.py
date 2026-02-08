@@ -6,8 +6,7 @@
 # This code is modified from
 # https://github.com/lifeiteng/vall-e/blob/9c69096d603ce13174fb5cb025f185e2e9b36ac7/valle/data/tokenizer.py
 
-import re
-from typing import Any, Dict, List, Optional, Pattern, Union
+from typing import Any
 
 import torch
 import torchaudio

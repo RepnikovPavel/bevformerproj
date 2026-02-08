@@ -2,12 +2,17 @@
 import pytest
 import torch
 import torch.nn.functional as F
-
-from mmflow.models.losses import (MultiLevelBCE, MultiLevelCharbonnierLoss,
-                                  MultiLevelEPE, SequenceLoss,
-                                  multi_levels_binary_cross_entropy,
-                                  sequence_loss, smooth_1st_loss,
-                                  smooth_2nd_loss, weighted_ssim)
+from mmflow.models.losses import (
+    MultiLevelBCE,
+    MultiLevelCharbonnierLoss,
+    MultiLevelEPE,
+    SequenceLoss,
+    multi_levels_binary_cross_entropy,
+    sequence_loss,
+    smooth_1st_loss,
+    smooth_2nd_loss,
+    weighted_ssim,
+)
 from mmflow.models.losses.census_loss import census_loss
 from mmflow.models.losses.multilevel_charbonnier_loss import charbonnier_loss
 from mmflow.models.losses.multilevel_epe import endpoint_error

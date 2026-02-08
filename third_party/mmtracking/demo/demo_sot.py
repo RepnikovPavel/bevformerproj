@@ -5,9 +5,9 @@ import tempfile
 from argparse import ArgumentParser
 
 import cv2
-import mmcv
-
 from mmtrack.apis import inference_sot, init_model
+
+import mmcv
 
 
 def main():

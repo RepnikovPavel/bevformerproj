@@ -1,37 +1,30 @@
+import argparse
+import itertools
+import json
 import os
 import random
-import argparse
-from pathlib import Path
-import json
-import itertools
 import time
-import cv2
-import numpy as np
-import io
+from pathlib import Path
 
+import numpy as np
 import torch
 import torch.nn.functional as F
-import torch.distributed as dist
-from typing import List
-from torchvision import transforms
-from torchvision.utils import save_image, make_grid
-from PIL import Image
-from transformers import CLIPImageProcessor
 from accelerate import Accelerator
-from accelerate.logging import get_logger
 from accelerate.utils import ProjectConfiguration
 from diffusers import AutoencoderKL, DDPMScheduler, UNet2DConditionModel
-from transformers import CLIPTextModel, CLIPTokenizer, CLIPVisionModelWithProjection
-
 from ip_adapter.ip_adapter import ImageProjModel
 from ip_adapter.style_encoder import Style_Aware_Encoder
 from ip_adapter.tools import pre_processing
 from ip_adapter.utils import is_torch2_available
+from PIL import Image
+from torchvision import transforms
+from transformers import CLIPTextModel, CLIPTokenizer, CLIPVisionModelWithProjection
 
 if is_torch2_available():
-    from ip_adapter.attention_processor import IPAttnProcessor2_0 as IPAttnProcessor, AttnProcessor2_0 as AttnProcessor
+    from ip_adapter.attention_processor import AttnProcessor2_0 as AttnProcessor
+    from ip_adapter.attention_processor import IPAttnProcessor2_0 as IPAttnProcessor
 else:
-    from ip_adapter.attention_processor import IPAttnProcessor, AttnProcessor
+    from ip_adapter.attention_processor import AttnProcessor, IPAttnProcessor
 from PIL import ImageFile
 
 ImageFile.LOAD_TRUNCATED_IMAGES = True

@@ -6,6 +6,7 @@ import torch.nn as nn
 
 from mmocr.registry import MODELS
 from mmocr.structures import TextRecogDataSample
+
 from .base import BaseEncoder
 
 

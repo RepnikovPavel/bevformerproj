@@ -3,12 +3,12 @@ from typing import List, Tuple
 
 import torch
 from mmcv.cnn import ConvModule
-from mmengine import is_tuple_of
 from torch import Tensor
 from torch import nn as nn
 
 from mmdet3d.registry import MODELS
 from mmdet3d.utils import ConfigType, OptConfigType
+from mmengine import is_tuple_of
 
 
 class VoteModule(nn.Module):

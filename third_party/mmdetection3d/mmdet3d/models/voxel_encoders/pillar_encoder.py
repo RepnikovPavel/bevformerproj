@@ -7,6 +7,7 @@ from mmcv.ops import DynamicScatter
 from torch import Tensor, nn
 
 from mmdet3d.registry import MODELS
+
 from .utils import PFNLayer, get_paddings_indicator
 
 

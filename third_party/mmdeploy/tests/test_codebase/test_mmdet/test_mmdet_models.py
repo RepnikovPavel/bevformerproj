@@ -5,26 +5,33 @@ import random
 import tempfile
 from typing import Dict, List
 
-import mmengine
 import numpy as np
 import pytest
 import torch
 from packaging import version
+
+import mmengine
 
 try:
     from torch.testing import assert_close as torch_assert_close
 except Exception:
     from torch.testing import assert_allclose as torch_assert_close
 
-from mmengine import Config
-from mmengine.config import ConfigDict
-
 from mmdeploy.codebase import import_codebase
 from mmdeploy.core.rewriters.rewriter_manager import RewriterContext
 from mmdeploy.utils import Backend, Codebase
-from mmdeploy.utils.test import (WrapFunction, WrapModel, backend_checker,
-                                 check_backend, get_model_outputs,
-                                 get_onnx_model, get_rewrite_outputs)
+from mmdeploy.utils.test import (
+    WrapFunction,
+    WrapModel,
+    backend_checker,
+    check_backend,
+    get_model_outputs,
+    get_onnx_model,
+    get_rewrite_outputs,
+)
+from mmengine.config import ConfigDict
+
+from mmengine import Config
 
 try:
     import_codebase(Codebase.MMDET)
@@ -120,8 +127,9 @@ def test__distancepointbboxcoder__decode(backend_type: Backend):
             onnx_config=dict(output_names=None, input_shape=None),
             backend_config=dict(type=backend_type.value, model_inputs=None),
             codebase_config=dict(type='mmdet', task='ObjectDetection')))
-    from mmdet.models.task_modules.coders.distance_point_bbox_coder import \
-        DistancePointBBoxCoder
+    from mmdet.models.task_modules.coders.distance_point_bbox_coder import (
+        DistancePointBBoxCoder,
+    )
     coder = DistancePointBBoxCoder()
     # wrap function to enable rewrite
 
@@ -223,12 +231,12 @@ def test_multiclass_nms_with_keep_top_k(pre_top_k):
 @backend_checker(Backend.TENSORRT)
 def test__anchorgenerator__single_level_grid_priors():
     backend_type = 'tensorrt'
-    import onnx
-    from mmdet.models.task_modules.prior_generators.anchor_generator import \
-        AnchorGenerator
-
     import mmdeploy.codebase.mmdet.models.task_modules.prior_generators.anchor  # noqa
+    import onnx
     from mmdeploy.apis.onnx import export
+    from mmdet.models.task_modules.prior_generators.anchor_generator import (
+        AnchorGenerator,
+    )
 
     generator = AnchorGenerator(
         scales=[8], ratios=[0.5, 1.0, 2.0], strides=[4])
@@ -2171,8 +2179,9 @@ def test_solo_head_predict_by_feat(backend_type: Backend):
 def get_rtmdet_head_model():
 
     from mmdet.models.dense_heads import RTMDetHead
-    from mmdet.models.task_modules.prior_generators.point_generator import \
-        MlvlPointGenerator
+    from mmdet.models.task_modules.prior_generators.point_generator import (
+        MlvlPointGenerator,
+    )
 
     test_cfg = Config(
         dict(

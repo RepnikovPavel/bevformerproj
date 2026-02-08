@@ -4,15 +4,15 @@ import random
 import tempfile
 from unittest import TestCase, mock
 
-import mmcv
-import mmengine
 import numpy as np
 import torch
 from mmengine.structures import InstanceData
-
 from mmocr.apis.inferencers import TextDetInferencer
 from mmocr.utils.check_argument import is_type_list
 from mmocr.utils.typing_utils import TextDetDataSample
+
+import mmcv
+import mmengine
 
 
 class TestTextDetinferencer(TestCase):

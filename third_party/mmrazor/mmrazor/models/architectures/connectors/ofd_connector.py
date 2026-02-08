@@ -4,6 +4,7 @@ from typing import Dict, Optional
 import torch
 
 from mmrazor.registry import MODELS
+
 from .base_connector import BaseConnector
 
 

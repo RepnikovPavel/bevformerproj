@@ -4,12 +4,13 @@ from abc import ABCMeta, abstractmethod
 from typing import Sequence, Type, TypeVar
 
 import cv2
-import mmcv
 import numpy as np
 import pycocotools.mask as maskUtils
 import shapely.geometry as geometry
 import torch
 from mmcv.ops.roi_align import roi_align
+
+import mmcv
 
 T = TypeVar('T')
 

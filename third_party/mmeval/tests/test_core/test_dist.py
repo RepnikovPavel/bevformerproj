@@ -1,9 +1,9 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 
 import importlib
-import pytest
 
 import mmeval.core.dist as dist
+import pytest
 from mmeval.core.dist_backends.non_dist import NonDist
 
 

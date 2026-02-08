@@ -1,6 +1,5 @@
 import numpy as np
 import pytest
-
 from mmhuman3d.data.datasets.pipelines import (
     GetBboxInfo,
     LoadImageFromFile,

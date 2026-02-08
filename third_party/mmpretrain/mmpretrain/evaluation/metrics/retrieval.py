@@ -1,14 +1,15 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 from typing import List, Optional, Sequence, Union
 
-import mmengine
 import numpy as np
 import torch
 from mmengine.evaluator import BaseMetric
 from mmengine.utils import is_seq_of
 
+import mmengine
 from mmpretrain.registry import METRICS
 from mmpretrain.structures import label_to_onehot
+
 from .single_label import to_tensor
 
 

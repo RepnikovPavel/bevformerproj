@@ -2,9 +2,7 @@
 import os.path as osp
 
 import torch
-
-from mmagic.apis.inferencers.unconditional_inferencer import \
-    UnconditionalInferencer
+from mmagic.apis.inferencers.unconditional_inferencer import UnconditionalInferencer
 from mmagic.utils import register_all_modules
 
 register_all_modules()

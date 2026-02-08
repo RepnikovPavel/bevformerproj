@@ -5,9 +5,7 @@ import os
 import time
 from contextlib import suppress
 
-import numpy as np
 import torch
-import torch.nn.functional as F
 
 try:
     import wandb
@@ -16,8 +14,8 @@ except ImportError:
 
 from open_clip import LPLoss, LPMetrics, lp_gather_features
 from open_clip.utils import do_mixup, get_mix_lambda
+
 from .distributed import is_master
-from .zero_shot import zero_shot_eval
 
 
 class AverageMeter(object):

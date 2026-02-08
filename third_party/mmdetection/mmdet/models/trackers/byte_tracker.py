@@ -11,8 +11,12 @@ from mmengine.structures import InstanceData
 
 from mmdet.registry import MODELS, TASK_UTILS
 from mmdet.structures import DetDataSample
-from mmdet.structures.bbox import (bbox_cxcyah_to_xyxy, bbox_overlaps,
-                                   bbox_xyxy_to_cxcyah)
+from mmdet.structures.bbox import (
+    bbox_cxcyah_to_xyxy,
+    bbox_overlaps,
+    bbox_xyxy_to_cxcyah,
+)
+
 from .base_tracker import BaseTracker
 
 

@@ -4,11 +4,12 @@ from logging import WARNING
 from typing import Dict, List, Optional, Sequence, Tuple, Union
 
 import torch
-from mmengine import print_log
 
 from mmagic.registry import MODELS
 from mmagic.structures import DataSample
 from mmagic.utils.typing import SampleList
+from mmengine import print_log
+
 from .data_preprocessor import DataPreprocessor
 
 DataSamples = Optional[Union[list, torch.Tensor]]

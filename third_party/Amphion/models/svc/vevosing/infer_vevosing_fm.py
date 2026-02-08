@@ -4,8 +4,8 @@
 # LICENSE file in the root directory of this source tree.
 
 import os
-from huggingface_hub import snapshot_download
 
+from huggingface_hub import snapshot_download
 from models.svc.vevosing.vevosing_utils import *
 
 

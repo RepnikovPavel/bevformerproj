@@ -5,8 +5,12 @@ import torch.nn as nn
 from torch import Tensor
 
 from mmdet.registry import MODELS
-from ..layers import (ConditionalDetrTransformerDecoder,
-                      DetrTransformerEncoder, SinePositionalEncoding)
+
+from ..layers import (
+    ConditionalDetrTransformerDecoder,
+    DetrTransformerEncoder,
+    SinePositionalEncoding,
+)
 from .detr import DETR
 
 

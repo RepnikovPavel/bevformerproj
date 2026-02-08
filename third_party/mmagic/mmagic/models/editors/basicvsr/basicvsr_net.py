@@ -5,13 +5,13 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 from mmcv.cnn import ConvModule
-from mmengine import MMLogger, print_log
 from mmengine.model import BaseModule
 from mmengine.runner import load_checkpoint
 
 from mmagic.models.archs import PixelShufflePack, ResidualBlockNoBN
 from mmagic.models.utils import flow_warp, make_layer
 from mmagic.registry import MODELS
+from mmengine import MMLogger, print_log
 
 
 @MODELS.register_module()

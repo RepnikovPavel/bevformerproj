@@ -4,6 +4,7 @@ import torch.nn.functional as F
 from mmengine.model import BaseModule
 
 from mmagic.registry import MODELS
+
 from .mask_conv_module import MaskConvModule
 
 

@@ -8,6 +8,7 @@ from mmcv.cnn import build_norm_layer
 from mmengine.model import BaseModule
 
 from mmselfsup.registry import MODELS
+
 from ..utils import build_2d_sincos_position_embedding
 
 

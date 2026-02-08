@@ -1,14 +1,19 @@
 # Copyright (c) OpenMMLab. All rights reserved.
-from mmengine.hooks import (CheckpointHook, DistSamplerSeedHook, IterTimerHook,
-                            LoggerHook, ParamSchedulerHook)
+from mmengine.hooks import (
+                            CheckpointHook,
+                            DistSamplerSeedHook,
+                            IterTimerHook,
+                            LoggerHook,
+                            ParamSchedulerHook,
+)
 from mmengine.optim.optimizer.optimizer_wrapper import OptimWrapper
 from mmengine.optim.scheduler.lr_scheduler import ConstantLR, LinearLR
 from mmengine.runner.loops import IterBasedTrainLoop, TestLoop, ValLoop
-# from mmengine.runner.loops import EpochBasedTrainLoop
-from torch.optim.adamw import AdamW
-
 from mmseg.engine import SegVisualizationHook
 from mmseg.engine.schedulers import PolyLRRatio
+
+# from mmengine.runner.loops import EpochBasedTrainLoop
+from torch.optim.adamw import AdamW
 
 # optimizer
 optimizer = dict(type=AdamW, lr=0.01, weight_decay=0.1)

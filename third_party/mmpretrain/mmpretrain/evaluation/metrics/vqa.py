@@ -3,10 +3,10 @@
 # Copyright (c) 2014, Aishwarya Agrawal
 from typing import List, Optional
 
-import mmengine
 from mmengine.evaluator import BaseMetric
 from mmengine.logging import MMLogger
 
+import mmengine
 from mmpretrain.registry import METRICS
 
 

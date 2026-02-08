@@ -1,12 +1,11 @@
+from typing import List
+
 import librosa
 import numpy as np
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-import torchaudio
 from torchaudio.transforms import MelSpectrogram
-from einops import rearrange
-from typing import List
 
 
 def stft(x, fft_size, hop_size, win_length, window, use_complex=False):

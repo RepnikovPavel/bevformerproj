@@ -1,19 +1,12 @@
-import einops
 import torch
-import torch.nn as nn
 import torch.nn.functional as F
-import numpy as np
-import cv2
-
-from PIL import Image
 from einops import rearrange, repeat
-from torchvision.utils import make_grid
-
-from ldm.models.diffusion.ddpm import LatentDiffusion
-from ldm.util import log_txt_as_img, instantiate_from_config
 from ldm.models.diffusion.ddim import DDIMSampler
-
+from ldm.models.diffusion.ddpm import LatentDiffusion
+from ldm.util import instantiate_from_config, log_txt_as_img
 from models.q_formers import load_qformer_model
+from PIL import Image
+from torchvision.utils import make_grid
 
 
 class AnyControlNet(LatentDiffusion):

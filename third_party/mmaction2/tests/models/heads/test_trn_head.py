@@ -2,15 +2,13 @@
 import pytest
 import torch
 import torch.nn as nn
-
 from mmaction.models import TRNHead
 
 
 def test_trn_head():
     """Test loss method, layer construction, attributes and forward function in
     trn head."""
-    from mmaction.models.heads.trn_head import (RelationModule,
-                                                RelationModuleMultiScale)
+    from mmaction.models.heads.trn_head import RelationModule, RelationModuleMultiScale
     trn_head = TRNHead(num_classes=4, in_channels=2048, relation_type='TRN')
     trn_head.init_weights()
 

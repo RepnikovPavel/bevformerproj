@@ -5,10 +5,9 @@ from unittest import TestCase
 import pytest
 import torch
 import torch.nn as nn
+from mmagic.models.base_models import ExponentialMovingAverage, RampUpEMA
 from mmengine.model import BaseModel
 from mmengine.testing import assert_allclose
-
-from mmagic.models.base_models import ExponentialMovingAverage, RampUpEMA
 
 
 class ToyModule(nn.Module):

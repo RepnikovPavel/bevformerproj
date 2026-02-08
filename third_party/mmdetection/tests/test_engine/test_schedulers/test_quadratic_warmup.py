@@ -4,12 +4,13 @@ from unittest import TestCase
 import torch
 import torch.nn.functional as F
 import torch.optim as optim
+from mmdet.engine.schedulers import (
+    QuadraticWarmupLR,
+    QuadraticWarmupMomentum,
+    QuadraticWarmupParamScheduler,
+)
 from mmengine.optim.scheduler import _ParamScheduler
 from mmengine.testing import assert_allclose
-
-from mmdet.engine.schedulers import (QuadraticWarmupLR,
-                                     QuadraticWarmupMomentum,
-                                     QuadraticWarmupParamScheduler)
 
 
 class ToyModel(torch.nn.Module):

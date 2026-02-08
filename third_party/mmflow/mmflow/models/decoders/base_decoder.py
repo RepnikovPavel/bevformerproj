@@ -2,9 +2,10 @@
 from abc import abstractmethod
 from typing import Dict, Optional, Sequence, Union
 
-import mmcv
 import numpy as np
 from mmcv.runner import BaseModule
+
+import mmcv
 
 
 class BaseDecoder(BaseModule):

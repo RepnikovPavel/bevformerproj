@@ -4,6 +4,7 @@ from __future__ import absolute_import
 from .._ffi._ctypes.ndarray import _from_dlpack
 from .utils import try_import
 
+
 def try_import_mxnet():
     """Try import mxnet at runtime.
 

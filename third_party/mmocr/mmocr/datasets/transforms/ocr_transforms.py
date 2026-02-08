@@ -3,17 +3,25 @@ import math
 from typing import Dict, Tuple
 
 import cv2
-import mmcv
 import numpy as np
 from mmcv.transforms import Resize as MMCV_Resize
 from mmcv.transforms.base import BaseTransform
 from mmcv.transforms.utils import avoid_cache_randomness, cache_randomness
 
+import mmcv
 from mmocr.registry import TRANSFORMS
-from mmocr.utils import (bbox2poly, crop_polygon, is_poly_inside_rect,
-                         poly2bbox, poly2shapely, poly_make_valid,
-                         remove_pipeline_elements, rescale_polygon,
-                         shapely2poly)
+from mmocr.utils import (
+    bbox2poly,
+    crop_polygon,
+    is_poly_inside_rect,
+    poly2bbox,
+    poly2shapely,
+    poly_make_valid,
+    remove_pipeline_elements,
+    rescale_polygon,
+    shapely2poly,
+)
+
 from .wrappers import ImgAugWrapper
 
 

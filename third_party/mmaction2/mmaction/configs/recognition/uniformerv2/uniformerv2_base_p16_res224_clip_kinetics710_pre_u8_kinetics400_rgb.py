@@ -4,18 +4,31 @@ from mmengine.config import read_base
 with read_base():
     from ..._base_.default_runtime import *
 
+from mmaction.datasets import (
+    CenterCrop,
+    DecordDecode,
+    DecordInit,
+    Flip,
+    FormatShape,
+    PackActionInputs,
+    PytorchVideoWrapper,
+    RandomResizedCrop,
+    Resize,
+    ThreeCrop,
+    UniformSample,
+    VideoDataset,
+)
+from mmaction.evaluation import AccMetric
+from mmaction.models import (
+    ActionDataPreprocessor,
+    Recognizer3D,
+    UniFormerHead,
+    UniFormerV2,
+)
 from mmengine.dataset import DefaultSampler
 from mmengine.optim import CosineAnnealingLR, LinearLR
 from mmengine.runner import EpochBasedTrainLoop, TestLoop, ValLoop
 from torch.optim import AdamW
-
-from mmaction.datasets import (CenterCrop, DecordDecode, DecordInit, Flip,
-                               FormatShape, PackActionInputs,
-                               PytorchVideoWrapper, RandomResizedCrop, Resize,
-                               ThreeCrop, UniformSample, VideoDataset)
-from mmaction.evaluation import AccMetric
-from mmaction.models import (ActionDataPreprocessor, Recognizer3D,
-                             UniFormerHead, UniFormerV2)
 
 # model settings
 num_frames = 8

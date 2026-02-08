@@ -1,7 +1,6 @@
 # Copyright (c) OpenMMLab. All rights reserved.
-from torch.optim import SGD
-
 from mmengine.optim.scheduler import MultiStepLR
+from torch.optim import SGD
 
 # optimizer
 optim_wrapper = dict(

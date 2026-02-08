@@ -1,19 +1,18 @@
 # Copyright (c) Facebook, Inc. and its affiliates.
 # Modified by Bowen Cheng from: https://github.com/facebookresearch/detr/blob/master/models/detr.py
 import logging
-import fvcore.nn.weight_init as weight_init
 from typing import Optional
-import torch
-from torch import nn, Tensor
-from torch.nn import functional as F
 
+import fvcore.nn.weight_init as weight_init
+import torch
 from detectron2.config import configurable
 from detectron2.layers import Conv2d
+from torch import Tensor, nn
+from torch.nn import functional as F
 
-from .position_encoding import PositionEmbeddingSine3D2D
 from .maskformer_transformer_decoder import TRANSFORMER_DECODER_REGISTRY
+from .position_encoding import PositionEmbeddingSine3D2D
 
-import pdb
 
 class SelfAttentionLayer(nn.Module):
 

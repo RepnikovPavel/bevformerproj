@@ -6,6 +6,7 @@ from mmcv.runner import load_checkpoint
 from mmgen.models.architectures.pix2pix import generation_init_weights
 from mmgen.models.builder import MODULES
 from mmgen.utils import get_root_logger
+
 from .modules import ResidualBlockWithDropout
 
 

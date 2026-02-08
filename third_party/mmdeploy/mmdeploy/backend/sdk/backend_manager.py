@@ -5,6 +5,7 @@ import sys
 from typing import Any, Optional, Sequence
 
 from mmdeploy.utils import get_file_path
+
 from ..base import BACKEND_MANAGERS, BaseBackendManager
 
 _is_available = False

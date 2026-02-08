@@ -4,7 +4,6 @@ from unittest import TestCase
 
 import torch
 from mmengine.utils import is_tuple_of
-
 from mmpose.models.heads import DEKRHead
 from mmpose.testing import get_coco_sample, get_packed_inputs
 from mmpose.utils.tensor_utils import to_tensor

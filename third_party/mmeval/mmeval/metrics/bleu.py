@@ -1,9 +1,10 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 # This class is modified from `torchmetrics
 # <https://github.com/Lightning-AI/metrics/blob/master/src/torchmetrics/text/bleu.py>`_.
-import numpy as np
 from collections import Counter
 from typing import Callable, List, Optional, Sequence, Tuple, Union
+
+import numpy as np
 
 from mmeval import BaseMetric
 from mmeval.metrics.utils import get_n_gram, get_tokenizer, infer_language

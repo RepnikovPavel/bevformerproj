@@ -1,9 +1,8 @@
 from typing import Union
 
 import torch
-from torch import Tensor
-
 from mmdet3d.registry import TASK_UTILS
+from torch import Tensor
 
 
 @TASK_UTILS.register_module()

@@ -2,13 +2,14 @@
 #
 # This source code is licensed under the MIT license found in the
 # LICENSE file in the root directory of this source tree.
-import torch
-import torchaudio
-import torch.nn.functional as F
 import os
-from easydict import EasyDict as edict
-from contextlib import nullcontext
 import warnings
+from contextlib import nullcontext
+
+import torch
+import torch.nn.functional as F
+import torchaudio
+from easydict import EasyDict as edict
 
 
 def _build_semantic_model(

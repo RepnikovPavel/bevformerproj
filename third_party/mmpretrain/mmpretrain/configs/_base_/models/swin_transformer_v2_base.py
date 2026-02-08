@@ -1,8 +1,12 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 # This is a BETA new format config file, and the usage may change recently.
-from mmpretrain.models import (GlobalAveragePooling, ImageClassifier,
-                               LabelSmoothLoss, LinearClsHead,
-                               SwinTransformerV2)
+from mmpretrain.models import (
+                               GlobalAveragePooling,
+                               ImageClassifier,
+                               LabelSmoothLoss,
+                               LinearClsHead,
+                               SwinTransformerV2,
+)
 
 # model settings
 model = dict(

@@ -7,6 +7,7 @@ from mmengine.optim import OptimWrapperDict
 
 from mmagic.registry import MODELS
 from mmagic.utils import SampleList
+
 from ..utils import set_requires_grad
 from .one_stage import OneStageInpaintor
 

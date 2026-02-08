@@ -8,12 +8,8 @@ import shutil
 from pathlib import Path
 
 import cv2
-import mmcv
 import numpy as np
 import torch
-from torch.utils.data import DataLoader
-from tqdm import tqdm
-
 from mmhuman3d.apis import init_model
 from mmhuman3d.core.visualization.visualize_smpl import visualize_smpl_vibe
 from mmhuman3d.data.data_structures.human_data import HumanData
@@ -25,6 +21,10 @@ from mmhuman3d.utils.demo_utils import (
 )
 from mmhuman3d.utils.ffmpeg_utils import video_to_images
 from mmhuman3d.utils.transforms import rotmat_to_aa
+from torch.utils.data import DataLoader
+from tqdm import tqdm
+
+import mmcv
 
 try:
     from openpifpaf import decoder as ppdecoder

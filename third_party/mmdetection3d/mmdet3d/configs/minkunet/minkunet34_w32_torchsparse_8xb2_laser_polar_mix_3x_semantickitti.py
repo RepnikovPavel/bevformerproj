@@ -3,19 +3,23 @@ from mmengine import read_base
 
 with read_base():
     from .._base_.datasets.semantickitti import *
+    from .._base_.default_runtime import *
     from .._base_.models.minkunet import *
     from .._base_.schedules.schedule_3x import *
-    from .._base_.default_runtime import *
 
 from mmcv.transforms.wrappers import RandomChoice
-from mmengine.hooks.checkpoint_hook import CheckpointHook
-
 from mmdet3d.datasets.transforms.formating import Pack3DDetInputs
-from mmdet3d.datasets.transforms.loading import (LoadAnnotations3D,
-                                                 LoadPointsFromFile,
-                                                 PointSegClassMapping)
-from mmdet3d.datasets.transforms.transforms_3d import (GlobalRotScaleTrans,
-                                                       LaserMix, PolarMix)
+from mmdet3d.datasets.transforms.loading import (
+    LoadAnnotations3D,
+    LoadPointsFromFile,
+    PointSegClassMapping,
+)
+from mmdet3d.datasets.transforms.transforms_3d import (
+    GlobalRotScaleTrans,
+    LaserMix,
+    PolarMix,
+)
+from mmengine.hooks.checkpoint_hook import CheckpointHook
 
 model.update(
     dict(

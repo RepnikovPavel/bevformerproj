@@ -1,9 +1,9 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import pytest
 import torch
-
 from mmseg.models.backbones import ResNeXt
 from mmseg.models.backbones.resnext import Bottleneck as BottleneckX
+
 from .utils import is_block
 
 

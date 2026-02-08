@@ -3,6 +3,7 @@ from typing import List, Optional, Tuple
 
 from mmocr.registry import DATA_PARSERS
 from mmocr.utils import bbox2poly
+
 from .base import BaseParser
 
 

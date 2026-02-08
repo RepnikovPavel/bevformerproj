@@ -3,13 +3,18 @@ from unittest import TestCase
 
 import pytest
 import torch
+from mmrazor.models.task_modules import (
+    BackwardTracer,
+    Path,
+    PathConcatNode,
+    PathConvNode,
+    PathDepthWiseConvNode,
+    PathLinearNode,
+    PathList,
+    PathNormNode,
+)
 from torch import Tensor, nn
 from torch.nn import Module
-
-from mmrazor.models.task_modules import (BackwardTracer, Path, PathConcatNode,
-                                         PathConvNode, PathDepthWiseConvNode,
-                                         PathLinearNode, PathList,
-                                         PathNormNode)
 
 NONPASS_NODES = (PathConvNode, PathLinearNode, PathConcatNode)
 PASS_NODES = (PathNormNode, PathDepthWiseConvNode)

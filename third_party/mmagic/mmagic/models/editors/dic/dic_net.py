@@ -5,6 +5,7 @@ from mmengine.model import BaseModule
 
 from mmagic.models.utils import make_layer
 from mmagic.registry import MODELS
+
 from .feedback_hour_glass import FeedbackHourglass, reduce_to_five_heatmaps
 
 

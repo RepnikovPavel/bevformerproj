@@ -1,6 +1,5 @@
 import numpy as np
 import pytest
-
 from mmeval.core.base_metric import BaseMetric
 from mmeval.metrics import DOTAMeanAP
 

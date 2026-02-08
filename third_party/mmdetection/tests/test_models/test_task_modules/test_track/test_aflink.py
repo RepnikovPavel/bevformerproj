@@ -2,10 +2,9 @@
 from unittest import TestCase
 
 import numpy as np
+from mmdet.registry import TASK_UTILS
 from mmengine.registry import init_default_scope
 from torch import nn
-
-from mmdet.registry import TASK_UTILS
 
 
 class TestAppearanceFreeLink(TestCase):

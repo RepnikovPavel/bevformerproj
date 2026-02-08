@@ -8,23 +8,25 @@ import torch
 import torch.nn as nn
 
 try:
-    from torch.distributed.fsdp import (FullStateDictConfig,
-                                        FullyShardedDataParallel,
-                                        LocalStateDictConfig, StateDictType)
-    from torch.distributed.fsdp.fully_sharded_data_parallel import (
-        FullOptimStateDictConfig, LocalOptimStateDictConfig)
-
     from mmengine._strategy import FSDPStrategy
+    from torch.distributed.fsdp import (
+        FullStateDictConfig,
+        FullyShardedDataParallel,
+        LocalStateDictConfig,
+        StateDictType,
+    )
+    from torch.distributed.fsdp.fully_sharded_data_parallel import (
+        FullOptimStateDictConfig,
+        LocalOptimStateDictConfig,
+    )
 except:  # noqa: E722
     pass
-from torch.multiprocessing.spawn import start_processes
-from torch.optim import SGD
-
-from mmengine.dist import (all_gather_object, broadcast_object_list,
-                           is_main_process)
+from mmengine.dist import all_gather_object, broadcast_object_list, is_main_process
 from mmengine.optim import LinearLR, OptimWrapper
 from mmengine.testing.runner_test_case import ToyModel
 from mmengine.utils import digit_version
+from torch.multiprocessing.spawn import start_processes
+from torch.optim import SGD
 
 
 def linear_wrap_policy(

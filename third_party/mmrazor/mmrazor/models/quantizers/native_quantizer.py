@@ -5,13 +5,20 @@ import torch
 from mmengine.config import Config
 
 try:
-    from torch.ao.quantization import (disable_observer, enable_fake_quant,
-                                       enable_observer)
+    from torch.ao.quantization import (
+        disable_observer,
+        enable_fake_quant,
+        enable_observer,
+    )
     from torch.ao.quantization.fx import prepare
     from torch.ao.quantization.fx.graph_module import ObservedGraphModule
     from torch.ao.quantization.qconfig_mapping import (
-        _FIXED_QPARAMS_OP_TO_OBSERVER, FixedQParamsFakeQuantize, QConfig,
-        QConfigMapping, default_weight_fake_quant)
+        _FIXED_QPARAMS_OP_TO_OBSERVER,
+        FixedQParamsFakeQuantize,
+        QConfig,
+        QConfigMapping,
+        default_weight_fake_quant,
+    )
     from torch.ao.quantization.quantize_fx import _fuse_fx
     from torch.fx.graph_module import GraphModule
     from torch.nn.intrinsic.qat import modules as qat_fused_modules
@@ -37,13 +44,19 @@ except ImportError:
 from mmrazor import digit_version
 from mmrazor.models.task_modules.tracer import build_graphmodule
 from mmrazor.models.task_modules.tracer.fx import (
-    del_fakequant_after_function, del_fakequant_after_method,
-    del_fakequant_after_module, del_fakequant_after_op,
-    del_fakequant_before_function, del_fakequant_before_method,
-    del_fakequant_before_module, del_fakequant_before_op)
+    del_fakequant_after_function,
+    del_fakequant_after_method,
+    del_fakequant_after_module,
+    del_fakequant_after_op,
+    del_fakequant_before_function,
+    del_fakequant_before_method,
+    del_fakequant_before_module,
+    del_fakequant_before_op,
+)
 from mmrazor.models.utils import str2class
 from mmrazor.registry import MODELS
 from mmrazor.structures.quantization import BackendConfigs, QConfigHandler
+
 from .base import BaseQuantizer
 
 if digit_version(torch.__version__) >= digit_version('1.13.0'):

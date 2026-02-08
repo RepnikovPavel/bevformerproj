@@ -4,7 +4,6 @@ import os
 
 import cv2
 import torch
-
 from mmtrack.apis import inference_vid, init_model
 
 try:

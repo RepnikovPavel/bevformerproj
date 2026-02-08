@@ -5,16 +5,21 @@ from __future__ import absolute_import
 
 import ctypes
 import traceback
-from numbers import Number, Integral
+from numbers import Integral, Number
 
-from ..base import _LIB, check_call
-from ..base import c_str, string_types
-from ..runtime_ctypes import DECORDType, DECORDByteArray, DECORDContext
+from ..base import _LIB, c_str, check_call, string_types
+from ..runtime_ctypes import DECORDByteArray, DECORDContext, DECORDType
 from . import ndarray as _nd
 from .ndarray import NDArrayBase, _make_array
-from .types import DECORDValue, TypeCode
-from .types import DECORDPackedCFunc, DECORDCFuncFinalizer
-from .types import RETURN_SWITCH, C_TO_PY_ARG_SWITCH, _wrap_arg_func
+from .types import (
+    C_TO_PY_ARG_SWITCH,
+    RETURN_SWITCH,
+    DECORDCFuncFinalizer,
+    DECORDPackedCFunc,
+    DECORDValue,
+    TypeCode,
+    _wrap_arg_func,
+)
 
 FunctionHandle = ctypes.c_void_p
 ModuleHandle = ctypes.c_void_p

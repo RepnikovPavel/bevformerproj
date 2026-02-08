@@ -1,8 +1,9 @@
 import os
-import numpy as np
+
 import decord
 from decord import VideoReader
 from decord.bridge import *
+
 
 def _get_default_test_video():
     return VideoReader(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..', '..', 'examples', 'flipping_a_pancake.mkv')))
@@ -22,8 +23,8 @@ def test_mxnet_bridge():
 
 def test_torch_bridge():
     try:
-        from decord.bridge.torchdl import try_import_torch
         import torch
+        from decord.bridge.torchdl import try_import_torch
         vr = _get_default_test_video()
         with use_torch():
             frame = vr[0]
@@ -35,8 +36,8 @@ def test_torch_bridge():
 
 def test_tf_bridge():
     try:
-        from decord.bridge.tf import try_import_tfdl
         import tensorflow as tf
+        from decord.bridge.tf import try_import_tfdl
         vr = _get_default_test_video()
         with use_tensorflow():
             frame = vr[0]
@@ -61,8 +62,9 @@ def test_tvm_bridge():
 
 def test_threaded_bridge():
     # issue #85
-    from decord import cpu, gpu
     from multiprocessing.dummy import Pool as ThreadPool
+
+    from decord import cpu
 
     video_paths = [
       os.path.expanduser('~/Dev/decord/examples/flipping_a_pancake.mkv'), #list of paths to video

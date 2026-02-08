@@ -1,17 +1,14 @@
 # Copyright (c) OpenMMLab. All rights reserved.
-from mmengine.config import read_base
-from torch.nn.modules import HuberLoss
-
 from mmagic.datasets.transforms.aug_shape import Resize
 from mmagic.datasets.transforms.crop import InstanceCrop
 from mmagic.datasets.transforms.formatting import PackInputs
 from mmagic.datasets.transforms.loading import LoadImageFromFile
 from mmagic.models.data_preprocessors.data_preprocessor import DataPreprocessor
-from mmagic.models.editors.inst_colorization.colorization_net import \
-    ColorizationNet
+from mmagic.models.editors.inst_colorization.colorization_net import ColorizationNet
 from mmagic.models.editors.inst_colorization.fusion_net import FusionNet
-from mmagic.models.editors.inst_colorization.inst_colorization import \
-    InstColorization
+from mmagic.models.editors.inst_colorization.inst_colorization import InstColorization
+from mmengine.config import read_base
+from torch.nn.modules import HuberLoss
 
 with read_base():
     from .._base_.default_runtime import *

@@ -1,10 +1,12 @@
-import mmcv
-import numpy as np
 import os.path as osp
+
+import numpy as np
 from mmcv.parallel import DataContainer as DC
 from torch.utils.data import Dataset
 
-from .transforms import (GroupImageTransform)
+import mmcv
+
+from .transforms import GroupImageTransform
 from .utils import to_tensor
 
 

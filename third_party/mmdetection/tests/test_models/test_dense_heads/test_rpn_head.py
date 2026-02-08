@@ -3,11 +3,11 @@ from unittest import TestCase
 
 import pytest
 import torch
-from mmengine import Config
-from mmengine.structures import InstanceData
-
 from mmdet import *  # noqa
 from mmdet.models.dense_heads import RPNHead
+from mmengine.structures import InstanceData
+
+from mmengine import Config
 
 
 class TestRPNHead(TestCase):

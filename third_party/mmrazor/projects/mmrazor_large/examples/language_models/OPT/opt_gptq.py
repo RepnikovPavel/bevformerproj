@@ -2,15 +2,12 @@
 # Example for opt is converted from https://github.com/ist-daslab/sparsegpt
 import torch
 from datautils import get_loaders
+from mmrazor.implementations.pruning.sparse_gpt.utils import memory_efficient_forward
+from mmrazor.implementations.quantization.gptq import GPTQLinear, TritonGPTQLinear
+from mmrazor.utils import print_log
 from transformers import OPTForCausalLM
 from transformers.models.opt.modeling_opt import OPTDecoderLayer
 from utils import opt_eval, opt_infer
-
-from mmrazor.implementations.pruning.sparse_gpt.utils import \
-    memory_efficient_forward
-from mmrazor.implementations.quantization.gptq import (GPTQLinear,
-                                                       TritonGPTQLinear)
-from mmrazor.utils import print_log
 
 
 def enable_observer_linear(model):

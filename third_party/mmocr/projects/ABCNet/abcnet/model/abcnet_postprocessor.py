@@ -1,6 +1,7 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 from mmocr.models.textdet.postprocessors.base import BaseTextDetPostProcessor
 from mmocr.registry import MODELS
+
 from ..utils import bezier2poly
 
 

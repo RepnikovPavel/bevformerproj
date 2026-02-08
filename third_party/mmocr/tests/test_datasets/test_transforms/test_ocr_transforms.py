@@ -4,9 +4,13 @@ import unittest
 import unittest.mock as mock
 
 import numpy as np
-
-from mmocr.datasets.transforms import (FixInvalidPolygon, RandomCrop,
-                                       RandomRotate, RemoveIgnored, Resize)
+from mmocr.datasets.transforms import (
+    FixInvalidPolygon,
+    RandomCrop,
+    RandomRotate,
+    RemoveIgnored,
+    Resize,
+)
 from mmocr.utils import poly2shapely
 
 

@@ -4,9 +4,8 @@ from typing import Iterator, Optional, Sequence
 
 import torch
 import torch.distributed as dist
-from torch.utils.data import Dataset
+from torch.utils.data import Dataset, Sampler
 from torch.utils.data import DistributedSampler as _DistributedSampler
-from torch.utils.data import Sampler
 
 from mmflow.core.utils import sync_random_seed
 

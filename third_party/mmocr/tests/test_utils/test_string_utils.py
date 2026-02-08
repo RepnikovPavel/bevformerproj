@@ -1,6 +1,5 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import pytest
-
 from mmocr.utils import StringStripper
 
 

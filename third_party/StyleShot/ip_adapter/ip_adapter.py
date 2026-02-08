@@ -1,32 +1,28 @@
 import os
-from typing import List
-
+from typing import Any, Callable, Dict, List, Optional, Union
 
 import torch
-from typing import Optional, Union, Any, Dict, Tuple, List, Callable
-from diffusers.utils.torch_utils import is_compiled_module, is_torch_version, randn_tensor
-from diffusers.utils import (
-    USE_PEFT_BACKEND,
-    deprecate,
-    logging,
-    replace_example_docstring,
-    scale_lora_layers,
-    unscale_lora_layers,
-)
-from diffusers.pipelines.controlnet.pipeline_controlnet import retrieve_timesteps
-from diffusers import StableDiffusionPipeline
-from diffusers.pipelines.stable_diffusion.pipeline_stable_diffusion import StableDiffusionPipelineOutput
-from diffusers.pipelines.controlnet.pipeline_controlnet import StableDiffusionControlNetPipeline
-from diffusers.models.controlnet import ControlNetModel
 from diffusers.image_processor import PipelineImageInput
+from diffusers.models.controlnet import ControlNetModel
 from diffusers.pipelines.controlnet import MultiControlNetModel
+from diffusers.pipelines.controlnet.pipeline_controlnet import (
+    StableDiffusionControlNetPipeline,
+    retrieve_timesteps,
+)
+from diffusers.pipelines.stable_diffusion.pipeline_stable_diffusion import (
+    StableDiffusionPipelineOutput,
+)
+from diffusers.utils import (
+    deprecate,
+)
+from diffusers.utils.torch_utils import is_compiled_module, is_torch_version
 from PIL import Image
 from safetensors import safe_open
-from transformers import CLIPImageProcessor, CLIPVisionModelWithProjection
 from torchvision import transforms
+from transformers import CLIPImageProcessor, CLIPVisionModelWithProjection
+
 from .style_encoder import Style_Aware_Encoder
 from .tools import pre_processing
-
 from .utils import is_torch2_available
 
 if is_torch2_available():

@@ -9,6 +9,7 @@ from mmengine.model import BaseModule
 
 from mmagic.models.utils import get_module_device
 from mmagic.registry import MODELS
+
 from .wgan_gp_module import WGANNoiseTo2DFeat
 
 

@@ -2,12 +2,15 @@
 import base64
 import os
 
-import mmcv
 import torch
-
-from mmpose.apis import (inference_bottom_up_pose_model,
-                         inference_top_down_pose_model, init_pose_model)
+from mmpose.apis import (
+    inference_bottom_up_pose_model,
+    inference_top_down_pose_model,
+    init_pose_model,
+)
 from mmpose.models.detectors import AssociativeEmbedding, TopDown
+
+import mmcv
 
 try:
     from ts.torch_handler.base_handler import BaseHandler

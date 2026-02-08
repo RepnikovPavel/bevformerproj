@@ -1,18 +1,21 @@
 # Copyright (c) OpenMMLab. All rights reserved.
-from mmengine.dataset.dataset_wrapper import RepeatDataset
-from mmengine.dataset.sampler import DefaultSampler
-from mmengine.visualization.vis_backend import LocalVisBackend
-
 from mmdet3d.datasets.transforms.formating import Pack3DDetInputs
-from mmdet3d.datasets.transforms.loading import (LoadAnnotations3D,
-                                                 LoadPointsFromFile)
+from mmdet3d.datasets.transforms.loading import LoadAnnotations3D, LoadPointsFromFile
 from mmdet3d.datasets.transforms.test_time_aug import MultiScaleFlipAug3D
 from mmdet3d.datasets.transforms.transforms_3d import (  # noqa
-    GlobalRotScaleTrans, ObjectRangeFilter, ObjectSample, PointShuffle,
-    PointsRangeFilter, RandomFlip3D)
+                                                 GlobalRotScaleTrans,
+                                                 ObjectRangeFilter,
+                                                 ObjectSample,
+                                                 PointShuffle,
+                                                 PointsRangeFilter,
+                                                 RandomFlip3D,
+)
 from mmdet3d.datasets.waymo_dataset import WaymoDataset
 from mmdet3d.evaluation.metrics.waymo_metric import WaymoMetric
 from mmdet3d.visualization.local_visualizer import Det3DLocalVisualizer
+from mmengine.dataset.dataset_wrapper import RepeatDataset
+from mmengine.dataset.sampler import DefaultSampler
+from mmengine.visualization.vis_backend import LocalVisBackend
 
 # dataset settings
 # D5 in the config name means the whole dataset is divided into 5 folds

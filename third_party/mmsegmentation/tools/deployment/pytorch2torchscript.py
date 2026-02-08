@@ -5,11 +5,11 @@ import numpy as np
 import torch
 import torch._C
 import torch.serialization
-from mmengine import Config
 from mmengine.runner import load_checkpoint
+from mmseg.models import build_segmentor
 from torch import nn
 
-from mmseg.models import build_segmentor
+from mmengine import Config
 
 torch.manual_seed(3)
 

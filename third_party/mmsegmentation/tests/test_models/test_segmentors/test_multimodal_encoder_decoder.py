@@ -1,9 +1,8 @@
 # Copyright (c) OpenMMLab. All rights reserved.
-from mmengine import ConfigDict
-
 from mmseg.models import build_segmentor
-from tests.test_models.test_segmentors.utils import \
-    _segmentor_forward_train_test
+
+from mmengine import ConfigDict
+from tests.test_models.test_segmentors.utils import _segmentor_forward_train_test
 
 
 def test_multimodal_encoder_decoder():

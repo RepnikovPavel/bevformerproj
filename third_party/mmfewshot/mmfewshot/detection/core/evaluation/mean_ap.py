@@ -4,8 +4,7 @@ from typing import Dict, List, Optional, Tuple, Union
 
 import numpy as np
 from mmdet.core import average_precision, print_map_summary
-from mmdet.core.evaluation.mean_ap import (get_cls_results, tpfp_default,
-                                           tpfp_imagenet)
+from mmdet.core.evaluation.mean_ap import get_cls_results, tpfp_default, tpfp_imagenet
 
 
 def eval_map(det_results: List[List[np.ndarray]],

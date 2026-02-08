@@ -6,7 +6,6 @@ import numpy as np
 import pytest
 import torch
 from mmcv.runner import wrap_fp16_model
-
 from mmfewshot.detection.models import build_detector
 
 

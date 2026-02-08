@@ -5,10 +5,9 @@ import tempfile
 from unittest import TestCase
 
 import torch
-from mmengine.structures import BaseDataElement, InstanceData
-
 from mmdet.evaluation import MOTChallengeMetric
 from mmdet.structures import DetDataSample, TrackDataSample
+from mmengine.structures import BaseDataElement, InstanceData
 
 
 class TestMOTChallengeMetric(TestCase):

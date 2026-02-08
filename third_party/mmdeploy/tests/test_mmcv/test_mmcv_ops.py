@@ -5,13 +5,17 @@ import tempfile
 import onnx
 import pytest
 import torch
-from mmengine import Config
-
 from mmdeploy.apis.onnx import export
 from mmdeploy.core import RewriterContext
 from mmdeploy.utils import Backend
-from mmdeploy.utils.test import (WrapFunction, backend_checker, check_backend,
-                                 get_rewrite_outputs)
+from mmdeploy.utils.test import (
+    WrapFunction,
+    backend_checker,
+    check_backend,
+    get_rewrite_outputs,
+)
+
+from mmengine import Config
 
 
 @pytest.mark.parametrize(
@@ -231,7 +235,6 @@ def test_modulated_deform_conv():
         pytest.skip('torchscript custom ops is required.')
 
     from mmcv.ops import ModulatedDeformConv2dPack
-
     from mmdeploy.apis.torch_jit import trace
 
     model = ModulatedDeformConv2dPack(3, 1, 1).eval()

@@ -3,15 +3,15 @@
 # This source code is licensed under the MIT license found in the
 # LICENSE file in the root directory of this source tree.
 
-from glob import glob
-import os
 import json
+import os
+from collections import defaultdict
+from glob import glob
+
 import torchaudio
 from tqdm import tqdm
-from collections import defaultdict
-
-from utils.util import has_existed, remove_and_create
 from utils.audio_slicer import split_utterances_from_audio
+from utils.util import has_existed, remove_and_create
 
 
 def split_to_utterances(input_dir, output_dir):

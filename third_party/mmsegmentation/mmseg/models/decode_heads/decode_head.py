@@ -11,6 +11,7 @@ from torch import Tensor
 from mmseg.registry import MODELS
 from mmseg.structures import build_pixel_sampler
 from mmseg.utils import ConfigType, SampleList
+
 from ..losses import accuracy
 from ..utils import resize
 

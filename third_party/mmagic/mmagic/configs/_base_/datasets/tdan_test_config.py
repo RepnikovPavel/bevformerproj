@@ -1,12 +1,13 @@
 # Copyright (c) OpenMMLab. All rights reserved.
-from mmengine.dataset import DefaultSampler
-
 from mmagic.datasets import BasicFramesDataset
-from mmagic.datasets.transforms import (GenerateFrameIndiceswithPadding,
-                                        GenerateSegmentIndices,
-                                        LoadImageFromFile, PackInputs)
+from mmagic.datasets.transforms import (
+                                        GenerateFrameIndiceswithPadding,
+                                        LoadImageFromFile,
+                                        PackInputs,
+)
 from mmagic.engine.runner import MultiTestLoop
 from mmagic.evaluation import PSNR, SSIM, Evaluator
+from mmengine.dataset import DefaultSampler
 
 # configs for SPMCS-30
 SPMC_data_root = 'data/SPMCS'

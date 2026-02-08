@@ -3,7 +3,6 @@ import logging
 from collections import OrderedDict, defaultdict
 
 import numpy as np
-
 import pycocotools.mask as mask_utils
 
 from .lvis import LVIS

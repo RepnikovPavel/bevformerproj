@@ -23,16 +23,23 @@ from mmengine.model.utils import revert_sync_batchnorm
 
 from mmrazor.models.architectures.dynamic_ops import DynamicChannelMixin
 from mmrazor.models.mutables.mutable_channel import (
-    MutableChannelUnit, SequentialMutableChannelUnit)
+    MutableChannelUnit,
+    SequentialMutableChannelUnit,
+)
 from mmrazor.models.mutables.mutable_channel.units.utils import find_mutable
 from mmrazor.registry import TASK_UTILS
 from mmrazor.structures.graph import ModuleGraph
 from mmrazor.structures.graph.channel_graph import (
-    ChannelGraph, default_channel_node_converter)
-from mmrazor.structures.graph.module_graph import (FxTracerToGraphConverter,
-                                                   PathToGraphConverter)
+    ChannelGraph,
+    default_channel_node_converter,
+)
+from mmrazor.structures.graph.module_graph import (
+    FxTracerToGraphConverter,
+    PathToGraphConverter,
+)
 from mmrazor.structures.graph.pseudo_fx_graph import parse_torch_graph
 from mmrazor.utils import print_log
+
 from ..demo_inputs import BaseDemoInput, DefaultDemoInput
 from .backward_tracer import BackwardTracer
 from .fx_tracer import MMFxTracer

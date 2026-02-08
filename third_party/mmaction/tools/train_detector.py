@@ -1,14 +1,14 @@
 from __future__ import division
 
 import argparse
-from mmcv import Config
+
+import torch
+from mmaction.apis import get_root_logger, init_dist, set_random_seed, train_network
+from mmaction.datasets import get_trimmed_dataset
+from mmaction.models import build_detector
 
 from mmaction import __version__
-from mmaction.datasets import get_trimmed_dataset
-from mmaction.apis import (train_network, init_dist, get_root_logger,
-                           set_random_seed)
-from mmaction.models import build_detector
-import torch
+from mmcv import Config
 
 
 def parse_args():

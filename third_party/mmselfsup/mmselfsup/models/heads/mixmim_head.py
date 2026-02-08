@@ -2,6 +2,7 @@
 import torch
 
 from mmselfsup.registry import MODELS
+
 from .mae_head import MAEPretrainHead
 
 

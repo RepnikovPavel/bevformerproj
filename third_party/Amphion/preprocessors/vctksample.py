@@ -3,14 +3,15 @@
 # This source code is licensed under the MIT license found in the
 # LICENSE file in the root directory of this source tree.
 
-import os
-import json
-import pickle
 import glob
+import json
+import os
+import pickle
 from collections import defaultdict
-from tqdm import tqdm
-from preprocessors import get_golden_samples_indexes
 
+from tqdm import tqdm
+
+from preprocessors import get_golden_samples_indexes
 
 TRAIN_MAX_NUM_EVERY_PERSON = 250
 TEST_MAX_NUM_EVERY_PERSON = 25

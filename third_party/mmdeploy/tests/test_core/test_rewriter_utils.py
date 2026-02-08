@@ -1,10 +1,13 @@
 # Copyright (c) OpenMMLab. All rights reserved.
-import mmdeploy
 import mmdeploy.core.rewriters.rewriter_utils as rewriter_utils
-from mmdeploy.core.rewriters.rewriter_utils import (BackendChecker,
-                                                    RewriterRegistry,
-                                                    collect_env)
+from mmdeploy.core.rewriters.rewriter_utils import (
+    BackendChecker,
+    RewriterRegistry,
+    collect_env,
+)
 from mmdeploy.utils.constants import IR, Backend
+
+import mmdeploy
 
 
 def test_collect_env():

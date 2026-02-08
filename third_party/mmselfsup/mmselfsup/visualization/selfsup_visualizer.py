@@ -1,12 +1,12 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 from typing import Dict, List, Optional, Union
 
-import mmcv
 import numpy as np
 from mmengine.dist import master_only
 from mmengine.structures import InstanceData
 from mmengine.visualization import Visualizer
 
+import mmcv
 from mmselfsup.registry import VISUALIZERS
 from mmselfsup.structures import SelfSupDataSample
 

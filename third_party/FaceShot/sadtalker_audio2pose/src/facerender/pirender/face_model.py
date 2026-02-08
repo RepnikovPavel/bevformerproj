@@ -1,7 +1,10 @@
 import functools
+
 import torch
 import torch.nn as nn
-from .base_function import LayerNorm2d, ADAINHourglass, FineEncoder, FineDecoder
+
+from .base_function import ADAINHourglass, FineDecoder, FineEncoder, LayerNorm2d
+
 
 def convert_flow_to_deformation(flow):
     r"""convert flow fields to deformations.

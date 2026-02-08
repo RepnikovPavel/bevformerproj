@@ -9,10 +9,16 @@ import torch.nn.functional as F
 from mmcv.cnn.bricks.upsample import build_upsample_layer
 
 from mmgen.models.builder import MODULES
+
 from ..common import get_module_device
-from .modules import (EqualizedLRConvDownModule, EqualizedLRConvModule,
-                      EqualizedLRConvUpModule, MiniBatchStddevLayer,
-                      PGGANDecisionHead, PGGANNoiseTo2DFeat)
+from .modules import (
+    EqualizedLRConvDownModule,
+    EqualizedLRConvModule,
+    EqualizedLRConvUpModule,
+    MiniBatchStddevLayer,
+    PGGANDecisionHead,
+    PGGANNoiseTo2DFeat,
+)
 
 
 @MODULES.register_module()

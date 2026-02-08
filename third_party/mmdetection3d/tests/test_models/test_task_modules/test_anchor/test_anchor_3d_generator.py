@@ -6,9 +6,9 @@ CommandLine:
 
 """
 import torch
-from mmengine import DefaultScope
-
 from mmdet3d.registry import TASK_UTILS
+
+from mmengine import DefaultScope
 
 
 def test_anchor_3d_range_generator():

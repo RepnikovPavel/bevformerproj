@@ -25,9 +25,11 @@ from .niqe import NaturalImageQualityEvaluator
 from .oid_map import OIDMeanAP
 from .pck_accuracy import JhmdbPCKAccuracy, MpiiPCKAccuracy, PCKAccuracy
 from .perplexity import Perplexity
-from .precision_recall_f1score import (MultiLabelPrecisionRecallF1score,
-                                       PrecisionRecallF1score,
-                                       SingleLabelPrecisionRecallF1score)
+from .precision_recall_f1score import (
+    MultiLabelPrecisionRecallF1score,
+    PrecisionRecallF1score,
+    SingleLabelPrecisionRecallF1score,
+)
 from .proposal_recall import ProposalRecall
 from .psnr import PeakSignalNoiseRatio
 from .rouge import ROUGE

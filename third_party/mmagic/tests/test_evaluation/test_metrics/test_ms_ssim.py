@@ -2,7 +2,6 @@
 from unittest import TestCase
 
 import torch
-
 from mmagic.evaluation import MultiScaleStructureSimilarity
 from mmagic.structures import DataSample
 from mmagic.utils import register_all_modules

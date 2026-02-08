@@ -11,6 +11,7 @@ from mmdet.registry import MODELS
 from mmdet.structures import SampleList
 from mmdet.structures.mask import mask2bbox
 from mmdet.utils import OptConfigType, OptMultiConfig
+
 from .base_panoptic_fusion_head import BasePanopticFusionHead
 
 

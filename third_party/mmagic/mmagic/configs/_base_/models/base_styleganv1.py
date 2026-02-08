@@ -1,7 +1,10 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 from mmagic.models import DataPreprocessor
-from mmagic.models.editors.stylegan1 import (StyleGAN1, StyleGAN1Discriminator,
-                                             StyleGAN1Generator)
+from mmagic.models.editors.stylegan1 import (
+                                             StyleGAN1,
+                                             StyleGAN1Discriminator,
+                                             StyleGAN1Generator,
+)
 
 model = dict(
     type=StyleGAN1,

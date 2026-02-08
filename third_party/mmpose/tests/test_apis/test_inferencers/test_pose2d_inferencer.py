@@ -7,13 +7,13 @@ from collections import defaultdict
 from tempfile import TemporaryDirectory
 from unittest import TestCase
 
-import mmcv
 import torch
 from mmengine.infer.infer import BaseInferencer
-
 from mmpose.apis.inferencers import Pose2DInferencer
 from mmpose.structures import PoseDataSample
 from mmpose.utils import register_all_modules
+
+import mmcv
 
 
 class TestPose2DInferencer(TestCase):

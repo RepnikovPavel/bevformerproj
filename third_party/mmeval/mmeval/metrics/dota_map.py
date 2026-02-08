@@ -1,9 +1,9 @@
 # Copyright (c) OpenMMLab. All rights reserved.
-import numpy as np
 from typing import Dict, List, Optional, Sequence, Tuple, Union
 
-from .utils.bbox_overlaps_rotated import (calculate_bboxes_area_rotated,
-                                          qbox_to_rbox)
+import numpy as np
+
+from .utils.bbox_overlaps_rotated import calculate_bboxes_area_rotated, qbox_to_rbox
 from .voc_map import VOCMeanAP
 
 try:

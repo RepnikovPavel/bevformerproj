@@ -1,10 +1,11 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 from typing import Dict
 
-import mmengine
 import torch.nn as nn
 
+import mmengine
 from mmdeploy.utils.constants import IR, Backend
+
 from .function_rewriter import FunctionRewriter
 from .module_rewriter import ModuleRewriter
 from .rewriter_utils import collect_env

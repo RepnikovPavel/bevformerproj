@@ -21,6 +21,7 @@ from torch import Tensor, nn
 from mmdet3d.registry import MODELS
 from mmdet3d.structures import BaseInstance3DBoxes, rotation_3d_in_axis
 from mmdet3d.utils import InstanceList, OptInstanceList
+
 from .base_3d_dense_head import Base3DDenseHead
 
 

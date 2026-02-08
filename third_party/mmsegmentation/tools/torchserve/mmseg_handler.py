@@ -3,12 +3,12 @@ import base64
 import os
 
 import cv2
-import mmcv
 import torch
 from mmengine.model.utils import revert_sync_batchnorm
+from mmseg.apis import inference_model, init_model
 from ts.torch_handler.base_handler import BaseHandler
 
-from mmseg.apis import inference_model, init_model
+import mmcv
 
 
 class MMsegHandler(BaseHandler):

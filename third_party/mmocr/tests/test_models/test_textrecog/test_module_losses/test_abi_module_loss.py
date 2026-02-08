@@ -4,7 +4,6 @@ from unittest import TestCase
 import numpy as np
 import torch
 from mmengine.structures import LabelData
-
 from mmocr.models.textrecog.module_losses import ABIModuleLoss
 from mmocr.structures import TextRecogDataSample
 

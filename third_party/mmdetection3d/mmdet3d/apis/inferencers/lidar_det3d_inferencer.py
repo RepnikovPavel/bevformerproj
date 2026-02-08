@@ -2,19 +2,23 @@
 import os.path as osp
 from typing import Dict, List, Optional, Sequence, Union
 
-import mmengine
 import numpy as np
 import torch
 from mmengine.dataset import Compose
-from mmengine.fileio import (get_file_backend, isdir, join_path,
-                             list_dir_or_file)
+from mmengine.fileio import get_file_backend, isdir, join_path, list_dir_or_file
 from mmengine.infer.infer import ModelType
 from mmengine.structures import InstanceData
 
+import mmengine
 from mmdet3d.registry import INFERENCERS
-from mmdet3d.structures import (CameraInstance3DBoxes, DepthInstance3DBoxes,
-                                Det3DDataSample, LiDARInstance3DBoxes)
+from mmdet3d.structures import (
+    CameraInstance3DBoxes,
+    DepthInstance3DBoxes,
+    Det3DDataSample,
+    LiDARInstance3DBoxes,
+)
 from mmdet3d.utils import ConfigType
+
 from .base_3d_inferencer import Base3DInferencer
 
 InstanceList = List[InstanceData]

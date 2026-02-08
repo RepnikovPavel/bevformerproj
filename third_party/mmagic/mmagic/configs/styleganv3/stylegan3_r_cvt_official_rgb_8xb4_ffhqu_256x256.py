@@ -2,8 +2,7 @@
 from mmengine.config import read_base
 
 with read_base():
-    from .._base_.datasets.unconditional_imgs_flip_lanczos_resize_256x256 \
-        import *
+    from .._base_.datasets.unconditional_imgs_flip_lanczos_resize_256x256 import *
     from .._base_.gen_default_runtime import *
     from .._base_.models.base_styleganv3 import *
 

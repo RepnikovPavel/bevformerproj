@@ -3,7 +3,6 @@ import unittest
 
 import numpy as np
 import torch
-
 from mmocr.utils import point_distance, points_center
 
 

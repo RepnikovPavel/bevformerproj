@@ -1,17 +1,15 @@
 # Copyright (c) OpenMMLab. All rights reserved.
-from torch.nn.modules.conv import Conv2d
-
 from mmdet3d.models.backbones.second import SECOND
-from mmdet3d.models.data_preprocessors.data_preprocessor import \
-    Det3DDataPreprocessor
-from mmdet3d.models.dense_heads.centerpoint_head import (CenterHead,
-                                                         SeparateHead)
+from mmdet3d.models.data_preprocessors.data_preprocessor import Det3DDataPreprocessor
+from mmdet3d.models.dense_heads.centerpoint_head import CenterHead, SeparateHead
 from mmdet3d.models.detectors.centerpoint import CenterPoint
 from mmdet3d.models.middle_encoders.pillar_scatter import PointPillarsScatter
 from mmdet3d.models.necks.second_fpn import SECONDFPN
-from mmdet3d.models.task_modules.coders.centerpoint_bbox_coders import \
-    CenterPointBBoxCoder
+from mmdet3d.models.task_modules.coders.centerpoint_bbox_coders import (
+                                                         CenterPointBBoxCoder,
+)
 from mmdet3d.models.voxel_encoders.pillar_encoder import PillarFeatureNet
+from torch.nn.modules.conv import Conv2d
 
 voxel_size = [0.2, 0.2, 8]
 model = dict(

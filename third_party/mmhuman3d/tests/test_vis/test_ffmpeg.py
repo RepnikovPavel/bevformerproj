@@ -3,7 +3,6 @@ import os.path as osp
 
 import numpy as np
 import pytest
-
 from mmhuman3d.utils.ffmpeg_utils import (
     array_to_images,
     array_to_video,

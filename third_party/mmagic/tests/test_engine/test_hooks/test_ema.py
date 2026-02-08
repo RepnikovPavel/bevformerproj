@@ -5,10 +5,9 @@ from unittest.mock import MagicMock
 import pytest
 import torch
 import torch.nn as nn
+from mmagic.engine import ExponentialMovingAverageHook
 from mmengine.model import MMDistributedDataParallel
 from packaging import version
-
-from mmagic.engine import ExponentialMovingAverageHook
 
 
 class SimpleModule(nn.Module):

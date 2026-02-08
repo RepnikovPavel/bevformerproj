@@ -2,9 +2,11 @@
 Rotate IoU computation is referred from https://github.com/hongzhenwang/RRPN-revise
 """
 import math
+
 import numba
 import numpy as np
 from numba import cuda
+
 
 @numba.jit(nopython=True)
 def div_up(m, n):

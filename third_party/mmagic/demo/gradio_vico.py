@@ -3,12 +3,12 @@ import os
 
 import gradio as gr
 import torch
-from mmengine import Config
+from mmagic.registry import MODELS
+from mmagic.utils import register_all_modules
 from mmengine.runner import Runner
 from PIL import Image
 
-from mmagic.registry import MODELS
-from mmagic.utils import register_all_modules
+from mmengine import Config
 
 register_all_modules()
 

@@ -6,6 +6,7 @@ import sys
 from typing import Any, Optional, Sequence
 
 from mmdeploy.utils import get_root_logger
+
 from ..base import BACKEND_MANAGERS, BaseBackendManager
 
 
@@ -84,6 +85,7 @@ class SNPEManager(BaseBackendManager):
             sys.exit(1)
 
         from mmdeploy.apis.snpe import get_env_key, get_output_model_file
+
         from .onnx2dlc import from_onnx
 
         if get_env_key() not in os.environ:

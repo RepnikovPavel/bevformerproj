@@ -5,6 +5,7 @@ import torch.nn.functional as F
 from mmcv.ops import sigmoid_focal_loss as _sigmoid_focal_loss
 
 from mmdet.registry import MODELS
+
 from .accuracy import accuracy
 from .utils import weight_reduce_loss
 

@@ -2,8 +2,7 @@
 from mmcls.datasets.builder import DATASETS, PIPELINES
 
 from .base import BaseFewShotDataset
-from .builder import (build_dataloader, build_dataset,
-                      build_meta_test_dataloader)
+from .builder import build_dataloader, build_dataset, build_meta_test_dataloader
 from .cub import CUBDataset
 from .dataset_wrappers import EpisodicDataset, MetaTestDataset
 from .mini_imagenet import MiniImageNetDataset

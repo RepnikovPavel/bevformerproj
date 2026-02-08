@@ -3,44 +3,33 @@
 # This source code is licensed under the MIT license found in the
 # LICENSE file in the root directory of this source tree.
 
+import math
 import os
 import shutil
-import json
 import time
-import torch
-import numpy as np
-import math
-from utils.util import Logger, ValueWindow
-from torch.utils.data import ConcatDataset, DataLoader
-
-from models.tts.base.tts_trainer import TTSTrainer
-from models.base.base_trainer import BaseTrainer
-from models.base.base_sampler import VariableSampler
-from torch.utils.data.sampler import BatchSampler, SequentialSampler
-from torch.optim import Adam, AdamW
-from torch.nn import MSELoss, L1Loss
-import torch.nn.functional as F
-from models.codec.melvqgan.melspec import MelSpectrogram
-from transformers import get_inverse_sqrt_schedule, get_constant_schedule
+from itertools import chain
 
 import accelerate
-from accelerate.logging import get_logger
+import numpy as np
+import torch
 from accelerate.utils import ProjectConfiguration
-
-from models.codec.amphion_codec.vocos import Vocos
+from models.base.base_sampler import VariableSampler
 from models.codec.amphion_codec.loss import (
-    MultiResolutionSTFTLoss,
-    MultiResolutionMelSpectrogramLoss,
     GANLoss,
+    MultiResolutionMelSpectrogramLoss,
 )
+from models.codec.amphion_codec.vocos import Vocos
+from models.codec.coco.coco_dataset import CocoCollator
 from models.codec.discriminator.hifigan_disriminator import (
     HiFiGANMultiPeriodDiscriminator,
     SpecDiscriminator,
 )
-
-from itertools import chain
-from models.codec.coco.coco_dataset import CocoCollator
+from models.codec.melvqgan.melspec import MelSpectrogram
+from models.tts.base.tts_trainer import TTSTrainer
 from models.vocoders.vocos.vocos_dataset import VocosDataset
+from torch.utils.data import DataLoader
+from transformers import get_constant_schedule
+from utils.util import Logger, ValueWindow
 
 
 def _is_batch_full(batch, num_tokens, max_tokens, max_sentences):

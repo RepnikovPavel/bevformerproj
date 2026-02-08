@@ -4,7 +4,6 @@ from unittest import TestCase
 import pytest
 import torch
 import torch.nn.functional as F
-
 from mmdet3d.models.decode_heads import MinkUNetHead
 from mmdet3d.structures import Det3DDataSample, PointData
 

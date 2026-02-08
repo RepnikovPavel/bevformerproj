@@ -6,7 +6,6 @@ import os.path as osp
 import numpy as np
 import pytest
 import torch
-
 from mmengine.infer import BaseInferencer
 from mmengine.registry import VISUALIZERS, DefaultScope
 from mmengine.testing import RunnerTestCase

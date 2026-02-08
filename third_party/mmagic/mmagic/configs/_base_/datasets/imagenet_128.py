@@ -1,9 +1,13 @@
 # Copyright (c) OpenMMLab. All rights reserved.
+from mmagic.datasets.transforms import (
+                                        CenterCropLongEdge,
+                                        Flip,
+                                        LoadImageFromFile,
+                                        PackInputs,
+                                        RandomCropLongEdge,
+                                        Resize,
+)
 from mmengine.dataset import DefaultSampler
-
-from mmagic.datasets.transforms import (CenterCropLongEdge, Flip,
-                                        LoadImageFromFile, PackInputs,
-                                        RandomCropLongEdge, Resize)
 
 # dataset settings
 dataset_type = 'ImageNet'

@@ -2,16 +2,17 @@
 from copy import deepcopy
 from typing import Callable, Dict, Optional, Sequence, Tuple, Union
 
-import mmengine
 import numpy as np
 import torch
-from mmengine import Config
 from mmengine.dataset import pseudo_collate
 from mmengine.dist import cast_data_device
 from mmengine.model import BaseDataPreprocessor
 
+import mmengine
 from mmdeploy.codebase.base import BaseTask
 from mmdeploy.utils import Task, get_input_shape
+from mmengine import Config
+
 from .mmocr import MMOCR_TASK
 
 

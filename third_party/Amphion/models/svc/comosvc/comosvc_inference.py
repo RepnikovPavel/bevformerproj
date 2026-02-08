@@ -4,9 +4,9 @@
 # LICENSE file in the root directory of this source tree.
 
 import torch
+from modules.encoder.condition_encoder import ConditionEncoder
 
 from models.svc.base import SVCInference
-from modules.encoder.condition_encoder import ConditionEncoder
 from models.svc.comosvc.comosvc import ComoSVC
 
 

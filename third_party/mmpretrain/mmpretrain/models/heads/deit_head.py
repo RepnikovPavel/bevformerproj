@@ -6,6 +6,7 @@ import torch
 import torch.nn as nn
 
 from mmpretrain.registry import MODELS
+
 from .vision_transformer_head import VisionTransformerClsHead
 
 

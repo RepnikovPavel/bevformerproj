@@ -482,9 +482,11 @@ class PretrainedInit:
         self.map_location = map_location
 
     def __call__(self, module):
-        from mmengine.runner.checkpoint import (_load_checkpoint_with_prefix,
-                                                load_checkpoint,
-                                                load_state_dict)
+        from mmengine.runner.checkpoint import (
+            _load_checkpoint_with_prefix,
+            load_checkpoint,
+            load_state_dict,
+        )
         if self.prefix is None:
             print_log(f'load model from: {self.checkpoint}', logger='current')
             load_checkpoint(

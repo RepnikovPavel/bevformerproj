@@ -21,21 +21,15 @@
 #
 
 from itertools import chain
-from typing import Any
-from typing import Dict
-from typing import List
-from typing import Tuple
-from typing import Union
-from typing import NamedTuple
+from typing import Any, Dict, List, NamedTuple, Tuple, Union
 
 import torch
-
-from modules.wenet_extractor.paraformer.utils import end_detect
 from modules.wenet_extractor.paraformer.search.ctc import CTCPrefixScorer
 from modules.wenet_extractor.paraformer.search.scorer_interface import (
-    ScorerInterface,
     PartialScorerInterface,
+    ScorerInterface,
 )
+from modules.wenet_extractor.paraformer.utils import end_detect
 
 
 class Hypothesis(NamedTuple):

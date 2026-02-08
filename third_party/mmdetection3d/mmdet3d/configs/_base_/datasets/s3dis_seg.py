@@ -1,19 +1,22 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 from mmcv.transforms.processing import TestTimeAug
-from mmengine.dataset.sampler import DefaultSampler
-from mmengine.visualization.vis_backend import LocalVisBackend
-
 from mmdet3d.datasets.s3dis_dataset import S3DISSegDataset
 from mmdet3d.datasets.transforms.formating import Pack3DDetInputs
-from mmdet3d.datasets.transforms.loading import (LoadAnnotations3D,
+from mmdet3d.datasets.transforms.loading import (
+                                                 LoadAnnotations3D,
                                                  LoadPointsFromFile,
                                                  NormalizePointsColor,
-                                                 PointSegClassMapping)
-from mmdet3d.datasets.transforms.transforms_3d import (IndoorPatchPointSample,
-                                                       RandomFlip3D)
+                                                 PointSegClassMapping,
+)
+from mmdet3d.datasets.transforms.transforms_3d import (
+                                                 IndoorPatchPointSample,
+                                                 RandomFlip3D,
+)
 from mmdet3d.evaluation.metrics.seg_metric import SegMetric
 from mmdet3d.models.segmentors.seg3d_tta import Seg3DTTAModel
 from mmdet3d.visualization.local_visualizer import Det3DLocalVisualizer
+from mmengine.dataset.sampler import DefaultSampler
+from mmengine.visualization.vis_backend import LocalVisBackend
 
 # For S3DIS seg we usually do 13-class segmentation
 class_names = ('ceiling', 'floor', 'wall', 'beam', 'column', 'window', 'door',

@@ -5,7 +5,6 @@ from unittest.mock import MagicMock
 
 import pytest
 import torch
-
 from mmselfsup.models.algorithms import MILAN
 from mmselfsup.structures import SelfSupDataSample
 

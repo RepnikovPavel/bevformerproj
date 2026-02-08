@@ -1,7 +1,6 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import pytest
 import torch
-
 from mmpretrain.models.backbones import SEResNeXt
 from mmpretrain.models.backbones.seresnext import SEBottleneck as SEBottleneckX
 

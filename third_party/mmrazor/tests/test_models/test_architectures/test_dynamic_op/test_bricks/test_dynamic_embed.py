@@ -3,7 +3,6 @@ from unittest import TestCase
 
 import pytest
 from mmcls.models.utils import PatchEmbed
-
 from mmrazor.models.architectures.dynamic_ops import DynamicPatchEmbed
 from mmrazor.models.mutables import SquentialMutableChannel
 

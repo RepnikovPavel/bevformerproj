@@ -1,9 +1,8 @@
-import os
-import sys
-import json
 import argparse
-from tqdm import tqdm
+import json
+import os
 
+from tqdm import tqdm
 
 if __name__ == "__main__":
 

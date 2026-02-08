@@ -3,15 +3,17 @@ import gradio as gr
 import numpy as np
 import PIL.Image as Image
 import torch
-from matplotlib import pyplot as plt
-# MMOCR
-from mmocr.apis.inferencers import MMOCRInferencer
-from mmocr.utils import poly2bbox
-# SAM
-from segment_anything import SamPredictor, sam_model_registry
 
 # Diffusers
 from diffusers import StableDiffusionInpaintPipeline
+from matplotlib import pyplot as plt
+
+# MMOCR
+from mmocr.apis.inferencers import MMOCRInferencer
+from mmocr.utils import poly2bbox
+
+# SAM
+from segment_anything import SamPredictor, sam_model_registry
 
 det_config = 'mmocr_dev/configs/textdet/dbnetpp/dbnetpp_swinv2_base_w16_in21k.py'  # noqa
 det_weight = 'checkpoints/mmocr/db_swin_mix_pretrain.pth'

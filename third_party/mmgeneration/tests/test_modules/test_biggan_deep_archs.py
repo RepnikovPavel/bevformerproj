@@ -4,13 +4,15 @@ from functools import partial
 
 import pytest
 import torch
-
 from mmgen.models import build_module
+
 # yapf:disable
-from mmgen.models.architectures.biggan import (BigGANDeepDiscResBlock,
-                                               BigGANDeepDiscriminator,
-                                               BigGANDeepGenerator,
-                                               BigGANDeepGenResBlock)
+from mmgen.models.architectures.biggan import (
+    BigGANDeepDiscResBlock,
+    BigGANDeepDiscriminator,
+    BigGANDeepGenerator,
+    BigGANDeepGenResBlock,
+)
 
 # yapf:enable
 

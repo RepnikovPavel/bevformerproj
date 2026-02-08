@@ -6,9 +6,9 @@ import torch.nn as nn
 from mmcv.cnn import ConvModule
 from mmengine.optim.optimizer import build_optim_wrapper
 from mmengine.registry import init_default_scope
-
-from mmseg.engine.optimizers.layer_decay_optimizer_constructor import \
-    LearningRateDecayOptimizerConstructor
+from mmseg.engine.optimizers.layer_decay_optimizer_constructor import (
+    LearningRateDecayOptimizerConstructor,
+)
 
 init_default_scope('mmseg')
 

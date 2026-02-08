@@ -2,10 +2,11 @@
 import os.path as osp
 from typing import Callable, Dict, List, Optional, Union
 
-import mmengine
 from mmengine.logging import MMLogger
 
+import mmengine
 from mmaction.registry import DATASETS
+
 from .base import BaseActionDataset
 
 

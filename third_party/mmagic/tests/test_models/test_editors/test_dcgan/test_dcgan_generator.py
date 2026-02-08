@@ -1,7 +1,6 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import pytest
 import torch
-
 from mmagic.models.editors.dcgan import DCGANGenerator
 from mmagic.registry import MODELS
 

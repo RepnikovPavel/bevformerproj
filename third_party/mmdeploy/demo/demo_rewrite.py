@@ -4,11 +4,10 @@ import os
 import shutil
 
 import torch
-from pyppeteer import launch
-from torchvision.models import resnet18
-
 from mmdeploy.core import FUNCTION_REWRITER, RewriterContext, patch_model
 from mmdeploy.utils import get_root_logger
+from pyppeteer import launch
+from torchvision.models import resnet18
 
 
 @FUNCTION_REWRITER.register_rewriter(

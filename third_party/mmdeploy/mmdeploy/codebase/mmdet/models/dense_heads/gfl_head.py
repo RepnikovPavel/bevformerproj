@@ -7,9 +7,11 @@ from mmengine.config import ConfigDict
 from mmengine.structures import InstanceData
 from torch import Tensor
 
-from mmdeploy.codebase.mmdet.deploy import (gather_topk,
-                                            get_post_processing_params,
-                                            pad_with_value)
+from mmdeploy.codebase.mmdet.deploy import (
+    gather_topk,
+    get_post_processing_params,
+    pad_with_value,
+)
 from mmdeploy.core import FUNCTION_REWRITER
 from mmdeploy.mmcv.ops import multiclass_nms
 from mmdeploy.utils import Backend, get_backend, is_dynamic_shape

@@ -1,13 +1,14 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 from copy import deepcopy
 
-import mmcv
 import torch
 import torch.nn as nn
 from mmcv.runner.checkpoint import _load_checkpoint_with_prefix
 
+import mmcv
 from mmgen.models.architectures.common import get_module_device
 from mmgen.models.builder import MODULES, build_module
+
 from .utils import get_mean_latent
 
 

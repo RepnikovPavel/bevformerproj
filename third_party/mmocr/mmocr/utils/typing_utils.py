@@ -9,8 +9,12 @@ from mmengine.config import ConfigDict
 from mmengine.structures import InstanceData, LabelData
 
 from mmocr import digit_version
-from mmocr.structures import (KIEDataSample, TextDetDataSample,
-                              TextRecogDataSample, TextSpottingDataSample)
+from mmocr.structures import (
+    KIEDataSample,
+    TextDetDataSample,
+    TextRecogDataSample,
+    TextSpottingDataSample,
+)
 
 # Config
 ConfigType = Union[ConfigDict, Dict]

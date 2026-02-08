@@ -1,6 +1,7 @@
 """from https://github.com/Plachtaa/VALL-E-X/g2p"""
 
 import re
+
 from unidecode import unidecode
 
 # Regular expression matching Japanese without punctuation marks:

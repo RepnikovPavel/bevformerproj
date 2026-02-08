@@ -11,8 +11,11 @@ try:
     from torch._C import ScriptObject  # type: ignore[attr-defined]
     from torch.ao.quantization.quantize_fx import QuantizationTracer
     from torch.fx import Graph, GraphModule, Tracer
-    from torch.fx._symbolic_trace import (_autowrap_check,
-                                          _patch_wrapped_functions, _Patcher)
+    from torch.fx._symbolic_trace import (
+        _autowrap_check,
+        _patch_wrapped_functions,
+        _Patcher,
+    )
     from torch.fx.proxy import Proxy
 except ImportError:
     from mmrazor.utils import get_placeholder

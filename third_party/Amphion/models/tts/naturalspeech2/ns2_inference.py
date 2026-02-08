@@ -5,20 +5,16 @@
 
 import argparse
 import os
-import torch
-import soundfile as sf
-import numpy as np
 
-from models.tts.naturalspeech2.ns2 import NaturalSpeech2
+import numpy as np
+import soundfile as sf
+import torch
+import torchaudio
 from encodec import EncodecModel
 from encodec.utils import convert_audio
-from utils.util import load_config
-
-from text import text_to_sequence
+from models.tts.naturalspeech2.ns2 import NaturalSpeech2
 from text.cmudict import valid_symbols
 from text.g2p import preprocess_english, read_lexicon
-
-import torchaudio
 
 
 class NS2Inference:

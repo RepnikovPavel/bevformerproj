@@ -1,7 +1,7 @@
 # Copyright (c) OpenMMLab. All rights reserved.
-import pytest
 from collections import Counter
 
+import pytest
 from mmeval.metrics.bleu import get_n_gram
 
 

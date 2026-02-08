@@ -11,16 +11,16 @@
 #
 # All configuration values have a default; values that are commented out
 # serve to show the default.
+import os
+import subprocess
 import sys
-import os, subprocess
-import shlex
 
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 curr_path = os.path.dirname(os.path.abspath(os.path.expanduser(__file__)))
 sys.path.insert(0, curr_path)
-from sphinx_util import MarkdownParser, AutoStructify
+from sphinx_util import AutoStructify, MarkdownParser
 
 # -- General configuration ------------------------------------------------
 

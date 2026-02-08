@@ -4,14 +4,16 @@ dmlc will run as a Yarn application
 """
 # pylint: disable=invalid-name, too-many-locals, too-many-branches, missing-docstring
 from __future__ import absolute_import
+
+import logging
 import os
+import platform
 import subprocess
 import warnings
-import logging
-import platform
 from threading import Thread
-from . import opts
-from . import tracker
+
+from . import opts, tracker
+
 
 def yarn_submit(args, nworker, nserver, pass_env):
     """Submission function for YARN."""

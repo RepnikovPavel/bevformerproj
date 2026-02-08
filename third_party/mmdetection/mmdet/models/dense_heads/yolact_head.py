@@ -12,8 +12,14 @@ from mmengine.structures import InstanceData
 from torch import Tensor
 
 from mmdet.registry import MODELS
-from mmdet.utils import (ConfigType, InstanceList, OptConfigType,
-                         OptInstanceList, OptMultiConfig)
+from mmdet.utils import (
+    ConfigType,
+    InstanceList,
+    OptConfigType,
+    OptInstanceList,
+    OptMultiConfig,
+)
+
 from ..layers import fast_nms
 from ..utils import images_to_levels, multi_apply, select_single_mlvl
 from ..utils.misc import empty_instances

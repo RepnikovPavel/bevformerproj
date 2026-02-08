@@ -2,6 +2,7 @@
 from typing import Optional, Union
 
 from mmagic.registry import DATASETS
+
 from .basic_conditional_dataset import BasicConditionalDataset
 from .categories import IMAGENET_CATEGORIES
 

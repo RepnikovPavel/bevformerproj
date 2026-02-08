@@ -2,12 +2,12 @@
 from unittest import TestCase
 
 import torch
-from mmengine import Config
-from mmengine.structures import InstanceData
-
 from mmdet3d import *  # noqa
 from mmdet3d.models.dense_heads import Anchor3DHead
 from mmdet3d.structures import Box3DMode, LiDARInstance3DBoxes
+from mmengine.structures import InstanceData
+
+from mmengine import Config
 
 
 class TestAnchor3DHead(TestCase):

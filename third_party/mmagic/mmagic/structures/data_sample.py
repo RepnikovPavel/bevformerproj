@@ -5,11 +5,11 @@ from itertools import chain
 from numbers import Number
 from typing import Any, Sequence, Union
 
-import mmengine
 import numpy as np
 import torch
 from mmengine.structures import BaseDataElement, LabelData
 
+import mmengine
 from mmagic.utils import all_to_tensor
 
 

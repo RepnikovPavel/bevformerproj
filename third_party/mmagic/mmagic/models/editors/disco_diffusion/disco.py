@@ -1,16 +1,16 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 from typing import Dict, Union
 
-import mmcv
-import mmengine
 import torch
 import torch.nn as nn
 from mmengine.runner import set_random_seed
-from mmengine.runner.checkpoint import (_load_checkpoint,
-                                        _load_checkpoint_with_prefix)
+from mmengine.runner.checkpoint import _load_checkpoint, _load_checkpoint_with_prefix
 from tqdm import tqdm
 
+import mmcv
+import mmengine
 from mmagic.registry import DIFFUSION_SCHEDULERS, MODELS
+
 from .guider import ImageTextGuider
 
 ModelType = Union[Dict, nn.Module]

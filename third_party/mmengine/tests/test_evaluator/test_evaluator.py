@@ -6,7 +6,6 @@ from unittest import TestCase
 
 import numpy as np
 import torch
-
 from mmengine.evaluator import BaseMetric, Evaluator, get_metric_value
 from mmengine.logging import MMLogger
 from mmengine.registry import METRICS

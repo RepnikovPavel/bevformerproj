@@ -1,19 +1,8 @@
+import math
+
+import open_clip
 import torch
 import torch.nn as nn
-import matplotlib.pyplot as plt
-import numpy as np
-import gc
-from PIL import Image, ImageDraw
-from torchvision.transforms import PILToTensor
-import os
-import open_clip
-from torchvision import transforms
-import copy
-import json
-from tqdm.notebook import tqdm
-import time
-import datetime
-import math
 
 
 def interpolate_pos_encoding(clip_model, embeddings: torch.Tensor, height: int, width: int) -> torch.Tensor:

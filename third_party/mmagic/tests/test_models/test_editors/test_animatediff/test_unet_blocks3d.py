@@ -3,10 +3,13 @@ import platform
 
 import pytest
 import torch
-
 from mmagic.models.editors.animatediff.unet_block import (
-    CrossAttnDownBlock3D, CrossAttnUpBlock3D, UNetMidBlock3DCrossAttn,
-    get_down_block, get_up_block)
+    CrossAttnDownBlock3D,
+    CrossAttnUpBlock3D,
+    UNetMidBlock3DCrossAttn,
+    get_down_block,
+    get_up_block,
+)
 
 
 @pytest.mark.skipif(

@@ -3,13 +3,14 @@
 from typing import Optional, Union
 
 import cv2
-import mmcv
 import numpy as np
 from mmcv.transforms import BaseTransform
 from mmcv.transforms.utils import cache_randomness
 
+import mmcv
 from mmdet.registry import TRANSFORMS
 from mmdet.structures.bbox import autocast_box_type
+
 from .augment_wrappers import _MAX_LEVEL, level_to_mag
 
 

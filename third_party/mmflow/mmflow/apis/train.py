@@ -3,16 +3,22 @@ import random
 import warnings
 from typing import Optional, Sequence, Union
 
-import mmcv
 import numpy as np
 import torch
 import torch.distributed as dist
 from mmcv.cnn.utils import revert_sync_batchnorm
 from mmcv.parallel import MMDataParallel, MMDistributedDataParallel
-from mmcv.runner import (HOOKS, Fp16OptimizerHook, OptimizerHook,
-                         build_optimizer, build_runner, get_dist_info)
+from mmcv.runner import (
+    HOOKS,
+    Fp16OptimizerHook,
+    OptimizerHook,
+    build_optimizer,
+    build_runner,
+    get_dist_info,
+)
 from mmcv.utils import Config, build_from_cfg
 
+import mmcv
 from mmflow import digit_version
 from mmflow.core import DistEvalHook, EvalHook
 from mmflow.datasets import build_dataloader, build_dataset

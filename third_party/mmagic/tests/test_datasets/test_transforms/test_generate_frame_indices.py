@@ -4,10 +4,11 @@ import os.path as osp
 
 import numpy as np
 import pytest
-
-from mmagic.datasets.transforms import (GenerateFrameIndices,
-                                        GenerateFrameIndiceswithPadding,
-                                        GenerateSegmentIndices)
+from mmagic.datasets.transforms import (
+    GenerateFrameIndices,
+    GenerateFrameIndiceswithPadding,
+    GenerateSegmentIndices,
+)
 
 
 class TestAugmentations:

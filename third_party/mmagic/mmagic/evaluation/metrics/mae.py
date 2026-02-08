@@ -4,6 +4,7 @@
 import numpy as np
 
 from mmagic.registry import METRICS
+
 from .base_sample_wise_metric import BaseSampleWiseMetric
 
 

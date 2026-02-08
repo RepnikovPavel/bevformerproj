@@ -4,7 +4,6 @@ from copy import deepcopy
 from typing import List, Sequence, Tuple, Union
 
 import cv2
-import mmcv
 import numpy as np
 import torch
 from mmcv.image.geometric import _scale_size
@@ -15,12 +14,13 @@ from mmdet.datasets.transforms import LoadAnnotations as MMDET_LoadAnnotations
 from mmdet.datasets.transforms import RandomAffine as MMDET_RandomAffine
 from mmdet.datasets.transforms import RandomFlip as MMDET_RandomFlip
 from mmdet.datasets.transforms import Resize as MMDET_Resize
-from mmdet.structures.bbox import (HorizontalBoxes, autocast_box_type,
-                                   get_box_type)
+from mmdet.structures.bbox import HorizontalBoxes, autocast_box_type, get_box_type
 from mmdet.structures.mask import PolygonMasks, polygon_to_bitmap
 from numpy import random
 
+import mmcv
 from mmyolo.registry import TRANSFORMS
+
 from .keypoint_structure import Keypoints
 
 # TODO: Waiting for MMCV support

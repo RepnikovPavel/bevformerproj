@@ -8,9 +8,9 @@ import math
 from typing import Tuple, Type
 
 import torch
+from mmseg.registry import MODELS
 from torch import Tensor, nn
 
-from mmseg.registry import MODELS
 from .common import MLPBlock
 
 

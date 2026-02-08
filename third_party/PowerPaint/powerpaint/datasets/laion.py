@@ -13,7 +13,6 @@ from torch.utils.data import IterableDataset
 from torchvision import transforms
 from webdataset import utils
 
-
 logger = get_logger(__name__)
 
 try:

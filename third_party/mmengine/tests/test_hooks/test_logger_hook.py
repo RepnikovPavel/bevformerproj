@@ -6,7 +6,6 @@ import shutil
 from unittest.mock import ANY, MagicMock, call
 
 import torch
-
 from mmengine.fileio import load
 from mmengine.hooks import LoggerHook
 from mmengine.logging import MMLogger

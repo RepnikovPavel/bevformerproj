@@ -1,13 +1,13 @@
 # Copyright (c) OpenMMLab. All rights reserved.
-import mmengine
 import pytest
 import torch
-from mmengine.config import ConfigDict
-from mmengine.structures import InstanceData
-
 from mmdeploy.codebase import import_codebase
 from mmdeploy.utils import Backend, Codebase
 from mmdeploy.utils.test import WrapModel, check_backend, get_rewrite_outputs
+from mmengine.config import ConfigDict
+from mmengine.structures import InstanceData
+
+import mmengine
 
 try:
     from torch.testing import assert_close as torch_assert_close
@@ -20,8 +20,10 @@ except ImportError:
     pytest.skip(
         f'{Codebase.MMPOSE} is not installed.', allow_module_level=True)
 
-from .utils import generate_mmpose_deploy_config  # noqa: E402
-from .utils import generate_mmpose_task_processor  # noqa: E402
+from .utils import (
+    generate_mmpose_deploy_config,  # noqa: E402
+    generate_mmpose_task_processor,  # noqa: E402
+)
 
 
 def get_heatmap_head():

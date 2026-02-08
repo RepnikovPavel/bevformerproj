@@ -2,10 +2,10 @@
 import os.path as osp
 from collections import defaultdict
 
-import mmcv
 import numpy as np
-
 from mmtrack.datasets import DATASETS as DATASETS
+
+import mmcv
 
 PREFIX = osp.join(osp.dirname(__file__), '../../data')
 

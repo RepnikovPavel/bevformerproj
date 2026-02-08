@@ -1,9 +1,8 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import torch
 import torch.nn as nn
-from torch.utils.data import Dataset
-
 from mmselfsup.models.utils import Extractor
+from torch.utils.data import Dataset
 
 
 class DummyDataset(Dataset):

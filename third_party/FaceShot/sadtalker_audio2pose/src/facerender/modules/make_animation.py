@@ -1,8 +1,9 @@
-from scipy.spatial import ConvexHull
+import numpy as np
 import torch
 import torch.nn.functional as F
-import numpy as np
-from tqdm import tqdm 
+from scipy.spatial import ConvexHull
+from tqdm import tqdm
+
 
 def normalize_kp(kp_source, kp_driving, kp_driving_initial, adapt_movement_scale=False,
                  use_relative_movement=False, use_relative_jacobian=False):

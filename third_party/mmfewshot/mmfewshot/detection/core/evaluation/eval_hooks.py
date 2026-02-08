@@ -39,8 +39,7 @@ class QuerySupportEvalHook(BaseEvalHook):
         # identified the 'train', 'val' and 'model_init' stages instead
         # of `return_loss` in mmdet. Thus, `single_gpu_test` should be
         # imported from mmfewshot.
-        from mmfewshot.detection.apis import (single_gpu_model_init,
-                                              single_gpu_test)
+        from mmfewshot.detection.apis import single_gpu_model_init, single_gpu_test
 
         # `single_gpu_model_init` extracts features from
         # `model_init_dataloader` for model initialization with single gpu.
@@ -103,8 +102,7 @@ class QuerySupportDistEvalHook(BaseDistEvalHook):
         # identified the 'train', 'val' and 'model_init' stages instead
         # of `return_loss` in mmdet. Thus, `multi_gpu_test` should be
         # imported from mmfewshot.
-        from mmfewshot.detection.apis import (multi_gpu_model_init,
-                                              multi_gpu_test)
+        from mmfewshot.detection.apis import multi_gpu_model_init, multi_gpu_test
 
         # Noted that `model_init_dataloader` should NOT use distributed
         # sampler to make all the models on different gpus get same data

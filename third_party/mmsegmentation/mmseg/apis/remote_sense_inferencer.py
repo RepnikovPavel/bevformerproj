@@ -5,10 +5,11 @@ from typing import List, Optional, Tuple
 
 import numpy as np
 import torch
-from mmengine import Config
 from mmengine.model import BaseModel
 from mmengine.registry import init_default_scope
 from mmengine.runner import load_checkpoint
+
+from mmengine import Config
 
 try:
     from osgeo import gdal
@@ -16,6 +17,7 @@ except ImportError:
     gdal = None
 
 from mmseg.registry import MODELS
+
 from .utils import _preprare_data
 
 

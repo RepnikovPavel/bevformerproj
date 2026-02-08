@@ -6,7 +6,6 @@ import warnings
 from typing import List, Optional, Sequence, Tuple, Union
 
 import cv2
-import mmcv
 import numpy as np
 from mmcv.image import imresize
 from mmcv.image.geometric import _scale_size
@@ -19,6 +18,7 @@ from mmengine.dataset import BaseDataset
 from mmengine.utils import is_str
 from numpy import random
 
+import mmcv
 from mmdet.registry import TRANSFORMS
 from mmdet.structures.bbox import HorizontalBoxes, autocast_box_type
 from mmdet.structures.mask import BitmapMasks, PolygonMasks

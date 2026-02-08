@@ -6,7 +6,6 @@ from typing import Dict, List, Optional, Union
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-from mmengine import print_log
 from mmengine.logging import MMLogger
 from mmengine.model import BaseModel
 from mmengine.runner import set_random_seed
@@ -18,6 +17,7 @@ from mmagic.models.utils import build_module, set_tomesd, set_xformers
 from mmagic.registry import DIFFUSION_SCHEDULERS, MODELS
 from mmagic.structures import DataSample
 from mmagic.utils.typing import SampleList
+from mmengine import print_log
 
 logger = MMLogger.get_current_instance()
 

@@ -5,18 +5,17 @@
 
 import os
 
+import librosa
 import numpy as np
 import soundfile as sf
 import torch
 import torch.nn.functional as F
-from tqdm import tqdm
-import librosa
-
-from evaluation.metrics.similarity.models.RawNetModel import RawNet3
-from evaluation.metrics.similarity.models.RawNetBasicBlock import Bottle2neck
-
-from transformers import Wav2Vec2FeatureExtractor, WavLMForXVector
 from resemblyzer import VoiceEncoder, preprocess_wav
+from tqdm import tqdm
+from transformers import Wav2Vec2FeatureExtractor, WavLMForXVector
+
+from evaluation.metrics.similarity.models.RawNetBasicBlock import Bottle2neck
+from evaluation.metrics.similarity.models.RawNetModel import RawNet3
 
 
 def extract_rawnet_speaker_embd(

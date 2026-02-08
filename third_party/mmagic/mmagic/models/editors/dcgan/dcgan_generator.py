@@ -7,6 +7,7 @@ from mmengine.model import BaseModule, normal_init, update_init_info
 from mmengine.utils.dl_utils.parrots_wrapper import _BatchNorm
 
 from mmagic.registry import MODELS
+
 from ...utils import get_module_device
 
 

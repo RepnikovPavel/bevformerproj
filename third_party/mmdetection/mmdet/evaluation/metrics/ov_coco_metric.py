@@ -12,6 +12,7 @@ from terminaltables import AsciiTable
 
 from mmdet.datasets.api_wrappers import COCO, COCOeval, COCOevalMP
 from mmdet.registry import METRICS
+
 from .coco_metric import CocoMetric
 
 

@@ -5,12 +5,10 @@ import unittest
 
 import numpy as np
 import torch
-from mmengine.structures import InstanceData, LabelData, PixelData
-
-from mmdet.datasets.transforms import (PackDetInputs, PackReIDInputs,
-                                       PackTrackInputs)
+from mmdet.datasets.transforms import PackDetInputs, PackReIDInputs, PackTrackInputs
 from mmdet.structures import DetDataSample, ReIDDataSample
 from mmdet.structures.mask import BitmapMasks
+from mmengine.structures import InstanceData, LabelData, PixelData
 
 
 class TestPackDetInputs(unittest.TestCase):

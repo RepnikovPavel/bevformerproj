@@ -3,8 +3,13 @@ import copy
 from typing import List, Optional, Sequence, Union
 
 import torch
-from mmcv.cnn import (ConvModule, DepthwiseSeparableConvModule, Linear,
-                      build_activation_layer, build_norm_layer)
+from mmcv.cnn import (
+    ConvModule,
+    DepthwiseSeparableConvModule,
+    Linear,
+    build_activation_layer,
+    build_norm_layer,
+)
 from mmengine.structures import PixelData
 from torch import Tensor, nn
 
@@ -12,8 +17,14 @@ from mmpose.evaluation.functional import pose_pck_accuracy
 from mmpose.models.utils.tta import flip_heatmaps
 from mmpose.registry import KEYPOINT_CODECS, MODELS
 from mmpose.utils.tensor_utils import to_numpy
-from mmpose.utils.typing import (ConfigType, MultiConfig, OptConfigType,
-                                 OptSampleList, Predictions)
+from mmpose.utils.typing import (
+    ConfigType,
+    MultiConfig,
+    OptConfigType,
+    OptSampleList,
+    Predictions,
+)
+
 from ..base_head import BaseHead
 
 OptIntSeq = Optional[Sequence[int]]

@@ -1,8 +1,9 @@
 # Copyright (c) OpenMMLab. All rights reserved.
-import mmengine
 import torch
 from mmengine.dist import collect_results_gpu, get_dist_info
 from torch.utils.data import DataLoader
+
+import mmengine
 
 
 def nondist_forward_collect(func: object, data_loader: DataLoader,

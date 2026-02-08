@@ -1,8 +1,6 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import torch
-
-from mmpretrain.models.utils import (ConditionalPositionEncoding,
-                                     RotaryEmbeddingFast)
+from mmpretrain.models.utils import ConditionalPositionEncoding, RotaryEmbeddingFast
 
 
 def test_conditional_position_encoding_module():

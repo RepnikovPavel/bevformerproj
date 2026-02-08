@@ -1,7 +1,13 @@
 # Copyright (c) OpenMMLab. All rights reserved.
-from .base_models import (BaseConditionalGAN, BaseEditModel, BaseGAN,
-                          BaseMattor, BaseTranslationModel, BasicInterpolator,
-                          ExponentialMovingAverage)
+from .base_models import (
+                          BaseConditionalGAN,
+                          BaseEditModel,
+                          BaseGAN,
+                          BaseMattor,
+                          BaseTranslationModel,
+                          BasicInterpolator,
+                          ExponentialMovingAverage,
+)
 from .data_preprocessors import DataPreprocessor, MattorPreprocessor
 from .editors import *  # noqa: F401, F403
 from .losses import *  # noqa: F401, F403

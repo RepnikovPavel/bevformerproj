@@ -1,10 +1,9 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import torch
 from mmcls.models import *  # noqa: F401,F403
+from mmrazor.models.mutators import DCFFChannelMutator
 from torch import Tensor, nn
 from torch.nn import Module
-
-from mmrazor.models.mutators import DCFFChannelMutator
 
 
 class MultiConcatModel(Module):

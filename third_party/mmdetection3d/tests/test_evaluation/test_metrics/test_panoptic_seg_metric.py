@@ -3,10 +3,9 @@ import unittest
 
 import numpy as np
 import torch
-from mmengine.structures import BaseDataElement
-
 from mmdet3d.evaluation.metrics import PanopticSegMetric
 from mmdet3d.structures import Det3DDataSample, PointData
+from mmengine.structures import BaseDataElement
 
 
 class TestPanopticSegMetric(unittest.TestCase):

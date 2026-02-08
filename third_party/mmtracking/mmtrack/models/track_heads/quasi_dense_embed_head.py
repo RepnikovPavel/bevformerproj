@@ -4,6 +4,7 @@ import torch.nn as nn
 from mmdet.models import HEADS, build_loss
 
 from mmtrack.core import embed_similarity
+
 from .roi_embed_head import RoIEmbedHead
 
 

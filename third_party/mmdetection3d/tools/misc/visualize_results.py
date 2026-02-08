@@ -1,10 +1,10 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import argparse
 
+from mmdet3d.registry import DATASETS
+
 import mmengine
 from mmengine import Config
-
-from mmdet3d.registry import DATASETS
 
 
 def parse_args():

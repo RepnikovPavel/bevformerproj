@@ -1,9 +1,10 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 from typing import List, Tuple, Union
 
-import mmcv
 import numpy as np
 from mmengine.utils import is_str
+
+import mmcv
 
 
 def palette_val(palette: List[tuple]) -> List[tuple]:

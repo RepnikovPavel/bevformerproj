@@ -1,8 +1,9 @@
 """from https://github.com/keithito/tacotron"""
 
 import re
-from unidecode import unidecode
+
 import inflect
+from unidecode import unidecode
 
 _inflect = inflect.engine()
 _comma_number_re = re.compile(r"([0-9][0-9\,]+[0-9])")

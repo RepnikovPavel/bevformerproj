@@ -1,8 +1,6 @@
-import mmcv
 import numpy as np
 import pytest
 import torch
-
 from mmhuman3d.apis import (
     feature_extract,
     inference_image_based_model,
@@ -20,6 +18,8 @@ from mmhuman3d.utils.demo_utils import (
     smooth_process,
     speed_up_process,
 )
+
+import mmcv
 
 
 def test_inference_image_based_model():

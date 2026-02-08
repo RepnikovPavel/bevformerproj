@@ -6,13 +6,14 @@
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-from .basic import UNetBlock
 from modules.general.utils import (
-    append_dims,
     ConvNd,
+    append_dims,
     normalization,
     zero_module,
 )
+
+from .basic import UNetBlock
 
 
 class ResBlock(UNetBlock):

@@ -5,14 +5,14 @@ import os.path as osp
 import warnings
 from copy import deepcopy
 
-from mmengine import ConfigDict
-from mmengine.config import Config, DictAction
-from mmengine.runner import Runner
-
 from mmdet.engine.hooks.utils import trigger_visualization_hook
 from mmdet.evaluation import DumpDetResults
 from mmdet.registry import RUNNERS
 from mmdet.utils import setup_cache_size_limit_of_dynamo
+from mmengine.config import Config, DictAction
+from mmengine.runner import Runner
+
+from mmengine import ConfigDict
 
 
 # TODO: support fuse_conv_bn and format_only

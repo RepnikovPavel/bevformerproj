@@ -4,10 +4,13 @@ from typing import Any, Dict, List, Optional, Union
 
 import torch
 import torch.nn as nn
-from mmengine import print_log
-from mmengine.model.weight_init import (constant_init, kaiming_init,
-                                        normal_init, update_init_info,
-                                        xavier_init)
+from mmengine.model.weight_init import (
+    constant_init,
+    kaiming_init,
+    normal_init,
+    update_init_info,
+    xavier_init,
+)
 from mmengine.registry import Registry
 from mmengine.utils.dl_utils.parrots_wrapper import _BatchNorm
 from torch import Tensor
@@ -15,8 +18,14 @@ from torch.nn import init
 
 from mmagic.structures import DataSample
 from mmagic.utils.typing import ForwardInputs
-from .tome_utils import (add_tome_cfg_hook, build_mmagic_tomesd_block,
-                         build_mmagic_wrapper_tomesd_block, isinstance_str)
+from mmengine import print_log
+
+from .tome_utils import (
+    add_tome_cfg_hook,
+    build_mmagic_tomesd_block,
+    build_mmagic_wrapper_tomesd_block,
+    isinstance_str,
+)
 
 
 def default_init_weights(module, scale=1):

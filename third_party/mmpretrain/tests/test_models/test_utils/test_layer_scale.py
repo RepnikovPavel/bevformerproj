@@ -2,7 +2,6 @@
 from unittest import TestCase
 
 import torch
-
 from mmpretrain.models.utils import LayerScale
 
 

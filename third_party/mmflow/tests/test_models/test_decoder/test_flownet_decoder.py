@@ -1,10 +1,12 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import pytest
 import torch
-
-from mmflow.models.decoders.flownet_decoder import (BasicBlock, DeconvModule,
-                                                    FlowNetCDecoder,
-                                                    FlowNetSDecoder)
+from mmflow.models.decoders.flownet_decoder import (
+    BasicBlock,
+    DeconvModule,
+    FlowNetCDecoder,
+    FlowNetSDecoder,
+)
 
 
 def _get_test_data_cuda(

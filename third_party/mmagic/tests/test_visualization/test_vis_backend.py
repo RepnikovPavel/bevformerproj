@@ -8,10 +8,14 @@ from unittest.mock import MagicMock
 
 import numpy as np
 import torch
-from mmengine import Config, MessageHub
+from mmagic.visualization import (
+    PaviVisBackend,
+    TensorboardVisBackend,
+    VisBackend,
+    WandbVisBackend,
+)
 
-from mmagic.visualization import (PaviVisBackend, TensorboardVisBackend,
-                                  VisBackend, WandbVisBackend)
+from mmengine import Config, MessageHub
 
 
 class TestVisBackend(TestCase):

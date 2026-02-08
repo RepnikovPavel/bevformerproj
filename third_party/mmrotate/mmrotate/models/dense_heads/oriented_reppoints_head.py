@@ -12,8 +12,14 @@ from mmdet.core.anchor.point_generator import MlvlPointGenerator
 from mmdet.core.utils import select_single_mlvl
 from mmdet.models.dense_heads.base_dense_head import BaseDenseHead
 
-from mmrotate.core import (build_assigner, build_sampler,
-                           multiclass_nms_rotated, obb2poly, poly2obb)
+from mmrotate.core import (
+    build_assigner,
+    build_sampler,
+    multiclass_nms_rotated,
+    obb2poly,
+    poly2obb,
+)
+
 from ..builder import ROTATED_HEADS, build_loss
 from .utils import levels_to_images
 

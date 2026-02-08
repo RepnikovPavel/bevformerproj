@@ -1,17 +1,21 @@
-import numpy as np
-from .accuracy import softmax
-import pandas as pd
 from multiprocessing import Pool
+
+import numpy as np
+import pandas as pd
+
 import mmcv
 
+from .accuracy import softmax
+
 try:
-    import sys
     import os.path as osp
+    import sys
     sys.path.append(
         osp.abspath(osp.join(__file__, '../../../',
                              'third_party/ActivityNet/Evaluation')))
     from mmaction.third_party.ActivityNet.Evaluation.eval_detection import (
-        compute_average_precision_detection)
+        compute_average_precision_detection,
+    )
 except ImportError:
     print('Failed to import ActivityNet evaluation toolbox. Did you clone with'
           '"--recursive"?')

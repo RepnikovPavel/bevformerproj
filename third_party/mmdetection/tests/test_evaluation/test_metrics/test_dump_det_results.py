@@ -4,11 +4,10 @@ import tempfile
 from unittest import TestCase
 
 import torch
-from mmengine.fileio import load
-from torch import Tensor
-
 from mmdet.evaluation import DumpDetResults
 from mmdet.structures.mask import encode_mask_results
+from mmengine.fileio import load
+from torch import Tensor
 
 
 class TestDumpResults(TestCase):

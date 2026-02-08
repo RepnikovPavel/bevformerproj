@@ -16,7 +16,6 @@ from fastapi.staticfiles import StaticFiles
 from util import bytes_to_pil, pil_to_frame
 from vid2vid import Pipeline
 
-
 # fix mime error on windows
 mimetypes.add_type("application/javascript", ".js")
 

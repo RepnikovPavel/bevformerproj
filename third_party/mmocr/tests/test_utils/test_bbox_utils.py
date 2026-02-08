@@ -3,10 +3,16 @@ import unittest
 
 import numpy as np
 import torch
-
-from mmocr.utils import (bbox2poly, bbox_center_distance, bbox_diag_distance,
-                         bezier2polygon, is_on_same_line, rescale_bbox,
-                         rescale_bboxes, stitch_boxes_into_lines)
+from mmocr.utils import (
+    bbox2poly,
+    bbox_center_distance,
+    bbox_diag_distance,
+    bezier2polygon,
+    is_on_same_line,
+    rescale_bbox,
+    rescale_bboxes,
+    stitch_boxes_into_lines,
+)
 from mmocr.utils.bbox_utils import bbox_jitter
 
 

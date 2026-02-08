@@ -3,13 +3,17 @@ from functools import partial
 
 import pytest
 import torch
-
 from mmagic.models.editors.dcgan import DCGANDiscriminator
 from mmagic.models.editors.pggan import PGGANDiscriminator
-from mmagic.models.losses import (DiscShiftLossComps, GradientPenaltyLossComps,
-                                  R1GradientPenaltyComps)
-from mmagic.models.losses.gan_loss import (gradient_penalty_loss,
-                                           r1_gradient_penalty_loss)
+from mmagic.models.losses import (
+    DiscShiftLossComps,
+    GradientPenaltyLossComps,
+    R1GradientPenaltyComps,
+)
+from mmagic.models.losses.gan_loss import (
+    gradient_penalty_loss,
+    r1_gradient_penalty_loss,
+)
 
 
 class TestDiscShiftLoss(object):

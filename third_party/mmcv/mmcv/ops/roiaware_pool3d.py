@@ -1,10 +1,11 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 from typing import Any, Tuple, Union
 
-import mmengine
 import torch
 from torch import nn as nn
 from torch.autograd import Function
+
+import mmengine
 
 from ..utils import ext_loader
 

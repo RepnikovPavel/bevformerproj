@@ -9,7 +9,6 @@ import matplotlib.pyplot as plt
 import numpy as np
 import torch
 from mmengine.dataset import Compose, default_collate
-
 from mmselfsup.apis import inference_model, init_model
 
 imagenet_mean = np.array([0.485, 0.456, 0.406])

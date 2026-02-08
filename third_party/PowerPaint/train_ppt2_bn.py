@@ -10,7 +10,9 @@ import shutil
 from pathlib import Path
 
 import accelerate
+import diffusers
 import numpy as np
+import powerpaint.datasets
 import torch
 import torch.nn.functional as F
 import torch.utils.checkpoint
@@ -18,26 +20,22 @@ import transformers
 from accelerate import Accelerator
 from accelerate.logging import get_logger
 from accelerate.utils import ProjectConfiguration, set_seed
-from huggingface_hub import create_repo, upload_folder
-from omegaconf import OmegaConf
-from packaging import version
-from PIL import Image
-from torchvision import transforms
-from tqdm.auto import tqdm
-from transformers import PretrainedConfig
-
-import diffusers
-import powerpaint.datasets
 from diffusers.optimization import get_scheduler
 from diffusers.training_utils import compute_snr
 from diffusers.utils import check_min_version, is_wandb_available
 from diffusers.utils.hub_utils import load_or_create_model_card, populate_model_card
 from diffusers.utils.import_utils import is_xformers_available
 from diffusers.utils.torch_utils import is_compiled_module
+from huggingface_hub import create_repo, upload_folder
+from omegaconf import OmegaConf
+from packaging import version
+from PIL import Image
 from powerpaint.datasets import ProbPickingDataset
 from powerpaint.models import BrushNetModel, UNet2DConditionModel
 from powerpaint.pipelines import StableDiffusionPowerPaintBrushNetPipeline
-
+from torchvision import transforms
+from tqdm.auto import tqdm
+from transformers import PretrainedConfig
 
 if is_wandb_available():
     import wandb
@@ -194,7 +192,9 @@ def import_model_class_from_model_name_or_path(pretrained_model_name_or_path: st
 
         return CLIPTextModel
     elif model_class == "RobertaSeriesModelWithTransformation":
-        from diffusers.pipelines.alt_diffusion.modeling_roberta_series import RobertaSeriesModelWithTransformation
+        from diffusers.pipelines.alt_diffusion.modeling_roberta_series import (
+            RobertaSeriesModelWithTransformation,
+        )
 
         return RobertaSeriesModelWithTransformation
     elif model_class == "T5EncoderModel":

@@ -5,9 +5,9 @@
 from mmengine.config import read_base
 
 with read_base():
-    from .._base_.models.mobilenet_v3_small import *
     from .._base_.datasets.imagenet_bs128_mbv3 import *
     from .._base_.default_runtime import *
+    from .._base_.models.mobilenet_v3_small import *
 
 from mmengine.optim import StepLR
 from torch.optim import RMSprop

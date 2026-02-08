@@ -1,10 +1,11 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import pytest
 import torch
-
-from mmgen.models.architectures.singan import (SinGANMSGeneratorPE,
-                                               SinGANMultiScaleDiscriminator,
-                                               SinGANMultiScaleGenerator)
+from mmgen.models.architectures.singan import (
+    SinGANMSGeneratorPE,
+    SinGANMultiScaleDiscriminator,
+    SinGANMultiScaleGenerator,
+)
 
 
 class TestSinGANGen:

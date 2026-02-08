@@ -4,8 +4,9 @@
 # LICENSE file in the root directory of this source tree.
 
 import re
-import jieba
+
 import cn2an
+import jieba
 
 """
     Text clean time
@@ -150,7 +151,7 @@ def normalization(text):
 
 # Word Segmentation, and convert Chinese pronunciation to pinyin (bopomofo)
 def chinese_to_bopomofo(text):
-    from pypinyin import lazy_pinyin, BOPOMOFO
+    from pypinyin import BOPOMOFO, lazy_pinyin
 
     words = jieba.lcut(text, cut_all=False)
     text = ""

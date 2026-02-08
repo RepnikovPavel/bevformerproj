@@ -1,9 +1,11 @@
 # Copyright (c) OpenMMLab. All rights reserved.
-import mmcv
 import torch
+from mmtrack.models.track_heads.mixformer_head import (
+    MixFormerHead,
+    MixFormerScoreDecoder,
+)
 
-from mmtrack.models.track_heads.mixformer_head import (MixFormerHead,
-                                                       MixFormerScoreDecoder)
+import mmcv
 
 
 def test_score_head():

@@ -5,9 +5,13 @@ from .misc import find_latest_checkpoint
 from .placeholder import get_package_placeholder, get_placeholder
 from .runtime_info import RuntimeInfo
 from .setup_env import register_all_modules, setup_multi_processes
-from .typing import (FixMutable, MultiMutatorsRandomSubnet,
-                     SingleMutatorRandomSubnet, SupportRandomSubnet,
-                     ValidFixMutable)
+from .typing import (
+                     FixMutable,
+                     MultiMutatorsRandomSubnet,
+                     SingleMutatorRandomSubnet,
+                     SupportRandomSubnet,
+                     ValidFixMutable,
+)
 
 __all__ = [
     'find_latest_checkpoint', 'setup_multi_processes', 'register_all_modules',

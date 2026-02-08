@@ -5,6 +5,7 @@ from mmdet.core.bbox.assigners.assign_result import AssignResult
 from mmdet.core.bbox.assigners.base_assigner import BaseAssigner
 
 from mmrotate.core.bbox.utils import GaussianMixture
+
 from ..builder import ROTATED_BBOX_ASSIGNERS
 from ..transforms import gt2gaussian
 

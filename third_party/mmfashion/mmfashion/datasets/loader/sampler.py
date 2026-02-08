@@ -4,8 +4,7 @@ import numpy as np
 import torch
 from torch.distributed import get_rank, get_world_size
 from torch.utils.data import Sampler
-from torch.utils.data.distributed import \
-    DistributedSampler as _DistributedSampler
+from torch.utils.data.distributed import DistributedSampler as _DistributedSampler
 
 
 class DistributedSampler(_DistributedSampler):

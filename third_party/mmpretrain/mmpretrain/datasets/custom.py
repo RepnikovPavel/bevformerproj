@@ -1,11 +1,11 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 from typing import Callable, Dict, List, Optional, Sequence, Tuple, Union
 
-from mmengine.fileio import (BaseStorageBackend, get_file_backend,
-                             list_from_file)
+from mmengine.fileio import BaseStorageBackend, get_file_backend, list_from_file
 from mmengine.logging import MMLogger
 
 from mmpretrain.registry import DATASETS
+
 from .base_dataset import BaseDataset
 
 

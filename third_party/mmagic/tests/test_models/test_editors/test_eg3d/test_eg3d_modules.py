@@ -3,9 +3,10 @@ from copy import deepcopy
 from unittest import TestCase
 
 import torch
-
-from mmagic.models.editors.eg3d.eg3d_modules import (SuperResolutionModule,
-                                                     TriPlaneBackbone)
+from mmagic.models.editors.eg3d.eg3d_modules import (
+    SuperResolutionModule,
+    TriPlaneBackbone,
+)
 
 
 class TestTriPlaneBackbone(TestCase):

@@ -8,6 +8,7 @@ from torch import Tensor, nn
 from mmdet3d.models.layers.pointnet_modules import build_sa_module
 from mmdet3d.registry import MODELS
 from mmdet3d.utils import OptConfigType
+
 from .base_pointnet import BasePointNet
 
 ThreeTupleIntType = Tuple[Tuple[Tuple[int, int, int]]]

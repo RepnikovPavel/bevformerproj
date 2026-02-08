@@ -12,8 +12,7 @@ from mmengine.utils import digit_version
 from mmengine.utils.dl_utils import TORCH_VERSION
 
 from ..stylegan3.stylegan3_modules import FullyConnectedLayer
-from .eg3d_utils import (get_ray_limits_box, inverse_transform_sampling,
-                         linspace_batch)
+from .eg3d_utils import get_ray_limits_box, inverse_transform_sampling, linspace_batch
 
 
 class EG3DRenderer(BaseModule):

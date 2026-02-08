@@ -6,20 +6,24 @@ import os.path as osp
 import time
 import warnings
 
-import mmcv
 import torch
 import torch.distributed as dist
-from mmcv import Config, DictAction
 from mmcv.runner import get_dist_info, init_dist
 from mmcv.utils import get_git_hash
 from mmdet import __version__
 from mmdet.apis import init_random_seed, set_random_seed
-
 from mmrotate.apis import train_detector
 from mmrotate.datasets import build_dataset
 from mmrotate.models import build_detector
-from mmrotate.utils import (collect_env, get_device, get_root_logger,
-                            setup_multi_processes)
+from mmrotate.utils import (
+    collect_env,
+    get_device,
+    get_root_logger,
+    setup_multi_processes,
+)
+
+import mmcv
+from mmcv import Config, DictAction
 
 
 def parse_args():

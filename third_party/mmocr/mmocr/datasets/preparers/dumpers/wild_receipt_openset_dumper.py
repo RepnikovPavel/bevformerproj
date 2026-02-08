@@ -4,6 +4,7 @@ from typing import List
 
 from mmocr.registry import DATA_DUMPERS
 from mmocr.utils import list_to_file
+
 from .base import BaseDumper
 
 

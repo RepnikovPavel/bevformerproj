@@ -3,17 +3,14 @@ import logging
 import torch
 import torch.nn as nn
 import torch.utils.checkpoint as cp
-
-from ....utils.misc import rgetattr, rhasattr
-from .resnet import ResNet 
 from mmcv.cnn import constant_init, kaiming_init
 from mmcv.runner import load_checkpoint
 
 from ....ops.trajectory_conv_package.traj_conv import TrajConv
-from .. import flownets
-
-
+from ....utils.misc import rgetattr, rhasattr
 from ...registry import BACKBONES
+from .resnet import ResNet
+
 
 def conv3x3x3(in_planes, out_planes, spatial_stride=1, temporal_stride=1, dilation=1):
     "3x3x3 convolution with padding"

@@ -2,8 +2,15 @@
 from multiprocessing import Pool
 from typing import Callable, Iterable, Optional, Sized
 
-from rich.progress import (BarColumn, MofNCompleteColumn, Progress, Task,
-                           TaskProgressColumn, TextColumn, TimeRemainingColumn)
+from rich.progress import (
+    BarColumn,
+    MofNCompleteColumn,
+    Progress,
+    Task,
+    TaskProgressColumn,
+    TextColumn,
+    TimeRemainingColumn,
+)
 from rich.text import Text
 
 

@@ -1,10 +1,9 @@
 # Copyright (c) OpenMMLab. All rights reserved.
-from mmengine.dataset import DefaultSampler
-
 from mmagic.datasets import BasicImageDataset
 from mmagic.datasets.transforms import LoadImageFromFile, PackInputs
 from mmagic.engine.runner import MultiTestLoop
 from mmagic.evaluation import PSNR, SSIM
+from mmengine.dataset import DefaultSampler
 
 test_pipeline = [
     dict(

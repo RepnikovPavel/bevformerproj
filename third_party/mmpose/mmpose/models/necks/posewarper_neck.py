@@ -1,5 +1,4 @@
 # Copyright (c) OpenMMLab. All rights reserved.
-import mmcv
 import torch
 import torch.nn as nn
 from mmcv.cnn import build_conv_layer, build_norm_layer
@@ -7,8 +6,10 @@ from mmengine.model import constant_init, normal_init
 from mmengine.utils import digit_version
 from torch.nn.modules.batchnorm import _BatchNorm
 
+import mmcv
 from mmpose.models.utils.ops import resize
 from mmpose.registry import MODELS
+
 from ..backbones.resnet import BasicBlock, Bottleneck
 
 try:

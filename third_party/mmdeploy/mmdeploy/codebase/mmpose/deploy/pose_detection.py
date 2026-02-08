@@ -5,16 +5,21 @@ import os
 from collections import defaultdict
 from typing import Callable, Dict, Optional, Sequence, Tuple, Union
 
-import mmcv
-import mmengine
 import numpy as np
 import torch
 from mmengine.model import BaseDataPreprocessor
 from mmengine.registry import Registry
 
+import mmcv
+import mmengine
 from mmdeploy.codebase.base import CODEBASE, BaseTask, MMCodebase
-from mmdeploy.utils import (Codebase, Task, get_codebase_config,
-                            get_input_shape, get_root_logger)
+from mmdeploy.utils import (
+    Codebase,
+    Task,
+    get_codebase_config,
+    get_input_shape,
+    get_root_logger,
+)
 
 
 def process_model_config(

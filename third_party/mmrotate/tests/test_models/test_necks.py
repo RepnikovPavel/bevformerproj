@@ -1,7 +1,6 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import pytest
 import torch
-
 from mmrotate.models.necks.re_fpn import ReFPN, enn
 from mmrotate.models.utils import build_enn_divide_feature
 

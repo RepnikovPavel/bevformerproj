@@ -1,8 +1,9 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 from typing import Any, Sequence, Union
 
-import mmengine
 import numpy as np
+
+import mmengine
 
 
 def inference_model(model_cfg: Union[str, mmengine.Config],

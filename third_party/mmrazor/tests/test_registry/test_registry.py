@@ -4,16 +4,16 @@ from typing import Dict, Optional, Union
 from unittest import TestCase
 
 import torch.nn as nn
-from mmengine import fileio
 from mmengine.config import Config
 from mmengine.model import BaseModel
-
 from mmrazor.models import *  # noqa: F403, F401
 from mmrazor.models.algorithms.base import BaseAlgorithm
 from mmrazor.models.mutables import OneShotMutableOP
 from mmrazor.registry import MODELS
 from mmrazor.structures import load_fix_subnet
 from mmrazor.utils import ValidFixMutable
+
+from mmengine import fileio
 
 
 @MODELS.register_module()

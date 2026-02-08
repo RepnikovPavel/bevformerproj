@@ -3,14 +3,15 @@
 # This source code is licensed under the MIT license found in the
 # LICENSE file in the root directory of this source tree.
 
+import os
 from pathlib import Path
 from typing import List, Tuple
-import os
+
 import numpy as np
 import torch
-from text.symbol_table import SymbolTable
-from text import text_to_sequence
 
+from text import text_to_sequence
+from text.symbol_table import SymbolTable
 
 """
     TextToken: map text to id

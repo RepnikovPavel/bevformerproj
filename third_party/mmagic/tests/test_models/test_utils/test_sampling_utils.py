@@ -2,7 +2,6 @@
 import numpy as np
 import pytest
 import torch
-
 from mmagic.models.utils.sampling_utils import label_sample_fn, noise_sample_fn
 
 

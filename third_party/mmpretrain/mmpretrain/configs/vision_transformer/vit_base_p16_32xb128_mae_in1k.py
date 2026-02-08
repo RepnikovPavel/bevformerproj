@@ -2,10 +2,9 @@
 # This is a BETA new format config file, and the usage may change recently.
 from mmengine.config import read_base
 from mmengine.model import ConstantInit, TruncNormalInit
-from torch.optim import AdamW
-
 from mmpretrain.engine import EMAHook
 from mmpretrain.models import CutMix, Mixup
+from torch.optim import AdamW
 
 with read_base():
     from .._base_.datasets.imagenet_bs64_swin_224 import *

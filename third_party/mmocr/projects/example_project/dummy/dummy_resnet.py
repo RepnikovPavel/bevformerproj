@@ -1,5 +1,4 @@
 from mmdet.models.backbones import ResNet
-
 from mmocr.registry import MODELS
 
 

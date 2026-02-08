@@ -7,6 +7,7 @@ from torch import Tensor
 
 from mmdet.structures import SampleList
 from mmdet.utils import InstanceList, OptInstanceList, OptMultiConfig
+
 from ..utils import unpack_gt_instances
 
 

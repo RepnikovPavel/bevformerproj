@@ -1,10 +1,8 @@
-import os
 import random
-import logging
+from typing import Callable, Dict, Optional, Tuple, Type, Union
+
 import numpy as np
 import torch
-
-from typing import Tuple, Union, Type, Optional, Dict, Callable 
 from torch.utils.data._utils.collate import collate, default_collate_fn_map
 
 

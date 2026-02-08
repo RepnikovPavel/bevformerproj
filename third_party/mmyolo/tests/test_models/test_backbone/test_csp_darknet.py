@@ -3,12 +3,11 @@ from unittest import TestCase
 
 import pytest
 import torch
+from mmyolo.models.backbones import YOLOv5CSPDarknet, YOLOv8CSPDarknet, YOLOXCSPDarknet
+from mmyolo.utils import register_all_modules
 from parameterized import parameterized
 from torch.nn.modules.batchnorm import _BatchNorm
 
-from mmyolo.models.backbones import (YOLOv5CSPDarknet, YOLOv8CSPDarknet,
-                                     YOLOXCSPDarknet)
-from mmyolo.utils import register_all_modules
 from .utils import check_norm_state, is_norm
 
 register_all_modules()

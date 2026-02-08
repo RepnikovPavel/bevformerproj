@@ -7,6 +7,7 @@ import torch.nn as nn
 
 from mmengine.registry import MODELS
 from mmengine.structures import BaseDataElement
+
 from .base_model import BaseModel
 
 # multi-batch inputs processed by different augmentations from the same batch.

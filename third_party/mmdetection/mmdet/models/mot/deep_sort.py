@@ -6,6 +6,7 @@ from torch import Tensor
 from mmdet.registry import MODELS
 from mmdet.structures import TrackSampleList
 from mmdet.utils import OptConfigType
+
 from .base import BaseMOTModel
 
 

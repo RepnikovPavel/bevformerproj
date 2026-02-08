@@ -13,10 +13,11 @@ import logging
 import os.path as osp
 from multiprocessing import Pool
 
-import mmcv
 from mmengine.config import Config
 from mmengine.fileio import dump, get, get_text
 from mmengine.logging import print_log
+
+import mmcv
 
 
 def parse_args():

@@ -3,8 +3,8 @@ import os.path as osp
 from typing import Dict
 
 import mmengine
-
 from mmocr.registry import DATA_DUMPERS
+
 from .base import BaseDumper
 
 

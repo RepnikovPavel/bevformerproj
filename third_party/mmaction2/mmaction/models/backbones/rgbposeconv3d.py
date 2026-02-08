@@ -10,6 +10,7 @@ from mmengine.runner.checkpoint import load_checkpoint
 from mmengine.utils.dl_utils.parrots_wrapper import _BatchNorm
 
 from mmaction.registry import MODELS
+
 from .resnet3d_slowfast import ResNet3dPathway
 
 

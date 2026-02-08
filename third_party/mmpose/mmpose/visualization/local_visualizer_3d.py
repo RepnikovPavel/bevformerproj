@@ -3,15 +3,16 @@ import math
 from typing import Dict, List, Optional, Tuple, Union
 
 import cv2
-import mmcv
 import numpy as np
 from matplotlib import pyplot as plt
 from mmengine.dist import master_only
 from mmengine.structures import InstanceData
 
+import mmcv
 from mmpose.apis import convert_keypoint_definition
 from mmpose.registry import VISUALIZERS
 from mmpose.structures import PoseDataSample
+
 from . import PoseLocalVisualizer
 
 

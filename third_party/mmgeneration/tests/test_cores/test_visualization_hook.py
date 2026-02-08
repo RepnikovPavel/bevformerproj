@@ -3,15 +3,15 @@ import os.path as osp
 import tempfile
 from unittest.mock import MagicMock
 
-import mmcv
 import numpy as np
 import pytest
 import torch
 import torch.nn as nn
-from torch.utils.data import DataLoader, Dataset
-
 from mmgen.core import VisualizationHook
 from mmgen.utils import get_root_logger
+from torch.utils.data import DataLoader, Dataset
+
+import mmcv
 
 
 class ExampleDataset(Dataset):

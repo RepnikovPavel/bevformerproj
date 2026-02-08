@@ -2,6 +2,7 @@
 from typing import Sequence
 
 from mmaction.registry import MODELS
+
 from .resnet3d_slowfast import ResNet3dPathway
 
 

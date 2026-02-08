@@ -6,7 +6,6 @@ from unittest import TestCase
 import numpy as np
 import pytest
 import torch
-
 from mmengine.structures import BaseDataElement, InstanceData
 
 

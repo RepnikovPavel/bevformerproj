@@ -3,15 +3,16 @@ import contextlib
 import datetime
 import io
 import itertools
-import numpy as np
 import os.path as osp
 import tempfile
 import warnings
 from collections import OrderedDict
 from json import dump
+from typing import Dict, List, Optional, Sequence, Union
+
+import numpy as np
 from rich.console import Console
 from rich.table import Table
-from typing import Dict, List, Optional, Sequence, Union
 
 from mmeval.core.base_metric import BaseMetric
 from mmeval.fileio import get_local_path, load

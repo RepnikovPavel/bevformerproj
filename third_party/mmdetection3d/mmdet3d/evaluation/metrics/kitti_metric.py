@@ -3,17 +3,21 @@ import tempfile
 from os import path as osp
 from typing import Dict, List, Optional, Sequence, Tuple, Union
 
-import mmengine
 import numpy as np
 import torch
-from mmengine import load
 from mmengine.evaluator import BaseMetric
 from mmengine.logging import MMLogger, print_log
 
+import mmengine
 from mmdet3d.evaluation import kitti_eval
 from mmdet3d.registry import METRICS
-from mmdet3d.structures import (Box3DMode, CameraInstance3DBoxes,
-                                LiDARInstance3DBoxes, points_cam2img)
+from mmdet3d.structures import (
+    Box3DMode,
+    CameraInstance3DBoxes,
+    LiDARInstance3DBoxes,
+    points_cam2img,
+)
+from mmengine import load
 
 
 @METRICS.register_module()

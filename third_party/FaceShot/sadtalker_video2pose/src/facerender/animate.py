@@ -1,31 +1,28 @@
 import os
-import cv2
-import yaml
-import numpy as np
 import warnings
-from skimage import img_as_ubyte
+
+import cv2
+import numpy as np
 import safetensors
-import safetensors.torch 
+import safetensors.torch
+import yaml
+from skimage import img_as_ubyte
+
 warnings.filterwarnings('ignore')
 
 
 import imageio
 import torch
-import torchvision
-
-
+from pydub import AudioSegment
+from src.facerender.modules.generator import OcclusionAwareSPADEGenerator
 from src.facerender.modules.keypoint_detector import HEEstimator, KPDetector
+from src.facerender.modules.make_animation import make_animation
 from src.facerender.modules.mapping import MappingNet
-from src.facerender.modules.generator import OcclusionAwareGenerator, OcclusionAwareSPADEGenerator
-from src.facerender.modules.make_animation import make_animation 
-
-from pydub import AudioSegment 
 from src.utils.face_enhancer import enhancer_generator_with_len, enhancer_list
 from src.utils.paste_pic import paste_pic
 from src.utils.videoio import save_video_with_watermark
 
 try:
-    import webui  # in webui
     in_webui = True
 except:
     in_webui = False
@@ -131,7 +128,7 @@ class AnimateFromCoeff():
         if optimizer_discriminator is not None:
             try:
                 optimizer_discriminator.load_state_dict(checkpoint['optimizer_discriminator'])
-            except RuntimeError as e:
+            except RuntimeError:
                 print ('No discriminator optimizer in the state-dict. Optimizer will be not initialized')
         if optimizer_kp_detector is not None:
             optimizer_kp_detector.load_state_dict(checkpoint['optimizer_kp_detector'])

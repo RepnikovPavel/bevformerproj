@@ -1,6 +1,10 @@
-from .open_flamingo import create_model_and_transforms as create_open_flamingo_model_and_transforms
 import torch.nn as nn
-from transformers import LlamaTokenizer, LlamaForCausalLM
+from transformers import LlamaTokenizer
+
+from .open_flamingo import (
+    create_model_and_transforms as create_open_flamingo_model_and_transforms,
+)
+
 
 def create_model_and_transforms(
     model_name: str,

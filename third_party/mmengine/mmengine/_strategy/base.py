@@ -13,16 +13,18 @@ from torch.optim import Optimizer
 
 import mmengine
 from mmengine.config import Config, ConfigDict
-from mmengine.dist import (broadcast, get_dist_info, infer_launcher,
-                           is_distributed)
+from mmengine.dist import broadcast, get_dist_info, infer_launcher, is_distributed
 from mmengine.logging import MMLogger
 from mmengine.model.wrappers import is_model_wrapper
-from mmengine.optim import (BaseOptimWrapper, OptimWrapperDict,
-                            _ParamScheduler, build_optim_wrapper)
+from mmengine.optim import (
+    BaseOptimWrapper,
+    OptimWrapperDict,
+    _ParamScheduler,
+    build_optim_wrapper,
+)
 from mmengine.registry import MODELS, OPTIM_WRAPPERS, PARAM_SCHEDULERS
 from mmengine.utils import digit_version
-from mmengine.utils.dl_utils import (TORCH_VERSION, collect_env,
-                                     set_multi_processing)
+from mmengine.utils.dl_utils import TORCH_VERSION, collect_env, set_multi_processing
 
 ParamSchedulerType = Union[List[_ParamScheduler], Dict[str,
                                                        List[_ParamScheduler]]]

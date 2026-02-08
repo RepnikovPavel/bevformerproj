@@ -1,15 +1,17 @@
-import cv2
 from argparse import ArgumentParser
+
+import cv2
+import numpy as np
 import PIL.Image as Image
 import torch
-import numpy as np
+from diffusers import StableDiffusionInpaintPipeline
+
 # MMOCR
 from mmocr.apis.inferencers import MMOCRInferencer
 from mmocr.utils import poly2bbox
+
 # SAM
 from segment_anything import SamPredictor, sam_model_registry
-
-from diffusers import StableDiffusionInpaintPipeline
 
 
 def parse_args():

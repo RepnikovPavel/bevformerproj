@@ -1,8 +1,9 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 from mmcv.runner import force_fp32
 from mmdet.models.builder import ROI_EXTRACTORS
-from mmdet.models.roi_heads.roi_extractors import \
-    SingleRoIExtractor as _SingleRoIExtractor
+from mmdet.models.roi_heads.roi_extractors import (
+    SingleRoIExtractor as _SingleRoIExtractor,
+)
 
 
 @ROI_EXTRACTORS.register_module(force=True)

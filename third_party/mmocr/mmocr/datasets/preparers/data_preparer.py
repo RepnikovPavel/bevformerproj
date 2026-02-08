@@ -5,8 +5,14 @@ import os.path as osp
 import shutil
 from typing import List, Optional, Union
 
-from mmocr.registry import (CFG_GENERATORS, DATA_DUMPERS, DATA_GATHERERS,
-                            DATA_OBTAINERS, DATA_PACKERS, DATA_PARSERS)
+from mmocr.registry import (
+    CFG_GENERATORS,
+    DATA_DUMPERS,
+    DATA_GATHERERS,
+    DATA_OBTAINERS,
+    DATA_PACKERS,
+    DATA_PARSERS,
+)
 from mmocr.utils.typing_utils import ConfigType, OptConfigType
 
 

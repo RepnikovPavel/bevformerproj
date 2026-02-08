@@ -8,6 +8,7 @@ from torch import nn
 from torch.nn import functional as F
 
 from mmselfsup.registry import MODELS
+
 from ..utils import build_2d_sincos_position_embedding
 
 

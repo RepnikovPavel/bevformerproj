@@ -365,8 +365,10 @@ def inference_model(model, *args, **kwargs):
     from .image_caption import ImageCaptionInferencer
     from .image_classification import ImageClassificationInferencer
     from .image_retrieval import ImageRetrievalInferencer
-    from .multimodal_retrieval import (ImageToTextRetrievalInferencer,
-                                       TextToImageRetrievalInferencer)
+    from .multimodal_retrieval import (
+        ImageToTextRetrievalInferencer,
+        TextToImageRetrievalInferencer,
+    )
     from .nlvr import NLVRInferencer
     from .visual_grounding import VisualGroundingInferencer
     from .visual_question_answering import VisualQuestionAnsweringInferencer

@@ -1,13 +1,16 @@
 # Copyright (c) OpenMMLab. All rights reserved.
-from mmcv.transforms import (LoadImageFromFile, RandomResize,
-                             TransformBroadcaster)
-
+from mmcv.transforms import LoadImageFromFile, RandomResize, TransformBroadcaster
 from mmdet.datasets import MOTChallengeDataset
 from mmdet.datasets.samplers import TrackImgSampler
-from mmdet.datasets.transforms import (LoadTrackAnnotations, PackTrackInputs,
-                                       PhotoMetricDistortion, RandomCrop,
-                                       RandomFlip, Resize,
-                                       UniformRefFrameSample)
+from mmdet.datasets.transforms import (
+                             LoadTrackAnnotations,
+                             PackTrackInputs,
+                             PhotoMetricDistortion,
+                             RandomCrop,
+                             RandomFlip,
+                             Resize,
+                             UniformRefFrameSample,
+)
 from mmdet.evaluation import MOTChallengeMetric
 
 # dataset settings

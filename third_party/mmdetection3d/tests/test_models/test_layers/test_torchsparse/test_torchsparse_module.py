@@ -1,15 +1,15 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import pytest
 import torch
-
 from mmdet3d.models.layers.torchsparse import IS_TORCHSPARSE_AVAILABLE
 
 if IS_TORCHSPARSE_AVAILABLE:
+    from mmdet3d.models.layers.torchsparse_block import (
+        TorchSparseBasicBlock,
+        TorchSparseBottleneck,
+        TorchSparseConvModule,
+    )
     from torchsparse import SparseTensor
-
-    from mmdet3d.models.layers.torchsparse_block import (TorchSparseBasicBlock,
-                                                         TorchSparseBottleneck,
-                                                         TorchSparseConvModule)
 else:
     pytest.skip('test requires Torchsparse', allow_module_level=True)
 

@@ -1,7 +1,11 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 from mmrazor.models.architectures.dynamic_ops import (
-    DynamicLinear, DynamicMultiheadAttention, DynamicPatchEmbed,
-    DynamicRelativePosition2D, DynamicSequential)
+    DynamicLinear,
+    DynamicMultiheadAttention,
+    DynamicPatchEmbed,
+    DynamicRelativePosition2D,
+    DynamicSequential,
+)
 from mmrazor.models.mutables import MutableChannelContainer
 from mmrazor.registry import MODELS
 

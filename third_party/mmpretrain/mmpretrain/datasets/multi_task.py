@@ -4,9 +4,10 @@ import os.path as osp
 from os import PathLike
 from typing import Optional, Sequence
 
-import mmengine
 from mmcv.transforms import Compose
 from mmengine.fileio import get_file_backend
+
+import mmengine
 
 from .builder import DATASETS
 

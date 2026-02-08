@@ -4,7 +4,7 @@
 # LICENSE file in the root directory of this source tree.
 
 import re
-from unidecode import unidecode
+
 import inflect
 
 """

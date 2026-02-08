@@ -8,20 +8,20 @@ from contextlib import contextmanager
 from copy import deepcopy
 from typing import Optional, Tuple
 
-import mmengine
 import numpy as np
 import torch
 import torch.nn as nn
-from mmengine import is_filepath, print_log
 from mmengine.dataset import BaseDataset, Compose, pseudo_collate
-from mmengine.dist import (all_gather, get_dist_info, get_world_size,
-                           is_main_process)
+from mmengine.dist import all_gather, get_dist_info, get_world_size, is_main_process
 from mmengine.evaluator import BaseMetric
 from torch.utils.data.dataloader import DataLoader
 from torch.utils.data.dataset import Dataset
 from torchvision.models.inception import inception_v3
 
+import mmengine
 from mmagic.utils import MMAGIC_CACHE_DIR, download_from_url
+from mmengine import is_filepath, print_log
+
 from . import InceptionV3
 
 ALLOWED_INCEPTION = ['StyleGAN', 'PyTorch']

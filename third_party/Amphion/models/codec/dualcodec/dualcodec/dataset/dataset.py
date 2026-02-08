@@ -5,15 +5,16 @@
 #
 ################################################################################
 
-import random
 import json
 import math
+import random
 from functools import partial
+
 import torch
 import torch.distributed as dist
 from torch.utils.data import IterableDataset
 
-from .file_utils import read_lists, read_json_lists
+from .file_utils import read_json_lists, read_lists
 
 
 class Processor(IterableDataset):

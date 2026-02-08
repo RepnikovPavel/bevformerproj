@@ -3,7 +3,6 @@ from unittest import TestCase
 
 import torch
 from mmcv.cnn import ConvModule
-
 from mmyolo.models.necks import YOLOv7PAFPN
 from mmyolo.utils import register_all_modules
 

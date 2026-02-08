@@ -2,18 +2,21 @@ import argparse
 import logging
 import os
 
+import losses
 import torch
 import torch.distributed as dist
 import torch.nn.functional as F
 import torch.utils.data.distributed
-from torch.nn.utils import clip_grad_norm_
-
-import losses
 from backbones import get_model
-from dataset import MXFaceDataset, SyntheticDataset, DataLoaderX
+from dataset import DataLoaderX, MXFaceDataset, SyntheticDataset
 from partial_fc import PartialFC
+from torch.nn.utils import clip_grad_norm_
 from utils.utils_amp import MaxClipGradScaler
-from utils.utils_callbacks import CallBackVerification, CallBackLogging, CallBackModelCheckpoint
+from utils.utils_callbacks import (
+    CallBackLogging,
+    CallBackModelCheckpoint,
+    CallBackVerification,
+)
 from utils.utils_config import get_config
 from utils.utils_logging import AverageMeter, init_logging
 

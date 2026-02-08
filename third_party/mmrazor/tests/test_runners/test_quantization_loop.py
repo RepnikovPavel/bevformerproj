@@ -15,20 +15,18 @@ from mmengine.model import BaseModel
 from mmengine.optim import OptimWrapper
 from mmengine.registry import DATASETS, HOOKS, METRICS, MODELS, OPTIM_WRAPPERS
 from mmengine.runner import Runner
+from mmrazor.engine import LSQEpochBasedLoop, PTQLoop, QATEpochBasedLoop, QATValLoop
 from torch.nn.intrinsic.qat import ConvBnReLU2d
 from torch.utils.data import Dataset
 
 from mmrazor import digit_version
-from mmrazor.engine import (LSQEpochBasedLoop, PTQLoop, QATEpochBasedLoop,
-                            QATValLoop)
 
 try:
     from torch.ao.nn.quantized import FloatFunctional, FXFloatFunctional
     from torch.ao.quantization import QConfigMapping
     from torch.ao.quantization.fake_quantize import FakeQuantizeBase
     from torch.ao.quantization.fx import prepare
-    from torch.ao.quantization.qconfig_mapping import \
-        get_default_qconfig_mapping
+    from torch.ao.quantization.qconfig_mapping import get_default_qconfig_mapping
     from torch.ao.quantization.quantize_fx import _fuse_fx
 except ImportError:
     from mmrazor.utils import get_placeholder

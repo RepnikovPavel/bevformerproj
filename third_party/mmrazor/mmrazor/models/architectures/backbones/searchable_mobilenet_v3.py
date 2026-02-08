@@ -11,11 +11,15 @@ from torch.nn.modules.batchnorm import _BatchNorm
 from mmrazor.models.architectures.dynamic_ops.bricks import DynamicSequential
 from mmrazor.models.architectures.ops.mobilenet_series import MBBlock
 from mmrazor.models.architectures.utils.mutable_register import (
-    mutate_conv_module, mutate_mobilenet_layer)
-from mmrazor.models.mutables import (MutableChannelContainer,
-                                     OneShotMutableChannel,
-                                     OneShotMutableChannelUnit,
-                                     OneShotMutableValue)
+    mutate_conv_module,
+    mutate_mobilenet_layer,
+)
+from mmrazor.models.mutables import (
+    MutableChannelContainer,
+    OneShotMutableChannel,
+    OneShotMutableChannelUnit,
+    OneShotMutableValue,
+)
 from mmrazor.models.utils.parse_values import parse_values
 from mmrazor.registry import MODELS
 

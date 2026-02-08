@@ -3,7 +3,6 @@ import os.path as osp
 import time
 from typing import List, Optional
 
-import mmcv
 import torch
 import torch.nn as nn
 from mmcv.image import tensor2imgs
@@ -12,6 +11,8 @@ from mmcv.runner import get_dist_info
 from mmdet.apis.test import collect_results_cpu, collect_results_gpu
 from mmdet.utils import get_root_logger
 from torch.utils.data import DataLoader
+
+import mmcv
 
 
 def single_gpu_test(model: nn.Module,

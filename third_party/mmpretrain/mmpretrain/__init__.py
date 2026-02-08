@@ -1,7 +1,8 @@
 # Copyright (c) OpenMMLab. All rights reserved.
+from mmengine.utils import digit_version
+
 import mmcv
 import mmengine
-from mmengine.utils import digit_version
 
 from .apis import *  # noqa: F401, F403
 from .version import __version__

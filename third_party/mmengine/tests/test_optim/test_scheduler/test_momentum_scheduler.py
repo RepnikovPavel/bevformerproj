@@ -7,13 +7,19 @@ import torch.nn.functional as F
 import torch.optim as optim
 
 # yapf: disable
-from mmengine.optim.scheduler import (ConstantMomentum,
-                                      CosineAnnealingMomentum,
-                                      CosineRestartMomentum,
-                                      ExponentialMomentum, LinearMomentum,
-                                      MultiStepMomentum, PolyMomentum,
-                                      ReduceOnPlateauMomentum, StepMomentum,
-                                      _ParamScheduler)
+from mmengine.optim.scheduler import (
+    ConstantMomentum,
+    CosineAnnealingMomentum,
+    CosineRestartMomentum,
+    ExponentialMomentum,
+    LinearMomentum,
+    MultiStepMomentum,
+    PolyMomentum,
+    ReduceOnPlateauMomentum,
+    StepMomentum,
+    _ParamScheduler,
+)
+
 # yapf: enable
 from mmengine.testing import assert_allclose
 

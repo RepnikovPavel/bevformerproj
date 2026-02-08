@@ -6,10 +6,13 @@ import torch.nn as nn
 from mmengine.model import ModuleList
 from torch import Tensor
 
-from mmocr.models.textrecog.layers import (Adaptive2DPositionalEncoding,
-                                           SATRNEncoderLayer)
+from mmocr.models.textrecog.layers import (
+    Adaptive2DPositionalEncoding,
+    SATRNEncoderLayer,
+)
 from mmocr.registry import MODELS
 from mmocr.structures import TextRecogDataSample
+
 from .base import BaseEncoder
 
 

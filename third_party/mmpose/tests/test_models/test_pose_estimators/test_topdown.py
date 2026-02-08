@@ -3,11 +3,10 @@ import unittest
 from unittest import TestCase
 
 import torch
-from parameterized import parameterized
-
 from mmpose.structures import PoseDataSample
 from mmpose.testing import get_packed_inputs, get_pose_estimator_cfg
 from mmpose.utils import register_all_modules
+from parameterized import parameterized
 
 configs = [
     'body_2d_keypoint/topdown_heatmap/coco/'

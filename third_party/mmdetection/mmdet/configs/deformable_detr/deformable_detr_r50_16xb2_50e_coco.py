@@ -11,21 +11,29 @@ with read_base():
     from .._base_.default_runtime import *
 
 from mmcv.transforms import LoadImageFromFile, RandomChoice, RandomChoiceResize
-from mmengine.optim.optimizer import OptimWrapper
-from mmengine.optim.scheduler import MultiStepLR
-from mmengine.runner.loops import EpochBasedTrainLoop, TestLoop, ValLoop
-from torch.optim.adamw import AdamW
-
-from mmdet.datasets.transforms import (LoadAnnotations, PackDetInputs,
-                                       RandomCrop, RandomFlip, Resize)
+from mmdet.datasets.transforms import (
+    LoadAnnotations,
+    PackDetInputs,
+    RandomCrop,
+    RandomFlip,
+    Resize,
+)
 from mmdet.models.backbones import ResNet
 from mmdet.models.data_preprocessors import DetDataPreprocessor
 from mmdet.models.dense_heads import DeformableDETRHead
 from mmdet.models.detectors import DeformableDETR
 from mmdet.models.losses import FocalLoss, GIoULoss, L1Loss
 from mmdet.models.necks import ChannelMapper
-from mmdet.models.task_modules import (BBoxL1Cost, FocalLossCost,
-                                       HungarianAssigner, IoUCost)
+from mmdet.models.task_modules import (
+    BBoxL1Cost,
+    FocalLossCost,
+    HungarianAssigner,
+    IoUCost,
+)
+from mmengine.optim.optimizer import OptimWrapper
+from mmengine.optim.scheduler import MultiStepLR
+from mmengine.runner.loops import EpochBasedTrainLoop, TestLoop, ValLoop
+from torch.optim.adamw import AdamW
 
 model = dict(
     type=DeformableDETR,

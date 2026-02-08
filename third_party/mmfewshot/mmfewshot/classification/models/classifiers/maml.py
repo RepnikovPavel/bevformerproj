@@ -9,6 +9,7 @@ from typing_extensions import Literal
 
 from mmfewshot.classification.datasets import label_wrapper
 from mmfewshot.classification.models.utils import convert_maml_module
+
 from .base import BaseFewShotClassifier
 
 

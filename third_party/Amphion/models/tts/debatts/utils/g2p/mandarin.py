@@ -1,8 +1,9 @@
 """from https://github.com/Plachtaa/VALL-E-X/g2p"""
 
 import re
-import jieba
+
 import cn2an
+import jieba
 
 # List of (Latin alphabet, bopomofo) pairs:
 _latin_to_bopomofo = [
@@ -205,7 +206,7 @@ def number_to_chinese(text):
 
 # Word Segmentation, and convert Chinese pronunciation to pinyin (bopomofo)
 def chinese_to_bopomofo(text):
-    from pypinyin import lazy_pinyin, BOPOMOFO
+    from pypinyin import BOPOMOFO, lazy_pinyin
 
     text = text.replace("、", "，").replace("；", "，").replace("：", "，")
     words = jieba.lcut(text, cut_all=False)

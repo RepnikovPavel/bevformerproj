@@ -3,7 +3,6 @@ import numpy
 import numpy.testing as npt
 import pytest
 import torch
-
 from mmagic.models import GANLoss, GaussianBlur
 
 

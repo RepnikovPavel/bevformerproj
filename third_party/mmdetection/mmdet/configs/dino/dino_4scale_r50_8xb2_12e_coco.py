@@ -1,6 +1,23 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 from mmcv.transforms import RandomChoice, RandomChoiceResize
 from mmcv.transforms.loading import LoadImageFromFile
+from mmdet.datasets.transforms import (
+    LoadAnnotations,
+    PackDetInputs,
+    RandomCrop,
+    RandomFlip,
+    Resize,
+)
+from mmdet.models import DINO, ChannelMapper, DetDataPreprocessor, DINOHead, ResNet
+from mmdet.models.losses.focal_loss import FocalLoss
+from mmdet.models.losses.iou_loss import GIoULoss
+from mmdet.models.losses.smooth_l1_loss import L1Loss
+from mmdet.models.task_modules import (
+    BBoxL1Cost,
+    FocalLossCost,
+    HungarianAssigner,
+    IoUCost,
+)
 from mmengine.config import read_base
 from mmengine.model.weight_init import PretrainedInit
 from mmengine.optim.optimizer.optimizer_wrapper import OptimWrapper
@@ -9,16 +26,6 @@ from mmengine.runner.loops import EpochBasedTrainLoop, TestLoop, ValLoop
 from torch.nn.modules.batchnorm import BatchNorm2d
 from torch.nn.modules.normalization import GroupNorm
 from torch.optim.adamw import AdamW
-
-from mmdet.datasets.transforms import (LoadAnnotations, PackDetInputs,
-                                       RandomCrop, RandomFlip, Resize)
-from mmdet.models import (DINO, ChannelMapper, DetDataPreprocessor, DINOHead,
-                          ResNet)
-from mmdet.models.losses.focal_loss import FocalLoss
-from mmdet.models.losses.iou_loss import GIoULoss
-from mmdet.models.losses.smooth_l1_loss import L1Loss
-from mmdet.models.task_modules import (BBoxL1Cost, FocalLossCost,
-                                       HungarianAssigner, IoUCost)
 
 with read_base():
     from .._base_.datasets.coco_detection import *

@@ -5,9 +5,10 @@ import os.path as osp
 from collections import defaultdict
 
 import cv2
-import mmcv
 import numpy as np
 from tqdm import tqdm
+
+import mmcv
 
 
 def parse_args():

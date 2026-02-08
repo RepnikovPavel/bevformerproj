@@ -2,7 +2,6 @@
 import unittest
 
 import torch
-
 from mmocr.models.textdet.necks.fpem_ffm import FPEM, FPEM_FFM
 
 

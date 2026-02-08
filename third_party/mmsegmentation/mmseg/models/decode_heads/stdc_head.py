@@ -7,6 +7,7 @@ from torch import Tensor
 from mmseg.registry import MODELS
 from mmseg.structures import SegDataSample
 from mmseg.utils import SampleList
+
 from .fcn_head import FCNHead
 
 

@@ -4,7 +4,6 @@ import os.path as osp
 
 import numpy as np
 import pytest
-
 from mmcv.transforms import LoadAnnotations, LoadImageFromFile
 
 

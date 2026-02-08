@@ -2,7 +2,6 @@
 import numpy as np
 import pytest
 import torch
-
 from mmcv.ops import convex_giou, convex_iou
 from mmcv.utils import IS_MUSA_AVAILABLE
 

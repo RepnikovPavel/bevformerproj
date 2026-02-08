@@ -7,10 +7,11 @@ import shutil
 import tempfile
 import zipfile
 
-import mmcv
 import numpy as np
 from mmengine.utils import ProgressBar, mkdir_or_exist
 from PIL import Image
+
+import mmcv
 
 iSAID_palette = \
     {

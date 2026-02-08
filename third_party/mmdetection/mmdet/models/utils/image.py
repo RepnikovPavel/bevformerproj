@@ -1,10 +1,11 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 from typing import Union
 
-import mmcv
 import numpy as np
 import torch
 from torch import Tensor
+
+import mmcv
 
 
 def imrenormalize(img: Union[Tensor, np.ndarray], img_norm_cfg: dict,

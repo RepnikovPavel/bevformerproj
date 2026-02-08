@@ -3,6 +3,7 @@ import torch
 
 from .alpaca_gpt4_dataset import AlpacaGPT4Dataset  # noqa: F401
 from .aokvqa_dataset import AOKVQADataset  # noqa: F401
+from .baize_dataset import BaiZeDataset  # noqa: F401
 from .cc_sbu_align_dataset import CcSbuAlignDataset  # noqa: F401
 from .clevr_dataset import CLEVRDataset  # noqa: F401
 from .coco_caption_dataset import COCOCaptionDataset  # noqa: F401
@@ -15,7 +16,6 @@ from .ocr_vqa_dataset import OCRVQADataset  # noqa: F401
 from .snli_ve_datasets import SNLIVEDataset  # noqa: F401
 from .text_ocr_dataset import TextOCRDataset  # noqa: F401
 from .vqa_dataset import ConcatDataset, VQADataset  # noqa: F401
-from .baize_dataset import BaiZeDataset  # noqa: F401
 
 
 def build_dataset(dataset_config, **kwargs):

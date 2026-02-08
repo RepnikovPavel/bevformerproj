@@ -6,15 +6,17 @@ from unittest.mock import MagicMock
 import pytest
 import torch
 import torch.distributed as dist
-from torch import nn
-
-from mmrazor.models.architectures.dynamic_ops import (DynamicBatchNorm1d,
-                                                      DynamicBatchNorm2d,
-                                                      DynamicBatchNorm3d,
-                                                      DynamicMixin,
-                                                      DynamicSyncBatchNorm)
+from mmrazor.models.architectures.dynamic_ops import (
+    DynamicBatchNorm1d,
+    DynamicBatchNorm2d,
+    DynamicBatchNorm3d,
+    DynamicMixin,
+    DynamicSyncBatchNorm,
+)
 from mmrazor.models.mutables import SquentialMutableChannel
 from mmrazor.structures.subnet import export_fix_subnet, load_fix_subnet
+from torch import nn
+
 from ..utils import fix_dynamic_op
 
 

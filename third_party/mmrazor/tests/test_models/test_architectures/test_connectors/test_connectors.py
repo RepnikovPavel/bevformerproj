@@ -2,12 +2,19 @@
 from unittest import TestCase
 
 import torch
-
-from mmrazor.models import (BYOTConnector, ConvModuleConnector, CRDConnector,
-                            FBKDStudentConnector, FBKDTeacherConnector,
-                            MGDConnector, NormConnector, Paraphraser,
-                            TorchFunctionalConnector, TorchNNConnector,
-                            Translator)
+from mmrazor.models import (
+    BYOTConnector,
+    ConvModuleConnector,
+    CRDConnector,
+    FBKDStudentConnector,
+    FBKDTeacherConnector,
+    MGDConnector,
+    NormConnector,
+    Paraphraser,
+    TorchFunctionalConnector,
+    TorchNNConnector,
+    Translator,
+)
 
 
 class TestConnector(TestCase):

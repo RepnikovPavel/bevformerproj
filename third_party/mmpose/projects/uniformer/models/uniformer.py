@@ -10,7 +10,6 @@ from mmengine.model import BaseModule
 from mmengine.model.weight_init import trunc_normal_
 from mmengine.runner import checkpoint, load_checkpoint
 from mmengine.utils import to_2tuple
-
 from mmpose.models.backbones.base_backbone import BaseBackbone
 from mmpose.registry import MODELS
 from mmpose.utils import get_root_logger

@@ -1,7 +1,6 @@
 # Copyright (c) OpenMMLab. All rights reserved.
-import numpy as np
-
 import mmocr.utils as utils
+import numpy as np
 
 
 def test_is_3dlist():

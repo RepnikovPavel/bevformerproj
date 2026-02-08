@@ -4,11 +4,12 @@ from typing import Dict, Set, Tuple
 
 import torch.nn as nn
 import torch.nn.functional as F
-from mmengine import print_log
 from torch import Tensor
 
+from mmengine import print_log
 from mmrazor.models.architectures.ops import MultiheadAttention
 from mmrazor.models.mutables.base_mutable import BaseMutable
+
 from ..mixins import DynamicChannelMixin
 from .dynamic_relative_position import DynamicRelativePosition2D  # noqa: E501
 

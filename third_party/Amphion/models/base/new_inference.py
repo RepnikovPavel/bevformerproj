@@ -16,11 +16,11 @@ import numpy as np
 import torch
 from accelerate.logging import get_logger
 from torch.utils.data import DataLoader
-
-from models.vocoders.vocoder_inference import synthesis
+from utils.audio_slicer import is_silence
 from utils.io import save_audio
 from utils.util import load_config
-from utils.audio_slicer import is_silence
+
+from models.vocoders.vocoder_inference import synthesis
 
 EPS = 1.0e-12
 

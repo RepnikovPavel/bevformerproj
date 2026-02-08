@@ -3,15 +3,16 @@
 # This source code is licensed under the MIT license found in the
 # LICENSE file in the root directory of this source tree.
 
-import torch
-import os
-import json5
-from tqdm import tqdm
 import json
+import os
 import shutil
 
-from models.svc.base import SVCTrainer
+import json5
+import torch
 from modules.encoder.condition_encoder import ConditionEncoder
+from tqdm import tqdm
+
+from models.svc.base import SVCTrainer
 from models.svc.comosvc.comosvc import ComoSVC
 
 

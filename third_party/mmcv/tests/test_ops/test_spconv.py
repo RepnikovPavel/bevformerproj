@@ -1,11 +1,9 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import pytest
 import torch
-from torch import nn
-
 from mmcv.cnn import build_conv_layer, build_norm_layer
-from mmcv.ops import (SparseConvTensor, SparseInverseConv3d, SparseSequential,
-                      SubMConv3d)
+from mmcv.ops import SparseConvTensor, SparseInverseConv3d, SparseSequential, SubMConv3d
+from torch import nn
 
 if torch.__version__ == 'parrots':
     pytest.skip('not supported in parrots now', allow_module_level=True)

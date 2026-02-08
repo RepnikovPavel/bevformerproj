@@ -1,13 +1,13 @@
 # Copyright (c) OpenMMLab. All rights reserved.
-import cv2
-import numpy as np
 import sys
-from parameterized import parameterized
 from pathlib import Path
 from unittest import TestCase
 from unittest.mock import MagicMock, patch
 
+import cv2
+import numpy as np
 from mmeval.fileio.backends import MemcachedBackend
+from parameterized import parameterized
 
 
 def imfrombytes(content):

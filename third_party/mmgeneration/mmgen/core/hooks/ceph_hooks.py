@@ -1,8 +1,9 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import os
 
-import mmcv
 from mmcv.runner import HOOKS, Hook, master_only
+
+import mmcv
 
 
 @HOOKS.register_module()

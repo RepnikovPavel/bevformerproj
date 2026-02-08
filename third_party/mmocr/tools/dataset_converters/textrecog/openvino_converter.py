@@ -5,10 +5,10 @@ import os.path as osp
 from argparse import ArgumentParser
 from functools import partial
 
-import mmengine
+from mmocr.utils import dump_ocr_data
 from PIL import Image
 
-from mmocr.utils import dump_ocr_data
+import mmengine
 
 
 def parse_args():

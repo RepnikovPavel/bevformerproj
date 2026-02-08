@@ -3,23 +3,22 @@ import argparse
 import os
 import warnings
 
-import mmcv
 import torch
-from mmcv import Config, DictAction
 from mmcv.cnn import fuse_conv_bn
 from mmcv.cnn.utils import revert_sync_batchnorm
 from mmcv.parallel import MMDataParallel, MMDistributedDataParallel
-from mmcv.runner import (get_dist_info, init_dist, load_checkpoint,
-                         wrap_fp16_model)
+from mmcv.runner import get_dist_info, init_dist, load_checkpoint, wrap_fp16_model
 from mmcv.utils.logging import print_log
-
-from mmflow import digit_version
 from mmflow.apis import multi_gpu_test, single_gpu_test
 from mmflow.core import online_evaluation
 from mmflow.datasets import build_dataloader, build_dataset
 from mmflow.datasets.utils.flow_io import write_flow, write_flow_kitti
 from mmflow.models import build_flow_estimator
 from mmflow.utils import get_root_logger, setup_multi_processes
+
+import mmcv
+from mmcv import Config, DictAction
+from mmflow import digit_version
 
 
 def parse_args():

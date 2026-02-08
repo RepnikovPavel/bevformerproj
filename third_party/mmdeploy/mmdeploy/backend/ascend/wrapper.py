@@ -10,6 +10,7 @@ import torch
 
 from mmdeploy.utils import Backend
 from mmdeploy.utils.timer import TimeCounter
+
 from ..base import BACKEND_WRAPPER, BaseWrapper
 
 _from_acl_data_type = {0: torch.float32, 3: torch.int32, 9: torch.int64}

@@ -3,7 +3,6 @@ import pickle
 from copy import deepcopy
 from functools import partial
 
-import mmcv
 import numpy as np
 import torch
 import torch.nn as nn
@@ -11,9 +10,11 @@ import torch.nn.functional as F
 from torch.nn.parallel import DataParallel, DistributedDataParallel
 from torch.nn.parallel.distributed import _find_tensors
 
+import mmcv
 from mmgen.models.architectures.common import get_module_device
 from mmgen.models.builder import MODELS, build_module
 from mmgen.models.gans.base_gan import BaseGAN
+
 from ..common import set_requires_grad
 
 

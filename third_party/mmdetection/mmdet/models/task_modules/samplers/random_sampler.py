@@ -6,6 +6,7 @@ from numpy import ndarray
 from torch import Tensor
 
 from mmdet.registry import TASK_UTILS
+
 from ..assigners import AssignResult
 from .base_sampler import BaseSampler
 

@@ -7,19 +7,19 @@ import time
 import warnings
 
 import cv2
-import mmcv
 import torch
-from mmcv import Config, DictAction
 from mmcv.runner import get_dist_info, init_dist, set_random_seed
 from mmcv.utils import get_git_hash
 from mmdet.utils import collect_env
-
-import mmfewshot  # noqa: F401, F403
-from mmfewshot import __version__
 from mmfewshot.detection.apis import train_detector
 from mmfewshot.detection.datasets import build_dataset
 from mmfewshot.detection.models import build_detector
 from mmfewshot.utils import get_root_logger
+
+import mmcv
+import mmfewshot  # noqa: F401, F403
+from mmcv import Config, DictAction
+from mmfewshot import __version__
 
 # disable multithreading to avoid system being overloaded
 cv2.setNumThreads(0)

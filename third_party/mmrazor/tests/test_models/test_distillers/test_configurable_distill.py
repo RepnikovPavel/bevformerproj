@@ -4,10 +4,10 @@ from unittest import TestCase
 
 import torch
 import torch.nn as nn
-from mmengine import ConfigDict
-
 from mmrazor.models import ConfigurableDistiller
 from mmrazor.registry import MODELS
+
+from mmengine import ConfigDict
 
 
 class ToyDistillLoss(torch.nn.Module):

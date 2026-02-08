@@ -1,8 +1,6 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import torch
-
-from mmagic.models.editors.pix2pix.pix2pix_modules import \
-    UnetSkipConnectionBlock
+from mmagic.models.editors.pix2pix.pix2pix_modules import UnetSkipConnectionBlock
 
 
 def test_unet_skip_connection_block():

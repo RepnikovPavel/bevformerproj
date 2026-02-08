@@ -2,16 +2,20 @@
 from copy import deepcopy
 from functools import partial
 
-import mmengine
 import torch
 import torch.nn as nn
 from mmcv.ops.fused_bias_leakyrelu import fused_bias_leakyrelu
 from mmcv.ops.upfirdn2d import upfirdn2d
 from mmengine.model import BaseModule
 
+import mmengine
 from mmagic.registry import MODELS
-from ..pggan import (EqualizedLRConvModule, EqualizedLRConvUpModule,
-                     EqualizedLRLinearModule)
+
+from ..pggan import (
+    EqualizedLRConvModule,
+    EqualizedLRConvUpModule,
+    EqualizedLRLinearModule,
+)
 
 
 class EqualLinearActModule(BaseModule):

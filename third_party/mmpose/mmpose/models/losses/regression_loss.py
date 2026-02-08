@@ -9,6 +9,7 @@ import torch.nn.functional as F
 
 from mmpose.datasets.datasets.utils import parse_pose_metainfo
 from mmpose.registry import MODELS
+
 from ..utils.realnvp import RealNVP
 
 

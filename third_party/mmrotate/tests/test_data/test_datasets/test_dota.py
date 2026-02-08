@@ -6,7 +6,6 @@ import tempfile
 import numpy as np
 import pytest
 from mmdet.datasets import build_dataset
-
 from mmrotate.datasets.dota import DOTADataset
 
 

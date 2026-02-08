@@ -5,8 +5,7 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 from mmcv.cnn import ConvModule, build_activation_layer, build_norm_layer
-from mmcv.cnn.bricks.transformer import (FFN, MultiheadAttention,
-                                         build_transformer_layer)
+from mmcv.cnn.bricks.transformer import FFN, MultiheadAttention, build_transformer_layer
 from mmengine.logging import print_log
 from torch import Tensor
 

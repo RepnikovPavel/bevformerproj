@@ -3,15 +3,16 @@ from pathlib import Path
 from typing import Iterable, Optional, Tuple, Union
 
 import cv2
-import mmcv
 import numpy as np
 import torch
 from pytorch3d.structures import Meshes
 from torch.nn.functional import interpolate
 
+import mmcv
 from mmhuman3d.core.cameras import MMCamerasBase
 from mmhuman3d.utils.ffmpeg_utils import images_to_array
 from mmhuman3d.utils.path_utils import check_path_suffix
+
 from .base_renderer import BaseRenderer
 from .builder import build_renderer
 from .lights import DirectionalLights, PointLights

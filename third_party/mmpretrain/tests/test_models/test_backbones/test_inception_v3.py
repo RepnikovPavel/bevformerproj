@@ -3,7 +3,6 @@ from types import MethodType
 from unittest import TestCase
 
 import torch
-
 from mmpretrain.models import InceptionV3
 from mmpretrain.models.backbones.inception_v3 import InceptionAux
 

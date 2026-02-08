@@ -4,9 +4,6 @@ from mmengine.config import read_base
 with read_base():
     from .._base_.gen_default_runtime import *
 
-from mmengine.dataset.sampler import InfiniteSampler
-from torch.optim import AdamW
-
 from mmagic.datasets.dreambooth_dataset import DreamBoothDataset
 from mmagic.datasets.transforms.aug_shape import Resize
 from mmagic.datasets.transforms.formatting import PackInputs
@@ -15,6 +12,8 @@ from mmagic.engine import VisualizationHook
 from mmagic.models.data_preprocessors.data_preprocessor import DataPreprocessor
 from mmagic.models.editors.disco_diffusion.clip_wrapper import ClipWrapper
 from mmagic.models.editors.dreambooth import DreamBooth
+from mmengine.dataset.sampler import InfiniteSampler
+from torch.optim import AdamW
 
 # config for model
 stable_diffusion_v15_url = 'runwayml/stable-diffusion-v1-5'

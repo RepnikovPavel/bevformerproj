@@ -3,11 +3,10 @@
 # This source code is licensed under the MIT license found in the
 # LICENSE file in the root directory of this source tree.
 
-import torch
 import librosa
 import numpy as np
 import parselmouth
-
+import torch
 from utils.f0 import interpolate
 
 

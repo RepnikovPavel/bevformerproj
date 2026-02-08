@@ -5,6 +5,7 @@ import torch
 
 from mmrazor.registry import MODELS
 from mmrazor.utils import IndexDict
+
 from ...architectures.dynamic_ops.mixins import DynamicChannelMixin
 from .base_mutable_channel import BaseMutableChannel
 from .simple_mutable_channel import SimpleMutableChannel

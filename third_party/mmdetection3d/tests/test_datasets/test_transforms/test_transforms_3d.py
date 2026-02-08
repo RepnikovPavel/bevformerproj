@@ -4,14 +4,12 @@ import unittest
 
 import numpy as np
 import torch
-from mmengine.testing import assert_allclose
-
-from mmdet3d.datasets import (GlobalAlignment, RandomFlip3D,
-                              SemanticKittiDataset)
+from mmdet3d.datasets import GlobalAlignment, RandomFlip3D, SemanticKittiDataset
 from mmdet3d.datasets.transforms import GlobalRotScaleTrans, LaserMix, PolarMix
 from mmdet3d.structures import LiDARPoints
 from mmdet3d.testing import create_data_info_after_loading
 from mmdet3d.utils import register_all_modules
+from mmengine.testing import assert_allclose
 
 register_all_modules()
 

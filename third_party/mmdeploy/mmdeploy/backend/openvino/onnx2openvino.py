@@ -5,10 +5,11 @@ import tempfile
 from subprocess import PIPE, CalledProcessError, run
 from typing import Dict, Optional, Sequence, Union
 
-import mmengine
 import onnx
 
+import mmengine
 from mmdeploy.utils import get_root_logger
+
 from .utils import ModelOptimizerOptions
 
 

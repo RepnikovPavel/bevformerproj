@@ -7,6 +7,7 @@ import torch
 from torch import BoolTensor, Tensor
 
 from mmdet.structures.mask.structures import BitmapMasks, PolygonMasks
+
 from .base_boxes import BaseBoxes
 from .bbox_overlaps import bbox_overlaps
 from .box_type import register_box

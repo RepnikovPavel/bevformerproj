@@ -1,6 +1,5 @@
 # Copyright (c) OpenMMLab. All rights reserved.
-from .bbox_heads import (ContrastiveBBoxHead, CosineSimBBoxHead,
-                         MultiRelationBBoxHead)
+from .bbox_heads import ContrastiveBBoxHead, CosineSimBBoxHead, MultiRelationBBoxHead
 from .contrastive_roi_head import ContrastiveRoIHead
 from .fsdetview_roi_head import FSDetViewRoIHead
 from .meta_rcnn_roi_head import MetaRCNNRoIHead

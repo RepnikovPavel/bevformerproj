@@ -4,15 +4,14 @@
 # LICENSE file in the root directory of this source tree.
 
 import argparse
-import torch
 
-from models.vc.flow_matching_transformer.fmt_trainer import (
-    FlowMatchingTransformerTrainer,
-)
+import torch
 from models.vc.autoregressive_transformer.ar_trainer import (
     AutoregressiveTransformerTrainer,
 )
-
+from models.vc.flow_matching_transformer.fmt_trainer import (
+    FlowMatchingTransformerTrainer,
+)
 from utils.util import load_config
 
 

@@ -1,10 +1,9 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import numpy as np
 import pytest
+from mmaction.datasets.transforms import CenterCrop, ImgAug
 from mmengine.testing import assert_dict_has_keys
 from numpy.testing import assert_array_almost_equal
-
-from mmaction.datasets.transforms import CenterCrop, ImgAug
 
 
 def check_flip(origin_imgs, result_imgs, flip_type):

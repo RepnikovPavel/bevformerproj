@@ -1,15 +1,16 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 from mmcv.transforms.processing import Resize
-from mmengine.dataset.sampler import DefaultSampler
-from mmengine.visualization.vis_backend import LocalVisBackend
-
 from mmdet3d.datasets.nuscenes_dataset import NuScenesDataset
 from mmdet3d.datasets.transforms.formating import Pack3DDetInputs
-from mmdet3d.datasets.transforms.loading import (LoadAnnotations3D,
-                                                 LoadImageFromFileMono3D)
+from mmdet3d.datasets.transforms.loading import (
+                                                 LoadAnnotations3D,
+                                                 LoadImageFromFileMono3D,
+)
 from mmdet3d.datasets.transforms.transforms_3d import RandomFlip3D
 from mmdet3d.evaluation.metrics.nuscenes_metric import NuScenesMetric
 from mmdet3d.visualization.local_visualizer import Det3DLocalVisualizer
+from mmengine.dataset.sampler import DefaultSampler
+from mmengine.visualization.vis_backend import LocalVisBackend
 
 dataset_type = 'NuScenesDataset'
 data_root = 'data/nuscenes/'

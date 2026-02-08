@@ -1,7 +1,7 @@
 # Copyright (c) OpenMMLab. All rights reserved.
-import numpy as np
 from unittest import TestCase
 
+import numpy as np
 from mmeval.metrics import KeypointEndPointError
 
 

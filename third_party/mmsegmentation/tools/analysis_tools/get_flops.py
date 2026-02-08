@@ -4,14 +4,14 @@ import tempfile
 from pathlib import Path
 
 import torch
-from mmengine import Config, DictAction
 from mmengine.logging import MMLogger
 from mmengine.model import revert_sync_batchnorm
 from mmengine.registry import init_default_scope
-
 from mmseg.models import BaseSegmentor
 from mmseg.registry import MODELS
 from mmseg.structures import SegDataSample
+
+from mmengine import Config, DictAction
 
 try:
     from mmengine.analysis import get_model_complexity_info

@@ -7,7 +7,6 @@ import numpy as np
 from mmdet.structures import DetDataSample
 from mmdet.structures.mask import BitmapMasks
 from mmengine.structures import InstanceData, PixelData
-
 from mmyolo.datasets.transforms import PackDetInputs
 
 

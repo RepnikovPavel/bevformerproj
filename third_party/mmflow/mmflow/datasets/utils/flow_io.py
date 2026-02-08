@@ -6,9 +6,10 @@ from typing import Tuple
 
 import cv2
 import matplotlib.pyplot as plt
-import mmcv
 import numpy as np
 from numpy import ndarray
+
+import mmcv
 
 
 def read_flow(name: str) -> np.ndarray:

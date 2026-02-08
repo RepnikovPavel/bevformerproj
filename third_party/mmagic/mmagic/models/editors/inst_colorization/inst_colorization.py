@@ -8,6 +8,7 @@ from mmengine.optim import OptimWrapperDict
 
 from mmagic.registry import MODELS
 from mmagic.structures import DataSample
+
 from .color_utils import get_colorization_data, lab2rgb
 
 

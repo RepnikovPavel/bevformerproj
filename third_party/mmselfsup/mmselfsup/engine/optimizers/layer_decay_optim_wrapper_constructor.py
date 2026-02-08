@@ -8,8 +8,7 @@ from mmengine.logging import MMLogger
 from mmengine.optim import DefaultOptimWrapperConstructor
 from torch import nn
 
-from mmselfsup.registry import (OPTIM_WRAPPER_CONSTRUCTORS, OPTIM_WRAPPERS,
-                                OPTIMIZERS)
+from mmselfsup.registry import OPTIM_WRAPPER_CONSTRUCTORS, OPTIM_WRAPPERS, OPTIMIZERS
 
 
 def get_layer_id_for_vit(var_name: str, max_layer_id: int) -> int:

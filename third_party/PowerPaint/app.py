@@ -7,17 +7,15 @@ import numpy as np
 import torch
 from accelerate.utils import set_seed
 from controlnet_aux import HEDdetector, OpenposeDetector
-from PIL import Image, ImageFilter
-from transformers import CLIPTextModel, DPTFeatureExtractor, DPTForDepthEstimation
-
 from diffusers.pipelines.controlnet.pipeline_controlnet import ControlNetModel
+from PIL import Image, ImageFilter
 from powerpaint.models import BrushNetModel, UNet2DConditionModel
 from powerpaint.pipelines import (
     StableDiffusionControlNetInpaintPipeline,
     StableDiffusionInpaintPipeline,
     StableDiffusionPowerPaintBrushNetPipeline,
 )
-
+from transformers import CLIPTextModel, DPTFeatureExtractor, DPTForDepthEstimation
 
 # =======================================
 # use the same task prompt as training

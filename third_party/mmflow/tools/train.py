@@ -6,18 +6,18 @@ import os.path as osp
 import time
 import warnings
 
-import mmcv
 import torch
 import torch.distributed as dist
-from mmcv import Config, DictAction
 from mmcv.runner import init_dist
 from mmcv.utils import get_git_hash
-
-from mmflow import __version__
 from mmflow.apis import init_random_seed, set_random_seed, train_model
 from mmflow.datasets import build_dataset
 from mmflow.models import build_flow_estimator
 from mmflow.utils import collect_env, get_root_logger, setup_multi_processes
+
+import mmcv
+from mmcv import Config, DictAction
+from mmflow import __version__
 
 
 def parse_args():

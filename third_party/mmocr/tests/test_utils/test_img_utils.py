@@ -2,7 +2,6 @@
 import unittest
 
 import numpy as np
-
 from mmocr.utils import crop_img, warp_img
 
 

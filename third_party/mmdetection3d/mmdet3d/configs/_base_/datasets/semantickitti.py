@@ -1,18 +1,18 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 from mmcv.transforms.processing import TestTimeAug
-from mmengine.dataset.sampler import DefaultSampler
-from mmengine.visualization.vis_backend import LocalVisBackend
-
 from mmdet3d.datasets.semantickitti_dataset import SemanticKittiDataset
 from mmdet3d.datasets.transforms.formating import Pack3DDetInputs
-from mmdet3d.datasets.transforms.loading import (LoadAnnotations3D,
+from mmdet3d.datasets.transforms.loading import (
+                                                 LoadAnnotations3D,
                                                  LoadPointsFromFile,
-                                                 PointSegClassMapping)
-from mmdet3d.datasets.transforms.transforms_3d import (GlobalRotScaleTrans,
-                                                       RandomFlip3D)
+                                                 PointSegClassMapping,
+)
+from mmdet3d.datasets.transforms.transforms_3d import GlobalRotScaleTrans, RandomFlip3D
 from mmdet3d.evaluation.metrics.seg_metric import SegMetric
 from mmdet3d.models.segmentors.seg3d_tta import Seg3DTTAModel
 from mmdet3d.visualization.local_visualizer import Det3DLocalVisualizer
+from mmengine.dataset.sampler import DefaultSampler
+from mmengine.visualization.vis_backend import LocalVisBackend
 
 # For SemanticKitti we usually do 19-class segmentation.
 # For labels_map we follow the uniform format of MMDetection & MMSegmentation

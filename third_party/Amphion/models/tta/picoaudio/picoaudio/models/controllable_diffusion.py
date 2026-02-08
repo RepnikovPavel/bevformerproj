@@ -1,23 +1,14 @@
 import random
-import numpy as np
-from tqdm import tqdm
-from einops import repeat
 
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-
-from transformers import CLIPTokenizer, AutoTokenizer
-from transformers import CLIPTextModel, T5EncoderModel, AutoModel
-import diffusers
-from diffusers.utils.torch_utils import randn_tensor
-from diffusers import DDPMScheduler, UNet2DConditionModel
-from diffusers import AutoencoderKL as DiffuserAutoencoderKL
-
-from utils.torch_tools import wav_to_fbank
 from audioldm.audio.stft import TacotronSTFT
-from audioldm.variational_autoencoder.autoencoder import AutoencoderKL
 from audioldm.utils import default_audioldm_config, get_metadata
+from audioldm.variational_autoencoder.autoencoder import AutoencoderKL
+from diffusers import DDPMScheduler, UNet2DConditionModel
+from diffusers.utils.torch_utils import randn_tensor
+from tqdm import tqdm
 
 
 def build_pretrained_models(name):

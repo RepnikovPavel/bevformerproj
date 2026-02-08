@@ -1,7 +1,6 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import numpy as np
 import pytest
-
 from mmagic.evaluation.metrics import metrics_utils
 from mmagic.evaluation.metrics.metrics_utils import reorder_image
 

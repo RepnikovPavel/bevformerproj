@@ -17,6 +17,7 @@ from mmdet.registry import MODELS
 from mmdet.structures import TrackDataSample
 from mmdet.structures.bbox import bbox_overlaps, bbox_xyxy_to_cxcyah
 from mmdet.utils import OptConfigType
+
 from .sort_tracker import SORTTracker
 
 

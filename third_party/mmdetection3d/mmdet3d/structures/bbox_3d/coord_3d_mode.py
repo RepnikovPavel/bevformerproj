@@ -6,8 +6,8 @@ import numpy as np
 import torch
 from torch import Tensor
 
-from mmdet3d.structures.points import (BasePoints, CameraPoints, DepthPoints,
-                                       LiDARPoints)
+from mmdet3d.structures.points import BasePoints, CameraPoints, DepthPoints, LiDARPoints
+
 from .base_box3d import BaseInstance3DBoxes
 from .box_3d_mode import Box3DMode
 

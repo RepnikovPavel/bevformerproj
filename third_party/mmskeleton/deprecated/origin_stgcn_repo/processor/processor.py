@@ -1,22 +1,16 @@
 #!/usr/bin/env python
 # pylint: disable=W0201
-import sys
 import argparse
-import yaml
-import numpy as np
 
 # torch
 import torch
-import torch.nn as nn
-import torch.optim as optim
 
 # torchlight
 import torchlight
-from torchlight import str2bool
-from torchlight import DictAction
-from torchlight import import_class
+from torchlight import DictAction, import_class, str2bool
 
 from .io import IO
+
 
 class Processor(IO):
     """

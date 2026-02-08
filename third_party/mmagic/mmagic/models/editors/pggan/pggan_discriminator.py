@@ -8,8 +8,13 @@ import torch.nn.functional as F
 from mmengine.model import BaseModule
 
 from mmagic.registry import MODELS
-from .pggan_modules import (EqualizedLRConvDownModule, EqualizedLRConvModule,
-                            MiniBatchStddevLayer, PGGANDecisionHead)
+
+from .pggan_modules import (
+    EqualizedLRConvDownModule,
+    EqualizedLRConvModule,
+    MiniBatchStddevLayer,
+    PGGANDecisionHead,
+)
 
 
 @MODELS.register_module()

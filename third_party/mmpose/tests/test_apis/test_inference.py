@@ -8,12 +8,11 @@ import numpy as np
 import torch
 from mmcv.image import imread, imwrite
 from mmengine.utils import is_list_of
-from parameterized import parameterized
-
 from mmpose.apis import inference_bottomup, inference_topdown, init_model
 from mmpose.structures import PoseDataSample
 from mmpose.testing._utils import _rand_bboxes, get_config_file, get_repo_dir
 from mmpose.utils import register_all_modules
+from parameterized import parameterized
 
 
 class TestInference(TestCase):

@@ -1,11 +1,12 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import pytest
 import torch
-
-from mmflow.models.decoders.maskflownet_decoder import (BasicDeformWarpBlock,
-                                                        DeformWarpBlock,
-                                                        MaskFlowNetSDecoder,
-                                                        MaskModule)
+from mmflow.models.decoders.maskflownet_decoder import (
+    BasicDeformWarpBlock,
+    DeformWarpBlock,
+    MaskFlowNetSDecoder,
+    MaskModule,
+)
 
 
 def _get_test_data():

@@ -7,6 +7,7 @@ from mmcv.cnn.bricks import DropPath, build_norm_layer
 from mmengine.model import BaseModule
 
 from mmpretrain.registry import MODELS
+
 from .base_backbone import BaseBackbone
 from .poolformer import Mlp, PatchEmbed
 

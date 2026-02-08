@@ -5,7 +5,6 @@
 
 # This code is modified from https://github.com/descriptinc/descript-audio-codec/blob/main/dac/model/__init__.py
 
-from .base import CodecMixin
-from .base import DACFile
+from .base import CodecMixin, DACFile
 from .dac import DAC
 from .discriminator import Discriminator

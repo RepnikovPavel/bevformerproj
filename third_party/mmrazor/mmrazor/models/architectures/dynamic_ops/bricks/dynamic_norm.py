@@ -13,6 +13,7 @@ from torch.nn.modules.batchnorm import _BatchNorm
 
 from mmrazor.models.mutables.base_mutable import BaseMutable
 from mmrazor.registry import MODELS
+
 from ..mixins import DynamicBatchNormMixin, DynamicLayerNormMixin
 
 PartialType = Callable[[Any, Optional[nn.Parameter]], Tuple]

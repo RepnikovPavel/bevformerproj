@@ -8,6 +8,7 @@ from mmengine.model import is_model_wrapper
 from torch.utils.data.dataloader import DataLoader
 
 from mmagic.registry import METRICS
+
 from ..functional import gauss_gradient
 from .base_sample_wise_metric import BaseSampleWiseMetric
 from .metrics_utils import _fetch_data_and_check, average

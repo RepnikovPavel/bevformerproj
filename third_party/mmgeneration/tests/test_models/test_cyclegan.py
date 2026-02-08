@@ -3,9 +3,13 @@ import copy
 
 import torch
 from mmcv.runner import obj_from_dict
-
-from mmgen.models import (GANLoss, L1Loss, PatchDiscriminator, ResnetGenerator,
-                          build_model)
+from mmgen.models import (
+    GANLoss,
+    L1Loss,
+    PatchDiscriminator,
+    ResnetGenerator,
+    build_model,
+)
 
 
 def test_cyclegan():

@@ -28,9 +28,9 @@ import argparse
 import os
 
 import torch
-from mmengine import ProgressBar
-
 from mmyolo.utils.misc import get_file_list
+
+from mmengine import ProgressBar
 
 try:
     from mmdeploy.apis.utils import build_task_processor

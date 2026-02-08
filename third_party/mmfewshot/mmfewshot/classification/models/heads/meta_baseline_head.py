@@ -9,6 +9,7 @@ from mmcls.models.builder import HEADS
 from torch import Tensor
 
 from mmfewshot.classification.datasets import label_wrapper
+
 from .base_head import BaseFewShotHead
 
 

@@ -2,20 +2,28 @@
 from mmengine.config import read_base
 
 with read_base():
-    from ..._base_.models.swin_tiny import *
     from ..._base_.default_runtime import *
+    from ..._base_.models.swin_tiny import *
 
+from mmaction.datasets import (
+    CenterCrop,
+    DecordDecode,
+    DecordInit,
+    Flip,
+    FormatShape,
+    PackActionInputs,
+    RandomResizedCrop,
+    Resize,
+    SampleFrames,
+    ThreeCrop,
+    VideoDataset,
+)
+from mmaction.engine import SwinOptimWrapperConstructor
+from mmaction.evaluation import AccMetric
 from mmengine.dataset import DefaultSampler
 from mmengine.optim import AmpOptimWrapper, CosineAnnealingLR, LinearLR
 from mmengine.runner import EpochBasedTrainLoop, TestLoop, ValLoop
 from torch.optim import AdamW
-
-from mmaction.datasets import (CenterCrop, DecordDecode, DecordInit, Flip,
-                               FormatShape, PackActionInputs,
-                               RandomResizedCrop, Resize, SampleFrames,
-                               ThreeCrop, VideoDataset)
-from mmaction.engine import SwinOptimWrapperConstructor
-from mmaction.evaluation import AccMetric
 
 model.update(
     dict(

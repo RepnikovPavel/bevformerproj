@@ -7,16 +7,15 @@ import cv2
 import imageio
 import numpy as np
 import torch
-from mmengine import MessageHub
 from mmengine.config import Config
 from mmengine.fileio import dump, get_file_backend
 from mmengine.visualization import BaseVisBackend
-from mmengine.visualization import \
-    TensorboardVisBackend as BaseTensorboardVisBackend
+from mmengine.visualization import TensorboardVisBackend as BaseTensorboardVisBackend
 from mmengine.visualization import WandbVisBackend as BaseWandbVisBackend
 from mmengine.visualization.vis_backend import force_init_env
 
 from mmagic.registry import VISBACKENDS
+from mmengine import MessageHub
 
 
 @VISBACKENDS.register_module()

@@ -1,10 +1,11 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import os.path as osp
 
-import mmengine
 import numpy as np
 import torch
 from mmengine.utils.dl_utils.parrots_wrapper import _BatchNorm
+
+import mmengine
 
 
 def check_norm_state(modules, train_state):

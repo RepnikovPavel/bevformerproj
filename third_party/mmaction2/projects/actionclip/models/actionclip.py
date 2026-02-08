@@ -1,15 +1,16 @@
 from typing import Any, Dict, List, Optional, Tuple, Union
 
 import clip
-import mmengine
 import numpy as np
 import torch
 import torch.nn.functional as F
+from mmaction.registry import MODELS
 from mmengine.dist import all_gather, get_rank
 from mmengine.model import BaseModel
 from mmengine.structures import LabelData
 
-from mmaction.registry import MODELS
+import mmengine
+
 from .adapter import TransformerAdapter
 
 

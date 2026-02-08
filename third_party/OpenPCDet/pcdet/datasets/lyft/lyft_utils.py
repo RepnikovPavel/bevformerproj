@@ -3,16 +3,13 @@ The Lyft data pre-processing and evaluation is modified from
 https://github.com/poodarchu/Det3D
 """
 
-import operator
 from functools import reduce
 from pathlib import Path
 
 import numpy as np
 import tqdm
 from lyft_dataset_sdk.utils.data_classes import Box, Quaternion
-from lyft_dataset_sdk.lyftdataset import LyftDataset
 from lyft_dataset_sdk.utils.geometry_utils import transform_matrix
-from lyft_dataset_sdk.eval.detection.mAP_evaluation import Box3D
 
 
 def get_available_scenes(lyft):

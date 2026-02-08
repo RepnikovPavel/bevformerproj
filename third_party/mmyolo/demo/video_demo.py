@@ -14,12 +14,12 @@ python demo/video_demo.py \
 import argparse
 
 import cv2
-import mmcv
 from mmcv.transforms import Compose
 from mmdet.apis import inference_detector, init_detector
 from mmengine.utils import track_iter_progress
-
 from mmyolo.registry import VISUALIZERS
+
+import mmcv
 
 
 def parse_args():

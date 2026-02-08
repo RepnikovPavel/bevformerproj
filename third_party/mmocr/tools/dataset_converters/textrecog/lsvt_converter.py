@@ -4,10 +4,10 @@ import math
 import os.path as osp
 from functools import partial
 
+from mmocr.utils import dump_ocr_data
+
 import mmcv
 import mmengine
-
-from mmocr.utils import dump_ocr_data
 
 
 def parse_args():

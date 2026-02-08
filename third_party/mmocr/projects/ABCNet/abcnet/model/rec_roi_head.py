@@ -2,11 +2,11 @@
 from typing import Tuple
 
 from mmengine.structures import LabelData
-from torch import Tensor
-
 from mmocr.registry import MODELS, TASK_UTILS
 from mmocr.structures import TextRecogDataSample  # noqa F401
 from mmocr.utils import DetSampleList, OptMultiConfig, RecSampleList
+from torch import Tensor
+
 from .base_roi_head import BaseRoIHead
 
 

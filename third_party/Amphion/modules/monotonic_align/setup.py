@@ -5,9 +5,10 @@
 
 # This code is modified from https://github.com/jaywalnut310/vits/
 
-from distutils.core import setup, Extension
-from Cython.Build import cythonize
+from distutils.core import Extension, setup
+
 import numpy
+from Cython.Build import cythonize
 
 extension = Extension(
     name="monotonic_align.core",

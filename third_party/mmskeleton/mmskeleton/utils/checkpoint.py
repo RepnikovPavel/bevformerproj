@@ -1,7 +1,7 @@
-from mmcv.runner import load_checkpoint as mmcv_load_checkpoint
-from mmcv.runner.checkpoint import load_url_dist
 import urllib
 
+from mmcv.runner import load_checkpoint as mmcv_load_checkpoint
+from mmcv.runner.checkpoint import load_url_dist
 
 mmskeleton_model_urls = {
     'st_gcn/kinetics-skeleton': "https://open-mmlab.s3.ap-northeast-2.amazonaws.com/mmskeleton/models/st-gcn/st_gcn.kinetics-6fa43f73.pth",

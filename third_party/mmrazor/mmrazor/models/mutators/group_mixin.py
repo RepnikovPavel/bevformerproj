@@ -6,6 +6,7 @@ from torch.nn import Module
 
 from mmrazor.models.mutables import MutableValue
 from mmrazor.models.mutables.mutable_module import MutableModule
+
 from .base_mutator import MUTABLE_TYPE
 
 

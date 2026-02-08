@@ -13,9 +13,8 @@ from mmengine.logging import MMLogger
 from mmengine.model import BaseModel, ExponentialMovingAverage
 from mmengine.optim import OptimWrapper
 from mmengine.runner import Runner
-from torch.utils.data import Dataset
-
 from mmrazor.models.task_modules import FunctionInputsRecorder, RecorderManager
+from torch.utils.data import Dataset
 
 
 class ToyModel(BaseModel):

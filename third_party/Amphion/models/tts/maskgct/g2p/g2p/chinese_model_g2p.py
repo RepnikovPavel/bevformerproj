@@ -3,16 +3,15 @@
 # This source code is licensed under the MIT license found in the
 # LICENSE file in the root directory of this source tree.
 
+import json
 import os
+
 import numpy as np
 import torch
-from torch.utils.data import DataLoader
-import json
+from onnxruntime import GraphOptimizationLevel, InferenceSession, SessionOptions
+from torch.utils.data import DataLoader, Dataset
 from transformers import BertTokenizer
-from torch.utils.data import Dataset
 from transformers.models.bert.modeling_bert import *
-import torch.nn.functional as F
-from onnxruntime import InferenceSession, GraphOptimizationLevel, SessionOptions
 
 
 class PolyDataset(Dataset):

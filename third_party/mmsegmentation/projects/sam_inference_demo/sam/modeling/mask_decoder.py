@@ -9,10 +9,10 @@
 from typing import List, Tuple
 
 import torch
+from mmseg.registry import MODELS
 from torch import Tensor, nn
 from torch.nn import functional as F
 
-from mmseg.registry import MODELS
 from .common import LayerNorm2d
 
 

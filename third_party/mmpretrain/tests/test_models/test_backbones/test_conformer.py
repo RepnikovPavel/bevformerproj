@@ -3,10 +3,9 @@ from copy import deepcopy
 
 import pytest
 import torch
+from mmpretrain.models.backbones import Conformer
 from torch.nn.modules import GroupNorm
 from torch.nn.modules.batchnorm import _BatchNorm
-
-from mmpretrain.models.backbones import Conformer
 
 
 def is_norm(modules):

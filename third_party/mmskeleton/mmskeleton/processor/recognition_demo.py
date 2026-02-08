@@ -1,13 +1,9 @@
-import torch
-import mmcv
-import logging
-import torch.multiprocessing as mp
 import numpy as np
-import cv2
-from time import time
-from mmcv.utils import ProgressBar
-from .pose_demo import inference as pose_inference
+
+import mmcv
 from mmskeleton.utils import call_obj, load_checkpoint
+
+from .pose_demo import inference as pose_inference
 
 
 def init_recognizer(recognition_cfg, device):

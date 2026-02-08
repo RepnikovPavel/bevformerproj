@@ -10,9 +10,10 @@ from typing import List, Union
 import torch
 import torch.nn as nn
 from mmcv.cnn.bricks import Scale
-from mmengine import MMLogger
 
+from mmengine import MMLogger
 from mmrazor.utils import print_log
+
 from .channel_flow import ChannelTensor
 from .module_graph import ModuleNode
 

@@ -4,10 +4,10 @@ import os
 import os.path as osp
 import xml.etree.ElementTree as ET
 
+from mmocr.utils import dump_ocr_data
+
 import mmcv
 import mmengine
-
-from mmocr.utils import dump_ocr_data
 
 
 def collect_files(img_dir, gt_dir):

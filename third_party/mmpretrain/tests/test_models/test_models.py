@@ -1,10 +1,9 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 from dataclasses import dataclass
 
+import mmpretrain.models
 import pytest
 import torch
-
-import mmpretrain.models
 from mmpretrain.apis import ModelHub, get_model
 
 

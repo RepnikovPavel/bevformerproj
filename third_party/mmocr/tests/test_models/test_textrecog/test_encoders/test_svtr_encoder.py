@@ -2,12 +2,14 @@
 from unittest import TestCase
 
 import torch
-
-from mmocr.models.textrecog.encoders.svtr_encoder import (AttnMixer, ConvMixer,
-                                                          MerigingBlock,
-                                                          MixingBlock,
-                                                          OverlapPatchEmbed,
-                                                          SVTREncoder)
+from mmocr.models.textrecog.encoders.svtr_encoder import (
+    AttnMixer,
+    ConvMixer,
+    MerigingBlock,
+    MixingBlock,
+    OverlapPatchEmbed,
+    SVTREncoder,
+)
 
 
 class TestOverlapPatchEmbed(TestCase):

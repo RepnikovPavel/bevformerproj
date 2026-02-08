@@ -2,9 +2,7 @@
 
 import os.path as osp
 import random
-import shutil
 import warnings
-from collections import defaultdict
 
 from ..utils.base_dataset import ImageDataset
 

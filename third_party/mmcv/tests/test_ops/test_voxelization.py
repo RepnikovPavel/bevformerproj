@@ -2,10 +2,13 @@
 import numpy as np
 import pytest
 import torch
-
 from mmcv.ops import Voxelization
-from mmcv.utils import (IS_CUDA_AVAILABLE, IS_MLU_AVAILABLE, IS_MUSA_AVAILABLE,
-                        IS_NPU_AVAILABLE)
+from mmcv.utils import (
+    IS_CUDA_AVAILABLE,
+    IS_MLU_AVAILABLE,
+    IS_MUSA_AVAILABLE,
+    IS_NPU_AVAILABLE,
+)
 
 
 def _get_voxel_points_indices(points, coors, voxel):

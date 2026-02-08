@@ -5,12 +5,11 @@ from typing import Optional
 
 import torch
 import torch.nn.functional as F
-from einops import rearrange, repeat
-from torch import nn
-
 from diffusers.models.attention import FeedForward
 from diffusers.utils import BaseOutput
 from diffusers.utils.import_utils import is_xformers_available
+from einops import rearrange, repeat
+from torch import nn
 
 
 def zero_module(module):

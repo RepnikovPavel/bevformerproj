@@ -7,6 +7,7 @@ from mmcv.cnn import build_conv_layer
 from mmengine.model import BaseModule
 
 from mmpretrain.registry import MODELS
+
 from .base_backbone import BaseBackbone
 
 

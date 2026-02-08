@@ -4,6 +4,7 @@ from mmcv.cnn import NonLocal2d
 from torch import nn
 
 from mmseg.registry import MODELS
+
 from .fcn_head import FCNHead
 
 

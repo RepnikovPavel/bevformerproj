@@ -3,16 +3,17 @@ from unittest.mock import patch
 import numpy as np
 import pytest
 import torch
-from surrogate import surrogate
-
 from mmhuman3d.core.renderer.mpr_renderer.camera import Pinhole2D
 from mmhuman3d.models.body_models.builder import build_body_model
+from surrogate import surrogate
 
 
 @pytest.mark.skipif(
     not torch.cuda.is_available(), reason='requires CUDA support')
 def test_realtime_render_cuda():
-    from mmhuman3d.core.renderer.mpr_renderer.smpl_realrender import VisualizerMeshSMPL  # noqa: E501
+    from mmhuman3d.core.renderer.mpr_renderer.smpl_realrender import (
+        VisualizerMeshSMPL,  # noqa: E501
+    )
 
     vertices = torch.ones([6890, 3]).to(device='cuda')
     body_model = build_body_model(
@@ -45,8 +46,7 @@ def mock_project_mesh_cuda(*args):
        mock_project_mesh_cuda)
 def test_realtime_render():
     # test estimate normals
-    from mmhuman3d.core.renderer.mpr_renderer.rasterizer import \
-        estimate_normals
+    from mmhuman3d.core.renderer.mpr_renderer.rasterizer import estimate_normals
     vertices = torch.zeros([6890, 3])
     vertices_filter = torch.ones(6890)
     faces = torch.zeros([13776, 3])
@@ -61,8 +61,7 @@ def test_realtime_render():
         coords, normals = estimate_normals(vertices, faces, pinhole2d)
 
     # test project mesh
-    from mmhuman3d.core.renderer.mpr_renderer.rasterizer import \
-        project_mesh
+    from mmhuman3d.core.renderer.mpr_renderer.rasterizer import project_mesh
 
     z_buff = project_mesh(vertices, faces, vertices, pinhole2d,
                           vertices_filter)
@@ -82,8 +81,7 @@ def test_realtime_render():
     assert verts_ndc.shape == (6890, 3)
 
     # test utils
-    from mmhuman3d.core.renderer.mpr_renderer.utils import (vis_z_buffer,
-                                                            vis_normals)
+    from mmhuman3d.core.renderer.mpr_renderer.utils import vis_normals, vis_z_buffer
     z_ones = torch.ones([1024, 1024, 1])
     z_zeros = torch.zeros([1024, 1024, 1])
     coords = torch.zeros([1024, 1024, 3])
@@ -113,7 +111,9 @@ def mock_estimate_normals(vertices, faces, pinhole):
 @patch('mmhuman3d.core.renderer.mpr_renderer.cuda.rasterizer.project_mesh',
        mock_project_mesh_cuda)
 def test_smpl_realtime_render():
-    from mmhuman3d.core.renderer.mpr_renderer.smpl_realrender import VisualizerMeshSMPL  # noqa: E501
+    from mmhuman3d.core.renderer.mpr_renderer.smpl_realrender import (
+        VisualizerMeshSMPL,  # noqa: E501
+    )
     vertices = torch.ones([6890, 3]).to(device='cpu')
     body_model = build_body_model(
         dict(

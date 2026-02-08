@@ -5,15 +5,13 @@
 
 # 1. Extract WORLD features including F0, AP, SP
 # 2. Transform between SP and MCEP
-import torchaudio
-import pyworld as pw
-import numpy as np
-import torch
-import diffsptk
-import os
-from tqdm import tqdm
 import pickle
-import torchaudio
+
+import diffsptk
+import numpy as np
+import pyworld as pw
+import torch
+from tqdm import tqdm
 
 
 def get_mcep_params(fs):

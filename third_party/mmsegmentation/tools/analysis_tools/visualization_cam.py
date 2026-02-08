@@ -9,14 +9,14 @@ from argparse import ArgumentParser
 import numpy as np
 import torch
 import torch.nn.functional as F
-from mmengine import Config
 from mmengine.model import revert_sync_batchnorm
+from mmseg.apis import inference_model, init_model, show_result_pyplot
+from mmseg.utils import register_all_modules
 from PIL import Image
 from pytorch_grad_cam import GradCAM
 from pytorch_grad_cam.utils.image import preprocess_image, show_cam_on_image
 
-from mmseg.apis import inference_model, init_model, show_result_pyplot
-from mmseg.utils import register_all_modules
+from mmengine import Config
 
 
 class SemanticSegmentationTarget:

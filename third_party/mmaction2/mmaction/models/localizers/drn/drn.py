@@ -4,10 +4,10 @@ from typing import Sequence
 import numpy as np
 import torch
 import torch.nn as nn
-from mmengine.model import BaseModel
-
 from mmaction.registry import MODELS
 from mmaction.utils import OptConfigType
+from mmengine.model import BaseModel
+
 from ..utils import soft_nms
 from .drn_utils import FPN, Backbone, FCOSModule, QueryEncoder
 

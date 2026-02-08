@@ -3,21 +3,30 @@ import copy
 import os.path as osp
 import platform
 
-import mmcv
 import numpy as np
 import pytest
 import torch
+from mmaction.datasets.transforms import (
+    DecordDecode,
+    DecordInit,
+    GenerateLocalizationLabels,
+    LoadAudioFeature,
+    LoadHVULabel,
+    LoadLocalizationFeature,
+    LoadProposals,
+    LoadRGBFromFile,
+    OpenCVDecode,
+    OpenCVInit,
+    PIMSDecode,
+    PIMSInit,
+    PyAVDecode,
+    PyAVDecodeMotionVector,
+    PyAVInit,
+)
 from mmengine.testing import assert_dict_has_keys
 from numpy.testing import assert_array_almost_equal
 
-from mmaction.datasets.transforms import (DecordDecode, DecordInit,
-                                          GenerateLocalizationLabels,
-                                          LoadAudioFeature, LoadHVULabel,
-                                          LoadLocalizationFeature,
-                                          LoadProposals, LoadRGBFromFile,
-                                          OpenCVDecode, OpenCVInit, PIMSDecode,
-                                          PIMSInit, PyAVDecode,
-                                          PyAVDecodeMotionVector, PyAVInit)
+import mmcv
 
 from mmaction.datasets.transforms import RawFrameDecode  # isort:skip
 

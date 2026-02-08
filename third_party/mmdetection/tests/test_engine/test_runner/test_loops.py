@@ -5,14 +5,13 @@ from unittest.mock import Mock
 
 import torch
 import torch.nn as nn
+from mmdet.registry import DATASETS
+from mmdet.utils import register_all_modules
 from mmengine.evaluator import Evaluator
 from mmengine.model import BaseModel
 from mmengine.optim import OptimWrapper
 from mmengine.runner import Runner
 from torch.utils.data import Dataset
-
-from mmdet.registry import DATASETS
-from mmdet.utils import register_all_modules
 
 register_all_modules()
 

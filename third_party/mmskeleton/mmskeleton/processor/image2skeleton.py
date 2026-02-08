@@ -1,18 +1,24 @@
-import torch
-import mmcv
 import logging
-import torch.multiprocessing as mp
-import numpy as np
-import cv2
-from time import time
-from mmskeleton.utils import cache_checkpoint, get_mmskeleton_url
-from mmskeleton.datasets.utils.video_demo import VideoDemo
-from mmdet.apis import init_detector, inference_detector, show_result_pyplot
-from mmskeleton.processor.apis import init_twodimestimator, inference_twodimestimator, save_batch_image_with_joints
-from mmcv.utils import ProgressBar
 import os
+
+import numpy as np
+import torch
+import torch.multiprocessing as mp
+from mmcv.utils import ProgressBar
+from mmdet.apis import inference_detector, init_detector
+
+import mmcv
+from mmskeleton.datasets.utils.video_demo import VideoDemo
+from mmskeleton.processor.apis import (
+    inference_twodimestimator,
+    init_twodimestimator,
+    save_batch_image_with_joints,
+)
+from mmskeleton.utils import cache_checkpoint, get_mmskeleton_url
+
 logger = logging.getLogger()
 import sys
+
 sys.setrecursionlimit(1000000)
 
 

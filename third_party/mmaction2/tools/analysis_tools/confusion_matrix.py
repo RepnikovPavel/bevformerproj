@@ -4,14 +4,14 @@ import logging
 import tempfile
 
 import torch
-from mmengine import dump, list_from_file, load
+from mmaction.evaluation import ConfusionMatrix
+from mmaction.registry import DATASETS
+from mmaction.utils import register_all_modules
 from mmengine.config import Config, DictAction
 from mmengine.evaluator import Evaluator
 from mmengine.runner import Runner
 
-from mmaction.evaluation import ConfusionMatrix
-from mmaction.registry import DATASETS
-from mmaction.utils import register_all_modules
+from mmengine import dump, list_from_file, load
 
 
 def parse_args():

@@ -10,8 +10,14 @@ from mmengine.model import BaseModule, ModuleList
 from mmengine.model.weight_init import trunc_normal_
 
 from mmpretrain.registry import MODELS
-from ..utils import (BEiTAttention, build_norm_layer, resize_pos_embed,
-                     resize_relative_position_bias_table, to_2tuple)
+
+from ..utils import (
+    BEiTAttention,
+    build_norm_layer,
+    resize_pos_embed,
+    resize_relative_position_bias_table,
+    to_2tuple,
+)
 from .base_backbone import BaseBackbone
 from .vision_transformer import TransformerEncoderLayer
 

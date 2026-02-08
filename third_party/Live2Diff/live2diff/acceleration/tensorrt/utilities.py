@@ -42,7 +42,6 @@ from polygraphy.backend.trt import (
 
 from .models import BaseModel
 
-
 TRT_LOGGER = trt.Logger(trt.Logger.ERROR)
 
 # Map of numpy dtype -> torch dtype

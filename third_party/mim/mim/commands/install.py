@@ -17,7 +17,6 @@ from mim.utils import (
     DEFAULT_MMCV_BASE_URL,
     PKG2PROJECT,
     echo_warning,
-    exit_with_error,
     get_torch_device_version,
 )
 

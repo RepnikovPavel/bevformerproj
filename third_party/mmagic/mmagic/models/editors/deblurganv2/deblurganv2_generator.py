@@ -4,6 +4,7 @@ import torch.nn as nn
 import torch.nn.functional as F
 
 from mmagic.registry import MODELS
+
 from .deblurganv2_util import MobileNetV2, get_norm_layer, inceptionresnetv2
 
 backbone_list = ['FPNInception', 'FPNMobileNet', 'FPNInceptionSimple']

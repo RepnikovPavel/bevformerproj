@@ -8,6 +8,7 @@ from mmdet.core import bbox_overlaps
 
 from mmtrack.core.bbox import bbox_cxcyah_to_xyxy, bbox_xyxy_to_cxcyah
 from mmtrack.models import TRACKERS
+
 from .sort_tracker import SortTracker
 
 

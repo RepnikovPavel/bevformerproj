@@ -1,22 +1,20 @@
-import torch
-import yaml
 import os
+import sys
 
 import safetensors
+import torch
+import yaml
 from safetensors.torch import save_file
 from yacs.config import CfgNode as CN
-import sys
 
 sys.path.append('/apdcephfs/private_shadowcun/SadTalker')
 
+from src.audio2exp_models.networks import SimpleWrapperV2
+from src.audio2pose_models.audio2pose import Audio2Pose
 from src.face3d.models import networks
-
+from src.facerender.modules.generator import OcclusionAwareSPADEGenerator
 from src.facerender.modules.keypoint_detector import HEEstimator, KPDetector
 from src.facerender.modules.mapping import MappingNet
-from src.facerender.modules.generator import OcclusionAwareGenerator, OcclusionAwareSPADEGenerator
-
-from src.audio2pose_models.audio2pose import Audio2Pose
-from src.audio2exp_models.networks import SimpleWrapperV2 
 from src.test_audio2coeff import load_cpk
 
 size = 256
@@ -62,7 +60,7 @@ def load_cpk_facevid2vid(checkpoint_path, generator=None, discriminator=None,
     if optimizer_discriminator is not None:
         try:
             optimizer_discriminator.load_state_dict(checkpoint['optimizer_discriminator'])
-        except RuntimeError as e:
+        except RuntimeError:
             print ('No discriminator optimizer in the state-dict. Optimizer will be not initialized')
     if optimizer_kp_detector is not None:
         optimizer_kp_detector.load_state_dict(checkpoint['optimizer_kp_detector'])

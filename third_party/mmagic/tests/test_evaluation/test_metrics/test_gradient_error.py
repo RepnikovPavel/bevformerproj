@@ -5,7 +5,6 @@ from pathlib import Path
 import numpy as np
 import pytest
 import torch
-
 from mmagic.datasets.transforms import LoadImageFromFile
 from mmagic.evaluation.metrics import GradientError
 

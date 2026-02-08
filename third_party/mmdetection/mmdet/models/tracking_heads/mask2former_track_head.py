@@ -18,8 +18,14 @@ from mmdet.models.utils import get_uncertain_point_coords_with_randomness
 from mmdet.registry import MODELS, TASK_UTILS
 from mmdet.structures import TrackDataSample, TrackSampleList
 from mmdet.structures.mask import mask2bbox
-from mmdet.utils import (ConfigType, InstanceList, OptConfigType,
-                         OptMultiConfig, reduce_mean)
+from mmdet.utils import (
+    ConfigType,
+    InstanceList,
+    OptConfigType,
+    OptMultiConfig,
+    reduce_mean,
+)
+
 from ..layers import Mask2FormerTransformerDecoder
 
 

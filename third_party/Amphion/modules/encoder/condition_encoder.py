@@ -6,9 +6,8 @@
 import numpy as np
 import torch
 import torch.nn as nn
-from torchaudio.models import Conformer
 from models.svc.transformer.transformer import PositionalEncoding
-
+from torchaudio.models import Conformer
 from utils.f0 import f0_to_coarse
 
 

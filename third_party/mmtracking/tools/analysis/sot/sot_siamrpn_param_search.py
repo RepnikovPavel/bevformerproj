@@ -4,12 +4,12 @@ import os
 
 import numpy as np
 import torch
-from mmcv import Config, DictAction, get_logger, print_log
 from mmcv.cnn import fuse_conv_bn
 from mmcv.parallel import MMDataParallel, MMDistributedDataParallel
-from mmcv.runner import (get_dist_info, init_dist, load_checkpoint,
-                         wrap_fp16_model)
+from mmcv.runner import get_dist_info, init_dist, load_checkpoint, wrap_fp16_model
 from mmdet.datasets import build_dataset
+
+from mmcv import Config, DictAction, get_logger, print_log
 
 
 def parse_range(range_str):

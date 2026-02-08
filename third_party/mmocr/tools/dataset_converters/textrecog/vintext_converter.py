@@ -3,10 +3,10 @@ import argparse
 import os
 import os.path as osp
 
+from mmocr.utils import crop_img, dump_ocr_data
+
 import mmcv
 import mmengine
-
-from mmocr.utils import crop_img, dump_ocr_data
 
 
 def collect_files(img_dir, gt_dir):

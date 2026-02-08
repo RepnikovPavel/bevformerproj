@@ -8,6 +8,7 @@ from mmdet.models.backbones.csp_darknet import CSPLayer
 from mmdet.utils import ConfigType, OptConfigType, OptMultiConfig
 
 from mmyolo.registry import MODELS
+
 from ..layers import SPPFBottleneck
 from .base_backbone import BaseBackbone
 

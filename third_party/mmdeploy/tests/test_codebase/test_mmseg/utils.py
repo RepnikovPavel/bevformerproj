@@ -1,10 +1,10 @@
 # Copyright (c) OpenMMLab. All rights reserved.
-import mmengine
 import torch
-from mmengine.structures import PixelData
-
 from mmdeploy.apis import build_task_processor
 from mmdeploy.utils import load_config
+from mmengine.structures import PixelData
+
+import mmengine
 
 
 def generate_datasample(h, w):
